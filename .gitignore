@@ -205,3 +205,45 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# -----------------------------
+# Project-specific ignores
+# -----------------------------
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/editor
+.idea/
+.vscode/
+
+# Local Python / Conda helpers
+.python-version
+*.conda
+
+# Temp / lock / runtime dumps
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.pid.lock
+
+# Local accidental cache dirs seen in this repo
+pytest-cache-files-*/
+
+# Environment / secrets
+.env.*
+!.env.example
+
+# Local data artifacts (keep folder structure with .gitkeep if needed)
+data/raw/*
+data/silver/*
+data/gold/*
+data/metadata/*
+!data/raw/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/metadata/.gitkeep

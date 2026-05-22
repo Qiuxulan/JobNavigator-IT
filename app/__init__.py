@@ -1,0 +1,2 @@
+"""JobNavigator-IT application package."""
+
