@@ -1,0 +1,457 @@
+{
+  "role_000": [
+    "AI Agent Engineer",
+    "高",
+    "titles 全是 AI Agent / Agentic AI Engineer,top skill=AI Agent"
+  ],
+  "role_001": [
+    "Machine Learning Engineer",
+    "高",
+    "titles 全是 Machine Learning Engineer,虽然命名叫 MLOps 但其实是 ML Engineer"
+  ],
+  "role_002": [
+    "AI Engineer",
+    "高",
+    "titles 全是 \"AI Engineer\" / \"AI Software Engineer\",这是最通用的 AI 工程师簇"
+  ],
+  "role_003": [
+    "AI Research Engineer",
+    "高",
+    "titles 全是 AI Research Engineer / Advanced AI Research Engineer"
+  ],
+  "role_004": [
+    "AI Evaluation Engineer",
+    "高",
+    "titles 含 \"AI Evaluation Engineer\" 多次,search_kw 首项也是 AI evaluation engineer"
+  ],
+  "role_005": [
+    "AI Data Engineer",
+    "高",
+    "titles 含 Data Engineer + Agentic AI,search_kw 首项 AI data engineer"
+  ],
+  "role_006": [
+    "MLOps Engineer",
+    "高",
+    "titles 全是 MLOps Engineer / LLMOps & MLOps,top skill=MLOps"
+  ],
+  "role_007": [
+    "LLM Inference Engineer",
+    "高",
+    "titles 全是 LLM Inference / LLM Integration,skills 含 Fine-tuning"
+  ],
+  "role_008": [
+    "Prompt Engineer",
+    "中",
+    "search_kw 首项 prompt engineer,但 titles 较杂(Staff Security/Data Engineer),只有1条 Prompt Engineering Architect。技能有 Prompt Engineering。判定 Prompt Engineer。"
+  ],
+  "role_009": [
+    "Applied AI Engineer",
+    "高",
+    "titles 都是 Applied AI Health Data System Engineer / AI Healthcare Engineer,是行业落地型 AI 工程师"
+  ],
+  "role_010": [
+    "RAG Engineer",
+    "高",
+    "titles 含 \"Generative AI Applications Engineer (Agents & RAG)\",top skill=RAG"
+  ],
+  "role_011": [
+    "DROP",
+    "高",
+    "**误聚类**:titles 全是 \"Embedded Software Engineer\"(嵌入式软件),skills=C/C++/Linux,这是嵌入式不是 Embedding(向量嵌入)。应砍。"
+  ],
+  "role_012": [
+    "Computer Vision Engineer",
+    "高",
+    "titles 全是 Computer Vision Engineer,top skill=Computer Vision"
+  ],
+  "role_013": [
+    "Forward Deployed AI Engineer",
+    "高",
+    "titles 全是 Forward Deployed Engineer (AWS/Snowflake),search_kw 唯一"
+  ],
+  "role_014": [
+    "AI Solutions Architect",
+    "高",
+    "titles 都是 Solutions Architect / Cloud Support Engineer / AI Delivery,search_kw 首项 AI solutions architect"
+  ],
+  "role_015": [
+    "Machine Learning Research Engineer",
+    "中",
+    "titles 含 Machine Learning Engineer + Research Engineer + ML/AI Platform,介于 ML Engineer 和 Research 之间。考虑合并到 role_001 还是独立?独立更细。"
+  ],
+  "role_016": [
+    "DROP", 
+    "中", 
+    "技能画像只有 Excel,无真实 AI 技能信号,确认为噪声簇"
+  ],
+  "role_017": [
+    "Context Engineer",
+    "中",
+    "titles 含 \"Context Engineer - Manager - Consulting\" 但其他 titles 杂(Lifestyle Strategist/AI Native)。search_kw 首项 context engineer。新兴岗位,保留。"
+  ],
+  "role_018": [
+    "AI Data Engineer",
+    "中",
+    "titles 是 \"Cyber AI Data Engineer/Data Analytics\" 等,虽然 search_kw 首项是 RAG engineer,但 titles 都是 Data/Analytics 方向。建议合并到 role_005 AI Data Engineer。"
+  ],
+  "role_019": [
+    "AI Infrastructure Engineer",
+    "高",
+    "titles 全是 AI Infrastructure / Platform Engineering,top skill=Oracle Database/Distributed Systems"
+  ],
+  "role_020": [
+    "AI Solutions Architect",
+    "中",
+    "titles 含 AI Agents Solutions Architect/ML Platform Engineer,search_kw 含 AI solutions architect。建议合并到 role_014。"
+  ],
+  "role_021": [
+    "DROP",
+    "中",
+    "titles 是 Transportation Engineer/Engineering Designer,多模态在这里是交通\"多模式\"不是 AI multimodal。属于误聚类。"
+  ],
+  "role_022": [
+    "Applied AI Engineer",
+    "中",
+    "titles 含 \"Applied AI Engineer, Founding Team\",但只有 86 条,skills 只有 Oracle Database。建议合并到 role_009 Applied AI Engineer。"
+  ],
+  "role_023": [
+    "Data Engineer",
+    "高",
+    "titles 全是 Data Engineer / Big Data Engineer / Data Architect,top skill=Apache Spark"
+  ],
+  "role_024": [
+    "DROP",
+    "高",
+    "预删:非 IT 软件岗,Customer Service Representative/Data Entry Clerk 等"
+  ],
+  "role_025": [
+    "Data Engineer",
+    "中",
+    "titles 是 Data Engineer / Data Architect,skills=SQL/ETL/Snowflake。建议合并到 role_023 Data Engineer。"
+  ],
+  "role_026": [
+    "Data Scientist",
+    "高",
+    "titles 全是 Data Scientist / Senior Data Scientist"
+  ],
+  "role_027": [
+    "Machine Learning Engineer",
+    "中",
+    "titles 含 MLOps Engineer/Machine Learning Engineer,skills=ML/TensorFlow/PyTorch/CV/NLP。这其实是传统 ML Engineer,建议独立(跟 Emerging AI 的 role_001 区分:这边是 djinni+asaniczka 来源)。"
+  ],
+  "role_028": [
+    "DROP",
+    "高",
+    "预删:Data Entry Clerk,文员岗"
+  ],
+  "role_029": [
+    "Database Administrator",
+    "高",
+    "titles 全是 Database Administrator / Database Engineer"
+  ],
+  "role_030": [
+    "Business Analyst",
+    "中",
+    "titles 全是 Business Analyst,但 coarse 是 AI&Data。建议合并到 role_084 PM&BA 大类的 Business Analyst。但跨大类合并会乱,先保留独立名 \"Data Business Analyst\"。"
+  ],
+  "role_031": [
+    "Backend Java Engineer",
+    "高",
+    "titles 全是 Java Developer/Engineer"
+  ],
+  "role_032": [
+    ".NET Backend Engineer",
+    "高",
+    "titles 全是 .NET Developer"
+  ],
+  "role_033": [
+    "Backend Node.js Engineer",
+    "高",
+    "titles 全是 Node.js Developer / Full Stack"
+  ],
+  "role_034": [
+    "Backend PHP Engineer",
+    "高",
+    "titles 全是 PHP Developer / Magento Developer"
+  ],
+  "role_035": [
+    "Backend Python Engineer",
+    "高",
+    "titles 全是 Python Developer / Python Engineer"
+  ],
+  "role_036": [
+    "C++ Software Engineer",
+    "高",
+    "titles 主要 C++ Developer / C++ Engineer,coarse=Backend"
+  ],
+  "role_037": [
+    "Backend Go Engineer",
+    "高",
+    "titles 全是 Golang Developer/Engineer"
+  ],
+  "role_038": [
+    "DROP",
+    "高",
+    "预删:错位 QA(Backend 大类下的 QA Engineer)"
+  ],
+  "role_039": [
+    "Backend Ruby Engineer",
+    "高",
+    "titles 全是 Ruby on Rails Developer/Engineer"
+  ],
+  "role_040": [
+    "Frontend React Engineer",
+    "高",
+    "titles 全是 React Developer / Frontend Developer,top skill=React"
+  ],
+  "role_041": [
+    "Frontend Angular Engineer",
+    "高",
+    "titles 全是 Angular Developer,top skill=Angular"
+  ],
+  "role_042": [
+    "Full-Stack JavaScript Engineer",
+    "高",
+    "titles 全是 Full Stack / Full-Stack JavaScript Developer,skills=Node.js+React+MongoDB"
+  ],
+  "role_043": [
+    "Frontend Vue Engineer",
+    "高",
+    "titles 含 Vue.js Developer,top skill=Vue.js"
+  ],
+  "role_044": [
+    "React Native Engineer",
+    "高",
+    "titles 全是 React Native Developer"
+  ],
+  "role_045": [
+    "WordPress Developer",
+    "高",
+    "titles 全是 WordPress Developer,这是个独立细分"
+  ],
+  "role_046": [
+    "DROP",
+    "高",
+    "预删:错位 QA"
+  ],
+  "role_047": [
+    "Full-Stack .NET Engineer",
+    "中",
+    "titles 是 Angular Developer/Full Stack/Front-end Developer,skills=.NET+JS+Angular。叫 \"Full-Stack .NET Engineer\"。"
+  ],
+  "role_048": [
+    "iOS Engineer",
+    "高",
+    "titles 全是 iOS Developer,top skill=iOS/Swift"
+  ],
+  "role_049": [
+    "Android Engineer",
+    "高",
+    "titles 全是 Android Developer,top skill=Android/Kotlin"
+  ],
+  "role_050": [
+    "iOS Engineer",
+    "中",
+    "titles 全是 iOS Developer(和 role_048 几乎一样)。建议合并到 role_048 iOS Engineer。"
+  ],
+  "role_051": [
+    "Android Engineer",
+    "中",
+    "titles 全是 Android Developer(和 role_049 几乎一样)。建议合并到 role_049 Android Engineer。"
+  ],
+  "role_052": [
+    "Flutter Engineer",
+    "高",
+    "titles 全是 Flutter Developer/Engineer"
+  ],
+  "role_053": [
+    "DROP",
+    "高",
+    "预删:错位 QA"
+  ],
+  "role_054": [
+    "Mobile C++ Engineer",
+    "中",
+    "titles 含 Android Developer + C++ Developer + Senior C++ Engineer,skills 含 Android+C++。是手机底层开发(NDK 类)。"
+  ],
+  "role_055": [
+    "UI/UX Designer",
+    "高",
+    "titles 全是 UI/UX Designer / Product Designer。UI/UX 保留(用户决策)。"
+  ],
+  "role_056": [
+    "DROP",
+    "中",
+    "titles 主要是 Product Manager,coarse=Mobile 是错位。PM 大类已经有 Product Manager。砍。"
+  ],
+  "role_057": [
+    "DevOps Engineer",
+    "高",
+    "titles 全是 DevOps Engineer,top skill=Terraform/AWS/K8s"
+  ],
+  "role_058": [
+    "DevOps Engineer",
+    "中",
+    "titles 全是 DevOps Engineer(和 role_057 接近)。建议合并到 role_057。"
+  ],
+  "role_059": [
+    "Azure DevOps Engineer",
+    "高",
+    "titles 含 Azure DevOps Engineer,skills 有 Microsoft Azure。Azure 专项,独立。"
+  ],
+  "role_060": [
+    "System Administrator",
+    "高",
+    "titles 全是 System Administrator / Linux SA / Network Engineer"
+  ],
+  "role_061": [
+    "Node.js DevOps Engineer",
+    "中",
+    "titles 含 DevOps Engineer + Elixir/Golang/Full Stack。Node.js 是核心。"
+  ],
+  "role_062": [
+    "Cloud Java Engineer",
+    "中",
+    "titles 是 Java Developer/Scala Developer + Backend and Cloud Engineer,skills=AWS+K8s+Java。介于 Backend Java 和 DevOps 之间,独立保留。"
+  ],
+  "role_063": [
+    "Linux C++ Engineer",
+    "高",
+    "titles 全是 C++ Developer/Engineer,coarse=DevOps,top skill=Linux+C++。系统级 C++ 开发。"
+  ],
+  "role_064": [
+    "Cloud Security Engineer",
+    "高",
+    "titles 含 Security Engineer + Cloud Solution Architect + Cyber Security"
+  ],
+  "role_065": [
+    "DROP",
+    "高",
+    "预删:错位 QA"
+  ],
+  "role_066": [
+    "QA Automation Engineer",
+    "高",
+    "titles 全是 Automation QA Engineer,top skill=Selenium/Java/QA Automation"
+  ],
+  "role_067": [
+    "Manual QA Engineer",
+    "高",
+    "titles 全是 Manual QA Engineer / QA Engineer"
+  ],
+  "role_068": [
+    "Frontend QA Automation Engineer",
+    "高",
+    "titles 是 QA Automation Engineer,skills=JavaScript+TypeScript+Cypress(前端测试)"
+  ],
+  "role_069": [
+    "Python QA Automation Engineer",
+    "高",
+    "titles 全是 QA Automation Engineer (Python),skills 含 Python"
+  ],
+  "role_070": [
+    ".NET QA Automation Engineer",
+    "高",
+    "titles 含 QA Automation Engineer (C#),skills 含 C#+.NET"
+  ],
+  "role_071": [
+    "API QA Automation Engineer",
+    "中",
+    "titles 是 QA Engineer,skills 含 JMeter+Postman+API,是 API 测试方向。比 Java QA 更准。"
+  ],
+  "role_072": [
+    "Mobile QA Automation Engineer",
+    "高",
+    "titles 是 QA Engineer,skills 含 Android+iOS+Appium。移动端 QA 自动化。"
+  ],
+  "role_073": [
+    "Manual QA Engineer",
+    "中",
+    "titles 是 Manual QA Engineer,skills=Linux+Python+C++。建议合并到 role_067 Manual QA。"
+  ],
+  "role_074": [
+    "Information Security Analyst",
+    "高",
+    "titles 全是 Information Security Specialist/Manager/Analyst,偏管理/合规"
+  ],
+  "role_075": [
+    "Security Operations Engineer",
+    "高",
+    "titles 含 Security Engineer + Security Operations Engineer,skills 含 SIEM(SOC 方向)"
+  ],
+  "role_076": [
+    "Penetration Testing Engineer",
+    "高",
+    "titles 全是 Penetration Tester / Application Security Engineer"
+  ],
+  "role_077": [
+    "Security Software Engineer",
+    "高",
+    "titles 含 Application Security Engineer + C++ Developer + Embedded Software Engineer(Cybersecurity),skills 含 C++/Encryption。"
+  ],
+  "role_078": [
+    "Unity Developer",
+    "高",
+    "titles 全是 Unity Developer,top skill=C#"
+  ],
+  "role_079": [
+    "Game C++ Engineer",
+    "高",
+    "titles 是 C++ Developer/Engineer,coarse=Game"
+  ],
+  "role_080": [
+    "Unreal Engine Developer",
+    "高",
+    "titles 含 Unreal Engine Developer / C++ Game Developer,Unreal 方向"
+  ],
+  "role_081": [
+    "Game Designer",
+    "高",
+    "titles 全是 Game Designer / Game Producer / Lead Game Designer。这是策划岗,不是程序。但 UI/UX 既然留了,这个也应该留(都是泛 IT/游戏行业)。"
+  ],
+  "role_082": [
+    "Game Technical Artist",
+    "高",
+    "titles 全是 Technical Artist / 3D Animator / 2D Artist。游戏美术技术岗。"
+  ],
+  "role_083": [
+    "Project Manager",
+    "高",
+    "titles 全是 Project Manager / IT Project Manager"
+  ],
+  "role_084": [
+    "Business Analyst",
+    "高",
+    "titles 全是 Business Analyst"
+  ],
+  "role_085": [
+    "Delivery Manager",
+    "中",
+    "titles 含 Project Manager + Delivery Manager。Delivery 是子方向。或合并到 role_083 PM。建议合并。"
+  ],
+  "role_086": [
+    "Product Manager",
+    "高",
+    "titles 全是 Product Manager / Product Owner"
+  ],
+  "role_087": [
+    "Scrum Master",
+    "高",
+    "titles 全是 Scrum Master / Delivery Manager"
+  ],
+  "role_088": [
+    "DROP",
+    "高",
+    "预删:错位 QA"
+  ],
+  "role_089": [
+    "DROP",
+    "中",
+    "titles 全是 C++ Developer,但 coarse 是 PM/BA 大类。这是错位,应该砍(Backend 已经有 C++ Software Engineer role_036)。"
+  ],
+  "role_090": [
+    "Rust Blockchain Engineer",
+    "高",
+    "titles 含 Rust Developer / Solidity Developer,skills=Blockchain+Rust+Solidity"
+  ]
+}

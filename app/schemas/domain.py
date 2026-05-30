@@ -34,6 +34,8 @@ class JobRole(BaseModel):
 class SkillGap(BaseModel):
     missing_skills: list[str] = Field(default_factory=list)
     overlap_skills: list[str] = Field(default_factory=list)
+    # B 模块精排产出:加分技能(命中可加分,但不计入缺口,仅用于展示/解释)
+    optional_skills: list[str] = Field(default_factory=list)
 
 
 class RecommendationItem(BaseModel):
@@ -86,4 +88,3 @@ class TrendSignal(BaseModel):
     long_term: Literal["up", "flat", "down"] = "up"
     confidence: float = 0.7
     evidence: list[TrendEvidence] = Field(default_factory=list)
-
