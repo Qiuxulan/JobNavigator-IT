@@ -16,8 +16,9 @@
          待评估集(reports/recommend_eval_v1.md)校准。
 
 数据依赖:postgres job_roles 表(由 pipelines.taxonomy.build_job_vectors 写入)
-  注:该岗位库当前基于 6000 条抽样、且 Djinni 部分技能尚未抽取。
-      定稿时需用全量数据重跑 cluster_roles.py + build_job_vectors.py。
+  注:岗位库基于全量约 17 万条 JD 构建(asaniczka 1.2 万 + Djinni 14.2 万 +
+      emerging 1.7 万,Djinni 技能已全量抽取)。聚类阶段为控制 KMeans 规模,
+      按粗粒度桶分层抽样(传统类每桶 5000、emerging 20000),技能画像仍基于全量。
 ============================================================
 """
 

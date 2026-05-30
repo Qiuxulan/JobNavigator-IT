@@ -115,5 +115,5 @@ python -m pipelines.taxonomy.evaluate                  # 评估
 - **C（学习路径）**：缺口技能从推荐结果 `RecommendationItem.skill_gap.missing_skills` 取；新增的 `optional_skills` 是加分技能，不属于必学缺口。`path_cost_score` 目前是缺口惩罚的占位，待 C 的 `path_planner` 接入后替换（recommender 里 TODO-1）。
 - **D（趋势）**：`trend_reward_score` 现用关键词占位表（TODO-3），接入真实热度后替换；岗位库 `city/salary/degree` 字段补齐后，recommender 的 `constraint_score`（现固定 0.8，TODO-2）才能真算。
 - **全员（DB / 向量一致性）**：`job_roles.embedding` 必须是 1024 维（JobBERT-v3）。query 与岗位向量的模型、文本拼法、`normalize_embeddings=True` 必须完全一致，否则 ANN 召回错位。改任一处需同步 `build_job_vectors.py` / `recall.py` / `recommender._load_engine`。
-- **数据规模**：当前岗位库基于 6000 条抽样、Djinni 技能未全量抽取，属可运行 baseline；定稿需用全量数据重跑 `cluster_roles.py` + `build_job_vectors.py`。
+- **数据规模**：岗位库基于全量约 17 万条 JD（asaniczka 1.2 万 + Djinni 14.2 万 + emerging 1.7 万，Djinni 技能已全量抽取，见 `data/silver/all_jd_skills_stats_v1.json`）。聚类阶段为控制 KMeans 规模按粗粒度桶分层抽样（传统类每桶 5000、emerging 20000），技能画像基于全量统计。
 - **CI**：`ci.yml` 已挂 pgvector postgres service 并执行迁移；依赖 DB 的测试需读 `JOBNAV_POSTGRES_DSN`。涉及模型下载/全量向量的端到端用例不在 CI 冒烟覆盖范围内。
