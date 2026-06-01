@@ -1,0 +1,12 @@
+{
+  "RAG": ["retrieval augmented generation", "检索增强生成"],
+  "LangChain": ["langchain"],
+  "Vector Database": ["向量数据库", "vector database"],
+  "A/B Testing": ["a/b testing", "ab testing", "a/b测试", "ab测试"],
+  "RESTful API": ["rest api", "restful"],
+  "Microservices": ["微服务", "microservices"],
+  "Bash": ["shell script", "shell脚本"],
+  "Kubernetes": ["k8s", "kubernetes"],
+  "CI/CD": ["cicd", "持续集成", "持续部署"],
+  "Network Security": ["网络安全", "network security"]
+}
