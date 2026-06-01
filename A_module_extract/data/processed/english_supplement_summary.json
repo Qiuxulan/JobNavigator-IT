@@ -1,0 +1,72 @@
+{
+  "datasets": [
+    {
+      "name": "yashpwr/resume-ner-training-data",
+      "use": "real English resume text for extraction demos and future weak labeling",
+      "rows_written": 5000
+    },
+    {
+      "name": "keerthanshetty/resume-skill-extractor-dataset",
+      "use": "real English JD text with required_skills labels for skill extraction evaluation",
+      "rows_written": 3050,
+      "unique_gold_skills": 8684
+    }
+  ],
+  "total_rows_written": 8050,
+  "top_level_outputs": [
+    "data/silver/resume_real_english.jsonl",
+    "data/silver/jd_skill_list_eval.jsonl"
+  ],
+  "sample_jd_skills": [
+    "*nix",
+    "*nix environment (Bash, command-line tools)",
+    ".NET",
+    ".NET development environments",
+    ".NET Programming with C#",
+    "1 year of Data Science related experience",
+    "1+ year of applied experience working with surveys throughout the employee lifecycle",
+    "10+ years of experience as a data scientist/applied statistician",
+    "12+ years of combined industry and post-graduate academic experience in a quantitative field",
+    "2+ years (Ph.D.) / 4+ years (MS/MA) relevant experience working with clinical, epidemiologic or genomic studies",
+    "2+ years professional data science and/or machine learning experience",
+    "2D/3D geometry",
+    "3+ years in data and analysis using large scale data sets",
+    "3+ years of analytics and data science experience",
+    "3+ years of applied experience working as an HRBP or consulting to organizations",
+    "3+ years of applied research experience",
+    "3+ years of data science experience",
+    "3+ years of direct people management; managing scientists",
+    "3+ years of engineering experience",
+    "3+ years of experience in developing ML/statistical models in an applied setting",
+    "3+ years of experience managing and mentoring data science, data engineering, and analytics teams",
+    "3+ years of experience managing and mentoring data science, data engineering, or analytics teams",
+    "3+ years of experience with scripting languages (Python, Java, etc.) or statistical packages (R, SAS, Matlab, etc.)",
+    "3+ years of industry experience or strong academic record",
+    "3+ years of relevant industry or postdoctoral experience",
+    "3CX",
+    "3D Computer Vision",
+    "3rd party data solutions",
+    "4+ years experience in a data scientist or data analyst role",
+    "4+ years of professional experience in a data science role",
+    "5 years of experience in data analysis",
+    "5+ years of behavioral modeling (parametric and non-parametric techniques)",
+    "5+ years of experience as a data scientist",
+    "5+ years of experience in M/L (Machine Learning)",
+    "5+ years of experience in network science (community finding, network effect measurement)",
+    "5+ years of experience with popular ML libraries",
+    "5+ years of leadership experience managing a team of 15+ data scientists and product analysts across multiple locations at a technology company",
+    "5+ years of research experience",
+    "5+ years of work experience in data science",
+    "5+ years working in SaaS",
+    "6+ years of experience as a data scientist, algorithmic engineer, or machine learning engineer",
+    "7+ years of experience with artificial intelligence and neural networks",
+    "8+ years experience working with data to drive marketing initiatives",
+    "8+ years of developing scalable and automated analytic processes/workflows",
+    "8+ years of experience as a data scientist, economist, applied scientist, research scientist or equivalent data analytics role",
+    "8+ years of SQL",
+    "A passion for statistical methodology, including an ability to unpack the assumptions and interpretations of various approaches",
+    "A/B Experiment Design and Analysis",
+    "A/B Experimentation",
+    "A/B experimentation"
+  ]
+}

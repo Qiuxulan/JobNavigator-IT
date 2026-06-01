@@ -1,0 +1,808 @@
+{
+  "dataset": "jjzha/skillspan",
+  "rows_read": 1000,
+  "rows_with_skills": 170,
+  "unique_skills": 282,
+  "top_skills": [
+    {
+      "skill": "leadership",
+      "count": 3
+    },
+    {
+      "skill": "communication skills",
+      "count": 2
+    },
+    {
+      "skill": "pioneer new approaches",
+      "count": 2
+    },
+    {
+      "skill": "high calibre",
+      "count": 1
+    },
+    {
+      "skill": "experienced",
+      "count": 1
+    },
+    {
+      "skill": "hands-on",
+      "count": 1
+    },
+    {
+      "skill": "develop/configure new tools",
+      "count": 1
+    },
+    {
+      "skill": "roll out environments",
+      "count": 1
+    },
+    {
+      "skill": "automate processes",
+      "count": 1
+    },
+    {
+      "skill": "be at the forefront of change",
+      "count": 1
+    },
+    {
+      "skill": "uses testing as a baseline practice",
+      "count": 1
+    },
+    {
+      "skill": "build cloud native applications scratch",
+      "count": 1
+    },
+    {
+      "skill": "tackle monolithic system estates",
+      "count": 1
+    },
+    {
+      "skill": "hands on",
+      "count": 1
+    },
+    {
+      "skill": "communicate at all levels",
+      "count": 1
+    },
+    {
+      "skill": "bringing complex technological issues into perspective",
+      "count": 1
+    },
+    {
+      "skill": "enabling our clients to adapt to changing needs",
+      "count": 1
+    },
+    {
+      "skill": "deliver better solutions",
+      "count": 1
+    },
+    {
+      "skill": "performs and accepts regular code reviews",
+      "count": 1
+    },
+    {
+      "skill": "consulting",
+      "count": 1
+    },
+    {
+      "skill": "articulate",
+      "count": 1
+    },
+    {
+      "skill": "identify value work",
+      "count": 1
+    },
+    {
+      "skill": "execute delivery",
+      "count": 1
+    },
+    {
+      "skill": "influencing stakeholders",
+      "count": 1
+    },
+    {
+      "skill": "up-skilling engineers",
+      "count": 1
+    },
+    {
+      "skill": "commercial awareness",
+      "count": 1
+    },
+    {
+      "skill": "pragmatic approach",
+      "count": 1
+    },
+    {
+      "skill": "problem-solving",
+      "count": 1
+    },
+    {
+      "skill": "systems thinker",
+      "count": 1
+    },
+    {
+      "skill": "working within and leading multi-functional teams",
+      "count": 1
+    },
+    {
+      "skill": "consultative engineering",
+      "count": 1
+    },
+    {
+      "skill": "identify articulate and influence the shape of business outcomes",
+      "count": 1
+    },
+    {
+      "skill": "balance the books between technology purism best-practice and solution-fit",
+      "count": 1
+    },
+    {
+      "skill": "collaborative solutioning",
+      "count": 1
+    },
+    {
+      "skill": "work in cross-functional teams",
+      "count": 1
+    },
+    {
+      "skill": "help others learn",
+      "count": 1
+    },
+    {
+      "skill": "grasp of a variety of technologies languages and methodologies",
+      "count": 1
+    },
+    {
+      "skill": "looking for a sense of purpose",
+      "count": 1
+    },
+    {
+      "skill": "want to make a real impact",
+      "count": 1
+    },
+    {
+      "skill": "develop services controls and patterns for cloud solutions",
+      "count": 1
+    },
+    {
+      "skill": "enable security and privacy at scale",
+      "count": 1
+    },
+    {
+      "skill": "ensuring adherence to best practice",
+      "count": 1
+    },
+    {
+      "skill": "contributing to architectural discussions and decisions",
+      "count": 1
+    },
+    {
+      "skill": "attending stand-ups",
+      "count": 1
+    },
+    {
+      "skill": "driving progress",
+      "count": 1
+    },
+    {
+      "skill": "proactively automate infrastructure and services",
+      "count": 1
+    },
+    {
+      "skill": "enable a small team to deliver value",
+      "count": 1
+    },
+    {
+      "skill": "planning and estimation for programmes of work",
+      "count": 1
+    },
+    {
+      "skill": "coordinating hosting systems development and operations",
+      "count": 1
+    },
+    {
+      "skill": "gather and analyse data",
+      "count": 1
+    },
+    {
+      "skill": "aid in informed decision-making",
+      "count": 1
+    },
+    {
+      "skill": "providing detailed realistic estimates",
+      "count": 1
+    },
+    {
+      "skill": "work with product qa and software dev teams",
+      "count": 1
+    },
+    {
+      "skill": "drive delivery",
+      "count": 1
+    },
+    {
+      "skill": "work closely with product and design teams",
+      "count": 1
+    },
+    {
+      "skill": "understand end-user requirements formulate use cases/user stories",
+      "count": 1
+    },
+    {
+      "skill": "make sound sustainable and practical technical decisions",
+      "count": 1
+    },
+    {
+      "skill": "drive optimisation for scalability efficiency and maintainability",
+      "count": 1
+    },
+    {
+      "skill": "interact skillfully with business stakeholders and third-party technical organisations",
+      "count": 1
+    },
+    {
+      "skill": "customer product and design focus",
+      "count": 1
+    },
+    {
+      "skill": "work well on a team",
+      "count": 1
+    },
+    {
+      "skill": "provide hands-on expertise",
+      "count": 1
+    },
+    {
+      "skill": "reviewing technical solutions designs and requirements",
+      "count": 1
+    },
+    {
+      "skill": "work collaboratively in brainstorming sessions",
+      "count": 1
+    },
+    {
+      "skill": "mentor other team members",
+      "count": 1
+    },
+    {
+      "skill": "coaching and leading others",
+      "count": 1
+    },
+    {
+      "skill": "define technical solutions",
+      "count": 1
+    },
+    {
+      "skill": "meet business needs",
+      "count": 1
+    },
+    {
+      "skill": "promoting and advocating agile and end to end ci/cd",
+      "count": 1
+    },
+    {
+      "skill": "foster high-performance collaborative technical work",
+      "count": 1
+    },
+    {
+      "skill": "dedicated self-starter",
+      "count": 1
+    },
+    {
+      "skill": "efficiently and professionally work on multiple projects",
+      "count": 1
+    },
+    {
+      "skill": "analytical evaluative and problem-solving abilities",
+      "count": 1
+    },
+    {
+      "skill": "pay close attention to detail with a high degree of accuracy",
+      "count": 1
+    },
+    {
+      "skill": "building and deploying applications to the cloud (aws)",
+      "count": 1
+    },
+    {
+      "skill": "building restful web services",
+      "count": 1
+    },
+    {
+      "skill": "hosting cost management",
+      "count": 1
+    },
+    {
+      "skill": "implementing and operating cloud services",
+      "count": 1
+    },
+    {
+      "skill": "implementing instrumentation",
+      "count": 1
+    },
+    {
+      "skill": "designing robust systems",
+      "count": 1
+    },
+    {
+      "skill": "developing",
+      "count": 1
+    },
+    {
+      "skill": "deploying",
+      "count": 1
+    },
+    {
+      "skill": "analyse business requirements",
+      "count": 1
+    },
+    {
+      "skill": "evaluate possible solution scenarios",
+      "count": 1
+    },
+    {
+      "skill": "recommend best business and it solution",
+      "count": 1
+    },
+    {
+      "skill": "understand user issues",
+      "count": 1
+    },
+    {
+      "skill": "translate technology issues into a form that is understandable to non-technical people",
+      "count": 1
+    },
+    {
+      "skill": "present technical solutions in line with clients ‘needs",
+      "count": 1
+    },
+    {
+      "skill": "develop application to interface third party systems",
+      "count": 1
+    },
+    {
+      "skill": "bug fixing",
+      "count": 1
+    },
+    {
+      "skill": "uat",
+      "count": 1
+    },
+    {
+      "skill": "business support",
+      "count": 1
+    },
+    {
+      "skill": "shell scripting",
+      "count": 1
+    },
+    {
+      "skill": "interfacing with the technical project manager at customers' premises",
+      "count": 1
+    },
+    {
+      "skill": "provide information",
+      "count": 1
+    },
+    {
+      "skill": "collaborate",
+      "count": 1
+    },
+    {
+      "skill": "coordinate developers",
+      "count": 1
+    },
+    {
+      "skill": "meet customer needs",
+      "count": 1
+    },
+    {
+      "skill": "create a multi-language and multi-framework unit test generator?",
+      "count": 1
+    },
+    {
+      "skill": "refactor code?",
+      "count": 1
+    },
+    {
+      "skill": "understand represent and generate code with machine learning?",
+      "count": 1
+    },
+    {
+      "skill": "generate documentation?",
+      "count": 1
+    },
+    {
+      "skill": "generate code snippets?",
+      "count": 1
+    },
+    {
+      "skill": "automatically find bugs in code?",
+      "count": 1
+    },
+    {
+      "skill": "tackled complex issues",
+      "count": 1
+    },
+    {
+      "skill": "passionate about tech",
+      "count": 1
+    },
+    {
+      "skill": "want to get involved in a project that is still young",
+      "count": 1
+    },
+    {
+      "skill": "team player",
+      "count": 1
+    },
+    {
+      "skill": "crack the test",
+      "count": 1
+    },
+    {
+      "skill": "wanting to take up the challenge of becoming a ts expert",
+      "count": 1
+    },
+    {
+      "skill": "express your creativity",
+      "count": 1
+    },
+    {
+      "skill": "working on technical subjects",
+      "count": 1
+    },
+    {
+      "skill": "domain expert",
+      "count": 1
+    },
+    {
+      "skill": "broad technical skills",
+      "count": 1
+    },
+    {
+      "skill": "business acumen",
+      "count": 1
+    },
+    {
+      "skill": "leads technical solutions",
+      "count": 1
+    },
+    {
+      "skill": "promote business strategy goals",
+      "count": 1
+    },
+    {
+      "skill": "driving digital transformation cloud adoption optimization and automation",
+      "count": 1
+    },
+    {
+      "skill": "technical skills",
+      "count": 1
+    },
+    {
+      "skill": "consultative approach",
+      "count": 1
+    },
+    {
+      "skill": "planning designing development and application of cloud architecture",
+      "count": 1
+    },
+    {
+      "skill": "achieve business strategies and transformations",
+      "count": 1
+    },
+    {
+      "skill": "provide counsel to senior leadership and teams",
+      "count": 1
+    },
+    {
+      "skill": "leads the development tailoring and enhancement of cloud frameworks methods and tools",
+      "count": 1
+    },
+    {
+      "skill": "ensure the alignment and integration of cloud processes and deliverables",
+      "count": 1
+    },
+    {
+      "skill": "leads the development of cloud transformation communications and education materials",
+      "count": 1
+    },
+    {
+      "skill": "provides thought leadership",
+      "count": 1
+    },
+    {
+      "skill": "development and execution of enterprise and domain-specific it strategies standards and guidelines",
+      "count": 1
+    },
+    {
+      "skill": "engages in business strategy development",
+      "count": 1
+    },
+    {
+      "skill": "identify new business capability and technology-driven opportunities",
+      "count": 1
+    },
+    {
+      "skill": "ensure alignment with a cloud-first strategy",
+      "count": 1
+    },
+    {
+      "skill": "defines operating models",
+      "count": 1
+    },
+    {
+      "skill": "exploit new capabilities automation and standardization",
+      "count": 1
+    },
+    {
+      "skill": "supports due diligence on merger acquisition strategic partnership and investment activities",
+      "count": 1
+    },
+    {
+      "skill": "provides oversight and leadership",
+      "count": 1
+    },
+    {
+      "skill": "analyzes pain points and opportunities",
+      "count": 1
+    },
+    {
+      "skill": "ensures the quality of reusable architecture patterns and reference models",
+      "count": 1
+    },
+    {
+      "skill": "provides thought leadership in solution architecture peer reviews and architecture governance",
+      "count": 1
+    },
+    {
+      "skill": "ensures that the it portfolio provide business value",
+      "count": 1
+    },
+    {
+      "skill": "optimize total cost of ownership",
+      "count": 1
+    },
+    {
+      "skill": "assesses projects for cloud impacts",
+      "count": 1
+    },
+    {
+      "skill": "provide regular reporting",
+      "count": 1
+    },
+    {
+      "skill": "elicitation and specification of architectural functional and non-functional requirements",
+      "count": 1
+    },
+    {
+      "skill": "managing remote teams",
+      "count": 1
+    },
+    {
+      "skill": "managing multi-million dollar budgets",
+      "count": 1
+    },
+    {
+      "skill": "managing various compliance standards",
+      "count": 1
+    },
+    {
+      "skill": "leading complex technology teams/organizations",
+      "count": 1
+    },
+    {
+      "skill": "achieving business goals through technology strategy",
+      "count": 1
+    },
+    {
+      "skill": "team building",
+      "count": 1
+    },
+    {
+      "skill": "management",
+      "count": 1
+    },
+    {
+      "skill": "entrepreneurial streak",
+      "count": 1
+    },
+    {
+      "skill": "communicator",
+      "count": 1
+    },
+    {
+      "skill": "know when to be decisive",
+      "count": 1
+    },
+    {
+      "skill": "ensure decisions are made quickly and efficiently",
+      "count": 1
+    },
+    {
+      "skill": "develop a solution in full",
+      "count": 1
+    },
+    {
+      "skill": "system design and configuration",
+      "count": 1
+    },
+    {
+      "skill": "application development",
+      "count": 1
+    },
+    {
+      "skill": "data integration",
+      "count": 1
+    },
+    {
+      "skill": "leverage everything around you",
+      "count": 1
+    },
+    {
+      "skill": "work with customers around the globe",
+      "count": 1
+    },
+    {
+      "skill": "be responsible for our customer's core company platform",
+      "count": 1
+    },
+    {
+      "skill": "work effectively in teams of technical and non-technical individuals",
+      "count": 1
+    },
+    {
+      "skill": "working in a rapidly changing environment",
+      "count": 1
+    },
+    {
+      "skill": "continuously learn",
+      "count": 1
+    },
+    {
+      "skill": "work independently",
+      "count": 1
+    },
+    {
+      "skill": "make decisions with minimal supervision",
+      "count": 1
+    },
+    {
+      "skill": "willingness and interest to travel",
+      "count": 1
+    },
+    {
+      "skill": "work within a cross-functional team",
+      "count": 1
+    },
+    {
+      "skill": "envision design and implement high-level solutions and technical requirements",
+      "count": 1
+    },
+    {
+      "skill": "thrive in a challenging and evolving start-up environment",
+      "count": 1
+    },
+    {
+      "skill": "develop the best possible product",
+      "count": 1
+    },
+    {
+      "skill": "work in a cross-functional team",
+      "count": 1
+    },
+    {
+      "skill": "implement new features in frontend projects",
+      "count": 1
+    },
+    {
+      "skill": "work on concepts and architecture",
+      "count": 1
+    },
+    {
+      "skill": "manage deployment of new releases",
+      "count": 1
+    },
+    {
+      "skill": "write and maintain technical documentation",
+      "count": 1
+    },
+    {
+      "skill": "code reviews",
+      "count": 1
+    },
+    {
+      "skill": "debugging",
+      "count": 1
+    },
+    {
+      "skill": "motivation",
+      "count": 1
+    },
+    {
+      "skill": "eagerness to learn",
+      "count": 1
+    },
+    {
+      "skill": "problem solve complex issues",
+      "count": 1
+    },
+    {
+      "skill": "attention to detail",
+      "count": 1
+    },
+    {
+      "skill": "maintain high quality and clean code",
+      "count": 1
+    },
+    {
+      "skill": "striving to improve",
+      "count": 1
+    },
+    {
+      "skill": "make the development process faster",
+      "count": 1
+    },
+    {
+      "skill": "keeping up to date with the latest developments trends",
+      "count": 1
+    },
+    {
+      "skill": "independent",
+      "count": 1
+    },
+    {
+      "skill": "curious",
+      "count": 1
+    },
+    {
+      "skill": "sharp",
+      "count": 1
+    },
+    {
+      "skill": "software development",
+      "count": 1
+    },
+    {
+      "skill": "passion about the business landscape",
+      "count": 1
+    },
+    {
+      "skill": "working with big data tools",
+      "count": 1
+    },
+    {
+      "skill": "define and share best practices",
+      "count": 1
+    },
+    {
+      "skill": "train and mentor other staff",
+      "count": 1
+    },
+    {
+      "skill": "building capability across the profession",
+      "count": 1
+    },
+    {
+      "skill": "ensure",
+      "count": 1
+    },
+    {
+      "skill": "leading and advising on design choices",
+      "count": 1
+    },
+    {
+      "skill": "ensuring that software balances technical and business considerations",
+      "count": 1
+    },
+    {
+      "skill": "provide",
+      "count": 1
+    },
+    {
+      "skill": "balance new and live services",
+      "count": 1
+    }
+  ]
+}
