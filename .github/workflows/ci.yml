@@ -9,15 +9,50 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    # B 模块的召回/推荐依赖 pgvector(job_roles.embedding 用 VECTOR(1024) +
+    # hnsw 余弦索引)。CI 起一个带 pgvector 扩展的 postgres,保证依赖 DB 的
+    # 代码路径(recall.py / build_job_vectors.py / recommender)能在 CI 中连库。
+    # 用官方 pgvector 镜像,自带 vector 扩展,无需额外编译。
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: jobnav
+          POSTGRES_PASSWORD: jobnav
+          POSTGRES_DB: jobnavigator
+        ports:
+          - 5432:5432
+        # 等 postgres healthy 再继续,避免连接 race
+        options: >-
+          --health-cmd "pg_isready -U jobnav -d jobnavigator"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      # 与 recall.py / build_job_vectors.py / recommender.py 默认 DSN 一致
+      JOBNAV_POSTGRES_DSN: postgresql://jobnav:jobnav@localhost:5432/jobnavigator
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Apply DB migrations (create pgvector ext + job_roles 等表)
+        env:
+          PGPASSWORD: jobnav
+        run: |
+          # psql 来自 ubuntu-latest 自带的 postgresql-client
+          psql -h localhost -p 5432 -U jobnav -d jobnavigator \
+               -v ON_ERROR_STOP=1 -f infra/db/migrations/001_init.sql
+
       - name: Run tests
         run: pytest -q

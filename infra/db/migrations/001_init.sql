@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS job_roles (
   salary_min_k INT,
   salary_max_k INT,
   required_skills JSONB DEFAULT '[]'::jsonb,
-  embedding VECTOR(384),
+  -- JobBERT-v3 输出 1024 维（旧的 384 是 SBERT 的维度，是 bug）
+  embedding VECTOR(1024),
   created_at TIMESTAMP DEFAULT NOW()
 );
 
@@ -57,4 +58,3 @@ CREATE TABLE IF NOT EXISTS graph_edges (
 CREATE INDEX IF NOT EXISTS idx_job_roles_embedding ON job_roles USING hnsw (embedding vector_cosine_ops);
 CREATE INDEX IF NOT EXISTS idx_graph_edges_src ON graph_edges(src_type, src_id);
 CREATE INDEX IF NOT EXISTS idx_graph_edges_dst ON graph_edges(dst_type, dst_id);
-
