@@ -1,0 +1,110 @@
+[
+  {
+    "name": "ML工程师求职者",
+    "skills": ["Python", "SQL", "Machine Learning", "PyTorch"],
+    "target_role": "Machine Learning Engineer",
+    "relevant_role_names": ["Machine Learning Engineer", "Machine Learning Research Engineer", "Data Scientist"]
+  },
+  {
+    "name": "RAG应用求职者",
+    "skills": ["Python", "LangChain", "向量数据库", "LLM"],
+    "target_role": "RAG Engineer",
+    "relevant_role_names": ["RAG Engineer", "AI Engineer", "AI Agent Engineer"]
+  },
+  {
+    "name": "计算机视觉求职者",
+    "skills": ["Python", "Deep Learning", "OpenCV", "PyTorch"],
+    "target_role": "Computer Vision Engineer",
+    "relevant_role_names": ["Computer Vision Engineer", "Machine Learning Engineer", "AI Research Engineer"]
+  },
+  {
+    "name": "MLOps求职者",
+    "skills": ["Python", "Docker", "Kubernetes", "Machine Learning"],
+    "target_role": "MLOps Engineer",
+    "relevant_role_names": ["MLOps Engineer", "Machine Learning Engineer"]
+  },
+  {
+    "name": "LLM推理求职者",
+    "skills": ["Python", "LLM", "CUDA", "Deep Learning"],
+    "target_role": "LLM Inference Engineer",
+    "relevant_role_names": ["LLM Inference Engineer", "AI Engineer", "Machine Learning Engineer"]
+  },
+  {
+    "name": "数据科学求职者",
+    "skills": ["Python", "Statistics", "Pandas", "SQL"],
+    "target_role": "Data Scientist",
+    "relevant_role_names": ["Data Scientist", "Machine Learning Engineer"]
+  },
+  {
+    "name": "数据工程求职者",
+    "skills": ["Python", "SQL", "Spark", "Airflow"],
+    "target_role": "Data Engineer",
+    "relevant_role_names": ["Data Engineer", "AI Data Engineer"]
+  },
+  {
+    "name": "Java后端求职者",
+    "skills": ["Java", "Spring", "MySQL", "REST API"],
+    "target_role": "Backend Java Engineer",
+    "relevant_role_names": ["Backend Java Engineer", "Cloud Java Engineer"]
+  },
+  {
+    "name": "Python后端求职者",
+    "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+    "target_role": "Backend Python Engineer",
+    "relevant_role_names": ["Backend Python Engineer", "Cloud Java Engineer"]
+  },
+  {
+    "name": "Go后端求职者",
+    "skills": ["Go", "Docker", "Microservices", "PostgreSQL"],
+    "target_role": "Backend Go Engineer",
+    "relevant_role_names": ["Backend Go Engineer"]
+  },
+  {
+    "name": "前端React求职者",
+    "skills": ["JavaScript", "React", "TypeScript", "CSS"],
+    "target_role": "Frontend React Engineer",
+    "relevant_role_names": ["Frontend React Engineer", "Full-Stack JavaScript Engineer", "React Native Engineer"]
+  },
+  {
+    "name": "前端Vue求职者",
+    "skills": ["JavaScript", "HTML", "CSS", "Sass"],
+    "target_role": "Frontend Vue Engineer",
+    "relevant_role_names": ["Frontend Vue Engineer", "Frontend React Engineer"]
+  },
+  {
+    "name": "iOS求职者",
+    "skills": ["Swift", "Objective-C", "Git", "REST API"],
+    "target_role": "iOS Engineer",
+    "relevant_role_names": ["iOS Engineer", "Flutter Engineer"]
+  },
+  {
+    "name": "Android求职者",
+    "skills": ["Kotlin", "Java", "Git", "REST API"],
+    "target_role": "Android Engineer",
+    "relevant_role_names": ["Android Engineer", "Flutter Engineer"]
+  },
+  {
+    "name": "DevOps求职者",
+    "skills": ["Docker", "Kubernetes", "AWS", "Terraform"],
+    "target_role": "DevOps Engineer",
+    "relevant_role_names": ["DevOps Engineer", "Azure DevOps Engineer", "Node.js DevOps Engineer"]
+  },
+  {
+    "name": "QA自动化求职者",
+    "skills": ["Selenium", "Java", "API", "Git"],
+    "target_role": "QA Automation Engineer",
+    "relevant_role_names": ["QA Automation Engineer", "API QA Automation Engineer"]
+  },
+  {
+    "name": "安全运维求职者",
+    "skills": ["Linux", "Python", "SIEM", "PowerShell"],
+    "target_role": "Security Operations Engineer",
+    "relevant_role_names": ["Security Operations Engineer", "Information Security Analyst"]
+  },
+  {
+    "name": "游戏Unity求职者",
+    "skills": ["C#", "OOP", "Git", "Algorithms"],
+    "target_role": "Unity Developer",
+    "relevant_role_names": ["Unity Developer", "Game C++ Engineer"]
+  }
+]

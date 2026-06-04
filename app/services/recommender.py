@@ -55,6 +55,15 @@ def _clean_skills(skills):
 
 
 @lru_cache(maxsize=1)
+def _load_roles():
+    # 岗位元数据按 role_id 建索引:pgvector 只存了召回需要的字段,
+    # core_skills/optional_skills/skill_freq 这些精排字段从 JSON 补。
+    with open(ROLES_JSON, encoding="utf-8") as f:
+        roles_list = json.load(f)
+    return {r.get("role_id"): r for r in roles_list}
+
+
+@lru_cache(maxsize=1)
 def _load_engine():
     """首次调用时加载模型 + 岗位库元数据(core/optional/skill_freq),之后复用缓存。
     召回不再在内存里现算岗位向量,改为查 pgvector(向量已由
@@ -63,13 +72,7 @@ def _load_engine():
     from sentence_transformers import SentenceTransformer
 
     model = SentenceTransformer(MODEL_NAME)
-
-    # 岗位元数据按 role_id 建索引:pgvector 只存了召回需要的字段,
-    # core_skills/optional_skills/skill_freq 这些精排字段从 JSON 补。
-    with open(ROLES_JSON, encoding="utf-8") as f:
-        roles_list = json.load(f)
-    roles_by_id = {r.get("role_id"): r for r in roles_list}
-
+    roles_by_id = _load_roles()
     return model, roles_by_id
 
 
@@ -98,6 +101,58 @@ def _skill_gap(user_skills, role_skills):
     return overlap, missing
 
 
+def _json_fallback_recall(profile: UserProfile, roles_by_id: dict, n: int):
+    """DB 向量表为空时的轻量兜底召回。
+
+    CI 和新同学本地环境常只有 gold 岗位库 JSON,还没跑 build_job_vectors
+    写入 pgvector。此时按目标岗位文本 + 技能重合做一个可复现候选集,
+    让推荐链路仍能返回结果;生产路径仍优先使用 pgvector ANN。
+    """
+    user_skills = {s.lower() for s in profile.skills}
+    target_tokens = {
+        token
+        for token in (profile.target_role or "").lower().replace("/", " ").replace("-", " ").split()
+        if token
+    }
+
+    recalled = []
+    for role in roles_by_id.values():
+        required = _clean_skills(role.get("required_skills", []))
+        core = _clean_skills(role.get("core_skills") or required)
+        role_skills = {s.lower() for s in required + core}
+        overlap_count = len(user_skills & role_skills)
+
+        role_text = " ".join(
+            [
+                role.get("role_name", ""),
+                role.get("fine_role", ""),
+                role.get("coarse_role", ""),
+                " ".join(role.get("search_keywords", [])),
+            ]
+        ).lower()
+        target_count = sum(1 for token in target_tokens if token in role_text)
+
+        # 分数保持在 0~1 附近,便于和后续精排公式兼容。
+        skill_score = overlap_count / max(len(user_skills), 1)
+        target_score = target_count / max(len(target_tokens), 1) if target_tokens else 0.0
+        score = 0.7 * skill_score + 0.3 * target_score
+        if score <= 0:
+            continue
+
+        recalled.append(
+            {
+                "job_id": role.get("role_id", "unknown"),
+                "title": role.get("role_name", ""),
+                "coarse_role": role.get("coarse_role", ""),
+                "required_skills": required,
+                "score": score,
+            }
+        )
+
+    recalled.sort(key=lambda x: x["score"], reverse=True)
+    return recalled[:n]
+
+
 def _role_to_jobrole(role: dict) -> JobRole:
     """把岗位库的一条记录映射成仓库的 JobRole 结构"""
     skills = _clean_skills(role.get("required_skills", []))
@@ -118,15 +173,24 @@ class RecommenderService:
 
     @staticmethod
     def recommend(profile: UserProfile, preference: UserPreference, top_k: int) -> list[RecommendationItem]:
-        from pipelines.taxonomy.recall import recall_topn  # 函数内 import,避免硬依赖
+        roles_by_id = _load_roles()
 
-        model, roles_by_id = _load_engine()
+        # 阶段一:优先 pgvector ANN 召回 Top-RECALL_N。
+        # 若本地/CI 只有 gold JSON,没有 psycopg/pgvector 或 job_roles 向量数据,
+        # 则使用 JSON 兜底召回,保证推荐服务仍有可用结果。
+        recalled = []
+        try:
+            from pipelines.taxonomy.recall import recall_topn  # 函数内 import,避免硬依赖
 
-        user_text = f"Target role: {profile.target_role or ''}. My skills: {', '.join(profile.skills)}"
-        user_vec = model.encode(user_text, normalize_embeddings=True)
+            model, roles_by_id = _load_engine()
+            user_text = f"Target role: {profile.target_role or ''}. My skills: {', '.join(profile.skills)}"
+            user_vec = model.encode(user_text, normalize_embeddings=True)
+            recalled = recall_topn(user_vec, RECALL_N, DSN)
+        except Exception:
+            recalled = []
 
-        # 阶段一:pgvector ANN 召回 Top-RECALL_N
-        recalled = recall_topn(user_vec, RECALL_N, DSN)
+        if not recalled:
+            recalled = _json_fallback_recall(profile, roles_by_id, RECALL_N)
 
         # 阶段二:精排
         items: list[RecommendationItem] = []
