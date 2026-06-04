@@ -186,7 +186,7 @@ v2 使用新增 JD `required_skills` 数据做弱标注增强；英文简历数�
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Train extractor_v1 with SkillSpan plus weak-labeled JD skill data.")
-    parser.add_argument("--output-dir", type=Path, default=Path("A_module_extract/models/extractor_v1"))
+    parser.add_argument("--output-dir", type=Path, default=Path("models/extractor_v1"))
     parser.add_argument("--base-model", default=BASE_MODEL)
     parser.add_argument(
         "--skillspan-cache-dir",
@@ -194,7 +194,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=Path.home()
         / ".cache/huggingface/datasets/jjzha___skillspan/default/0.0.0/33062e6bd0e03a5e01ae299ce0518f4613ef4298",
     )
-    parser.add_argument("--jd-skill-file", type=Path, default=Path("A_module_extract/data/silver/jd_skill_list_eval.jsonl"))
+    parser.add_argument("--jd-skill-file", type=Path, default=Path("data/silver/jd_skill_list_eval.jsonl"))
     parser.add_argument("--max-skillspan-train-samples", type=int, default=1000)
     parser.add_argument("--max-jd-train-samples", type=int, default=1000)
     parser.add_argument("--max-eval-samples", type=int, default=200)

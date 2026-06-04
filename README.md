@@ -200,3 +200,15 @@ docs/
 2. 系统与数据：`docs/02-system-data/`
 3. 接口与测试：`docs/03-api-testing/`
 4. 部署与运维：`docs/04-deployment-ops/`
+
+## 9. A 模块：英文简历 / JD 技能抽取
+
+A 模块已合并到项目根目录，不再使用独立的 `A_module_extract/` 文件夹。
+
+- 抽取与训练脚本：`pipelines/extract/`
+- 训练与评测数据：`data/silver/`
+- 下游结构化输出：`data/processed/`
+- 本地技能抽取模型：`models/extractor_v1/`
+- 评测报告：`reports/extractor_eval_v1.md`
+
+最终模型基于 `jjzha/jobbert_skill_extraction`，使用 1000 条 SkillSpan 人工 BIO 标注和 989 条 JD 弱标注继续训练。模型权重通过 Git LFS 管理。

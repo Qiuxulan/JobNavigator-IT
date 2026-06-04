@@ -294,7 +294,7 @@ METHODS = [
     ("kanban", "Kanban", [], False),
     ("jira", "Jira", [], False),
     ("confluence", "Confluence", [], False),
-    ("api", "API", ["apis"], False),
+    # 孤立 "API" 已移除:太泛、无区分度;具体 REST API/API Design 等保留。
     ("websocket", "WebSocket", ["websockets"], False),
     ("json", "JSON", [], False),
     ("xml", "XML", [], False),
@@ -304,6 +304,112 @@ METHODS = [
     ("blockchain", "Blockchain", ["web3", "smart contract", "smart contracts"], True),
     ("data-structures", "Data Structures", ["data structures and algorithms", "dsa"], False),
     ("algorithms", "Algorithms", ["algorithm"], False),
+]
+
+# === A 模块(简历抽取)中文别名补充:ZH_ALIASES 挂已有条目,A_MODULE_SKILLS 为新建条目 ===
+# 设计:不改动上面手工条目,统一在 build() 合并,便于回滚。
+ZH_ALIASES = {
+    "A/B Testing": ["a/b测试", "ab测试"],
+    "AI Agent": ["智能体"],
+    "Agile": ["敏捷开发"],
+    "Algorithms": ["算法"],
+    "Alibaba Cloud": ["阿里云"],
+    "Blockchain": ["区块链", "智能合约"],
+    "C": ["c语言"],
+    "CI/CD": ["持续集成", "持续部署"],
+    "Computer Vision": ["计算机视觉"],
+    "Cybersecurity": ["信息安全"],
+    "Data Analysis": ["数据分析"],
+    "Data Lake": ["数据湖"],
+    "Data Mining": ["数据挖掘"],
+    "Data Structures": ["数据结构"],
+    "Data Visualization": ["数据可视化"],
+    "Data Warehouse": ["数据仓库", "数仓"],
+    "Deep Learning": ["深度学习"],
+    "Diffusion Model": ["扩散模型"],
+    "Distributed Systems": ["分布式系统"],
+    "Elasticsearch": ["es搜索"],
+    "Embedding": ["向量嵌入"],
+    "Excel": ["数据透视表"],
+    "Feature Engineering": ["特征工程"],
+    "Fine-tuning": ["微调"],
+    "Go": ["go语言"],
+    "Knowledge Graph": ["知识图谱"],
+    "LLM": ["大语言模型", "大模型"],
+    "Machine Learning": ["机器学习"],
+    "Microservices": ["微服务"],
+    "Model Deployment": ["模型部署", "模型服务"],
+    "NLP": ["自然语言处理"],
+    "NoSQL": ["非关系型数据库"],
+    "OOP": ["面向对象"],
+    "Penetration Testing": ["渗透测试"],
+    "Prompt Engineering": ["提示词工程"],
+    "R": ["r语言"],
+    "RAG": ["检索增强生成"],
+    "Recommendation System": ["推荐系统"],
+    "Reinforcement Learning": ["强化学习"],
+    "Shell": ["shell脚本"],
+    "Statistics": ["统计", "统计建模"],
+    "System Design": ["系统设计"],
+    "Unit Testing": ["单元测试"],
+    "Vector Database": ["向量数据库"],
+    "Zero Trust": ["零信任"],
+}
+
+A_MODULE_SKILLS = [
+    ("aigc", "AIGC", ["生成式人工智能", "generative ai"], "ai_emerging", True),
+    ("cnn", "CNN", ["卷积神经网络", "convolutional neural network"], "ai_ml", False),
+    ("rnn", "RNN", ["循环神经网络", "recurrent neural network"], "ai_ml", False),
+    ("crf", "CRF", ["条件随机场", "conditional random field"], "ai_ml", False),
+    ("gnn", "Graph Neural Network", ["图神经网络", "gnn"], "ai_ml", False),
+    ("ner", "Named Entity Recognition", ["命名实体识别", "ner"], "ai_ml", False),
+    ("sentiment-analysis", "Sentiment Analysis", ["情感分析"], "ai_ml", False),
+    ("text-classification", "Text Classification", ["文本分类"], "ai_ml", False),
+    ("information-extraction", "Information Extraction", ["信息抽取"], "ai_ml", False),
+    ("supervised-learning", "Supervised Learning", ["监督学习"], "ai_ml", False),
+    ("unsupervised-learning", "Unsupervised Learning", ["无监督学习"], "ai_ml", False),
+    ("model-evaluation", "Model Evaluation", ["模型评估"], "ai_ml", False),
+    ("quantization", "Quantization", ["量化", "模型量化"], "ai_emerging", False),
+    ("multi-agent", "Multi-Agent System", ["多智能体", "multi-agent", "multi agent system"], "ai_emerging", True),
+    ("tool-calling", "Tool Calling", ["工具调用", "function calling"], "ai_emerging", True),
+    ("coze", "Coze", ["扣子"], "ai_emerging", True),
+    ("qwen", "Qwen", ["通义千问", "tongyi"], "ai_emerging", True),
+    ("business-intelligence", "Business Intelligence", ["商业智能", "bi"], "data_analysis", False),
+    ("dashboard", "Dashboard", ["仪表盘", "数据看板"], "data_analysis", False),
+    ("data-cleaning", "Data Cleaning", ["数据清洗"], "data_analysis", False),
+    ("hypothesis-testing", "Hypothesis Testing", ["假设检验"], "data_analysis", False),
+    ("time-series", "Time Series Analysis", ["时间序列分析", "时间序列"], "data_analysis", False),
+    ("data-governance", "Data Governance", ["数据治理"], "bigdata", False),
+    ("data-modeling", "Data Modeling", ["数据建模"], "bigdata", False),
+    ("data-quality", "Data Quality", ["数据质量"], "bigdata", False),
+    ("dimensional-modeling", "Dimensional Modeling", ["维度建模"], "bigdata", False),
+    ("cloud-computing", "Cloud Computing", ["云计算"], "cloud", True),
+    ("edge-computing", "Edge Computing", ["边缘计算"], "cloud", True),
+    ("tencent-cloud", "Tencent Cloud", ["腾讯云", "tencent cloud"], "cloud", False),
+    ("caching", "Caching", ["缓存"], "devops", False),
+    ("high-availability", "High Availability", ["高可用", "ha"], "devops", False),
+    ("load-balancing", "Load Balancing", ["负载均衡"], "devops", False),
+    ("message-queue", "Message Queue", ["消息队列", "mq"], "devops", False),
+    ("capacity-planning", "Capacity Planning", ["容量规划"], "devops", False),
+    ("performance-tuning", "Performance Tuning", ["性能调优", "性能优化"], "devops", False),
+    ("sre", "SRE", ["站点可靠性工程", "site reliability engineering"], "devops", True),
+    ("root-cause-analysis", "Root Cause Analysis", ["根因分析", "rca"], "devops", False),
+    ("compliance", "Compliance", ["合规"], "security", False),
+    ("cryptography", "Cryptography", ["密码学"], "security", False),
+    ("data-privacy", "Data Privacy", ["数据隐私"], "security", False),
+    ("iam", "Identity and Access Management", ["身份认证", "iam"], "security", False),
+    ("network-security", "Network Security", ["网络安全"], "security", False),
+    ("vulnerability-assessment", "Vulnerability Assessment", ["漏洞评估"], "security", False),
+    ("incident-response", "Incident Response", ["应急响应"], "security", False),
+    ("api-design", "API Design", ["接口设计"], "methods", False),
+    ("design-patterns", "Design Patterns", ["设计模式"], "methods", False),
+    ("regex", "Regular Expression", ["正则表达式", "regex", "regexp"], "methods", False),
+    ("web-scraping", "Web Scraping", ["爬虫", "网络爬虫", "web crawler", "crawler"], "methods", False),
+    ("integration-testing", "Integration Testing", ["集成测试"], "testing", False),
+    ("load-testing", "Load Testing", ["压力测试", "负载测试"], "testing", False),
+    ("rest-api-testing", "REST API Testing", ["接口测试", "api testing"], "testing", False),
+    ("gis", "GIS", ["地理信息系统"], "methods", False),
+    ("iot", "IoT", ["物联网", "internet of things"], "methods", True),
 ]
 
 ALL_GROUPS = {
@@ -333,7 +439,12 @@ def build():
     seen_ids = set()
     conflicts = []
 
-    for category, group in ALL_GROUPS.items():
+    # 把 A 模块新增条目按 category 并入(不改原始 ALL_GROUPS,便于回滚)
+    merged_groups = {cat: list(group) for cat, group in ALL_GROUPS.items()}
+    for sid, name, aliases, category, hot in A_MODULE_SKILLS:
+        merged_groups.setdefault(category, []).append((sid, name, aliases, hot))
+
+    for category, group in merged_groups.items():
         for sid, name, aliases, hot in group:
             if sid in seen_ids:
                 conflicts.append(("dup_id", sid))
@@ -346,6 +457,9 @@ def build():
             alias_set.add(sid.lower().replace("-", " "))
             alias_set.add(sid.lower())
             for a in aliases:
+                alias_set.add(a.lower())
+            # A 模块中文别名(挂到已有条目)
+            for a in ZH_ALIASES.get(name, []):
                 alias_set.add(a.lower())
 
             entry = {

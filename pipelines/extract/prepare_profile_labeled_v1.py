@@ -105,7 +105,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--out",
         type=Path,
-        default=Path("A_module_extract/data/silver/profile_labeled_v1.jsonl"),
+        default=Path("data/silver/profile_labeled_v1.jsonl"),
     )
     parser.add_argument("--limit", type=int, default=50)
     return parser
