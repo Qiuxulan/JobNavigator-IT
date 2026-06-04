@@ -90,14 +90,28 @@ B_TO_C_ID: dict[str, str] = {
     "knowledge-graph":       "sk_rag",
     # ── Agent ─────────────────────────────────────────────
     "agent":                 "sk_agent",
-    "mcp":                   "sk_tool_use",    # Model Context Protocol = Tool Use
+    "multi-agent":           "sk_agent",
+    "mcp":                   "sk_tool_use",
+    "tool-calling":          "sk_tool_use",    # B词表里function calling对应的ID
     # ── 微调 ──────────────────────────────────────────────
     "fine-tuning":           "sk_lora_finetune",
     "mlops":                 "sk_lora_finetune",
+    "quantization":          "sk_lora_finetune",  # 模型量化归入微调体系
     # ── 后端 / 部署 ───────────────────────────────────────
     "fastapi":               "sk_fastapi",
     "docker":                "sk_docker",
     "kubernetes":            "sk_docker",
+    # ── 数据结构与算法 ────────────────────────────────────
+    "data-structures":       "sk_data_structure",
+    "algorithms":            "sk_data_structure",
+    # ── 数据分析补充 ──────────────────────────────────────
+    "ab-testing":            "sk_ab_test",
+    "business-intelligence": "sk_tableau",
+    "data-visualization":    "sk_matplotlib",
+    "data-mining":           "sk_pandas",
+    "data-analysis":         "sk_pandas",
+    "time-series":           "sk_stats",
+    "hypothesis-testing":    "sk_stats",
 }
 
 # B 技能原始名称（小写）→ C 内部 ID（skill_norm 失效时的直接兜底）
