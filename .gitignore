@@ -247,3 +247,7 @@ data/metadata/*
 !data/silver/.gitkeep
 !data/gold/.gitkeep
 !data/metadata/.gitkeep
+!data/silver/jd_skill_list_eval.jsonl
+!data/silver/profile_labeled_v1.jsonl
+!data/silver/resume_it_english.jsonl
+!data/silver/skillspan_skill_eval.jsonl

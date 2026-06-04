@@ -22,7 +22,7 @@ A 模块负责把英文简历、GitHub 风格文本和 JD 文本抽取为统一�
 最终仅保留一个本地模型：
 
 ```text
-A_module_extract/models/extractor_v1/
+models/extractor_v1/
 ```
 
 训练环境：
@@ -49,7 +49,7 @@ A_module_extract/models/extractor_v1/
 
 模型增强启用后，加载顺序如下：
 
-1. `A_module_extract/models/extractor_v1/`
+1. `models/extractor_v1/`
 2. Hugging Face `jjzha/jobbert_skill_extraction`
 3. 模型不可用时继续使用规则抽取，不让在线 API 失败
 

@@ -78,9 +78,9 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Filter real English resumes to IT-related profiles.")
-    parser.add_argument("--input", type=Path, default=Path("A_module_extract/data/silver/resume_real_english.jsonl"))
-    parser.add_argument("--out", type=Path, default=Path("A_module_extract/data/silver/resume_it_english.jsonl"))
-    parser.add_argument("--summary-out", type=Path, default=Path("A_module_extract/data/processed/resume_it_filter_summary.json"))
+    parser.add_argument("--input", type=Path, default=Path("data/silver/resume_real_english.jsonl"))
+    parser.add_argument("--out", type=Path, default=Path("data/silver/resume_it_english.jsonl"))
+    parser.add_argument("--summary-out", type=Path, default=Path("data/processed/resume_it_filter_summary.json"))
     parser.add_argument("--min-hits", type=int, default=2)
     return parser
 
