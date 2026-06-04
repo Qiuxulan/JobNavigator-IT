@@ -81,11 +81,20 @@ def _trend_bonus(role_name: str) -> float:
     return 0.5  # 默认中性
 
 
+# 技能覆盖关系:掌握 key 即视为覆盖 values,消除"有更具体技能却被判缺更宽泛技能"的假缺口。
+SKILL_COVERAGE = {
+    "spring boot": ["spring"],
+}
+
+
 def _skill_gap(user_skills, role_skills):
-    """大小写不敏感地算重合 / 缺口"""
+    """大小写不敏感地算重合 / 缺口;支持覆盖关系(如 Spring Boot 覆盖 Spring)。"""
     u = {s.lower() for s in user_skills}
-    overlap = [rs for rs in role_skills if rs.lower() in u]
-    missing = [rs for rs in role_skills if rs.lower() not in u]
+    covered = set(u)
+    for s in u:
+        covered.update(c.lower() for c in SKILL_COVERAGE.get(s, []))
+    overlap = [rs for rs in role_skills if rs.lower() in covered]
+    missing = [rs for rs in role_skills if rs.lower() not in covered]
     return overlap, missing
 
 
@@ -133,10 +142,13 @@ class RecommenderService:
                     "required_skills": cand.get("required_skills", []),
                 }
 
-            # 缺口只针对核心技能;没有 core_skills 字段时退回 required_skills(兼容)
+            # 缺口(missing)按 core 算,保持学习路径聚焦、gap_penalty 口径不变(不影响排序)。
             core = role.get("core_skills") or role.get("required_skills", [])
-            role_skills = _clean_skills(core)
-            overlap, missing = _skill_gap(profile.skills, role_skills)
+            core_skills = _clean_skills(core)
+            _, missing = _skill_gap(profile.skills, core_skills)
+            # overlap(展示用)放宽到完整画像 required(含 core/optional),不参与打分、不改顺序。
+            required_skills = _clean_skills(role.get("required_skills", []) or core)
+            overlap, _ = _skill_gap(profile.skills, required_skills)
             # 加分技能(展示用,不算缺口)
             optional = _clean_skills(role.get("optional_skills", []))
 
