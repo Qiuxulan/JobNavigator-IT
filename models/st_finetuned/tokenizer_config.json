@@ -5,7 +5,7 @@
   "do_lower_case": true,
   "eos_token": "</s>",
   "is_local": false,
-  "local_files_only": false,
+  "local_files_only": true,
   "mask_token": "<mask>",
   "max_length": 128,
   "model_max_length": 128,

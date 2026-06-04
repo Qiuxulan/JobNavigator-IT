@@ -1,77 +1,55 @@
 {
   "generated": "2026-06-01",
   "training_data": {
-    "positive_pairs": 397,
-    "train_pos": 304,
-    "val_pos": 93,
-    "resources": 327,
+    "positive_pairs": 395,
+    "train_pos": 303,
+    "val_pos": 92,
+    "resources": 326,
     "skills": 29
   },
   "models": {
     "keyword_rules": {
       "metrics": {
-        "p@1": 0.1379,
+        "p@1": 0.2759,
         "p@3": 0.2414,
-        "r@3": 0.4317,
-        "mrr": 0.3816,
+        "r@3": 0.3863,
+        "mrr": 0.454,
         "n_skills_evaluated": 29
       }
     },
     "tfidf_bilingual": {
       "metrics": {
-        "p@1": 0.2759,
-        "p@3": 0.1954,
-        "r@3": 0.3225,
-        "mrr": 0.4006,
+        "p@1": 0.2414,
+        "p@3": 0.1724,
+        "r@3": 0.3101,
+        "mrr": 0.3994,
         "n_skills_evaluated": 29
       },
-      "vocab_size": 2060,
-      "model_file": "models/tfidf_matcher.pkl"
+      "vocab_size": 2045,
+      "model_file": "C:\\Users\\24222\\Desktop\\JobNavigator-IT\\models\\tfidf_matcher.pkl"
     },
     "st_zeroshot": {
       "metrics": {
-        "p@1": 0.1034,
-        "p@3": 0.1724,
-        "r@3": 0.2892,
-        "mrr": 0.2885,
+        "p@1": 0.1724,
+        "p@3": 0.1954,
+        "r@3": 0.3159,
+        "mrr": 0.3155,
         "n_skills_evaluated": 29
       }
     },
     "st_finetuned": {
       "metrics": {
-        "p@1": 0.2414,
-        "p@3": 0.2299,
-        "r@3": 0.4008,
-        "mrr": 0.4569,
+        "p@1": 0.2069,
+        "p@3": 0.2529,
+        "r@3": 0.43,
+        "mrr": 0.4368,
         "n_skills_evaluated": 29
       },
-      "model_dir": "models/st_finetuned",
+      "model_dir": "C:\\Users\\24222\\Desktop\\JobNavigator-IT\\models\\st_finetuned",
       "base_model": "paraphrase-multilingual-MiniLM-L12-v2",
-      "loss_function": "MultipleNegativesRankingLoss",
-      "epochs": 3,
-      "batch_size": 32,
-      "learning_rate": "2e-5",
-      "train_loss_curve": [
-        {"epoch": 1, "loss": 2.653},
-        {"epoch": 2, "loss": 1.951},
-        {"epoch": 3, "loss": 1.882}
-      ]
+      "epochs": 3
     }
   },
-  "best_model": "st_finetuned",
-  "best_criterion": "MRR（推荐系统首选指标——衡量正确资源出现多快）",
-  "recommendation": "MRR最高: st_finetuned (0.457)，相比零样本 +58.7%，相比关键词规则 +19.6%",
-  "improvement_notes": {
-    "zeroshot_vs_finetuned": {
-      "mrr": "0.288 → 0.457  (+58.7%)",
-      "p@3": "0.172 → 0.230  (+33.7%)",
-      "r@3": "0.289 → 0.401  (+38.8%)"
-    },
-    "keyword_vs_finetuned": {
-      "mrr": "0.382 → 0.457  (+19.6%)",
-      "p@3": "0.241 → 0.230  (-4.6%，MRR优先)",
-      "r@3": "0.432 → 0.401  (-7.2%)"
-    },
-    "why_mnr_loss": "MultipleNegativesRankingLoss: 每个正样本对隐含 batch_size-1=31 个负例，训练信号丰富；相比 CosineSimilarityLoss（显式负样本，小数据易过拟合）效果更好"
-  }
+  "best_model": "keyword_rules",
+  "recommendation": "P@3最高: keyword_rules (0.241)"
 }
