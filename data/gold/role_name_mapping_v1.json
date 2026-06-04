@@ -1,0 +1,1201 @@
+{
+  "summary": {
+    "original_clusters": 91,
+    "final_roles": 69,
+    "dropped_clusters": 12,
+    "generated_at": "2026-05-28 16:11:17"
+  },
+  "final_roles": {
+    "role_000": {
+      "final_name": "Machine Learning Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 1684,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_001",
+          "original_name": "MLOps Engineer",
+          "original_size": 1114,
+          "confidence": "高",
+          "note": "titles 全是 Machine Learning Engineer,虽然命名叫 MLOps 但其实是 ML Engineer"
+        },
+        {
+          "original_role_id": "role_027",
+          "original_name": "Data Science(Agricultural-Research Engineer)",
+          "original_size": 570,
+          "confidence": "中",
+          "note": "titles 含 MLOps Engineer/Machine Learning Engineer,skills=ML/TensorFlow/PyTorch/CV/NLP。这其实是传统 ML Engineer,建议独立(跟 Emerging AI 的 role_001 区分:这边是 djinni+asaniczka 来源)。"
+        }
+      ]
+    },
+    "role_001": {
+      "final_name": "AI Agent Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 1313,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_000",
+          "original_name": "Forward Deployed AI Engineer",
+          "original_size": 1313,
+          "confidence": "高",
+          "note": "titles 全是 AI Agent / Agentic AI Engineer,top skill=AI Agent"
+        }
+      ]
+    },
+    "role_002": {
+      "final_name": "AI Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 853,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_002",
+          "original_name": "AI Solutions Architect",
+          "original_size": 853,
+          "confidence": "高",
+          "note": "titles 全是 \"AI Engineer\" / \"AI Software Engineer\",这是最通用的 AI 工程师簇"
+        }
+      ]
+    },
+    "role_003": {
+      "final_name": "AI Data Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 761,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_005",
+          "original_name": "MLOps Engineer(AI data engineer)",
+          "original_size": 558,
+          "confidence": "高",
+          "note": "titles 含 Data Engineer + Agentic AI,search_kw 首项 AI data engineer"
+        },
+        {
+          "original_role_id": "role_018",
+          "original_name": "Forward Deployed AI Engineer(RAG engineer)",
+          "original_size": 203,
+          "confidence": "中",
+          "note": "titles 是 \"Cyber AI Data Engineer/Data Analytics\" 等,虽然 search_kw 首项是 RAG engineer,但 titles 都是 Data/Analytics 方向。建议合并到 role_005 AI Data Engineer。"
+        }
+      ]
+    },
+    "role_004": {
+      "final_name": "AI Research Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 580,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_003",
+          "original_name": "AI Infrastructure Engineer",
+          "original_size": 580,
+          "confidence": "高",
+          "note": "titles 全是 AI Research Engineer / Advanced AI Research Engineer"
+        }
+      ]
+    },
+    "role_005": {
+      "final_name": "AI Evaluation Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 563,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_004",
+          "original_name": "Forward Deployed AI Engineer(AI evaluation engineer)",
+          "original_size": 563,
+          "confidence": "高",
+          "note": "titles 含 \"AI Evaluation Engineer\" 多次,search_kw 首项也是 AI evaluation engineer"
+        }
+      ]
+    },
+    "role_006": {
+      "final_name": "MLOps Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 499,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_006",
+          "original_name": "AI Infrastructure Engineer(MLOps engineer)",
+          "original_size": 499,
+          "confidence": "高",
+          "note": "titles 全是 MLOps Engineer / LLMOps & MLOps,top skill=MLOps"
+        }
+      ]
+    },
+    "role_007": {
+      "final_name": "Applied AI Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 483,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_009",
+          "original_name": "LLMOps Engineer",
+          "original_size": 397,
+          "confidence": "高",
+          "note": "titles 都是 Applied AI Health Data System Engineer / AI Healthcare Engineer,是行业落地型 AI 工程师"
+        },
+        {
+          "original_role_id": "role_022",
+          "original_name": "Forward Deployed AI Engineer(applied AI engineer)",
+          "original_size": 86,
+          "confidence": "中",
+          "note": "titles 含 \"Applied AI Engineer, Founding Team\",但只有 86 条,skills 只有 Oracle Database。建议合并到 role_009 Applied AI Engineer。"
+        }
+      ]
+    },
+    "role_008": {
+      "final_name": "LLM Inference Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 469,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_007",
+          "original_name": "Inference Engineer",
+          "original_size": 469,
+          "confidence": "高",
+          "note": "titles 全是 LLM Inference / LLM Integration,skills 含 Fine-tuning"
+        }
+      ]
+    },
+    "role_009": {
+      "final_name": "Prompt Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 455,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_008",
+          "original_name": "Forward Deployed AI Engineer(prompt engineer)",
+          "original_size": 455,
+          "confidence": "中",
+          "note": "search_kw 首项 prompt engineer,但 titles 较杂(Staff Security/Data Engineer),只有1条 Prompt Engineering Architect。技能有 Prompt Engineering。判定 Prompt Engineer。"
+        }
+      ]
+    },
+    "role_010": {
+      "final_name": "AI Solutions Architect",
+      "coarse_role": "Emerging AI",
+      "total_size": 428,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_014",
+          "original_name": "Forward Deployed AI Engineer(AI solutions architect)",
+          "original_size": 281,
+          "confidence": "高",
+          "note": "titles 都是 Solutions Architect / Cloud Support Engineer / AI Delivery,search_kw 首项 AI solutions architect"
+        },
+        {
+          "original_role_id": "role_020",
+          "original_name": "AI Solutions Architect(AI infrastructure engineer)",
+          "original_size": 147,
+          "confidence": "中",
+          "note": "titles 含 AI Agents Solutions Architect/ML Platform Engineer,search_kw 含 AI solutions architect。建议合并到 role_014。"
+        }
+      ]
+    },
+    "role_011": {
+      "final_name": "RAG Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 380,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_010",
+          "original_name": "RAG Engineer",
+          "original_size": 380,
+          "confidence": "高",
+          "note": "titles 含 \"Generative AI Applications Engineer (Agents & RAG)\",top skill=RAG"
+        }
+      ]
+    },
+    "role_012": {
+      "final_name": "Computer Vision Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 360,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_012",
+          "original_name": "MLOps Engineer(computer vision engineer)",
+          "original_size": 360,
+          "confidence": "高",
+          "note": "titles 全是 Computer Vision Engineer,top skill=Computer Vision"
+        }
+      ]
+    },
+    "role_013": {
+      "final_name": "Forward Deployed AI Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 335,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_013",
+          "original_name": "Forward Deployed AI Engineer(forward deployed engineer)",
+          "original_size": 335,
+          "confidence": "高",
+          "note": "titles 全是 Forward Deployed Engineer (AWS/Snowflake),search_kw 唯一"
+        }
+      ]
+    },
+    "role_014": {
+      "final_name": "Machine Learning Research Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 251,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_015",
+          "original_name": "AI Infrastructure Engineer(machine learning engineer)",
+          "original_size": 251,
+          "confidence": "中",
+          "note": "titles 含 Machine Learning Engineer + Research Engineer + ML/AI Platform,介于 ML Engineer 和 Research 之间。考虑合并到 role_001 还是独立?独立更细。"
+        }
+      ]
+    },
+    "role_015": {
+      "final_name": "Context Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 221,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_017",
+          "original_name": "Forward Deployed AI Engineer(context engineer)",
+          "original_size": 221,
+          "confidence": "中",
+          "note": "titles 含 \"Context Engineer - Manager - Consulting\" 但其他 titles 杂(Lifestyle Strategist/AI Native)。search_kw 首项 context engineer。新兴岗位,保留。"
+        }
+      ]
+    },
+    "role_016": {
+      "final_name": "AI Infrastructure Engineer",
+      "coarse_role": "Emerging AI",
+      "total_size": 194,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_019",
+          "original_name": "Forward Deployed AI Engineer(AI delivery engineer)",
+          "original_size": 194,
+          "confidence": "高",
+          "note": "titles 全是 AI Infrastructure / Platform Engineering,top skill=Oracle Database/Distributed Systems"
+        }
+      ]
+    },
+    "role_017": {
+      "final_name": "Data Engineer",
+      "coarse_role": "AI & Data",
+      "total_size": 1523,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_023",
+          "original_name": "Data Engineer",
+          "original_size": 916,
+          "confidence": "高",
+          "note": "titles 全是 Data Engineer / Big Data Engineer / Data Architect,top skill=Apache Spark"
+        },
+        {
+          "original_role_id": "role_025",
+          "original_name": "SQL",
+          "original_size": 607,
+          "confidence": "中",
+          "note": "titles 是 Data Engineer / Data Architect,skills=SQL/ETL/Snowflake。建议合并到 role_023 Data Engineer。"
+        }
+      ]
+    },
+    "role_018": {
+      "final_name": "Business Analyst",
+      "coarse_role": "AI & Data",
+      "total_size": 1275,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_030",
+          "original_name": "Business Analyst",
+          "original_size": 303,
+          "confidence": "中",
+          "note": "titles 全是 Business Analyst,但 coarse 是 AI&Data。建议合并到 role_084 PM&BA 大类的 Business Analyst。但跨大类合并会乱,先保留独立名 \"Data Business Analyst\"。"
+        },
+        {
+          "original_role_id": "role_084",
+          "original_name": "Business Analyst",
+          "original_size": 972,
+          "confidence": "高",
+          "note": "titles 全是 Business Analyst"
+        }
+      ]
+    },
+    "role_019": {
+      "final_name": "Data Scientist",
+      "coarse_role": "AI & Data",
+      "total_size": 587,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_026",
+          "original_name": "Data Science",
+          "original_size": 587,
+          "confidence": "高",
+          "note": "titles 全是 Data Scientist / Senior Data Scientist"
+        }
+      ]
+    },
+    "role_020": {
+      "final_name": "Database Administrator",
+      "coarse_role": "AI & Data",
+      "total_size": 315,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_029",
+          "original_name": "SQL(Data Base Administrator)",
+          "original_size": 315,
+          "confidence": "高",
+          "note": "titles 全是 Database Administrator / Database Engineer"
+        }
+      ]
+    },
+    "role_021": {
+      "final_name": "Backend Java Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 1011,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_031",
+          "original_name": "Java",
+          "original_size": 1011,
+          "confidence": "高",
+          "note": "titles 全是 Java Developer/Engineer"
+        }
+      ]
+    },
+    "role_022": {
+      "final_name": ".NET Backend Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 920,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_032",
+          "original_name": ".NET",
+          "original_size": 920,
+          "confidence": "高",
+          "note": "titles 全是 .NET Developer"
+        }
+      ]
+    },
+    "role_023": {
+      "final_name": "Backend Node.js Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 744,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_033",
+          "original_name": "Node.js",
+          "original_size": 744,
+          "confidence": "高",
+          "note": "titles 全是 Node.js Developer / Full Stack"
+        }
+      ]
+    },
+    "role_024": {
+      "final_name": "Backend PHP Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 699,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_034",
+          "original_name": "PHP",
+          "original_size": 699,
+          "confidence": "高",
+          "note": "titles 全是 PHP Developer / Magento Developer"
+        }
+      ]
+    },
+    "role_025": {
+      "final_name": "Backend Python Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 622,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_035",
+          "original_name": "Python",
+          "original_size": 622,
+          "confidence": "高",
+          "note": "titles 全是 Python Developer / Python Engineer"
+        }
+      ]
+    },
+    "role_026": {
+      "final_name": "C++ Software Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 268,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_036",
+          "original_name": "C++",
+          "original_size": 268,
+          "confidence": "高",
+          "note": "titles 主要 C++ Developer / C++ Engineer,coarse=Backend"
+        }
+      ]
+    },
+    "role_027": {
+      "final_name": "Backend Go Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 261,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_037",
+          "original_name": "Golang",
+          "original_size": 261,
+          "confidence": "高",
+          "note": "titles 全是 Golang Developer/Engineer"
+        }
+      ]
+    },
+    "role_028": {
+      "final_name": "Backend Ruby Engineer",
+      "coarse_role": "Backend Development",
+      "total_size": 222,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_039",
+          "original_name": "Ruby",
+          "original_size": 222,
+          "confidence": "高",
+          "note": "titles 全是 Ruby on Rails Developer/Engineer"
+        }
+      ]
+    },
+    "role_029": {
+      "final_name": "Frontend React Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 1350,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_040",
+          "original_name": "JavaScript",
+          "original_size": 1350,
+          "confidence": "高",
+          "note": "titles 全是 React Developer / Frontend Developer,top skill=React"
+        }
+      ]
+    },
+    "role_030": {
+      "final_name": "Frontend Angular Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 793,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_041",
+          "original_name": "JavaScript(Node.js)",
+          "original_size": 793,
+          "confidence": "高",
+          "note": "titles 全是 Angular Developer,top skill=Angular"
+        }
+      ]
+    },
+    "role_031": {
+      "final_name": "Full-Stack JavaScript Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 771,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_042",
+          "original_name": "JavaScript(Node.js)",
+          "original_size": 771,
+          "confidence": "高",
+          "note": "titles 全是 Full Stack / Full-Stack JavaScript Developer,skills=Node.js+React+MongoDB"
+        }
+      ]
+    },
+    "role_032": {
+      "final_name": "Frontend Vue Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 544,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_043",
+          "original_name": "JavaScript(Node.js)",
+          "original_size": 544,
+          "confidence": "高",
+          "note": "titles 含 Vue.js Developer,top skill=Vue.js"
+        }
+      ]
+    },
+    "role_033": {
+      "final_name": "React Native Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 402,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_044",
+          "original_name": "JavaScript(Android)",
+          "original_size": 402,
+          "confidence": "高",
+          "note": "titles 全是 React Native Developer"
+        }
+      ]
+    },
+    "role_034": {
+      "final_name": "WordPress Developer",
+      "coarse_role": "Frontend Development",
+      "total_size": 291,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_045",
+          "original_name": "JavaScript(PHP)",
+          "original_size": 291,
+          "confidence": "高",
+          "note": "titles 全是 WordPress Developer,这是个独立细分"
+        }
+      ]
+    },
+    "role_035": {
+      "final_name": "Full-Stack .NET Engineer",
+      "coarse_role": "Frontend Development",
+      "total_size": 231,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_047",
+          "original_name": ".NET",
+          "original_size": 231,
+          "confidence": "中",
+          "note": "titles 是 Angular Developer/Full Stack/Front-end Developer,skills=.NET+JS+Angular。叫 \"Full-Stack .NET Engineer\"。"
+        }
+      ]
+    },
+    "role_036": {
+      "final_name": "iOS Engineer",
+      "coarse_role": "Mobile Development",
+      "total_size": 1750,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_048",
+          "original_name": "iOS",
+          "original_size": 931,
+          "confidence": "高",
+          "note": "titles 全是 iOS Developer,top skill=iOS/Swift"
+        },
+        {
+          "original_role_id": "role_050",
+          "original_name": "iOS(Android)",
+          "original_size": 819,
+          "confidence": "中",
+          "note": "titles 全是 iOS Developer(和 role_048 几乎一样)。建议合并到 role_048 iOS Engineer。"
+        }
+      ]
+    },
+    "role_037": {
+      "final_name": "Android Engineer",
+      "coarse_role": "Mobile Development",
+      "total_size": 1561,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_049",
+          "original_name": "Android",
+          "original_size": 893,
+          "confidence": "高",
+          "note": "titles 全是 Android Developer,top skill=Android/Kotlin"
+        },
+        {
+          "original_role_id": "role_051",
+          "original_name": "Android(iOS)",
+          "original_size": 668,
+          "confidence": "中",
+          "note": "titles 全是 Android Developer(和 role_049 几乎一样)。建议合并到 role_049 Android Engineer。"
+        }
+      ]
+    },
+    "role_038": {
+      "final_name": "Flutter Engineer",
+      "coarse_role": "Mobile Development",
+      "total_size": 620,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_052",
+          "original_name": "Flutter",
+          "original_size": 620,
+          "confidence": "高",
+          "note": "titles 全是 Flutter Developer/Engineer"
+        }
+      ]
+    },
+    "role_039": {
+      "final_name": "Mobile C++ Engineer",
+      "coarse_role": "Mobile Development",
+      "total_size": 229,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_054",
+          "original_name": "C++",
+          "original_size": 229,
+          "confidence": "中",
+          "note": "titles 含 Android Developer + C++ Developer + Senior C++ Engineer,skills 含 Android+C++。是手机底层开发(NDK 类)。"
+        }
+      ]
+    },
+    "role_040": {
+      "final_name": "UI/UX Designer",
+      "coarse_role": "Mobile Development",
+      "total_size": 214,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_055",
+          "original_name": "Design",
+          "original_size": 214,
+          "confidence": "高",
+          "note": "titles 全是 UI/UX Designer / Product Designer。UI/UX 保留(用户决策)。"
+        }
+      ]
+    },
+    "role_041": {
+      "final_name": "DevOps Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 2239,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_057",
+          "original_name": "DevOps",
+          "original_size": 1473,
+          "confidence": "高",
+          "note": "titles 全是 DevOps Engineer,top skill=Terraform/AWS/K8s"
+        },
+        {
+          "original_role_id": "role_058",
+          "original_name": "DevOps(Sysadmin)",
+          "original_size": 766,
+          "confidence": "中",
+          "note": "titles 全是 DevOps Engineer(和 role_057 接近)。建议合并到 role_057。"
+        }
+      ]
+    },
+    "role_042": {
+      "final_name": "Azure DevOps Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 624,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_059",
+          "original_name": "DevOps(.NET)",
+          "original_size": 624,
+          "confidence": "高",
+          "note": "titles 含 Azure DevOps Engineer,skills 有 Microsoft Azure。Azure 专项,独立。"
+        }
+      ]
+    },
+    "role_043": {
+      "final_name": "System Administrator",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 427,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_060",
+          "original_name": "Sysadmin",
+          "original_size": 427,
+          "confidence": "高",
+          "note": "titles 全是 System Administrator / Linux SA / Network Engineer"
+        }
+      ]
+    },
+    "role_044": {
+      "final_name": "Node.js DevOps Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 421,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_061",
+          "original_name": "DevOps(Node.js)",
+          "original_size": 421,
+          "confidence": "中",
+          "note": "titles 含 DevOps Engineer + Elixir/Golang/Full Stack。Node.js 是核心。"
+        }
+      ]
+    },
+    "role_045": {
+      "final_name": "Cloud Java Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 419,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_062",
+          "original_name": "Java",
+          "original_size": 419,
+          "confidence": "中",
+          "note": "titles 是 Java Developer/Scala Developer + Backend and Cloud Engineer,skills=AWS+K8s+Java。介于 Backend Java 和 DevOps 之间,独立保留。"
+        }
+      ]
+    },
+    "role_046": {
+      "final_name": "Linux C++ Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 351,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_063",
+          "original_name": "C++",
+          "original_size": 351,
+          "confidence": "高",
+          "note": "titles 全是 C++ Developer/Engineer,coarse=DevOps,top skill=Linux+C++。系统级 C++ 开发。"
+        }
+      ]
+    },
+    "role_047": {
+      "final_name": "Cloud Security Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "total_size": 280,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_064",
+          "original_name": "Security Engineer",
+          "original_size": 280,
+          "confidence": "高",
+          "note": "titles 含 Security Engineer + Cloud Solution Architect + Cyber Security"
+        }
+      ]
+    },
+    "role_048": {
+      "final_name": "Manual QA Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 943,
+      "merged_count": 2,
+      "merged_from": [
+        {
+          "original_role_id": "role_067",
+          "original_name": "QA",
+          "original_size": 722,
+          "confidence": "高",
+          "note": "titles 全是 Manual QA Engineer / QA Engineer"
+        },
+        {
+          "original_role_id": "role_073",
+          "original_name": "QA(QA Automation)",
+          "original_size": 221,
+          "confidence": "中",
+          "note": "titles 是 Manual QA Engineer,skills=Linux+Python+C++。建议合并到 role_067 Manual QA。"
+        }
+      ]
+    },
+    "role_049": {
+      "final_name": "QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 942,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_066",
+          "original_name": "QA Automation",
+          "original_size": 942,
+          "confidence": "高",
+          "note": "titles 全是 Automation QA Engineer,top skill=Selenium/Java/QA Automation"
+        }
+      ]
+    },
+    "role_050": {
+      "final_name": "Frontend QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 671,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_068",
+          "original_name": "QA Automation(JavaScript)",
+          "original_size": 671,
+          "confidence": "高",
+          "note": "titles 是 QA Automation Engineer,skills=JavaScript+TypeScript+Cypress(前端测试)"
+        }
+      ]
+    },
+    "role_051": {
+      "final_name": "Python QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 634,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_069",
+          "original_name": "QA Automation(Python)",
+          "original_size": 634,
+          "confidence": "高",
+          "note": "titles 全是 QA Automation Engineer (Python),skills 含 Python"
+        }
+      ]
+    },
+    "role_052": {
+      "final_name": ".NET QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 442,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_070",
+          "original_name": "QA Automation(.NET)",
+          "original_size": 442,
+          "confidence": "高",
+          "note": "titles 含 QA Automation Engineer (C#),skills 含 C#+.NET"
+        }
+      ]
+    },
+    "role_053": {
+      "final_name": "API QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 381,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_071",
+          "original_name": "QA Automation(Java)",
+          "original_size": 381,
+          "confidence": "中",
+          "note": "titles 是 QA Engineer,skills 含 JMeter+Postman+API,是 API 测试方向。比 Java QA 更准。"
+        }
+      ]
+    },
+    "role_054": {
+      "final_name": "Mobile QA Automation Engineer",
+      "coarse_role": "QA & Testing",
+      "total_size": 356,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_072",
+          "original_name": "QA Automation(Java)",
+          "original_size": 356,
+          "confidence": "高",
+          "note": "titles 是 QA Engineer,skills 含 Android+iOS+Appium。移动端 QA 自动化。"
+        }
+      ]
+    },
+    "role_055": {
+      "final_name": "Information Security Analyst",
+      "coarse_role": "Security",
+      "total_size": 280,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_074",
+          "original_name": "Security",
+          "original_size": 280,
+          "confidence": "高",
+          "note": "titles 全是 Information Security Specialist/Manager/Analyst,偏管理/合规"
+        }
+      ]
+    },
+    "role_056": {
+      "final_name": "Security Operations Engineer",
+      "coarse_role": "Security",
+      "total_size": 219,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_075",
+          "original_name": "Security(SQL)",
+          "original_size": 219,
+          "confidence": "高",
+          "note": "titles 含 Security Engineer + Security Operations Engineer,skills 含 SIEM(SOC 方向)"
+        }
+      ]
+    },
+    "role_057": {
+      "final_name": "Penetration Testing Engineer",
+      "coarse_role": "Security",
+      "total_size": 139,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_076",
+          "original_name": "Security(QA)",
+          "original_size": 139,
+          "confidence": "高",
+          "note": "titles 全是 Penetration Tester / Application Security Engineer"
+        }
+      ]
+    },
+    "role_058": {
+      "final_name": "Security Software Engineer",
+      "coarse_role": "Security",
+      "total_size": 106,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_077",
+          "original_name": "C++",
+          "original_size": 106,
+          "confidence": "高",
+          "note": "titles 含 Application Security Engineer + C++ Developer + Embedded Software Engineer(Cybersecurity),skills 含 C++/Encryption。"
+        }
+      ]
+    },
+    "role_059": {
+      "final_name": "Unity Developer",
+      "coarse_role": "Game Development",
+      "total_size": 484,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_078",
+          "original_name": "Unity",
+          "original_size": 484,
+          "confidence": "高",
+          "note": "titles 全是 Unity Developer,top skill=C#"
+        }
+      ]
+    },
+    "role_060": {
+      "final_name": "Game C++ Engineer",
+      "coarse_role": "Game Development",
+      "total_size": 415,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_079",
+          "original_name": "C++",
+          "original_size": 415,
+          "confidence": "高",
+          "note": "titles 是 C++ Developer/Engineer,coarse=Game"
+        }
+      ]
+    },
+    "role_061": {
+      "final_name": "Unreal Engine Developer",
+      "coarse_role": "Game Development",
+      "total_size": 292,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_080",
+          "original_name": "C++(Unity)",
+          "original_size": 292,
+          "confidence": "高",
+          "note": "titles 含 Unreal Engine Developer / C++ Game Developer,Unreal 方向"
+        }
+      ]
+    },
+    "role_062": {
+      "final_name": "Game Designer",
+      "coarse_role": "Game Development",
+      "total_size": 203,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_081",
+          "original_name": "Unity(Design)",
+          "original_size": 203,
+          "confidence": "高",
+          "note": "titles 全是 Game Designer / Game Producer / Lead Game Designer。这是策划岗,不是程序。但 UI/UX 既然留了,这个也应该留(都是泛 IT/游戏行业)。"
+        }
+      ]
+    },
+    "role_063": {
+      "final_name": "Game Technical Artist",
+      "coarse_role": "Game Development",
+      "total_size": 131,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_082",
+          "original_name": "Unity(Design)",
+          "original_size": 131,
+          "confidence": "高",
+          "note": "titles 全是 Technical Artist / 3D Animator / 2D Artist。游戏美术技术岗。"
+        }
+      ]
+    },
+    "role_064": {
+      "final_name": "Project Manager",
+      "coarse_role": "Product & Business Analysis",
+      "total_size": 1127,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_083",
+          "original_name": "Project Manager",
+          "original_size": 1127,
+          "confidence": "高",
+          "note": "titles 全是 Project Manager / IT Project Manager"
+        }
+      ]
+    },
+    "role_065": {
+      "final_name": "Delivery Manager",
+      "coarse_role": "Product & Business Analysis",
+      "total_size": 856,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_085",
+          "original_name": "Project Manager(Product Manager)",
+          "original_size": 856,
+          "confidence": "中",
+          "note": "titles 含 Project Manager + Delivery Manager。Delivery 是子方向。或合并到 role_083 PM。建议合并。"
+        }
+      ]
+    },
+    "role_066": {
+      "final_name": "Product Manager",
+      "coarse_role": "Product & Business Analysis",
+      "total_size": 766,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_086",
+          "original_name": "Product Manager",
+          "original_size": 766,
+          "confidence": "高",
+          "note": "titles 全是 Product Manager / Product Owner"
+        }
+      ]
+    },
+    "role_067": {
+      "final_name": "Scrum Master",
+      "coarse_role": "Product & Business Analysis",
+      "total_size": 375,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_087",
+          "original_name": "Scrum Master",
+          "original_size": 375,
+          "confidence": "高",
+          "note": "titles 全是 Scrum Master / Delivery Manager"
+        }
+      ]
+    },
+    "role_068": {
+      "final_name": "Rust Blockchain Engineer",
+      "coarse_role": "Other IT",
+      "total_size": 271,
+      "merged_count": 1,
+      "merged_from": [
+        {
+          "original_role_id": "role_090",
+          "original_name": "Rust Developer",
+          "original_size": 271,
+          "confidence": "高",
+          "note": "titles 含 Rust Developer / Solidity Developer,skills=Blockchain+Rust+Solidity"
+        }
+      ]
+    }
+  },
+  "dropped_clusters": {
+    "role_011": {
+      "original_name": "Embedding Engineer",
+      "coarse_role": "Emerging AI",
+      "original_size": 362,
+      "confidence": "高",
+      "drop_reason": "**误聚类**:titles 全是 \"Embedded Software Engineer\"(嵌入式软件),skills=C/C++/Linux,这是嵌入式不是 Embedding(向量嵌入)。应砍。"
+    },
+    "role_016": {
+      "original_name": "LLM Engineer",
+      "coarse_role": "Emerging AI",
+      "original_size": 232,
+      "confidence": "中",
+      "drop_reason": "技能画像只有 Excel,无真实 AI 技能信号,确认为噪声簇"
+    },
+    "role_021": {
+      "original_name": "Prompt Engineer",
+      "coarse_role": "Emerging AI",
+      "original_size": 98,
+      "confidence": "中",
+      "drop_reason": "titles 是 Transportation Engineer/Engineering Designer,多模态在这里是交通\"多模式\"不是 AI multimodal。属于误聚类。"
+    },
+    "role_024": {
+      "original_name": "Data Communications Analyst",
+      "coarse_role": "AI & Data",
+      "original_size": 774,
+      "confidence": "高",
+      "drop_reason": "预删:非 IT 软件岗,Customer Service Representative/Data Entry Clerk 等"
+    },
+    "role_028": {
+      "original_name": "Data Entry Clerk",
+      "coarse_role": "AI & Data",
+      "original_size": 566,
+      "confidence": "高",
+      "drop_reason": "预删:Data Entry Clerk,文员岗"
+    },
+    "role_038": {
+      "original_name": "QA",
+      "coarse_role": "Backend Development",
+      "original_size": 253,
+      "confidence": "高",
+      "drop_reason": "预删:错位 QA(Backend 大类下的 QA Engineer)"
+    },
+    "role_046": {
+      "original_name": "QA",
+      "coarse_role": "Frontend Development",
+      "original_size": 262,
+      "confidence": "高",
+      "drop_reason": "预删:错位 QA"
+    },
+    "role_053": {
+      "original_name": "QA",
+      "coarse_role": "Mobile Development",
+      "original_size": 444,
+      "confidence": "高",
+      "drop_reason": "预删:错位 QA"
+    },
+    "role_056": {
+      "original_name": "Product Manager",
+      "coarse_role": "Mobile Development",
+      "original_size": 182,
+      "confidence": "中",
+      "drop_reason": "titles 主要是 Product Manager,coarse=Mobile 是错位。PM 大类已经有 Product Manager。砍。"
+    },
+    "role_065": {
+      "original_name": "QA",
+      "coarse_role": "Cloud Native & DevOps",
+      "original_size": 239,
+      "confidence": "高",
+      "drop_reason": "预删:错位 QA"
+    },
+    "role_088": {
+      "original_name": "QA",
+      "coarse_role": "Product & Business Analysis",
+      "original_size": 291,
+      "confidence": "高",
+      "drop_reason": "预删:错位 QA"
+    },
+    "role_089": {
+      "original_name": "C++",
+      "coarse_role": "Product & Business Analysis",
+      "original_size": 165,
+      "confidence": "中",
+      "drop_reason": "titles 全是 C++ Developer,但 coarse 是 PM/BA 大类。这是错位,应该砍(Backend 已经有 C++ Software Engineer role_036)。"
+    }
+  }
+}

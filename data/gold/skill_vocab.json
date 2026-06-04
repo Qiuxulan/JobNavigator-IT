@@ -1,0 +1,4795 @@
+{
+  "version": "v1",
+  "total": 275,
+  "hot_count": 88,
+  "categories": [
+    "language",
+    "frontend",
+    "backend",
+    "database",
+    "cloud",
+    "bigdata",
+    "data_analysis",
+    "ai_ml",
+    "ai_emerging",
+    "devops",
+    "testing",
+    "mobile",
+    "security",
+    "methods"
+  ],
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "language",
+      "hot": true,
+      "aliases": [
+        "python"
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "java",
+        "jdk"
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "ecmascript",
+        "javascript",
+        "js"
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "language",
+      "hot": true,
+      "aliases": [
+        "ts",
+        "typescript"
+      ]
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "c",
+        "c language",
+        "c语言"
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "c plus plus",
+        "c++",
+        "cplusplus",
+        "cpp"
+      ]
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "c sharp",
+        "c#",
+        "csharp",
+        "dotnet language"
+      ]
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "category": "language",
+      "hot": true,
+      "aliases": [
+        "go",
+        "golang",
+        "go语言"
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "category": "language",
+      "hot": true,
+      "aliases": [
+        "rust"
+      ]
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "ruby"
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "php"
+      ]
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "swift"
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "kotlin"
+      ]
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "scala"
+      ]
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "r",
+        "r language",
+        "r语言"
+      ]
+    },
+    {
+      "id": "matlab",
+      "name": "MATLAB",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "matlab"
+      ]
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "perl"
+      ]
+    },
+    {
+      "id": "objective-c",
+      "name": "Objective-C",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "objc",
+        "objective c",
+        "objective-c"
+      ]
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "dart"
+      ]
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "bash",
+        "shell",
+        "shell script",
+        "shell scripting",
+        "shell脚本"
+      ]
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "powershell"
+      ]
+    },
+    {
+      "id": "sql-lang",
+      "name": "SQL",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "sql",
+        "sql lang",
+        "sql-lang",
+        "structured query language"
+      ]
+    },
+    {
+      "id": "solidity",
+      "name": "Solidity",
+      "category": "language",
+      "hot": true,
+      "aliases": [
+        "solidity"
+      ]
+    },
+    {
+      "id": "groovy",
+      "name": "Groovy",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "groovy"
+      ]
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "lua"
+      ]
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "haskell"
+      ]
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "elixir"
+      ]
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "category": "language",
+      "hot": false,
+      "aliases": [
+        "clojure"
+      ]
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "html",
+        "html5"
+      ]
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "css",
+        "css3"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "vue",
+        "vue.js",
+        "vuejs"
+      ]
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "angular",
+        "angular.js",
+        "angularjs"
+      ]
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "svelte",
+        "sveltekit"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "next.js",
+        "nextjs"
+      ]
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt.js",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "nuxt",
+        "nuxt.js",
+        "nuxtjs"
+      ]
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "redux"
+      ]
+    },
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "jquery"
+      ]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "tailwind",
+        "tailwind css",
+        "tailwindcss"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "bootstrap"
+      ]
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "sass",
+        "scss"
+      ]
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "webpack"
+      ]
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "category": "frontend",
+      "hot": true,
+      "aliases": [
+        "vite"
+      ]
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "electron"
+      ]
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "three.js",
+        "threejs"
+      ]
+    },
+    {
+      "id": "webgl",
+      "name": "WebGL",
+      "category": "frontend",
+      "hot": false,
+      "aliases": [
+        "webgl"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "category": "backend",
+      "hot": true,
+      "aliases": [
+        "node",
+        "node.js",
+        "nodejs"
+      ]
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "express",
+        "express.js",
+        "expressjs"
+      ]
+    },
+    {
+      "id": "nestjs",
+      "name": "NestJS",
+      "category": "backend",
+      "hot": true,
+      "aliases": [
+        "nest.js",
+        "nestjs"
+      ]
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "django"
+      ]
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "flask"
+      ]
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "backend",
+      "hot": true,
+      "aliases": [
+        "fastapi"
+      ]
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "spring",
+        "spring framework"
+      ]
+    },
+    {
+      "id": "springboot",
+      "name": "Spring Boot",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "spring boot",
+        "spring-boot",
+        "springboot"
+      ]
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        ".net",
+        ".net core",
+        ".net framework",
+        "asp.net",
+        "asp.net core",
+        "dotnet"
+      ]
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "laravel"
+      ]
+    },
+    {
+      "id": "symfony",
+      "name": "Symfony",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "symfony"
+      ]
+    },
+    {
+      "id": "rails",
+      "name": "Ruby on Rails",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "rails",
+        "ror",
+        "ruby on rails"
+      ]
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "gin"
+      ]
+    },
+    {
+      "id": "hibernate",
+      "name": "Hibernate",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "hibernate"
+      ]
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "category": "backend",
+      "hot": true,
+      "aliases": [
+        "grpc"
+      ]
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "category": "backend",
+      "hot": true,
+      "aliases": [
+        "graphql"
+      ]
+    },
+    {
+      "id": "rest",
+      "name": "REST API",
+      "category": "backend",
+      "hot": false,
+      "aliases": [
+        "rest",
+        "rest api",
+        "rest apis",
+        "restful",
+        "restful api",
+        "restful apis"
+      ]
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "mysql"
+      ]
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "database",
+      "hot": true,
+      "aliases": [
+        "postgres",
+        "postgresql",
+        "psql"
+      ]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "mongo",
+        "mongodb"
+      ]
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "redis"
+      ]
+    },
+    {
+      "id": "oracle-db",
+      "name": "Oracle Database",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "oracle",
+        "oracle database",
+        "oracle db",
+        "oracle-db",
+        "pl/sql",
+        "plsql"
+      ]
+    },
+    {
+      "id": "sqlserver",
+      "name": "SQL Server",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "azure sql",
+        "microsoft sql server",
+        "ms sql",
+        "ms sql server",
+        "mssql",
+        "sql server",
+        "sqlserver"
+      ]
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "sqlite"
+      ]
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "cassandra"
+      ]
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "elastic",
+        "elastic search",
+        "elasticsearch",
+        "es搜索"
+      ]
+    },
+    {
+      "id": "dynamodb",
+      "name": "DynamoDB",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "dynamodb"
+      ]
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "graph database",
+        "neo4j"
+      ]
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "category": "database",
+      "hot": true,
+      "aliases": [
+        "clickhouse"
+      ]
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "mariadb"
+      ]
+    },
+    {
+      "id": "couchbase",
+      "name": "Couchbase",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "couchbase"
+      ]
+    },
+    {
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "influxdb"
+      ]
+    },
+    {
+      "id": "db2",
+      "name": "DB2",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "db2"
+      ]
+    },
+    {
+      "id": "nosql",
+      "name": "NoSQL",
+      "category": "database",
+      "hot": false,
+      "aliases": [
+        "nosql",
+        "非关系型数据库"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "cloud",
+      "hot": true,
+      "aliases": [
+        "amazon aws",
+        "amazon web services",
+        "aws",
+        "aws cloud"
+      ]
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "category": "cloud",
+      "hot": true,
+      "aliases": [
+        "azure",
+        "microsoft azure"
+      ]
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud",
+      "category": "cloud",
+      "hot": true,
+      "aliases": [
+        "gcp",
+        "google cloud",
+        "google cloud platform"
+      ]
+    },
+    {
+      "id": "alicloud",
+      "name": "Alibaba Cloud",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "alibaba cloud",
+        "alicloud",
+        "aliyun",
+        "阿里云"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "cloudflare"
+      ]
+    },
+    {
+      "id": "heroku",
+      "name": "Heroku",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "heroku"
+      ]
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "digitalocean"
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Amazon S3",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "amazon s3",
+        "s3"
+      ]
+    },
+    {
+      "id": "ec2",
+      "name": "Amazon EC2",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "amazon ec2",
+        "ec2"
+      ]
+    },
+    {
+      "id": "lambda",
+      "name": "AWS Lambda",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "aws lambda",
+        "lambda"
+      ]
+    },
+    {
+      "id": "redshift",
+      "name": "Amazon Redshift",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "amazon redshift",
+        "redshift"
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "Amazon Aurora",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "amazon aurora",
+        "aurora"
+      ]
+    },
+    {
+      "id": "cloud-computing",
+      "name": "Cloud Computing",
+      "category": "cloud",
+      "hot": true,
+      "aliases": [
+        "cloud computing",
+        "cloud-computing",
+        "云计算"
+      ]
+    },
+    {
+      "id": "edge-computing",
+      "name": "Edge Computing",
+      "category": "cloud",
+      "hot": true,
+      "aliases": [
+        "edge computing",
+        "edge-computing",
+        "边缘计算"
+      ]
+    },
+    {
+      "id": "tencent-cloud",
+      "name": "Tencent Cloud",
+      "category": "cloud",
+      "hot": false,
+      "aliases": [
+        "tencent cloud",
+        "tencent-cloud",
+        "腾讯云"
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Apache Spark",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "apache spark",
+        "pyspark",
+        "spark"
+      ]
+    },
+    {
+      "id": "hadoop",
+      "name": "Hadoop",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "apache hadoop",
+        "hadoop"
+      ]
+    },
+    {
+      "id": "kafka",
+      "name": "Apache Kafka",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "apache kafka",
+        "kafka"
+      ]
+    },
+    {
+      "id": "flink",
+      "name": "Apache Flink",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "apache flink",
+        "flink"
+      ]
+    },
+    {
+      "id": "airflow",
+      "name": "Apache Airflow",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "airflow",
+        "apache airflow"
+      ]
+    },
+    {
+      "id": "dbt",
+      "name": "dbt",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "dbt"
+      ]
+    },
+    {
+      "id": "hive",
+      "name": "Hive",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "apache hive",
+        "hive"
+      ]
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "snowflake"
+      ]
+    },
+    {
+      "id": "databricks",
+      "name": "Databricks",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "databricks"
+      ]
+    },
+    {
+      "id": "etl",
+      "name": "ETL",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "etl"
+      ]
+    },
+    {
+      "id": "bigquery",
+      "name": "BigQuery",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "big query",
+        "bigquery"
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "rabbitmq"
+      ]
+    },
+    {
+      "id": "dagster",
+      "name": "Dagster",
+      "category": "bigdata",
+      "hot": true,
+      "aliases": [
+        "dagster"
+      ]
+    },
+    {
+      "id": "data-warehouse",
+      "name": "Data Warehouse",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data warehouse",
+        "data warehousing",
+        "data-warehouse",
+        "datawarehouse",
+        "数仓",
+        "数据仓库"
+      ]
+    },
+    {
+      "id": "data-lake",
+      "name": "Data Lake",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data lake",
+        "data-lake",
+        "数据湖"
+      ]
+    },
+    {
+      "id": "data-pipeline",
+      "name": "Data Pipeline",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data pipeline",
+        "data pipelines",
+        "data-pipeline"
+      ]
+    },
+    {
+      "id": "data-governance",
+      "name": "Data Governance",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data governance",
+        "data-governance",
+        "数据治理"
+      ]
+    },
+    {
+      "id": "data-modeling",
+      "name": "Data Modeling",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data modeling",
+        "data-modeling",
+        "数据建模"
+      ]
+    },
+    {
+      "id": "data-quality",
+      "name": "Data Quality",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "data quality",
+        "data-quality",
+        "数据质量"
+      ]
+    },
+    {
+      "id": "dimensional-modeling",
+      "name": "Dimensional Modeling",
+      "category": "bigdata",
+      "hot": false,
+      "aliases": [
+        "dimensional modeling",
+        "dimensional-modeling",
+        "维度建模"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "pandas"
+      ]
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "numpy"
+      ]
+    },
+    {
+      "id": "tableau",
+      "name": "Tableau",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "tableau"
+      ]
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "power bi",
+        "powerbi"
+      ]
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "excel",
+        "microsoft excel",
+        "数据透视表"
+      ]
+    },
+    {
+      "id": "looker",
+      "name": "Looker",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "looker"
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "name": "Data Analysis",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "data analysis",
+        "data analytics",
+        "data-analysis",
+        "数据分析"
+      ]
+    },
+    {
+      "id": "data-visualization",
+      "name": "Data Visualization",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "data visualization",
+        "data viz",
+        "data-visualization",
+        "数据可视化"
+      ]
+    },
+    {
+      "id": "data-mining",
+      "name": "Data Mining",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "data mining",
+        "data-mining",
+        "数据挖掘"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "statistical analysis",
+        "statistics",
+        "统计",
+        "统计建模"
+      ]
+    },
+    {
+      "id": "ab-testing",
+      "name": "A/B Testing",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "a/b test",
+        "a/b testing",
+        "a/b测试",
+        "ab test",
+        "ab testing",
+        "ab-testing",
+        "ab测试"
+      ]
+    },
+    {
+      "id": "business-intelligence",
+      "name": "Business Intelligence",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "bi",
+        "business intelligence",
+        "business-intelligence",
+        "商业智能"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "dashboard",
+        "仪表盘",
+        "数据看板"
+      ]
+    },
+    {
+      "id": "data-cleaning",
+      "name": "Data Cleaning",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "data cleaning",
+        "data-cleaning",
+        "数据清洗"
+      ]
+    },
+    {
+      "id": "hypothesis-testing",
+      "name": "Hypothesis Testing",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "hypothesis testing",
+        "hypothesis-testing",
+        "假设检验"
+      ]
+    },
+    {
+      "id": "time-series",
+      "name": "Time Series Analysis",
+      "category": "data_analysis",
+      "hot": false,
+      "aliases": [
+        "time series",
+        "time series analysis",
+        "time-series",
+        "时间序列",
+        "时间序列分析"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "machine learning",
+        "machine-learning",
+        "ml",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "deep learning",
+        "deep-learning",
+        "dl",
+        "深度学习"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "pytorch",
+        "torch"
+      ]
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "tensorflow",
+        "tf"
+      ]
+    },
+    {
+      "id": "keras",
+      "name": "Keras",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "keras"
+      ]
+    },
+    {
+      "id": "scikit-learn",
+      "name": "scikit-learn",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "scikit learn",
+        "scikit-learn",
+        "sklearn"
+      ]
+    },
+    {
+      "id": "nlp",
+      "name": "NLP",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "natural language processing",
+        "nlp",
+        "自然语言处理"
+      ]
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "computer vision",
+        "computer-vision",
+        "cv",
+        "opencv",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "reinforcement-learning",
+      "name": "Reinforcement Learning",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "reinforcement learning",
+        "reinforcement-learning",
+        "rl",
+        "强化学习"
+      ]
+    },
+    {
+      "id": "xgboost",
+      "name": "XGBoost",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "xgboost"
+      ]
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "ai_ml",
+      "hot": true,
+      "aliases": [
+        "data science",
+        "data-science"
+      ]
+    },
+    {
+      "id": "jupyter",
+      "name": "Jupyter",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "jupyter",
+        "jupyter notebook"
+      ]
+    },
+    {
+      "id": "cuda",
+      "name": "CUDA",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "cuda"
+      ]
+    },
+    {
+      "id": "recommendation-system",
+      "name": "Recommendation System",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "recommendation system",
+        "recommendation-system",
+        "recommender system",
+        "recsys",
+        "推荐系统"
+      ]
+    },
+    {
+      "id": "feature-engineering",
+      "name": "Feature Engineering",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "feature engineering",
+        "feature-engineering",
+        "特征工程"
+      ]
+    },
+    {
+      "id": "model-deployment",
+      "name": "Model Deployment",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "model deployment",
+        "model serving",
+        "model-deployment",
+        "模型服务",
+        "模型部署"
+      ]
+    },
+    {
+      "id": "cnn",
+      "name": "CNN",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "cnn",
+        "convolutional neural network",
+        "卷积神经网络"
+      ]
+    },
+    {
+      "id": "rnn",
+      "name": "RNN",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "recurrent neural network",
+        "rnn",
+        "循环神经网络"
+      ]
+    },
+    {
+      "id": "crf",
+      "name": "CRF",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "conditional random field",
+        "crf",
+        "条件随机场"
+      ]
+    },
+    {
+      "id": "gnn",
+      "name": "Graph Neural Network",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "gnn",
+        "graph neural network",
+        "图神经网络"
+      ]
+    },
+    {
+      "id": "ner",
+      "name": "Named Entity Recognition",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "named entity recognition",
+        "ner",
+        "命名实体识别"
+      ]
+    },
+    {
+      "id": "sentiment-analysis",
+      "name": "Sentiment Analysis",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "sentiment analysis",
+        "sentiment-analysis",
+        "情感分析"
+      ]
+    },
+    {
+      "id": "text-classification",
+      "name": "Text Classification",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "text classification",
+        "text-classification",
+        "文本分类"
+      ]
+    },
+    {
+      "id": "information-extraction",
+      "name": "Information Extraction",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "information extraction",
+        "information-extraction",
+        "信息抽取"
+      ]
+    },
+    {
+      "id": "supervised-learning",
+      "name": "Supervised Learning",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "supervised learning",
+        "supervised-learning",
+        "监督学习"
+      ]
+    },
+    {
+      "id": "unsupervised-learning",
+      "name": "Unsupervised Learning",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "unsupervised learning",
+        "unsupervised-learning",
+        "无监督学习"
+      ]
+    },
+    {
+      "id": "model-evaluation",
+      "name": "Model Evaluation",
+      "category": "ai_ml",
+      "hot": false,
+      "aliases": [
+        "model evaluation",
+        "model-evaluation",
+        "模型评估"
+      ]
+    },
+    {
+      "id": "llm",
+      "name": "LLM",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "large language model",
+        "large language models",
+        "llm",
+        "llms",
+        "大模型",
+        "大语言模型"
+      ]
+    },
+    {
+      "id": "rag",
+      "name": "RAG",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "rag",
+        "retrieval augmented generation",
+        "retrieval-augmented generation",
+        "检索增强生成"
+      ]
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "langchain"
+      ]
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "llama index",
+        "llama-index",
+        "llamaindex"
+      ]
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "langgraph"
+      ]
+    },
+    {
+      "id": "vector-database",
+      "name": "Vector Database",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "vector database",
+        "vector databases",
+        "vector db",
+        "vector-database",
+        "vectordb",
+        "向量数据库"
+      ]
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "pinecone"
+      ]
+    },
+    {
+      "id": "milvus",
+      "name": "Milvus",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "milvus"
+      ]
+    },
+    {
+      "id": "weaviate",
+      "name": "Weaviate",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "weaviate"
+      ]
+    },
+    {
+      "id": "chroma",
+      "name": "Chroma",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "chroma",
+        "chromadb"
+      ]
+    },
+    {
+      "id": "faiss",
+      "name": "FAISS",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "faiss"
+      ]
+    },
+    {
+      "id": "embedding",
+      "name": "Embedding",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "embedding",
+        "embeddings",
+        "text embedding",
+        "向量嵌入"
+      ]
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "prompt design",
+        "prompt engineering",
+        "prompt-engineering",
+        "提示词工程"
+      ]
+    },
+    {
+      "id": "fine-tuning",
+      "name": "Fine-tuning",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "fine tuning",
+        "fine-tuning",
+        "finetuning",
+        "lora",
+        "qlora",
+        "微调"
+      ]
+    },
+    {
+      "id": "agent",
+      "name": "AI Agent",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "agent",
+        "agentic",
+        "ai agent",
+        "ai agents",
+        "autonomous agent",
+        "智能体"
+      ]
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "transformer",
+        "transformers"
+      ]
+    },
+    {
+      "id": "bert",
+      "name": "BERT",
+      "category": "ai_emerging",
+      "hot": false,
+      "aliases": [
+        "bert"
+      ]
+    },
+    {
+      "id": "gpt",
+      "name": "GPT",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "chatgpt",
+        "gpt",
+        "gpt-4",
+        "gpt4"
+      ]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "hugging face",
+        "huggingface"
+      ]
+    },
+    {
+      "id": "openai-api",
+      "name": "OpenAI API",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "openai",
+        "openai api",
+        "openai-api"
+      ]
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "mlops"
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "mcp",
+        "model context protocol"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "name": "Multimodal",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "multi-modal",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "diffusion",
+      "name": "Diffusion Model",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "diffusion",
+        "diffusion model",
+        "diffusion models",
+        "stable diffusion",
+        "扩散模型"
+      ]
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "category": "ai_emerging",
+      "hot": false,
+      "aliases": [
+        "knowledge graph",
+        "knowledge-graph",
+        "知识图谱"
+      ]
+    },
+    {
+      "id": "aigc",
+      "name": "AIGC",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "aigc",
+        "generative ai",
+        "生成式人工智能"
+      ]
+    },
+    {
+      "id": "quantization",
+      "name": "Quantization",
+      "category": "ai_emerging",
+      "hot": false,
+      "aliases": [
+        "quantization",
+        "模型量化",
+        "量化"
+      ]
+    },
+    {
+      "id": "multi-agent",
+      "name": "Multi-Agent System",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "multi agent",
+        "multi agent system",
+        "multi-agent",
+        "multi-agent system",
+        "多智能体"
+      ]
+    },
+    {
+      "id": "tool-calling",
+      "name": "Tool Calling",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "function calling",
+        "tool calling",
+        "tool-calling",
+        "工具调用"
+      ]
+    },
+    {
+      "id": "coze",
+      "name": "Coze",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "coze",
+        "扣子"
+      ]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "category": "ai_emerging",
+      "hot": true,
+      "aliases": [
+        "qwen",
+        "tongyi",
+        "通义千问"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "containerization",
+        "containers",
+        "docker"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "k8s",
+        "kubernetes"
+      ]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "terraform"
+      ]
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "ansible"
+      ]
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "jenkins"
+      ]
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab CI",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "gitlab ci",
+        "gitlab-ci"
+      ]
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "github actions",
+        "github-actions"
+      ]
+    },
+    {
+      "id": "cicd",
+      "name": "CI/CD",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "ci/cd",
+        "cicd",
+        "continuous deployment",
+        "continuous integration",
+        "持续部署",
+        "持续集成"
+      ]
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "helm"
+      ]
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "prometheus"
+      ]
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "grafana"
+      ]
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "nginx"
+      ]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "linux"
+      ]
+    },
+    {
+      "id": "unix",
+      "name": "Unix",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "unix"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "bitbucket",
+        "git",
+        "github",
+        "gitlab",
+        "version control"
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "devops"
+      ]
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "microservice",
+        "microservice architecture",
+        "microservices",
+        "微服务"
+      ]
+    },
+    {
+      "id": "serverless",
+      "name": "Serverless",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "serverless"
+      ]
+    },
+    {
+      "id": "argocd",
+      "name": "ArgoCD",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "argo cd",
+        "argocd"
+      ]
+    },
+    {
+      "id": "cloudformation",
+      "name": "CloudFormation",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "cloudformation"
+      ]
+    },
+    {
+      "id": "vagrant",
+      "name": "Vagrant",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "vagrant"
+      ]
+    },
+    {
+      "id": "istio",
+      "name": "Istio",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "istio",
+        "service mesh"
+      ]
+    },
+    {
+      "id": "caching",
+      "name": "Caching",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "caching",
+        "缓存"
+      ]
+    },
+    {
+      "id": "high-availability",
+      "name": "High Availability",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "ha",
+        "high availability",
+        "high-availability",
+        "高可用"
+      ]
+    },
+    {
+      "id": "load-balancing",
+      "name": "Load Balancing",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "load balancing",
+        "load-balancing",
+        "负载均衡"
+      ]
+    },
+    {
+      "id": "message-queue",
+      "name": "Message Queue",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "message queue",
+        "message-queue",
+        "mq",
+        "消息队列"
+      ]
+    },
+    {
+      "id": "capacity-planning",
+      "name": "Capacity Planning",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "capacity planning",
+        "capacity-planning",
+        "容量规划"
+      ]
+    },
+    {
+      "id": "performance-tuning",
+      "name": "Performance Tuning",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "performance tuning",
+        "performance-tuning",
+        "性能优化",
+        "性能调优"
+      ]
+    },
+    {
+      "id": "sre",
+      "name": "SRE",
+      "category": "devops",
+      "hot": true,
+      "aliases": [
+        "site reliability engineering",
+        "sre",
+        "站点可靠性工程"
+      ]
+    },
+    {
+      "id": "root-cause-analysis",
+      "name": "Root Cause Analysis",
+      "category": "devops",
+      "hot": false,
+      "aliases": [
+        "rca",
+        "root cause analysis",
+        "root-cause-analysis",
+        "根因分析"
+      ]
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "selenium"
+      ]
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "category": "testing",
+      "hot": true,
+      "aliases": [
+        "cypress"
+      ]
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "category": "testing",
+      "hot": true,
+      "aliases": [
+        "playwright"
+      ]
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "jest"
+      ]
+    },
+    {
+      "id": "pytest",
+      "name": "pytest",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "pytest"
+      ]
+    },
+    {
+      "id": "junit",
+      "name": "JUnit",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "junit"
+      ]
+    },
+    {
+      "id": "appium",
+      "name": "Appium",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "appium"
+      ]
+    },
+    {
+      "id": "jmeter",
+      "name": "JMeter",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "jmeter"
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "postman"
+      ]
+    },
+    {
+      "id": "qa-automation",
+      "name": "QA Automation",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "automation testing",
+        "qa automation",
+        "qa-automation",
+        "test automation"
+      ]
+    },
+    {
+      "id": "unit-testing",
+      "name": "Unit Testing",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "unit testing",
+        "unit-testing",
+        "单元测试"
+      ]
+    },
+    {
+      "id": "integration-testing",
+      "name": "Integration Testing",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "integration testing",
+        "integration-testing",
+        "集成测试"
+      ]
+    },
+    {
+      "id": "load-testing",
+      "name": "Load Testing",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "load testing",
+        "load-testing",
+        "压力测试",
+        "负载测试"
+      ]
+    },
+    {
+      "id": "rest-api-testing",
+      "name": "REST API Testing",
+      "category": "testing",
+      "hot": false,
+      "aliases": [
+        "api testing",
+        "rest api testing",
+        "rest-api-testing",
+        "接口测试"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "category": "mobile",
+      "hot": false,
+      "aliases": [
+        "android"
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "category": "mobile",
+      "hot": false,
+      "aliases": [
+        "ios"
+      ]
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "category": "mobile",
+      "hot": true,
+      "aliases": [
+        "flutter"
+      ]
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "category": "mobile",
+      "hot": true,
+      "aliases": [
+        "react native",
+        "react-native"
+      ]
+    },
+    {
+      "id": "xamarin",
+      "name": "Xamarin",
+      "category": "mobile",
+      "hot": false,
+      "aliases": [
+        "xamarin"
+      ]
+    },
+    {
+      "id": "jetpack-compose",
+      "name": "Jetpack Compose",
+      "category": "mobile",
+      "hot": true,
+      "aliases": [
+        "jetpack compose",
+        "jetpack-compose"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "category": "security",
+      "hot": true,
+      "aliases": [
+        "cyber security",
+        "cybersecurity",
+        "information security",
+        "infosec",
+        "信息安全"
+      ]
+    },
+    {
+      "id": "penetration-testing",
+      "name": "Penetration Testing",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "pen testing",
+        "penetration testing",
+        "penetration-testing",
+        "pentest",
+        "渗透测试"
+      ]
+    },
+    {
+      "id": "oauth",
+      "name": "OAuth",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "oauth"
+      ]
+    },
+    {
+      "id": "jwt",
+      "name": "JWT",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "jwt"
+      ]
+    },
+    {
+      "id": "encryption",
+      "name": "Encryption",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "encryption"
+      ]
+    },
+    {
+      "id": "ssl-tls",
+      "name": "SSL/TLS",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "ssl",
+        "ssl tls",
+        "ssl-tls",
+        "ssl/tls",
+        "tls"
+      ]
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "siem"
+      ]
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "owasp"
+      ]
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust",
+      "category": "security",
+      "hot": true,
+      "aliases": [
+        "zero trust",
+        "zero-trust",
+        "零信任"
+      ]
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "compliance",
+        "合规"
+      ]
+    },
+    {
+      "id": "cryptography",
+      "name": "Cryptography",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "cryptography",
+        "密码学"
+      ]
+    },
+    {
+      "id": "data-privacy",
+      "name": "Data Privacy",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "data privacy",
+        "data-privacy",
+        "数据隐私"
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "Identity and Access Management",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "iam",
+        "identity and access management",
+        "身份认证"
+      ]
+    },
+    {
+      "id": "network-security",
+      "name": "Network Security",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "network security",
+        "network-security",
+        "网络安全"
+      ]
+    },
+    {
+      "id": "vulnerability-assessment",
+      "name": "Vulnerability Assessment",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "vulnerability assessment",
+        "vulnerability-assessment",
+        "漏洞评估"
+      ]
+    },
+    {
+      "id": "incident-response",
+      "name": "Incident Response",
+      "category": "security",
+      "hot": false,
+      "aliases": [
+        "incident response",
+        "incident-response",
+        "应急响应"
+      ]
+    },
+    {
+      "id": "agile",
+      "name": "Agile",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "agile",
+        "敏捷开发"
+      ]
+    },
+    {
+      "id": "scrum",
+      "name": "Scrum",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "scrum"
+      ]
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "kanban"
+      ]
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "jira"
+      ]
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "confluence"
+      ]
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "websocket",
+        "websockets"
+      ]
+    },
+    {
+      "id": "json",
+      "name": "JSON",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "json"
+      ]
+    },
+    {
+      "id": "xml",
+      "name": "XML",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "xml"
+      ]
+    },
+    {
+      "id": "oop",
+      "name": "OOP",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "object oriented programming",
+        "object-oriented",
+        "oop",
+        "面向对象"
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "category": "methods",
+      "hot": true,
+      "aliases": [
+        "system design",
+        "system-design",
+        "系统设计"
+      ]
+    },
+    {
+      "id": "distributed-systems",
+      "name": "Distributed Systems",
+      "category": "methods",
+      "hot": true,
+      "aliases": [
+        "distributed system",
+        "distributed systems",
+        "distributed-systems",
+        "分布式系统"
+      ]
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain",
+      "category": "methods",
+      "hot": true,
+      "aliases": [
+        "blockchain",
+        "smart contract",
+        "smart contracts",
+        "web3",
+        "区块链",
+        "智能合约"
+      ]
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "data structures",
+        "data structures and algorithms",
+        "data-structures",
+        "dsa",
+        "数据结构"
+      ]
+    },
+    {
+      "id": "algorithms",
+      "name": "Algorithms",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "algorithm",
+        "algorithms",
+        "算法"
+      ]
+    },
+    {
+      "id": "api-design",
+      "name": "API Design",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "api design",
+        "api-design",
+        "接口设计"
+      ]
+    },
+    {
+      "id": "design-patterns",
+      "name": "Design Patterns",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "design patterns",
+        "design-patterns",
+        "设计模式"
+      ]
+    },
+    {
+      "id": "regex",
+      "name": "Regular Expression",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "regex",
+        "regexp",
+        "regular expression",
+        "正则表达式"
+      ]
+    },
+    {
+      "id": "web-scraping",
+      "name": "Web Scraping",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "crawler",
+        "web crawler",
+        "web scraping",
+        "web-scraping",
+        "爬虫",
+        "网络爬虫"
+      ]
+    },
+    {
+      "id": "gis",
+      "name": "GIS",
+      "category": "methods",
+      "hot": false,
+      "aliases": [
+        "gis",
+        "地理信息系统"
+      ]
+    },
+    {
+      "id": "iot",
+      "name": "IoT",
+      "category": "methods",
+      "hot": true,
+      "aliases": [
+        "internet of things",
+        "iot",
+        "物联网"
+      ]
+    }
+  ],
+  "alias_to_id": {
+    "python": "python",
+    "jdk": "java",
+    "java": "java",
+    "js": "javascript",
+    "javascript": "javascript",
+    "ecmascript": "javascript",
+    "ts": "typescript",
+    "typescript": "typescript",
+    "c": "c",
+    "c language": "c",
+    "c语言": "c",
+    "c plus plus": "cpp",
+    "cplusplus": "cpp",
+    "cpp": "cpp",
+    "c++": "cpp",
+    "dotnet language": "csharp",
+    "csharp": "csharp",
+    "c#": "csharp",
+    "c sharp": "csharp",
+    "go语言": "go",
+    "go": "go",
+    "golang": "go",
+    "rust": "rust",
+    "ruby": "ruby",
+    "php": "php",
+    "swift": "swift",
+    "kotlin": "kotlin",
+    "scala": "scala",
+    "r language": "r",
+    "r": "r",
+    "r语言": "r",
+    "matlab": "matlab",
+    "perl": "perl",
+    "objc": "objective-c",
+    "objective c": "objective-c",
+    "objective-c": "objective-c",
+    "dart": "dart",
+    "shell": "shell",
+    "shell脚本": "shell",
+    "bash": "shell",
+    "shell script": "shell",
+    "shell scripting": "shell",
+    "powershell": "powershell",
+    "structured query language": "sql-lang",
+    "sql": "sql-lang",
+    "sql-lang": "sql-lang",
+    "sql lang": "sql-lang",
+    "solidity": "solidity",
+    "groovy": "groovy",
+    "lua": "lua",
+    "haskell": "haskell",
+    "elixir": "elixir",
+    "clojure": "clojure",
+    "html": "html",
+    "html5": "html",
+    "css3": "css",
+    "css": "css",
+    "react": "react",
+    "reactjs": "react",
+    "react.js": "react",
+    "vue": "vue",
+    "vuejs": "vue",
+    "vue.js": "vue",
+    "angular": "angular",
+    "angular.js": "angular",
+    "angularjs": "angular",
+    "sveltekit": "svelte",
+    "svelte": "svelte",
+    "nextjs": "nextjs",
+    "next.js": "nextjs",
+    "nuxt": "nuxt",
+    "nuxt.js": "nuxt",
+    "nuxtjs": "nuxt",
+    "redux": "redux",
+    "jquery": "jquery",
+    "tailwind": "tailwind",
+    "tailwindcss": "tailwind",
+    "tailwind css": "tailwind",
+    "bootstrap": "bootstrap",
+    "scss": "sass",
+    "sass": "sass",
+    "webpack": "webpack",
+    "vite": "vite",
+    "electron": "electron",
+    "threejs": "threejs",
+    "three.js": "threejs",
+    "webgl": "webgl",
+    "nodejs": "nodejs",
+    "node.js": "nodejs",
+    "node": "nodejs",
+    "expressjs": "express",
+    "express.js": "express",
+    "express": "express",
+    "nestjs": "nestjs",
+    "nest.js": "nestjs",
+    "django": "django",
+    "flask": "flask",
+    "fastapi": "fastapi",
+    "spring": "spring",
+    "spring framework": "spring",
+    "spring-boot": "springboot",
+    "springboot": "springboot",
+    "spring boot": "springboot",
+    "asp.net core": "dotnet",
+    ".net framework": "dotnet",
+    "dotnet": "dotnet",
+    "asp.net": "dotnet",
+    ".net": "dotnet",
+    ".net core": "dotnet",
+    "laravel": "laravel",
+    "symfony": "symfony",
+    "ror": "rails",
+    "ruby on rails": "rails",
+    "rails": "rails",
+    "gin": "gin",
+    "hibernate": "hibernate",
+    "grpc": "grpc",
+    "graphql": "graphql",
+    "rest api": "rest",
+    "rest apis": "rest",
+    "restful": "rest",
+    "rest": "rest",
+    "restful apis": "rest",
+    "restful api": "rest",
+    "mysql": "mysql",
+    "postgresql": "postgresql",
+    "postgres": "postgresql",
+    "psql": "postgresql",
+    "mongodb": "mongodb",
+    "mongo": "mongodb",
+    "redis": "redis",
+    "pl/sql": "oracle-db",
+    "plsql": "oracle-db",
+    "oracle": "oracle-db",
+    "oracle database": "oracle-db",
+    "oracle-db": "oracle-db",
+    "oracle db": "oracle-db",
+    "sqlserver": "sqlserver",
+    "ms sql": "sqlserver",
+    "azure sql": "sqlserver",
+    "microsoft sql server": "sqlserver",
+    "sql server": "sqlserver",
+    "ms sql server": "sqlserver",
+    "mssql": "sqlserver",
+    "sqlite": "sqlite",
+    "cassandra": "cassandra",
+    "elastic": "elasticsearch",
+    "elasticsearch": "elasticsearch",
+    "es搜索": "elasticsearch",
+    "elastic search": "elasticsearch",
+    "dynamodb": "dynamodb",
+    "graph database": "neo4j",
+    "neo4j": "neo4j",
+    "clickhouse": "clickhouse",
+    "mariadb": "mariadb",
+    "couchbase": "couchbase",
+    "influxdb": "influxdb",
+    "db2": "db2",
+    "nosql": "nosql",
+    "非关系型数据库": "nosql",
+    "amazon web services": "aws",
+    "aws cloud": "aws",
+    "amazon aws": "aws",
+    "aws": "aws",
+    "azure": "azure",
+    "microsoft azure": "azure",
+    "google cloud platform": "gcp",
+    "google cloud": "gcp",
+    "gcp": "gcp",
+    "alibaba cloud": "alicloud",
+    "aliyun": "alicloud",
+    "阿里云": "alicloud",
+    "alicloud": "alicloud",
+    "cloudflare": "cloudflare",
+    "heroku": "heroku",
+    "digitalocean": "digitalocean",
+    "amazon s3": "s3",
+    "s3": "s3",
+    "amazon ec2": "ec2",
+    "ec2": "ec2",
+    "aws lambda": "lambda",
+    "lambda": "lambda",
+    "redshift": "redshift",
+    "amazon redshift": "redshift",
+    "aurora": "aurora",
+    "amazon aurora": "aurora",
+    "cloud computing": "cloud-computing",
+    "cloud-computing": "cloud-computing",
+    "云计算": "cloud-computing",
+    "边缘计算": "edge-computing",
+    "edge computing": "edge-computing",
+    "edge-computing": "edge-computing",
+    "tencent-cloud": "tencent-cloud",
+    "腾讯云": "tencent-cloud",
+    "tencent cloud": "tencent-cloud",
+    "apache spark": "spark",
+    "pyspark": "spark",
+    "spark": "spark",
+    "apache hadoop": "hadoop",
+    "hadoop": "hadoop",
+    "kafka": "kafka",
+    "apache kafka": "kafka",
+    "flink": "flink",
+    "apache flink": "flink",
+    "airflow": "airflow",
+    "apache airflow": "airflow",
+    "dbt": "dbt",
+    "hive": "hive",
+    "apache hive": "hive",
+    "snowflake": "snowflake",
+    "databricks": "databricks",
+    "etl": "etl",
+    "big query": "bigquery",
+    "bigquery": "bigquery",
+    "rabbitmq": "rabbitmq",
+    "dagster": "dagster",
+    "data warehouse": "data-warehouse",
+    "data-warehouse": "data-warehouse",
+    "数据仓库": "data-warehouse",
+    "data warehousing": "data-warehouse",
+    "datawarehouse": "data-warehouse",
+    "数仓": "data-warehouse",
+    "data lake": "data-lake",
+    "数据湖": "data-lake",
+    "data-lake": "data-lake",
+    "data pipelines": "data-pipeline",
+    "data-pipeline": "data-pipeline",
+    "data pipeline": "data-pipeline",
+    "data governance": "data-governance",
+    "data-governance": "data-governance",
+    "数据治理": "data-governance",
+    "数据建模": "data-modeling",
+    "data modeling": "data-modeling",
+    "data-modeling": "data-modeling",
+    "data-quality": "data-quality",
+    "数据质量": "data-quality",
+    "data quality": "data-quality",
+    "维度建模": "dimensional-modeling",
+    "dimensional modeling": "dimensional-modeling",
+    "dimensional-modeling": "dimensional-modeling",
+    "pandas": "pandas",
+    "numpy": "numpy",
+    "tableau": "tableau",
+    "power bi": "powerbi",
+    "powerbi": "powerbi",
+    "microsoft excel": "excel",
+    "数据透视表": "excel",
+    "excel": "excel",
+    "looker": "looker",
+    "data analytics": "data-analysis",
+    "data-analysis": "data-analysis",
+    "数据分析": "data-analysis",
+    "data analysis": "data-analysis",
+    "data visualization": "data-visualization",
+    "数据可视化": "data-visualization",
+    "data viz": "data-visualization",
+    "data-visualization": "data-visualization",
+    "data mining": "data-mining",
+    "data-mining": "data-mining",
+    "数据挖掘": "data-mining",
+    "statistical analysis": "statistics",
+    "statistics": "statistics",
+    "统计建模": "statistics",
+    "统计": "statistics",
+    "ab testing": "ab-testing",
+    "ab测试": "ab-testing",
+    "ab test": "ab-testing",
+    "a/b testing": "ab-testing",
+    "a/b test": "ab-testing",
+    "ab-testing": "ab-testing",
+    "a/b测试": "ab-testing",
+    "商业智能": "business-intelligence",
+    "business-intelligence": "business-intelligence",
+    "bi": "business-intelligence",
+    "business intelligence": "business-intelligence",
+    "数据看板": "dashboard",
+    "仪表盘": "dashboard",
+    "dashboard": "dashboard",
+    "data cleaning": "data-cleaning",
+    "data-cleaning": "data-cleaning",
+    "数据清洗": "data-cleaning",
+    "hypothesis testing": "hypothesis-testing",
+    "假设检验": "hypothesis-testing",
+    "hypothesis-testing": "hypothesis-testing",
+    "time-series": "time-series",
+    "time series": "time-series",
+    "time series analysis": "time-series",
+    "时间序列": "time-series",
+    "时间序列分析": "time-series",
+    "machine-learning": "machine-learning",
+    "machine learning": "machine-learning",
+    "ml": "machine-learning",
+    "机器学习": "machine-learning",
+    "deep learning": "deep-learning",
+    "deep-learning": "deep-learning",
+    "深度学习": "deep-learning",
+    "dl": "deep-learning",
+    "pytorch": "pytorch",
+    "torch": "pytorch",
+    "tensorflow": "tensorflow",
+    "tf": "tensorflow",
+    "keras": "keras",
+    "sklearn": "scikit-learn",
+    "scikit learn": "scikit-learn",
+    "scikit-learn": "scikit-learn",
+    "natural language processing": "nlp",
+    "自然语言处理": "nlp",
+    "nlp": "nlp",
+    "cv": "computer-vision",
+    "computer-vision": "computer-vision",
+    "computer vision": "computer-vision",
+    "opencv": "computer-vision",
+    "计算机视觉": "computer-vision",
+    "强化学习": "reinforcement-learning",
+    "reinforcement learning": "reinforcement-learning",
+    "rl": "reinforcement-learning",
+    "reinforcement-learning": "reinforcement-learning",
+    "xgboost": "xgboost",
+    "data science": "data-science",
+    "data-science": "data-science",
+    "jupyter notebook": "jupyter",
+    "jupyter": "jupyter",
+    "cuda": "cuda",
+    "recommender system": "recommendation-system",
+    "recommendation system": "recommendation-system",
+    "recommendation-system": "recommendation-system",
+    "recsys": "recommendation-system",
+    "推荐系统": "recommendation-system",
+    "特征工程": "feature-engineering",
+    "feature engineering": "feature-engineering",
+    "feature-engineering": "feature-engineering",
+    "model deployment": "model-deployment",
+    "model-deployment": "model-deployment",
+    "模型服务": "model-deployment",
+    "模型部署": "model-deployment",
+    "model serving": "model-deployment",
+    "convolutional neural network": "cnn",
+    "cnn": "cnn",
+    "卷积神经网络": "cnn",
+    "循环神经网络": "rnn",
+    "rnn": "rnn",
+    "recurrent neural network": "rnn",
+    "条件随机场": "crf",
+    "conditional random field": "crf",
+    "crf": "crf",
+    "图神经网络": "gnn",
+    "graph neural network": "gnn",
+    "gnn": "gnn",
+    "ner": "ner",
+    "named entity recognition": "ner",
+    "命名实体识别": "ner",
+    "sentiment analysis": "sentiment-analysis",
+    "情感分析": "sentiment-analysis",
+    "sentiment-analysis": "sentiment-analysis",
+    "文本分类": "text-classification",
+    "text-classification": "text-classification",
+    "text classification": "text-classification",
+    "信息抽取": "information-extraction",
+    "information-extraction": "information-extraction",
+    "information extraction": "information-extraction",
+    "supervised learning": "supervised-learning",
+    "supervised-learning": "supervised-learning",
+    "监督学习": "supervised-learning",
+    "unsupervised-learning": "unsupervised-learning",
+    "无监督学习": "unsupervised-learning",
+    "unsupervised learning": "unsupervised-learning",
+    "model-evaluation": "model-evaluation",
+    "model evaluation": "model-evaluation",
+    "模型评估": "model-evaluation",
+    "llm": "llm",
+    "llms": "llm",
+    "large language models": "llm",
+    "大语言模型": "llm",
+    "large language model": "llm",
+    "大模型": "llm",
+    "retrieval augmented generation": "rag",
+    "检索增强生成": "rag",
+    "rag": "rag",
+    "retrieval-augmented generation": "rag",
+    "langchain": "langchain",
+    "llama index": "llamaindex",
+    "llama-index": "llamaindex",
+    "llamaindex": "llamaindex",
+    "langgraph": "langgraph",
+    "vector-database": "vector-database",
+    "向量数据库": "vector-database",
+    "vector databases": "vector-database",
+    "vectordb": "vector-database",
+    "vector db": "vector-database",
+    "vector database": "vector-database",
+    "pinecone": "pinecone",
+    "milvus": "milvus",
+    "weaviate": "weaviate",
+    "chromadb": "chroma",
+    "chroma": "chroma",
+    "faiss": "faiss",
+    "embedding": "embedding",
+    "text embedding": "embedding",
+    "向量嵌入": "embedding",
+    "embeddings": "embedding",
+    "prompt engineering": "prompt-engineering",
+    "prompt design": "prompt-engineering",
+    "prompt-engineering": "prompt-engineering",
+    "提示词工程": "prompt-engineering",
+    "fine tuning": "fine-tuning",
+    "fine-tuning": "fine-tuning",
+    "微调": "fine-tuning",
+    "lora": "fine-tuning",
+    "finetuning": "fine-tuning",
+    "qlora": "fine-tuning",
+    "agentic": "agent",
+    "autonomous agent": "agent",
+    "ai agents": "agent",
+    "agent": "agent",
+    "ai agent": "agent",
+    "智能体": "agent",
+    "transformer": "transformer",
+    "transformers": "transformer",
+    "bert": "bert",
+    "chatgpt": "gpt",
+    "gpt-4": "gpt",
+    "gpt4": "gpt",
+    "gpt": "gpt",
+    "hugging face": "huggingface",
+    "huggingface": "huggingface",
+    "openai": "openai-api",
+    "openai-api": "openai-api",
+    "openai api": "openai-api",
+    "mlops": "mlops",
+    "mcp": "mcp",
+    "model context protocol": "mcp",
+    "multi-modal": "multimodal",
+    "multimodal": "multimodal",
+    "stable diffusion": "diffusion",
+    "扩散模型": "diffusion",
+    "diffusion": "diffusion",
+    "diffusion model": "diffusion",
+    "diffusion models": "diffusion",
+    "知识图谱": "knowledge-graph",
+    "knowledge graph": "knowledge-graph",
+    "knowledge-graph": "knowledge-graph",
+    "generative ai": "aigc",
+    "aigc": "aigc",
+    "生成式人工智能": "aigc",
+    "模型量化": "quantization",
+    "quantization": "quantization",
+    "量化": "quantization",
+    "multi agent system": "multi-agent",
+    "multi-agent": "multi-agent",
+    "多智能体": "multi-agent",
+    "multi-agent system": "multi-agent",
+    "multi agent": "multi-agent",
+    "tool-calling": "tool-calling",
+    "工具调用": "tool-calling",
+    "tool calling": "tool-calling",
+    "function calling": "tool-calling",
+    "扣子": "coze",
+    "coze": "coze",
+    "qwen": "qwen",
+    "tongyi": "qwen",
+    "通义千问": "qwen",
+    "containerization": "docker",
+    "containers": "docker",
+    "docker": "docker",
+    "kubernetes": "kubernetes",
+    "k8s": "kubernetes",
+    "terraform": "terraform",
+    "ansible": "ansible",
+    "jenkins": "jenkins",
+    "gitlab ci": "gitlab-ci",
+    "gitlab-ci": "gitlab-ci",
+    "github-actions": "github-actions",
+    "github actions": "github-actions",
+    "continuous deployment": "cicd",
+    "continuous integration": "cicd",
+    "持续部署": "cicd",
+    "cicd": "cicd",
+    "ci/cd": "cicd",
+    "持续集成": "cicd",
+    "helm": "helm",
+    "prometheus": "prometheus",
+    "grafana": "grafana",
+    "nginx": "nginx",
+    "linux": "linux",
+    "unix": "unix",
+    "bitbucket": "git",
+    "version control": "git",
+    "git": "git",
+    "gitlab": "git",
+    "github": "git",
+    "devops": "devops",
+    "microservice": "microservices",
+    "microservice architecture": "microservices",
+    "microservices": "microservices",
+    "微服务": "microservices",
+    "serverless": "serverless",
+    "argocd": "argocd",
+    "argo cd": "argocd",
+    "cloudformation": "cloudformation",
+    "vagrant": "vagrant",
+    "service mesh": "istio",
+    "istio": "istio",
+    "缓存": "caching",
+    "caching": "caching",
+    "ha": "high-availability",
+    "high availability": "high-availability",
+    "high-availability": "high-availability",
+    "高可用": "high-availability",
+    "load-balancing": "load-balancing",
+    "load balancing": "load-balancing",
+    "负载均衡": "load-balancing",
+    "message queue": "message-queue",
+    "message-queue": "message-queue",
+    "消息队列": "message-queue",
+    "mq": "message-queue",
+    "capacity planning": "capacity-planning",
+    "capacity-planning": "capacity-planning",
+    "容量规划": "capacity-planning",
+    "性能优化": "performance-tuning",
+    "performance-tuning": "performance-tuning",
+    "performance tuning": "performance-tuning",
+    "性能调优": "performance-tuning",
+    "sre": "sre",
+    "site reliability engineering": "sre",
+    "站点可靠性工程": "sre",
+    "root cause analysis": "root-cause-analysis",
+    "root-cause-analysis": "root-cause-analysis",
+    "rca": "root-cause-analysis",
+    "根因分析": "root-cause-analysis",
+    "selenium": "selenium",
+    "cypress": "cypress",
+    "playwright": "playwright",
+    "jest": "jest",
+    "pytest": "pytest",
+    "junit": "junit",
+    "appium": "appium",
+    "jmeter": "jmeter",
+    "postman": "postman",
+    "automation testing": "qa-automation",
+    "test automation": "qa-automation",
+    "qa automation": "qa-automation",
+    "qa-automation": "qa-automation",
+    "unit testing": "unit-testing",
+    "unit-testing": "unit-testing",
+    "单元测试": "unit-testing",
+    "integration-testing": "integration-testing",
+    "integration testing": "integration-testing",
+    "集成测试": "integration-testing",
+    "压力测试": "load-testing",
+    "load testing": "load-testing",
+    "load-testing": "load-testing",
+    "负载测试": "load-testing",
+    "rest api testing": "rest-api-testing",
+    "rest-api-testing": "rest-api-testing",
+    "接口测试": "rest-api-testing",
+    "api testing": "rest-api-testing",
+    "android": "android",
+    "ios": "ios",
+    "flutter": "flutter",
+    "react-native": "react-native",
+    "react native": "react-native",
+    "xamarin": "xamarin",
+    "jetpack compose": "jetpack-compose",
+    "jetpack-compose": "jetpack-compose",
+    "information security": "cybersecurity",
+    "cybersecurity": "cybersecurity",
+    "信息安全": "cybersecurity",
+    "cyber security": "cybersecurity",
+    "infosec": "cybersecurity",
+    "penetration-testing": "penetration-testing",
+    "penetration testing": "penetration-testing",
+    "渗透测试": "penetration-testing",
+    "pen testing": "penetration-testing",
+    "pentest": "penetration-testing",
+    "oauth": "oauth",
+    "jwt": "jwt",
+    "encryption": "encryption",
+    "ssl": "ssl-tls",
+    "ssl tls": "ssl-tls",
+    "ssl-tls": "ssl-tls",
+    "tls": "ssl-tls",
+    "ssl/tls": "ssl-tls",
+    "siem": "siem",
+    "owasp": "owasp",
+    "零信任": "zero-trust",
+    "zero trust": "zero-trust",
+    "zero-trust": "zero-trust",
+    "合规": "compliance",
+    "compliance": "compliance",
+    "密码学": "cryptography",
+    "cryptography": "cryptography",
+    "数据隐私": "data-privacy",
+    "data-privacy": "data-privacy",
+    "data privacy": "data-privacy",
+    "identity and access management": "iam",
+    "iam": "iam",
+    "身份认证": "iam",
+    "network-security": "network-security",
+    "网络安全": "network-security",
+    "network security": "network-security",
+    "漏洞评估": "vulnerability-assessment",
+    "vulnerability assessment": "vulnerability-assessment",
+    "vulnerability-assessment": "vulnerability-assessment",
+    "应急响应": "incident-response",
+    "incident-response": "incident-response",
+    "incident response": "incident-response",
+    "agile": "agile",
+    "敏捷开发": "agile",
+    "scrum": "scrum",
+    "kanban": "kanban",
+    "jira": "jira",
+    "confluence": "confluence",
+    "websocket": "websocket",
+    "websockets": "websocket",
+    "json": "json",
+    "xml": "xml",
+    "object oriented programming": "oop",
+    "object-oriented": "oop",
+    "面向对象": "oop",
+    "oop": "oop",
+    "system-design": "system-design",
+    "系统设计": "system-design",
+    "system design": "system-design",
+    "distributed systems": "distributed-systems",
+    "distributed-systems": "distributed-systems",
+    "distributed system": "distributed-systems",
+    "分布式系统": "distributed-systems",
+    "web3": "blockchain",
+    "blockchain": "blockchain",
+    "区块链": "blockchain",
+    "smart contract": "blockchain",
+    "smart contracts": "blockchain",
+    "智能合约": "blockchain",
+    "data structures": "data-structures",
+    "data-structures": "data-structures",
+    "data structures and algorithms": "data-structures",
+    "dsa": "data-structures",
+    "数据结构": "data-structures",
+    "algorithms": "algorithms",
+    "算法": "algorithms",
+    "algorithm": "algorithms",
+    "api-design": "api-design",
+    "接口设计": "api-design",
+    "api design": "api-design",
+    "design-patterns": "design-patterns",
+    "设计模式": "design-patterns",
+    "design patterns": "design-patterns",
+    "regular expression": "regex",
+    "regex": "regex",
+    "正则表达式": "regex",
+    "regexp": "regex",
+    "网络爬虫": "web-scraping",
+    "web scraping": "web-scraping",
+    "web crawler": "web-scraping",
+    "web-scraping": "web-scraping",
+    "crawler": "web-scraping",
+    "爬虫": "web-scraping",
+    "地理信息系统": "gis",
+    "gis": "gis",
+    "iot": "iot",
+    "internet of things": "iot",
+    "物联网": "iot"
+  },
+  "id_to_name": {
+    "python": "Python",
+    "java": "Java",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "c": "C",
+    "cpp": "C++",
+    "csharp": "C#",
+    "go": "Go",
+    "rust": "Rust",
+    "ruby": "Ruby",
+    "php": "PHP",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "scala": "Scala",
+    "r": "R",
+    "matlab": "MATLAB",
+    "perl": "Perl",
+    "objective-c": "Objective-C",
+    "dart": "Dart",
+    "shell": "Shell",
+    "powershell": "PowerShell",
+    "sql-lang": "SQL",
+    "solidity": "Solidity",
+    "groovy": "Groovy",
+    "lua": "Lua",
+    "haskell": "Haskell",
+    "elixir": "Elixir",
+    "clojure": "Clojure",
+    "html": "HTML",
+    "css": "CSS",
+    "react": "React",
+    "vue": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nuxt": "Nuxt.js",
+    "redux": "Redux",
+    "jquery": "jQuery",
+    "tailwind": "Tailwind CSS",
+    "bootstrap": "Bootstrap",
+    "sass": "Sass",
+    "webpack": "Webpack",
+    "vite": "Vite",
+    "electron": "Electron",
+    "threejs": "Three.js",
+    "webgl": "WebGL",
+    "nodejs": "Node.js",
+    "express": "Express.js",
+    "nestjs": "NestJS",
+    "django": "Django",
+    "flask": "Flask",
+    "fastapi": "FastAPI",
+    "spring": "Spring",
+    "springboot": "Spring Boot",
+    "dotnet": ".NET",
+    "laravel": "Laravel",
+    "symfony": "Symfony",
+    "rails": "Ruby on Rails",
+    "gin": "Gin",
+    "hibernate": "Hibernate",
+    "grpc": "gRPC",
+    "graphql": "GraphQL",
+    "rest": "REST API",
+    "mysql": "MySQL",
+    "postgresql": "PostgreSQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "oracle-db": "Oracle Database",
+    "sqlserver": "SQL Server",
+    "sqlite": "SQLite",
+    "cassandra": "Cassandra",
+    "elasticsearch": "Elasticsearch",
+    "dynamodb": "DynamoDB",
+    "neo4j": "Neo4j",
+    "clickhouse": "ClickHouse",
+    "mariadb": "MariaDB",
+    "couchbase": "Couchbase",
+    "influxdb": "InfluxDB",
+    "db2": "DB2",
+    "nosql": "NoSQL",
+    "aws": "AWS",
+    "azure": "Microsoft Azure",
+    "gcp": "Google Cloud",
+    "alicloud": "Alibaba Cloud",
+    "cloudflare": "Cloudflare",
+    "heroku": "Heroku",
+    "digitalocean": "DigitalOcean",
+    "s3": "Amazon S3",
+    "ec2": "Amazon EC2",
+    "lambda": "AWS Lambda",
+    "redshift": "Amazon Redshift",
+    "aurora": "Amazon Aurora",
+    "cloud-computing": "Cloud Computing",
+    "edge-computing": "Edge Computing",
+    "tencent-cloud": "Tencent Cloud",
+    "spark": "Apache Spark",
+    "hadoop": "Hadoop",
+    "kafka": "Apache Kafka",
+    "flink": "Apache Flink",
+    "airflow": "Apache Airflow",
+    "dbt": "dbt",
+    "hive": "Hive",
+    "snowflake": "Snowflake",
+    "databricks": "Databricks",
+    "etl": "ETL",
+    "bigquery": "BigQuery",
+    "rabbitmq": "RabbitMQ",
+    "dagster": "Dagster",
+    "data-warehouse": "Data Warehouse",
+    "data-lake": "Data Lake",
+    "data-pipeline": "Data Pipeline",
+    "data-governance": "Data Governance",
+    "data-modeling": "Data Modeling",
+    "data-quality": "Data Quality",
+    "dimensional-modeling": "Dimensional Modeling",
+    "pandas": "Pandas",
+    "numpy": "NumPy",
+    "tableau": "Tableau",
+    "powerbi": "Power BI",
+    "excel": "Excel",
+    "looker": "Looker",
+    "data-analysis": "Data Analysis",
+    "data-visualization": "Data Visualization",
+    "data-mining": "Data Mining",
+    "statistics": "Statistics",
+    "ab-testing": "A/B Testing",
+    "business-intelligence": "Business Intelligence",
+    "dashboard": "Dashboard",
+    "data-cleaning": "Data Cleaning",
+    "hypothesis-testing": "Hypothesis Testing",
+    "time-series": "Time Series Analysis",
+    "machine-learning": "Machine Learning",
+    "deep-learning": "Deep Learning",
+    "pytorch": "PyTorch",
+    "tensorflow": "TensorFlow",
+    "keras": "Keras",
+    "scikit-learn": "scikit-learn",
+    "nlp": "NLP",
+    "computer-vision": "Computer Vision",
+    "reinforcement-learning": "Reinforcement Learning",
+    "xgboost": "XGBoost",
+    "data-science": "Data Science",
+    "jupyter": "Jupyter",
+    "cuda": "CUDA",
+    "recommendation-system": "Recommendation System",
+    "feature-engineering": "Feature Engineering",
+    "model-deployment": "Model Deployment",
+    "cnn": "CNN",
+    "rnn": "RNN",
+    "crf": "CRF",
+    "gnn": "Graph Neural Network",
+    "ner": "Named Entity Recognition",
+    "sentiment-analysis": "Sentiment Analysis",
+    "text-classification": "Text Classification",
+    "information-extraction": "Information Extraction",
+    "supervised-learning": "Supervised Learning",
+    "unsupervised-learning": "Unsupervised Learning",
+    "model-evaluation": "Model Evaluation",
+    "llm": "LLM",
+    "rag": "RAG",
+    "langchain": "LangChain",
+    "llamaindex": "LlamaIndex",
+    "langgraph": "LangGraph",
+    "vector-database": "Vector Database",
+    "pinecone": "Pinecone",
+    "milvus": "Milvus",
+    "weaviate": "Weaviate",
+    "chroma": "Chroma",
+    "faiss": "FAISS",
+    "embedding": "Embedding",
+    "prompt-engineering": "Prompt Engineering",
+    "fine-tuning": "Fine-tuning",
+    "agent": "AI Agent",
+    "transformer": "Transformer",
+    "bert": "BERT",
+    "gpt": "GPT",
+    "huggingface": "Hugging Face",
+    "openai-api": "OpenAI API",
+    "mlops": "MLOps",
+    "mcp": "MCP",
+    "multimodal": "Multimodal",
+    "diffusion": "Diffusion Model",
+    "knowledge-graph": "Knowledge Graph",
+    "aigc": "AIGC",
+    "quantization": "Quantization",
+    "multi-agent": "Multi-Agent System",
+    "tool-calling": "Tool Calling",
+    "coze": "Coze",
+    "qwen": "Qwen",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "terraform": "Terraform",
+    "ansible": "Ansible",
+    "jenkins": "Jenkins",
+    "gitlab-ci": "GitLab CI",
+    "github-actions": "GitHub Actions",
+    "cicd": "CI/CD",
+    "helm": "Helm",
+    "prometheus": "Prometheus",
+    "grafana": "Grafana",
+    "nginx": "Nginx",
+    "linux": "Linux",
+    "unix": "Unix",
+    "git": "Git",
+    "devops": "DevOps",
+    "microservices": "Microservices",
+    "serverless": "Serverless",
+    "argocd": "ArgoCD",
+    "cloudformation": "CloudFormation",
+    "vagrant": "Vagrant",
+    "istio": "Istio",
+    "caching": "Caching",
+    "high-availability": "High Availability",
+    "load-balancing": "Load Balancing",
+    "message-queue": "Message Queue",
+    "capacity-planning": "Capacity Planning",
+    "performance-tuning": "Performance Tuning",
+    "sre": "SRE",
+    "root-cause-analysis": "Root Cause Analysis",
+    "selenium": "Selenium",
+    "cypress": "Cypress",
+    "playwright": "Playwright",
+    "jest": "Jest",
+    "pytest": "pytest",
+    "junit": "JUnit",
+    "appium": "Appium",
+    "jmeter": "JMeter",
+    "postman": "Postman",
+    "qa-automation": "QA Automation",
+    "unit-testing": "Unit Testing",
+    "integration-testing": "Integration Testing",
+    "load-testing": "Load Testing",
+    "rest-api-testing": "REST API Testing",
+    "android": "Android",
+    "ios": "iOS",
+    "flutter": "Flutter",
+    "react-native": "React Native",
+    "xamarin": "Xamarin",
+    "jetpack-compose": "Jetpack Compose",
+    "cybersecurity": "Cybersecurity",
+    "penetration-testing": "Penetration Testing",
+    "oauth": "OAuth",
+    "jwt": "JWT",
+    "encryption": "Encryption",
+    "ssl-tls": "SSL/TLS",
+    "siem": "SIEM",
+    "owasp": "OWASP",
+    "zero-trust": "Zero Trust",
+    "compliance": "Compliance",
+    "cryptography": "Cryptography",
+    "data-privacy": "Data Privacy",
+    "iam": "Identity and Access Management",
+    "network-security": "Network Security",
+    "vulnerability-assessment": "Vulnerability Assessment",
+    "incident-response": "Incident Response",
+    "agile": "Agile",
+    "scrum": "Scrum",
+    "kanban": "Kanban",
+    "jira": "Jira",
+    "confluence": "Confluence",
+    "websocket": "WebSocket",
+    "json": "JSON",
+    "xml": "XML",
+    "oop": "OOP",
+    "system-design": "System Design",
+    "distributed-systems": "Distributed Systems",
+    "blockchain": "Blockchain",
+    "data-structures": "Data Structures",
+    "algorithms": "Algorithms",
+    "api-design": "API Design",
+    "design-patterns": "Design Patterns",
+    "regex": "Regular Expression",
+    "web-scraping": "Web Scraping",
+    "gis": "GIS",
+    "iot": "IoT"
+  },
+  "by_category": {
+    "language": [
+      "python",
+      "java",
+      "javascript",
+      "typescript",
+      "c",
+      "cpp",
+      "csharp",
+      "go",
+      "rust",
+      "ruby",
+      "php",
+      "swift",
+      "kotlin",
+      "scala",
+      "r",
+      "matlab",
+      "perl",
+      "objective-c",
+      "dart",
+      "shell",
+      "powershell",
+      "sql-lang",
+      "solidity",
+      "groovy",
+      "lua",
+      "haskell",
+      "elixir",
+      "clojure"
+    ],
+    "frontend": [
+      "html",
+      "css",
+      "react",
+      "vue",
+      "angular",
+      "svelte",
+      "nextjs",
+      "nuxt",
+      "redux",
+      "jquery",
+      "tailwind",
+      "bootstrap",
+      "sass",
+      "webpack",
+      "vite",
+      "electron",
+      "threejs",
+      "webgl"
+    ],
+    "backend": [
+      "nodejs",
+      "express",
+      "nestjs",
+      "django",
+      "flask",
+      "fastapi",
+      "spring",
+      "springboot",
+      "dotnet",
+      "laravel",
+      "symfony",
+      "rails",
+      "gin",
+      "hibernate",
+      "grpc",
+      "graphql",
+      "rest"
+    ],
+    "database": [
+      "mysql",
+      "postgresql",
+      "mongodb",
+      "redis",
+      "oracle-db",
+      "sqlserver",
+      "sqlite",
+      "cassandra",
+      "elasticsearch",
+      "dynamodb",
+      "neo4j",
+      "clickhouse",
+      "mariadb",
+      "couchbase",
+      "influxdb",
+      "db2",
+      "nosql"
+    ],
+    "cloud": [
+      "aws",
+      "azure",
+      "gcp",
+      "alicloud",
+      "cloudflare",
+      "heroku",
+      "digitalocean",
+      "s3",
+      "ec2",
+      "lambda",
+      "redshift",
+      "aurora",
+      "cloud-computing",
+      "edge-computing",
+      "tencent-cloud"
+    ],
+    "bigdata": [
+      "spark",
+      "hadoop",
+      "kafka",
+      "flink",
+      "airflow",
+      "dbt",
+      "hive",
+      "snowflake",
+      "databricks",
+      "etl",
+      "bigquery",
+      "rabbitmq",
+      "dagster",
+      "data-warehouse",
+      "data-lake",
+      "data-pipeline",
+      "data-governance",
+      "data-modeling",
+      "data-quality",
+      "dimensional-modeling"
+    ],
+    "data_analysis": [
+      "pandas",
+      "numpy",
+      "tableau",
+      "powerbi",
+      "excel",
+      "looker",
+      "data-analysis",
+      "data-visualization",
+      "data-mining",
+      "statistics",
+      "ab-testing",
+      "business-intelligence",
+      "dashboard",
+      "data-cleaning",
+      "hypothesis-testing",
+      "time-series"
+    ],
+    "ai_ml": [
+      "machine-learning",
+      "deep-learning",
+      "pytorch",
+      "tensorflow",
+      "keras",
+      "scikit-learn",
+      "nlp",
+      "computer-vision",
+      "reinforcement-learning",
+      "xgboost",
+      "data-science",
+      "jupyter",
+      "cuda",
+      "recommendation-system",
+      "feature-engineering",
+      "model-deployment",
+      "cnn",
+      "rnn",
+      "crf",
+      "gnn",
+      "ner",
+      "sentiment-analysis",
+      "text-classification",
+      "information-extraction",
+      "supervised-learning",
+      "unsupervised-learning",
+      "model-evaluation"
+    ],
+    "ai_emerging": [
+      "llm",
+      "rag",
+      "langchain",
+      "llamaindex",
+      "langgraph",
+      "vector-database",
+      "pinecone",
+      "milvus",
+      "weaviate",
+      "chroma",
+      "faiss",
+      "embedding",
+      "prompt-engineering",
+      "fine-tuning",
+      "agent",
+      "transformer",
+      "bert",
+      "gpt",
+      "huggingface",
+      "openai-api",
+      "mlops",
+      "mcp",
+      "multimodal",
+      "diffusion",
+      "knowledge-graph",
+      "aigc",
+      "quantization",
+      "multi-agent",
+      "tool-calling",
+      "coze",
+      "qwen"
+    ],
+    "devops": [
+      "docker",
+      "kubernetes",
+      "terraform",
+      "ansible",
+      "jenkins",
+      "gitlab-ci",
+      "github-actions",
+      "cicd",
+      "helm",
+      "prometheus",
+      "grafana",
+      "nginx",
+      "linux",
+      "unix",
+      "git",
+      "devops",
+      "microservices",
+      "serverless",
+      "argocd",
+      "cloudformation",
+      "vagrant",
+      "istio",
+      "caching",
+      "high-availability",
+      "load-balancing",
+      "message-queue",
+      "capacity-planning",
+      "performance-tuning",
+      "sre",
+      "root-cause-analysis"
+    ],
+    "testing": [
+      "selenium",
+      "cypress",
+      "playwright",
+      "jest",
+      "pytest",
+      "junit",
+      "appium",
+      "jmeter",
+      "postman",
+      "qa-automation",
+      "unit-testing",
+      "integration-testing",
+      "load-testing",
+      "rest-api-testing"
+    ],
+    "mobile": [
+      "android",
+      "ios",
+      "flutter",
+      "react-native",
+      "xamarin",
+      "jetpack-compose"
+    ],
+    "security": [
+      "cybersecurity",
+      "penetration-testing",
+      "oauth",
+      "jwt",
+      "encryption",
+      "ssl-tls",
+      "siem",
+      "owasp",
+      "zero-trust",
+      "compliance",
+      "cryptography",
+      "data-privacy",
+      "iam",
+      "network-security",
+      "vulnerability-assessment",
+      "incident-response"
+    ],
+    "methods": [
+      "agile",
+      "scrum",
+      "kanban",
+      "jira",
+      "confluence",
+      "websocket",
+      "json",
+      "xml",
+      "oop",
+      "system-design",
+      "distributed-systems",
+      "blockchain",
+      "data-structures",
+      "algorithms",
+      "api-design",
+      "design-patterns",
+      "regex",
+      "web-scraping",
+      "gis",
+      "iot"
+    ]
+  },
+  "all_aliases": [
+    ".net",
+    ".net core",
+    ".net framework",
+    "a/b test",
+    "a/b testing",
+    "a/b测试",
+    "ab test",
+    "ab testing",
+    "ab-testing",
+    "ab测试",
+    "agent",
+    "agentic",
+    "agile",
+    "ai agent",
+    "ai agents",
+    "aigc",
+    "airflow",
+    "algorithm",
+    "algorithms",
+    "alibaba cloud",
+    "alicloud",
+    "aliyun",
+    "amazon aurora",
+    "amazon aws",
+    "amazon ec2",
+    "amazon redshift",
+    "amazon s3",
+    "amazon web services",
+    "android",
+    "angular",
+    "angular.js",
+    "angularjs",
+    "ansible",
+    "apache airflow",
+    "apache flink",
+    "apache hadoop",
+    "apache hive",
+    "apache kafka",
+    "apache spark",
+    "api design",
+    "api testing",
+    "api-design",
+    "appium",
+    "argo cd",
+    "argocd",
+    "asp.net",
+    "asp.net core",
+    "aurora",
+    "automation testing",
+    "autonomous agent",
+    "aws",
+    "aws cloud",
+    "aws lambda",
+    "azure",
+    "azure sql",
+    "bash",
+    "bert",
+    "bi",
+    "big query",
+    "bigquery",
+    "bitbucket",
+    "blockchain",
+    "bootstrap",
+    "business intelligence",
+    "business-intelligence",
+    "c",
+    "c language",
+    "c plus plus",
+    "c sharp",
+    "c#",
+    "c++",
+    "caching",
+    "capacity planning",
+    "capacity-planning",
+    "cassandra",
+    "chatgpt",
+    "chroma",
+    "chromadb",
+    "ci/cd",
+    "cicd",
+    "clickhouse",
+    "clojure",
+    "cloud computing",
+    "cloud-computing",
+    "cloudflare",
+    "cloudformation",
+    "cnn",
+    "compliance",
+    "computer vision",
+    "computer-vision",
+    "conditional random field",
+    "confluence",
+    "containerization",
+    "containers",
+    "continuous deployment",
+    "continuous integration",
+    "convolutional neural network",
+    "couchbase",
+    "coze",
+    "cplusplus",
+    "cpp",
+    "crawler",
+    "crf",
+    "cryptography",
+    "csharp",
+    "css",
+    "css3",
+    "cuda",
+    "cv",
+    "cyber security",
+    "cybersecurity",
+    "cypress",
+    "c语言",
+    "dagster",
+    "dart",
+    "dashboard",
+    "data analysis",
+    "data analytics",
+    "data cleaning",
+    "data governance",
+    "data lake",
+    "data mining",
+    "data modeling",
+    "data pipeline",
+    "data pipelines",
+    "data privacy",
+    "data quality",
+    "data science",
+    "data structures",
+    "data structures and algorithms",
+    "data visualization",
+    "data viz",
+    "data warehouse",
+    "data warehousing",
+    "data-analysis",
+    "data-cleaning",
+    "data-governance",
+    "data-lake",
+    "data-mining",
+    "data-modeling",
+    "data-pipeline",
+    "data-privacy",
+    "data-quality",
+    "data-science",
+    "data-structures",
+    "data-visualization",
+    "data-warehouse",
+    "databricks",
+    "datawarehouse",
+    "db2",
+    "dbt",
+    "deep learning",
+    "deep-learning",
+    "design patterns",
+    "design-patterns",
+    "devops",
+    "diffusion",
+    "diffusion model",
+    "diffusion models",
+    "digitalocean",
+    "dimensional modeling",
+    "dimensional-modeling",
+    "distributed system",
+    "distributed systems",
+    "distributed-systems",
+    "django",
+    "dl",
+    "docker",
+    "dotnet",
+    "dotnet language",
+    "dsa",
+    "dynamodb",
+    "ec2",
+    "ecmascript",
+    "edge computing",
+    "edge-computing",
+    "elastic",
+    "elastic search",
+    "elasticsearch",
+    "electron",
+    "elixir",
+    "embedding",
+    "embeddings",
+    "encryption",
+    "es搜索",
+    "etl",
+    "excel",
+    "express",
+    "express.js",
+    "expressjs",
+    "faiss",
+    "fastapi",
+    "feature engineering",
+    "feature-engineering",
+    "fine tuning",
+    "fine-tuning",
+    "finetuning",
+    "flask",
+    "flink",
+    "flutter",
+    "function calling",
+    "gcp",
+    "generative ai",
+    "gin",
+    "gis",
+    "git",
+    "github",
+    "github actions",
+    "github-actions",
+    "gitlab",
+    "gitlab ci",
+    "gitlab-ci",
+    "gnn",
+    "go",
+    "golang",
+    "google cloud",
+    "google cloud platform",
+    "go语言",
+    "gpt",
+    "gpt-4",
+    "gpt4",
+    "grafana",
+    "graph database",
+    "graph neural network",
+    "graphql",
+    "groovy",
+    "grpc",
+    "ha",
+    "hadoop",
+    "haskell",
+    "helm",
+    "heroku",
+    "hibernate",
+    "high availability",
+    "high-availability",
+    "hive",
+    "html",
+    "html5",
+    "hugging face",
+    "huggingface",
+    "hypothesis testing",
+    "hypothesis-testing",
+    "iam",
+    "identity and access management",
+    "incident response",
+    "incident-response",
+    "influxdb",
+    "information extraction",
+    "information security",
+    "information-extraction",
+    "infosec",
+    "integration testing",
+    "integration-testing",
+    "internet of things",
+    "ios",
+    "iot",
+    "istio",
+    "java",
+    "javascript",
+    "jdk",
+    "jenkins",
+    "jest",
+    "jetpack compose",
+    "jetpack-compose",
+    "jira",
+    "jmeter",
+    "jquery",
+    "js",
+    "json",
+    "junit",
+    "jupyter",
+    "jupyter notebook",
+    "jwt",
+    "k8s",
+    "kafka",
+    "kanban",
+    "keras",
+    "knowledge graph",
+    "knowledge-graph",
+    "kotlin",
+    "kubernetes",
+    "lambda",
+    "langchain",
+    "langgraph",
+    "laravel",
+    "large language model",
+    "large language models",
+    "linux",
+    "llama index",
+    "llama-index",
+    "llamaindex",
+    "llm",
+    "llms",
+    "load balancing",
+    "load testing",
+    "load-balancing",
+    "load-testing",
+    "looker",
+    "lora",
+    "lua",
+    "machine learning",
+    "machine-learning",
+    "mariadb",
+    "matlab",
+    "mcp",
+    "message queue",
+    "message-queue",
+    "microservice",
+    "microservice architecture",
+    "microservices",
+    "microsoft azure",
+    "microsoft excel",
+    "microsoft sql server",
+    "milvus",
+    "ml",
+    "mlops",
+    "model context protocol",
+    "model deployment",
+    "model evaluation",
+    "model serving",
+    "model-deployment",
+    "model-evaluation",
+    "mongo",
+    "mongodb",
+    "mq",
+    "ms sql",
+    "ms sql server",
+    "mssql",
+    "multi agent",
+    "multi agent system",
+    "multi-agent",
+    "multi-agent system",
+    "multi-modal",
+    "multimodal",
+    "mysql",
+    "named entity recognition",
+    "natural language processing",
+    "neo4j",
+    "ner",
+    "nest.js",
+    "nestjs",
+    "network security",
+    "network-security",
+    "next.js",
+    "nextjs",
+    "nginx",
+    "nlp",
+    "node",
+    "node.js",
+    "nodejs",
+    "nosql",
+    "numpy",
+    "nuxt",
+    "nuxt.js",
+    "nuxtjs",
+    "oauth",
+    "objc",
+    "object oriented programming",
+    "object-oriented",
+    "objective c",
+    "objective-c",
+    "oop",
+    "openai",
+    "openai api",
+    "openai-api",
+    "opencv",
+    "oracle",
+    "oracle database",
+    "oracle db",
+    "oracle-db",
+    "owasp",
+    "pandas",
+    "pen testing",
+    "penetration testing",
+    "penetration-testing",
+    "pentest",
+    "performance tuning",
+    "performance-tuning",
+    "perl",
+    "php",
+    "pinecone",
+    "pl/sql",
+    "playwright",
+    "plsql",
+    "postgres",
+    "postgresql",
+    "postman",
+    "power bi",
+    "powerbi",
+    "powershell",
+    "prometheus",
+    "prompt design",
+    "prompt engineering",
+    "prompt-engineering",
+    "psql",
+    "pyspark",
+    "pytest",
+    "python",
+    "pytorch",
+    "qa automation",
+    "qa-automation",
+    "qlora",
+    "quantization",
+    "qwen",
+    "r",
+    "r language",
+    "rabbitmq",
+    "rag",
+    "rails",
+    "rca",
+    "react",
+    "react native",
+    "react-native",
+    "react.js",
+    "reactjs",
+    "recommendation system",
+    "recommendation-system",
+    "recommender system",
+    "recsys",
+    "recurrent neural network",
+    "redis",
+    "redshift",
+    "redux",
+    "regex",
+    "regexp",
+    "regular expression",
+    "reinforcement learning",
+    "reinforcement-learning",
+    "rest",
+    "rest api",
+    "rest api testing",
+    "rest apis",
+    "rest-api-testing",
+    "restful",
+    "restful api",
+    "restful apis",
+    "retrieval augmented generation",
+    "retrieval-augmented generation",
+    "rl",
+    "rnn",
+    "root cause analysis",
+    "root-cause-analysis",
+    "ror",
+    "ruby",
+    "ruby on rails",
+    "rust",
+    "r语言",
+    "s3",
+    "sass",
+    "scala",
+    "scikit learn",
+    "scikit-learn",
+    "scrum",
+    "scss",
+    "selenium",
+    "sentiment analysis",
+    "sentiment-analysis",
+    "serverless",
+    "service mesh",
+    "shell",
+    "shell script",
+    "shell scripting",
+    "shell脚本",
+    "siem",
+    "site reliability engineering",
+    "sklearn",
+    "smart contract",
+    "smart contracts",
+    "snowflake",
+    "solidity",
+    "spark",
+    "spring",
+    "spring boot",
+    "spring framework",
+    "spring-boot",
+    "springboot",
+    "sql",
+    "sql lang",
+    "sql server",
+    "sql-lang",
+    "sqlite",
+    "sqlserver",
+    "sre",
+    "ssl",
+    "ssl tls",
+    "ssl-tls",
+    "ssl/tls",
+    "stable diffusion",
+    "statistical analysis",
+    "statistics",
+    "structured query language",
+    "supervised learning",
+    "supervised-learning",
+    "svelte",
+    "sveltekit",
+    "swift",
+    "symfony",
+    "system design",
+    "system-design",
+    "tableau",
+    "tailwind",
+    "tailwind css",
+    "tailwindcss",
+    "tencent cloud",
+    "tencent-cloud",
+    "tensorflow",
+    "terraform",
+    "test automation",
+    "text classification",
+    "text embedding",
+    "text-classification",
+    "tf",
+    "three.js",
+    "threejs",
+    "time series",
+    "time series analysis",
+    "time-series",
+    "tls",
+    "tongyi",
+    "tool calling",
+    "tool-calling",
+    "torch",
+    "transformer",
+    "transformers",
+    "ts",
+    "typescript",
+    "unit testing",
+    "unit-testing",
+    "unix",
+    "unsupervised learning",
+    "unsupervised-learning",
+    "vagrant",
+    "vector database",
+    "vector databases",
+    "vector db",
+    "vector-database",
+    "vectordb",
+    "version control",
+    "vite",
+    "vue",
+    "vue.js",
+    "vuejs",
+    "vulnerability assessment",
+    "vulnerability-assessment",
+    "weaviate",
+    "web crawler",
+    "web scraping",
+    "web-scraping",
+    "web3",
+    "webgl",
+    "webpack",
+    "websocket",
+    "websockets",
+    "xamarin",
+    "xgboost",
+    "xml",
+    "zero trust",
+    "zero-trust",
+    "云计算",
+    "仪表盘",
+    "信息安全",
+    "信息抽取",
+    "假设检验",
+    "分布式系统",
+    "区块链",
+    "单元测试",
+    "卷积神经网络",
+    "压力测试",
+    "合规",
+    "向量嵌入",
+    "向量数据库",
+    "命名实体识别",
+    "商业智能",
+    "图神经网络",
+    "地理信息系统",
+    "多智能体",
+    "大模型",
+    "大语言模型",
+    "容量规划",
+    "密码学",
+    "工具调用",
+    "应急响应",
+    "强化学习",
+    "循环神经网络",
+    "微服务",
+    "微调",
+    "性能优化",
+    "性能调优",
+    "情感分析",
+    "扣子",
+    "扩散模型",
+    "持续部署",
+    "持续集成",
+    "接口测试",
+    "接口设计",
+    "推荐系统",
+    "提示词工程",
+    "敏捷开发",
+    "数仓",
+    "数据仓库",
+    "数据分析",
+    "数据可视化",
+    "数据建模",
+    "数据挖掘",
+    "数据治理",
+    "数据清洗",
+    "数据湖",
+    "数据看板",
+    "数据结构",
+    "数据质量",
+    "数据透视表",
+    "数据隐私",
+    "文本分类",
+    "无监督学习",
+    "时间序列",
+    "时间序列分析",
+    "智能体",
+    "智能合约",
+    "机器学习",
+    "条件随机场",
+    "根因分析",
+    "检索增强生成",
+    "模型服务",
+    "模型评估",
+    "模型部署",
+    "模型量化",
+    "正则表达式",
+    "消息队列",
+    "深度学习",
+    "渗透测试",
+    "漏洞评估",
+    "爬虫",
+    "物联网",
+    "特征工程",
+    "生成式人工智能",
+    "监督学习",
+    "知识图谱",
+    "站点可靠性工程",
+    "算法",
+    "系统设计",
+    "统计",
+    "统计建模",
+    "维度建模",
+    "缓存",
+    "网络安全",
+    "网络爬虫",
+    "腾讯云",
+    "自然语言处理",
+    "计算机视觉",
+    "设计模式",
+    "负载均衡",
+    "负载测试",
+    "身份认证",
+    "边缘计算",
+    "通义千问",
+    "量化",
+    "阿里云",
+    "集成测试",
+    "零信任",
+    "非关系型数据库",
+    "面向对象",
+    "高可用"
+  ]
+}
