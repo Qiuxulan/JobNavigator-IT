@@ -1,0 +1,9 @@
+{
+  "input": "data\\silver\\resume_real_english.jsonl",
+  "output": "data\\silver\\resume_it_english.jsonl",
+  "total_rows": 5000,
+  "kept_rows": 2867,
+  "rejected_rows": 2133,
+  "min_hits": 2,
+  "filter_type": "keyword-based IT resume filter"
+}
