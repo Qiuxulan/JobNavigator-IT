@@ -1,0 +1,55 @@
+{
+  "generated": "2026-06-01",
+  "training_data": {
+    "positive_pairs": 395,
+    "train_pos": 303,
+    "val_pos": 92,
+    "resources": 326,
+    "skills": 29
+  },
+  "models": {
+    "keyword_rules": {
+      "metrics": {
+        "p@1": 0.2759,
+        "p@3": 0.2414,
+        "r@3": 0.3863,
+        "mrr": 0.454,
+        "n_skills_evaluated": 29
+      }
+    },
+    "tfidf_bilingual": {
+      "metrics": {
+        "p@1": 0.2414,
+        "p@3": 0.1724,
+        "r@3": 0.3101,
+        "mrr": 0.3994,
+        "n_skills_evaluated": 29
+      },
+      "vocab_size": 2045,
+      "model_file": "C:\\Users\\24222\\Desktop\\JobNavigator-IT\\models\\tfidf_matcher.pkl"
+    },
+    "st_zeroshot": {
+      "metrics": {
+        "p@1": 0.1724,
+        "p@3": 0.1954,
+        "r@3": 0.3159,
+        "mrr": 0.3155,
+        "n_skills_evaluated": 29
+      }
+    },
+    "st_finetuned": {
+      "metrics": {
+        "p@1": 0.2069,
+        "p@3": 0.2529,
+        "r@3": 0.43,
+        "mrr": 0.4368,
+        "n_skills_evaluated": 29
+      },
+      "model_dir": "C:\\Users\\24222\\Desktop\\JobNavigator-IT\\models\\st_finetuned",
+      "base_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "epochs": 3
+    }
+  },
+  "best_model": "keyword_rules",
+  "recommendation": "P@3最高: keyword_rules (0.241)"
+}

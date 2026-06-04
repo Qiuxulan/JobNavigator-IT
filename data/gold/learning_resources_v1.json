@@ -1,0 +1,4714 @@
+{
+  "version": "v1",
+  "created": "2026-06-01",
+  "description": "学习资源库（按skill_id索引），整合Bilibili视频/GitHub仓库/Coursera课程三源，供路径规划模块调用",
+  "metadata": {
+    "total_skills": 29,
+    "skills_with_resources": 29,
+    "skills_without_resources": [],
+    "source_counts": {
+      "bilibili": 77,
+      "coursera": 301,
+      "github": 19
+    },
+    "total_resource_skill_pairs": 397
+  },
+  "skills": {
+    "sk_python_basic": {
+      "skill_name": "Python基础",
+      "category": "编程语言",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0001",
+          "title": "Python Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0026",
+          "title": "AI Python for Beginners",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AI+Python+for+Beginners",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0090",
+          "title": "Introduction to Python Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Python+Programming",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Pennsylvania | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0140",
+          "title": "Python Programming Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0414",
+          "title": "Python Programming Essentials",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+Programming+Essentials",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Rice University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0441",
+          "title": "Python Programming Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0491",
+          "title": "Problem Solving, Python Programming, and Video Games",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Problem+Solving,+Python+Programming,+and+Video+Games",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Alberta | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0511",
+          "title": " Python for Beginners: Data Structures",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=+Python+for+Beginners:+Data+Structures",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0551",
+          "title": "The Raspberry Pi Platform and Python Programming for the Raspberry Pi",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=The+Raspberry+Pi+Platform+and+Python+Programming+for+the+Raspberry+Pi",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of California, Irvine | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0681",
+          "title": "Python Basics: Selection and Iteration",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+Basics:+Selection+and+Iteration",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Codio | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0806",
+          "title": "Learn Python: 1",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Learn+Python:+1",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Scrimba | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1164",
+          "title": "Expressway to Data Science: Python Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Expressway+to+Data+Science:+Python+Programming",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1397",
+          "title": "Python for Beginners: Variables and Strings",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2029",
+          "title": "Expressway to Data Science: Python Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Expressway+to+Data+Science:+Python+Programming",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2262",
+          "title": "Python for Beginners: Variables and Strings",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0530",
+          "title": "Web Scraping Tutorial with Scrapy and Python for Beginners",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Web+Scraping+Tutorial+with+Scrapy+and+Python+for+Beginners",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Packt | rating:4.6",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_sql_basic": {
+      "skill_name": "SQL基础",
+      "category": "数据库",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0111",
+          "title": "PostgreSQL for Everybody",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=PostgreSQL+for+Everybody",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0280",
+          "title": "Database Design and Basic SQL in PostgreSQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0391",
+          "title": "Intermediate PostgreSQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Intermediate+PostgreSQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1305",
+          "title": "Managing Big Data with MySQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Managing+Big+Data+with+MySQL",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1401",
+          "title": "Relational Database Implementation and Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Relational+Database+Implementation+and+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1697",
+          "title": "Analyze Data in a Model Car Database with MySQL Workbench",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Analyze+Data+in+a+Model+Car+Database+with+MySQL+Workbench",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1707",
+          "title": "Relational database systems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Relational+database+systems",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Universidad Nacional Autónoma de México | rating:3.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1749",
+          "title": "Manage Data for an Online Grocer Using MySQL Workbench",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Manage+Data+for+an+Online+Grocer+Using+MySQL+Workbench",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1784",
+          "title": "Relational Database Support for Data Warehouses",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Relational+Database+Support+for+Data+Warehouses",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2170",
+          "title": "Managing Big Data with MySQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Managing+Big+Data+with+MySQL",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2266",
+          "title": "Relational Database Implementation and Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Relational+Database+Implementation+and+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2511",
+          "title": "Excel to MySQL: Analytic Techniques for Business",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Excel+to+MySQL:+Analytic+Techniques+for+Business",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Duke University | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0423",
+          "title": "JSON and Natural Language Processing in PostgreSQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JSON+and+Natural+Language+Processing+in+PostgreSQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0457",
+          "title": "Relational Database Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Relational+Database+Design",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0550",
+          "title": "Oracle SQL Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Oracle+SQL+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "LearnQuest | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0761",
+          "title": "Data Warehouse Concepts, Design, and Data Integration",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Warehouse+Concepts,+Design,+and+Data+Integration",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1285",
+          "title": "Modern Big Data Analysis with SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Modern+Big+Data+Analysis+with+SQL",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Cloudera | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1706",
+          "title": "Introduction to Relational Databases",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Relational+Databases",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:2.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1742",
+          "title": "Analyzing Big Data with SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Analyzing+Big+Data+with+SQL",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Cloudera | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2150",
+          "title": "Modern Big Data Analysis with SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Modern+Big+Data+Analysis+with+SQL",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Cloudera | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0012",
+          "title": "Web Applications for Everybody",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Web+Applications+for+Everybody",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0198",
+          "title": "Introduction to Structured Query Language (SQL)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0302",
+          "title": "Introduction to Databases for Back-End Development",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Databases+for+Back-End+Development",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Meta | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0326",
+          "title": "Database Management Essentials",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Database+Management+Essentials",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0371",
+          "title": "RESTful Microservices Using Node.js and Express",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=RESTful+Microservices+Using+Node.js+and+Express",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "NIIT | rating:2.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0467",
+          "title": "Database Architecture, Scale, and NoSQL with Elasticsearch",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Database+Architecture,+Scale,+and+NoSQL+with+Elasticsearch",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0998",
+          "title": "Learn SQL Basics for Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Learn+SQL+Basics+for+Data+Science",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1089",
+          "title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Fundamentals+DP-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1136",
+          "title": "SQL: A Practical Introduction for Querying Databases",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1174",
+          "title": "Vector Database Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1863",
+          "title": "Learn SQL Basics for Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Learn+SQL+Basics+for+Data+Science",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1954",
+          "title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Fundamentals+DP-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2001",
+          "title": "SQL: A Practical Introduction for Querying Databases",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2039",
+          "title": "Vector Database Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0012_sqladv",
+          "title": "Web Applications for Everybody",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Web+Applications+for+Everybody",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan ★4.7 | 含SQL/MySQL/关系数据库/数据建模",
+          "match_reason": "manual_tag"
+        }
+      ]
+    },
+    "sk_git": {
+      "skill_name": "Git版本控制",
+      "category": "工程工具",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 8,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "manual_git_001",
+          "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0165",
+          "title": "Getting Started with Git and GitHub",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0226",
+          "title": "Version Control with Git",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Atlassian | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_linux_basic": {
+      "skill_name": "Linux基础",
+      "category": "工程工具",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0004",
+          "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Hands-on+Introduction+to+Linux+Commands+and+Shell+Scripting",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0635",
+          "title": "Linux Basics: The Command Line Interface - 6",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Linux+Basics:+The+Command+Line+Interface+-+6",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Dartmouth College | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1312",
+          "title": "Command Line Tools for Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Command+Line+Tools+for+Genomic+Data+Science",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2177",
+          "title": "Command Line Tools for Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Command+Line+Tools+for+Genomic+Data+Science",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.9",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_math_basic": {
+      "skill_name": "高等数学基础(线代/概率)",
+      "category": "数学基础",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "manual_math_001",
+          "title": "【推荐搜索】B站搜索 线性代数/概率论/机器学习数学基础",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=线性代数+概率论+机器学习",
+          "difficulty": "beginner",
+          "hours_estimate": 60.0,
+          "language": "zh",
+          "note": "当前资源库暂无专项数学课程，推荐B站搜索：3Blue1Brown线代/概率论",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0041",
+          "title": "Calculus for Machine Learning and Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Calculus+for+Machine+Learning+and+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0047",
+          "title": "Mathematics for Machine Learning and Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning+and+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0062",
+          "title": "Linear Algebra for Machine Learning and Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Linear+Algebra+for+Machine+Learning+and+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0959",
+          "title": "Mathematics for Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1061",
+          "title": "Mathematics for Machine Learning: Linear Algebra",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+Linear+Algebra",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1191",
+          "title": "Mathematics for Machine Learning: PCA",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+PCA",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1223",
+          "title": "Probability and Statistics: To p or not to p?",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of London | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1824",
+          "title": "Mathematics for Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1926",
+          "title": "Mathematics for Machine Learning: Linear Algebra",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+Linear+Algebra",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2056",
+          "title": "Mathematics for Machine Learning: PCA",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+PCA",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Imperial College London | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2088",
+          "title": "Probability and Statistics: To p or not to p?",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of London | rating:4.4",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_pandas": {
+      "skill_name": "Pandas数据处理",
+      "category": "数据处理",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "github_0097_vis",
+          "title": "data-science-complete-tutorial",
+          "source": "github",
+          "url": "https://github.com/edyoda/data-science-complete-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "coursera_1694",
+          "title": "Data Analysis in Python: Using Pandas DataFrames",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+in+Python:+Using+Pandas+DataFrames",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_pandas_supplement_001",
+          "title": "Pandas for Data Analysis and Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Pandas+for+Data+Analysis+and+Machine+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.5 | Pandas核心操作：DataFrame/groupby/merge/可视化",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "sk_numpy": {
+      "skill_name": "NumPy科学计算",
+      "category": "数据处理",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_1747",
+          "title": "Data Science with NumPy, Sets, and Dictionaries",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:2.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1785",
+          "title": "BiteSize Python: NumPy and Pandas",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0097_vis",
+          "title": "data-science-complete-tutorial",
+          "source": "github",
+          "url": "https://github.com/edyoda/data-science-complete-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
+          "match_reason": "manual_tag"
+        }
+      ]
+    },
+    "sk_data_structure": {
+      "skill_name": "数据结构与算法",
+      "category": "计算机基础",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "github_0080",
+          "title": "leetcode-notes",
+          "source": "github",
+          "url": "https://github.com/datawhalechina/leetcode-notes",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "zh",
+          "note": "stars:1110 | datawhalechina/leetcode-notes",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0080",
+          "title": "Data Structures and Algorithms",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California San Diego | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0126",
+          "title": "Foundations of Data Structures and Algorithms",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Data+Structures+and+Algorithms",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_matplotlib": {
+      "skill_name": "数据可视化Matplotlib",
+      "category": "数据可视化",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 12,
+      "prerequisites": [
+        "sk_pandas",
+        "sk_numpy"
+      ],
+      "resources": [
+        {
+          "resource_id": "github_0097_vis",
+          "title": "data-science-complete-tutorial",
+          "source": "github",
+          "url": "https://github.com/edyoda/data-science-complete-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "coursera_1074",
+          "title": "Data Visualization with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1475",
+          "title": "Data Visualization with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1939",
+          "title": "Data Visualization with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2340",
+          "title": "Data Visualization with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:4.9",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_stats": {
+      "skill_name": "统计学基础",
+      "category": "数据科学",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "sk_numpy",
+        "sk_math_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_1311",
+          "title": "Introduction to Statistical Analysis:  Hypothesis Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Statistical+Analysis:++Hypothesis+Testing",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "SAS | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2176",
+          "title": "Introduction to Statistical Analysis:  Hypothesis Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Statistical+Analysis:++Hypothesis+Testing",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "SAS | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1310",
+          "title": "Statistical Inference and Hypothesis Testing in Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Inference+and+Hypothesis+Testing+in+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.0",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1351",
+          "title": "Inferential Statistical Analysis with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistical+Analysis+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1444",
+          "title": "Business Applications of Hypothesis Testing and Confidence Interval Estimation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Applications+of+Hypothesis+Testing+and+Confidence+Interval+Estimation",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Rice University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1479",
+          "title": "Statistics for Data Science with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:3.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1732",
+          "title": "AI Workflow: Data Analysis and Hypothesis Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AI+Workflow:+Data+Analysis+and+Hypothesis+Testing",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2175",
+          "title": "Statistical Inference and Hypothesis Testing in Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Inference+and+Hypothesis+Testing+in+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.0",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2216",
+          "title": "Inferential Statistical Analysis with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistical+Analysis+with+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2309",
+          "title": "Business Applications of Hypothesis Testing and Confidence Interval Estimation ",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Applications+of+Hypothesis+Testing+and+Confidence+Interval+Estimation+",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Rice University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2344",
+          "title": "Statistics for Data Science with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:3.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1430",
+          "title": "Statistical Analysis Fundamentals using Excel",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Analysis+Fundamentals+using+Excel",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2295",
+          "title": "Statistical Analysis Fundamentals using Excel",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Analysis+Fundamentals+using+Excel",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0037",
+          "title": "Probability & Statistics for Machine Learning & Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+&+Statistics+for+Machine+Learning+&+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0047",
+          "title": "Mathematics for Machine Learning and Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning+and+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0770",
+          "title": "Designing, Running, and Analyzing Experiments",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Designing,+Running,+and+Analyzing+Experiments",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of California San Diego | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0930",
+          "title": "Introduction to Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Stanford University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0962",
+          "title": "Data Science Fundamentals with Python and SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Fundamentals+with+Python+and+SQL",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0971",
+          "title": "Google Advanced Data Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Advanced+Data+Analytics",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1014",
+          "title": "Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1015",
+          "title": "Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Genomic+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1031",
+          "title": "Business Statistics and Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Statistics+and+Analysis",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Rice University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1037",
+          "title": "Data Analysis with R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1052",
+          "title": "Sports Performance Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Sports+Performance+Analytics",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1056",
+          "title": "The Power of Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=The+Power+of+Statistics",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1057",
+          "title": "Data Science Foundations: Statistical Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Foundations:+Statistical+Inference",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1065",
+          "title": "Statistics with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1093",
+          "title": "Data Analytics for Lean Six Sigma",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analytics+for+Lean+Six+Sigma",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Amsterdam | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1094",
+          "title": "Design of Experiments",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+of+Experiments",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1099",
+          "title": "Exploratory Data Analysis for Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Exploratory+Data+Analysis+for+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1103",
+          "title": "Pre-MBA Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Pre-MBA+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IIMA - IIM Ahmedabad | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1124",
+          "title": "Statistical Thinking for Industrial Problem Solving, presented by JMP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Thinking+for+Industrial+Problem+Solving,+presented+by+JMP",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1126",
+          "title": "Data Science: Statistics and Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science:+Statistics+and+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1142",
+          "title": "SAS Statistical Business Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SAS+Statistical+Business+Analyst",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "SAS | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1145",
+          "title": "Statistical Modeling for Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Modeling+for+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1205",
+          "title": "Inferential Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1209",
+          "title": "Foundations of Sports Analytics: Data, Representation, and Models in Sports",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Sports+Analytics:+Data,+Representation,+and+Models+in+Sports",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1214",
+          "title": "Data Analysis and Interpretation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+and+Interpretation",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Wesleyan University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1223",
+          "title": "Probability and Statistics: To p or not to p?",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of London | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1226",
+          "title": "Fundamental Skills in Bioinformatics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Fundamental+Skills+in+Bioinformatics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "King Abdullah University of Science and Technology | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1241",
+          "title": "Statistics in Psychological Research",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+in+Psychological+Research",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "American Psychological Association | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1245",
+          "title": "Improving your statistical inferences",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Improving+your+statistical+inferences",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Eindhoven University of Technology | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1249",
+          "title": "Julia Scientific Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Julia+Scientific+Programming",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Cape Town | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1259",
+          "title": "Inferential Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistics",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Amsterdam | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1288",
+          "title": "Statistics with SAS",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+with+SAS",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1291",
+          "title": "Causal Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Causal+Inference",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Columbia University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1294",
+          "title": "Statistics for Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+for+Genomic+Data+Science",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1296",
+          "title": "Experimental Design Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Experimental+Design+Basics",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1302",
+          "title": "Statistics and Applied Data Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+and+Applied+Data+Analysis",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1335",
+          "title": "Data Science Methods for Quality Improvement",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Methods+for+Quality+Improvement",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1370",
+          "title": "Regression Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Regression+Models",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1408",
+          "title": "Model Diagnostics and Remedial Measures",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Model+Diagnostics+and+Remedial+Measures",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1423",
+          "title": "Statistical Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Inference",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1427",
+          "title": "Modern Regression Analysis in R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Modern+Regression+Analysis+in+R",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1454",
+          "title": "ANOVA and Experimental Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1539",
+          "title": "Statistics and Data Analysis with R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+and+Data+Analysis+with+R",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1542",
+          "title": "Linear Regression for Business Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Linear+Regression+for+Business+Statistics",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Rice University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1549",
+          "title": "Predictive Modeling with Logistic Regression using SAS",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Predictive+Modeling+with+Logistic+Regression+using+SAS",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1551",
+          "title": "Regression Modeling Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Regression+Modeling+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1611",
+          "title": "Using probability distributions for real world problems in R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Using+probability+distributions+for+real+world+problems+in+R",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1620",
+          "title": "Modeling Data in the Tidyverse",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Modeling+Data+in+the+Tidyverse",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1657",
+          "title": "Mathematical Biostatistics Boot Camp 2",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematical+Biostatistics+Boot+Camp+2",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1702",
+          "title": "Enjoyable Econometrics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Enjoyable+Econometrics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Erasmus University Rotterdam | rating:3.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1713",
+          "title": "Managing, Describing, and Analyzing Data",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Managing,+Describing,+and+Analyzing+Data",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1731",
+          "title": "Data Analysis Tools",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+Tools",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Wesleyan University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1777",
+          "title": "Regression Modeling in Practice",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Regression+Modeling+in+Practice",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Wesleyan University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1795",
+          "title": "Introduction to Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Stanford University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1827",
+          "title": "Data Science Fundamentals with Python and SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Fundamentals+with+Python+and+SQL",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1836",
+          "title": "Google Advanced Data Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Advanced+Data+Analytics",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1879",
+          "title": "Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1880",
+          "title": "Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Genomic+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1896",
+          "title": "Business Statistics and Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Statistics+and+Analysis",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Rice University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1902",
+          "title": "Data Analysis with R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1917",
+          "title": "Sports Performance Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Sports+Performance+Analytics",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1921",
+          "title": "The Power of Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=The+Power+of+Statistics",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1922",
+          "title": "Data Science Foundations: Statistical Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Foundations:+Statistical+Inference",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1930",
+          "title": "Statistics with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1958",
+          "title": "Data Analytics for Lean Six Sigma",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analytics+for+Lean+Six+Sigma",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Amsterdam | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1959",
+          "title": "Design of Experiments",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+of+Experiments",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1964",
+          "title": "Exploratory Data Analysis for Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Exploratory+Data+Analysis+for+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1968",
+          "title": "Pre-MBA Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Pre-MBA+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IIMA - IIM Ahmedabad | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1989",
+          "title": "Statistical Thinking for Industrial Problem Solving, presented by JMP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Thinking+for+Industrial+Problem+Solving,+presented+by+JMP",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1991",
+          "title": "Data Science: Statistics and Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science:+Statistics+and+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2007",
+          "title": "SAS Statistical Business Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SAS+Statistical+Business+Analyst",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "SAS | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2010",
+          "title": "Statistical Modeling for Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Modeling+for+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2070",
+          "title": "Inferential Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistics",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2074",
+          "title": "Foundations of Sports Analytics: Data, Representation, and Models in Sports",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Sports+Analytics:+Data,+Representation,+and+Models+in+Sports",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2079",
+          "title": "Data Analysis and Interpretation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Analysis+and+Interpretation",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Wesleyan University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2088",
+          "title": "Probability and Statistics: To p or not to p?",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of London | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2091",
+          "title": "Fundamental Skills in Bioinformatics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Fundamental+Skills+in+Bioinformatics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "King Abdullah University of Science and Technology | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2106",
+          "title": "Statistics in Psychological Research",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+in+Psychological+Research",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "American Psychological Association | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2110",
+          "title": "Improving your statistical inferences",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Improving+your+statistical+inferences",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Eindhoven University of Technology | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2114",
+          "title": "Julia Scientific Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Julia+Scientific+Programming",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Cape Town | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2124",
+          "title": "Inferential Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Inferential+Statistics",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Amsterdam | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2153",
+          "title": "Statistics with SAS",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+with+SAS",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2156",
+          "title": "Causal Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Causal+Inference",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Columbia University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2159",
+          "title": "Statistics for Genomic Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+for+Genomic+Data+Science",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2161",
+          "title": "Experimental Design Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Experimental+Design+Basics",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2167",
+          "title": "Statistics and Applied Data Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+and+Applied+Data+Analysis",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2200",
+          "title": "Data Science Methods for Quality Improvement",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Science+Methods+for+Quality+Improvement",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2235",
+          "title": "Regression Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Regression+Models",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2273",
+          "title": "Model Diagnostics and Remedial Measures",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Model+Diagnostics+and+Remedial+Measures",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Illinois Tech | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2288",
+          "title": "Statistical Inference",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Inference",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2292",
+          "title": "Modern Regression Analysis in R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Modern+Regression+Analysis+in+R",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2319",
+          "title": "ANOVA and Experimental Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2404",
+          "title": "Statistics and Data Analysis with R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+and+Data+Analysis+with+R",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2407",
+          "title": "Linear Regression for Business Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Linear+Regression+for+Business+Statistics",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Rice University | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2414",
+          "title": "Predictive Modeling with Logistic Regression using SAS ",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Predictive+Modeling+with+Logistic+Regression+using+SAS+",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2416",
+          "title": "Regression Modeling Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Regression+Modeling+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "SAS | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2495",
+          "title": "Market Research",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Market+Research",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2505",
+          "title": "Managerial Economics and Business Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Managerial+Economics+and+Business+Analysis",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Illinois Urbana-Champaign | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2535",
+          "title": "Market Research",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Market+Research",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Queen Mary University of London | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2536",
+          "title": "Statistics Foundations",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistics+Foundations",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Meta | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2555",
+          "title": "Six Sigma Advanced Analyze Phase",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Six+Sigma+Advanced+Analyze+Phase",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Kennesaw State University | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_sql_advanced": {
+      "skill_name": "SQL高级查询",
+      "category": "数据库",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_sql_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_sqladv_bili_001",
+          "title": "SQL进阶教程：窗口函数/子查询/性能优化全解析",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=SQL进阶+窗口函数+数据分析",
+          "difficulty": "intermediate",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "B站搜索补充资源 | 推荐搜索: SQL进阶 窗口函数 数据分析",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_sql_advanced_001",
+          "title": "Advanced SQL for Data Scientists",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+SQL+for+Data+Scientists",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "University of Colorado | rating:4.6 | 窗口函数/CTE/性能优化/复杂查询",
+          "match_reason": "manual_fix"
+        },
+        {
+          "resource_id": "coursera_sql_advanced_002",
+          "title": "SQL for Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SQL+for+Data+Science+UC+Davis",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "University of California Davis | rating:4.6 | 子查询/窗口函数/JOIN优化/数据科学SQL实战",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "sk_tableau": {
+      "skill_name": "Tableau/PowerBI",
+      "category": "数据可视化",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_sql_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0991",
+          "title": "Google Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1026",
+          "title": "Foundations of Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1149",
+          "title": "Data Warehousing for Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1257",
+          "title": "Advanced Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1609",
+          "title": "Business Intelligence Concepts, Tools, and Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Intelligence+Concepts,+Tools,+and+Applications",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1726",
+          "title": "Business intelligence and data warehousing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+intelligence+and+data+warehousing",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Universidad Nacional Autónoma de México | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1752",
+          "title": "GenAI for Business Intelligence Analysts",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+for+Business+Intelligence+Analysts",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Coursera Instructor Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1772",
+          "title": "Design and Build a Data Warehouse for Business Intelligence Implementation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+and+Build+a+Data+Warehouse+for+Business+Intelligence+Implementation",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:3.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1856",
+          "title": "Google Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1891",
+          "title": "Foundations of Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2014",
+          "title": "Data Warehousing for Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2122",
+          "title": "Advanced Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2452",
+          "title": "Generative AI for Business Intelligence (BI) Analysts",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Generative+AI+for+Business+Intelligence+(BI)+Analysts",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_tableau_001",
+          "title": "【推荐搜索】B站搜索 Tableau入门教程 或 PowerBI教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Tableau+PowerBI+教程",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "当前资源库暂无Tableau专项，建议在B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_1007",
+          "title": "Tableau Business Intelligence Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1044",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1228",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1362",
+          "title": "Data Visualization with Tableau Project",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1646",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Board Infinity | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1872",
+          "title": "Tableau Business Intelligence Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1909",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2093",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2227",
+          "title": "Data Visualization with Tableau Project",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.4",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_fastapi": {
+      "skill_name": "FastAPI部署",
+      "category": "后端工程",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1zV2QBtE39",
+          "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+          "difficulty": "beginner",
+          "hours_estimate": 18.0,
+          "language": "zh",
+          "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1iN411X72b",
+          "title": "从0到1学习FastAPI框架的所有知识点（慕课网官方）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1iN411X72b/",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "UP:慕课网官方账号 | 播放量14.6万；慕课网系统课；高性能API服务开发",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1eKpizeEnb",
+          "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容",
+          "match_reason": "bili_tag"
+        }
+      ]
+    },
+    "sk_docker": {
+      "skill_name": "Docker容器化",
+      "category": "工程工具",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_linux_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0284",
+          "title": "Docker for Beginners with Hands-on labs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "KodeKloud | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_docker_bili_001",
+          "title": "Docker从入门到实战：容器化部署全流程教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_docker_github_001",
+          "title": "awesome-docker",
+          "source": "github",
+          "url": "https://github.com/veggiemonk/awesome-docker",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "sk_ab_test": {
+      "skill_name": "A/B测试",
+      "category": "数据科学",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_stats",
+        "sk_pandas"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_1135",
+          "title": "Data Wrangling, Analysis and AB Testing with SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Wrangling,+Analysis+and+AB+Testing+with+SQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2000",
+          "title": "Data Wrangling, Analysis and AB Testing with SQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Wrangling,+Analysis+and+AB+Testing+with+SQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_abtest_001",
+          "title": "【推荐搜索】B站搜索 A/B测试 数据分析",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=AB测试+数据分析",
+          "difficulty": "intermediate",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "当前资源库暂无A/B测试专项，建议在B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0037",
+          "title": "Probability & Statistics for Machine Learning & Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Probability+&+Statistics+for+Machine+Learning+&+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0047",
+          "title": "Mathematics for Machine Learning and Data Science",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning+and+Data+Science",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1056",
+          "title": "The Power of Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=The+Power+of+Statistics",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1094",
+          "title": "Design of Experiments",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+of+Experiments",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1145",
+          "title": "Statistical Modeling for Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Modeling+for+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1296",
+          "title": "Experimental Design Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Experimental+Design+Basics",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1454",
+          "title": "ANOVA and Experimental Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1921",
+          "title": "The Power of Statistics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=The+Power+of+Statistics",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1959",
+          "title": "Design of Experiments",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+of+Experiments",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2010",
+          "title": "Statistical Modeling for Data Science Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Statistical+Modeling+for+Data+Science+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2161",
+          "title": "Experimental Design Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Experimental+Design+Basics",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Arizona State University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2319",
+          "title": "ANOVA and Experimental Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2465",
+          "title": "Meta Marketing Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Meta+Marketing+Analytics",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Meta | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2471",
+          "title": "Meta Marketing Science Certification Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Meta+Marketing+Science+Certification+Prep",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Meta | rating:4.8",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_ml_basic": {
+      "skill_name": "机器学习基础",
+      "category": "机器学习",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "prerequisites": [
+        "sk_stats",
+        "sk_pandas",
+        "sk_numpy"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_1491",
+          "title": "Introduction to Machine Learning: Supervised Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2356",
+          "title": "Introduction to Machine Learning: Supervised Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0947",
+          "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1008",
+          "title": "IBM Introduction to Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=IBM+Introduction+to+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1084",
+          "title": "Introduction to Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1536",
+          "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Alberta Machine Intelligence Institute | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1574",
+          "title": "Introduction to Machine Learning in Sports Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning+in+Sports+Analytics",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1621",
+          "title": "Scikit-Learn For Machine Learning Classification Problems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1780",
+          "title": "Trees, SVM and Unsupervised Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Trees,+SVM+and+Unsupervised+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1812",
+          "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1873",
+          "title": "IBM Introduction to Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=IBM+Introduction+to+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1949",
+          "title": "Introduction to Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2401",
+          "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Alberta Machine Intelligence Institute | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1375",
+          "title": "Introduction to Data Science and scikit-learn in Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Data+Science+and+scikit-learn+in+Python",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "LearnQuest | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1597",
+          "title": "Scikit-Learn to Solve Regression Machine Learning Problems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Scikit-Learn+to+Solve+Regression+Machine+Learning+Problems",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2240",
+          "title": "Introduction to Data Science and scikit-learn in Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Data+Science+and+scikit-learn+in+Python",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "LearnQuest | rating:4.4",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_dl_basic": {
+      "skill_name": "深度学习基础",
+      "category": "深度学习",
+      "level": 5,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "sk_ml_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_1151",
+          "title": "Introduction to Deep Learning & Neural Networks with Keras",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1453",
+          "title": "Introduction to Deep Learning for Computer Vision",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "MathWorks | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1462",
+          "title": "Introduction to Deep Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2016",
+          "title": "Introduction to Deep Learning & Neural Networks with Keras",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2318",
+          "title": "Introduction to Deep Learning for Computer Vision",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "MathWorks | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2327",
+          "title": "Introduction to Deep Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_pytorch": {
+      "skill_name": "PyTorch框架",
+      "category": "深度学习",
+      "level": 5,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "sk_dl_basic",
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        }
+      ]
+    },
+    "sk_nlp_basic": {
+      "skill_name": "NLP基础",
+      "category": "NLP",
+      "level": 6,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "sk_dl_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "github_0066",
+          "title": "nlp-tutorial",
+          "source": "github",
+          "url": "https://github.com/graykode/nlp-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:14897 | graykode/nlp-tutorial",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0094",
+          "title": "NLP_basis",
+          "source": "github",
+          "url": "https://github.com/JackKuo666/NLP_basis",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:454 | JackKuo666/NLP_basis",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "bili_BV1sw411S7i1",
+          "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.5,
+          "language": "zh",
+          "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "github_0092",
+          "title": "nlp_course",
+          "source": "github",
+          "url": "https://github.com/yandexdataschool/nlp_course",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:10561 | yandexdataschool/nlp_course",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0070",
+          "title": "NLP-Tutorials",
+          "source": "github",
+          "url": "https://github.com/MorvanZhou/NLP-Tutorials",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:952 | MorvanZhou/NLP-Tutorials",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0423",
+          "title": "JSON and Natural Language Processing in PostgreSQL",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JSON+and+Natural+Language+Processing+in+PostgreSQL",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0944",
+          "title": "Natural Language Processing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0945",
+          "title": "Natural Language Processing with Classification and Vector Spaces",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Classification+and+Vector+Spaces",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0946",
+          "title": "Natural Language Processing in TensorFlow",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1067",
+          "title": "Natural Language Processing with Probabilistic Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Probabilistic+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1082",
+          "title": "Natural Language Processing with Attention Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Attention+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1086",
+          "title": "Natural Language Processing with Sequence Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Sequence+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1199",
+          "title": "Gen AI Foundational Models for NLP & Language Understanding",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Gen+AI+Foundational+Models+for+NLP+&+Language+Understanding",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1400",
+          "title": "Machine Learning and NLP Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Machine+Learning+and+NLP+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Edureka | rating:3.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1459",
+          "title": "Natural Language Processing in Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1738",
+          "title": "AI Workflow: Machine Learning, Visual Recognition and NLP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AI+Workflow:+Machine+Learning,+Visual+Recognition+and+NLP",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1773",
+          "title": "Clinical Natural Language Processing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Clinical+Natural+Language+Processing",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1778",
+          "title": "Natural Language Processing and Capstone Assignment",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+and+Capstone+Assignment",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of California, Irvine | rating:5.0",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1809",
+          "title": "Natural Language Processing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1810",
+          "title": "Natural Language Processing with Classification and Vector Spaces",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Classification+and+Vector+Spaces",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1811",
+          "title": "Natural Language Processing in TensorFlow",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1932",
+          "title": "Natural Language Processing with Probabilistic Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Probabilistic+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1947",
+          "title": "Natural Language Processing with Attention Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Attention+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1951",
+          "title": "Natural Language Processing with Sequence Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+with+Sequence+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2064",
+          "title": "Gen AI Foundational Models for NLP & Language Understanding",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Gen+AI+Foundational+Models+for+NLP+&+Language+Understanding",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2265",
+          "title": " Machine Learning and NLP Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=+Machine+Learning+and+NLP+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Edureka | rating:3.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2324",
+          "title": "Natural Language Processing in Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0093",
+          "title": "Natural-Language-Processing-Specialization",
+          "source": "github",
+          "url": "https://github.com/amanjeetsahu/Natural-Language-Processing-Specialization",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:855 | amanjeetsahu/Natural-Language-Processing-Specialization",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0096",
+          "title": "cs224n-win2223",
+          "source": "github",
+          "url": "https://github.com/floriankark/cs224n-win2223",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:275 | floriankark/cs224n-win2223",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_embedding": {
+      "skill_name": "文本Embedding",
+      "category": "NLP",
+      "level": 6,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_nlp_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1oNv8BPE2m",
+          "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.25,
+          "language": "zh",
+          "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1sw411S7i1",
+          "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.5,
+          "language": "zh",
+          "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_1606",
+          "title": "Product Recommender System: OpenAI Text Embedding",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:5.0",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_transformer": {
+      "skill_name": "Transformer架构",
+      "category": "NLP",
+      "level": 6,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sk_nlp_basic",
+        "sk_pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1a6j1z6En9",
+          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+          "difficulty": "beginner",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1p4pezGEWb",
+          "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战",
+          "match_reason": "bili_tag"
+        }
+      ]
+    },
+    "sk_llm_basic": {
+      "skill_name": "大语言模型基础",
+      "category": "LLM",
+      "level": 7,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_transformer"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1n9CwYoEro",
+          "title": "2小时彻底掌握提示词工程Prompt Engineering（草履虫也能懂）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1n9CwYoEro/",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "zh",
+          "note": "UP:吴恩达langchain | 播放量28.4万；Prompt专项入门；2小时速成",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1173jzNELG",
+          "title": "【吴恩达】2025年公认最好的提示词工程教程（附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1173jzNELG/",
+          "difficulty": "beginner",
+          "hours_estimate": 1.5,
+          "language": "zh",
+          "note": "UP:吴恩达深度学习 | 播放量27.4万；吴恩达官方Prompt课程",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1a6j1z6En9",
+          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+          "difficulty": "beginner",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1RSFUzVEAG",
+          "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+          "difficulty": "intermediate",
+          "hours_estimate": 1.5,
+          "language": "zh",
+          "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1oNv8BPE2m",
+          "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.25,
+          "language": "zh",
+          "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1DfrdByE2H",
+          "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1p4pezGEWb",
+          "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_0024",
+          "title": "Generative AI with Large Language Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0132",
+          "title": "Large Language Model Operations (LLMOps)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Large+Language+Model+Operations+(LLMOps)",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Duke University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1406",
+          "title": "Foundations of Local Large Language models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Local+Large+Language+models",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1670",
+          "title": "Evaluating Large Language Model Outputs: A Practical Guide",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Evaluating+Large+Language+Model+Outputs:+A+Practical+Guide",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Coursera Instructor Network | rating:3.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1764",
+          "title": "Building Production-Ready Apps with Large Language Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Building+Production-Ready+Apps+with+Large+Language+Models",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Coursera Instructor Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1789",
+          "title": "Pair Programming with a Large Language Model",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Pair+Programming+with+a+Large+Language+Model",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2271",
+          "title": "Foundations of Local Large Language models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Local+Large+Language+models",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Duke University | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_prompt_eng": {
+      "skill_name": "Prompt Engineering",
+      "category": "LLM",
+      "level": 7,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sk_llm_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1n9CwYoEro",
+          "title": "2小时彻底掌握提示词工程Prompt Engineering（草履虫也能懂）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1n9CwYoEro/",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "zh",
+          "note": "UP:吴恩达langchain | 播放量28.4万；Prompt专项入门；2小时速成",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1173jzNELG",
+          "title": "【吴恩达】2025年公认最好的提示词工程教程（附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1173jzNELG/",
+          "difficulty": "beginner",
+          "hours_estimate": 1.5,
+          "language": "zh",
+          "note": "UP:吴恩达深度学习 | 播放量27.4万；吴恩达官方Prompt课程",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_0651",
+          "title": "Prompt Engineering with GPT: Programming for Custom Content",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering+with+GPT:+Programming+for+Custom+Content",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0702",
+          "title": "Prompt Engineering for Web Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+          "difficulty": "mixed",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Scrimba | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0951",
+          "title": "Generative AI: Prompt Engineering Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0988",
+          "title": "Prompt Engineering",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1010",
+          "title": "Prompt Engineering for ChatGPT",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+ChatGPT",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1678",
+          "title": "ChatGPT Prompt Engineering for Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ChatGPT+Prompt+Engineering+for+Developers",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1816",
+          "title": "Generative AI: Prompt Engineering Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1853",
+          "title": "Prompt Engineering",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1875",
+          "title": "Prompt Engineering for ChatGPT",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+ChatGPT",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2543",
+          "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_vector_db": {
+      "skill_name": "向量数据库",
+      "category": "数据库",
+      "level": 7,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sk_embedding"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1hMMuzEEVe",
+          "title": "【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hMMuzEEVe/",
+          "difficulty": "beginner",
+          "hours_estimate": 3.0,
+          "language": "zh",
+          "note": "UP:大模型RAG教程 | 播放量89万；RAG专项；手把手搭建知识库",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1QRbnzTEyK",
+          "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+          "difficulty": "intermediate",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1af421o79z",
+          "title": "支持多种向量数据库的100%本地化知识库 Milvus+ChatOllama",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1af421o79z/",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.2,
+          "language": "zh",
+          "note": "UP:五里墩茶社 | 播放量32.3万；实操演示Milvus接入；适合工程实战",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1zi1vByEjg",
+          "title": "Milvus/Qdrant/Weaviate/Pinecone/FAISS/Chroma向量数据库横评",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zi1vByEjg/",
+          "difficulty": "intermediate",
+          "hours_estimate": 1.0,
+          "language": "zh",
+          "note": "UP:小天老师的AI大课堂 | 播放量1.5万；全面横评6款主流向量数据库",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Uz6UBHErx",
+          "title": "向量数据库三巨头！Milvus vs Chroma vs FAISS 该怎么选？",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Uz6UBHErx/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.2,
+          "language": "zh",
+          "note": "UP:大模型-小星 | 播放量0.36万；简明对比三大向量库选型指南",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_0800",
+          "title": "Vector Database Projects: AI Recommendation Systems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Database+Projects:+AI+Recommendation+Systems",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0838",
+          "title": "Vector Databases: from Embeddings to Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Databases:+from+Embeddings+to+Applications",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1174",
+          "title": "Vector Database Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1640",
+          "title": "Retrieval-Augmented Generation (RAG) with Embeddings & Vector Databases",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Retrieval-Augmented+Generation+(RAG)+with+Embeddings+&+Vector+Databases",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Scrimba | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2039",
+          "title": "Vector Database Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | rating:4.4",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_langchain": {
+      "skill_name": "LangChain框架",
+      "category": "LLM工程",
+      "level": 8,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_llm_basic",
+        "sk_python_basic"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1hMMuzEEVe",
+          "title": "【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hMMuzEEVe/",
+          "difficulty": "beginner",
+          "hours_estimate": 3.0,
+          "language": "zh",
+          "note": "UP:大模型RAG教程 | 播放量89万；RAG专项；手把手搭建知识库",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1DfrdByE2H",
+          "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "github_0001_tooluse",
+          "title": "GenAI_Agents",
+          "source": "github",
+          "url": "https://github.com/NirDiamant/GenAI_Agents",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns",
+          "match_reason": "manual_tag"
+        }
+      ]
+    },
+    "sk_lora_finetune": {
+      "skill_name": "大模型微调LoRA/QLoRA",
+      "category": "LLM",
+      "level": 8,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sk_llm_basic",
+        "sk_pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1a6j1z6En9",
+          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+          "difficulty": "beginner",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_1342",
+          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2207",
+          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_rag": {
+      "skill_name": "RAG工程化",
+      "category": "LLM工程",
+      "level": 9,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sk_langchain",
+        "sk_vector_db",
+        "sk_embedding"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1hMMuzEEVe",
+          "title": "【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hMMuzEEVe/",
+          "difficulty": "beginner",
+          "hours_estimate": 3.0,
+          "language": "zh",
+          "note": "UP:大模型RAG教程 | 播放量89万；RAG专项；手把手搭建知识库",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1QRbnzTEyK",
+          "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+          "difficulty": "intermediate",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1f9kZYgEnL",
+          "title": "【KAG】知识增强式生成 - 比RAG更强大的检索推理框架",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1f9kZYgEnL/",
+          "difficulty": "advanced",
+          "hours_estimate": 0.3,
+          "language": "zh",
+          "note": "UP:五里墩茶社 | 播放量6万；单集扩展知识；RAG进阶对比视角",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1af421o79z",
+          "title": "支持多种向量数据库的100%本地化知识库 Milvus+ChatOllama",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1af421o79z/",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.2,
+          "language": "zh",
+          "note": "UP:五里墩茶社 | 播放量32.3万；实操演示Milvus接入；适合工程实战",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1oNv8BPE2m",
+          "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.25,
+          "language": "zh",
+          "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1p4pezGEWb",
+          "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战",
+          "match_reason": "bili_tag"
+        }
+      ]
+    },
+    "sk_agent": {
+      "skill_name": "Agent架构设计",
+      "category": "LLM工程",
+      "level": 9,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sk_langchain",
+        "sk_prompt_eng"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1QRbnzTEyK",
+          "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+          "difficulty": "intermediate",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1a6j1z6En9",
+          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+          "difficulty": "beginner",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1DfrdByE2H",
+          "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1p4pezGEWb",
+          "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1DfrdByE2H_tooluse",
+          "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "UP:吴恩达Agent | 含Tool Use/Function Calling设计模式讲解",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "github_0004_tooluse",
+          "title": "AgentGuide",
+          "source": "github",
+          "url": "https://github.com/adongwanai/AgentGuide",
+          "difficulty": "advanced",
+          "hours_estimate": 0.0,
+          "language": "zh",
+          "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "coursera_2455",
+          "title": "Agentic AI and AI Agents for Leaders",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Agentic+AI+and+AI+Agents+for+Leaders",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sk_tool_use": {
+      "skill_name": "Tool Use/Function Calling",
+      "category": "LLM工程",
+      "level": 9,
+      "difficulty": "advanced",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sk_langchain",
+        "sk_prompt_eng"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1DfrdByE2H_tooluse",
+          "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "UP:吴恩达Agent | 含Tool Use/Function Calling设计模式讲解",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "github_0001_tooluse",
+          "title": "GenAI_Agents",
+          "source": "github",
+          "url": "https://github.com/NirDiamant/GenAI_Agents",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns",
+          "match_reason": "manual_tag"
+        },
+        {
+          "resource_id": "github_0004_tooluse",
+          "title": "AgentGuide",
+          "source": "github",
+          "url": "https://github.com/adongwanai/AgentGuide",
+          "difficulty": "advanced",
+          "hours_estimate": 0.0,
+          "language": "zh",
+          "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use",
+          "match_reason": "manual_tag"
+        }
+      ]
+    }
+  }
+}
