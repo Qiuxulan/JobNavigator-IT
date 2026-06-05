@@ -1,0 +1,4549 @@
+{
+  "version": "v2",
+  "description": "基于B模块技能词表(275个)重建的先修关系图谱，节点ID与B词表完全对齐",
+  "total": 275,
+  "hot_count": 88,
+  "skills": [
+    {
+      "skill_id": "python",
+      "skill_name": "Python",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [],
+      "aliases": [
+        "python"
+      ]
+    },
+    {
+      "skill_id": "java",
+      "skill_name": "Java",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 60,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "java",
+        "jdk"
+      ]
+    },
+    {
+      "skill_id": "javascript",
+      "skill_name": "JavaScript",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "ecmascript",
+        "javascript",
+        "js"
+      ]
+    },
+    {
+      "skill_id": "c",
+      "skill_name": "C",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "c",
+        "c language",
+        "c语言"
+      ]
+    },
+    {
+      "skill_id": "go",
+      "skill_name": "Go",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [],
+      "aliases": [
+        "go",
+        "golang",
+        "go语言"
+      ]
+    },
+    {
+      "skill_id": "rust",
+      "skill_name": "Rust",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "hot": true,
+      "prerequisites": [],
+      "aliases": [
+        "rust"
+      ]
+    },
+    {
+      "skill_id": "ruby",
+      "skill_name": "Ruby",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "ruby"
+      ]
+    },
+    {
+      "skill_id": "php",
+      "skill_name": "PHP",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "php"
+      ]
+    },
+    {
+      "skill_id": "swift",
+      "skill_name": "Swift",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "swift"
+      ]
+    },
+    {
+      "skill_id": "kotlin",
+      "skill_name": "Kotlin",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "kotlin"
+      ]
+    },
+    {
+      "skill_id": "r",
+      "skill_name": "R",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "r",
+        "r language",
+        "r语言"
+      ]
+    },
+    {
+      "skill_id": "matlab",
+      "skill_name": "MATLAB",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "matlab"
+      ]
+    },
+    {
+      "skill_id": "perl",
+      "skill_name": "Perl",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "perl"
+      ]
+    },
+    {
+      "skill_id": "dart",
+      "skill_name": "Dart",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "dart"
+      ]
+    },
+    {
+      "skill_id": "lua",
+      "skill_name": "Lua",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "lua"
+      ]
+    },
+    {
+      "skill_id": "solidity",
+      "skill_name": "Solidity",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "solidity"
+      ]
+    },
+    {
+      "skill_id": "scala",
+      "skill_name": "Scala",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [
+        "java"
+      ],
+      "aliases": [
+        "scala"
+      ]
+    },
+    {
+      "skill_id": "groovy",
+      "skill_name": "Groovy",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "java"
+      ],
+      "aliases": [
+        "groovy"
+      ]
+    },
+    {
+      "skill_id": "cpp",
+      "skill_name": "C++",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "hot": false,
+      "prerequisites": [
+        "c"
+      ],
+      "aliases": [
+        "c plus plus",
+        "c++",
+        "cplusplus",
+        "cpp"
+      ]
+    },
+    {
+      "skill_id": "csharp",
+      "skill_name": "C#",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [
+        "java"
+      ],
+      "aliases": [
+        "c sharp",
+        "c#",
+        "csharp",
+        "dotnet language"
+      ]
+    },
+    {
+      "skill_id": "typescript",
+      "skill_name": "TypeScript",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "ts",
+        "typescript"
+      ]
+    },
+    {
+      "skill_id": "objective-c",
+      "skill_name": "Objective-C",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "c"
+      ],
+      "aliases": [
+        "objc",
+        "objective c",
+        "objective-c"
+      ]
+    },
+    {
+      "skill_id": "shell",
+      "skill_name": "Shell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "bash",
+        "shell",
+        "shell script",
+        "shell scripting",
+        "shell脚本"
+      ]
+    },
+    {
+      "skill_id": "powershell",
+      "skill_name": "PowerShell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "powershell"
+      ]
+    },
+    {
+      "skill_id": "sql-lang",
+      "skill_name": "SQL",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "sql",
+        "sql lang",
+        "sql-lang",
+        "structured query language"
+      ]
+    },
+    {
+      "skill_id": "haskell",
+      "skill_name": "Haskell",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "haskell"
+      ]
+    },
+    {
+      "skill_id": "elixir",
+      "skill_name": "Elixir",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "elixir"
+      ]
+    },
+    {
+      "skill_id": "clojure",
+      "skill_name": "Clojure",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "clojure"
+      ]
+    },
+    {
+      "skill_id": "html",
+      "skill_name": "HTML",
+      "category": "frontend",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "html",
+        "html5"
+      ]
+    },
+    {
+      "skill_id": "css",
+      "skill_name": "CSS",
+      "category": "frontend",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "html"
+      ],
+      "aliases": [
+        "css",
+        "css3"
+      ]
+    },
+    {
+      "skill_id": "tailwind",
+      "skill_name": "Tailwind CSS",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": true,
+      "prerequisites": [
+        "css"
+      ],
+      "aliases": [
+        "tailwind",
+        "tailwind css",
+        "tailwindcss"
+      ]
+    },
+    {
+      "skill_id": "bootstrap",
+      "skill_name": "Bootstrap",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "html",
+        "css"
+      ],
+      "aliases": [
+        "bootstrap"
+      ]
+    },
+    {
+      "skill_id": "sass",
+      "skill_name": "Sass",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "css"
+      ],
+      "aliases": [
+        "sass",
+        "scss"
+      ]
+    },
+    {
+      "skill_id": "jquery",
+      "skill_name": "jQuery",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "jquery"
+      ]
+    },
+    {
+      "skill_id": "webpack",
+      "skill_name": "Webpack",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "webpack"
+      ]
+    },
+    {
+      "skill_id": "vite",
+      "skill_name": "Vite",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "vite"
+      ]
+    },
+    {
+      "skill_id": "react",
+      "skill_name": "React",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "javascript",
+        "typescript"
+      ],
+      "aliases": [
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "skill_id": "vue",
+      "skill_name": "Vue.js",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "hot": true,
+      "prerequisites": [
+        "javascript",
+        "typescript"
+      ],
+      "aliases": [
+        "vue",
+        "vue.js",
+        "vuejs"
+      ]
+    },
+    {
+      "skill_id": "angular",
+      "skill_name": "Angular",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [
+        "typescript"
+      ],
+      "aliases": [
+        "angular",
+        "angular.js",
+        "angularjs"
+      ]
+    },
+    {
+      "skill_id": "svelte",
+      "skill_name": "Svelte",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "svelte",
+        "sveltekit"
+      ]
+    },
+    {
+      "skill_id": "redux",
+      "skill_name": "Redux",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "react"
+      ],
+      "aliases": [
+        "redux"
+      ]
+    },
+    {
+      "skill_id": "nextjs",
+      "skill_name": "Next.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "react"
+      ],
+      "aliases": [
+        "next.js",
+        "nextjs"
+      ]
+    },
+    {
+      "skill_id": "nuxt",
+      "skill_name": "Nuxt.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "vue"
+      ],
+      "aliases": [
+        "nuxt",
+        "nuxt.js",
+        "nuxtjs"
+      ]
+    },
+    {
+      "skill_id": "electron",
+      "skill_name": "Electron",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "javascript",
+        "nodejs"
+      ],
+      "aliases": [
+        "electron"
+      ]
+    },
+    {
+      "skill_id": "threejs",
+      "skill_name": "Three.js",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "three.js",
+        "threejs"
+      ]
+    },
+    {
+      "skill_id": "webgl",
+      "skill_name": "WebGL",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "javascript",
+        "threejs"
+      ],
+      "aliases": [
+        "webgl"
+      ]
+    },
+    {
+      "skill_id": "nodejs",
+      "skill_name": "Node.js",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "node",
+        "node.js",
+        "nodejs"
+      ]
+    },
+    {
+      "skill_id": "express",
+      "skill_name": "Express.js",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "aliases": [
+        "express",
+        "express.js",
+        "expressjs"
+      ]
+    },
+    {
+      "skill_id": "nestjs",
+      "skill_name": "NestJS",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "nodejs",
+        "typescript"
+      ],
+      "aliases": [
+        "nest.js",
+        "nestjs"
+      ]
+    },
+    {
+      "skill_id": "django",
+      "skill_name": "Django",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "django"
+      ]
+    },
+    {
+      "skill_id": "flask",
+      "skill_name": "Flask",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "flask"
+      ]
+    },
+    {
+      "skill_id": "fastapi",
+      "skill_name": "FastAPI",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "fastapi"
+      ]
+    },
+    {
+      "skill_id": "spring",
+      "skill_name": "Spring",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "java"
+      ],
+      "aliases": [
+        "spring",
+        "spring framework"
+      ]
+    },
+    {
+      "skill_id": "springboot",
+      "skill_name": "Spring Boot",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "spring"
+      ],
+      "aliases": [
+        "spring boot",
+        "spring-boot",
+        "springboot"
+      ]
+    },
+    {
+      "skill_id": "dotnet",
+      "skill_name": ".NET",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "csharp"
+      ],
+      "aliases": [
+        ".net",
+        ".net core",
+        ".net framework",
+        "asp.net",
+        "asp.net core",
+        "dotnet"
+      ]
+    },
+    {
+      "skill_id": "laravel",
+      "skill_name": "Laravel",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "php"
+      ],
+      "aliases": [
+        "laravel"
+      ]
+    },
+    {
+      "skill_id": "symfony",
+      "skill_name": "Symfony",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "php"
+      ],
+      "aliases": [
+        "symfony"
+      ]
+    },
+    {
+      "skill_id": "rails",
+      "skill_name": "Ruby on Rails",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "ruby"
+      ],
+      "aliases": [
+        "rails",
+        "ror",
+        "ruby on rails"
+      ]
+    },
+    {
+      "skill_id": "gin",
+      "skill_name": "Gin",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "go"
+      ],
+      "aliases": [
+        "gin"
+      ]
+    },
+    {
+      "skill_id": "hibernate",
+      "skill_name": "Hibernate",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "spring"
+      ],
+      "aliases": [
+        "hibernate"
+      ]
+    },
+    {
+      "skill_id": "grpc",
+      "skill_name": "gRPC",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "grpc"
+      ]
+    },
+    {
+      "skill_id": "graphql",
+      "skill_name": "GraphQL",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "aliases": [
+        "graphql"
+      ]
+    },
+    {
+      "skill_id": "rest",
+      "skill_name": "REST API",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "rest",
+        "rest api",
+        "rest apis",
+        "restful",
+        "restful api",
+        "restful apis"
+      ]
+    },
+    {
+      "skill_id": "mysql",
+      "skill_name": "MySQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "mysql"
+      ]
+    },
+    {
+      "skill_id": "postgresql",
+      "skill_name": "PostgreSQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "postgres",
+        "postgresql",
+        "psql"
+      ]
+    },
+    {
+      "skill_id": "oracle-db",
+      "skill_name": "Oracle DB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "oracle",
+        "oracle database",
+        "oracle db",
+        "oracle-db",
+        "pl/sql",
+        "plsql"
+      ]
+    },
+    {
+      "skill_id": "sqlserver",
+      "skill_name": "SQL Server",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "azure sql",
+        "microsoft sql server",
+        "ms sql",
+        "ms sql server",
+        "mssql",
+        "sql server",
+        "sqlserver"
+      ]
+    },
+    {
+      "skill_id": "sqlite",
+      "skill_name": "SQLite",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "sqlite"
+      ]
+    },
+    {
+      "skill_id": "mariadb",
+      "skill_name": "MariaDB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "mariadb"
+      ]
+    },
+    {
+      "skill_id": "db2",
+      "skill_name": "DB2",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "db2"
+      ]
+    },
+    {
+      "skill_id": "nosql",
+      "skill_name": "NoSQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "nosql",
+        "非关系型数据库"
+      ]
+    },
+    {
+      "skill_id": "mongodb",
+      "skill_name": "MongoDB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "mongo",
+        "mongodb"
+      ]
+    },
+    {
+      "skill_id": "redis",
+      "skill_name": "Redis",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "redis"
+      ]
+    },
+    {
+      "skill_id": "cassandra",
+      "skill_name": "Cassandra",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "cassandra"
+      ]
+    },
+    {
+      "skill_id": "elasticsearch",
+      "skill_name": "Elasticsearch",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "elastic",
+        "elastic search",
+        "elasticsearch",
+        "es搜索"
+      ]
+    },
+    {
+      "skill_id": "dynamodb",
+      "skill_name": "DynamoDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nosql",
+        "aws"
+      ],
+      "aliases": [
+        "dynamodb"
+      ]
+    },
+    {
+      "skill_id": "neo4j",
+      "skill_name": "Neo4j",
+      "category": "database",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "graph database",
+        "neo4j"
+      ]
+    },
+    {
+      "skill_id": "clickhouse",
+      "skill_name": "ClickHouse",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "postgresql"
+      ],
+      "aliases": [
+        "clickhouse"
+      ]
+    },
+    {
+      "skill_id": "couchbase",
+      "skill_name": "Couchbase",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "couchbase"
+      ]
+    },
+    {
+      "skill_id": "influxdb",
+      "skill_name": "InfluxDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nosql"
+      ],
+      "aliases": [
+        "influxdb"
+      ]
+    },
+    {
+      "skill_id": "linux",
+      "skill_name": "Linux",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "linux"
+      ]
+    },
+    {
+      "skill_id": "git",
+      "skill_name": "Git",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 8,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "bitbucket",
+        "git",
+        "github",
+        "gitlab",
+        "version control"
+      ]
+    },
+    {
+      "skill_id": "cloud-computing",
+      "skill_name": "Cloud Computing",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "cloud computing",
+        "cloud-computing",
+        "云计算"
+      ]
+    },
+    {
+      "skill_id": "aws",
+      "skill_name": "AWS",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "hot": true,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "amazon aws",
+        "amazon web services",
+        "aws",
+        "aws cloud"
+      ]
+    },
+    {
+      "skill_id": "azure",
+      "skill_name": "Azure",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": true,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "azure",
+        "microsoft azure"
+      ]
+    },
+    {
+      "skill_id": "gcp",
+      "skill_name": "Google Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": true,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "gcp",
+        "google cloud",
+        "google cloud platform"
+      ]
+    },
+    {
+      "skill_id": "alicloud",
+      "skill_name": "Alibaba Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "alibaba cloud",
+        "alicloud",
+        "aliyun",
+        "阿里云"
+      ]
+    },
+    {
+      "skill_id": "tencent-cloud",
+      "skill_name": "Tencent Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "tencent cloud",
+        "tencent-cloud",
+        "腾讯云"
+      ]
+    },
+    {
+      "skill_id": "cloudflare",
+      "skill_name": "Cloudflare",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "cloudflare"
+      ]
+    },
+    {
+      "skill_id": "heroku",
+      "skill_name": "Heroku",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "git"
+      ],
+      "aliases": [
+        "heroku"
+      ]
+    },
+    {
+      "skill_id": "digitalocean",
+      "skill_name": "DigitalOcean",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "digitalocean"
+      ]
+    },
+    {
+      "skill_id": "s3",
+      "skill_name": "Amazon S3",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "aws"
+      ],
+      "aliases": [
+        "amazon s3",
+        "s3"
+      ]
+    },
+    {
+      "skill_id": "ec2",
+      "skill_name": "Amazon EC2",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "aws"
+      ],
+      "aliases": [
+        "amazon ec2",
+        "ec2"
+      ]
+    },
+    {
+      "skill_id": "lambda",
+      "skill_name": "AWS Lambda",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "aws",
+        "python"
+      ],
+      "aliases": [
+        "aws lambda",
+        "lambda"
+      ]
+    },
+    {
+      "skill_id": "redshift",
+      "skill_name": "Amazon Redshift",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "aliases": [
+        "amazon redshift",
+        "redshift"
+      ]
+    },
+    {
+      "skill_id": "aurora",
+      "skill_name": "Amazon Aurora",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "aliases": [
+        "amazon aurora",
+        "aurora"
+      ]
+    },
+    {
+      "skill_id": "edge-computing",
+      "skill_name": "Edge Computing",
+      "category": "cloud",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "aliases": [
+        "edge computing",
+        "edge-computing",
+        "边缘计算"
+      ]
+    },
+    {
+      "skill_id": "hadoop",
+      "skill_name": "Hadoop",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "linux",
+        "java"
+      ],
+      "aliases": [
+        "apache hadoop",
+        "hadoop"
+      ]
+    },
+    {
+      "skill_id": "spark",
+      "skill_name": "Apache Spark",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "sql-lang"
+      ],
+      "aliases": [
+        "apache spark",
+        "pyspark",
+        "spark"
+      ]
+    },
+    {
+      "skill_id": "kafka",
+      "skill_name": "Apache Kafka",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "apache kafka",
+        "kafka"
+      ]
+    },
+    {
+      "skill_id": "flink",
+      "skill_name": "Apache Flink",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "hot": true,
+      "prerequisites": [
+        "spark"
+      ],
+      "aliases": [
+        "apache flink",
+        "flink"
+      ]
+    },
+    {
+      "skill_id": "airflow",
+      "skill_name": "Apache Airflow",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "airflow",
+        "apache airflow"
+      ]
+    },
+    {
+      "skill_id": "dbt",
+      "skill_name": "dbt",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "aliases": [
+        "dbt"
+      ]
+    },
+    {
+      "skill_id": "hive",
+      "skill_name": "Hive",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "hadoop",
+        "sql-lang"
+      ],
+      "aliases": [
+        "apache hive",
+        "hive"
+      ]
+    },
+    {
+      "skill_id": "snowflake",
+      "skill_name": "Snowflake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "snowflake"
+      ]
+    },
+    {
+      "skill_id": "databricks",
+      "skill_name": "Databricks",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "spark"
+      ],
+      "aliases": [
+        "databricks"
+      ]
+    },
+    {
+      "skill_id": "etl",
+      "skill_name": "ETL",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "aliases": [
+        "etl"
+      ]
+    },
+    {
+      "skill_id": "bigquery",
+      "skill_name": "BigQuery",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "sql-lang",
+        "gcp"
+      ],
+      "aliases": [
+        "big query",
+        "bigquery"
+      ]
+    },
+    {
+      "skill_id": "rabbitmq",
+      "skill_name": "RabbitMQ",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "rabbitmq"
+      ]
+    },
+    {
+      "skill_id": "dagster",
+      "skill_name": "Dagster",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "aliases": [
+        "dagster"
+      ]
+    },
+    {
+      "skill_id": "data-warehouse",
+      "skill_name": "Data Warehouse",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "data warehouse",
+        "data warehousing",
+        "data-warehouse",
+        "datawarehouse",
+        "数仓",
+        "数据仓库"
+      ]
+    },
+    {
+      "skill_id": "data-lake",
+      "skill_name": "Data Lake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "spark"
+      ],
+      "aliases": [
+        "data lake",
+        "data-lake",
+        "数据湖"
+      ]
+    },
+    {
+      "skill_id": "data-pipeline",
+      "skill_name": "Data Pipeline",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "aliases": [
+        "data pipeline",
+        "data pipelines",
+        "data-pipeline"
+      ]
+    },
+    {
+      "skill_id": "data-governance",
+      "skill_name": "Data Governance",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "data governance",
+        "data-governance",
+        "数据治理"
+      ]
+    },
+    {
+      "skill_id": "data-modeling",
+      "skill_name": "Data Modeling",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "data modeling",
+        "data-modeling",
+        "数据建模"
+      ]
+    },
+    {
+      "skill_id": "data-quality",
+      "skill_name": "Data Quality",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "aliases": [
+        "data quality",
+        "data-quality",
+        "数据质量"
+      ]
+    },
+    {
+      "skill_id": "dimensional-modeling",
+      "skill_name": "Dimensional Modeling",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "data-modeling"
+      ],
+      "aliases": [
+        "dimensional modeling",
+        "dimensional-modeling",
+        "维度建模"
+      ]
+    },
+    {
+      "skill_id": "pandas",
+      "skill_name": "Pandas",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "pandas"
+      ]
+    },
+    {
+      "skill_id": "numpy",
+      "skill_name": "NumPy",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "numpy"
+      ]
+    },
+    {
+      "skill_id": "tableau",
+      "skill_name": "Tableau",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "tableau"
+      ]
+    },
+    {
+      "skill_id": "powerbi",
+      "skill_name": "Power BI",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "power bi",
+        "powerbi"
+      ]
+    },
+    {
+      "skill_id": "excel",
+      "skill_name": "Excel",
+      "category": "data_analysis",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "excel",
+        "microsoft excel",
+        "数据透视表"
+      ]
+    },
+    {
+      "skill_id": "looker",
+      "skill_name": "Looker",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "looker"
+      ]
+    },
+    {
+      "skill_id": "data-analysis",
+      "skill_name": "Data Analysis",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "aliases": [
+        "data analysis",
+        "data analytics",
+        "data-analysis",
+        "数据分析"
+      ]
+    },
+    {
+      "skill_id": "data-visualization",
+      "skill_name": "Data Visualization",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "aliases": [
+        "data visualization",
+        "data viz",
+        "data-visualization",
+        "数据可视化"
+      ]
+    },
+    {
+      "skill_id": "data-mining",
+      "skill_name": "Data Mining",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "aliases": [
+        "data mining",
+        "data-mining",
+        "数据挖掘"
+      ]
+    },
+    {
+      "skill_id": "statistics",
+      "skill_name": "Statistics",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "aliases": [
+        "statistical analysis",
+        "statistics",
+        "统计",
+        "统计建模"
+      ]
+    },
+    {
+      "skill_id": "ab-testing",
+      "skill_name": "A/B Testing",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "statistics"
+      ],
+      "aliases": [
+        "a/b test",
+        "a/b testing",
+        "a/b测试",
+        "ab test",
+        "ab testing",
+        "ab-testing",
+        "ab测试"
+      ]
+    },
+    {
+      "skill_id": "business-intelligence",
+      "skill_name": "Business Intelligence",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang",
+        "tableau"
+      ],
+      "aliases": [
+        "bi",
+        "business intelligence",
+        "business-intelligence",
+        "商业智能"
+      ]
+    },
+    {
+      "skill_id": "dashboard",
+      "skill_name": "Dashboard",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "aliases": [
+        "dashboard",
+        "仪表盘",
+        "数据看板"
+      ]
+    },
+    {
+      "skill_id": "data-cleaning",
+      "skill_name": "Data Cleaning",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "aliases": [
+        "data cleaning",
+        "data-cleaning",
+        "数据清洗"
+      ]
+    },
+    {
+      "skill_id": "hypothesis-testing",
+      "skill_name": "Hypothesis Testing",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "statistics"
+      ],
+      "aliases": [
+        "hypothesis testing",
+        "hypothesis-testing",
+        "假设检验"
+      ]
+    },
+    {
+      "skill_id": "time-series",
+      "skill_name": "Time Series",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "statistics",
+        "python"
+      ],
+      "aliases": [
+        "time series",
+        "time series analysis",
+        "time-series",
+        "时间序列",
+        "时间序列分析"
+      ]
+    },
+    {
+      "skill_id": "pytorch",
+      "skill_name": "PyTorch",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "aliases": [
+        "pytorch",
+        "torch"
+      ]
+    },
+    {
+      "skill_id": "tensorflow",
+      "skill_name": "TensorFlow",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "aliases": [
+        "tensorflow",
+        "tf"
+      ]
+    },
+    {
+      "skill_id": "keras",
+      "skill_name": "Keras",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "tensorflow"
+      ],
+      "aliases": [
+        "keras"
+      ]
+    },
+    {
+      "skill_id": "scikit-learn",
+      "skill_name": "scikit-learn",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "aliases": [
+        "scikit learn",
+        "scikit-learn",
+        "sklearn"
+      ]
+    },
+    {
+      "skill_id": "machine-learning",
+      "skill_name": "Machine Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "statistics",
+        "numpy"
+      ],
+      "aliases": [
+        "machine learning",
+        "machine-learning",
+        "ml",
+        "机器学习"
+      ]
+    },
+    {
+      "skill_id": "deep-learning",
+      "skill_name": "Deep Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "machine-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "deep learning",
+        "deep-learning",
+        "dl",
+        "深度学习"
+      ]
+    },
+    {
+      "skill_id": "nlp",
+      "skill_name": "NLP",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "deep-learning"
+      ],
+      "aliases": [
+        "natural language processing",
+        "nlp",
+        "自然语言处理"
+      ]
+    },
+    {
+      "skill_id": "computer-vision",
+      "skill_name": "Computer Vision",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "computer vision",
+        "computer-vision",
+        "cv",
+        "opencv",
+        "计算机视觉"
+      ]
+    },
+    {
+      "skill_id": "reinforcement-learning",
+      "skill_name": "Reinforcement Learning",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 50,
+      "hot": false,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "aliases": [
+        "reinforcement learning",
+        "reinforcement-learning",
+        "rl",
+        "强化学习"
+      ]
+    },
+    {
+      "skill_id": "xgboost",
+      "skill_name": "XGBoost",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "aliases": [
+        "xgboost"
+      ]
+    },
+    {
+      "skill_id": "data-science",
+      "skill_name": "Data Science",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "statistics"
+      ],
+      "aliases": [
+        "data science",
+        "data-science"
+      ]
+    },
+    {
+      "skill_id": "jupyter",
+      "skill_name": "Jupyter",
+      "category": "ai_ml",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "jupyter",
+        "jupyter notebook"
+      ]
+    },
+    {
+      "skill_id": "cuda",
+      "skill_name": "CUDA",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "cuda"
+      ]
+    },
+    {
+      "skill_id": "recommendation-system",
+      "skill_name": "Recommendation System",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "aliases": [
+        "recommendation system",
+        "recommendation-system",
+        "recommender system",
+        "recsys",
+        "推荐系统"
+      ]
+    },
+    {
+      "skill_id": "feature-engineering",
+      "skill_name": "Feature Engineering",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "aliases": [
+        "feature engineering",
+        "feature-engineering",
+        "特征工程"
+      ]
+    },
+    {
+      "skill_id": "model-deployment",
+      "skill_name": "Model Deployment",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "docker",
+        "fastapi"
+      ],
+      "aliases": [
+        "model deployment",
+        "model serving",
+        "model-deployment",
+        "模型服务",
+        "模型部署"
+      ]
+    },
+    {
+      "skill_id": "cnn",
+      "skill_name": "CNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "cnn",
+        "convolutional neural network",
+        "卷积神经网络"
+      ]
+    },
+    {
+      "skill_id": "rnn",
+      "skill_name": "RNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "recurrent neural network",
+        "rnn",
+        "循环神经网络"
+      ]
+    },
+    {
+      "skill_id": "crf",
+      "skill_name": "CRF",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "conditional random field",
+        "crf",
+        "条件随机场"
+      ]
+    },
+    {
+      "skill_id": "gnn",
+      "skill_name": "Graph Neural Network",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "aliases": [
+        "gnn",
+        "graph neural network",
+        "图神经网络"
+      ]
+    },
+    {
+      "skill_id": "ner",
+      "skill_name": "NER",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "named entity recognition",
+        "ner",
+        "命名实体识别"
+      ]
+    },
+    {
+      "skill_id": "sentiment-analysis",
+      "skill_name": "Sentiment Analysis",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "sentiment analysis",
+        "sentiment-analysis",
+        "情感分析"
+      ]
+    },
+    {
+      "skill_id": "text-classification",
+      "skill_name": "Text Classification",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "text classification",
+        "text-classification",
+        "文本分类"
+      ]
+    },
+    {
+      "skill_id": "information-extraction",
+      "skill_name": "Information Extraction",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "information extraction",
+        "information-extraction",
+        "信息抽取"
+      ]
+    },
+    {
+      "skill_id": "supervised-learning",
+      "skill_name": "Supervised Learning",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "aliases": [
+        "supervised learning",
+        "supervised-learning",
+        "监督学习"
+      ]
+    },
+    {
+      "skill_id": "unsupervised-learning",
+      "skill_name": "Unsupervised Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "aliases": [
+        "unsupervised learning",
+        "unsupervised-learning",
+        "无监督学习"
+      ]
+    },
+    {
+      "skill_id": "model-evaluation",
+      "skill_name": "Model Evaluation",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "aliases": [
+        "model evaluation",
+        "model-evaluation",
+        "模型评估"
+      ]
+    },
+    {
+      "skill_id": "transformer",
+      "skill_name": "Transformer",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "deep-learning",
+        "nlp"
+      ],
+      "aliases": [
+        "transformer",
+        "transformers"
+      ]
+    },
+    {
+      "skill_id": "bert",
+      "skill_name": "BERT",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "transformer"
+      ],
+      "aliases": [
+        "bert"
+      ]
+    },
+    {
+      "skill_id": "embedding",
+      "skill_name": "Embedding",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "nlp"
+      ],
+      "aliases": [
+        "embedding",
+        "embeddings",
+        "text embedding",
+        "向量嵌入"
+      ]
+    },
+    {
+      "skill_id": "llm",
+      "skill_name": "LLM",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "transformer"
+      ],
+      "aliases": [
+        "large language model",
+        "large language models",
+        "llm",
+        "llms",
+        "大模型",
+        "大语言模型"
+      ]
+    },
+    {
+      "skill_id": "gpt",
+      "skill_name": "GPT",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "llm"
+      ],
+      "aliases": [
+        "chatgpt",
+        "gpt",
+        "gpt-4",
+        "gpt4"
+      ]
+    },
+    {
+      "skill_id": "qwen",
+      "skill_name": "Qwen",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "llm"
+      ],
+      "aliases": [
+        "qwen",
+        "tongyi",
+        "通义千问"
+      ]
+    },
+    {
+      "skill_id": "openai-api",
+      "skill_name": "OpenAI API",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "llm"
+      ],
+      "aliases": [
+        "openai",
+        "openai api",
+        "openai-api"
+      ]
+    },
+    {
+      "skill_id": "huggingface",
+      "skill_name": "Hugging Face",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "transformer"
+      ],
+      "aliases": [
+        "hugging face",
+        "huggingface"
+      ]
+    },
+    {
+      "skill_id": "prompt-engineering",
+      "skill_name": "Prompt Engineering",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "llm"
+      ],
+      "aliases": [
+        "prompt design",
+        "prompt engineering",
+        "prompt-engineering",
+        "提示词工程"
+      ]
+    },
+    {
+      "skill_id": "vector-database",
+      "skill_name": "Vector Database",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "embedding"
+      ],
+      "aliases": [
+        "vector database",
+        "vector databases",
+        "vector db",
+        "vector-database",
+        "vectordb",
+        "向量数据库"
+      ]
+    },
+    {
+      "skill_id": "pinecone",
+      "skill_name": "Pinecone",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": true,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "aliases": [
+        "pinecone"
+      ]
+    },
+    {
+      "skill_id": "milvus",
+      "skill_name": "Milvus",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "aliases": [
+        "milvus"
+      ]
+    },
+    {
+      "skill_id": "weaviate",
+      "skill_name": "Weaviate",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "aliases": [
+        "weaviate"
+      ]
+    },
+    {
+      "skill_id": "chroma",
+      "skill_name": "Chroma",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": true,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "aliases": [
+        "chroma",
+        "chromadb"
+      ]
+    },
+    {
+      "skill_id": "faiss",
+      "skill_name": "FAISS",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "aliases": [
+        "faiss"
+      ]
+    },
+    {
+      "skill_id": "langchain",
+      "skill_name": "LangChain",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "llm"
+      ],
+      "aliases": [
+        "langchain"
+      ]
+    },
+    {
+      "skill_id": "llamaindex",
+      "skill_name": "LlamaIndex",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "langchain"
+      ],
+      "aliases": [
+        "llama index",
+        "llama-index",
+        "llamaindex"
+      ]
+    },
+    {
+      "skill_id": "langgraph",
+      "skill_name": "LangGraph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "langchain"
+      ],
+      "aliases": [
+        "langgraph"
+      ]
+    },
+    {
+      "skill_id": "rag",
+      "skill_name": "RAG",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "vector-database",
+        "langchain"
+      ],
+      "aliases": [
+        "rag",
+        "retrieval augmented generation",
+        "retrieval-augmented generation",
+        "检索增强生成"
+      ]
+    },
+    {
+      "skill_id": "fine-tuning",
+      "skill_name": "Fine-tuning",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "llm",
+        "pytorch"
+      ],
+      "aliases": [
+        "fine tuning",
+        "fine-tuning",
+        "finetuning",
+        "lora",
+        "qlora",
+        "微调"
+      ]
+    },
+    {
+      "skill_id": "quantization",
+      "skill_name": "Quantization",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "aliases": [
+        "quantization",
+        "模型量化",
+        "量化"
+      ]
+    },
+    {
+      "skill_id": "agent",
+      "skill_name": "AI Agent",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "langchain",
+        "llm"
+      ],
+      "aliases": [
+        "agent",
+        "agentic",
+        "ai agent",
+        "ai agents",
+        "autonomous agent",
+        "智能体"
+      ]
+    },
+    {
+      "skill_id": "multi-agent",
+      "skill_name": "Multi-Agent",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "agent"
+      ],
+      "aliases": [
+        "multi agent",
+        "multi agent system",
+        "multi-agent",
+        "multi-agent system",
+        "多智能体"
+      ]
+    },
+    {
+      "skill_id": "tool-calling",
+      "skill_name": "Tool Calling",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "agent"
+      ],
+      "aliases": [
+        "function calling",
+        "tool calling",
+        "tool-calling",
+        "工具调用"
+      ]
+    },
+    {
+      "skill_id": "mcp",
+      "skill_name": "MCP",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "tool-calling"
+      ],
+      "aliases": [
+        "mcp",
+        "model context protocol"
+      ]
+    },
+    {
+      "skill_id": "coze",
+      "skill_name": "Coze",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": true,
+      "prerequisites": [
+        "agent"
+      ],
+      "aliases": [
+        "coze",
+        "扣子"
+      ]
+    },
+    {
+      "skill_id": "mlops",
+      "skill_name": "MLOps",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "machine-learning",
+        "docker"
+      ],
+      "aliases": [
+        "mlops"
+      ]
+    },
+    {
+      "skill_id": "multimodal",
+      "skill_name": "Multimodal",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "llm"
+      ],
+      "aliases": [
+        "multi-modal",
+        "multimodal"
+      ]
+    },
+    {
+      "skill_id": "diffusion",
+      "skill_name": "Diffusion Model",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "aliases": [
+        "diffusion",
+        "diffusion model",
+        "diffusion models",
+        "stable diffusion",
+        "扩散模型"
+      ]
+    },
+    {
+      "skill_id": "knowledge-graph",
+      "skill_name": "Knowledge Graph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "embedding",
+        "nlp"
+      ],
+      "aliases": [
+        "knowledge graph",
+        "knowledge-graph",
+        "知识图谱"
+      ]
+    },
+    {
+      "skill_id": "aigc",
+      "skill_name": "AIGC",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "llm"
+      ],
+      "aliases": [
+        "aigc",
+        "generative ai",
+        "生成式人工智能"
+      ]
+    },
+    {
+      "skill_id": "docker",
+      "skill_name": "Docker",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "containerization",
+        "containers",
+        "docker"
+      ]
+    },
+    {
+      "skill_id": "kubernetes",
+      "skill_name": "Kubernetes",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "hot": true,
+      "prerequisites": [
+        "docker"
+      ],
+      "aliases": [
+        "k8s",
+        "kubernetes"
+      ]
+    },
+    {
+      "skill_id": "terraform",
+      "skill_name": "Terraform",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "aliases": [
+        "terraform"
+      ]
+    },
+    {
+      "skill_id": "ansible",
+      "skill_name": "Ansible",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "ansible"
+      ]
+    },
+    {
+      "skill_id": "jenkins",
+      "skill_name": "Jenkins",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "aliases": [
+        "jenkins"
+      ]
+    },
+    {
+      "skill_id": "gitlab-ci",
+      "skill_name": "GitLab CI",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "aliases": [
+        "gitlab ci",
+        "gitlab-ci"
+      ]
+    },
+    {
+      "skill_id": "github-actions",
+      "skill_name": "GitHub Actions",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "git"
+      ],
+      "aliases": [
+        "github actions",
+        "github-actions"
+      ]
+    },
+    {
+      "skill_id": "cicd",
+      "skill_name": "CI/CD",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "aliases": [
+        "ci/cd",
+        "cicd",
+        "continuous deployment",
+        "continuous integration",
+        "持续部署",
+        "持续集成"
+      ]
+    },
+    {
+      "skill_id": "helm",
+      "skill_name": "Helm",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "aliases": [
+        "helm"
+      ]
+    },
+    {
+      "skill_id": "prometheus",
+      "skill_name": "Prometheus",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "aliases": [
+        "prometheus"
+      ]
+    },
+    {
+      "skill_id": "grafana",
+      "skill_name": "Grafana",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "prometheus"
+      ],
+      "aliases": [
+        "grafana"
+      ]
+    },
+    {
+      "skill_id": "nginx",
+      "skill_name": "Nginx",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "nginx"
+      ]
+    },
+    {
+      "skill_id": "devops",
+      "skill_name": "DevOps",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "linux",
+        "docker",
+        "git"
+      ],
+      "aliases": [
+        "devops"
+      ]
+    },
+    {
+      "skill_id": "microservices",
+      "skill_name": "Microservices",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "docker",
+        "system-design"
+      ],
+      "aliases": [
+        "microservice",
+        "microservice architecture",
+        "microservices",
+        "微服务"
+      ]
+    },
+    {
+      "skill_id": "serverless",
+      "skill_name": "Serverless",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "aliases": [
+        "serverless"
+      ]
+    },
+    {
+      "skill_id": "argocd",
+      "skill_name": "ArgoCD",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "aliases": [
+        "argo cd",
+        "argocd"
+      ]
+    },
+    {
+      "skill_id": "cloudformation",
+      "skill_name": "CloudFormation",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "aws"
+      ],
+      "aliases": [
+        "cloudformation"
+      ]
+    },
+    {
+      "skill_id": "vagrant",
+      "skill_name": "Vagrant",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "vagrant"
+      ]
+    },
+    {
+      "skill_id": "istio",
+      "skill_name": "Istio",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "aliases": [
+        "istio",
+        "service mesh"
+      ]
+    },
+    {
+      "skill_id": "caching",
+      "skill_name": "Caching",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "redis"
+      ],
+      "aliases": [
+        "caching",
+        "缓存"
+      ]
+    },
+    {
+      "skill_id": "high-availability",
+      "skill_name": "High Availability",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "system-design"
+      ],
+      "aliases": [
+        "ha",
+        "high availability",
+        "high-availability",
+        "高可用"
+      ]
+    },
+    {
+      "skill_id": "load-balancing",
+      "skill_name": "Load Balancing",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "linux",
+        "system-design"
+      ],
+      "aliases": [
+        "load balancing",
+        "load-balancing",
+        "负载均衡"
+      ]
+    },
+    {
+      "skill_id": "message-queue",
+      "skill_name": "Message Queue",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "kafka"
+      ],
+      "aliases": [
+        "message queue",
+        "message-queue",
+        "mq",
+        "消息队列"
+      ]
+    },
+    {
+      "skill_id": "capacity-planning",
+      "skill_name": "Capacity Planning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "system-design"
+      ],
+      "aliases": [
+        "capacity planning",
+        "capacity-planning",
+        "容量规划"
+      ]
+    },
+    {
+      "skill_id": "performance-tuning",
+      "skill_name": "Performance Tuning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "aliases": [
+        "performance tuning",
+        "performance-tuning",
+        "性能优化",
+        "性能调优"
+      ]
+    },
+    {
+      "skill_id": "sre",
+      "skill_name": "SRE",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "aliases": [
+        "site reliability engineering",
+        "sre",
+        "站点可靠性工程"
+      ]
+    },
+    {
+      "skill_id": "root-cause-analysis",
+      "skill_name": "Root Cause Analysis",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "rca",
+        "root cause analysis",
+        "root-cause-analysis",
+        "根因分析"
+      ]
+    },
+    {
+      "skill_id": "unix",
+      "skill_name": "Unix",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "unix"
+      ]
+    },
+    {
+      "skill_id": "selenium",
+      "skill_name": "Selenium",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "selenium"
+      ]
+    },
+    {
+      "skill_id": "cypress",
+      "skill_name": "Cypress",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "cypress"
+      ]
+    },
+    {
+      "skill_id": "playwright",
+      "skill_name": "Playwright",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": true,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "playwright"
+      ]
+    },
+    {
+      "skill_id": "jest",
+      "skill_name": "Jest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "javascript"
+      ],
+      "aliases": [
+        "jest"
+      ]
+    },
+    {
+      "skill_id": "pytest",
+      "skill_name": "pytest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "pytest"
+      ]
+    },
+    {
+      "skill_id": "junit",
+      "skill_name": "JUnit",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "java"
+      ],
+      "aliases": [
+        "junit"
+      ]
+    },
+    {
+      "skill_id": "appium",
+      "skill_name": "Appium",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "java"
+      ],
+      "aliases": [
+        "appium"
+      ]
+    },
+    {
+      "skill_id": "jmeter",
+      "skill_name": "JMeter",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "java",
+        "linux"
+      ],
+      "aliases": [
+        "jmeter"
+      ]
+    },
+    {
+      "skill_id": "postman",
+      "skill_name": "Postman",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "rest"
+      ],
+      "aliases": [
+        "postman"
+      ]
+    },
+    {
+      "skill_id": "qa-automation",
+      "skill_name": "QA Automation",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "selenium"
+      ],
+      "aliases": [
+        "automation testing",
+        "qa automation",
+        "qa-automation",
+        "test automation"
+      ]
+    },
+    {
+      "skill_id": "unit-testing",
+      "skill_name": "Unit Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "unit testing",
+        "unit-testing",
+        "单元测试"
+      ]
+    },
+    {
+      "skill_id": "integration-testing",
+      "skill_name": "Integration Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "unit-testing"
+      ],
+      "aliases": [
+        "integration testing",
+        "integration-testing",
+        "集成测试"
+      ]
+    },
+    {
+      "skill_id": "load-testing",
+      "skill_name": "Load Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "jmeter"
+      ],
+      "aliases": [
+        "load testing",
+        "load-testing",
+        "压力测试",
+        "负载测试"
+      ]
+    },
+    {
+      "skill_id": "rest-api-testing",
+      "skill_name": "REST API Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "rest",
+        "postman"
+      ],
+      "aliases": [
+        "api testing",
+        "rest api testing",
+        "rest-api-testing",
+        "接口测试"
+      ]
+    },
+    {
+      "skill_id": "android",
+      "skill_name": "Android",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "kotlin"
+      ],
+      "aliases": [
+        "android"
+      ]
+    },
+    {
+      "skill_id": "ios",
+      "skill_name": "iOS",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "swift"
+      ],
+      "aliases": [
+        "ios"
+      ]
+    },
+    {
+      "skill_id": "flutter",
+      "skill_name": "Flutter",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "hot": true,
+      "prerequisites": [
+        "dart"
+      ],
+      "aliases": [
+        "flutter"
+      ]
+    },
+    {
+      "skill_id": "react-native",
+      "skill_name": "React Native",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "react"
+      ],
+      "aliases": [
+        "react native",
+        "react-native"
+      ]
+    },
+    {
+      "skill_id": "xamarin",
+      "skill_name": "Xamarin",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "csharp"
+      ],
+      "aliases": [
+        "xamarin"
+      ]
+    },
+    {
+      "skill_id": "jetpack-compose",
+      "skill_name": "Jetpack Compose",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": true,
+      "prerequisites": [
+        "android"
+      ],
+      "aliases": [
+        "jetpack compose",
+        "jetpack-compose"
+      ]
+    },
+    {
+      "skill_id": "cybersecurity",
+      "skill_name": "Cybersecurity",
+      "category": "security",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "linux"
+      ],
+      "aliases": [
+        "cyber security",
+        "cybersecurity",
+        "information security",
+        "infosec",
+        "信息安全"
+      ]
+    },
+    {
+      "skill_id": "penetration-testing",
+      "skill_name": "Penetration Testing",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "aliases": [
+        "pen testing",
+        "penetration testing",
+        "penetration-testing",
+        "pentest",
+        "渗透测试"
+      ]
+    },
+    {
+      "skill_id": "oauth",
+      "skill_name": "OAuth",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "aliases": [
+        "oauth"
+      ]
+    },
+    {
+      "skill_id": "jwt",
+      "skill_name": "JWT",
+      "category": "security",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "aliases": [
+        "jwt"
+      ]
+    },
+    {
+      "skill_id": "encryption",
+      "skill_name": "Encryption",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "encryption"
+      ]
+    },
+    {
+      "skill_id": "ssl-tls",
+      "skill_name": "SSL/TLS",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "ssl",
+        "ssl tls",
+        "ssl-tls",
+        "ssl/tls",
+        "tls"
+      ]
+    },
+    {
+      "skill_id": "siem",
+      "skill_name": "SIEM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "siem"
+      ]
+    },
+    {
+      "skill_id": "owasp",
+      "skill_name": "OWASP",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity",
+        "rest"
+      ],
+      "aliases": [
+        "owasp"
+      ]
+    },
+    {
+      "skill_id": "zero-trust",
+      "skill_name": "Zero Trust",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": true,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "zero trust",
+        "zero-trust",
+        "零信任"
+      ]
+    },
+    {
+      "skill_id": "compliance",
+      "skill_name": "Compliance",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "compliance",
+        "合规"
+      ]
+    },
+    {
+      "skill_id": "cryptography",
+      "skill_name": "Cryptography",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "cryptography",
+        "密码学"
+      ]
+    },
+    {
+      "skill_id": "data-privacy",
+      "skill_name": "Data Privacy",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "aliases": [
+        "data privacy",
+        "data-privacy",
+        "数据隐私"
+      ]
+    },
+    {
+      "skill_id": "iam",
+      "skill_name": "IAM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity",
+        "cloud-computing"
+      ],
+      "aliases": [
+        "iam",
+        "identity and access management",
+        "身份认证"
+      ]
+    },
+    {
+      "skill_id": "network-security",
+      "skill_name": "Network Security",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "aliases": [
+        "network security",
+        "network-security",
+        "网络安全"
+      ]
+    },
+    {
+      "skill_id": "vulnerability-assessment",
+      "skill_name": "Vulnerability Assessment",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "penetration-testing"
+      ],
+      "aliases": [
+        "vulnerability assessment",
+        "vulnerability-assessment",
+        "漏洞评估"
+      ]
+    },
+    {
+      "skill_id": "incident-response",
+      "skill_name": "Incident Response",
+      "category": "security",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "cybersecurity",
+        "sre"
+      ],
+      "aliases": [
+        "incident response",
+        "incident-response",
+        "应急响应"
+      ]
+    },
+    {
+      "skill_id": "agile",
+      "skill_name": "Agile",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "agile",
+        "敏捷开发"
+      ]
+    },
+    {
+      "skill_id": "scrum",
+      "skill_name": "Scrum",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 8,
+      "hot": false,
+      "prerequisites": [
+        "agile"
+      ],
+      "aliases": [
+        "scrum"
+      ]
+    },
+    {
+      "skill_id": "kanban",
+      "skill_name": "Kanban",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "hot": false,
+      "prerequisites": [
+        "agile"
+      ],
+      "aliases": [
+        "kanban"
+      ]
+    },
+    {
+      "skill_id": "jira",
+      "skill_name": "Jira",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "jira"
+      ]
+    },
+    {
+      "skill_id": "confluence",
+      "skill_name": "Confluence",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "hot": false,
+      "prerequisites": [],
+      "aliases": [
+        "confluence"
+      ]
+    },
+    {
+      "skill_id": "websocket",
+      "skill_name": "WebSocket",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "aliases": [
+        "websocket",
+        "websockets"
+      ]
+    },
+    {
+      "skill_id": "json",
+      "skill_name": "JSON",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "json"
+      ]
+    },
+    {
+      "skill_id": "xml",
+      "skill_name": "XML",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "xml"
+      ]
+    },
+    {
+      "skill_id": "oop",
+      "skill_name": "OOP",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "object oriented programming",
+        "object-oriented",
+        "oop",
+        "面向对象"
+      ]
+    },
+    {
+      "skill_id": "system-design",
+      "skill_name": "System Design",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "python",
+        "sql-lang",
+        "docker"
+      ],
+      "aliases": [
+        "system design",
+        "system-design",
+        "系统设计"
+      ]
+    },
+    {
+      "skill_id": "distributed-systems",
+      "skill_name": "Distributed Systems",
+      "category": "methods",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "hot": true,
+      "prerequisites": [
+        "system-design"
+      ],
+      "aliases": [
+        "distributed system",
+        "distributed systems",
+        "distributed-systems",
+        "分布式系统"
+      ]
+    },
+    {
+      "skill_id": "blockchain",
+      "skill_name": "Blockchain",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "blockchain",
+        "smart contract",
+        "smart contracts",
+        "web3",
+        "区块链",
+        "智能合约"
+      ]
+    },
+    {
+      "skill_id": "data-structures",
+      "skill_name": "Data Structures",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "data structures",
+        "data structures and algorithms",
+        "data-structures",
+        "dsa",
+        "数据结构"
+      ]
+    },
+    {
+      "skill_id": "algorithms",
+      "skill_name": "Algorithms",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "hot": false,
+      "prerequisites": [
+        "data-structures"
+      ],
+      "aliases": [
+        "algorithm",
+        "algorithms",
+        "算法"
+      ]
+    },
+    {
+      "skill_id": "api-design",
+      "skill_name": "API Design",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "hot": false,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "aliases": [
+        "api design",
+        "api-design",
+        "接口设计"
+      ]
+    },
+    {
+      "skill_id": "design-patterns",
+      "skill_name": "Design Patterns",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "hot": false,
+      "prerequisites": [
+        "oop",
+        "python"
+      ],
+      "aliases": [
+        "design patterns",
+        "design-patterns",
+        "设计模式"
+      ]
+    },
+    {
+      "skill_id": "regex",
+      "skill_name": "Regular Expression",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "regex",
+        "regexp",
+        "regular expression",
+        "正则表达式"
+      ]
+    },
+    {
+      "skill_id": "web-scraping",
+      "skill_name": "Web Scraping",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "hot": false,
+      "prerequisites": [
+        "python",
+        "regex"
+      ],
+      "aliases": [
+        "crawler",
+        "web crawler",
+        "web scraping",
+        "web-scraping",
+        "爬虫",
+        "网络爬虫"
+      ]
+    },
+    {
+      "skill_id": "gis",
+      "skill_name": "GIS",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": false,
+      "prerequisites": [
+        "python"
+      ],
+      "aliases": [
+        "gis",
+        "地理信息系统"
+      ]
+    },
+    {
+      "skill_id": "iot",
+      "skill_name": "IoT",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "hot": true,
+      "prerequisites": [
+        "linux",
+        "python"
+      ],
+      "aliases": [
+        "internet of things",
+        "iot",
+        "物联网"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3975 @@
+[
+  {
+    "case": "RAG应用工程师（仅Python基础）",
+    "plans": {
+      "shortest": {
+        "target_role": "RAG应用工程师",
+        "strategy": "shortest",
+        "user_skills": [
+          "sk_git",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "embedding",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "rag",
+          "vector-database"
+        ],
+        "gap_skills_cn": [
+          "Embedding",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "RAG",
+          "Vector Database"
+        ],
+        "score": {
+          "total_hours": 250,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 10,
+          "difficulty_dist": {
+            "beginner": 2,
+            "intermediate": 8,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "embedding",
+            "skill_name": "Embedding",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+                "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+                "source": "bilibili",
+                "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备"
+              },
+              {
+                "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+                "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+                "source": "bilibili",
+                "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念"
+              },
+              {
+                "title": "Product Recommender System: OpenAI Text Embedding",
+                "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:5.0"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "vector-database",
+            "skill_name": "Vector Database",
+            "category": "ai_emerging",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Vector Databases: from Embeddings to Applications",
+                "url": "https://www.coursera.org/search?query=Vector+Databases:+from+Embeddings+to+Applications",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.3"
+              },
+              {
+                "title": "Retrieval-Augmented Generation (RAG) with Embeddings & Vector Databases",
+                "url": "https://www.coursera.org/search?query=Retrieval-Augmented+Generation+(RAG)+with+Embeddings+&+Vector+Databases",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.8"
+              },
+              {
+                "title": "Vector Database Fundamentals",
+                "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+                "source": "coursera",
+                "note": "IBM | rating:4.4"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "skill_id": "rag",
+            "skill_name": "RAG",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                "source": "bilibili",
+                "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱"
+              },
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "【KAG】知识增强式生成 - 比RAG更强大的检索推理框架",
+                "url": "https://www.bilibili.com/video/BV1f9kZYgEnL/",
+                "source": "bilibili",
+                "note": "UP:五里墩茶社 | 播放量6万；单集扩展知识；RAG进阶对比视角"
+              }
+            ]
+          }
+        ]
+      },
+      "easy_first": {
+        "target_role": "RAG应用工程师",
+        "strategy": "easy_first",
+        "user_skills": [
+          "sk_git",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "embedding",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "rag",
+          "vector-database"
+        ],
+        "gap_skills_cn": [
+          "Embedding",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "RAG",
+          "Vector Database"
+        ],
+        "score": {
+          "total_hours": 405,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 15,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 11,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "pytorch",
+            "skill_name": "PyTorch",
+            "category": "ai_ml",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "machine-learning",
+            "skill_name": "Machine Learning",
+            "category": "ai_ml",
+            "hours": 50,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+                "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+                "source": "coursera",
+                "note": "Alberta Machine Intelligence Institute | rating:3.7"
+              },
+              {
+                "title": "Scikit-Learn For Machine Learning Classification Problems",
+                "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.4"
+              },
+              {
+                "title": "Introduction to Machine Learning: Supervised Learning",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "deep-learning",
+            "skill_name": "Deep Learning",
+            "category": "ai_ml",
+            "hours": 40,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Introduction to Deep Learning & Neural Networks with Keras",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Deep Learning Specialization (Course 4 - CNN)",
+                "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                "source": "coursera",
+                "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别"
+              },
+              {
+                "title": "Introduction to Deep Learning for Computer Vision",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+                "source": "coursera",
+                "note": "MathWorks | rating:4.3"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "embedding",
+            "skill_name": "Embedding",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+                "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+                "source": "bilibili",
+                "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备"
+              },
+              {
+                "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+                "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+                "source": "bilibili",
+                "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念"
+              },
+              {
+                "title": "Product Recommender System: OpenAI Text Embedding",
+                "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:5.0"
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "skill_id": "vector-database",
+            "skill_name": "Vector Database",
+            "category": "ai_emerging",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Vector Databases: from Embeddings to Applications",
+                "url": "https://www.coursera.org/search?query=Vector+Databases:+from+Embeddings+to+Applications",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.3"
+              },
+              {
+                "title": "Retrieval-Augmented Generation (RAG) with Embeddings & Vector Databases",
+                "url": "https://www.coursera.org/search?query=Retrieval-Augmented+Generation+(RAG)+with+Embeddings+&+Vector+Databases",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.8"
+              },
+              {
+                "title": "Vector Database Fundamentals",
+                "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+                "source": "coursera",
+                "note": "IBM | rating:4.4"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "skill_id": "rag",
+            "skill_name": "RAG",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                "source": "bilibili",
+                "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱"
+              },
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "【KAG】知识增强式生成 - 比RAG更强大的检索推理框架",
+                "url": "https://www.bilibili.com/video/BV1f9kZYgEnL/",
+                "source": "bilibili",
+                "note": "UP:五里墩茶社 | 播放量6万；单集扩展知识；RAG进阶对比视角"
+              }
+            ]
+          }
+        ]
+      },
+      "full_cover": {
+        "target_role": "RAG应用工程师",
+        "strategy": "full_cover",
+        "user_skills": [
+          "sk_git",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "embedding",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "rag",
+          "vector-database"
+        ],
+        "gap_skills_cn": [
+          "Embedding",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "RAG",
+          "Vector Database"
+        ],
+        "score": {
+          "total_hours": 445,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 16,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 11,
+            "advanced": 1
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "pytorch",
+            "skill_name": "PyTorch",
+            "category": "ai_ml",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "machine-learning",
+            "skill_name": "Machine Learning",
+            "category": "ai_ml",
+            "hours": 50,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+                "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+                "source": "coursera",
+                "note": "Alberta Machine Intelligence Institute | rating:3.7"
+              },
+              {
+                "title": "Scikit-Learn For Machine Learning Classification Problems",
+                "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.4"
+              },
+              {
+                "title": "Introduction to Machine Learning: Supervised Learning",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "deep-learning",
+            "skill_name": "Deep Learning",
+            "category": "ai_ml",
+            "hours": 40,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Introduction to Deep Learning & Neural Networks with Keras",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Deep Learning Specialization (Course 4 - CNN)",
+                "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                "source": "coursera",
+                "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别"
+              },
+              {
+                "title": "Introduction to Deep Learning for Computer Vision",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+                "source": "coursera",
+                "note": "MathWorks | rating:4.3"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "embedding",
+            "skill_name": "Embedding",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+                "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+                "source": "bilibili",
+                "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备"
+              },
+              {
+                "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+                "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+                "source": "bilibili",
+                "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念"
+              },
+              {
+                "title": "Product Recommender System: OpenAI Text Embedding",
+                "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:5.0"
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "skill_id": "vector-database",
+            "skill_name": "Vector Database",
+            "category": "ai_emerging",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Vector Databases: from Embeddings to Applications",
+                "url": "https://www.coursera.org/search?query=Vector+Databases:+from+Embeddings+to+Applications",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.3"
+              },
+              {
+                "title": "Retrieval-Augmented Generation (RAG) with Embeddings & Vector Databases",
+                "url": "https://www.coursera.org/search?query=Retrieval-Augmented+Generation+(RAG)+with+Embeddings+&+Vector+Databases",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.8"
+              },
+              {
+                "title": "Vector Database Fundamentals",
+                "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+                "source": "coursera",
+                "note": "IBM | rating:4.4"
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "skill_id": "fine-tuning",
+            "skill_name": "Fine-tuning",
+            "category": "ai_emerging",
+            "hours": 40,
+            "difficulty": "advanced",
+            "resources": [
+              {
+                "title": "B站最好的提示词工程教程2025（全88集系统课）",
+                "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+                "source": "bilibili",
+                "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA"
+              },
+              {
+                "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+                "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "skill_id": "rag",
+            "skill_name": "RAG",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                "source": "bilibili",
+                "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱"
+              },
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "【KAG】知识增强式生成 - 比RAG更强大的检索推理框架",
+                "url": "https://www.bilibili.com/video/BV1f9kZYgEnL/",
+                "source": "bilibili",
+                "note": "UP:五里墩茶社 | 播放量6万；单集扩展知识；RAG进阶对比视角"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "case": "Agent应用工程师（有ML/DL基础）",
+    "plans": {
+      "shortest": {
+        "target_role": "Agent应用工程师",
+        "strategy": "shortest",
+        "user_skills": [
+          "sk_dl_basic",
+          "sk_git",
+          "sk_ml_basic",
+          "sk_numpy",
+          "sk_pandas",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "agent",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "tool-calling"
+        ],
+        "gap_skills_cn": [
+          "AI Agent",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "Tool Calling"
+        ],
+        "score": {
+          "total_hours": 230,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 9,
+          "difficulty_dist": {
+            "beginner": 2,
+            "intermediate": 7,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "agent",
+            "skill_name": "AI Agent",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Agentic AI and AI Agents for Leaders",
+                "url": "https://www.coursera.org/search?query=Agentic+AI+and+AI+Agents+for+Leaders",
+                "source": "coursera",
+                "note": "Vanderbilt University | rating:4.7"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              },
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "tool-calling",
+            "skill_name": "Tool Calling",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AgentGuide",
+                "url": "https://github.com/adongwanai/AgentGuide",
+                "source": "github",
+                "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use"
+              },
+              {
+                "title": "GenAI_Agents",
+                "url": "https://github.com/NirDiamant/GenAI_Agents",
+                "source": "github",
+                "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns"
+              }
+            ]
+          }
+        ]
+      },
+      "easy_first": {
+        "target_role": "Agent应用工程师",
+        "strategy": "easy_first",
+        "user_skills": [
+          "sk_dl_basic",
+          "sk_git",
+          "sk_ml_basic",
+          "sk_numpy",
+          "sk_pandas",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "agent",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "tool-calling"
+        ],
+        "gap_skills_cn": [
+          "AI Agent",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "Tool Calling"
+        ],
+        "score": {
+          "total_hours": 385,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 14,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 10,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "pytorch",
+            "skill_name": "PyTorch",
+            "category": "ai_ml",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "machine-learning",
+            "skill_name": "Machine Learning",
+            "category": "ai_ml",
+            "hours": 50,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+                "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+                "source": "coursera",
+                "note": "Alberta Machine Intelligence Institute | rating:3.7"
+              },
+              {
+                "title": "Scikit-Learn For Machine Learning Classification Problems",
+                "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.4"
+              },
+              {
+                "title": "Introduction to Machine Learning: Supervised Learning",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "deep-learning",
+            "skill_name": "Deep Learning",
+            "category": "ai_ml",
+            "hours": 40,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Introduction to Deep Learning & Neural Networks with Keras",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Deep Learning Specialization (Course 4 - CNN)",
+                "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                "source": "coursera",
+                "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别"
+              },
+              {
+                "title": "Introduction to Deep Learning for Computer Vision",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+                "source": "coursera",
+                "note": "MathWorks | rating:4.3"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "skill_id": "agent",
+            "skill_name": "AI Agent",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Agentic AI and AI Agents for Leaders",
+                "url": "https://www.coursera.org/search?query=Agentic+AI+and+AI+Agents+for+Leaders",
+                "source": "coursera",
+                "note": "Vanderbilt University | rating:4.7"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              },
+              {
+                "title": "AgentGuide",
+                "url": "https://github.com/adongwanai/AgentGuide",
+                "source": "github",
+                "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use"
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "skill_id": "tool-calling",
+            "skill_name": "Tool Calling",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AgentGuide",
+                "url": "https://github.com/adongwanai/AgentGuide",
+                "source": "github",
+                "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use"
+              },
+              {
+                "title": "GenAI_Agents",
+                "url": "https://github.com/NirDiamant/GenAI_Agents",
+                "source": "github",
+                "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns"
+              }
+            ]
+          }
+        ]
+      },
+      "full_cover": {
+        "target_role": "Agent应用工程师",
+        "strategy": "full_cover",
+        "user_skills": [
+          "sk_dl_basic",
+          "sk_git",
+          "sk_ml_basic",
+          "sk_numpy",
+          "sk_pandas",
+          "sk_python_basic"
+        ],
+        "gap_skills": [
+          "agent",
+          "fastapi",
+          "langchain",
+          "llm",
+          "prompt-engineering",
+          "python",
+          "tool-calling"
+        ],
+        "gap_skills_cn": [
+          "AI Agent",
+          "FastAPI",
+          "LangChain",
+          "LLM",
+          "Prompt Engineering",
+          "Python",
+          "Tool Calling"
+        ],
+        "score": {
+          "total_hours": 445,
+          "avg_difficulty": "intermediate",
+          "coverage": 1.0,
+          "step_count": 17,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 13,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "pytorch",
+            "skill_name": "PyTorch",
+            "category": "ai_ml",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "machine-learning",
+            "skill_name": "Machine Learning",
+            "category": "ai_ml",
+            "hours": 50,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+                "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+                "source": "coursera",
+                "note": "Alberta Machine Intelligence Institute | rating:3.7"
+              },
+              {
+                "title": "Scikit-Learn For Machine Learning Classification Problems",
+                "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.4"
+              },
+              {
+                "title": "Introduction to Machine Learning: Supervised Learning",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "deep-learning",
+            "skill_name": "Deep Learning",
+            "category": "ai_ml",
+            "hours": 40,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Introduction to Deep Learning & Neural Networks with Keras",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+&+Neural+Networks+with+Keras",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Deep Learning Specialization (Course 4 - CNN)",
+                "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                "source": "coursera",
+                "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别"
+              },
+              {
+                "title": "Introduction to Deep Learning for Computer Vision",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Deep+Learning+for+Computer+Vision",
+                "source": "coursera",
+                "note": "MathWorks | rating:4.3"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "nlp",
+            "skill_name": "NLP",
+            "category": "ai_ml",
+            "hours": 35,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Natural Language Processing",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              },
+              {
+                "title": "Natural Language Processing in Microsoft Azure",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+                "source": "coursera",
+                "note": "Microsoft | rating:4.7"
+              },
+              {
+                "title": "Natural Language Processing in TensorFlow",
+                "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+TensorFlow",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "embedding",
+            "skill_name": "Embedding",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+                "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+                "source": "bilibili",
+                "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备"
+              },
+              {
+                "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+                "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+                "source": "bilibili",
+                "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念"
+              },
+              {
+                "title": "Product Recommender System: OpenAI Text Embedding",
+                "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:5.0"
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "skill_id": "transformer",
+            "skill_name": "Transformer",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                "source": "bilibili",
+                "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖"
+              },
+              {
+                "title": "大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek",
+                "url": "https://www.bilibili.com/video/BV1p4pezGEWb/",
+                "source": "bilibili",
+                "note": "UP:AI大模型基地 | 播放量100.4万；最新2026版；含MCP/A2A协议实战"
+              },
+              {
+                "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                "source": "bilibili",
+                "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "skill_id": "vector-database",
+            "skill_name": "Vector Database",
+            "category": "ai_emerging",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Vector Databases: from Embeddings to Applications",
+                "url": "https://www.coursera.org/search?query=Vector+Databases:+from+Embeddings+to+Applications",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.3"
+              },
+              {
+                "title": "Retrieval-Augmented Generation (RAG) with Embeddings & Vector Databases",
+                "url": "https://www.coursera.org/search?query=Retrieval-Augmented+Generation+(RAG)+with+Embeddings+&+Vector+Databases",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.8"
+              },
+              {
+                "title": "Vector Database Fundamentals",
+                "url": "https://www.coursera.org/search?query=Vector+Database+Fundamentals",
+                "source": "coursera",
+                "note": "IBM | rating:4.4"
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "skill_id": "llm",
+            "skill_name": "LLM",
+            "category": "ai_emerging",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Generative AI with Large Language Models",
+                "url": "https://www.coursera.org/search?query=Generative+AI+with+Large+Language+Models",
+                "source": "coursera",
+                "note": "DeepLearning.AI | rating:4.8"
+              },
+              {
+                "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+                "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+                "source": "bilibili",
+                "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用"
+              },
+              {
+                "title": "【吴恩达】Claude Code全套教程，大模型入门到进阶",
+                "url": "https://www.bilibili.com/video/BV1RSFUzVEAG/",
+                "source": "bilibili",
+                "note": "UP:吴恩达的AI课 | 播放量42.4万；Claude Code工具使用；LLM工程化参考"
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "skill_id": "prompt-engineering",
+            "skill_name": "Prompt Engineering",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Generative AI: Prompt Engineering Basics",
+                "url": "https://www.coursera.org/search?query=Generative+AI:+Prompt+Engineering+Basics",
+                "source": "coursera",
+                "note": "IBM | rating:4.8"
+              },
+              {
+                "title": "Prompt Engineering Generative AI for Marketing & Advertising",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+Generative+AI+for+Marketing+&+Advertising",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.7"
+              },
+              {
+                "title": "Prompt Engineering for Web Developers",
+                "url": "https://www.coursera.org/search?query=Prompt+Engineering+for+Web+Developers",
+                "source": "coursera",
+                "note": "Scrimba | rating:4.5"
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "skill_id": "langchain",
+            "skill_name": "LangChain",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                "source": "bilibili",
+                "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "skill_id": "agent",
+            "skill_name": "AI Agent",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Agentic AI and AI Agents for Leaders",
+                "url": "https://www.coursera.org/search?query=Agentic+AI+and+AI+Agents+for+Leaders",
+                "source": "coursera",
+                "note": "Vanderbilt University | rating:4.7"
+              },
+              {
+                "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                "source": "bilibili",
+                "note": "UP:吴恩达Agent | 播放量256.5万；Agent专项最强资源；涵盖四大设计模式"
+              },
+              {
+                "title": "AgentGuide",
+                "url": "https://github.com/adongwanai/AgentGuide",
+                "source": "github",
+                "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "skill_id": "rag",
+            "skill_name": "RAG",
+            "category": "ai_emerging",
+            "hours": 25,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                "source": "bilibili",
+                "note": "UP:吴恩达深度学习 | 播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱"
+              },
+              {
+                "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                "source": "bilibili",
+                "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集"
+              },
+              {
+                "title": "【KAG】知识增强式生成 - 比RAG更强大的检索推理框架",
+                "url": "https://www.bilibili.com/video/BV1f9kZYgEnL/",
+                "source": "bilibili",
+                "note": "UP:五里墩茶社 | 播放量6万；单集扩展知识；RAG进阶对比视角"
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "skill_id": "tool-calling",
+            "skill_name": "Tool Calling",
+            "category": "ai_emerging",
+            "hours": 15,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "AgentGuide",
+                "url": "https://github.com/adongwanai/AgentGuide",
+                "source": "github",
+                "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use"
+              },
+              {
+                "title": "GenAI_Agents",
+                "url": "https://github.com/NirDiamant/GenAI_Agents",
+                "source": "github",
+                "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "case": "数据分析师（零基础）",
+    "plans": {
+      "shortest": {
+        "target_role": "数据分析师",
+        "strategy": "shortest",
+        "user_skills": [],
+        "gap_skills": [
+          "ab-testing",
+          "numpy",
+          "pandas",
+          "python",
+          "sql-lang",
+          "statistics",
+          "tableau"
+        ],
+        "gap_skills_cn": [
+          "A/B Testing",
+          "NumPy",
+          "Pandas",
+          "Python",
+          "SQL",
+          "Statistics",
+          "Tableau"
+        ],
+        "score": {
+          "total_hours": 165,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 7,
+          "difficulty_dist": {
+            "beginner": 6,
+            "intermediate": 1,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "pandas",
+            "skill_name": "Pandas",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Data Analysis in Python: Using Pandas DataFrames",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+in+Python:+Using+Pandas+DataFrames",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.5"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              },
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "tableau",
+            "skill_name": "Tableau",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Advanced Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.3"
+              },
+              {
+                "title": "Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.4"
+              },
+              {
+                "title": "Tableau Business Intelligence Analyst",
+                "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "ab-testing",
+            "skill_name": "A/B Testing",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Data Wrangling, Analysis and AB Testing with SQL",
+                "url": "https://www.coursera.org/search?query=Data+Wrangling,+Analysis+and+AB+Testing+with+SQL",
+                "source": "coursera",
+                "note": "University of California, Davis | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 A/B测试 数据分析",
+                "url": "https://search.bilibili.com/all?keyword=AB测试+数据分析",
+                "source": "bilibili",
+                "note": "当前资源库暂无A/B测试专项，建议在B站搜索补充"
+              },
+              {
+                "title": "ANOVA and Experimental Design",
+                "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:3.7"
+              }
+            ]
+          }
+        ]
+      },
+      "easy_first": {
+        "target_role": "数据分析师",
+        "strategy": "easy_first",
+        "user_skills": [],
+        "gap_skills": [
+          "ab-testing",
+          "numpy",
+          "pandas",
+          "python",
+          "sql-lang",
+          "statistics",
+          "tableau"
+        ],
+        "gap_skills_cn": [
+          "A/B Testing",
+          "NumPy",
+          "Pandas",
+          "Python",
+          "SQL",
+          "Statistics",
+          "Tableau"
+        ],
+        "score": {
+          "total_hours": 165,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 7,
+          "difficulty_dist": {
+            "beginner": 6,
+            "intermediate": 1,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "pandas",
+            "skill_name": "Pandas",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Data Analysis in Python: Using Pandas DataFrames",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+in+Python:+Using+Pandas+DataFrames",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.5"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              },
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "tableau",
+            "skill_name": "Tableau",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Advanced Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.3"
+              },
+              {
+                "title": "Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.4"
+              },
+              {
+                "title": "Tableau Business Intelligence Analyst",
+                "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "ab-testing",
+            "skill_name": "A/B Testing",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Data Wrangling, Analysis and AB Testing with SQL",
+                "url": "https://www.coursera.org/search?query=Data+Wrangling,+Analysis+and+AB+Testing+with+SQL",
+                "source": "coursera",
+                "note": "University of California, Davis | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 A/B测试 数据分析",
+                "url": "https://search.bilibili.com/all?keyword=AB测试+数据分析",
+                "source": "bilibili",
+                "note": "当前资源库暂无A/B测试专项，建议在B站搜索补充"
+              },
+              {
+                "title": "ANOVA and Experimental Design",
+                "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:3.7"
+              }
+            ]
+          }
+        ]
+      },
+      "full_cover": {
+        "target_role": "数据分析师",
+        "strategy": "full_cover",
+        "user_skills": [],
+        "gap_skills": [
+          "ab-testing",
+          "numpy",
+          "pandas",
+          "python",
+          "sql-lang",
+          "statistics",
+          "tableau"
+        ],
+        "gap_skills_cn": [
+          "A/B Testing",
+          "NumPy",
+          "Pandas",
+          "Python",
+          "SQL",
+          "Statistics",
+          "Tableau"
+        ],
+        "score": {
+          "total_hours": 245,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 9,
+          "difficulty_dist": {
+            "beginner": 6,
+            "intermediate": 3,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "pandas",
+            "skill_name": "Pandas",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Data Analysis in Python: Using Pandas DataFrames",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+in+Python:+Using+Pandas+DataFrames",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.5"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              },
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "data-structures",
+            "skill_name": "Data Structures",
+            "category": "methods",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Foundations of Data Structures and Algorithms",
+                "url": "https://www.coursera.org/search?query=Foundations+of+Data+Structures+and+Algorithms",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.6"
+              },
+              {
+                "title": "Data Structures and Algorithms",
+                "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+                "source": "coursera",
+                "note": "University of California San Diego | rating:4.6"
+              },
+              {
+                "title": "javascript-algorithms",
+                "url": "https://github.com/trekhleb/javascript-algorithms",
+                "source": "github",
+                "note": "stars:190k+ | JavaScript数据结构和算法实现"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "tableau",
+            "skill_name": "Tableau",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Advanced Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.3"
+              },
+              {
+                "title": "Data Visualization with Tableau",
+                "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.4"
+              },
+              {
+                "title": "Tableau Business Intelligence Analyst",
+                "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+                "source": "coursera",
+                "note": "Tableau Learning Partner | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "statistics",
+            "skill_name": "Statistics",
+            "category": "data_analysis",
+            "hours": 30,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Statistics for Data Science with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+for+Data+Science+with+Python",
+                "source": "coursera",
+                "note": "IBM | rating:3.8"
+              },
+              {
+                "title": "Statistics with Python",
+                "url": "https://www.coursera.org/search?query=Statistics+with+Python",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "Data Analysis with R",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+with+R",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "ab-testing",
+            "skill_name": "A/B Testing",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Data Wrangling, Analysis and AB Testing with SQL",
+                "url": "https://www.coursera.org/search?query=Data+Wrangling,+Analysis+and+AB+Testing+with+SQL",
+                "source": "coursera",
+                "note": "University of California, Davis | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 A/B测试 数据分析",
+                "url": "https://search.bilibili.com/all?keyword=AB测试+数据分析",
+                "source": "bilibili",
+                "note": "当前资源库暂无A/B测试专项，建议在B站搜索补充"
+              },
+              {
+                "title": "ANOVA and Experimental Design",
+                "url": "https://www.coursera.org/search?query=ANOVA+and+Experimental+Design",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:3.7"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "machine-learning",
+            "skill_name": "Machine Learning",
+            "category": "ai_ml",
+            "hours": 50,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Machine Learning Algorithms: Supervised Learning Tip to Tail",
+                "url": "https://www.coursera.org/search?query=Machine+Learning+Algorithms:+Supervised+Learning+Tip+to+Tail",
+                "source": "coursera",
+                "note": "Alberta Machine Intelligence Institute | rating:3.7"
+              },
+              {
+                "title": "Scikit-Learn For Machine Learning Classification Problems",
+                "url": "https://www.coursera.org/search?query=Scikit-Learn+For+Machine+Learning+Classification+Problems",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.4"
+              },
+              {
+                "title": "Introduction to Machine Learning: Supervised Learning",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.5"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "case": "后端工程师（有Python+SQL）",
+    "plans": {
+      "shortest": {
+        "target_role": "后端工程师",
+        "strategy": "shortest",
+        "user_skills": [
+          "sk_python_basic",
+          "sk_sql_basic"
+        ],
+        "gap_skills": [
+          "docker",
+          "fastapi",
+          "git",
+          "linux",
+          "python",
+          "sql-lang"
+        ],
+        "gap_skills_cn": [
+          "Docker",
+          "FastAPI",
+          "Git",
+          "Linux",
+          "Python",
+          "SQL"
+        ],
+        "score": {
+          "total_hours": 128,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 6,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 2,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "git",
+            "skill_name": "Git",
+            "category": "devops",
+            "hours": 8,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Getting Started with Git and GitHub",
+                "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Version Control with Git",
+                "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                "source": "coursera",
+                "note": "Atlassian | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                "source": "bilibili",
+                "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "linux",
+            "skill_name": "Linux",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+                "url": "https://www.coursera.org/search?query=Hands-on+Introduction+to+Linux+Commands+and+Shell+Scripting",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Linux Basics: The Command Line Interface - 6",
+                "url": "https://www.coursera.org/search?query=Linux+Basics:+The+Command+Line+Interface+-+6",
+                "source": "coursera",
+                "note": "Dartmouth College | rating:4.6"
+              },
+              {
+                "title": "Command Line Tools for Genomic Data Science",
+                "url": "https://www.coursera.org/search?query=Command+Line+Tools+for+Genomic+Data+Science",
+                "source": "coursera",
+                "note": "Johns Hopkins University | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "docker",
+            "skill_name": "Docker",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Docker从入门到实战：容器化部署全流程教程",
+                "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
+                "source": "bilibili",
+                "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s"
+              },
+              {
+                "title": "awesome-docker",
+                "url": "https://github.com/veggiemonk/awesome-docker",
+                "source": "github",
+                "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践"
+              },
+              {
+                "title": "Docker for Beginners with Hands-on labs",
+                "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
+                "source": "coursera",
+                "note": "KodeKloud | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          }
+        ]
+      },
+      "easy_first": {
+        "target_role": "后端工程师",
+        "strategy": "easy_first",
+        "user_skills": [
+          "sk_python_basic",
+          "sk_sql_basic"
+        ],
+        "gap_skills": [
+          "docker",
+          "fastapi",
+          "git",
+          "linux",
+          "python",
+          "sql-lang"
+        ],
+        "gap_skills_cn": [
+          "Docker",
+          "FastAPI",
+          "Git",
+          "Linux",
+          "Python",
+          "SQL"
+        ],
+        "score": {
+          "total_hours": 128,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 6,
+          "difficulty_dist": {
+            "beginner": 4,
+            "intermediate": 2,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "git",
+            "skill_name": "Git",
+            "category": "devops",
+            "hours": 8,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Getting Started with Git and GitHub",
+                "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Version Control with Git",
+                "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                "source": "coursera",
+                "note": "Atlassian | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                "source": "bilibili",
+                "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "linux",
+            "skill_name": "Linux",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+                "url": "https://www.coursera.org/search?query=Hands-on+Introduction+to+Linux+Commands+and+Shell+Scripting",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Linux Basics: The Command Line Interface - 6",
+                "url": "https://www.coursera.org/search?query=Linux+Basics:+The+Command+Line+Interface+-+6",
+                "source": "coursera",
+                "note": "Dartmouth College | rating:4.6"
+              },
+              {
+                "title": "Command Line Tools for Genomic Data Science",
+                "url": "https://www.coursera.org/search?query=Command+Line+Tools+for+Genomic+Data+Science",
+                "source": "coursera",
+                "note": "Johns Hopkins University | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "docker",
+            "skill_name": "Docker",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Docker从入门到实战：容器化部署全流程教程",
+                "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
+                "source": "bilibili",
+                "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s"
+              },
+              {
+                "title": "awesome-docker",
+                "url": "https://github.com/veggiemonk/awesome-docker",
+                "source": "github",
+                "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践"
+              },
+              {
+                "title": "Docker for Beginners with Hands-on labs",
+                "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
+                "source": "coursera",
+                "note": "KodeKloud | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          }
+        ]
+      },
+      "full_cover": {
+        "target_role": "后端工程师",
+        "strategy": "full_cover",
+        "user_skills": [
+          "sk_python_basic",
+          "sk_sql_basic"
+        ],
+        "gap_skills": [
+          "docker",
+          "fastapi",
+          "git",
+          "linux",
+          "python",
+          "sql-lang"
+        ],
+        "gap_skills_cn": [
+          "Docker",
+          "FastAPI",
+          "Git",
+          "Linux",
+          "Python",
+          "SQL"
+        ],
+        "score": {
+          "total_hours": 193,
+          "avg_difficulty": "beginner",
+          "coverage": 1.0,
+          "step_count": 9,
+          "difficulty_dist": {
+            "beginner": 6,
+            "intermediate": 3,
+            "advanced": 0
+          }
+        },
+        "steps": [
+          {
+            "step": 1,
+            "skill_id": "git",
+            "skill_name": "Git",
+            "category": "devops",
+            "hours": 8,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Getting Started with Git and GitHub",
+                "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Version Control with Git",
+                "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                "source": "coursera",
+                "note": "Atlassian | rating:4.7"
+              },
+              {
+                "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                "source": "bilibili",
+                "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程"
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "skill_id": "linux",
+            "skill_name": "Linux",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
+                "url": "https://www.coursera.org/search?query=Hands-on+Introduction+to+Linux+Commands+and+Shell+Scripting",
+                "source": "coursera",
+                "note": "IBM | rating:4.6"
+              },
+              {
+                "title": "Linux Basics: The Command Line Interface - 6",
+                "url": "https://www.coursera.org/search?query=Linux+Basics:+The+Command+Line+Interface+-+6",
+                "source": "coursera",
+                "note": "Dartmouth College | rating:4.6"
+              },
+              {
+                "title": "Command Line Tools for Genomic Data Science",
+                "url": "https://www.coursera.org/search?query=Command+Line+Tools+for+Genomic+Data+Science",
+                "source": "coursera",
+                "note": "Johns Hopkins University | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "skill_id": "python",
+            "skill_name": "Python",
+            "category": "language",
+            "hours": 40,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Python Programming Fundamentals",
+                "url": "https://www.coursera.org/search?query=Python+Programming+Fundamentals",
+                "source": "coursera",
+                "note": "Duke University | rating:4.7"
+              },
+              {
+                "title": "Python Basics",
+                "url": "https://www.coursera.org/search?query=Python+Basics",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Python for Beginners: Variables and Strings",
+                "url": "https://www.coursera.org/search?query=Python+for+Beginners:+Variables+and+Strings",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "skill_id": "sql-lang",
+            "skill_name": "SQL",
+            "category": "language",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Introduction to Structured Query Language (SQL)",
+                "url": "https://www.coursera.org/search?query=Introduction+to+Structured+Query+Language+(SQL)",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.8"
+              },
+              {
+                "title": "Database Design and Basic SQL in PostgreSQL",
+                "url": "https://www.coursera.org/search?query=Database+Design+and+Basic+SQL+in+PostgreSQL",
+                "source": "coursera",
+                "note": "University of Michigan | rating:4.6"
+              },
+              {
+                "title": "SQL: A Practical Introduction for Querying Databases",
+                "url": "https://www.coursera.org/search?query=SQL:+A+Practical+Introduction+for+Querying+Databases",
+                "source": "coursera",
+                "note": "IBM | rating:4.9"
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "skill_id": "docker",
+            "skill_name": "Docker",
+            "category": "devops",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Docker从入门到实战：容器化部署全流程教程",
+                "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
+                "source": "bilibili",
+                "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s"
+              },
+              {
+                "title": "awesome-docker",
+                "url": "https://github.com/veggiemonk/awesome-docker",
+                "source": "github",
+                "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践"
+              },
+              {
+                "title": "Docker for Beginners with Hands-on labs",
+                "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
+                "source": "coursera",
+                "note": "KodeKloud | rating:4.6"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "skill_id": "numpy",
+            "skill_name": "NumPy",
+            "category": "data_analysis",
+            "hours": 15,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              },
+              {
+                "title": "Data Science with NumPy, Sets, and Dictionaries",
+                "url": "https://www.coursera.org/search?query=Data+Science+with+NumPy,+Sets,+and+Dictionaries",
+                "source": "coursera",
+                "note": "Duke University | rating:2.9"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "skill_id": "pandas",
+            "skill_name": "Pandas",
+            "category": "data_analysis",
+            "hours": 20,
+            "difficulty": "beginner",
+            "resources": [
+              {
+                "title": "Data Analysis in Python: Using Pandas DataFrames",
+                "url": "https://www.coursera.org/search?query=Data+Analysis+in+Python:+Using+Pandas+DataFrames",
+                "source": "coursera",
+                "note": "Coursera Project Network | rating:4.5"
+              },
+              {
+                "title": "data-science-complete-tutorial",
+                "url": "https://github.com/edyoda/data-science-complete-tutorial",
+                "source": "github",
+                "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程"
+              },
+              {
+                "title": "BiteSize Python: NumPy and Pandas",
+                "url": "https://www.coursera.org/search?query=BiteSize+Python:+NumPy+and+Pandas",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.8"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "skill_id": "data-structures",
+            "skill_name": "Data Structures",
+            "category": "methods",
+            "hours": 30,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "Foundations of Data Structures and Algorithms",
+                "url": "https://www.coursera.org/search?query=Foundations+of+Data+Structures+and+Algorithms",
+                "source": "coursera",
+                "note": "University of Colorado Boulder | rating:4.6"
+              },
+              {
+                "title": "Data Structures and Algorithms",
+                "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+                "source": "coursera",
+                "note": "University of California San Diego | rating:4.6"
+              },
+              {
+                "title": "javascript-algorithms",
+                "url": "https://github.com/trekhleb/javascript-algorithms",
+                "source": "github",
+                "note": "stars:190k+ | JavaScript数据结构和算法实现"
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "skill_id": "fastapi",
+            "skill_name": "FastAPI",
+            "category": "backend",
+            "hours": 20,
+            "difficulty": "intermediate",
+            "resources": [
+              {
+                "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                "source": "bilibili",
+                "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐"
+              },
+              {
+                "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                "source": "bilibili",
+                "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容"
+              },
+              {
+                "title": "Django+DRF REST API实战教程",
+                "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+                "source": "bilibili",
+                "note": "B站搜索补充 | Django/Flask/FastAPI后端开发"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

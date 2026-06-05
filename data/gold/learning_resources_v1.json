@@ -3,20 +3,252 @@
   "created": "2026-06-01",
   "description": "学习资源库（按skill_id索引），整合Bilibili视频/GitHub仓库/Coursera课程三源，供路径规划模块调用",
   "metadata": {
-    "total_skills": 29,
-    "skills_with_resources": 29,
-    "skills_without_resources": [],
+    "total_skills": 275,
+    "skills_with_resources": 44,
+    "skills_without_resources": [
+      "java",
+      "c",
+      "go",
+      "rust",
+      "ruby",
+      "php",
+      "swift",
+      "kotlin",
+      "r",
+      "matlab",
+      "perl",
+      "dart",
+      "lua",
+      "solidity",
+      "scala",
+      "groovy",
+      "cpp",
+      "csharp",
+      "typescript",
+      "objective-c",
+      "shell",
+      "powershell",
+      "haskell",
+      "elixir",
+      "clojure",
+      "css",
+      "tailwind",
+      "bootstrap",
+      "sass",
+      "jquery",
+      "webpack",
+      "vite",
+      "angular",
+      "svelte",
+      "redux",
+      "nextjs",
+      "nuxt",
+      "electron",
+      "threejs",
+      "webgl",
+      "express",
+      "nestjs",
+      "flask",
+      "spring",
+      "dotnet",
+      "laravel",
+      "symfony",
+      "rails",
+      "gin",
+      "hibernate",
+      "grpc",
+      "graphql",
+      "rest",
+      "mysql",
+      "oracle-db",
+      "sqlserver",
+      "sqlite",
+      "mariadb",
+      "db2",
+      "nosql",
+      "cassandra",
+      "elasticsearch",
+      "dynamodb",
+      "neo4j",
+      "clickhouse",
+      "couchbase",
+      "influxdb",
+      "cloud-computing",
+      "gcp",
+      "alicloud",
+      "tencent-cloud",
+      "cloudflare",
+      "heroku",
+      "digitalocean",
+      "s3",
+      "ec2",
+      "lambda",
+      "redshift",
+      "aurora",
+      "edge-computing",
+      "hadoop",
+      "flink",
+      "airflow",
+      "dbt",
+      "hive",
+      "snowflake",
+      "databricks",
+      "etl",
+      "bigquery",
+      "rabbitmq",
+      "dagster",
+      "data-warehouse",
+      "data-lake",
+      "data-pipeline",
+      "data-governance",
+      "data-modeling",
+      "data-quality",
+      "dimensional-modeling",
+      "powerbi",
+      "excel",
+      "looker",
+      "data-analysis",
+      "data-visualization",
+      "data-mining",
+      "business-intelligence",
+      "dashboard",
+      "data-cleaning",
+      "hypothesis-testing",
+      "time-series",
+      "tensorflow",
+      "keras",
+      "scikit-learn",
+      "reinforcement-learning",
+      "xgboost",
+      "data-science",
+      "jupyter",
+      "cuda",
+      "recommendation-system",
+      "feature-engineering",
+      "model-deployment",
+      "cnn",
+      "rnn",
+      "crf",
+      "gnn",
+      "ner",
+      "sentiment-analysis",
+      "text-classification",
+      "information-extraction",
+      "supervised-learning",
+      "unsupervised-learning",
+      "model-evaluation",
+      "bert",
+      "gpt",
+      "qwen",
+      "openai-api",
+      "huggingface",
+      "pinecone",
+      "milvus",
+      "weaviate",
+      "chroma",
+      "faiss",
+      "llamaindex",
+      "langgraph",
+      "quantization",
+      "multi-agent",
+      "mcp",
+      "coze",
+      "mlops",
+      "multimodal",
+      "diffusion",
+      "knowledge-graph",
+      "aigc",
+      "kubernetes",
+      "terraform",
+      "ansible",
+      "jenkins",
+      "gitlab-ci",
+      "github-actions",
+      "cicd",
+      "helm",
+      "prometheus",
+      "grafana",
+      "nginx",
+      "devops",
+      "microservices",
+      "serverless",
+      "argocd",
+      "cloudformation",
+      "vagrant",
+      "istio",
+      "caching",
+      "high-availability",
+      "load-balancing",
+      "message-queue",
+      "capacity-planning",
+      "performance-tuning",
+      "sre",
+      "root-cause-analysis",
+      "unix",
+      "selenium",
+      "cypress",
+      "playwright",
+      "jest",
+      "pytest",
+      "junit",
+      "appium",
+      "jmeter",
+      "postman",
+      "qa-automation",
+      "unit-testing",
+      "integration-testing",
+      "load-testing",
+      "rest-api-testing",
+      "android",
+      "ios",
+      "react-native",
+      "xamarin",
+      "jetpack-compose",
+      "penetration-testing",
+      "oauth",
+      "jwt",
+      "encryption",
+      "ssl-tls",
+      "siem",
+      "owasp",
+      "zero-trust",
+      "compliance",
+      "cryptography",
+      "data-privacy",
+      "iam",
+      "network-security",
+      "vulnerability-assessment",
+      "incident-response",
+      "agile",
+      "scrum",
+      "kanban",
+      "jira",
+      "confluence",
+      "websocket",
+      "json",
+      "xml",
+      "oop",
+      "distributed-systems",
+      "blockchain",
+      "algorithms",
+      "api-design",
+      "design-patterns",
+      "regex",
+      "web-scraping",
+      "gis",
+      "iot"
+    ],
     "source_counts": {
-      "bilibili": 77,
-      "coursera": 301,
-      "github": 19
+      "bilibili": 94,
+      "coursera": 339,
+      "github": 28
     },
-    "total_resource_skill_pairs": 397
+    "total_resource_skill_pairs": 461
   },
   "skills": {
-    "sk_python_basic": {
-      "skill_name": "Python基础",
-      "category": "编程语言",
+    "python": {
+      "skill_name": "Python",
+      "category": "language",
       "level": 1,
       "difficulty": "beginner",
       "hours_estimate": 40,
@@ -200,9 +432,312 @@
         }
       ]
     },
-    "sk_sql_basic": {
-      "skill_name": "SQL基础",
-      "category": "数据库",
+    "java": {
+      "skill_name": "Java",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": []
+    },
+    "javascript": {
+      "skill_name": "JavaScript",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "manual_js_bili_001",
+          "title": "JavaScript入门到精通完整版（尚硅谷）",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=JavaScript+入门+尚硅谷",
+          "difficulty": "beginner",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "B站搜索补充 | 推荐：尚硅谷/黑马JS完整教程",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_htmlcss_github_001",
+          "title": "freeCodeCamp - Responsive Web Design",
+          "source": "github",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "difficulty": "beginner",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:400k+ | 免费全套前端课程，HTML/CSS/JavaScript全覆盖",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_js_github_001",
+          "title": "javascript-algorithms",
+          "source": "github",
+          "url": "https://github.com/trekhleb/javascript-algorithms",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:190k+ | JavaScript数据结构和算法实现",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0015",
+          "title": "JavaScript Programming with React, Node & MongoDB",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JavaScript+Programming+with+React,+Node+&+MongoDB",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "IBM | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0346",
+          "title": "JavaScript for Beginners",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JavaScript+for+Beginners",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0347",
+          "title": "JavaScript Programming Essentials",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JavaScript+Programming+Essentials",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:3.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0548",
+          "title": "Learn JavaScript",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Learn+JavaScript",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Scrimba | rating:3.9",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "c": {
+      "skill_name": "C",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 50,
+      "prerequisites": [],
+      "resources": []
+    },
+    "go": {
+      "skill_name": "Go",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": []
+    },
+    "rust": {
+      "skill_name": "Rust",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": []
+    },
+    "ruby": {
+      "skill_name": "Ruby",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": []
+    },
+    "php": {
+      "skill_name": "PHP",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": []
+    },
+    "swift": {
+      "skill_name": "Swift",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": []
+    },
+    "kotlin": {
+      "skill_name": "Kotlin",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": []
+    },
+    "r": {
+      "skill_name": "R",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": []
+    },
+    "matlab": {
+      "skill_name": "MATLAB",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": []
+    },
+    "perl": {
+      "skill_name": "Perl",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [],
+      "resources": []
+    },
+    "dart": {
+      "skill_name": "Dart",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [],
+      "resources": []
+    },
+    "lua": {
+      "skill_name": "Lua",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [],
+      "resources": []
+    },
+    "solidity": {
+      "skill_name": "Solidity",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "scala": {
+      "skill_name": "Scala",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": []
+    },
+    "groovy": {
+      "skill_name": "Groovy",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": []
+    },
+    "cpp": {
+      "skill_name": "C++",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "prerequisites": [
+        "c"
+      ],
+      "resources": []
+    },
+    "csharp": {
+      "skill_name": "C#",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": []
+    },
+    "typescript": {
+      "skill_name": "TypeScript",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "objective-c": {
+      "skill_name": "Objective-C",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "c"
+      ],
+      "resources": []
+    },
+    "shell": {
+      "skill_name": "Shell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "powershell": {
+      "skill_name": "PowerShell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "sql-lang": {
+      "skill_name": "SQL",
+      "category": "language",
       "level": 1,
       "difficulty": "beginner",
       "hours_estimate": 20,
@@ -595,55 +1130,912 @@
         }
       ]
     },
-    "sk_git": {
-      "skill_name": "Git版本控制",
-      "category": "工程工具",
+    "haskell": {
+      "skill_name": "Haskell",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": []
+    },
+    "elixir": {
+      "skill_name": "Elixir",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": []
+    },
+    "clojure": {
+      "skill_name": "Clojure",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 50,
+      "prerequisites": [],
+      "resources": []
+    },
+    "html": {
+      "skill_name": "HTML",
+      "category": "frontend",
       "level": 1,
       "difficulty": "beginner",
-      "hours_estimate": 8,
+      "hours_estimate": 10,
       "prerequisites": [],
       "resources": [
         {
-          "resource_id": "manual_git_001",
-          "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+          "resource_id": "manual_htmlcss_bili_001",
+          "title": "HTML+CSS前端开发入门教程（黑马程序员）",
           "source": "bilibili",
-          "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+          "url": "https://search.bilibili.com/all?keyword=HTML+CSS+前端入门+黑马",
           "difficulty": "beginner",
-          "hours_estimate": 8.0,
+          "hours_estimate": 20.0,
           "language": "zh",
-          "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程",
+          "note": "B站搜索补充 | 推荐：黑马/尚硅谷HTML CSS教程",
           "match_reason": "manual_supplement"
         },
         {
-          "resource_id": "coursera_0165",
-          "title": "Getting Started with Git and GitHub",
+          "resource_id": "manual_htmlcss_github_001",
+          "title": "freeCodeCamp - Responsive Web Design",
+          "source": "github",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "difficulty": "beginner",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:400k+ | 免费全套前端课程，HTML/CSS/JavaScript全覆盖",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0010",
+          "title": "HTML and CSS in depth",
           "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+          "url": "https://www.coursera.org/search?query=HTML+and+CSS+in+depth",
           "difficulty": "beginner",
           "hours_estimate": 20.0,
           "language": "en",
-          "note": "IBM | rating:4.6",
+          "note": "Meta | rating:4.7",
           "match_reason": "keyword_score"
         },
         {
-          "resource_id": "coursera_0226",
-          "title": "Version Control with Git",
+          "resource_id": "coursera_0606",
+          "title": "Learn HTML and CSS",
           "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
-          "difficulty": "mixed",
-          "hours_estimate": 20.0,
+          "url": "https://www.coursera.org/search?query=Learn+HTML+and+CSS",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
           "language": "en",
-          "note": "Atlassian | rating:4.7",
+          "note": "Scrimba | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0205",
+          "title": "Programming Foundations with JavaScript, HTML and CSS",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Programming+Foundations+with+JavaScript,+HTML+and+CSS",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.6",
           "match_reason": "keyword_score"
         }
       ]
     },
-    "sk_linux_basic": {
-      "skill_name": "Linux基础",
-      "category": "工程工具",
+    "css": {
+      "skill_name": "CSS",
+      "category": "frontend",
       "level": 1,
       "difficulty": "beginner",
       "hours_estimate": 15,
+      "prerequisites": [
+        "html"
+      ],
+      "resources": []
+    },
+    "tailwind": {
+      "skill_name": "Tailwind CSS",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "css"
+      ],
+      "resources": []
+    },
+    "bootstrap": {
+      "skill_name": "Bootstrap",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "html",
+        "css"
+      ],
+      "resources": []
+    },
+    "sass": {
+      "skill_name": "Sass",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "css"
+      ],
+      "resources": []
+    },
+    "jquery": {
+      "skill_name": "jQuery",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "webpack": {
+      "skill_name": "Webpack",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "vite": {
+      "skill_name": "Vite",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "react": {
+      "skill_name": "React",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "javascript",
+        "typescript"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_react_bili_001",
+          "title": "React18入门到实战完整版",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=React+18+入门+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "B站搜索补充 | 推荐：尚硅谷/coderwhy React18教程",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_react_github_001",
+          "title": "awesome-react",
+          "source": "github",
+          "url": "https://github.com/enaqx/awesome-react",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:65k+ | React生态资源合集",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "vue": {
+      "skill_name": "Vue.js",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "javascript",
+        "typescript"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_vue_bili_001",
+          "title": "Vue3+TypeScript实战教程（尚硅谷）",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Vue3+TypeScript+尚硅谷",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Vue3/Vite/Pinia完整栈",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "angular": {
+      "skill_name": "Angular",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "typescript"
+      ],
+      "resources": []
+    },
+    "svelte": {
+      "skill_name": "Svelte",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "redux": {
+      "skill_name": "Redux",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": []
+    },
+    "nextjs": {
+      "skill_name": "Next.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": []
+    },
+    "nuxt": {
+      "skill_name": "Nuxt.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "vue"
+      ],
+      "resources": []
+    },
+    "electron": {
+      "skill_name": "Electron",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "javascript",
+        "nodejs"
+      ],
+      "resources": []
+    },
+    "threejs": {
+      "skill_name": "Three.js",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "webgl": {
+      "skill_name": "WebGL",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "javascript",
+        "threejs"
+      ],
+      "resources": []
+    },
+    "nodejs": {
+      "skill_name": "Node.js",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_nodejs_bili_001",
+          "title": "Node.js+Express+MongoDB全栈开发教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Node.js后端开发",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0762",
+          "title": "Server side JavaScript with Node.js",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Server+side+JavaScript+with+Node.js",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "NIIT | rating:4.5",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "express": {
+      "skill_name": "Express.js",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": []
+    },
+    "nestjs": {
+      "skill_name": "NestJS",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "nodejs",
+        "typescript"
+      ],
+      "resources": []
+    },
+    "django": {
+      "skill_name": "Django",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_django_bili_001",
+          "title": "Django+DRF REST API实战教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Django/Flask/FastAPI后端开发",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0883",
+          "title": "Advanced Django: Mastering Django and Django Rest Framework",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+Django:+Mastering+Django+and+Django+Rest+Framework",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Codio | rating:4.2",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "flask": {
+      "skill_name": "Flask",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "fastapi": {
+      "skill_name": "FastAPI",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1zV2QBtE39",
+          "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+          "difficulty": "beginner",
+          "hours_estimate": 18.0,
+          "language": "zh",
+          "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1iN411X72b",
+          "title": "从0到1学习FastAPI框架的所有知识点（慕课网官方）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1iN411X72b/",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "UP:慕课网官方账号 | 播放量14.6万；慕课网系统课；高性能API服务开发",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1eKpizeEnb",
+          "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "manual_django_bili_001",
+          "title": "Django+DRF REST API实战教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Django/Flask/FastAPI后端开发",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "spring": {
+      "skill_name": "Spring",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": []
+    },
+    "springboot": {
+      "skill_name": "Spring Boot",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "spring"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_spring_bili_001",
+          "title": "SpringBoot3+MyBatis-Plus实战（黑马程序员）",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=SpringBoot3+MyBatis+黑马",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Java后端主流技术栈",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0186",
+          "title": "Spring Framework",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Spring+Framework",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "LearnQuest | rating:3.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0916",
+          "title": "Building Cloud Services with the Java Spring Framework",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Building+Cloud+Services+with+the+Java+Spring+Framework",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:3.8",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dotnet": {
+      "skill_name": ".NET",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "csharp"
+      ],
+      "resources": []
+    },
+    "laravel": {
+      "skill_name": "Laravel",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "php"
+      ],
+      "resources": []
+    },
+    "symfony": {
+      "skill_name": "Symfony",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "php"
+      ],
+      "resources": []
+    },
+    "rails": {
+      "skill_name": "Ruby on Rails",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "ruby"
+      ],
+      "resources": []
+    },
+    "gin": {
+      "skill_name": "Gin",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "go"
+      ],
+      "resources": []
+    },
+    "hibernate": {
+      "skill_name": "Hibernate",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "spring"
+      ],
+      "resources": []
+    },
+    "grpc": {
+      "skill_name": "gRPC",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "graphql": {
+      "skill_name": "GraphQL",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": []
+    },
+    "rest": {
+      "skill_name": "REST API",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "mysql": {
+      "skill_name": "MySQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "postgresql": {
+      "skill_name": "PostgreSQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_sqladv_bili_001",
+          "title": "SQL进阶教程：窗口函数/子查询/性能优化全解析",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=SQL进阶+窗口函数+数据分析",
+          "difficulty": "intermediate",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "B站搜索补充资源 | 推荐搜索: SQL进阶 窗口函数 数据分析",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_sqladv_github_001",
+          "title": "sql-tutorial (advanced SQL patterns and analytics)",
+          "source": "github",
+          "url": "https://github.com/topics/sql-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "GitHub SQL tutorial topic page | 窗口函数/CTE/性能优化实例",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0012_sqladv",
+          "title": "Web Applications for Everybody",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Web+Applications+for+Everybody",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Michigan ★4.7 | 含SQL/MySQL/关系数据库/数据建模",
+          "match_reason": "manual_tag"
+        }
+      ]
+    },
+    "oracle-db": {
+      "skill_name": "Oracle DB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "sqlserver": {
+      "skill_name": "SQL Server",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "sqlite": {
+      "skill_name": "SQLite",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "mariadb": {
+      "skill_name": "MariaDB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "db2": {
+      "skill_name": "DB2",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "nosql": {
+      "skill_name": "NoSQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "mongodb": {
+      "skill_name": "MongoDB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_mongo_bili_001",
+          "title": "MongoDB入门到实战教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=MongoDB+入门+教程",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_nodejs_bili_001",
+          "title": "Node.js+Express+MongoDB全栈开发教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Node.js后端开发",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_mongo_github_001",
+          "title": "awesome-mongodb",
+          "source": "github",
+          "url": "https://github.com/ramnes/awesome-mongodb",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:2.5k+ | MongoDB资源合集",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "redis": {
+      "skill_name": "Redis",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_redis_bili_001",
+          "title": "Redis从入门到实战（黑马程序员）",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Redis+入门+黑马",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Redis缓存/持久化/集群",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "cassandra": {
+      "skill_name": "Cassandra",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": []
+    },
+    "elasticsearch": {
+      "skill_name": "Elasticsearch",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": []
+    },
+    "dynamodb": {
+      "skill_name": "DynamoDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql",
+        "aws"
+      ],
+      "resources": []
+    },
+    "neo4j": {
+      "skill_name": "Neo4j",
+      "category": "database",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": []
+    },
+    "clickhouse": {
+      "skill_name": "ClickHouse",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "postgresql"
+      ],
+      "resources": []
+    },
+    "couchbase": {
+      "skill_name": "Couchbase",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": []
+    },
+    "influxdb": {
+      "skill_name": "InfluxDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": []
+    },
+    "linux": {
+      "skill_name": "Linux",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
       "prerequisites": [],
       "resources": [
         {
@@ -692,156 +2084,782 @@
         }
       ]
     },
-    "sk_math_basic": {
-      "skill_name": "高等数学基础(线代/概率)",
-      "category": "数学基础",
+    "git": {
+      "skill_name": "Git",
+      "category": "devops",
       "level": 1,
       "difficulty": "beginner",
-      "hours_estimate": 60,
+      "hours_estimate": 8,
       "prerequisites": [],
       "resources": [
         {
-          "resource_id": "manual_math_001",
-          "title": "【推荐搜索】B站搜索 线性代数/概率论/机器学习数学基础",
+          "resource_id": "manual_git_001",
+          "title": "【推荐搜索】B站搜索 Git教程 版本控制",
           "source": "bilibili",
-          "url": "https://search.bilibili.com/all?keyword=线性代数+概率论+机器学习",
+          "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
           "difficulty": "beginner",
-          "hours_estimate": 60.0,
+          "hours_estimate": 8.0,
           "language": "zh",
-          "note": "当前资源库暂无专项数学课程，推荐B站搜索：3Blue1Brown线代/概率论",
+          "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程",
           "match_reason": "manual_supplement"
         },
         {
-          "resource_id": "coursera_0041",
-          "title": "Calculus for Machine Learning and Data Science",
+          "resource_id": "coursera_0165",
+          "title": "Getting Started with Git and GitHub",
           "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Calculus+for+Machine+Learning+and+Data+Science",
-          "difficulty": "intermediate",
+          "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+          "difficulty": "beginner",
           "hours_estimate": 20.0,
           "language": "en",
-          "note": "DeepLearning.AI | rating:4.8",
+          "note": "IBM | rating:4.6",
           "match_reason": "keyword_score"
         },
         {
-          "resource_id": "coursera_0047",
-          "title": "Mathematics for Machine Learning and Data Science",
+          "resource_id": "coursera_0226",
+          "title": "Version Control with Git",
           "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning+and+Data+Science",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "DeepLearning.AI | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_0062",
-          "title": "Linear Algebra for Machine Learning and Data Science",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Linear+Algebra+for+Machine+Learning+and+Data+Science",
-          "difficulty": "intermediate",
+          "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+          "difficulty": "mixed",
           "hours_estimate": 20.0,
           "language": "en",
-          "note": "DeepLearning.AI | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_0959",
-          "title": "Mathematics for Machine Learning",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1061",
-          "title": "Mathematics for Machine Learning: Linear Algebra",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+Linear+Algebra",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1191",
-          "title": "Mathematics for Machine Learning: PCA",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+PCA",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1223",
-          "title": "Probability and Statistics: To p or not to p?",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of London | rating:4.4",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1824",
-          "title": "Mathematics for Machine Learning",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1926",
-          "title": "Mathematics for Machine Learning: Linear Algebra",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+Linear+Algebra",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2056",
-          "title": "Mathematics for Machine Learning: PCA",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Mathematics+for+Machine+Learning:+PCA",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Imperial College London | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2088",
-          "title": "Probability and Statistics: To p or not to p?",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Probability+and+Statistics:+To+p+or+not+to+p?",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of London | rating:4.4",
+          "note": "Atlassian | rating:4.7",
           "match_reason": "keyword_score"
         }
       ]
     },
-    "sk_pandas": {
-      "skill_name": "Pandas数据处理",
-      "category": "数据处理",
+    "cloud-computing": {
+      "skill_name": "Cloud Computing",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "aws": {
+      "skill_name": "AWS",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_aws_bili_001",
+          "title": "AWS云计算从入门到SAA认证",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | AWS Solutions Architect备考",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_aws_coursera_001",
+          "title": "AWS Cloud Practitioner Essentials",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Amazon官方 ★4.7 | AWS CLF-C02备考首选",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "azure": {
+      "skill_name": "Azure",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0109",
+          "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.2",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0134",
+          "title": "Building AI Cloud Apps with Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0318",
+          "title": "Create Machine Learning Models in Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:3.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0487",
+          "title": "Prepare for DP-100: Data Science on Microsoft Azure Exam",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prepare+for+DP-100:+Data+Science+on+Microsoft+Azure+Exam",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0493",
+          "title": "Microsoft Azure Cybersecurity Tools and Solutions",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Cybersecurity+Tools+and+Solutions",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0693",
+          "title": "Prepare for AZ-204: Developing Solutions for Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Prepare+for+AZ-204:+Developing+Solutions+for+Microsoft+Azure",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0707",
+          "title": "Connect Your Services with Microsoft Azure Service Bus",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Connect+Your+Services+with+Microsoft+Azure+Service+Bus",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1059",
+          "title": "Microsoft Azure AI Fundamentals AI-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+AI+Fundamentals+AI-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1089",
+          "title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Fundamentals+DP-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1129",
+          "title": "Microsoft Azure Developer Associate (AZ-204) Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Developer+Associate+(AZ-204)+Exam+Prep",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1301",
+          "title": "Microsoft Azure Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Machine+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1339",
+          "title": "Microsoft Azure Machine Learning for Data Scientists",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Machine+Learning+for+Data+Scientists",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1372",
+          "title": "Preparing for AI-900: Microsoft Azure AI Fundamentals exam",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Preparing+for+AI-900:+Microsoft+Azure+AI+Fundamentals+exam",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1459",
+          "title": "Natural Language Processing in Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1623",
+          "title": "Data Storage in Microsoft Azure for Associate Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Storage+in+Microsoft+Azure+for+Associate+Developers",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1924",
+          "title": "Microsoft Azure AI Fundamentals AI-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+AI+Fundamentals+AI-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1954",
+          "title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Fundamentals+DP-900+Exam+Prep",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1994",
+          "title": "Microsoft Azure Developer Associate (AZ-204) Exam Prep",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Developer+Associate+(AZ-204)+Exam+Prep",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2166",
+          "title": "Microsoft Azure Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Machine+Learning",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2204",
+          "title": "Microsoft Azure Machine Learning for Data Scientists",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+Machine+Learning+for+Data+Scientists",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2237",
+          "title": "Preparing for AI-900: Microsoft Azure AI Fundamentals exam",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Preparing+for+AI-900:+Microsoft+Azure+AI+Fundamentals+exam",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2324",
+          "title": "Natural Language Processing in Microsoft Azure",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Natural+Language+Processing+in+Microsoft+Azure",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Microsoft | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_azure_coursera_001",
+          "title": "Microsoft Azure Fundamentals AZ-900",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Microsoft+Azure+AZ-900",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "Microsoft官方 | AZ-900认证备考",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "gcp": {
+      "skill_name": "Google Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": []
+    },
+    "alicloud": {
+      "skill_name": "Alibaba Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": []
+    },
+    "tencent-cloud": {
+      "skill_name": "Tencent Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": []
+    },
+    "cloudflare": {
+      "skill_name": "Cloudflare",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "heroku": {
+      "skill_name": "Heroku",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "git"
+      ],
+      "resources": []
+    },
+    "digitalocean": {
+      "skill_name": "DigitalOcean",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "s3": {
+      "skill_name": "Amazon S3",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": []
+    },
+    "ec2": {
+      "skill_name": "Amazon EC2",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": []
+    },
+    "lambda": {
+      "skill_name": "AWS Lambda",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "python"
+      ],
+      "resources": []
+    },
+    "redshift": {
+      "skill_name": "Amazon Redshift",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "resources": []
+    },
+    "aurora": {
+      "skill_name": "Amazon Aurora",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "resources": []
+    },
+    "edge-computing": {
+      "skill_name": "Edge Computing",
+      "category": "cloud",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": []
+    },
+    "hadoop": {
+      "skill_name": "Hadoop",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "java"
+      ],
+      "resources": []
+    },
+    "spark": {
+      "skill_name": "Apache Spark",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "python",
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_spark_bili_001",
+          "title": "PySpark大数据处理实战教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=PySpark+大数据+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充 | PySpark/Hadoop/Hive大数据栈",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_spark_coursera_001",
+          "title": "Big Data Analysis with Scala and Spark",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Big+Data+Analysis+Scala+Spark",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "EPFL ★4.6 | Spark核心课程",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "kafka": {
+      "skill_name": "Apache Kafka",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_kafka_bili_001",
+          "title": "Apache Kafka消息队列从入门到实战",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Kafka+消息队列+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Kafka架构/生产消费/实时流",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_kafka_github_001",
+          "title": "awesome-kafka",
+          "source": "github",
+          "url": "https://github.com/infoslack/awesome-kafka",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "Kafka资源合集",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "flink": {
+      "skill_name": "Apache Flink",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": []
+    },
+    "airflow": {
+      "skill_name": "Apache Airflow",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "dbt": {
+      "skill_name": "dbt",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": []
+    },
+    "hive": {
+      "skill_name": "Hive",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "hadoop",
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "snowflake": {
+      "skill_name": "Snowflake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "databricks": {
+      "skill_name": "Databricks",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": []
+    },
+    "etl": {
+      "skill_name": "ETL",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": []
+    },
+    "bigquery": {
+      "skill_name": "BigQuery",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "gcp"
+      ],
+      "resources": []
+    },
+    "rabbitmq": {
+      "skill_name": "RabbitMQ",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "dagster": {
+      "skill_name": "Dagster",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "resources": []
+    },
+    "data-warehouse": {
+      "skill_name": "Data Warehouse",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "data-lake": {
+      "skill_name": "Data Lake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": []
+    },
+    "data-pipeline": {
+      "skill_name": "Data Pipeline",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "resources": []
+    },
+    "data-governance": {
+      "skill_name": "Data Governance",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "data-modeling": {
+      "skill_name": "Data Modeling",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "data-quality": {
+      "skill_name": "Data Quality",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": []
+    },
+    "dimensional-modeling": {
+      "skill_name": "Dimensional Modeling",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "data-modeling"
+      ],
+      "resources": []
+    },
+    "pandas": {
+      "skill_name": "Pandas",
+      "category": "data_analysis",
       "level": 2,
       "difficulty": "beginner",
       "hours_estimate": 20,
       "prerequisites": [
-        "sk_python_basic"
+        "python"
       ],
       "resources": [
         {
@@ -865,28 +2883,17 @@
           "language": "en",
           "note": "Coursera Project Network | rating:4.5",
           "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_pandas_supplement_001",
-          "title": "Pandas for Data Analysis and Machine Learning",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Pandas+for+Data+Analysis+and+Machine+Learning",
-          "difficulty": "beginner",
-          "hours_estimate": 10.0,
-          "language": "en",
-          "note": "Coursera Project Network | rating:4.5 | Pandas核心操作：DataFrame/groupby/merge/可视化",
-          "match_reason": "manual_supplement"
         }
       ]
     },
-    "sk_numpy": {
-      "skill_name": "NumPy科学计算",
-      "category": "数据处理",
+    "numpy": {
+      "skill_name": "NumPy",
+      "category": "data_analysis",
       "level": 2,
       "difficulty": "beginner",
       "hours_estimate": 15,
       "prerequisites": [
-        "sk_python_basic"
+        "python"
       ],
       "resources": [
         {
@@ -924,128 +2931,347 @@
         }
       ]
     },
-    "sk_data_structure": {
-      "skill_name": "数据结构与算法",
-      "category": "计算机基础",
+    "tableau": {
+      "skill_name": "Tableau",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0991",
+          "title": "Google Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1026",
+          "title": "Foundations of Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1149",
+          "title": "Data Warehousing for Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1257",
+          "title": "Advanced Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1609",
+          "title": "Business Intelligence Concepts, Tools, and Applications",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+Intelligence+Concepts,+Tools,+and+Applications",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1726",
+          "title": "Business intelligence and data warehousing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Business+intelligence+and+data+warehousing",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Universidad Nacional Autónoma de México | rating:4.1",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1752",
+          "title": "GenAI for Business Intelligence Analysts",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+for+Business+Intelligence+Analysts",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Coursera Instructor Network | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1772",
+          "title": "Design and Build a Data Warehouse for Business Intelligence Implementation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Design+and+Build+a+Data+Warehouse+for+Business+Intelligence+Implementation",
+          "difficulty": "mixed",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:3.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1856",
+          "title": "Google Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1891",
+          "title": "Foundations of Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2014",
+          "title": "Data Warehousing for Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2122",
+          "title": "Advanced Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2452",
+          "title": "Generative AI for Business Intelligence (BI) Analysts",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Generative+AI+for+Business+Intelligence+(BI)+Analysts",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_tableau_001",
+          "title": "【推荐搜索】B站搜索 Tableau入门教程 或 PowerBI教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Tableau+PowerBI+教程",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "当前资源库暂无Tableau专项，建议在B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_1007",
+          "title": "Tableau Business Intelligence Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1044",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1228",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1362",
+          "title": "Data Visualization with Tableau Project",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1646",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Board Infinity | rating:4.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1872",
+          "title": "Tableau Business Intelligence Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1909",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2093",
+          "title": "Data Visualization with Tableau",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Tableau Learning Partner | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2227",
+          "title": "Data Visualization with Tableau Project",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of California, Davis | rating:4.4",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "powerbi": {
+      "skill_name": "Power BI",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "excel": {
+      "skill_name": "Excel",
+      "category": "data_analysis",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [],
+      "resources": []
+    },
+    "looker": {
+      "skill_name": "Looker",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "data-analysis": {
+      "skill_name": "Data Analysis",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": []
+    },
+    "data-visualization": {
+      "skill_name": "Data Visualization",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": []
+    },
+    "data-mining": {
+      "skill_name": "Data Mining",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "statistics": {
+      "skill_name": "Statistics",
+      "category": "data_analysis",
       "level": 2,
       "difficulty": "beginner",
       "hours_estimate": 30,
       "prerequisites": [
-        "sk_python_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "github_0080",
-          "title": "leetcode-notes",
-          "source": "github",
-          "url": "https://github.com/datawhalechina/leetcode-notes",
-          "difficulty": "intermediate",
-          "hours_estimate": 0.0,
-          "language": "zh",
-          "note": "stars:1110 | datawhalechina/leetcode-notes",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_0080",
-          "title": "Data Structures and Algorithms",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
-          "difficulty": "intermediate",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of California San Diego | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_0126",
-          "title": "Foundations of Data Structures and Algorithms",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Foundations+of+Data+Structures+and+Algorithms",
-          "difficulty": "advanced",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of Colorado Boulder | rating:4.6",
-          "match_reason": "keyword_score"
-        }
-      ]
-    },
-    "sk_matplotlib": {
-      "skill_name": "数据可视化Matplotlib",
-      "category": "数据可视化",
-      "level": 3,
-      "difficulty": "beginner",
-      "hours_estimate": 12,
-      "prerequisites": [
-        "sk_pandas",
-        "sk_numpy"
-      ],
-      "resources": [
-        {
-          "resource_id": "github_0097_vis",
-          "title": "data-science-complete-tutorial",
-          "source": "github",
-          "url": "https://github.com/edyoda/data-science-complete-tutorial",
-          "difficulty": "intermediate",
-          "hours_estimate": 0.0,
-          "language": "en",
-          "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
-          "match_reason": "manual_tag"
-        },
-        {
-          "resource_id": "coursera_1074",
-          "title": "Data Visualization with Python",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "IBM | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1475",
-          "title": "Data Visualization with Python",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Duke University | rating:4.9",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1939",
-          "title": "Data Visualization with Python",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "IBM | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2340",
-          "title": "Data Visualization with Python",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Python",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Duke University | rating:4.9",
-          "match_reason": "keyword_score"
-        }
-      ]
-    },
-    "sk_stats": {
-      "skill_name": "统计学基础",
-      "category": "数据科学",
-      "level": 3,
-      "difficulty": "intermediate",
-      "hours_estimate": 40,
-      "prerequisites": [
-        "sk_numpy",
-        "sk_math_basic"
+        "python",
+        "numpy"
       ],
       "resources": [
         {
@@ -1190,6 +3416,17 @@
           "language": "en",
           "note": "IBM | rating:4.5",
           "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0097_vis",
+          "title": "data-science-complete-tutorial",
+          "source": "github",
+          "url": "https://github.com/edyoda/data-science-complete-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
+          "match_reason": "manual_tag"
         },
         {
           "resource_id": "coursera_0037",
@@ -2304,415 +4541,14 @@
         }
       ]
     },
-    "sk_sql_advanced": {
-      "skill_name": "SQL高级查询",
-      "category": "数据库",
+    "ab-testing": {
+      "skill_name": "A/B Testing",
+      "category": "data_analysis",
       "level": 3,
       "difficulty": "intermediate",
       "hours_estimate": 20,
       "prerequisites": [
-        "sk_sql_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "manual_sqladv_bili_001",
-          "title": "SQL进阶教程：窗口函数/子查询/性能优化全解析",
-          "source": "bilibili",
-          "url": "https://search.bilibili.com/all?keyword=SQL进阶+窗口函数+数据分析",
-          "difficulty": "intermediate",
-          "hours_estimate": 8.0,
-          "language": "zh",
-          "note": "B站搜索补充资源 | 推荐搜索: SQL进阶 窗口函数 数据分析",
-          "match_reason": "manual_supplement"
-        },
-        {
-          "resource_id": "coursera_sql_advanced_001",
-          "title": "Advanced SQL for Data Scientists",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Advanced+SQL+for+Data+Scientists",
-          "difficulty": "advanced",
-          "hours_estimate": 15.0,
-          "language": "en",
-          "note": "University of Colorado | rating:4.6 | 窗口函数/CTE/性能优化/复杂查询",
-          "match_reason": "manual_fix"
-        },
-        {
-          "resource_id": "coursera_sql_advanced_002",
-          "title": "SQL for Data Science",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=SQL+for+Data+Science+UC+Davis",
-          "difficulty": "intermediate",
-          "hours_estimate": 18.0,
-          "language": "en",
-          "note": "University of California Davis | rating:4.6 | 子查询/窗口函数/JOIN优化/数据科学SQL实战",
-          "match_reason": "manual_supplement"
-        }
-      ]
-    },
-    "sk_tableau": {
-      "skill_name": "Tableau/PowerBI",
-      "category": "数据可视化",
-      "level": 3,
-      "difficulty": "beginner",
-      "hours_estimate": 20,
-      "prerequisites": [
-        "sk_sql_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "coursera_0991",
-          "title": "Google Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Google | rating:4.8",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1026",
-          "title": "Foundations of Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Google | rating:4.8",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1149",
-          "title": "Data Warehousing for Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of Colorado System | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1257",
-          "title": "Advanced Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.3",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1609",
-          "title": "Business Intelligence Concepts, Tools, and Applications",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Business+Intelligence+Concepts,+Tools,+and+Applications",
-          "difficulty": "mixed",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of Colorado System | rating:4.3",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1726",
-          "title": "Business intelligence and data warehousing",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Business+intelligence+and+data+warehousing",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "Universidad Nacional Autónoma de México | rating:4.1",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1752",
-          "title": "GenAI for Business Intelligence Analysts",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=GenAI+for+Business+Intelligence+Analysts",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Coursera Instructor Network | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1772",
-          "title": "Design and Build a Data Warehouse for Business Intelligence Implementation",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Design+and+Build+a+Data+Warehouse+for+Business+Intelligence+Implementation",
-          "difficulty": "mixed",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of Colorado System | rating:3.4",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1856",
-          "title": "Google Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Google+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Google | rating:4.8",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1891",
-          "title": "Foundations of Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Foundations+of+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Google | rating:4.8",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2014",
-          "title": "Data Warehousing for Business Intelligence",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Warehousing+for+Business+Intelligence",
-          "difficulty": "advanced",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of Colorado System | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2122",
-          "title": "Advanced Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Advanced+Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.3",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2452",
-          "title": "Generative AI for Business Intelligence (BI) Analysts",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Generative+AI+for+Business+Intelligence+(BI)+Analysts",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "IBM | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "manual_tableau_001",
-          "title": "【推荐搜索】B站搜索 Tableau入门教程 或 PowerBI教程",
-          "source": "bilibili",
-          "url": "https://search.bilibili.com/all?keyword=Tableau+PowerBI+教程",
-          "difficulty": "beginner",
-          "hours_estimate": 10.0,
-          "language": "zh",
-          "note": "当前资源库暂无Tableau专项，建议在B站搜索补充",
-          "match_reason": "manual_supplement"
-        },
-        {
-          "resource_id": "coursera_1007",
-          "title": "Tableau Business Intelligence Analyst",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1044",
-          "title": "Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of California, Davis | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1228",
-          "title": "Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.4",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1362",
-          "title": "Data Visualization with Tableau Project",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of California, Davis | rating:4.4",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1646",
-          "title": "Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 20.0,
-          "language": "en",
-          "note": "Board Infinity | rating:4.9",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1872",
-          "title": "Tableau Business Intelligence Analyst",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Tableau+Business+Intelligence+Analyst",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_1909",
-          "title": "Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 100.0,
-          "language": "en",
-          "note": "University of California, Davis | rating:4.5",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2093",
-          "title": "Data Visualization with Tableau",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "Tableau Learning Partner | rating:4.4",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2227",
-          "title": "Data Visualization with Tableau Project",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Data+Visualization+with+Tableau+Project",
-          "difficulty": "intermediate",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "University of California, Davis | rating:4.4",
-          "match_reason": "keyword_score"
-        }
-      ]
-    },
-    "sk_fastapi": {
-      "skill_name": "FastAPI部署",
-      "category": "后端工程",
-      "level": 3,
-      "difficulty": "intermediate",
-      "hours_estimate": 15,
-      "prerequisites": [
-        "sk_python_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "bili_BV1zV2QBtE39",
-          "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
-          "difficulty": "beginner",
-          "hours_estimate": 18.0,
-          "language": "zh",
-          "note": "UP:黑马程序员 | 播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1iN411X72b",
-          "title": "从0到1学习FastAPI框架的所有知识点（慕课网官方）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1iN411X72b/",
-          "difficulty": "beginner",
-          "hours_estimate": 8.0,
-          "language": "zh",
-          "note": "UP:慕课网官方账号 | 播放量14.6万；慕课网系统课；高性能API服务开发",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1eKpizeEnb",
-          "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
-          "difficulty": "beginner",
-          "hours_estimate": 15.0,
-          "language": "zh",
-          "note": "UP:尚学堂官方 | 播放量14.2万；含ORM/中间件/DDD架构进阶内容",
-          "match_reason": "bili_tag"
-        }
-      ]
-    },
-    "sk_docker": {
-      "skill_name": "Docker容器化",
-      "category": "工程工具",
-      "level": 3,
-      "difficulty": "intermediate",
-      "hours_estimate": 15,
-      "prerequisites": [
-        "sk_linux_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "coursera_0284",
-          "title": "Docker for Beginners with Hands-on labs",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
-          "difficulty": "beginner",
-          "hours_estimate": 40.0,
-          "language": "en",
-          "note": "KodeKloud | rating:4.6",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "manual_docker_bili_001",
-          "title": "Docker从入门到实战：容器化部署全流程教程",
-          "source": "bilibili",
-          "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
-          "difficulty": "intermediate",
-          "hours_estimate": 10.0,
-          "language": "zh",
-          "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s",
-          "match_reason": "manual_supplement"
-        },
-        {
-          "resource_id": "manual_docker_github_001",
-          "title": "awesome-docker",
-          "source": "github",
-          "url": "https://github.com/veggiemonk/awesome-docker",
-          "difficulty": "intermediate",
-          "hours_estimate": 0.0,
-          "language": "en",
-          "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践",
-          "match_reason": "manual_supplement"
-        }
-      ]
-    },
-    "sk_ab_test": {
-      "skill_name": "A/B测试",
-      "category": "数据科学",
-      "level": 4,
-      "difficulty": "intermediate",
-      "hours_estimate": 15,
-      "prerequisites": [
-        "sk_stats",
-        "sk_pandas"
+        "statistics"
       ],
       "resources": [
         {
@@ -2904,16 +4740,155 @@
         }
       ]
     },
-    "sk_ml_basic": {
-      "skill_name": "机器学习基础",
-      "category": "机器学习",
-      "level": 4,
+    "business-intelligence": {
+      "skill_name": "Business Intelligence",
+      "category": "data_analysis",
+      "level": 3,
       "difficulty": "intermediate",
-      "hours_estimate": 60,
+      "hours_estimate": 25,
       "prerequisites": [
-        "sk_stats",
-        "sk_pandas",
-        "sk_numpy"
+        "sql-lang",
+        "tableau"
+      ],
+      "resources": []
+    },
+    "dashboard": {
+      "skill_name": "Dashboard",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": []
+    },
+    "data-cleaning": {
+      "skill_name": "Data Cleaning",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": []
+    },
+    "hypothesis-testing": {
+      "skill_name": "Hypothesis Testing",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "statistics"
+      ],
+      "resources": []
+    },
+    "time-series": {
+      "skill_name": "Time Series",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "statistics",
+        "python"
+      ],
+      "resources": []
+    },
+    "pytorch": {
+      "skill_name": "PyTorch",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1Bq421A74G",
+          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1YM411y7EP",
+          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
+          "match_reason": "bili_tag"
+        }
+      ]
+    },
+    "tensorflow": {
+      "skill_name": "TensorFlow",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "resources": []
+    },
+    "keras": {
+      "skill_name": "Keras",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "tensorflow"
+      ],
+      "resources": []
+    },
+    "scikit-learn": {
+      "skill_name": "scikit-learn",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "resources": []
+    },
+    "machine-learning": {
+      "skill_name": "Machine Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "python",
+        "statistics",
+        "numpy"
       ],
       "resources": [
         {
@@ -3094,14 +5069,15 @@
         }
       ]
     },
-    "sk_dl_basic": {
-      "skill_name": "深度学习基础",
-      "category": "深度学习",
-      "level": 5,
+    "deep-learning": {
+      "skill_name": "Deep Learning",
+      "category": "ai_ml",
+      "level": 3,
       "difficulty": "intermediate",
-      "hours_estimate": 50,
+      "hours_estimate": 40,
       "prerequisites": [
-        "sk_ml_basic"
+        "machine-learning",
+        "pytorch"
       ],
       "resources": [
         {
@@ -3169,63 +5145,29 @@
           "language": "en",
           "note": "University of Colorado Boulder | rating:4.5",
           "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_cv_coursera_001",
+          "title": "Deep Learning Specialization (Course 4 - CNN)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+          "difficulty": "intermediate",
+          "hours_estimate": 35.0,
+          "language": "en",
+          "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别",
+          "match_reason": "manual_supplement"
         }
       ]
     },
-    "sk_pytorch": {
-      "skill_name": "PyTorch框架",
-      "category": "深度学习",
-      "level": 5,
+    "nlp": {
+      "skill_name": "NLP",
+      "category": "ai_ml",
+      "level": 3,
       "difficulty": "intermediate",
-      "hours_estimate": 30,
+      "hours_estimate": 35,
       "prerequisites": [
-        "sk_dl_basic",
-        "sk_python_basic"
-      ],
-      "resources": [
-        {
-          "resource_id": "bili_BV1Bq421A74G",
-          "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
-          "difficulty": "intermediate",
-          "hours_estimate": 20.0,
-          "language": "zh",
-          "note": "UP:吴恩达机器学习 | 播放量248.3万；吴恩达官方课程中文版",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1V3BPYiEwW",
-          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
-          "difficulty": "advanced",
-          "hours_estimate": 6.0,
-          "language": "zh",
-          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1YM411y7EP",
-          "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
-          "difficulty": "intermediate",
-          "hours_estimate": 15.0,
-          "language": "zh",
-          "note": "UP:卢菁博士_北大AI博士后 | 播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖",
-          "match_reason": "bili_tag"
-        }
-      ]
-    },
-    "sk_nlp_basic": {
-      "skill_name": "NLP基础",
-      "category": "NLP",
-      "level": 6,
-      "difficulty": "intermediate",
-      "hours_estimate": 40,
-      "prerequisites": [
-        "sk_dl_basic"
+        "python",
+        "deep-learning"
       ],
       "resources": [
         {
@@ -3248,6 +5190,28 @@
           "hours_estimate": 0.0,
           "language": "en",
           "note": "stars:454 | JackKuo666/NLP_basis",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0046",
+          "title": "Natural-Language-Processing-NLP-Learning",
+          "source": "github",
+          "url": "https://github.com/rani-sikdar/Natural-Language-Processing-NLP-Learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:1 | rani-sikdar/Natural-Language-Processing-NLP-Learning",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0048",
+          "title": "label-sleuth-watson-nlp-classification-tutorial",
+          "source": "github",
+          "url": "https://github.com/IBM/label-sleuth-watson-nlp-classification-tutorial",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:0 | IBM/label-sleuth-watson-nlp-classification-tutorial",
           "match_reason": "keyword_score"
         },
         {
@@ -3281,6 +5245,17 @@
           "hours_estimate": 0.0,
           "language": "en",
           "note": "stars:952 | MorvanZhou/NLP-Tutorials",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "github_0049",
+          "title": "all-about-NLP",
+          "source": "github",
+          "url": "https://github.com/HaseebUlHassan437/all-about-NLP",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:0 | HaseebUlHassan437/all-about-NLP",
           "match_reason": "keyword_score"
         },
         {
@@ -3549,60 +5524,311 @@
         }
       ]
     },
-    "sk_embedding": {
-      "skill_name": "文本Embedding",
-      "category": "NLP",
-      "level": 6,
+    "computer-vision": {
+      "skill_name": "Computer Vision",
+      "category": "ai_ml",
+      "level": 3,
       "difficulty": "intermediate",
-      "hours_estimate": 15,
+      "hours_estimate": 40,
       "prerequisites": [
-        "sk_nlp_basic"
+        "deep-learning",
+        "pytorch"
       ],
       "resources": [
         {
-          "resource_id": "bili_BV1oNv8BPE2m",
-          "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+          "resource_id": "manual_cv_bili_001",
+          "title": "计算机视觉OpenCV+YOLO实战教程",
           "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
-          "difficulty": "beginner",
-          "hours_estimate": 0.25,
-          "language": "zh",
-          "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1sw411S7i1",
-          "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
-          "difficulty": "beginner",
-          "hours_estimate": 0.5,
-          "language": "zh",
-          "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "coursera_1606",
-          "title": "Product Recommender System: OpenAI Text Embedding",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+          "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
           "difficulty": "intermediate",
-          "hours_estimate": 2.0,
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_cv_coursera_001",
+          "title": "Deep Learning Specialization (Course 4 - CNN)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+          "difficulty": "intermediate",
+          "hours_estimate": 35.0,
           "language": "en",
-          "note": "Coursera Project Network | rating:5.0",
+          "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_1386",
+          "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Packt | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_1468",
+          "title": "Deep Learning for Object Detection",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Deep+Learning+for+Object+Detection",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "MathWorks | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2251",
+          "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+          "difficulty": "beginner",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "Packt | rating:4.4",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2333",
+          "title": "Deep Learning for Object Detection",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Deep+Learning+for+Object+Detection",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "MathWorks | rating:4.7",
           "match_reason": "keyword_score"
         }
       ]
     },
-    "sk_transformer": {
-      "skill_name": "Transformer架构",
-      "category": "NLP",
-      "level": 6,
+    "reinforcement-learning": {
+      "skill_name": "Reinforcement Learning",
+      "category": "ai_ml",
+      "level": 4,
       "difficulty": "advanced",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "resources": []
+    },
+    "xgboost": {
+      "skill_name": "XGBoost",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "data-science": {
+      "skill_name": "Data Science",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python",
+        "statistics"
+      ],
+      "resources": []
+    },
+    "jupyter": {
+      "skill_name": "Jupyter",
+      "category": "ai_ml",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "cuda": {
+      "skill_name": "CUDA",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": []
+    },
+    "recommendation-system": {
+      "skill_name": "Recommendation System",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "feature-engineering": {
+      "skill_name": "Feature Engineering",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "model-deployment": {
+      "skill_name": "Model Deployment",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "docker",
+        "fastapi"
+      ],
+      "resources": []
+    },
+    "cnn": {
+      "skill_name": "CNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": []
+    },
+    "rnn": {
+      "skill_name": "RNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": []
+    },
+    "crf": {
+      "skill_name": "CRF",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": []
+    },
+    "gnn": {
+      "skill_name": "Graph Neural Network",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": []
+    },
+    "ner": {
+      "skill_name": "NER",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": []
+    },
+    "sentiment-analysis": {
+      "skill_name": "Sentiment Analysis",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": []
+    },
+    "text-classification": {
+      "skill_name": "Text Classification",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": []
+    },
+    "information-extraction": {
+      "skill_name": "Information Extraction",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": []
+    },
+    "supervised-learning": {
+      "skill_name": "Supervised Learning",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "unsupervised-learning": {
+      "skill_name": "Unsupervised Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
       "hours_estimate": 25,
       "prerequisites": [
-        "sk_nlp_basic",
-        "sk_pytorch"
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "model-evaluation": {
+      "skill_name": "Model Evaluation",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": []
+    },
+    "transformer": {
+      "skill_name": "Transformer",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "deep-learning",
+        "nlp"
       ],
       "resources": [
         {
@@ -3662,14 +5888,70 @@
         }
       ]
     },
-    "sk_llm_basic": {
-      "skill_name": "大语言模型基础",
-      "category": "LLM",
-      "level": 7,
+    "bert": {
+      "skill_name": "BERT",
+      "category": "ai_emerging",
+      "level": 3,
       "difficulty": "intermediate",
       "hours_estimate": 20,
       "prerequisites": [
-        "sk_transformer"
+        "transformer"
+      ],
+      "resources": []
+    },
+    "embedding": {
+      "skill_name": "Embedding",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1oNv8BPE2m",
+          "title": "15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1oNv8BPE2m/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.25,
+          "language": "zh",
+          "note": "UP:隔壁的程序员老王 | 播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1sw411S7i1",
+          "title": "什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1sw411S7i1/",
+          "difficulty": "beginner",
+          "hours_estimate": 0.5,
+          "language": "zh",
+          "note": "UP:小黑黑讲AI | 播放量7.8万；Embedding基础原理；NLP入门必备",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_1606",
+          "title": "Product Recommender System: OpenAI Text Embedding",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Product+Recommender+System:+OpenAI+Text+Embedding",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:5.0",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "llm": {
+      "skill_name": "LLM",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "transformer"
       ],
       "resources": [
         {
@@ -3883,14 +6165,60 @@
         }
       ]
     },
-    "sk_prompt_eng": {
-      "skill_name": "Prompt Engineering",
-      "category": "LLM",
-      "level": 7,
-      "difficulty": "beginner",
-      "hours_estimate": 10,
+    "gpt": {
+      "skill_name": "GPT",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
       "prerequisites": [
-        "sk_llm_basic"
+        "llm"
+      ],
+      "resources": []
+    },
+    "qwen": {
+      "skill_name": "Qwen",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": []
+    },
+    "openai-api": {
+      "skill_name": "OpenAI API",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "llm"
+      ],
+      "resources": []
+    },
+    "huggingface": {
+      "skill_name": "Hugging Face",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "transformer"
+      ],
+      "resources": []
+    },
+    "prompt-engineering": {
+      "skill_name": "Prompt Engineering",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "llm"
       ],
       "resources": [
         {
@@ -4071,14 +6399,14 @@
         }
       ]
     },
-    "sk_vector_db": {
-      "skill_name": "向量数据库",
-      "category": "数据库",
-      "level": 7,
+    "vector-database": {
+      "skill_name": "Vector Database",
+      "category": "ai_emerging",
+      "level": 3,
       "difficulty": "intermediate",
-      "hours_estimate": 15,
+      "hours_estimate": 20,
       "prerequisites": [
-        "sk_embedding"
+        "embedding"
       ],
       "resources": [
         {
@@ -4204,15 +6532,70 @@
         }
       ]
     },
-    "sk_langchain": {
-      "skill_name": "LangChain框架",
-      "category": "LLM工程",
-      "level": 8,
-      "difficulty": "intermediate",
-      "hours_estimate": 20,
+    "pinecone": {
+      "skill_name": "Pinecone",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
       "prerequisites": [
-        "sk_llm_basic",
-        "sk_python_basic"
+        "vector-database"
+      ],
+      "resources": []
+    },
+    "milvus": {
+      "skill_name": "Milvus",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": []
+    },
+    "weaviate": {
+      "skill_name": "Weaviate",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": []
+    },
+    "chroma": {
+      "skill_name": "Chroma",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": []
+    },
+    "faiss": {
+      "skill_name": "FAISS",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": []
+    },
+    "langchain": {
+      "skill_name": "LangChain",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python",
+        "llm"
       ],
       "resources": [
         {
@@ -4294,106 +6677,37 @@
         }
       ]
     },
-    "sk_lora_finetune": {
-      "skill_name": "大模型微调LoRA/QLoRA",
-      "category": "LLM",
-      "level": 8,
-      "difficulty": "advanced",
+    "llamaindex": {
+      "skill_name": "LlamaIndex",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
       "hours_estimate": 20,
       "prerequisites": [
-        "sk_llm_basic",
-        "sk_pytorch"
+        "langchain"
       ],
-      "resources": [
-        {
-          "resource_id": "bili_BV1hy5YzaErV",
-          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
-          "difficulty": "beginner",
-          "hours_estimate": 20.0,
-          "language": "zh",
-          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1uNk1YxEJQ",
-          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
-          "difficulty": "beginner",
-          "hours_estimate": 120.0,
-          "language": "zh",
-          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV19psRzpEPX",
-          "title": "B站最好的提示词工程教程2025（全88集系统课）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
-          "difficulty": "beginner",
-          "hours_estimate": 20.0,
-          "language": "zh",
-          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1a6j1z6En9",
-          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
-          "difficulty": "beginner",
-          "hours_estimate": 35.0,
-          "language": "zh",
-          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "bili_BV1V3BPYiEwW",
-          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
-          "source": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
-          "difficulty": "advanced",
-          "hours_estimate": 6.0,
-          "language": "zh",
-          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
-          "match_reason": "bili_tag"
-        },
-        {
-          "resource_id": "coursera_1342",
-          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
-          "difficulty": "intermediate",
-          "hours_estimate": 2.0,
-          "language": "en",
-          "note": "Coursera Project Network | rating:4.7",
-          "match_reason": "keyword_score"
-        },
-        {
-          "resource_id": "coursera_2207",
-          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
-          "source": "coursera",
-          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
-          "difficulty": "intermediate",
-          "hours_estimate": 2.0,
-          "language": "en",
-          "note": "Coursera Project Network | rating:4.7",
-          "match_reason": "keyword_score"
-        }
-      ]
+      "resources": []
     },
-    "sk_rag": {
-      "skill_name": "RAG工程化",
-      "category": "LLM工程",
-      "level": 9,
-      "difficulty": "advanced",
+    "langgraph": {
+      "skill_name": "LangGraph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "langchain"
+      ],
+      "resources": []
+    },
+    "rag": {
+      "skill_name": "RAG",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
       "hours_estimate": 25,
       "prerequisites": [
-        "sk_langchain",
-        "sk_vector_db",
-        "sk_embedding"
+        "vector-database",
+        "langchain"
       ],
       "resources": [
         {
@@ -4519,15 +6833,116 @@
         }
       ]
     },
-    "sk_agent": {
-      "skill_name": "Agent架构设计",
-      "category": "LLM工程",
-      "level": 9,
+    "fine-tuning": {
+      "skill_name": "Fine-tuning",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "llm",
+        "pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "bili_BV1hy5YzaErV",
+          "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型-- | 播放量484.8万；覆盖最全；推荐首选入门合集",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1uNk1YxEJQ",
+          "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+          "difficulty": "beginner",
+          "hours_estimate": 120.0,
+          "language": "zh",
+          "note": "UP:大模型官方课程 | 播放量363.8万；体量极大适合系统学习",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV19psRzpEPX",
+          "title": "B站最好的提示词工程教程2025（全88集系统课）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "UP:大模型学习教程 | 播放量21.7万；超大体量系统课；含Agent/RAG/LoRA",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1a6j1z6En9",
+          "title": "【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a6j1z6En9/",
+          "difficulty": "beginner",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "UP:AI大模型课堂在线 | 播放量395.8万；学院派权威课程；覆盖LLM原理到应用",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "bili_BV1V3BPYiEwW",
+          "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+          "difficulty": "advanced",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "UP:人工智能AI大模型课程 | 播放量65.1万；LoRA/量化/vLLM实战；进阶必看",
+          "match_reason": "bili_tag"
+        },
+        {
+          "resource_id": "coursera_1342",
+          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_2207",
+          "title": "GenAI For Business Analysis: Fine-Tuning LLMs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GenAI+For+Business+Analysis:+Fine-Tuning+LLMs",
+          "difficulty": "intermediate",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "Coursera Project Network | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "quantization": {
+      "skill_name": "Quantization",
+      "category": "ai_emerging",
+      "level": 4,
       "difficulty": "advanced",
       "hours_estimate": 25,
       "prerequisites": [
-        "sk_langchain",
-        "sk_prompt_eng"
+        "fine-tuning"
+      ],
+      "resources": []
+    },
+    "agent": {
+      "skill_name": "AI Agent",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "langchain",
+        "llm"
       ],
       "resources": [
         {
@@ -4664,15 +7079,25 @@
         }
       ]
     },
-    "sk_tool_use": {
-      "skill_name": "Tool Use/Function Calling",
-      "category": "LLM工程",
-      "level": 9,
-      "difficulty": "advanced",
-      "hours_estimate": 10,
+    "multi-agent": {
+      "skill_name": "Multi-Agent",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
       "prerequisites": [
-        "sk_langchain",
-        "sk_prompt_eng"
+        "agent"
+      ],
+      "resources": []
+    },
+    "tool-calling": {
+      "skill_name": "Tool Calling",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "agent"
       ],
       "resources": [
         {
@@ -4709,6 +7134,1286 @@
           "match_reason": "manual_tag"
         }
       ]
+    },
+    "mcp": {
+      "skill_name": "MCP",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "tool-calling"
+      ],
+      "resources": []
+    },
+    "coze": {
+      "skill_name": "Coze",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "agent"
+      ],
+      "resources": []
+    },
+    "mlops": {
+      "skill_name": "MLOps",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "machine-learning",
+        "docker"
+      ],
+      "resources": []
+    },
+    "multimodal": {
+      "skill_name": "Multimodal",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": []
+    },
+    "diffusion": {
+      "skill_name": "Diffusion Model",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "resources": []
+    },
+    "knowledge-graph": {
+      "skill_name": "Knowledge Graph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "embedding",
+        "nlp"
+      ],
+      "resources": []
+    },
+    "aigc": {
+      "skill_name": "AIGC",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": []
+    },
+    "docker": {
+      "skill_name": "Docker",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0284",
+          "title": "Docker for Beginners with Hands-on labs",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Docker+for+Beginners+with+Hands-on+labs",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "KodeKloud | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_docker_bili_001",
+          "title": "Docker从入门到实战：容器化部署全流程教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Docker入门+容器化+部署",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_docker_github_001",
+          "title": "awesome-docker",
+          "source": "github",
+          "url": "https://github.com/veggiemonk/awesome-docker",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "kubernetes": {
+      "skill_name": "Kubernetes",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "docker"
+      ],
+      "resources": []
+    },
+    "terraform": {
+      "skill_name": "Terraform",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": []
+    },
+    "ansible": {
+      "skill_name": "Ansible",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "jenkins": {
+      "skill_name": "Jenkins",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": []
+    },
+    "gitlab-ci": {
+      "skill_name": "GitLab CI",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": []
+    },
+    "github-actions": {
+      "skill_name": "GitHub Actions",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "git"
+      ],
+      "resources": []
+    },
+    "cicd": {
+      "skill_name": "CI/CD",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": []
+    },
+    "helm": {
+      "skill_name": "Helm",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": []
+    },
+    "prometheus": {
+      "skill_name": "Prometheus",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": []
+    },
+    "grafana": {
+      "skill_name": "Grafana",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "prometheus"
+      ],
+      "resources": []
+    },
+    "nginx": {
+      "skill_name": "Nginx",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "devops": {
+      "skill_name": "DevOps",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "linux",
+        "docker",
+        "git"
+      ],
+      "resources": []
+    },
+    "microservices": {
+      "skill_name": "Microservices",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "docker",
+        "system-design"
+      ],
+      "resources": []
+    },
+    "serverless": {
+      "skill_name": "Serverless",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": []
+    },
+    "argocd": {
+      "skill_name": "ArgoCD",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": []
+    },
+    "cloudformation": {
+      "skill_name": "CloudFormation",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": []
+    },
+    "vagrant": {
+      "skill_name": "Vagrant",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "istio": {
+      "skill_name": "Istio",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": []
+    },
+    "caching": {
+      "skill_name": "Caching",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "redis"
+      ],
+      "resources": []
+    },
+    "high-availability": {
+      "skill_name": "High Availability",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": []
+    },
+    "load-balancing": {
+      "skill_name": "Load Balancing",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux",
+        "system-design"
+      ],
+      "resources": []
+    },
+    "message-queue": {
+      "skill_name": "Message Queue",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "kafka"
+      ],
+      "resources": []
+    },
+    "capacity-planning": {
+      "skill_name": "Capacity Planning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": []
+    },
+    "performance-tuning": {
+      "skill_name": "Performance Tuning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "resources": []
+    },
+    "sre": {
+      "skill_name": "SRE",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "resources": []
+    },
+    "root-cause-analysis": {
+      "skill_name": "Root Cause Analysis",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": []
+    },
+    "unix": {
+      "skill_name": "Unix",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [],
+      "resources": []
+    },
+    "selenium": {
+      "skill_name": "Selenium",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "cypress": {
+      "skill_name": "Cypress",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "playwright": {
+      "skill_name": "Playwright",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "jest": {
+      "skill_name": "Jest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": []
+    },
+    "pytest": {
+      "skill_name": "pytest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "junit": {
+      "skill_name": "JUnit",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": []
+    },
+    "appium": {
+      "skill_name": "Appium",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "java"
+      ],
+      "resources": []
+    },
+    "jmeter": {
+      "skill_name": "JMeter",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "java",
+        "linux"
+      ],
+      "resources": []
+    },
+    "postman": {
+      "skill_name": "Postman",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest"
+      ],
+      "resources": []
+    },
+    "qa-automation": {
+      "skill_name": "QA Automation",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python",
+        "selenium"
+      ],
+      "resources": []
+    },
+    "unit-testing": {
+      "skill_name": "Unit Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "integration-testing": {
+      "skill_name": "Integration Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "unit-testing"
+      ],
+      "resources": []
+    },
+    "load-testing": {
+      "skill_name": "Load Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "jmeter"
+      ],
+      "resources": []
+    },
+    "rest-api-testing": {
+      "skill_name": "REST API Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest",
+        "postman"
+      ],
+      "resources": []
+    },
+    "android": {
+      "skill_name": "Android",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "kotlin"
+      ],
+      "resources": []
+    },
+    "ios": {
+      "skill_name": "iOS",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "swift"
+      ],
+      "resources": []
+    },
+    "flutter": {
+      "skill_name": "Flutter",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "dart"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_flutter_bili_001",
+          "title": "Flutter3.x移动端实战开发教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=Flutter3+移动端+实战",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "B站搜索补充 | Flutter/Dart跨平台开发",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_flutter_github_001",
+          "title": "awesome-flutter",
+          "source": "github",
+          "url": "https://github.com/Solido/awesome-flutter",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:53k+ | Flutter资源合集",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "react-native": {
+      "skill_name": "React Native",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": []
+    },
+    "xamarin": {
+      "skill_name": "Xamarin",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "csharp"
+      ],
+      "resources": []
+    },
+    "jetpack-compose": {
+      "skill_name": "Jetpack Compose",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "android"
+      ],
+      "resources": []
+    },
+    "cybersecurity": {
+      "skill_name": "Cybersecurity",
+      "category": "security",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "manual_security_bili_001",
+          "title": "网络安全/渗透测试入门教程",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=网络安全+渗透测试+入门",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0055",
+          "title": "Connect and Protect: Networks and Network Security",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Connect+and+Protect:+Networks+and+Network+Security",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Google | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0239",
+          "title": "Computer Networks and Network Security",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Computer+Networks+and+Network+Security",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "IBM | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0478",
+          "title": "Fundamentals of Computer Network Security",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Fundamentals+of+Computer+Network+Security",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado System | rating:4.3",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0913",
+          "title": "Networking in Google Cloud: Network Security",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Networking+in+Google+Cloud:+Network+Security",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Google Cloud | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_security_coursera_001",
+          "title": "Google Cybersecurity Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Cybersecurity+Professional+Certificate",
+          "difficulty": "beginner",
+          "hours_estimate": 180.0,
+          "language": "en",
+          "note": "Google官方 ★4.8 | 网络安全入门系列",
+          "match_reason": "manual_supplement"
+        }
+      ]
+    },
+    "penetration-testing": {
+      "skill_name": "Penetration Testing",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "resources": []
+    },
+    "oauth": {
+      "skill_name": "OAuth",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": []
+    },
+    "jwt": {
+      "skill_name": "JWT",
+      "category": "security",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": []
+    },
+    "encryption": {
+      "skill_name": "Encryption",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "ssl-tls": {
+      "skill_name": "SSL/TLS",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "siem": {
+      "skill_name": "SIEM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "owasp": {
+      "skill_name": "OWASP",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity",
+        "rest"
+      ],
+      "resources": []
+    },
+    "zero-trust": {
+      "skill_name": "Zero Trust",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "compliance": {
+      "skill_name": "Compliance",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "cryptography": {
+      "skill_name": "Cryptography",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "data-privacy": {
+      "skill_name": "Data Privacy",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": []
+    },
+    "iam": {
+      "skill_name": "IAM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity",
+        "cloud-computing"
+      ],
+      "resources": []
+    },
+    "network-security": {
+      "skill_name": "Network Security",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "resources": []
+    },
+    "vulnerability-assessment": {
+      "skill_name": "Vulnerability Assessment",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "penetration-testing"
+      ],
+      "resources": []
+    },
+    "incident-response": {
+      "skill_name": "Incident Response",
+      "category": "security",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity",
+        "sre"
+      ],
+      "resources": []
+    },
+    "agile": {
+      "skill_name": "Agile",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [],
+      "resources": []
+    },
+    "scrum": {
+      "skill_name": "Scrum",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 8,
+      "prerequisites": [
+        "agile"
+      ],
+      "resources": []
+    },
+    "kanban": {
+      "skill_name": "Kanban",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "agile"
+      ],
+      "resources": []
+    },
+    "jira": {
+      "skill_name": "Jira",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [],
+      "resources": []
+    },
+    "confluence": {
+      "skill_name": "Confluence",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "prerequisites": [],
+      "resources": []
+    },
+    "websocket": {
+      "skill_name": "WebSocket",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": []
+    },
+    "json": {
+      "skill_name": "JSON",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "xml": {
+      "skill_name": "XML",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "oop": {
+      "skill_name": "OOP",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "system-design": {
+      "skill_name": "System Design",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "python",
+        "sql-lang",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0600",
+          "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "The University of Sydney | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_sysdesign_bili_001",
+          "title": "系统设计面试/分布式系统架构讲解",
+          "source": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "B站搜索补充",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "manual_sysdesign_github_001",
+          "title": "system-design-primer",
+          "source": "github",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:290k+ | 系统设计面试圣经，分布式/高可用/微服务",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0114",
+          "title": "AI-Powered Software and System Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AI-Powered+Software+and+System+Design",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0294",
+          "title": "Software Architecture for Big Data",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Software+Architecture+for+Big+Data",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:3.9",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0460",
+          "title": "Software Architecture",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Software+Architecture",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Alberta | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0682",
+          "title": "Software Architecture Patterns for Big Data",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Software+Architecture+Patterns+for+Big+Data",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0683",
+          "title": "Applications of Software Architecture for Big Data",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Applications+of+Software+Architecture+for+Big+Data",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.5",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "distributed-systems": {
+      "skill_name": "Distributed Systems",
+      "category": "methods",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": []
+    },
+    "blockchain": {
+      "skill_name": "Blockchain",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "data-structures": {
+      "skill_name": "Data Structures",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "github_0080",
+          "title": "leetcode-notes",
+          "source": "github",
+          "url": "https://github.com/datawhalechina/leetcode-notes",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "zh",
+          "note": "stars:1110 | datawhalechina/leetcode-notes",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "manual_js_github_001",
+          "title": "javascript-algorithms",
+          "source": "github",
+          "url": "https://github.com/trekhleb/javascript-algorithms",
+          "difficulty": "intermediate",
+          "hours_estimate": 0.0,
+          "language": "en",
+          "note": "stars:190k+ | JavaScript数据结构和算法实现",
+          "match_reason": "manual_supplement"
+        },
+        {
+          "resource_id": "coursera_0080",
+          "title": "Data Structures and Algorithms",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+          "difficulty": "intermediate",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of California San Diego | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0126",
+          "title": "Foundations of Data Structures and Algorithms",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Foundations+of+Data+Structures+and+Algorithms",
+          "difficulty": "advanced",
+          "hours_estimate": 100.0,
+          "language": "en",
+          "note": "University of Colorado Boulder | rating:4.6",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "algorithms": {
+      "skill_name": "Algorithms",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "data-structures"
+      ],
+      "resources": []
+    },
+    "api-design": {
+      "skill_name": "API Design",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": []
+    },
+    "design-patterns": {
+      "skill_name": "Design Patterns",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "oop",
+        "python"
+      ],
+      "resources": []
+    },
+    "regex": {
+      "skill_name": "Regular Expression",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "web-scraping": {
+      "skill_name": "Web Scraping",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "regex"
+      ],
+      "resources": []
+    },
+    "gis": {
+      "skill_name": "GIS",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": []
+    },
+    "iot": {
+      "skill_name": "IoT",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "linux",
+        "python"
+      ],
+      "resources": []
     }
   }
 }

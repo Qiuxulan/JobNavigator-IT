@@ -1,0 +1,25 @@
+视频标题,URL,UP主,集数,估计时长(小时),覆盖技能(;分隔),难度,技能方向,备注
+【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调,https://www.bilibili.com/video/BV1hy5YzaErV/,大模型--,71,20,llm;prompt_engineering;langchain;rag;agent;lora_finetune;vector_db,beginner,综合,播放量484.8万；覆盖最全；推荐首选入门合集
+【全748集】B站最全AI大模型零基础全套教程2025最新版,https://www.bilibili.com/video/BV1uNk1YxEJQ/,大模型官方课程,748,120,llm;prompt_engineering;transformer;rag;agent;langchain;lora_finetune,beginner,综合,播放量363.8万；体量极大适合系统学习
+吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）,https://www.bilibili.com/video/BV1Bq421A74G/,吴恩达机器学习,22,20,llm;prompt_engineering;rag;agent;langchain;pytorch,intermediate,综合,播放量248.3万；吴恩达官方课程中文版
+【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战,https://www.bilibili.com/video/BV1hMMuzEEVe/,大模型RAG教程,17,3,rag;langchain;vector_db,beginner,rag,播放量89万；RAG专项；手把手搭建知识库
+2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）,https://www.bilibili.com/video/BV1QRbnzTEyK/,吴恩达深度学习,48,6,rag;agent;vector_db,intermediate,rag,播放量10.8万；高级RAG专项：句子窗口/Agentic RAG/知识图谱
+【KAG】知识增强式生成 - 比RAG更强大的检索推理框架,https://www.bilibili.com/video/BV1f9kZYgEnL/,五里墩茶社,1,0.3,rag,advanced,rag,播放量6万；单集扩展知识；RAG进阶对比视角
+2小时彻底掌握提示词工程Prompt Engineering（草履虫也能懂）,https://www.bilibili.com/video/BV1n9CwYoEro/,吴恩达langchain,8,2,prompt_engineering;llm,beginner,prompt_engineering,播放量28.4万；Prompt专项入门；2小时速成
+【吴恩达】2025年公认最好的提示词工程教程（附课件代码）,https://www.bilibili.com/video/BV1173jzNELG/,吴恩达深度学习,10,1.5,prompt_engineering;llm,beginner,prompt_engineering,播放量27.4万；吴恩达官方Prompt课程
+B站最好的提示词工程教程2025（全88集系统课）,https://www.bilibili.com/video/BV19psRzpEPX/,大模型学习教程,88,20,prompt_engineering;agent;rag;langchain;lora_finetune,beginner,prompt_engineering,播放量21.7万；超大体量系统课；含Agent/RAG/LoRA
+支持多种向量数据库的100%本地化知识库 Milvus+ChatOllama,https://www.bilibili.com/video/BV1af421o79z/,五里墩茶社,1,0.2,vector_db;rag,intermediate,vector_db,播放量32.3万；实操演示Milvus接入；适合工程实战
+Milvus/Qdrant/Weaviate/Pinecone/FAISS/Chroma向量数据库横评,https://www.bilibili.com/video/BV1zi1vByEjg/,小天老师的AI大课堂,9,1,vector_db,intermediate,vector_db,播放量1.5万；全面横评6款主流向量数据库
+向量数据库三巨头！Milvus vs Chroma vs FAISS 该怎么选？,https://www.bilibili.com/video/BV1Uz6UBHErx/,大模型-小星,1,0.2,vector_db,beginner,vector_db,播放量0.36万；简明对比三大向量库选型指南
+【2026最新】台大李宏毅《生成式AI导论》LLM大模型零基础全套,https://www.bilibili.com/video/BV1a6j1z6En9/,AI大模型课堂在线,42,35,llm;transformer;agent;lora_finetune,beginner,llm,播放量395.8万；学院派权威课程；覆盖LLM原理到应用
+大模型训练全流程+微调实战（北大博士后卢菁）,https://www.bilibili.com/video/BV1V3BPYiEwW/,人工智能AI大模型课程,26,6,lora_finetune;pytorch;transformer;llm,advanced,lora_finetune,播放量65.1万；LoRA/量化/vLLM实战；进阶必看
+【吴恩达】Claude Code全套教程，大模型入门到进阶,https://www.bilibili.com/video/BV1RSFUzVEAG/,吴恩达的AI课,10,1.5,llm,intermediate,llm,播放量42.4万；Claude Code工具使用；LLM工程化参考
+15分钟弄懂Token和Embedding：详解LLM与RAG的数据处理机制,https://www.bilibili.com/video/BV1oNv8BPE2m/,隔壁的程序员老王,1,0.25,embedding;llm;rag,beginner,embedding,播放量42.2万；强烈推荐；15分钟讲清楚Embedding核心概念
+什么是词嵌入 Word Embedding算法（含Word2Vec/CBOW/Skip-gram）,https://www.bilibili.com/video/BV1sw411S7i1/,小黑黑讲AI,5,0.5,embedding;nlp,beginner,embedding,播放量7.8万；Embedding基础原理；NLP入门必备
+Stable Diffusion的Embedding是什么？怎么用？,https://www.bilibili.com/video/BV1Pg4y1t74E/,靠谱的轩轩,1,0.1,sd_only,beginner,扩展了解,播放量411.6万(合集)；SD图像生成Embedding；与NLP文本Embedding不同；已排除在路径资源外
+2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）,https://www.bilibili.com/video/BV1DfrdByE2H/,吴恩达Agent,43,12,agent;llm;langchain,intermediate,agent,播放量256.5万；Agent专项最强资源；涵盖四大设计模式
+AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）,https://www.bilibili.com/video/BV1YM411y7EP/,卢菁博士_北大AI博士后,37,15,pytorch;transformer;llm;rag;agent,intermediate,综合,播放量147.6万；全栈课程；PyTorch/Transformer/RAG/Agent均覆盖
+大模型全栈开发：RAG+Agent+MCP+Transformer+Qwen3+DeepSeek,https://www.bilibili.com/video/BV1p4pezGEWb/,AI大模型基地,合集,20,rag;agent;transformer;llm,intermediate,综合,播放量100.4万；最新2026版；含MCP/A2A协议实战
+黑马程序员 Python Web开发 FastAPI从入门到实战,https://www.bilibili.com/video/BV1zV2QBtE39/,黑马程序员,68,18,fastapi,beginner,fastapi,播放量82.5万；FastAPI最强中文课；含实战项目+AI问答功能；首选推荐
+从0到1学习FastAPI框架的所有知识点（慕课网官方）,https://www.bilibili.com/video/BV1iN411X72b/,慕课网官方账号,44,8,fastapi,beginner,fastapi,播放量14.6万；慕课网系统课；高性能API服务开发
+尚学堂 FastAPI框架入门教程从0到1快速上手,https://www.bilibili.com/video/BV1eKpizeEnb/,尚学堂官方,73,15,fastapi,beginner,fastapi,播放量14.2万；含ORM/中间件/DDD架构进阶内容
