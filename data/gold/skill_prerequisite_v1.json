@@ -329,6 +329,194 @@
         "sk_langchain",
         "sk_prompt_eng"
       ]
+    },
+    {
+      "skill_id": "sk_html_css",
+      "skill_name": "HTML/CSS基础",
+      "category": "前端开发",
+      "level": 1,
+      "hours_estimate": 20,
+      "difficulty": "beginner",
+      "prerequisites": []
+    },
+    {
+      "skill_id": "sk_javascript",
+      "skill_name": "JavaScript",
+      "category": "前端开发",
+      "level": 2,
+      "hours_estimate": 40,
+      "difficulty": "beginner",
+      "prerequisites": [
+        "sk_html_css"
+      ]
+    },
+    {
+      "skill_id": "sk_react",
+      "skill_name": "React框架",
+      "category": "前端开发",
+      "level": 3,
+      "hours_estimate": 40,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_javascript"
+      ]
+    },
+    {
+      "skill_id": "sk_vue",
+      "skill_name": "Vue.js框架",
+      "category": "前端开发",
+      "level": 3,
+      "hours_estimate": 35,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_javascript"
+      ]
+    },
+    {
+      "skill_id": "sk_django",
+      "skill_name": "Django/Flask",
+      "category": "后端开发",
+      "level": 2,
+      "hours_estimate": 30,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_python_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_springboot",
+      "skill_name": "Spring Boot",
+      "category": "后端开发",
+      "level": 2,
+      "hours_estimate": 50,
+      "difficulty": "intermediate",
+      "prerequisites": []
+    },
+    {
+      "skill_id": "sk_nodejs",
+      "skill_name": "Node.js",
+      "category": "后端开发",
+      "level": 2,
+      "hours_estimate": 30,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_javascript"
+      ]
+    },
+    {
+      "skill_id": "sk_mongodb",
+      "skill_name": "MongoDB/NoSQL",
+      "category": "数据库",
+      "level": 2,
+      "hours_estimate": 20,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_sql_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_redis",
+      "skill_name": "Redis缓存",
+      "category": "数据库",
+      "level": 2,
+      "hours_estimate": 15,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_sql_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_aws",
+      "skill_name": "AWS云服务",
+      "category": "云计算",
+      "level": 3,
+      "hours_estimate": 60,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_linux_basic",
+        "sk_docker"
+      ]
+    },
+    {
+      "skill_id": "sk_azure",
+      "skill_name": "Azure云服务",
+      "category": "云计算",
+      "level": 3,
+      "hours_estimate": 50,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_linux_basic",
+        "sk_docker"
+      ]
+    },
+    {
+      "skill_id": "sk_spark",
+      "skill_name": "Apache Spark",
+      "category": "大数据",
+      "level": 3,
+      "hours_estimate": 40,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_python_basic",
+        "sk_pandas"
+      ]
+    },
+    {
+      "skill_id": "sk_kafka",
+      "skill_name": "Kafka消息队列",
+      "category": "大数据",
+      "level": 3,
+      "hours_estimate": 25,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_linux_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_security",
+      "skill_name": "网络安全基础",
+      "category": "安全",
+      "level": 2,
+      "hours_estimate": 30,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_linux_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_flutter",
+      "skill_name": "Flutter移动开发",
+      "category": "移动开发",
+      "level": 3,
+      "hours_estimate": 50,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_python_basic"
+      ]
+    },
+    {
+      "skill_id": "sk_cv",
+      "skill_name": "计算机视觉",
+      "category": "AI/ML",
+      "level": 3,
+      "hours_estimate": 40,
+      "difficulty": "intermediate",
+      "prerequisites": [
+        "sk_dl_basic",
+        "sk_pytorch"
+      ]
+    },
+    {
+      "skill_id": "sk_system_design",
+      "skill_name": "系统设计",
+      "category": "工程能力",
+      "level": 3,
+      "hours_estimate": 40,
+      "difficulty": "advanced",
+      "prerequisites": [
+        "sk_python_basic",
+        "sk_sql_basic"
+      ]
     }
   ],
   "edges": [

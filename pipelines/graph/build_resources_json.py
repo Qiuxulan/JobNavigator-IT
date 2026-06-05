@@ -11,101 +11,147 @@ import json, csv
 from collections import defaultdict
 from pathlib import Path
 
-BASE  = Path(r"C:\Users\24222\Desktop\社会计算项目")
-OUT   = BASE / "data" / "gold" / "learning_resources_v1.json"
+_REPO = Path(__file__).parents[2]
+# 原始 CSV 爬取数据的可选外部目录（未纳入仓库时的兜底，可用环境变量覆盖）
+import os
+_RAW_DIR = Path(os.environ.get("JOBNAV_RAW_DIR", _REPO / "data" / "raw"))
 
-BILI_PATH    = BASE / "bilibili_resources_C部分.csv"
-GITHUB_PATH  = BASE / "github_resources.csv"
-COURSERA_PATH= BASE / "coursera_it_courses.csv"
-SKILL_PATH   = BASE / "skill_prerequisite_v1.json"
+
+def _resolve_csv(filename: str) -> Path:
+    """优先仓库内 data/raw，其次外部原始目录，返回首个存在的路径（都不存在则返回仓库内路径用于报错）"""
+    for base in (_REPO / "data" / "raw", _RAW_DIR,
+                 Path(r"C:\Users\24222\Desktop\社会计算项目")):
+        p = base / filename
+        if p.exists():
+            return p
+    return _REPO / "data" / "raw" / filename
+
+
+BILI_PATH    = _resolve_csv("bilibili_resources_C部分.csv")
+GITHUB_PATH  = _resolve_csv("github_resources.csv")
+COURSERA_PATH= _resolve_csv("coursera_it_courses.csv")
+SKILL_PATH   = _REPO / "data" / "gold" / "skill_prerequisite_v2.json"   # v2: B vocab ID
+OUT          = _REPO / "data" / "gold" / "learning_resources_v1.json"
 
 # ── Bilibili 标签精确映射 ─────────────────────────────────────────────────
 BILI_TAG_TO_SKILL = {
-    "llm":                "sk_llm_basic",
-    "prompt_engineering": "sk_prompt_eng",
-    "langchain":          "sk_langchain",
-    "rag":                "sk_rag",
-    "agent":              "sk_agent",
-    "lora_finetune":      "sk_lora_finetune",
-    "vector_db":          "sk_vector_db",
-    "transformer":        "sk_transformer",
-    "pytorch":            "sk_pytorch",
-    "embedding":          "sk_embedding",
-    "fastapi":            "sk_fastapi",
-    "nlp":                "sk_nlp_basic",
+    "llm":                "llm",
+    "prompt_engineering": "prompt-engineering",
+    "langchain":          "langchain",
+    "rag":                "rag",
+    "agent":              "agent",
+    "lora_finetune":      "fine-tuning",
+    "vector_db":          "vector-database",
+    "transformer":        "transformer",
+    "pytorch":            "pytorch",
+    "embedding":          "embedding",
+    "fastapi":            "fastapi",
+    "nlp":                "nlp",
 }
 
 # ── 关键词评分表（与 path_planner_v1.py 保持同步）────────────────────────
 SKILL_KEYWORDS = {
-    "sk_python_basic":   ["python programming", "learn python", "python for beginners",
+    "python":   ["python programming", "learn python", "python for beginners",
                           "intro to python", "python basics", "python tutorial"],
-    "sk_sql_basic":      ["sql basics", "introduction to sql", "sql for beginners",
+    "sql-lang":      ["sql basics", "introduction to sql", "sql for beginners",
                           "relational database", "mysql", "postgresql", "sql tutorial"],
-    "sk_git":            ["git and github", "version control with git", "git for beginners",
+    "git":            ["git and github", "version control with git", "git for beginners",
                           "github tutorial", "git tutorial"],
-    "sk_linux_basic":    ["linux command", "linux for beginners", "bash scripting",
+    "linux":    ["linux command", "linux for beginners", "bash scripting",
                           "shell scripting", "linux tutorial", "command line"],
-    "sk_math_basic":     ["linear algebra for machine learning", "mathematics for machine learning",
+    "statistics":     ["linear algebra for machine learning", "mathematics for machine learning",
                           "probability and statistics", "calculus for machine learning",
                           "math for data science", "linear algebra and statistics"],
-    "sk_pandas":         ["pandas tutorial", "pandas dataframe", "data analysis with pandas",
+    "pandas":         ["pandas tutorial", "pandas dataframe", "data analysis with pandas",
                           "pandas for data analysis"],
-    "sk_numpy":          ["numpy", "numpy tutorial", "numpy arrays",
+    "numpy":          ["numpy", "numpy tutorial", "numpy arrays",
                           "numpy for data science", "numerical computing with python"],
-    "sk_data_structure": ["data structures and algorithms", "leetcode", "algorithms and data structures",
+    "data-structures": ["data structures and algorithms", "leetcode", "algorithms and data structures",
                           "data structures tutorial"],
-    "sk_matplotlib":     ["matplotlib tutorial", "data visualization with python",
+    "statistics":     ["matplotlib tutorial", "data visualization with python",
                           "seaborn tutorial", "python visualization"],
-    "sk_stats":          ["statistics for data science", "statistical analysis",
+    "statistics":          ["statistics for data science", "statistical analysis",
                           "probability and statistics for machine learning",
                           "statistics and probability", "hypothesis testing"],
-    "sk_sql_advanced":   ["advanced sql", "sql window functions", "sql analytics",
+    "postgresql":   ["advanced sql", "sql window functions", "sql analytics",
                           "sql query optimization", "sql for data analysis"],
-    "sk_tableau":        ["tableau tutorial", "power bi tutorial", "powerbi",
+    "tableau":        ["tableau tutorial", "power bi tutorial", "powerbi",
                           "business intelligence", "data visualization with tableau"],
-    "sk_fastapi":        ["fastapi tutorial", "fastapi python", "rest api with fastapi",
+    "fastapi":        ["fastapi tutorial", "fastapi python", "rest api with fastapi",
                           "building apis with fastapi"],
-    "sk_docker":         ["docker tutorial", "docker for beginners", "containerization",
+    "docker":         ["docker tutorial", "docker for beginners", "containerization",
                           "docker and kubernetes", "dockerfile"],
-    "sk_ab_test":        ["a/b testing", "ab testing", "experiment design",
+    "ab-testing":        ["a/b testing", "ab testing", "experiment design",
                           "online experiments", "statistical hypothesis testing"],
-    "sk_ml_basic":       ["machine learning course", "machine learning tutorial",
+    "machine-learning":       ["machine learning course", "machine learning tutorial",
                           "scikit-learn", "supervised learning", "machine learning a-z",
                           "introduction to machine learning"],
-    "sk_dl_basic":       ["deep learning tutorial", "neural networks tutorial",
+    "deep-learning":       ["deep learning tutorial", "neural networks tutorial",
                           "tensorflow tutorial", "keras tutorial",
                           "introduction to deep learning"],
-    "sk_pytorch":        ["pytorch tutorial", "pytorch deep learning", "learn pytorch",
+    "pytorch":        ["pytorch tutorial", "pytorch deep learning", "learn pytorch",
                           "pytorch for beginners"],
-    "sk_nlp_basic":      ["nlp", "natural language processing", "natural language processing tutorial",
+    "nlp":      ["nlp", "natural language processing", "natural language processing tutorial",
                           "nlp with python", "text classification", "nlp course", "introduction to nlp"],
-    "sk_embedding":      ["word embedding", "text embedding", "word2vec tutorial",
+    "embedding":      ["word embedding", "text embedding", "word2vec tutorial",
                           "sentence embedding", "embedding tutorial"],
-    "sk_transformer":    ["transformer architecture", "attention mechanism",
+    "transformer":    ["transformer architecture", "attention mechanism",
                           "bert tutorial", "transformer model", "self-attention"],
-    "sk_llm_basic":      ["large language model", "llm tutorial", "generative ai course",
+    "llm":      ["large language model", "llm tutorial", "generative ai course",
                           "introduction to llm", "gpt tutorial", "llm for beginners"],
-    "sk_prompt_eng":     ["prompt engineering", "prompt design", "prompting techniques",
+    "prompt-engineering":     ["prompt engineering", "prompt design", "prompting techniques",
                           "prompt tutorial"],
-    "sk_vector_db":      ["vector database", "milvus tutorial", "chroma tutorial",
+    "vector-database":      ["vector database", "milvus tutorial", "chroma tutorial",
                           "faiss tutorial", "pinecone tutorial", "vector search"],
-    "sk_langchain":      ["langchain tutorial", "langchain python", "build with langchain",
+    "langchain":      ["langchain tutorial", "langchain python", "build with langchain",
                           "langchain course"],
-    "sk_lora_finetune":  ["lora fine-tuning", "qlora", "fine-tuning llm",
+    "fine-tuning":  ["lora fine-tuning", "qlora", "fine-tuning llm",
                           "parameter efficient fine-tuning", "peft tutorial",
                           "finetuning large language model"],
-    "sk_rag":            ["retrieval augmented generation", "rag tutorial",
+    "rag":            ["retrieval augmented generation", "rag tutorial",
                           "rag system", "rag with langchain", "build rag"],
-    "sk_agent":          ["ai agent tutorial", "agentic ai", "multi-agent system",
+    "agent":          ["ai agent tutorial", "agentic ai", "multi-agent system",
                           "autonomous agent", "ai agent development"],
-    "sk_tool_use":       ["function calling", "tool use llm", "tool calling",
+    "tool-calling":       ["function calling", "tool use llm", "tool calling",
                           "llm tool use", "openai function calling"],
+    # ── v2 新增17个技能 ──
+    "html":       ["html tutorial", "css tutorial", "html and css", "web design basics",
+                          "html css for beginners", "frontend basics"],
+    "javascript":     ["javascript tutorial", "javascript for beginners", "es6 javascript",
+                          "learn javascript", "javascript programming"],
+    "react":          ["react tutorial", "react.js", "react hooks", "react for beginners",
+                          "build with react", "nextjs tutorial"],
+    "vue":            ["vue tutorial", "vue.js", "vue for beginners", "learn vue"],
+    "django":         ["django tutorial", "flask tutorial", "python web framework",
+                          "django rest framework"],
+    "springboot":     ["spring boot tutorial", "spring framework", "java backend",
+                          "spring rest api"],
+    "nodejs":         ["node.js tutorial", "nodejs backend", "express tutorial",
+                          "server side javascript"],
+    "mongodb":        ["mongodb tutorial", "nosql database", "mongodb for beginners",
+                          "mongoose tutorial"],
+    "redis":          ["redis tutorial", "redis cache", "in-memory database"],
+    "aws":            ["aws tutorial", "amazon web services", "aws for beginners",
+                          "cloud computing aws", "aws solutions architect"],
+    "azure":          ["azure tutorial", "microsoft azure", "azure for beginners"],
+    "spark":          ["apache spark tutorial", "pyspark tutorial", "big data processing",
+                          "spark streaming"],
+    "kafka":          ["apache kafka tutorial", "kafka for beginners", "message queue kafka",
+                          "event streaming kafka"],
+    "cybersecurity":       ["cybersecurity tutorial", "network security", "ethical hacking",
+                          "oauth jwt", "web security owasp"],
+    "flutter":        ["flutter tutorial", "dart flutter", "flutter for beginners",
+                          "cross platform mobile flutter"],
+    "computer-vision":             ["computer vision tutorial", "opencv tutorial", "image recognition",
+                          "cnn computer vision", "object detection"],
+    "system-design":  ["system design", "distributed systems", "microservices architecture",
+                          "scalability", "system design interview"],
 }
 
 # ── 手工补录：无法通过关键词捕获的技能资源映射 ───────────────────────────
 # 用于 sk_tool_use、sk_sql_advanced、sk_tableau、sk_ab_test 等无覆盖技能
 MANUAL_RESOURCES = {
-    "sk_tool_use": [
+    "tool-calling": [
         {
             "resource_id": "bili_BV1DfrdByE2H_tooluse",
             "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
@@ -116,7 +162,7 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "UP:吴恩达Agent | 含Tool Use/Function Calling设计模式讲解",
             "match_reason": "manual_tag",
-            "skill_scores": {"sk_tool_use": 3, "sk_agent": 3}
+            "skill_scores": {"tool-calling": 3, "agent": 3}
         },
         {
             "resource_id": "github_0001_tooluse",
@@ -128,7 +174,7 @@ MANUAL_RESOURCES = {
             "language": "en",
             "note": "stars:22236 | 50+ tutorials including Tool Use & Function Calling patterns",
             "match_reason": "manual_tag",
-            "skill_scores": {"sk_tool_use": 3, "sk_langchain": 2}
+            "skill_scores": {"tool-calling": 3, "langchain": 2}
         },
         {
             "resource_id": "github_0004_tooluse",
@@ -140,10 +186,10 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "stars:5259 | 含Function Calling实战 + LangGraph Tool Use",
             "match_reason": "manual_tag",
-            "skill_scores": {"sk_tool_use": 3, "sk_agent": 3}
+            "skill_scores": {"tool-calling": 3, "agent": 3}
         },
     ],
-    "sk_sql_advanced": [
+    "postgresql": [
         {
             "resource_id": "coursera_0012_sqladv",
             "title": "Web Applications for Everybody",
@@ -154,7 +200,7 @@ MANUAL_RESOURCES = {
             "language": "en",
             "note": "University of Michigan ★4.7 | 含SQL/MySQL/关系数据库/数据建模",
             "match_reason": "manual_tag",
-            "skill_scores": {"sk_sql_advanced": 2, "sk_sql_basic": 2}
+            "skill_scores": {"postgresql": 2, "sql-lang": 2}
         },
         {
             "resource_id": "manual_sqladv_bili_001",
@@ -166,7 +212,7 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "B站搜索补充资源 | 推荐搜索: SQL进阶 窗口函数 数据分析",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_sql_advanced": 2}
+            "skill_scores": {"postgresql": 2}
         },
         {
             "resource_id": "manual_sqladv_github_001",
@@ -178,10 +224,10 @@ MANUAL_RESOURCES = {
             "language": "en",
             "note": "GitHub SQL tutorial topic page | 窗口函数/CTE/性能优化实例",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_sql_advanced": 2}
+            "skill_scores": {"postgresql": 2}
         },
     ],
-    "sk_tableau": [
+    "tableau": [
         {
             "resource_id": "manual_tableau_001",
             "title": "【推荐搜索】B站搜索 Tableau入门教程 或 PowerBI教程",
@@ -192,10 +238,10 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "当前资源库暂无Tableau专项，建议在B站搜索补充",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_tableau": 2}
+            "skill_scores": {"tableau": 2}
         },
     ],
-    "sk_docker": [
+    "docker": [
         {
             "resource_id": "manual_docker_bili_001",
             "title": "Docker从入门到实战：容器化部署全流程教程",
@@ -206,7 +252,7 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "B站搜索补充资源 | 推荐搜索: Docker入门 容器化 K8s",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_docker": 2}
+            "skill_scores": {"docker": 2}
         },
         {
             "resource_id": "manual_docker_github_001",
@@ -218,10 +264,10 @@ MANUAL_RESOURCES = {
             "language": "en",
             "note": "stars:28k+ | Docker官方推荐资源合集，含教程/工具/最佳实践",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_docker": 2}
+            "skill_scores": {"docker": 2}
         },
     ],
-    "sk_ab_test": [
+    "ab-testing": [
         {
             "resource_id": "manual_abtest_001",
             "title": "【推荐搜索】B站搜索 A/B测试 数据分析",
@@ -232,10 +278,10 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "当前资源库暂无A/B测试专项，建议在B站搜索补充",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_ab_test": 2}
+            "skill_scores": {"ab-testing": 2}
         },
     ],
-    "sk_math_basic": [
+    "statistics": [
         {
             "resource_id": "manual_math_001",
             "title": "【推荐搜索】B站搜索 线性代数/概率论/机器学习数学基础",
@@ -246,10 +292,10 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "当前资源库暂无专项数学课程，推荐B站搜索：3Blue1Brown线代/概率论",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_math_basic": 2}
+            "skill_scores": {"statistics": 2}
         },
     ],
-    "sk_matplotlib": [
+    "statistics": [
         {
             "resource_id": "github_0097_vis",
             "title": "data-science-complete-tutorial",
@@ -260,10 +306,10 @@ MANUAL_RESOURCES = {
             "language": "en",
             "note": "stars:1822 | 含Pandas/NumPy/Matplotlib完整数据科学教程",
             "match_reason": "manual_tag",
-            "skill_scores": {"sk_matplotlib": 2, "sk_pandas": 2, "sk_numpy": 2}
+            "skill_scores": {"statistics": 2, "pandas": 2, "numpy": 2}
         },
     ],
-    "sk_git": [
+    "git": [
         {
             "resource_id": "manual_git_001",
             "title": "【推荐搜索】B站搜索 Git教程 版本控制",
@@ -274,7 +320,378 @@ MANUAL_RESOURCES = {
             "language": "zh",
             "note": "当前资源库暂无Git专项，推荐B站搜索黑马程序员Git教程",
             "match_reason": "manual_supplement",
-            "skill_scores": {"sk_git": 2}
+            "skill_scores": {"git": 2}
+        },
+    ],
+    # ── v2 新增17个技能手工资源 ──
+    "html": [
+        {
+            "resource_id": "manual_htmlcss_bili_001",
+            "title": "HTML+CSS前端开发入门教程（黑马程序员）",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=HTML+CSS+前端入门+黑马",
+            "difficulty": "beginner",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | 推荐：黑马/尚硅谷HTML CSS教程",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"html": 3}
+        },
+        {
+            "resource_id": "manual_htmlcss_github_001",
+            "title": "freeCodeCamp - Responsive Web Design",
+            "source": "github",
+            "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "difficulty": "beginner",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:400k+ | 免费全套前端课程，HTML/CSS/JavaScript全覆盖",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"html": 3, "javascript": 2}
+        },
+    ],
+    "javascript": [
+        {
+            "resource_id": "manual_js_bili_001",
+            "title": "JavaScript入门到精通完整版（尚硅谷）",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=JavaScript+入门+尚硅谷",
+            "difficulty": "beginner",
+            "hours_estimate": 30.0,
+            "language": "zh",
+            "note": "B站搜索补充 | 推荐：尚硅谷/黑马JS完整教程",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"javascript": 3}
+        },
+        {
+            "resource_id": "manual_js_github_001",
+            "title": "javascript-algorithms",
+            "source": "github",
+            "url": "https://github.com/trekhleb/javascript-algorithms",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:190k+ | JavaScript数据结构和算法实现",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"javascript": 2, "data-structures": 2}
+        },
+    ],
+    "react": [
+        {
+            "resource_id": "manual_react_bili_001",
+            "title": "React18入门到实战完整版",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=React+18+入门+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 25.0,
+            "language": "zh",
+            "note": "B站搜索补充 | 推荐：尚硅谷/coderwhy React18教程",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"react": 3}
+        },
+        {
+            "resource_id": "manual_react_github_001",
+            "title": "awesome-react",
+            "source": "github",
+            "url": "https://github.com/enaqx/awesome-react",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:65k+ | React生态资源合集",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"react": 2}
+        },
+    ],
+    "vue": [
+        {
+            "resource_id": "manual_vue_bili_001",
+            "title": "Vue3+TypeScript实战教程（尚硅谷）",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Vue3+TypeScript+尚硅谷",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Vue3/Vite/Pinia完整栈",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"vue": 3}
+        },
+    ],
+    "django": [
+        {
+            "resource_id": "manual_django_bili_001",
+            "title": "Django+DRF REST API实战教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Django+REST+API+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Django/Flask/FastAPI后端开发",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"django": 3, "fastapi": 2}
+        },
+    ],
+    "springboot": [
+        {
+            "resource_id": "manual_spring_bili_001",
+            "title": "SpringBoot3+MyBatis-Plus实战（黑马程序员）",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=SpringBoot3+MyBatis+黑马",
+            "difficulty": "intermediate",
+            "hours_estimate": 30.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Java后端主流技术栈",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"springboot": 3}
+        },
+    ],
+    "nodejs": [
+        {
+            "resource_id": "manual_nodejs_bili_001",
+            "title": "Node.js+Express+MongoDB全栈开发教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Node.js后端开发",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"nodejs": 3, "mongodb": 2}
+        },
+    ],
+    "mongodb": [
+        {
+            "resource_id": "manual_mongo_bili_001",
+            "title": "MongoDB入门到实战教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=MongoDB+入门+教程",
+            "difficulty": "beginner",
+            "hours_estimate": 10.0,
+            "language": "zh",
+            "note": "B站搜索补充",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"mongodb": 3}
+        },
+        {
+            "resource_id": "manual_mongo_github_001",
+            "title": "awesome-mongodb",
+            "source": "github",
+            "url": "https://github.com/ramnes/awesome-mongodb",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:2.5k+ | MongoDB资源合集",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"mongodb": 2}
+        },
+    ],
+    "redis": [
+        {
+            "resource_id": "manual_redis_bili_001",
+            "title": "Redis从入门到实战（黑马程序员）",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Redis+入门+黑马",
+            "difficulty": "intermediate",
+            "hours_estimate": 15.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Redis缓存/持久化/集群",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"redis": 3}
+        },
+    ],
+    "aws": [
+        {
+            "resource_id": "manual_aws_coursera_001",
+            "title": "AWS Cloud Practitioner Essentials",
+            "source": "coursera",
+            "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+            "difficulty": "beginner",
+            "hours_estimate": 15.0,
+            "language": "en",
+            "note": "Amazon官方 ★4.7 | AWS CLF-C02备考首选",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"aws": 3}
+        },
+        {
+            "resource_id": "manual_aws_bili_001",
+            "title": "AWS云计算从入门到SAA认证",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | AWS Solutions Architect备考",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"aws": 3}
+        },
+    ],
+    "azure": [
+        {
+            "resource_id": "manual_azure_coursera_001",
+            "title": "Microsoft Azure Fundamentals AZ-900",
+            "source": "coursera",
+            "url": "https://www.coursera.org/search?query=Microsoft+Azure+AZ-900",
+            "difficulty": "beginner",
+            "hours_estimate": 10.0,
+            "language": "en",
+            "note": "Microsoft官方 | AZ-900认证备考",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"azure": 3}
+        },
+    ],
+    "spark": [
+        {
+            "resource_id": "manual_spark_coursera_001",
+            "title": "Big Data Analysis with Scala and Spark",
+            "source": "coursera",
+            "url": "https://www.coursera.org/search?query=Big+Data+Analysis+Scala+Spark",
+            "difficulty": "intermediate",
+            "hours_estimate": 40.0,
+            "language": "en",
+            "note": "EPFL ★4.6 | Spark核心课程",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"spark": 3}
+        },
+        {
+            "resource_id": "manual_spark_bili_001",
+            "title": "PySpark大数据处理实战教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=PySpark+大数据+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充 | PySpark/Hadoop/Hive大数据栈",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"spark": 3}
+        },
+    ],
+    "kafka": [
+        {
+            "resource_id": "manual_kafka_bili_001",
+            "title": "Apache Kafka消息队列从入门到实战",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Kafka+消息队列+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 15.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Kafka架构/生产消费/实时流",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"kafka": 3}
+        },
+        {
+            "resource_id": "manual_kafka_github_001",
+            "title": "awesome-kafka",
+            "source": "github",
+            "url": "https://github.com/infoslack/awesome-kafka",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "Kafka资源合集",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"kafka": 2}
+        },
+    ],
+    "cybersecurity": [
+        {
+            "resource_id": "manual_security_coursera_001",
+            "title": "Google Cybersecurity Professional Certificate",
+            "source": "coursera",
+            "url": "https://www.coursera.org/search?query=Google+Cybersecurity+Professional+Certificate",
+            "difficulty": "beginner",
+            "hours_estimate": 180.0,
+            "language": "en",
+            "note": "Google官方 ★4.8 | 网络安全入门系列",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"cybersecurity": 3}
+        },
+        {
+            "resource_id": "manual_security_bili_001",
+            "title": "网络安全/渗透测试入门教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=网络安全+渗透测试+入门",
+            "difficulty": "beginner",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"cybersecurity": 3}
+        },
+    ],
+    "flutter": [
+        {
+            "resource_id": "manual_flutter_bili_001",
+            "title": "Flutter3.x移动端实战开发教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=Flutter3+移动端+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 25.0,
+            "language": "zh",
+            "note": "B站搜索补充 | Flutter/Dart跨平台开发",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"flutter": 3}
+        },
+        {
+            "resource_id": "manual_flutter_github_001",
+            "title": "awesome-flutter",
+            "source": "github",
+            "url": "https://github.com/Solido/awesome-flutter",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:53k+ | Flutter资源合集",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"flutter": 2}
+        },
+    ],
+    "computer-vision": [
+        {
+            "resource_id": "manual_cv_coursera_001",
+            "title": "Deep Learning Specialization (Course 4 - CNN)",
+            "source": "coursera",
+            "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+            "difficulty": "intermediate",
+            "hours_estimate": 35.0,
+            "language": "en",
+            "note": "deeplearning.ai ★4.9 | CNN/YOLO/人脸识别",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"computer-vision": 3, "deep-learning": 2}
+        },
+        {
+            "resource_id": "manual_cv_bili_001",
+            "title": "计算机视觉OpenCV+YOLO实战教程",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
+            "difficulty": "intermediate",
+            "hours_estimate": 20.0,
+            "language": "zh",
+            "note": "B站搜索补充",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"computer-vision": 3}
+        },
+    ],
+    "system-design": [
+        {
+            "resource_id": "manual_sysdesign_github_001",
+            "title": "system-design-primer",
+            "source": "github",
+            "url": "https://github.com/donnemartin/system-design-primer",
+            "difficulty": "intermediate",
+            "hours_estimate": 0.0,
+            "language": "en",
+            "note": "stars:290k+ | 系统设计面试圣经，分布式/高可用/微服务",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"system-design": 3}
+        },
+        {
+            "resource_id": "manual_sysdesign_bili_001",
+            "title": "系统设计面试/分布式系统架构讲解",
+            "source": "bilibili",
+            "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+            "difficulty": "advanced",
+            "hours_estimate": 15.0,
+            "language": "zh",
+            "note": "B站搜索补充",
+            "match_reason": "manual_supplement",
+            "skill_scores": {"system-design": 3}
         },
     ],
 }

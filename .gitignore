@@ -247,7 +247,18 @@ data/metadata/*
 !data/silver/.gitkeep
 !data/gold/.gitkeep
 !data/metadata/.gitkeep
+# C模块: 显式放行需随仓库分发的产物（默认 data/gold/* 被忽略）
+!data/gold/skill_prerequisite_v2.json
+!data/gold/learning_resources_v1.json
+# C模块: 原始资源CSV爬取数据（共~1.9MB，供重新生成资源库，默认 data/raw/* 被忽略）
+!data/raw/bilibili_resources_C部分.csv
+!data/raw/github_resources.csv
+!data/raw/coursera_it_courses.csv
 !data/silver/jd_skill_list_eval.jsonl
 !data/silver/profile_labeled_v1.jsonl
 !data/silver/resume_it_english.jsonl
 !data/silver/skillspan_skill_eval.jsonl
+
+# C模块: 机器学习模型权重大文件（449MB，超GitHub 100MB限制，用训练脚本重新生成）
+models/st_finetuned/model.safetensors
+models/st_finetuned/1_Pooling/
