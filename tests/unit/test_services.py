@@ -161,5 +161,5 @@ def test_report_prompt_contains_ranked_context(monkeypatch):
         language="zh-CN",
     )
     assert len(messages) == 2
-    assert "Top10 粗召回观察" in messages[1]["content"]
+    assert "Top10 coarse recall" in messages[1]["content"]
     assert "python" in messages[1]["content"].lower()
