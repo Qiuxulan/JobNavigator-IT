@@ -234,6 +234,13 @@ Desktop.ini
 # Local accidental cache dirs seen in this repo
 pytest-cache-files-*/
 
+# D-module transient outputs and old exploratory artifacts
+reports/role_*_graph_v2.html
+reports/role_*_graph_v2.md
+reports/sample_career_reports_api_output.json
+reports/sample_career_reports_summary.md
+reports/sample_resume_rankings_v2.json
+
 # Environment / secrets
 .env.*
 !.env.example

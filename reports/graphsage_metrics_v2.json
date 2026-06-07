@@ -1,0 +1,71 @@
+{
+  "model_version": "graphsage-v2",
+  "embedding_dim": 64,
+  "epochs": 60,
+  "learning_rate": 0.01,
+  "node_count": 729,
+  "edge_count": 2759,
+  "history_tail": [
+    {
+      "epoch": 51,
+      "loss": 1.129963,
+      "positive_score": 0.704818,
+      "negative_score": 0.505931
+    },
+    {
+      "epoch": 52,
+      "loss": 1.121114,
+      "positive_score": 0.703797,
+      "negative_score": 0.498663
+    },
+    {
+      "epoch": 53,
+      "loss": 1.124481,
+      "positive_score": 0.702152,
+      "negative_score": 0.499361
+    },
+    {
+      "epoch": 54,
+      "loss": 1.128788,
+      "positive_score": 0.701409,
+      "negative_score": 0.500855
+    },
+    {
+      "epoch": 55,
+      "loss": 1.12784,
+      "positive_score": 0.700905,
+      "negative_score": 0.497837
+    },
+    {
+      "epoch": 56,
+      "loss": 1.122153,
+      "positive_score": 0.701717,
+      "negative_score": 0.498905
+    },
+    {
+      "epoch": 57,
+      "loss": 1.131368,
+      "positive_score": 0.703474,
+      "negative_score": 0.50322
+    },
+    {
+      "epoch": 58,
+      "loss": 1.132988,
+      "positive_score": 0.704089,
+      "negative_score": 0.506931
+    },
+    {
+      "epoch": 59,
+      "loss": 1.122469,
+      "positive_score": 0.702406,
+      "negative_score": 0.499699
+    },
+    {
+      "epoch": 60,
+      "loss": 1.123607,
+      "positive_score": 0.701874,
+      "negative_score": 0.499747
+    }
+  ],
+  "final_loss": 1.123607
+}

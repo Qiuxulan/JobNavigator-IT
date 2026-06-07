@@ -1,0 +1,2 @@
+ALTER TABLE graph_edges
+  ADD COLUMN IF NOT EXISTS meta_json JSONB NOT NULL DEFAULT '{}'::jsonb;

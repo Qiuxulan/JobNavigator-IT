@@ -2,7 +2,15 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from app.schemas.domain import LearningPath, RecommendationItem, TrendSignal, UserPreference, UserProfile
+from app.schemas.domain import (
+    CareerRankedResult,
+    CoarseMatch,
+    LearningPath,
+    RecommendationItem,
+    TrendSignal,
+    UserPreference,
+    UserProfile,
+)
 
 
 class ProfileExtractRequest(BaseModel):
@@ -34,6 +42,41 @@ class PathGenerateRequest(BaseModel):
 
 class PathGenerateResponse(BaseModel):
     path: LearningPath
+
+
+class CareerRankRequest(BaseModel):
+    resume_text: str
+    github_url: Optional[str] = None
+    user_id: str = "anonymous"
+    preference: UserPreference = Field(default_factory=UserPreference)
+    top_k: int = 10
+
+
+class CareerRankResponse(BaseModel):
+    profile: UserProfile
+    normalized_skill_ids: list[str] = Field(default_factory=list)
+    coarse_matches: list[CoarseMatch] = Field(default_factory=list)
+    ranked_results: list[CareerRankedResult] = Field(default_factory=list)
+
+
+class CareerReportRequest(BaseModel):
+    resume_text: str
+    github_url: Optional[str] = None
+    user_id: str = "anonymous"
+    preference: UserPreference = Field(default_factory=UserPreference)
+    top_k: int = 5
+    audience: str = "candidate"
+    language: str = "zh-CN"
+    report_style: str = "markdown"
+
+
+class CareerReportResponse(BaseModel):
+    profile: UserProfile
+    normalized_skill_ids: list[str] = Field(default_factory=list)
+    coarse_matches: list[CoarseMatch] = Field(default_factory=list)
+    ranked_results: list[CareerRankedResult] = Field(default_factory=list)
+    report_markdown: str
+    report_model: str
 
 
 class TrendResponse(BaseModel):
