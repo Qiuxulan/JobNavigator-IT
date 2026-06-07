@@ -1,0 +1,4154 @@
+[
+  {
+    "sample_id": "resource_rich_rag",
+    "resume_text": "I have backend and AI application experience using Python, FastAPI, PostgreSQL, SQL, Docker and Git. I have already built RAG demos with LangChain, vector databases, embeddings, prompt engineering and OpenAI API. I also experimented with LLM evaluation, AI agents and retrieval workflows for internal knowledge assistants.",
+    "status_code": 200,
+    "response": {
+      "profile": {
+        "user_id": "resource_rich_rag",
+        "skills": [
+          "PostgreSQL",
+          "LangChain",
+          "Vector Database",
+          "Embedding",
+          "Prompt Engineering",
+          "OpenAI API",
+          "AI Agent",
+          "Python",
+          "FastAPI",
+          "Docker",
+          "Git",
+          "SQL",
+          "RAG",
+          "LLM"
+        ],
+        "target_role": "AI Engineer",
+        "years_experience": 1.0,
+        "education": "本科",
+        "city": null,
+        "github_url": null
+      },
+      "normalized_skill_ids": [
+        "postgresql",
+        "langchain",
+        "vector-database",
+        "embedding",
+        "prompt-engineering",
+        "openai-api",
+        "agent",
+        "python",
+        "fastapi",
+        "docker",
+        "git",
+        "sql-lang",
+        "rag",
+        "llm"
+      ],
+      "coarse_matches": [
+        {
+          "job": {
+            "job_id": "role_011",
+            "title": "RAG Engineer",
+            "fine_role": "RAG Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "Data Science",
+              "API",
+              "Prompt Engineering",
+              "SQL",
+              "Computer Vision",
+              "Microsoft Azure",
+              "LangChain",
+              "LangGraph",
+              "AWS",
+              "Vector Database"
+            ]
+          },
+          "semantic_score": 0.8729
+        },
+        {
+          "job": {
+            "job_id": "role_008",
+            "title": "LLM Inference Engineer",
+            "fine_role": "LLM Inference Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "LLM",
+              "Machine Learning",
+              "AI Agent",
+              "Fine-tuning",
+              "Python",
+              "API",
+              "NLP",
+              "RAG",
+              "Prompt Engineering",
+              "Data Science",
+              "OpenAI API",
+              "Agile",
+              "Embedding",
+              "Microsoft Azure",
+              "LangChain"
+            ]
+          },
+          "semantic_score": 0.8291
+        },
+        {
+          "job": {
+            "job_id": "role_001",
+            "title": "AI Agent Engineer",
+            "fine_role": "AI Agent Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "SQL",
+              "Oracle Database",
+              "LangChain",
+              "API",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "RAG",
+              "LangGraph"
+            ]
+          },
+          "semantic_score": 0.794
+        },
+        {
+          "job": {
+            "job_id": "role_015",
+            "title": "Context Engineer",
+            "fine_role": "Context Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Go",
+              "Machine Learning",
+              "Android",
+              "iOS",
+              "Data Science",
+              "LLM",
+              "AI Agent",
+              "Amazon Aurora",
+              "Multimodal",
+              "API",
+              "Prompt Engineering",
+              "JavaScript",
+              "NLP",
+              "Scrum",
+              "Embedding"
+            ]
+          },
+          "semantic_score": 0.6895
+        },
+        {
+          "job": {
+            "job_id": "role_002",
+            "title": "AI Engineer",
+            "fine_role": "AI Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "AI Agent",
+              "LLM",
+              "AWS",
+              "Python",
+              "R",
+              "API",
+              "Google Cloud",
+              "TypeScript",
+              "OpenAI API",
+              "Microsoft Azure",
+              "Go",
+              "Multimodal",
+              "Kubernetes",
+              "DevOps"
+            ]
+          },
+          "semantic_score": 0.6537
+        },
+        {
+          "job": {
+            "job_id": "role_025",
+            "title": "Backend Python Engineer",
+            "fine_role": "Backend Python Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Python",
+              "API",
+              "AWS",
+              "Django",
+              "REST API",
+              "Docker",
+              "PostgreSQL",
+              "SQL",
+              "Flask",
+              "Git",
+              "Agile",
+              "JavaScript",
+              "Microservices",
+              "Kubernetes",
+              "Linux"
+            ]
+          },
+          "semantic_score": 0.639
+        },
+        {
+          "job": {
+            "job_id": "role_013",
+            "title": "Forward Deployed AI Engineer",
+            "fine_role": "Forward Deployed AI Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Snowflake",
+              "AWS",
+              "Databricks",
+              "AI Agent",
+              "LLM",
+              "Data Pipeline",
+              "Machine Learning",
+              "MCP",
+              "RAG",
+              "C",
+              "R"
+            ]
+          },
+          "semantic_score": 0.6303
+        },
+        {
+          "job": {
+            "job_id": "role_000",
+            "title": "Machine Learning Engineer",
+            "fine_role": "Machine Learning Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "Data Science",
+              "NLP",
+              "Python",
+              "R",
+              "Algorithms",
+              "Deep Learning",
+              "LLM",
+              "AI Agent",
+              "Model Deployment",
+              "Agile",
+              "Go",
+              "Distributed Systems",
+              "Data Pipeline",
+              "Multimodal"
+            ]
+          },
+          "semantic_score": 0.6213
+        },
+        {
+          "job": {
+            "job_id": "role_005",
+            "title": "AI Evaluation Engineer",
+            "fine_role": "AI Evaluation Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "Data Science",
+              "Go",
+              "AI Agent",
+              "RAG",
+              "LLM",
+              "R",
+              "Data Analysis",
+              "NLP",
+              "Agile",
+              "C",
+              "Excel",
+              "Apache Spark",
+              "Cybersecurity",
+              "DevOps"
+            ]
+          },
+          "semantic_score": 0.6209
+        },
+        {
+          "job": {
+            "job_id": "role_007",
+            "title": "Applied AI Engineer",
+            "fine_role": "Applied AI Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Oracle Database",
+              "AI Agent",
+              "LLM",
+              "Machine Learning"
+            ]
+          },
+          "semantic_score": 0.6103
+        }
+      ],
+      "ranked_results": [
+        {
+          "job": {
+            "job_id": "role_001",
+            "title": "AI Agent Engineer",
+            "fine_role": "AI Agent Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "SQL",
+              "Oracle Database",
+              "LangChain",
+              "API",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "RAG",
+              "LangGraph"
+            ]
+          },
+          "final_score": 0.4083,
+          "semantic_score": 0.794,
+          "score_breakdown": {
+            "semantic": 0.794,
+            "coverage": 0.825,
+            "resource_reward": 0.0756,
+            "graph_reward": 0.175,
+            "missing_penalty": 0.175,
+            "prereq_penalty": 0.0881,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Machine Learning",
+              "Oracle DB",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "LangGraph",
+              "R",
+              "Azure",
+              "Java",
+              "Multimodal",
+              "TypeScript",
+              "MCP",
+              "Fine-tuning",
+              "System Design",
+              "Computer Vision",
+              "Excel",
+              "Google Cloud",
+              "Blockchain"
+            ],
+            "overlap_skills": [
+              "AI Agent",
+              "LLM",
+              "Python",
+              "SQL",
+              "LangChain",
+              "RAG",
+              "Prompt Engineering",
+              "OpenAI API",
+              "Git",
+              "Embedding"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_001",
+            "total_steps": 24,
+            "total_estimated_hours": 790,
+            "score": 0.2701,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Excel",
+                "reason": "importance=0.004 level=1 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "R",
+                "reason": "importance=0.009 level=1 difficulty=beginner hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "Go",
+                "reason": "importance=0.018 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "JavaScript",
+                "reason": "importance=0.000 level=1 difficulty=beginner hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_js_bili_001",
+                    "title": "JavaScript入门到精通完整版（尚硅谷）",
+                    "url": "https://search.bilibili.com/all?keyword=JavaScript+入门+尚硅谷",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_htmlcss_github_001",
+                    "title": "freeCodeCamp - Responsive Web Design",
+                    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                    "provider": "github",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_js_github_001",
+                    "title": "javascript-algorithms",
+                    "url": "https://github.com/trekhleb/javascript-algorithms",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 5,
+                "skill": "Java",
+                "reason": "importance=0.007 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "PyTorch",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "bili_BV1V3BPYiEwW",
+                    "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "bili_BV1YM411y7EP",
+                    "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 7,
+                "skill": "TypeScript",
+                "reason": "importance=0.007 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "Data Science",
+                "reason": "importance=0.013 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": "Node.js",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0762",
+                    "title": "Server side JavaScript with Node.js",
+                    "url": "https://www.coursera.org/search?query=Server+side+JavaScript+with+Node.js",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 10,
+                "skill": "Oracle DB",
+                "reason": "importance=0.042 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "Express.js",
+                "reason": "importance=0.016 level=3 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 12,
+                "skill": "Snowflake",
+                "reason": "importance=0.011 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 13,
+                "skill": "Blockchain",
+                "reason": "importance=0.003 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "Computer Vision",
+                "reason": "importance=0.004 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_cv_bili_001",
+                    "title": "计算机视觉OpenCV+YOLO实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_cv_coursera_001",
+                    "title": "Deep Learning Specialization (Course 4 - CNN)",
+                    "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_1386",
+                    "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+                    "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 15,
+                "skill": "System Design",
+                "reason": "importance=0.005 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0600",
+                    "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+                    "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_bili_001",
+                    "title": "系统设计面试/分布式系统架构讲解",
+                    "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_github_001",
+                    "title": "system-design-primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 16,
+                "skill": "Azure",
+                "reason": "importance=0.008 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 17,
+                "skill": "Google Cloud",
+                "reason": "importance=0.004 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 18,
+                "skill": "Machine Learning",
+                "reason": "importance=0.089 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_1491",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_2356",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0947",
+                    "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+                    "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 19,
+                "skill": "AWS",
+                "reason": "importance=0.017 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 20,
+                "skill": "Tool Calling",
+                "reason": "importance=0.000 level=4 difficulty=intermediate hours=15",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1DfrdByE2H_tooluse",
+                    "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                    "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0001_tooluse",
+                    "title": "GenAI_Agents",
+                    "url": "https://github.com/NirDiamant/GenAI_Agents",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0004_tooluse",
+                    "title": "AgentGuide",
+                    "url": "https://github.com/adongwanai/AgentGuide",
+                    "provider": "github",
+                    "level": "advanced"
+                  }
+                ]
+              },
+              {
+                "step_no": 21,
+                "skill": "MCP",
+                "reason": "importance=0.006 level=4 difficulty=intermediate hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 22,
+                "skill": "LangGraph",
+                "reason": "importance=0.010 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 23,
+                "skill": "Multimodal",
+                "reason": "importance=0.007 level=4 difficulty=advanced hours=25",
+                "resources": []
+              },
+              {
+                "step_no": 24,
+                "skill": "Fine-tuning",
+                "reason": "importance=0.005 level=4 difficulty=advanced hours=40",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV19psRzpEPX",
+                    "title": "B站最好的提示词工程教程2025（全88集系统课）",
+                    "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_011",
+            "title": "RAG Engineer",
+            "fine_role": "RAG Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "Data Science",
+              "API",
+              "Prompt Engineering",
+              "SQL",
+              "Computer Vision",
+              "Microsoft Azure",
+              "LangChain",
+              "LangGraph",
+              "AWS",
+              "Vector Database"
+            ]
+          },
+          "final_score": 0.3885,
+          "semantic_score": 0.8729,
+          "score_breakdown": {
+            "semantic": 0.8729,
+            "coverage": 0.6771,
+            "resource_reward": 0.1786,
+            "graph_reward": 0.3229,
+            "missing_penalty": 0.3229,
+            "prereq_penalty": 0.1748,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Machine Learning",
+              "Data Science",
+              "Computer Vision",
+              "Azure",
+              "AWS",
+              "LangGraph",
+              "Microservices",
+              "Google Cloud",
+              "Java",
+              "Fine-tuning",
+              "NLP",
+              "MCP",
+              "C",
+              "Knowledge Graph",
+              "REST API",
+              "CI/CD",
+              "Data Pipeline"
+            ],
+            "overlap_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Python",
+              "Prompt Engineering",
+              "SQL",
+              "LangChain",
+              "Vector Database",
+              "Embedding",
+              "FastAPI",
+              "OpenAI API",
+              "Git",
+              "Docker"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_011",
+            "total_steps": 19,
+            "total_estimated_hours": 650,
+            "score": 0.254,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "C",
+                "reason": "importance=0.018 level=1 difficulty=beginner hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "Java",
+                "reason": "importance=0.032 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "REST API",
+                "reason": "importance=0.018 level=2 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "PyTorch",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "bili_BV1V3BPYiEwW",
+                    "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "bili_BV1YM411y7EP",
+                    "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 5,
+                "skill": "Data Science",
+                "reason": "importance=0.137 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "CI/CD",
+                "reason": "importance=0.016 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "Data Pipeline",
+                "reason": "importance=0.016 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "NLP",
+                "reason": "importance=0.029 level=3 difficulty=intermediate hours=35",
+                "resources": [
+                  {
+                    "resource_id": "github_0066",
+                    "title": "nlp-tutorial",
+                    "url": "https://github.com/graykode/nlp-tutorial",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0094",
+                    "title": "NLP_basis",
+                    "url": "https://github.com/JackKuo666/NLP_basis",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0046",
+                    "title": "Natural-Language-Processing-NLP-Learning",
+                    "url": "https://github.com/rani-sikdar/Natural-Language-Processing-NLP-Learning",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 9,
+                "skill": "Computer Vision",
+                "reason": "importance=0.068 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_cv_bili_001",
+                    "title": "计算机视觉OpenCV+YOLO实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_cv_coursera_001",
+                    "title": "Deep Learning Specialization (Course 4 - CNN)",
+                    "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_1386",
+                    "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+                    "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 10,
+                "skill": "Azure",
+                "reason": "importance=0.066 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 11,
+                "skill": "Google Cloud",
+                "reason": "importance=0.032 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 12,
+                "skill": "Machine Learning",
+                "reason": "importance=0.316 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_1491",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_2356",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0947",
+                    "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+                    "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 13,
+                "skill": "AWS",
+                "reason": "importance=0.053 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 14,
+                "skill": "Tool Calling",
+                "reason": "importance=0.000 level=4 difficulty=intermediate hours=15",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1DfrdByE2H_tooluse",
+                    "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                    "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0001_tooluse",
+                    "title": "GenAI_Agents",
+                    "url": "https://github.com/NirDiamant/GenAI_Agents",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0004_tooluse",
+                    "title": "AgentGuide",
+                    "url": "https://github.com/adongwanai/AgentGuide",
+                    "provider": "github",
+                    "level": "advanced"
+                  }
+                ]
+              },
+              {
+                "step_no": 15,
+                "skill": "MCP",
+                "reason": "importance=0.024 level=4 difficulty=intermediate hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 16,
+                "skill": "LangGraph",
+                "reason": "importance=0.053 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 17,
+                "skill": "Knowledge Graph",
+                "reason": "importance=0.018 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 18,
+                "skill": "Microservices",
+                "reason": "importance=0.034 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 19,
+                "skill": "Fine-tuning",
+                "reason": "importance=0.029 level=4 difficulty=advanced hours=40",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV19psRzpEPX",
+                    "title": "B站最好的提示词工程教程2025（全88集系统课）",
+                    "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_008",
+            "title": "LLM Inference Engineer",
+            "fine_role": "LLM Inference Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "LLM",
+              "Machine Learning",
+              "AI Agent",
+              "Fine-tuning",
+              "Python",
+              "API",
+              "NLP",
+              "RAG",
+              "Prompt Engineering",
+              "Data Science",
+              "OpenAI API",
+              "Agile",
+              "Embedding",
+              "Microsoft Azure",
+              "LangChain"
+            ]
+          },
+          "final_score": 0.3563,
+          "semantic_score": 0.8291,
+          "score_breakdown": {
+            "semantic": 0.8291,
+            "coverage": 0.6235,
+            "resource_reward": 0.2707,
+            "graph_reward": 0.3765,
+            "missing_penalty": 0.3765,
+            "prereq_penalty": 0.2064,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Machine Learning",
+              "Fine-tuning",
+              "NLP",
+              "Data Science",
+              "Agile",
+              "Azure",
+              "Kubernetes",
+              "PyTorch",
+              "AWS",
+              "Java",
+              "Model Deployment",
+              "R",
+              "C",
+              "LangGraph",
+              "Multimodal",
+              "Distributed Systems",
+              ".NET",
+              "Go",
+              "Microservices",
+              "MLOps"
+            ],
+            "overlap_skills": [
+              "LLM",
+              "AI Agent",
+              "Python",
+              "RAG",
+              "Prompt Engineering",
+              "OpenAI API",
+              "Embedding",
+              "LangChain",
+              "Git",
+              "Vector Database"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_008",
+            "total_steps": 22,
+            "total_estimated_hours": 805,
+            "score": 0.2646,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Agile",
+                "reason": "importance=0.026 level=1 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "R",
+                "reason": "importance=0.015 level=1 difficulty=beginner hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "Go",
+                "reason": "importance=0.011 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "C",
+                "reason": "importance=0.013 level=1 difficulty=beginner hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "Java",
+                "reason": "importance=0.015 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "PyTorch",
+                "reason": "importance=0.017 level=2 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "bili_BV1V3BPYiEwW",
+                    "title": "大模型训练全流程+微调实战（北大博士后卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1V3BPYiEwW/",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "bili_BV1YM411y7EP",
+                    "title": "AI技术全栈教程：PyTorch+Transformer+大模型+RAG+Agent（卢菁）",
+                    "url": "https://www.bilibili.com/video/BV1YM411y7EP/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 7,
+                "skill": "Data Science",
+                "reason": "importance=0.028 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "C#",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": ".NET",
+                "reason": "importance=0.011 level=2 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 10,
+                "skill": "Model Deployment",
+                "reason": "importance=0.015 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "Kubernetes",
+                "reason": "importance=0.017 level=3 difficulty=intermediate hours=35",
+                "resources": []
+              },
+              {
+                "step_no": 12,
+                "skill": "NLP",
+                "reason": "importance=0.055 level=3 difficulty=intermediate hours=35",
+                "resources": [
+                  {
+                    "resource_id": "github_0066",
+                    "title": "nlp-tutorial",
+                    "url": "https://github.com/graykode/nlp-tutorial",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0094",
+                    "title": "NLP_basis",
+                    "url": "https://github.com/JackKuo666/NLP_basis",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0046",
+                    "title": "Natural-Language-Processing-NLP-Learning",
+                    "url": "https://github.com/rani-sikdar/Natural-Language-Processing-NLP-Learning",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 13,
+                "skill": "System Design",
+                "reason": "importance=0.000 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0600",
+                    "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+                    "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_bili_001",
+                    "title": "系统设计面试/分布式系统架构讲解",
+                    "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_github_001",
+                    "title": "system-design-primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 14,
+                "skill": "Azure",
+                "reason": "importance=0.024 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 15,
+                "skill": "Machine Learning",
+                "reason": "importance=0.501 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_1491",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_2356",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0947",
+                    "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+                    "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 16,
+                "skill": "MLOps",
+                "reason": "importance=0.011 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 17,
+                "skill": "AWS",
+                "reason": "importance=0.015 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 18,
+                "skill": "LangGraph",
+                "reason": "importance=0.013 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 19,
+                "skill": "Multimodal",
+                "reason": "importance=0.013 level=4 difficulty=advanced hours=25",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "Microservices",
+                "reason": "importance=0.011 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 21,
+                "skill": "Distributed Systems",
+                "reason": "importance=0.011 level=4 difficulty=advanced hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 22,
+                "skill": "Fine-tuning",
+                "reason": "importance=0.094 level=4 difficulty=advanced hours=40",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV19psRzpEPX",
+                    "title": "B站最好的提示词工程教程2025（全88集系统课）",
+                    "url": "https://www.bilibili.com/video/BV19psRzpEPX/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "report_markdown": "```markdown\n# 职业策略分析报告\n\n## 1. 候选人简介\n\n- **用户ID**: resource_rich_rag\n- **技能**: PostgreSQL, LangChain, Vector Database, Embedding, Prompt Engineering, OpenAI API, AI Agent, Python, FastAPI, Docker, Git, SQL, RAG, LLM\n- **工作经验**: 1年\n- **教育背景**: 本科\n- **目标职位**: AI工程师\n- **城市**: 无\n\n## 2. Top10 粗略召回观察\n\n- **语义分数最高的职位**: RAG工程师 (0.8729)\n- **语义分数次高的职位**: LLM推理工程师 (0.8291)\n- **语义分数第三高的职位**: AI Agent工程师 (0.794)\n- **其他召回职位**: Context工程师, AI工程师, Backend Python工程师, Forward Deployed AI工程师, Machine Learning工程师, AI Evaluation工程师, Applied AI工程师\n\n## 3. 最终排名职业解读（关注前3名）\n\n- **AI Agent工程师**: 与候选人的技能最为匹配，语义分数最高，且在职业路径图中具有较好的覆盖率和资源奖励。\n- **RAG工程师**: 语义分数次高，且在职业路径图中具有较好的覆盖率和资源奖励，但技能差距较大。\n- **LLM推理工程师**: 语义分数第三高，但技能差距较大，需要学习新的技能集。\n\n## 4. 技能差距分析（针对第1推荐角色）\n\n- **缺失技能**:\n  - **机器学习**: 对AI Agent工程师至关重要，需要深入理解算法和模型。\n  - **Oracle DB**: 数据库管理技能，对于大型系统至关重要。\n  - **Go**: 编程语言，对于系统性能优化有帮助。\n  - **AWS**: 云服务技能，对于部署和扩展系统至关重要。\n  - **Express.js**: Web框架，对于构建Web服务有帮助。\n  - **数据科学**: 数据分析技能，对于AI Agent工程师至关重要。\n  - **Snowflake**: 数据仓库技术，对于数据存储和分析有帮助。\n  - **LangGraph**: 图数据库技术，对于特定应用场景有帮助。\n  - **R**: 统计分析语言，对于数据分析和可视化有帮助。\n  - **Azure**: 云服务技能，与AWS类似。\n- **重叠技能**: AI Agent, LLM, Python, SQL, LangChain, RAG, Prompt Engineering, OpenAI API, Git, Embedding\n\n## 5. 学习路径推荐（针对第1角色）\n\n- **基础技能**:\n  - Python: 基础编程语言，所有AI工程师必备。\n  - SQL: 数据库查询语言，对于数据管理至关重要。\n  - Git: 版本控制工具，对于团队协作至关重要。\n- **角色关键技能**:\n  - 机器学习: 理解和实现AI算法。\n  - Oracle DB: 数据库管理技能。\n  - Go: 编程语言，对于系统性能优化有帮助。\n  - AWS: 云服务技能，对于部署和扩展系统至关重要。\n- **可选扩展技能**:\n  - Express.js: Web框架，对于构建Web服务有帮助。\n  - 数据科学: 数据分析技能。\n  - Snowflake: 数据仓库技术。\n  - LangGraph: 图数据库技术。\n  - R: 统计分析语言。\n  - Azure: 云服务技能。\n\n## 6. 风险和注意事项\n\n- **技能学习难度**: 部分技能如Go和R需要较长时间的学习和实践。\n- **资源获取**: 部分技能的学习资源可能需要付费。\n- **职业路径变化**: AI领域发展迅速，技能需求可能发生变化。\n\n## 7. 实践性两周行动计划\n\n- **第一周**:\n  - 完成Python和SQL的复习和巩固。\n  - 开始学习Go语言的基础知识。\n- **第二周**:\n  - 深入学习Go语言的高级特性。\n  - 开始了解AWS云服务的基本概念。\n- **后续计划**:\n  - 根据学习进度和需求，逐步学习其他技能。",
+      "report_model": "glm-4-flash"
+    }
+  },
+  {
+    "sample_id": "resource_rich_llm_inference",
+    "resume_text": "I work with Python, machine learning, PyTorch, NLP, SQL, Docker and Linux. I have explored LLM inference pipelines, prompt engineering, RAG, embeddings, fine-tuning basics and model deployment. I also studied AI agent workflows and evaluation for production LLM systems.",
+    "status_code": 200,
+    "response": {
+      "profile": {
+        "user_id": "resource_rich_llm_inference",
+        "skills": [
+          "Machine Learning",
+          "Prompt Engineering",
+          "Embedding",
+          "Fine-tuning",
+          "Model Deployment",
+          "Python",
+          "PyTorch",
+          "Docker",
+          "Linux",
+          "AI Agent",
+          "NLP",
+          "SQL",
+          "LLM",
+          "RAG"
+        ],
+        "target_role": "AI Engineer",
+        "years_experience": 1.0,
+        "education": "本科",
+        "city": null,
+        "github_url": null
+      },
+      "normalized_skill_ids": [
+        "machine-learning",
+        "prompt-engineering",
+        "embedding",
+        "fine-tuning",
+        "model-deployment",
+        "python",
+        "pytorch",
+        "docker",
+        "linux",
+        "agent",
+        "nlp",
+        "sql-lang",
+        "llm",
+        "rag"
+      ],
+      "coarse_matches": [
+        {
+          "job": {
+            "job_id": "role_008",
+            "title": "LLM Inference Engineer",
+            "fine_role": "LLM Inference Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "LLM",
+              "Machine Learning",
+              "AI Agent",
+              "Fine-tuning",
+              "Python",
+              "API",
+              "NLP",
+              "RAG",
+              "Prompt Engineering",
+              "Data Science",
+              "OpenAI API",
+              "Agile",
+              "Embedding",
+              "Microsoft Azure",
+              "LangChain"
+            ]
+          },
+          "semantic_score": 0.8966
+        },
+        {
+          "job": {
+            "job_id": "role_011",
+            "title": "RAG Engineer",
+            "fine_role": "RAG Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "Data Science",
+              "API",
+              "Prompt Engineering",
+              "SQL",
+              "Computer Vision",
+              "Microsoft Azure",
+              "LangChain",
+              "LangGraph",
+              "AWS",
+              "Vector Database"
+            ]
+          },
+          "semantic_score": 0.8479
+        },
+        {
+          "job": {
+            "job_id": "role_001",
+            "title": "AI Agent Engineer",
+            "fine_role": "AI Agent Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "SQL",
+              "Oracle Database",
+              "LangChain",
+              "API",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "RAG",
+              "LangGraph"
+            ]
+          },
+          "semantic_score": 0.7912
+        },
+        {
+          "job": {
+            "job_id": "role_000",
+            "title": "Machine Learning Engineer",
+            "fine_role": "Machine Learning Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "Data Science",
+              "NLP",
+              "Python",
+              "R",
+              "Algorithms",
+              "Deep Learning",
+              "LLM",
+              "AI Agent",
+              "Model Deployment",
+              "Agile",
+              "Go",
+              "Distributed Systems",
+              "Data Pipeline",
+              "Multimodal"
+            ]
+          },
+          "semantic_score": 0.7817
+        },
+        {
+          "job": {
+            "job_id": "role_015",
+            "title": "Context Engineer",
+            "fine_role": "Context Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Go",
+              "Machine Learning",
+              "Android",
+              "iOS",
+              "Data Science",
+              "LLM",
+              "AI Agent",
+              "Amazon Aurora",
+              "Multimodal",
+              "API",
+              "Prompt Engineering",
+              "JavaScript",
+              "NLP",
+              "Scrum",
+              "Embedding"
+            ]
+          },
+          "semantic_score": 0.7396
+        },
+        {
+          "job": {
+            "job_id": "role_004",
+            "title": "AI Research Engineer",
+            "fine_role": "AI Research Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "LLM",
+              "Deep Learning",
+              "AI Agent",
+              "Algorithms",
+              "Multimodal",
+              "Python",
+              "Reinforcement Learning",
+              "Transformer",
+              "R",
+              "NLP",
+              "C++",
+              "PyTorch",
+              "Data Science",
+              "Fine-tuning"
+            ]
+          },
+          "semantic_score": 0.7362
+        },
+        {
+          "job": {
+            "job_id": "role_005",
+            "title": "AI Evaluation Engineer",
+            "fine_role": "AI Evaluation Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Machine Learning",
+              "Data Science",
+              "Go",
+              "AI Agent",
+              "RAG",
+              "LLM",
+              "R",
+              "Data Analysis",
+              "NLP",
+              "Agile",
+              "C",
+              "Excel",
+              "Apache Spark",
+              "Cybersecurity",
+              "DevOps"
+            ]
+          },
+          "semantic_score": 0.7122
+        },
+        {
+          "job": {
+            "job_id": "role_007",
+            "title": "Applied AI Engineer",
+            "fine_role": "Applied AI Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Oracle Database",
+              "AI Agent",
+              "LLM",
+              "Machine Learning"
+            ]
+          },
+          "semantic_score": 0.7019
+        },
+        {
+          "job": {
+            "job_id": "role_013",
+            "title": "Forward Deployed AI Engineer",
+            "fine_role": "Forward Deployed AI Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Snowflake",
+              "AWS",
+              "Databricks",
+              "AI Agent",
+              "LLM",
+              "Data Pipeline",
+              "Machine Learning",
+              "MCP",
+              "RAG",
+              "C",
+              "R"
+            ]
+          },
+          "semantic_score": 0.6845
+        },
+        {
+          "job": {
+            "job_id": "role_012",
+            "title": "Computer Vision Engineer",
+            "fine_role": "Computer Vision Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Computer Vision",
+              "Machine Learning",
+              "Algorithms",
+              "Deep Learning",
+              "Data Science",
+              "R",
+              "Multimodal",
+              "C",
+              "LLM",
+              "Go",
+              "TypeScript",
+              "Data Analysis",
+              "Python",
+              "API",
+              "Agile"
+            ]
+          },
+          "semantic_score": 0.6524
+        }
+      ],
+      "ranked_results": [
+        {
+          "job": {
+            "job_id": "role_008",
+            "title": "LLM Inference Engineer",
+            "fine_role": "LLM Inference Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "LLM",
+              "Machine Learning",
+              "AI Agent",
+              "Fine-tuning",
+              "Python",
+              "API",
+              "NLP",
+              "RAG",
+              "Prompt Engineering",
+              "Data Science",
+              "OpenAI API",
+              "Agile",
+              "Embedding",
+              "Microsoft Azure",
+              "LangChain"
+            ]
+          },
+          "final_score": 0.468,
+          "semantic_score": 0.8966,
+          "score_breakdown": {
+            "semantic": 0.8966,
+            "coverage": 0.8741,
+            "resource_reward": 0.0305,
+            "graph_reward": 0.1259,
+            "missing_penalty": 0.1259,
+            "prereq_penalty": 0.0588,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Data Science",
+              "Agile",
+              "OpenAI API",
+              "Azure",
+              "LangChain",
+              "Git",
+              "Kubernetes",
+              "AWS",
+              "Java",
+              "R",
+              "C",
+              "LangGraph",
+              "Multimodal",
+              "Vector Database",
+              "Distributed Systems",
+              ".NET",
+              "Go",
+              "Microservices",
+              "MLOps"
+            ],
+            "overlap_skills": [
+              "LLM",
+              "Machine Learning",
+              "AI Agent",
+              "Fine-tuning",
+              "Python",
+              "NLP",
+              "RAG",
+              "Prompt Engineering",
+              "Embedding",
+              "PyTorch",
+              "Model Deployment"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_008",
+            "total_steps": 21,
+            "total_estimated_hours": 708,
+            "score": 0.2722,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Git",
+                "reason": "importance=0.017 level=1 difficulty=beginner hours=8",
+                "resources": [
+                  {
+                    "resource_id": "manual_git_001",
+                    "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                    "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0165",
+                    "title": "Getting Started with Git and GitHub",
+                    "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0226",
+                    "title": "Version Control with Git",
+                    "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 2,
+                "skill": "Agile",
+                "reason": "importance=0.026 level=1 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "R",
+                "reason": "importance=0.015 level=1 difficulty=beginner hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "Go",
+                "reason": "importance=0.011 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "C",
+                "reason": "importance=0.013 level=1 difficulty=beginner hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "Java",
+                "reason": "importance=0.015 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "Data Science",
+                "reason": "importance=0.028 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "C#",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": ".NET",
+                "reason": "importance=0.011 level=2 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 10,
+                "skill": "OpenAI API",
+                "reason": "importance=0.026 level=3 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "Vector Database",
+                "reason": "importance=0.013 level=3 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1hMMuzEEVe",
+                    "title": "【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战",
+                    "url": "https://www.bilibili.com/video/BV1hMMuzEEVe/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1QRbnzTEyK",
+                    "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                    "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 12,
+                "skill": "LangChain",
+                "reason": "importance=0.019 level=3 difficulty=intermediate hours=25",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 13,
+                "skill": "MLOps",
+                "reason": "importance=0.011 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "Kubernetes",
+                "reason": "importance=0.017 level=3 difficulty=intermediate hours=35",
+                "resources": []
+              },
+              {
+                "step_no": 15,
+                "skill": "System Design",
+                "reason": "importance=0.000 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0600",
+                    "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+                    "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_bili_001",
+                    "title": "系统设计面试/分布式系统架构讲解",
+                    "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_github_001",
+                    "title": "system-design-primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 16,
+                "skill": "Azure",
+                "reason": "importance=0.024 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 17,
+                "skill": "AWS",
+                "reason": "importance=0.015 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 18,
+                "skill": "LangGraph",
+                "reason": "importance=0.013 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 19,
+                "skill": "Multimodal",
+                "reason": "importance=0.013 level=4 difficulty=advanced hours=25",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "Microservices",
+                "reason": "importance=0.011 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 21,
+                "skill": "Distributed Systems",
+                "reason": "importance=0.011 level=4 difficulty=advanced hours=40",
+                "resources": []
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_001",
+            "title": "AI Agent Engineer",
+            "fine_role": "AI Agent Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "SQL",
+              "Oracle Database",
+              "LangChain",
+              "API",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "RAG",
+              "LangGraph"
+            ]
+          },
+          "final_score": 0.4157,
+          "semantic_score": 0.7912,
+          "score_breakdown": {
+            "semantic": 0.7912,
+            "coverage": 0.8537,
+            "resource_reward": 0.0367,
+            "graph_reward": 0.1463,
+            "missing_penalty": 0.1463,
+            "prereq_penalty": 0.0703,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Oracle DB",
+              "LangChain",
+              "Go",
+              "AWS",
+              "Express.js",
+              "Data Science",
+              "Snowflake",
+              "LangGraph",
+              "R",
+              "Azure",
+              "Java",
+              "Multimodal",
+              "OpenAI API",
+              "TypeScript",
+              "MCP",
+              "Git",
+              "System Design",
+              "Computer Vision",
+              "Excel",
+              "Google Cloud",
+              "Blockchain"
+            ],
+            "overlap_skills": [
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "SQL",
+              "RAG",
+              "Prompt Engineering",
+              "Fine-tuning",
+              "Embedding"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_001",
+            "total_steps": 24,
+            "total_estimated_hours": 728,
+            "score": 0.2677,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Git",
+                "reason": "importance=0.005 level=1 difficulty=beginner hours=8",
+                "resources": [
+                  {
+                    "resource_id": "manual_git_001",
+                    "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                    "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0165",
+                    "title": "Getting Started with Git and GitHub",
+                    "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0226",
+                    "title": "Version Control with Git",
+                    "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 2,
+                "skill": "Excel",
+                "reason": "importance=0.004 level=1 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "R",
+                "reason": "importance=0.009 level=1 difficulty=beginner hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "Go",
+                "reason": "importance=0.018 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "JavaScript",
+                "reason": "importance=0.000 level=1 difficulty=beginner hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_js_bili_001",
+                    "title": "JavaScript入门到精通完整版（尚硅谷）",
+                    "url": "https://search.bilibili.com/all?keyword=JavaScript+入门+尚硅谷",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_htmlcss_github_001",
+                    "title": "freeCodeCamp - Responsive Web Design",
+                    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                    "provider": "github",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_js_github_001",
+                    "title": "javascript-algorithms",
+                    "url": "https://github.com/trekhleb/javascript-algorithms",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 6,
+                "skill": "Java",
+                "reason": "importance=0.007 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "TypeScript",
+                "reason": "importance=0.007 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "Data Science",
+                "reason": "importance=0.013 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": "Node.js",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0762",
+                    "title": "Server side JavaScript with Node.js",
+                    "url": "https://www.coursera.org/search?query=Server+side+JavaScript+with+Node.js",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 10,
+                "skill": "Oracle DB",
+                "reason": "importance=0.042 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "OpenAI API",
+                "reason": "importance=0.007 level=3 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 12,
+                "skill": "Express.js",
+                "reason": "importance=0.016 level=3 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 13,
+                "skill": "Snowflake",
+                "reason": "importance=0.011 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "LangChain",
+                "reason": "importance=0.036 level=3 difficulty=intermediate hours=25",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 15,
+                "skill": "Blockchain",
+                "reason": "importance=0.003 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 16,
+                "skill": "Computer Vision",
+                "reason": "importance=0.004 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_cv_bili_001",
+                    "title": "计算机视觉OpenCV+YOLO实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_cv_coursera_001",
+                    "title": "Deep Learning Specialization (Course 4 - CNN)",
+                    "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_1386",
+                    "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+                    "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 17,
+                "skill": "System Design",
+                "reason": "importance=0.005 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0600",
+                    "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+                    "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_bili_001",
+                    "title": "系统设计面试/分布式系统架构讲解",
+                    "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_github_001",
+                    "title": "system-design-primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 18,
+                "skill": "Azure",
+                "reason": "importance=0.008 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 19,
+                "skill": "Google Cloud",
+                "reason": "importance=0.004 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "AWS",
+                "reason": "importance=0.017 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 21,
+                "skill": "Tool Calling",
+                "reason": "importance=0.000 level=4 difficulty=intermediate hours=15",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1DfrdByE2H_tooluse",
+                    "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                    "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0001_tooluse",
+                    "title": "GenAI_Agents",
+                    "url": "https://github.com/NirDiamant/GenAI_Agents",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0004_tooluse",
+                    "title": "AgentGuide",
+                    "url": "https://github.com/adongwanai/AgentGuide",
+                    "provider": "github",
+                    "level": "advanced"
+                  }
+                ]
+              },
+              {
+                "step_no": 22,
+                "skill": "MCP",
+                "reason": "importance=0.006 level=4 difficulty=intermediate hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 23,
+                "skill": "LangGraph",
+                "reason": "importance=0.010 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 24,
+                "skill": "Multimodal",
+                "reason": "importance=0.007 level=4 difficulty=advanced hours=25",
+                "resources": []
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_011",
+            "title": "RAG Engineer",
+            "fine_role": "RAG Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "Data Science",
+              "API",
+              "Prompt Engineering",
+              "SQL",
+              "Computer Vision",
+              "Microsoft Azure",
+              "LangChain",
+              "LangGraph",
+              "AWS",
+              "Vector Database"
+            ]
+          },
+          "final_score": 0.3979,
+          "semantic_score": 0.8479,
+          "score_breakdown": {
+            "semantic": 0.8479,
+            "coverage": 0.7418,
+            "resource_reward": 0.0949,
+            "graph_reward": 0.2582,
+            "missing_penalty": 0.2582,
+            "prereq_penalty": 0.133,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Data Science",
+              "Computer Vision",
+              "Azure",
+              "LangChain",
+              "AWS",
+              "LangGraph",
+              "Vector Database",
+              "Microservices",
+              "FastAPI",
+              "Google Cloud",
+              "Java",
+              "OpenAI API",
+              "MCP",
+              "Git",
+              "C",
+              "Knowledge Graph",
+              "REST API",
+              "CI/CD",
+              "Data Pipeline"
+            ],
+            "overlap_skills": [
+              "RAG",
+              "AI Agent",
+              "LLM",
+              "Machine Learning",
+              "Python",
+              "Prompt Engineering",
+              "SQL",
+              "Embedding",
+              "Fine-tuning",
+              "NLP",
+              "Docker"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_011",
+            "total_steps": 20,
+            "total_estimated_hours": 593,
+            "score": 0.2502,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Git",
+                "reason": "importance=0.021 level=1 difficulty=beginner hours=8",
+                "resources": [
+                  {
+                    "resource_id": "manual_git_001",
+                    "title": "【推荐搜索】B站搜索 Git教程 版本控制",
+                    "url": "https://search.bilibili.com/all?keyword=Git+版本控制+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0165",
+                    "title": "Getting Started with Git and GitHub",
+                    "url": "https://www.coursera.org/search?query=Getting+Started+with+Git+and+GitHub",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "coursera_0226",
+                    "title": "Version Control with Git",
+                    "url": "https://www.coursera.org/search?query=Version+Control+with+Git",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 2,
+                "skill": "C",
+                "reason": "importance=0.018 level=1 difficulty=beginner hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "Java",
+                "reason": "importance=0.032 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "REST API",
+                "reason": "importance=0.018 level=2 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "FastAPI",
+                "reason": "importance=0.032 level=2 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1zV2QBtE39",
+                    "title": "黑马程序员 Python Web开发 FastAPI从入门到实战",
+                    "url": "https://www.bilibili.com/video/BV1zV2QBtE39/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1iN411X72b",
+                    "title": "从0到1学习FastAPI框架的所有知识点（慕课网官方）",
+                    "url": "https://www.bilibili.com/video/BV1iN411X72b/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1eKpizeEnb",
+                    "title": "尚学堂 FastAPI框架入门教程从0到1快速上手",
+                    "url": "https://www.bilibili.com/video/BV1eKpizeEnb/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 6,
+                "skill": "Data Science",
+                "reason": "importance=0.137 level=2 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "OpenAI API",
+                "reason": "importance=0.032 level=3 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "CI/CD",
+                "reason": "importance=0.016 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": "Data Pipeline",
+                "reason": "importance=0.016 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 10,
+                "skill": "Vector Database",
+                "reason": "importance=0.040 level=3 difficulty=intermediate hours=20",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1hMMuzEEVe",
+                    "title": "【零基础玩转RAG】全网最通俗易懂的RAG教程从入门到实战",
+                    "url": "https://www.bilibili.com/video/BV1hMMuzEEVe/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1QRbnzTEyK",
+                    "title": "2025年公认最好的大模型RAG教程（吴恩达进阶版附课件）",
+                    "url": "https://www.bilibili.com/video/BV1QRbnzTEyK/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 11,
+                "skill": "LangChain",
+                "reason": "importance=0.058 level=3 difficulty=intermediate hours=25",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1hy5YzaErV",
+                    "title": "【全网炸裂】3天速通大模型：Prompt/LangChain/RAG/Agent/微调",
+                    "url": "https://www.bilibili.com/video/BV1hy5YzaErV/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1uNk1YxEJQ",
+                    "title": "【全748集】B站最全AI大模型零基础全套教程2025最新版",
+                    "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "bili_BV1Bq421A74G",
+                    "title": "吴恩达大模型教程 DeepLearning.ai（中英双语附课件代码）",
+                    "url": "https://www.bilibili.com/video/BV1Bq421A74G/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 12,
+                "skill": "Computer Vision",
+                "reason": "importance=0.068 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_cv_bili_001",
+                    "title": "计算机视觉OpenCV+YOLO实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=计算机视觉+OpenCV+YOLO+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_cv_coursera_001",
+                    "title": "Deep Learning Specialization (Course 4 - CNN)",
+                    "url": "https://www.coursera.org/search?query=Convolutional+Neural+Networks+deeplearning.ai",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_1386",
+                    "title": "Computer Vision: YOLO Custom Object Detection with Colab GPU",
+                    "url": "https://www.coursera.org/search?query=Computer+Vision:+YOLO+Custom+Object+Detection+with+Colab+GPU",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 13,
+                "skill": "Azure",
+                "reason": "importance=0.066 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0109",
+                    "title": "Microsoft Azure Data Scientist Associate (DP-100) Exam Prep",
+                    "url": "https://www.coursera.org/search?query=Microsoft+Azure+Data+Scientist+Associate+(DP-100)+Exam+Prep",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0134",
+                    "title": "Building AI Cloud Apps with Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Building+AI+Cloud+Apps+with+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0318",
+                    "title": "Create Machine Learning Models in Microsoft Azure",
+                    "url": "https://www.coursera.org/search?query=Create+Machine+Learning+Models+in+Microsoft+Azure",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 14,
+                "skill": "Google Cloud",
+                "reason": "importance=0.032 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 15,
+                "skill": "AWS",
+                "reason": "importance=0.053 level=3 difficulty=intermediate hours=60",
+                "resources": [
+                  {
+                    "resource_id": "manual_aws_bili_001",
+                    "title": "AWS云计算从入门到SAA认证",
+                    "url": "https://search.bilibili.com/all?keyword=AWS+云计算+SAA+认证",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_aws_coursera_001",
+                    "title": "AWS Cloud Practitioner Essentials",
+                    "url": "https://www.coursera.org/search?query=AWS+Cloud+Practitioner+Essentials",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 16,
+                "skill": "Tool Calling",
+                "reason": "importance=0.000 level=4 difficulty=intermediate hours=15",
+                "resources": [
+                  {
+                    "resource_id": "bili_BV1DfrdByE2H_tooluse",
+                    "title": "2026年公认最好的AI Agent智能体教程（吴恩达Agentic AI）",
+                    "url": "https://www.bilibili.com/video/BV1DfrdByE2H/",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0001_tooluse",
+                    "title": "GenAI_Agents",
+                    "url": "https://github.com/NirDiamant/GenAI_Agents",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "github_0004_tooluse",
+                    "title": "AgentGuide",
+                    "url": "https://github.com/adongwanai/AgentGuide",
+                    "provider": "github",
+                    "level": "advanced"
+                  }
+                ]
+              },
+              {
+                "step_no": 17,
+                "skill": "MCP",
+                "reason": "importance=0.024 level=4 difficulty=intermediate hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 18,
+                "skill": "LangGraph",
+                "reason": "importance=0.053 level=4 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 19,
+                "skill": "Knowledge Graph",
+                "reason": "importance=0.018 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "Microservices",
+                "reason": "importance=0.034 level=4 difficulty=advanced hours=30",
+                "resources": []
+              }
+            ]
+          }
+        }
+      ],
+      "report_markdown": "```markdown\n# 职业策略分析报告\n\n## 1. 候选人简介\n\n- **用户ID**: resource_rich_llm_inference\n- **技能**: 机器学习、提示工程、嵌入、微调、模型部署、Python、PyTorch、Docker、Linux、AI代理、NLP、SQL、LLM、RAG\n- **工作经验**: 1年\n- **教育背景**: 本科\n- **目标职位**: AI工程师\n\n## 2. Top10 粗略召回观察\n\n- **语义分数最高的职位**: LLM推理工程师 (0.8966)\n- **语义分数次高的职位**: RAG工程师 (0.8479)\n- **语义分数第三高的职位**: AI代理工程师 (0.7912)\n- **语义分数最低的职位**: 计算机视觉工程师 (0.6524)\n- **语义分数与目标职位最接近的职位**: LLM推理工程师 (0.8966)\n\n## 3. 最终排名的职业解读（重点关注前3名）\n\n- **LLM推理工程师**: 该职位与候选人的技能最为匹配，特别是LLM、机器学习、AI代理等技能。语义分数高，表明该职位与候选人的技能和经验有很强的相关性。\n- **RAG工程师**: 该职位与候选人的技能也有较好的匹配度，尤其是在RAG、AI代理、LLM等方面。虽然语义分数略低于LLM推理工程师，但技能覆盖面较广。\n- **AI代理工程师**: 该职位与候选人的技能匹配度较高，尤其是在AI代理、LLM、机器学习等方面。语义分数相对较低，但考虑到AI代理工程师的技能需求，该职位也是一个不错的选择。\n\n## 4. 对第1个推荐角色的技能差距分析\n\n- **缺失技能**:\n  - 数据科学 (重要性高，难度中等，转换成本中等)\n  - 敏捷开发 (重要性中等，难度低，转换成本低)\n  - OpenAI API (重要性中等，难度低，转换成本低)\n  - Azure (重要性中等，难度低，转换成本低)\n  - LangChain (重要性中等，难度低，转换成本低)\n  - Git (重要性低，难度低，转换成本低)\n  - Kubernetes (重要性低，难度低，转换成本低)\n  - AWS (重要性低，难度低，转换成本低)\n  - Java (重要性低，难度低，转换成本低)\n  - R (重要性低，难度低，转换成本低)\n  - C (重要性低，难度低，转换成本低)\n  - LangGraph (重要性低，难度低，转换成本低)\n- **重叠技能**: LLM、机器学习、AI代理、微调、Python、NLP、RAG、提示工程、嵌入、PyTorch、模型部署\n\n## 5. 第1个角色的学习路径推荐\n\n- **学习路径逻辑**:\n  - **基础技能**: Git (版本控制基础)\n  - **入门技能**: 敏捷开发 (项目管理基础)\n  - **中级技能**: 数据科学 (数据分析能力)\n  - **高级技能**: OpenAI API (API使用能力)\n- **角色关键技能**: 数据科学、敏捷开发、OpenAI API\n- **可选扩展技能**: Azure、LangChain、Git、Kubernetes、AWS、Java、R、C、LangGraph\n\n## 6. 风险和注意事项\n\n- **数据科学技能的获取可能需要额外的时间和资源**。\n- **敏捷开发的学习可能需要改变现有的工作流程**。\n- **OpenAI API的学习可能需要一定的编程基础**。\n\n## 7. 实践性的下一两周行动计划\n\n- **第一周**:\n  - 完成Git基础教程的学习。\n  - 开始敏捷开发的基本概念学习。\n- **第二周**:\n  - 继续学习敏捷开发，并开始尝试在实际项目中应用。\n  - 开始初步了解数据科学的基本概念和工具。\n\n以上分析基于当前的数据和候选人的技能，实际情况可能有所不同。建议在实施行动计划时，根据个人情况进行调整。\n```",
+      "report_model": "glm-4-flash"
+    }
+  },
+  {
+    "sample_id": "resource_rich_backend_python",
+    "resume_text": "I am a Python backend engineer using Django, FastAPI, PostgreSQL, SQL, Redis, Docker, AWS, Git and Linux. I build REST APIs, CI/CD pipelines and web services, and I also use JavaScript for admin dashboards. I want a role that strengthens Python backend depth while keeping learning resources concrete and actionable.",
+    "status_code": 200,
+    "response": {
+      "profile": {
+        "user_id": "resource_rich_backend_python",
+        "skills": [
+          "PostgreSQL",
+          "REST API",
+          "JavaScript",
+          "Python",
+          "Django",
+          "FastAPI",
+          "Redis",
+          "Docker",
+          "AWS",
+          "Git",
+          "Linux",
+          "CI/CD",
+          "SQL"
+        ],
+        "target_role": "Backend Engineer",
+        "years_experience": 1.0,
+        "education": "本科",
+        "city": null,
+        "github_url": null
+      },
+      "normalized_skill_ids": [
+        "postgresql",
+        "rest",
+        "javascript",
+        "python",
+        "django",
+        "fastapi",
+        "redis",
+        "docker",
+        "aws",
+        "git",
+        "linux",
+        "cicd",
+        "sql-lang"
+      ],
+      "coarse_matches": [
+        {
+          "job": {
+            "job_id": "role_025",
+            "title": "Backend Python Engineer",
+            "fine_role": "Backend Python Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Python",
+              "API",
+              "AWS",
+              "Django",
+              "REST API",
+              "Docker",
+              "PostgreSQL",
+              "SQL",
+              "Flask",
+              "Git",
+              "Agile",
+              "JavaScript",
+              "Microservices",
+              "Kubernetes",
+              "Linux"
+            ]
+          },
+          "semantic_score": 0.8643
+        },
+        {
+          "job": {
+            "job_id": "role_027",
+            "title": "Backend Go Engineer",
+            "fine_role": "Backend Go Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Go",
+              "Docker",
+              "API",
+              "Microservices",
+              "Kubernetes",
+              "AWS",
+              "PostgreSQL",
+              "REST API",
+              "Git",
+              "Java",
+              "Python",
+              "Blockchain",
+              "JavaScript",
+              "NoSQL",
+              "Agile"
+            ]
+          },
+          "semantic_score": 0.7205
+        },
+        {
+          "job": {
+            "job_id": "role_023",
+            "title": "Backend Node.js Engineer",
+            "fine_role": "Backend Node.js Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Node.js",
+              "JavaScript",
+              "API",
+              "AWS",
+              "TypeScript",
+              "REST API",
+              "React",
+              "Microservices",
+              "MongoDB",
+              "PostgreSQL",
+              "Docker",
+              "Git",
+              "Agile",
+              "SQL",
+              "CI/CD"
+            ]
+          },
+          "semantic_score": 0.7092
+        },
+        {
+          "job": {
+            "job_id": "role_031",
+            "title": "Full-Stack JavaScript Engineer",
+            "fine_role": "Full-Stack JavaScript Engineer",
+            "coarse_role": "Frontend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "JavaScript",
+              "React",
+              "Node.js",
+              "TypeScript",
+              "AWS",
+              "CSS",
+              "HTML",
+              "API",
+              "MongoDB",
+              "Docker",
+              "PostgreSQL",
+              "Git",
+              "Redux",
+              "Agile",
+              "REST API"
+            ]
+          },
+          "semantic_score": 0.6805
+        },
+        {
+          "job": {
+            "job_id": "role_028",
+            "title": "Backend Ruby Engineer",
+            "fine_role": "Backend Ruby Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Ruby",
+              "Ruby on Rails",
+              "API",
+              "JavaScript",
+              "PostgreSQL",
+              "React",
+              "AWS",
+              "REST API",
+              "Agile",
+              "MySQL",
+              "Git",
+              "SQL",
+              "Redis",
+              "Docker",
+              "OOP"
+            ]
+          },
+          "semantic_score": 0.6782
+        },
+        {
+          "job": {
+            "job_id": "role_009",
+            "title": "Prompt Engineer",
+            "fine_role": "Prompt Engineer",
+            "coarse_role": "Emerging AI",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Java",
+              "Python",
+              "TypeScript",
+              "API",
+              "LLM",
+              "AWS",
+              "PostgreSQL",
+              "Prompt Engineering",
+              "JavaScript",
+              "Agile",
+              "React",
+              "Spring",
+              "Node.js",
+              "Microservices",
+              ".NET"
+            ]
+          },
+          "semantic_score": 0.657
+        },
+        {
+          "job": {
+            "job_id": "role_044",
+            "title": "Node.js DevOps Engineer",
+            "fine_role": "Node.js DevOps Engineer",
+            "coarse_role": "Cloud Native & DevOps",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Docker",
+              "AWS",
+              "Kubernetes",
+              "CI/CD",
+              "JavaScript",
+              "DevOps",
+              "Git",
+              "Node.js",
+              "Google Cloud",
+              "Linux",
+              "Microsoft Azure",
+              "Jenkins",
+              "PostgreSQL",
+              "TypeScript",
+              "React"
+            ]
+          },
+          "semantic_score": 0.6355
+        },
+        {
+          "job": {
+            "job_id": "role_045",
+            "title": "Cloud Java Engineer",
+            "fine_role": "Cloud Java Engineer",
+            "coarse_role": "Cloud Native & DevOps",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Java",
+              "CI/CD",
+              "Microsoft Azure",
+              "Python",
+              "Google Cloud",
+              "SQL",
+              "DevOps",
+              "Apache Kafka",
+              "Git",
+              "Agile",
+              "Jenkins",
+              "Machine Learning"
+            ]
+          },
+          "semantic_score": 0.6116
+        },
+        {
+          "job": {
+            "job_id": "role_024",
+            "title": "Backend PHP Engineer",
+            "fine_role": "Backend PHP Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "PHP",
+              "MySQL",
+              "JavaScript",
+              "Git",
+              "API",
+              "Laravel",
+              "REST API",
+              "CSS",
+              "HTML",
+              "OOP",
+              "Symfony",
+              "Docker",
+              "SQL",
+              "AWS",
+              "Agile"
+            ]
+          },
+          "semantic_score": 0.6076
+        },
+        {
+          "job": {
+            "job_id": "role_042",
+            "title": "Azure DevOps Engineer",
+            "fine_role": "Azure DevOps Engineer",
+            "coarse_role": "Cloud Native & DevOps",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "DevOps",
+              "CI/CD",
+              "Microsoft Azure",
+              "AWS",
+              "Kubernetes",
+              "Docker",
+              "Git",
+              "Linux",
+              "Agile",
+              "Google Cloud",
+              "Jenkins",
+              "PowerShell",
+              "SQL",
+              ".NET",
+              "Python"
+            ]
+          },
+          "semantic_score": 0.6061
+        }
+      ],
+      "ranked_results": [
+        {
+          "job": {
+            "job_id": "role_025",
+            "title": "Backend Python Engineer",
+            "fine_role": "Backend Python Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Python",
+              "API",
+              "AWS",
+              "Django",
+              "REST API",
+              "Docker",
+              "PostgreSQL",
+              "SQL",
+              "Flask",
+              "Git",
+              "Agile",
+              "JavaScript",
+              "Microservices",
+              "Kubernetes",
+              "Linux"
+            ]
+          },
+          "final_score": 0.362,
+          "semantic_score": 0.8643,
+          "score_breakdown": {
+            "semantic": 0.8643,
+            "coverage": 0.6377,
+            "resource_reward": 0.0665,
+            "graph_reward": 0.3623,
+            "missing_penalty": 0.3623,
+            "prereq_penalty": 0.1629,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Flask",
+              "Agile",
+              "Microservices",
+              "Kubernetes",
+              "React",
+              "NoSQL",
+              "Machine Learning",
+              "MongoDB",
+              "MySQL",
+              "OOP",
+              "DevOps",
+              "Scrum",
+              "Google Cloud",
+              "Elasticsearch",
+              "Algorithms",
+              "Go",
+              "Apache Kafka"
+            ],
+            "overlap_skills": [
+              "Python",
+              "AWS",
+              "Django",
+              "REST API",
+              "Docker",
+              "PostgreSQL",
+              "SQL",
+              "Git",
+              "JavaScript",
+              "Linux",
+              "CI/CD",
+              "Redis",
+              "FastAPI"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_025",
+            "total_steps": 18,
+            "total_estimated_hours": 498,
+            "score": 0.2149,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Agile",
+                "reason": "importance=0.201 level=1 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "Scrum",
+                "reason": "importance=0.104 level=1 difficulty=beginner hours=8",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "Go",
+                "reason": "importance=0.087 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "NoSQL",
+                "reason": "importance=0.162 level=2 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "OOP",
+                "reason": "importance=0.111 level=2 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "Flask",
+                "reason": "importance=0.262 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "MongoDB",
+                "reason": "importance=0.140 level=2 difficulty=beginner hours=20",
+                "resources": [
+                  {
+                    "resource_id": "manual_mongo_bili_001",
+                    "title": "MongoDB入门到实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=MongoDB+入门+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_mongo_github_001",
+                    "title": "awesome-mongodb",
+                    "url": "https://github.com/ramnes/awesome-mongodb",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 8,
+                "skill": "MySQL",
+                "reason": "importance=0.122 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 9,
+                "skill": "Data Structures",
+                "reason": "importance=0.000 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "github_0080",
+                    "title": "leetcode-notes",
+                    "url": "https://github.com/datawhalechina/leetcode-notes",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_js_github_001",
+                    "title": "javascript-algorithms",
+                    "url": "https://github.com/trekhleb/javascript-algorithms",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0080",
+                    "title": "Data Structures and Algorithms",
+                    "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 10,
+                "skill": "Elasticsearch",
+                "reason": "importance=0.092 level=3 difficulty=intermediate hours=25",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "Apache Kafka",
+                "reason": "importance=0.087 level=3 difficulty=intermediate hours=25",
+                "resources": [
+                  {
+                    "resource_id": "manual_kafka_bili_001",
+                    "title": "Apache Kafka消息队列从入门到实战",
+                    "url": "https://search.bilibili.com/all?keyword=Kafka+消息队列+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_kafka_github_001",
+                    "title": "awesome-kafka",
+                    "url": "https://github.com/infoslack/awesome-kafka",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 12,
+                "skill": "DevOps",
+                "reason": "importance=0.104 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 13,
+                "skill": "Kubernetes",
+                "reason": "importance=0.191 level=3 difficulty=intermediate hours=35",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "Algorithms",
+                "reason": "importance=0.088 level=3 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 15,
+                "skill": "React",
+                "reason": "importance=0.178 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_react_bili_001",
+                    "title": "React18入门到实战完整版",
+                    "url": "https://search.bilibili.com/all?keyword=React+18+入门+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_react_github_001",
+                    "title": "awesome-react",
+                    "url": "https://github.com/enaqx/awesome-react",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 16,
+                "skill": "Google Cloud",
+                "reason": "importance=0.103 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 17,
+                "skill": "Machine Learning",
+                "reason": "importance=0.143 level=3 difficulty=intermediate hours=50",
+                "resources": [
+                  {
+                    "resource_id": "coursera_1491",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_2356",
+                    "title": "Introduction to Machine Learning: Supervised Learning",
+                    "url": "https://www.coursera.org/search?query=Introduction+to+Machine+Learning:+Supervised+Learning",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0947",
+                    "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+                    "url": "https://www.coursera.org/search?query=Unsupervised+Learning,+Recommenders,+Reinforcement+Learning",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  }
+                ]
+              },
+              {
+                "step_no": 18,
+                "skill": "Microservices",
+                "reason": "importance=0.196 level=4 difficulty=advanced hours=30",
+                "resources": []
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_023",
+            "title": "Backend Node.js Engineer",
+            "fine_role": "Backend Node.js Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Node.js",
+              "JavaScript",
+              "API",
+              "AWS",
+              "TypeScript",
+              "REST API",
+              "React",
+              "Microservices",
+              "MongoDB",
+              "PostgreSQL",
+              "Docker",
+              "Git",
+              "Agile",
+              "SQL",
+              "CI/CD"
+            ]
+          },
+          "final_score": 0.2172,
+          "semantic_score": 0.7092,
+          "score_breakdown": {
+            "semantic": 0.7092,
+            "coverage": 0.4191,
+            "resource_reward": 0.1667,
+            "graph_reward": 0.5809,
+            "missing_penalty": 0.5809,
+            "prereq_penalty": 0.2654,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Node.js",
+              "TypeScript",
+              "React",
+              "Microservices",
+              "MongoDB",
+              "Agile",
+              "MySQL",
+              "Express.js",
+              "NoSQL",
+              "Kubernetes",
+              "NestJS",
+              "GraphQL",
+              "Angular",
+              "AWS Lambda",
+              "OOP",
+              "Serverless",
+              "Go",
+              "Google Cloud",
+              "Scrum",
+              "Java"
+            ],
+            "overlap_skills": [
+              "JavaScript",
+              "AWS",
+              "REST API",
+              "PostgreSQL",
+              "Docker",
+              "Git",
+              "SQL",
+              "CI/CD",
+              "Redis",
+              "Python"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_023",
+            "total_steps": 21,
+            "total_estimated_hours": 563,
+            "score": 0.1807,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Agile",
+                "reason": "importance=0.219 level=1 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "Scrum",
+                "reason": "importance=0.097 level=1 difficulty=beginner hours=8",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "Go",
+                "reason": "importance=0.102 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "Java",
+                "reason": "importance=0.090 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "NoSQL",
+                "reason": "importance=0.183 level=2 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "Cloud Computing",
+                "reason": "importance=0.000 level=2 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 7,
+                "skill": "OOP",
+                "reason": "importance=0.112 level=2 difficulty=beginner hours=15",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "MongoDB",
+                "reason": "importance=0.315 level=2 difficulty=beginner hours=20",
+                "resources": [
+                  {
+                    "resource_id": "manual_mongo_bili_001",
+                    "title": "MongoDB入门到实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=MongoDB+入门+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_mongo_github_001",
+                    "title": "awesome-mongodb",
+                    "url": "https://github.com/ramnes/awesome-mongodb",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 9,
+                "skill": "MySQL",
+                "reason": "importance=0.202 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 10,
+                "skill": "TypeScript",
+                "reason": "importance=0.418 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "Node.js",
+                "reason": "importance=0.927 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0762",
+                    "title": "Server side JavaScript with Node.js",
+                    "url": "https://www.coursera.org/search?query=Server+side+JavaScript+with+Node.js",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 12,
+                "skill": "Express.js",
+                "reason": "importance=0.190 level=3 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 13,
+                "skill": "GraphQL",
+                "reason": "importance=0.155 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "AWS Lambda",
+                "reason": "importance=0.113 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 15,
+                "skill": "Serverless",
+                "reason": "importance=0.112 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 16,
+                "skill": "NestJS",
+                "reason": "importance=0.160 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 17,
+                "skill": "Kubernetes",
+                "reason": "importance=0.168 level=3 difficulty=intermediate hours=35",
+                "resources": []
+              },
+              {
+                "step_no": 18,
+                "skill": "React",
+                "reason": "importance=0.379 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_react_bili_001",
+                    "title": "React18入门到实战完整版",
+                    "url": "https://search.bilibili.com/all?keyword=React+18+入门+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_react_github_001",
+                    "title": "awesome-react",
+                    "url": "https://github.com/enaqx/awesome-react",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 19,
+                "skill": "Angular",
+                "reason": "importance=0.125 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "Google Cloud",
+                "reason": "importance=0.097 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 21,
+                "skill": "Microservices",
+                "reason": "importance=0.329 level=4 difficulty=advanced hours=30",
+                "resources": []
+              }
+            ]
+          }
+        },
+        {
+          "job": {
+            "job_id": "role_027",
+            "title": "Backend Go Engineer",
+            "fine_role": "Backend Go Engineer",
+            "coarse_role": "Backend Development",
+            "city": null,
+            "salary_min_k": null,
+            "salary_max_k": null,
+            "required_skills": [
+              "Go",
+              "Docker",
+              "API",
+              "Microservices",
+              "Kubernetes",
+              "AWS",
+              "PostgreSQL",
+              "REST API",
+              "Git",
+              "Java",
+              "Python",
+              "Blockchain",
+              "JavaScript",
+              "NoSQL",
+              "Agile"
+            ]
+          },
+          "final_score": 0.2006,
+          "semantic_score": 0.7205,
+          "score_breakdown": {
+            "semantic": 0.7205,
+            "coverage": 0.3933,
+            "resource_reward": 0.0763,
+            "graph_reward": 0.6067,
+            "missing_penalty": 0.6067,
+            "prereq_penalty": 0.2892,
+            "hours_penalty": 1.0
+          },
+          "skill_gap": {
+            "missing_skills": [
+              "Go",
+              "Microservices",
+              "Kubernetes",
+              "Java",
+              "Blockchain",
+              "NoSQL",
+              "Agile",
+              "MongoDB",
+              "MySQL",
+              "React",
+              "Algorithms",
+              "DevOps",
+              "Node.js",
+              "Apache Kafka",
+              "C++",
+              "Google Cloud",
+              "gRPC",
+              "Distributed Systems",
+              "Data Structures"
+            ],
+            "overlap_skills": [
+              "Docker",
+              "AWS",
+              "PostgreSQL",
+              "REST API",
+              "Git",
+              "Python",
+              "JavaScript",
+              "SQL",
+              "CI/CD",
+              "Redis",
+              "Linux"
+            ],
+            "optional_skills": []
+          },
+          "path": {
+            "target_job_id": "role_027",
+            "total_steps": 21,
+            "total_estimated_hours": 710,
+            "score": 0.1437,
+            "steps": [
+              {
+                "step_no": 1,
+                "skill": "Agile",
+                "reason": "importance=0.180 level=1 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 2,
+                "skill": "Go",
+                "reason": "importance=0.916 level=1 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 3,
+                "skill": "C",
+                "reason": "importance=0.000 level=1 difficulty=beginner hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 4,
+                "skill": "Java",
+                "reason": "importance=0.218 level=1 difficulty=beginner hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 5,
+                "skill": "NoSQL",
+                "reason": "importance=0.184 level=2 difficulty=beginner hours=10",
+                "resources": []
+              },
+              {
+                "step_no": 6,
+                "skill": "MongoDB",
+                "reason": "importance=0.157 level=2 difficulty=beginner hours=20",
+                "resources": [
+                  {
+                    "resource_id": "manual_mongo_bili_001",
+                    "title": "MongoDB入门到实战教程",
+                    "url": "https://search.bilibili.com/all?keyword=MongoDB+入门+教程",
+                    "provider": "bilibili",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_mongo_github_001",
+                    "title": "awesome-mongodb",
+                    "url": "https://github.com/ramnes/awesome-mongodb",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 7,
+                "skill": "MySQL",
+                "reason": "importance=0.153 level=2 difficulty=beginner hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 8,
+                "skill": "Data Structures",
+                "reason": "importance=0.092 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "github_0080",
+                    "title": "leetcode-notes",
+                    "url": "https://github.com/datawhalechina/leetcode-notes",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_js_github_001",
+                    "title": "javascript-algorithms",
+                    "url": "https://github.com/trekhleb/javascript-algorithms",
+                    "provider": "github",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0080",
+                    "title": "Data Structures and Algorithms",
+                    "url": "https://www.coursera.org/search?query=Data+Structures+and+Algorithms",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 9,
+                "skill": "Node.js",
+                "reason": "importance=0.123 level=2 difficulty=intermediate hours=30",
+                "resources": [
+                  {
+                    "resource_id": "manual_nodejs_bili_001",
+                    "title": "Node.js+Express+MongoDB全栈开发教程",
+                    "url": "https://search.bilibili.com/all?keyword=Node.js+Express+全栈",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "coursera_0762",
+                    "title": "Server side JavaScript with Node.js",
+                    "url": "https://www.coursera.org/search?query=Server+side+JavaScript+with+Node.js",
+                    "provider": "coursera",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 10,
+                "skill": "C++",
+                "reason": "importance=0.107 level=2 difficulty=intermediate hours=60",
+                "resources": []
+              },
+              {
+                "step_no": 11,
+                "skill": "gRPC",
+                "reason": "importance=0.103 level=3 difficulty=intermediate hours=20",
+                "resources": []
+              },
+              {
+                "step_no": 12,
+                "skill": "Apache Kafka",
+                "reason": "importance=0.115 level=3 difficulty=intermediate hours=25",
+                "resources": [
+                  {
+                    "resource_id": "manual_kafka_bili_001",
+                    "title": "Apache Kafka消息队列从入门到实战",
+                    "url": "https://search.bilibili.com/all?keyword=Kafka+消息队列+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_kafka_github_001",
+                    "title": "awesome-kafka",
+                    "url": "https://github.com/infoslack/awesome-kafka",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 13,
+                "skill": "Blockchain",
+                "reason": "importance=0.199 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 14,
+                "skill": "DevOps",
+                "reason": "importance=0.126 level=3 difficulty=intermediate hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 15,
+                "skill": "Kubernetes",
+                "reason": "importance=0.345 level=3 difficulty=intermediate hours=35",
+                "resources": []
+              },
+              {
+                "step_no": 16,
+                "skill": "Algorithms",
+                "reason": "importance=0.130 level=3 difficulty=intermediate hours=40",
+                "resources": []
+              },
+              {
+                "step_no": 17,
+                "skill": "React",
+                "reason": "importance=0.153 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "manual_react_bili_001",
+                    "title": "React18入门到实战完整版",
+                    "url": "https://search.bilibili.com/all?keyword=React+18+入门+实战",
+                    "provider": "bilibili",
+                    "level": "intermediate"
+                  },
+                  {
+                    "resource_id": "manual_react_github_001",
+                    "title": "awesome-react",
+                    "url": "https://github.com/enaqx/awesome-react",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 18,
+                "skill": "System Design",
+                "reason": "importance=0.000 level=3 difficulty=intermediate hours=40",
+                "resources": [
+                  {
+                    "resource_id": "coursera_0600",
+                    "title": "Blockchain Scalability and its Foundations in Distributed Systems",
+                    "url": "https://www.coursera.org/search?query=Blockchain+Scalability+and+its+Foundations+in+Distributed+Systems",
+                    "provider": "coursera",
+                    "level": "beginner"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_bili_001",
+                    "title": "系统设计面试/分布式系统架构讲解",
+                    "url": "https://search.bilibili.com/all?keyword=系统设计+分布式+架构+面试",
+                    "provider": "bilibili",
+                    "level": "advanced"
+                  },
+                  {
+                    "resource_id": "manual_sysdesign_github_001",
+                    "title": "system-design-primer",
+                    "url": "https://github.com/donnemartin/system-design-primer",
+                    "provider": "github",
+                    "level": "intermediate"
+                  }
+                ]
+              },
+              {
+                "step_no": 19,
+                "skill": "Google Cloud",
+                "reason": "importance=0.103 level=3 difficulty=intermediate hours=50",
+                "resources": []
+              },
+              {
+                "step_no": 20,
+                "skill": "Microservices",
+                "reason": "importance=0.376 level=4 difficulty=advanced hours=30",
+                "resources": []
+              },
+              {
+                "step_no": 21,
+                "skill": "Distributed Systems",
+                "reason": "importance=0.096 level=4 difficulty=advanced hours=40",
+                "resources": []
+              }
+            ]
+          }
+        }
+      ],
+      "report_markdown": "# 职业策略分析报告\n\n## 1. 应聘者简介\n\n用户ID：resource_rich_backend_python\n技能：PostgreSQL、REST API、JavaScript、Python、Django、FastAPI、Redis、Docker、AWS、Git、Linux、CI/CD、SQL\n工作经验：1年\n学历：本科\n目标职位：后端工程师\n城市：未提供\n\n## 2. Top10 粗略召回观察\n\n1. **后端 Python 工程师**：语义分数最高，为 0.8643。\n2. **后端 Go 工程师**：语义分数为 0.7205。\n3. **后端 Node.js 工程师**：语义分数为 0.7092。\n4. **全栈 JavaScript 工程师**：语义分数为 0.6805。\n5. **后端 Ruby 工程师**：语义分数为 0.6782。\n6. **Prompt 工程师**：语义分数为 0.657。\n7. **Node.js DevOps 工程师**：语义分数为 0.6355。\n8. **云 Java 工程师**：语义分数为 0.6116。\n9. **后端 PHP 工程师**：语义分数为 0.6076。\n10. **Azure DevOps 工程师**：语义分数为 0.6061。\n\n语义相似性表明，应聘者的技能与后端开发方向高度相关，尤其是 Python 和 Node.js 相关的角色。\n\n## 3. 最终排名的职业解读（关注前3名）\n\n1. **后端 Python 工程师**：语义分数最高，且与应聘者的技能强相关，覆盖率和资源奖励得分也较高。\n2. **后端 Node.js 工程师**：虽然语义分数略低于 Python 工程师，但覆盖率和资源奖励得分较高，且 Node.js 技能与 Python 技能有一定重叠。\n3. **后端 Go 工程师**：语义分数和覆盖率均较高，但与应聘者现有技能的匹配度略低于 Python 和 Node.js。\n\n## 4. 技能差距分析（针对第1推荐角色）\n\n- **缺失技能**：Flask、Agile、Microservices、Kubernetes、React、NoSQL、Machine Learning、MongoDB、MySQL、OOP、DevOps、Scrum\n- **重叠技能**：Python、AWS、Django、REST API、Docker、PostgreSQL、SQL、Git、JavaScript、Linux、CI/CD、Redis\n\n缺失技能中，Agile、Scrum、Microservices、Kubernetes、OOP 等为角色关键技能，难度较高，需要投入较多时间和精力进行学习。\n\n## 5. 学习路径推荐（针对第1角色）\n\n- **基础技能**：Agile、Scrum\n- **角色关键技能**：Go、NoSQL、MongoDB、MySQL\n- **可选扩展**：Flask、React、Machine Learning\n\n学习路径逻辑：首先学习敏捷和Scrum，掌握项目管理和团队协作的基本原则。然后学习 Go 语言和 NoSQL 数据库，为后端开发打下基础。可选学习 Flask 和 React，提升前端开发能力。\n\n## 6. 风险和注意事项\n\n- 学习难度较高，需要投入较多时间和精力。\n- 市场对某些技能的需求可能下降，如 Flask。\n- 需要关注行业动态，及时调整学习方向。\n\n## 7. 实际下一步两周行动计划\n\n1. 制定详细的学习计划，明确每天的学习目标和任务。\n2. 利用在线资源，如 Coursera、Udemy 等，学习 Agile 和 Scrum。\n3. 参加线上或线下技术交流，拓展人脉，了解行业动态。\n4. 关注招聘信息，寻找实习或兼职机会，积累实践经验。",
+      "report_model": "glm-4-flash"
+    }
+  }
+]

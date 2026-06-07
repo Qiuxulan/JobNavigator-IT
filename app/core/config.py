@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     recommendation_top_k: int = 5
     ann_recall_top_n: int = 50
 
+    llm_base_url: str = "https://api.openai.com/v1"
+    llm_api_key: str = ""
+    llm_model: str = ""
+    llm_timeout_sec: int = 60
+
     model_config = SettingsConfigDict(env_file=".env", env_prefix="JOBNAV_")
 
 

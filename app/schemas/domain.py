@@ -88,3 +88,17 @@ class TrendSignal(BaseModel):
     long_term: Literal["up", "flat", "down"] = "up"
     confidence: float = 0.7
     evidence: list[TrendEvidence] = Field(default_factory=list)
+
+
+class CoarseMatch(BaseModel):
+    job: JobRole
+    semantic_score: float
+
+
+class CareerRankedResult(BaseModel):
+    job: JobRole
+    final_score: float
+    semantic_score: float
+    score_breakdown: dict[str, float] = Field(default_factory=dict)
+    skill_gap: SkillGap
+    path: LearningPath
