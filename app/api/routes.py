@@ -24,7 +24,7 @@ from app.services.path_planner import PathPlannerService
 from app.services.recommender import RecommenderService
 from app.services.report_generator import ReportGenerationError, generate_career_report
 from app.services.skill_norm import normalize_skill_id
-from app.services.trend import TrendService
+from app.services.trend import TrendNotFoundError, TrendService, TrendServiceError
 
 router = APIRouter(prefix="/v1")
 
@@ -137,8 +137,14 @@ def paths_generate(req: PathGenerateRequest) -> PathGenerateResponse:
 
 
 @router.get("/trends/{job_role}", response_model=TrendResponse)
-def trends(job_role: str) -> TrendResponse:
-    return TrendResponse(signal=TrendService.get_signal(job_role))
+def trends(job_role: str, horizon_months: int = 3) -> TrendResponse:
+    try:
+        signal = TrendService.get_signal(job_role, horizon_months=horizon_months)
+    except TrendNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except TrendServiceError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    return TrendResponse(signal=signal)
 
 
 @router.post("/chat/decision", response_model=ChatDecisionResponse)

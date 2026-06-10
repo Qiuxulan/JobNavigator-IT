@@ -79,14 +79,16 @@ class TrendEvidence(BaseModel):
     event_date: date
     summary: str
     impact: Literal["positive", "neutral", "negative"] = "neutral"
+    url: Optional[str] = None
 
 
 class TrendSignal(BaseModel):
-    job_role: str
-    horizon_months: int = 12
-    short_term: Literal["up", "flat", "down"] = "flat"
-    long_term: Literal["up", "flat", "down"] = "up"
-    confidence: float = 0.7
+    canonical_role: str
+    horizon_months: int = 3
+    trend_direction: Literal["up", "flat", "down"] = "flat"
+    predicted_demand_index: float = 0.5
+    confidence: float = 0.0
+    main_factors: list[str] = Field(default_factory=list)
     evidence: list[TrendEvidence] = Field(default_factory=list)
 
 

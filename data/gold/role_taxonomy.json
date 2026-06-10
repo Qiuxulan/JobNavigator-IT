@@ -1,0 +1,1439 @@
+[
+  {
+    "role_id":"role_000",
+    "category":"Emerging AI",
+    "canonical_role":"Machine Learning Engineer",
+    "aliases":[
+      "NLP Engineer",
+      "Deep Learning Engineer",
+      "Machine Learning Researcher"
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "Python",
+      "Deep Learning",
+      "Algorithms",
+      "TensorFlow",
+      "PyTorch",
+      "Data Science",
+      "NLP",
+      "Computer Vision",
+      "C++"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_001",
+    "category":"Emerging AI",
+    "canonical_role":"AI Agent Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "AI Agent",
+      "LLM",
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Oracle DB",
+      "LangChain",
+      "Go",
+      "AWS",
+      "Express.js"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_002",
+    "category":"Emerging AI",
+    "canonical_role":"AI Engineer",
+    "aliases":[
+      "AI Software Engineer",
+      "AI Engineer/Researcher",
+      "AI Specialist"
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "AI Agent",
+      "LLM",
+      "AWS",
+      "Python",
+      "R",
+      "Google Cloud",
+      "TypeScript",
+      "OpenAI API",
+      "Azure"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_003",
+    "category":"Emerging AI",
+    "canonical_role":"AI Data Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "AI Agent",
+      "Data Pipeline",
+      "Python",
+      "Machine Learning",
+      "LLM",
+      "Cybersecurity",
+      "Data Science",
+      "Data Analysis",
+      "SQL",
+      "ETL"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_004",
+    "category":"Emerging AI",
+    "canonical_role":"AI Research Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "LLM",
+      "Deep Learning",
+      "AI Agent",
+      "Algorithms",
+      "Multimodal",
+      "Python",
+      "Reinforcement Learning",
+      "Transformer",
+      "R"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_005",
+    "category":"Emerging AI",
+    "canonical_role":"AI Evaluation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "Data Science",
+      "Go",
+      "AI Agent",
+      "RAG",
+      "LLM",
+      "R",
+      "Data Analysis",
+      "NLP",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_006",
+    "category":"Emerging AI",
+    "canonical_role":"MLOps Engineer",
+    "aliases":[
+      "ML Ops Engineer",
+      "ML Engineer",
+      "Mlops Specialist"
+    ],
+    "top_skills":[
+      "MLOps",
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "DevOps",
+      "AWS",
+      "Data Science",
+      "AI Agent",
+      "Kubernetes",
+      "LLM"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_007",
+    "category":"Emerging AI",
+    "canonical_role":"Applied AI Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Oracle DB",
+      "AI Agent",
+      "LLM",
+      "Machine Learning"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_008",
+    "category":"Emerging AI",
+    "canonical_role":"LLM Inference Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "LLM",
+      "Machine Learning",
+      "AI Agent",
+      "Fine-tuning",
+      "Python",
+      "NLP",
+      "RAG",
+      "Prompt Engineering",
+      "Data Science",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_009",
+    "category":"Emerging AI",
+    "canonical_role":"Prompt Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Java",
+      "Python",
+      "TypeScript",
+      "AWS",
+      "LLM",
+      "PostgreSQL",
+      "Prompt Engineering",
+      "JavaScript",
+      "Agile",
+      "React"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_010",
+    "category":"Emerging AI",
+    "canonical_role":"AI Solutions Architect",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Azure",
+      "AWS",
+      "Blockchain",
+      "Machine Learning",
+      "AI Agent",
+      "Excel",
+      "Go",
+      "Google Cloud",
+      "Oracle DB",
+      "LLM"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_011",
+    "category":"Emerging AI",
+    "canonical_role":"RAG Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "RAG",
+      "AI Agent",
+      "LLM",
+      "Machine Learning",
+      "Python",
+      "Data Science",
+      "Prompt Engineering",
+      "SQL",
+      "Computer Vision",
+      "Azure"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_012",
+    "category":"Emerging AI",
+    "canonical_role":"Computer Vision Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Computer Vision",
+      "Machine Learning",
+      "Algorithms",
+      "Deep Learning",
+      "Data Science",
+      "R",
+      "Multimodal",
+      "C",
+      "Go",
+      "LLM"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_013",
+    "category":"Emerging AI",
+    "canonical_role":"Forward Deployed AI Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Snowflake",
+      "AWS",
+      "Databricks",
+      "AI Agent",
+      "LLM",
+      "C",
+      "Data Pipeline",
+      "Machine Learning",
+      "MCP",
+      "R"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_014",
+    "category":"Emerging AI",
+    "canonical_role":"Machine Learning Research Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "Recommendation System",
+      "Algorithms",
+      "Data Science"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_015",
+    "category":"Emerging AI",
+    "canonical_role":"Context Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Go",
+      "Machine Learning",
+      "Android",
+      "iOS",
+      "Data Science",
+      "LLM",
+      "AI Agent",
+      "Amazon Aurora",
+      "Multimodal",
+      "Prompt Engineering"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_016",
+    "category":"Emerging AI",
+    "canonical_role":"AI Infrastructure Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Oracle DB",
+      "Distributed Systems",
+      "Linux",
+      "Machine Learning"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_017",
+    "category":"AI & Data",
+    "canonical_role":"Data Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "SQL",
+      "Python",
+      "Apache Spark",
+      "AWS",
+      "ETL",
+      "Data Warehouse",
+      "Data Pipeline",
+      "Azure",
+      "Agile",
+      "Java"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_018",
+    "category":"AI & Data",
+    "canonical_role":"Business Analyst",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Agile",
+      "Jira",
+      "Scrum",
+      "Confluence",
+      "SQL",
+      "Excel",
+      "Kanban",
+      "REST API",
+      "Data Analysis",
+      "Microservices"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_019",
+    "category":"AI & Data",
+    "canonical_role":"Data Scientist",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Machine Learning",
+      "Python",
+      "Data Science",
+      "Statistics",
+      "SQL",
+      "Data Analysis",
+      "R",
+      "Algorithms",
+      "Data Visualization",
+      "AWS"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_020",
+    "category":"AI & Data",
+    "canonical_role":"Database Administrator",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "SQL",
+      "SQL Server",
+      "Oracle DB",
+      "PostgreSQL",
+      "MySQL",
+      "Linux",
+      "ETL",
+      "Python",
+      "AWS",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_021",
+    "category":"Backend Development",
+    "canonical_role":"Backend Java Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Java",
+      "Spring",
+      "REST API",
+      "Microservices",
+      "Agile",
+      "AWS",
+      "SQL",
+      "Docker",
+      "Spring Boot",
+      "Git"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_022",
+    "category":"Backend Development",
+    "canonical_role":".NET Backend Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      ".NET",
+      "C#",
+      "SQL",
+      "SQL Server",
+      "Azure",
+      "Agile",
+      "JavaScript",
+      "REST API",
+      "OOP",
+      "Angular"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_023",
+    "category":"Backend Development",
+    "canonical_role":"Backend Node.js Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Node.js",
+      "JavaScript",
+      "AWS",
+      "TypeScript",
+      "REST API",
+      "React",
+      "Microservices",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_024",
+    "category":"Backend Development",
+    "canonical_role":"Backend PHP Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Git",
+      "Laravel",
+      "REST API",
+      "CSS",
+      "HTML",
+      "OOP",
+      "Symfony"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_025",
+    "category":"Backend Development",
+    "canonical_role":"Backend Python Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Python",
+      "AWS",
+      "Django",
+      "REST API",
+      "Docker",
+      "PostgreSQL",
+      "SQL",
+      "Flask",
+      "Git",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_026",
+    "category":"Backend Development",
+    "canonical_role":"C++ Software Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "C++",
+      "Python",
+      "C",
+      "Linux",
+      "Algorithms",
+      "Java",
+      "C#",
+      "Git",
+      "Go",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_027",
+    "category":"Backend Development",
+    "canonical_role":"Backend Go Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Go",
+      "Docker",
+      "Microservices",
+      "Kubernetes",
+      "AWS",
+      "PostgreSQL",
+      "REST API",
+      "Git",
+      "Java",
+      "Python"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_028",
+    "category":"Backend Development",
+    "canonical_role":"Backend Ruby Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Ruby",
+      "Ruby on Rails",
+      "JavaScript",
+      "PostgreSQL",
+      "AWS",
+      "React",
+      "REST API",
+      "Agile",
+      "Git",
+      "MySQL"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_029",
+    "category":"Frontend Development",
+    "canonical_role":"Frontend React Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "React",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "TypeScript",
+      "Redux",
+      "Git",
+      "REST API",
+      "Agile",
+      "Webpack"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_030",
+    "category":"Frontend Development",
+    "canonical_role":"Frontend Angular Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Angular",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "Git",
+      "REST API",
+      "Sass",
+      "Agile",
+      "React"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_031",
+    "category":"Frontend Development",
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "JavaScript",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "AWS",
+      "CSS",
+      "HTML",
+      "MongoDB",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_032",
+    "category":"Frontend Development",
+    "canonical_role":"Frontend Vue Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Vue.js",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "React",
+      "Git",
+      "Sass",
+      "TypeScript",
+      "Angular",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_033",
+    "category":"Frontend Development",
+    "canonical_role":"React Native Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "React",
+      "React Native",
+      "JavaScript",
+      "Android",
+      "iOS",
+      "TypeScript",
+      "Git",
+      "Redux",
+      "REST API",
+      "CSS"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_034",
+    "category":"Frontend Development",
+    "canonical_role":"WordPress Developer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "PHP",
+      "Git",
+      "MySQL",
+      "React",
+      "jQuery",
+      "Sass",
+      "Vue.js"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_035",
+    "category":"Frontend Development",
+    "canonical_role":"Full-Stack .NET Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "JavaScript",
+      ".NET",
+      "HTML",
+      "CSS",
+      "Angular",
+      "React",
+      "TypeScript",
+      "Azure",
+      "SQL",
+      "C#"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_036",
+    "category":"Mobile Development",
+    "canonical_role":"iOS Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "iOS",
+      "Swift",
+      "C",
+      "Objective-C",
+      "Git",
+      "REST API",
+      "OOP",
+      "Agile",
+      "Android",
+      "CI\/CD"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_037",
+    "category":"Mobile Development",
+    "canonical_role":"Android Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Android",
+      "Kotlin",
+      "Java",
+      "Git",
+      "REST API",
+      "OOP",
+      "Agile",
+      "iOS",
+      "CI\/CD",
+      "Scrum"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_038",
+    "category":"Mobile Development",
+    "canonical_role":"Flutter Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Flutter",
+      "Android",
+      "iOS",
+      "Dart",
+      "Git",
+      "REST API",
+      "OOP",
+      "Swift",
+      "React",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_039",
+    "category":"Mobile Development",
+    "canonical_role":"Mobile C++ Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Android",
+      "C++",
+      "C",
+      "Linux",
+      "Java",
+      "iOS",
+      "Git",
+      "Kotlin",
+      "Algorithms",
+      "OOP"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_040",
+    "category":"Mobile Development",
+    "canonical_role":"UI\/UX Designer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "iOS",
+      "Android",
+      "Agile",
+      "Computer Vision",
+      "Go",
+      "Jira",
+      "Scrum",
+      "A\/B Testing",
+      "HTML",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_041",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"DevOps Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "DevOps",
+      "AWS",
+      "CI\/CD",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "Linux",
+      "Python",
+      "Git",
+      "Shell"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_042",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"Azure DevOps Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "DevOps",
+      "CI\/CD",
+      "Azure",
+      "AWS",
+      "Kubernetes",
+      "Docker",
+      "Git",
+      "Linux",
+      "Agile",
+      "Google Cloud"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_043",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"System Administrator",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Linux",
+      "Shell",
+      "AWS",
+      "Python",
+      "Jira",
+      "Azure",
+      "SQL",
+      "PowerShell",
+      "MySQL",
+      "Unix"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_044",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"Node.js DevOps Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Docker",
+      "AWS",
+      "Kubernetes",
+      "CI\/CD",
+      "JavaScript",
+      "DevOps",
+      "Git",
+      "Node.js",
+      "Google Cloud",
+      "Linux"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_045",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"Cloud Java Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "AWS",
+      "Kubernetes",
+      "Docker",
+      "Java",
+      "CI\/CD",
+      "Azure",
+      "Python",
+      "Google Cloud",
+      "SQL",
+      "DevOps"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_046",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"Linux C++ Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Linux",
+      "C++",
+      "C",
+      "Git",
+      "CI\/CD",
+      "Agile",
+      "Algorithms",
+      "Python",
+      "Docker",
+      "OOP"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_047",
+    "category":"Cloud Native & DevOps",
+    "canonical_role":"Cloud Security Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Azure",
+      "AWS",
+      "DevOps",
+      "Google Cloud",
+      "Cybersecurity",
+      "Linux",
+      "Agile",
+      "CI\/CD",
+      "Docker",
+      "PowerShell"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_048",
+    "category":"QA & Testing",
+    "canonical_role":"Manual QA Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "SQL",
+      "Jira",
+      "Agile",
+      "QA Automation",
+      "Scrum",
+      "Linux",
+      "Postman",
+      "Git",
+      "Python",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_049",
+    "category":"QA & Testing",
+    "canonical_role":"QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Selenium",
+      "QA Automation",
+      "Java",
+      "Agile",
+      "SQL",
+      "REST API",
+      "Git",
+      "Jenkins",
+      "CI\/CD",
+      "Scrum"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_050",
+    "category":"QA & Testing",
+    "canonical_role":"Frontend QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "JavaScript",
+      "QA Automation",
+      "TypeScript",
+      "Git",
+      "CI\/CD",
+      "Agile",
+      "Cypress",
+      "Scrum",
+      "Selenium",
+      "Jenkins"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_051",
+    "category":"QA & Testing",
+    "canonical_role":"Python QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "QA Automation",
+      "Python",
+      "CI\/CD",
+      "Agile",
+      "Git",
+      "Linux",
+      "SQL",
+      "Jenkins",
+      "Java",
+      "Scrum"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_052",
+    "category":"QA & Testing",
+    "canonical_role":".NET QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "C#",
+      "QA Automation",
+      "Selenium",
+      ".NET",
+      "Agile",
+      "SQL",
+      "Scrum",
+      "Azure",
+      "Git",
+      "CI\/CD"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_053",
+    "category":"QA & Testing",
+    "canonical_role":"API QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "JMeter",
+      "Postman",
+      "QA Automation",
+      "SQL",
+      "Java",
+      "Jira",
+      "Git",
+      "REST API",
+      "Selenium",
+      "Agile"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_054",
+    "category":"QA & Testing",
+    "canonical_role":"Mobile QA Automation Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Android",
+      "iOS",
+      "QA Automation",
+      "Appium",
+      "Git",
+      "Agile",
+      "Selenium",
+      "CI\/CD",
+      "Java",
+      "Jira"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_055",
+    "category":"Security",
+    "canonical_role":"Information Security Analyst",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Cybersecurity",
+      "Encryption",
+      "OWASP",
+      "Agile",
+      "AWS",
+      "SQL",
+      "DevOps",
+      "Linux",
+      "Excel",
+      "Azure"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_056",
+    "category":"Security",
+    "canonical_role":"Security Operations Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Cybersecurity",
+      "SIEM",
+      "Linux",
+      "Python",
+      "Azure",
+      "AWS",
+      "PowerShell",
+      "Shell",
+      "Unix",
+      "Encryption"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_057",
+    "category":"Security",
+    "canonical_role":"Penetration Testing Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Cybersecurity",
+      "Penetration Testing",
+      "Linux",
+      "OWASP",
+      "Python",
+      "Encryption",
+      "C",
+      "Java",
+      "JavaScript",
+      "Shell"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_058",
+    "category":"Security",
+    "canonical_role":"Security Software Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Cybersecurity",
+      "C++",
+      "C",
+      "Encryption",
+      "Algorithms",
+      "Python",
+      "Linux",
+      "Agile",
+      "Blockchain",
+      "Git"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_059",
+    "category":"Game Development",
+    "canonical_role":"Unity Developer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "C#",
+      "OOP",
+      "Git",
+      "Android",
+      "iOS",
+      "Agile",
+      "C++",
+      "Algorithms",
+      "WebGL",
+      "Data Structures"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_060",
+    "category":"Game Development",
+    "canonical_role":"Game C++ Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "C++",
+      "C",
+      "Algorithms",
+      "OOP",
+      "Git",
+      "Agile",
+      "C#",
+      "Data Structures",
+      "Scrum",
+      "SQL"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_061",
+    "category":"Game Development",
+    "canonical_role":"Unreal Engine Developer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "C++",
+      "Algorithms",
+      "C",
+      "OOP",
+      "Git",
+      "C#",
+      "Data Structures",
+      "Python",
+      "Agile",
+      "Jira"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_062",
+    "category":"Game Development",
+    "canonical_role":"Game Designer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Excel",
+      "Blockchain",
+      "Jira",
+      "Statistics",
+      "Agile",
+      "Express.js",
+      "Computer Vision",
+      "Go",
+      "C#",
+      "Confluence"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_063",
+    "category":"Game Development",
+    "canonical_role":"Game Technical Artist",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Git",
+      "Computer Vision",
+      "C#",
+      "Agile",
+      "Python",
+      "C++",
+      "Jira",
+      "C",
+      "Go",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_064",
+    "category":"Product & Business Analysis",
+    "canonical_role":"Project Manager",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Scrum",
+      "Agile",
+      "Jira",
+      "Kanban",
+      "Confluence",
+      "DevOps",
+      "Git",
+      "CI\/CD",
+      "JavaScript",
+      "REST API"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_065",
+    "category":"Product & Business Analysis",
+    "canonical_role":"Delivery Manager",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Agile",
+      "Jira",
+      "Confluence",
+      "Excel",
+      "Scrum",
+      "Computer Vision",
+      "Blockchain",
+      "Go",
+      "R",
+      "Kanban"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_066",
+    "category":"Product & Business Analysis",
+    "canonical_role":"Product Manager",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Agile",
+      "Scrum",
+      "Jira",
+      "Confluence",
+      "Data Analysis",
+      "Go",
+      "A\/B Testing",
+      "Blockchain",
+      "R",
+      "SQL"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_067",
+    "category":"Product & Business Analysis",
+    "canonical_role":"Scrum Master",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Scrum",
+      "Agile",
+      "Jira",
+      "Kanban",
+      "Confluence",
+      "CI\/CD",
+      "DevOps",
+      "Azure",
+      "Git",
+      "Java"
+    ],
+    "existing_jd_count":0
+  },
+  {
+    "role_id":"role_068",
+    "category":"Other IT",
+    "canonical_role":"Rust Blockchain Engineer",
+    "aliases":[
+
+    ],
+    "top_skills":[
+      "Blockchain",
+      "C",
+      "Rust",
+      "Algorithms",
+      "R",
+      "Solidity",
+      "Git",
+      "Data Structures",
+      "MATLAB",
+      "Distributed Systems"
+    ],
+    "existing_jd_count":0
+  }
+]

@@ -25,4 +25,8 @@ dependencies:
       - transformers>=4.40.0
       - accelerate>=1.1.0
       - datasets>=2.19.0
+      - pytrends>=4.9.2
+      - pyarrow>=17.0.0
+      - google-cloud-bigquery>=3.25.0
+      - db-dtypes>=1.2.0
 

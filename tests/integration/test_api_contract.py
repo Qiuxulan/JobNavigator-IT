@@ -105,6 +105,11 @@ def test_careers_rank(monkeypatch):
 
 
 def test_paths_trends_and_reserved_chat():
+    from datetime import date
+
+    from app.schemas.domain import TrendEvidence, TrendSignal
+
+    client.app.dependency_overrides = {}
     profile = client.post("/v1/profile/extract", json={"resume_text": "Python SQL", "user_id": "demo2"}).json()["profile"]
     path_resp = client.post(
         "/v1/paths/generate",
@@ -112,8 +117,35 @@ def test_paths_trends_and_reserved_chat():
     )
     assert path_resp.status_code == 200
 
+    from app.api import routes as routes_module
+
+    routes_module.TrendService.get_signal = staticmethod(
+        lambda job_role, horizon_months=3: TrendSignal(
+            canonical_role="RAG Engineer",
+            horizon_months=horizon_months,
+            trend_direction="up",
+            predicted_demand_index=0.73,
+            confidence=0.68,
+            main_factors=["JD需求指数上升", "行业机会类新闻增加"],
+            evidence=[
+                TrendEvidence(
+                    event_id="evt_001",
+                    source="gdelt",
+                    title="RAG hiring momentum",
+                    event_date=date(2026, 6, 1),
+                    summary="RAG roles and related retrieval stack coverage increased.",
+                    impact="positive",
+                    url="https://example.com/evidence",
+                )
+            ],
+        )
+    )
     trend_resp = client.get("/v1/trends/rag-engineer")
     assert trend_resp.status_code == 200
+    trend_payload = trend_resp.json()["signal"]
+    assert trend_payload["canonical_role"] == "RAG Engineer"
+    assert trend_payload["trend_direction"] == "up"
+    assert trend_payload["main_factors"]
 
     chat_resp = client.post("/v1/chat/decision", json={"query": "give me guidance", "profile": profile, "top_k": 3})
     assert chat_resp.status_code == 501
