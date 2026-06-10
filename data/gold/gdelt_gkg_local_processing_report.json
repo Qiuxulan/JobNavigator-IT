@@ -1,0 +1,908 @@
+{
+  "status": "ok",
+  "taxonomy_source": "local_json",
+  "zip_file_count": 158,
+  "batch_size": 10,
+  "sample_documents": 5000,
+  "total_bucket_records": 7363736,
+  "total_role_matches": 1726284,
+  "bucket_feature_rows": 25,
+  "gkg_feature_rows": 333,
+  "impact_rows": 333,
+  "db_write": {
+    "attempted": true,
+    "success": false,
+    "error": "No module named 'psycopg'"
+  },
+  "batches": [
+    {
+      "batch_index": 1,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\april\\20260401.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260401.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 60612
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260402.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260402.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58668
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260403.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260403.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 46153
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260404.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260404.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28261
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260405.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260405.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 24944
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260406.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260406.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 41826
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260407.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260407.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53920
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260408.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260408.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 62550
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260409.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260409.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57907
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260410.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260410.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 51443
+        }
+      ]
+    },
+    {
+      "batch_index": 2,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\april\\20260411.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260411.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30471
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260412.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260412.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 29911
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260413.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260413.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56052
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260414.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260414.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59219
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260415.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260415.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55485
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260416.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260416.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57795
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260417.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260417.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56119
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260418.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260418.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 31952
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260419.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260419.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28885
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260420.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260420.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52091
+        }
+      ]
+    },
+    {
+      "batch_index": 3,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\april\\20260421.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260421.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58327
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260422.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260422.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55399
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260423.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260423.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59681
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260424.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260424.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52984
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260425.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260425.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 31524
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260426.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260426.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 32214
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260427.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260427.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 49766
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260428.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260428.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58004
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260429.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260429.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58475
+        },
+        {
+          "zip_file": "data\\GDELT\\april\\20260430.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260430.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59036
+        }
+      ]
+    },
+    {
+      "batch_index": 4,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\feb\\20260201.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260201.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 27902
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260202.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260202.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 45507
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260203.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260203.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53993
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260204.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260204.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52329
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260205.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260205.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52558
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260206.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260206.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 50495
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260207.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260207.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28901
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260208.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260208.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 24077
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260209.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260209.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 43499
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260210.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260210.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53056
+        }
+      ]
+    },
+    {
+      "batch_index": 5,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\feb\\20260211.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260211.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52381
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260212.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260212.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52462
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260213.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260213.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 50069
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260214.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260214.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30796
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260215.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260215.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 23257
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260216.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260216.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 37660
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260217.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260217.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 47663
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260218.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260218.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 49053
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260219.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260219.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53953
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260220.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260220.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 51931
+        }
+      ]
+    },
+    {
+      "batch_index": 6,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\feb\\20260221.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260221.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30290
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260222.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260222.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 26213
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260223.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260223.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 50397
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260224.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260224.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57629
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260225.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260225.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58750
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260226.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260226.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57136
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260227.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260227.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 54781
+        },
+        {
+          "zip_file": "data\\GDELT\\feb\\20260228.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260228.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 40680
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260101.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260101.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30479
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260102.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260102.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 37078
+        }
+      ]
+    },
+    {
+      "batch_index": 7,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\jan\\20260103.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260103.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 35031
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260104.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260104.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28214
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260105.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260105.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 47220
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260106.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260106.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 51464
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260107.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260107.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57044
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260108.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260108.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55464
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260109.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260109.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52073
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260110.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260110.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 29639
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260111.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260111.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 25630
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260112.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260112.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 44657
+        }
+      ]
+    },
+    {
+      "batch_index": 8,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\jan\\20260113.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260113.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53740
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260114.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260114.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 54075
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260115.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260115.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55381
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260116.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260116.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48444
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260117.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260117.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 31622
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260118.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260118.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 25351
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260119.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260119.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 41845
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260120.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260120.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52973
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260121.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260121.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55653
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260122.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260122.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56475
+        }
+      ]
+    },
+    {
+      "batch_index": 9,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\jan\\20260123.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260123.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 51960
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260124.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260124.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 36342
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260125.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260125.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 27736
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260126.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260126.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48682
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260127.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260127.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55790
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260128.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260128.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55066
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260129.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260129.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55056
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260130.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260130.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52098
+        },
+        {
+          "zip_file": "data\\GDELT\\jan\\20260131.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260131.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 33493
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260601.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260601.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 46526
+        }
+      ]
+    },
+    {
+      "batch_index": 10,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\june\\20260602.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260602.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52709
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260603.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260603.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55299
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260604.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260604.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 54120
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260605.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260605.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48402
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260606.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260606.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 27972
+        },
+        {
+          "zip_file": "data\\GDELT\\june\\20260607.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260607.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 23710
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260301.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260301.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 35685
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260302.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260302.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56500
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260303.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260303.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 61802
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260304.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260304.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 60976
+        }
+      ]
+    },
+    {
+      "batch_index": 11,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\march\\20260305.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260305.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 67219
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260306.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260306.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57359
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260307.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260307.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 40421
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260308.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260308.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 31710
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260309.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260309.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57665
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260310.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260310.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 60463
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260311.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260311.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 60363
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260312.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260312.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 61901
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260313.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260313.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58375
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260314.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260314.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 36925
+        }
+      ]
+    },
+    {
+      "batch_index": 12,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\march\\20260315.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260315.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30223
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260316.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260316.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55680
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260317.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260317.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59167
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260318.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260318.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59869
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260319.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260319.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58669
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260320.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260320.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53415
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260321.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260321.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 34528
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260322.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260322.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 27796
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260323.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260323.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56880
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260324.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260324.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59871
+        }
+      ]
+    },
+    {
+      "batch_index": 13,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\march\\20260325.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260325.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 59497
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260326.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260326.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 60070
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260327.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260327.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 57001
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260328.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260328.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 32548
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260329.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260329.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 27465
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260330.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260330.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 49164
+        },
+        {
+          "zip_file": "data\\GDELT\\march\\20260331.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260331.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 58082
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260501.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260501.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53356
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260502.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260502.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 33661
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260503.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260503.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 26532
+        }
+      ]
+    },
+    {
+      "batch_index": 14,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\may\\20260504.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260504.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48547
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260505.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260505.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52781
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260506.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260506.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56674
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260507.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260507.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 56531
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260508.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260508.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52281
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260509.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260509.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28930
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260510.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260510.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 25382
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260511.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260511.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 46497
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260512.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260512.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 54614
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260513.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260513.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55462
+        }
+      ]
+    },
+    {
+      "batch_index": 15,
+      "file_count": 10,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\may\\20260514.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260514.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53632
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260515.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260515.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 51193
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260516.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260516.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30249
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260517.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260517.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 25340
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260518.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260518.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48415
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260519.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260519.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 52699
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260520.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260520.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 54752
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260521.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260521.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 55382
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260522.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260522.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 53308
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260523.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260523.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 29098
+        }
+      ]
+    },
+    {
+      "batch_index": 16,
+      "file_count": 8,
+      "files": [
+        {
+          "zip_file": "data\\GDELT\\may\\20260524.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260524.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 28498
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260525.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260525.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 36238
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260526.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260526.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 49865
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260527.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260527.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 48580
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260528.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260528.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 50626
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260529.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260529.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 50246
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260530.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260530.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 30642
+        },
+        {
+          "zip_file": "data\\GDELT\\may\\20260531.gkg.csv.zip",
+          "processed_jsonl": "data\\gold\\gdelt_gkg_processed\\20260531.gkg.csv.filtered.jsonl",
+          "matched_bucket_rows": 24831
+        }
+      ]
+    }
+  ],
+  "role_documents_jsonl": "D:\\Data_code\\Competition\\大创\\JobNavigator-IT\\data\\gold\\gdelt_gkg_role_documents.jsonl",
+  "raw_export_limit": 20000,
+  "sample_export_rows": 20000
+}

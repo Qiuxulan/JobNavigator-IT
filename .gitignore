@@ -233,6 +233,9 @@ Desktop.ini
 
 # Local accidental cache dirs seen in this repo
 pytest-cache-files-*/
+tests/.tmp_trend_pipeline*/
+tests/.tmp_gdelt_bigquery*/
+tmp_*.py
 
 # D-module transient outputs and old exploratory artifacts
 reports/role_*_graph_v2.html
@@ -248,15 +251,13 @@ reports/sample_resume_rankings_v2.json
 # Local data artifacts (keep folder structure with .gitkeep if needed)
 data/raw/*
 data/silver/*
-data/gold/*
+# 其余 data/gold 小文件默认放行
 data/metadata/*
+data/GDELT/*
 !data/raw/.gitkeep
 !data/silver/.gitkeep
-!data/gold/.gitkeep
 !data/metadata/.gitkeep
-# C模块: 显式放行需随仓库分发的产物（默认 data/gold/* 被忽略）
-!data/gold/skill_prerequisite_v2.json
-!data/gold/learning_resources_v1.json
+!data/GDELT/.gitkeep
 # C模块: 原始资源CSV爬取数据（共~1.9MB，供重新生成资源库，默认 data/raw/* 被忽略）
 !data/raw/bilibili_resources_C部分.csv
 !data/raw/github_resources.csv
@@ -269,3 +270,17 @@ data/metadata/*
 # C模块: 机器学习模型权重大文件（449MB，超GitHub 100MB限制，用训练脚本重新生成）
 models/st_finetuned/model.safetensors
 models/st_finetuned/1_Pooling/
+
+.env
+secrets/
+*.json
+application_default_credentials.json
+service-account-key.json
+
+# 但 data/gold 下的小文件放行（超大文件已在上面显式忽略）
+!data/gold/*.json
+!data/gold/*.parquet
+
+# 超大文件重写忽略（放在 ! 规则之后，确保生效）
+data/gold/gdelt_gkg_role_documents.jsonl
+data/gold/processed_jd_jobs.json
