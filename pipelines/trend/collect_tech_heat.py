@@ -21,6 +21,11 @@ from pipelines.trend.common import connect_db, fetch_role_taxonomy_from_db, load
 GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
 INT32_MAX = 2_147_483_647
+ARXIV_QUERY_DELAY_SEC = float(os.getenv("JOBNAV_TREND_ARXIV_QUERY_DELAY_SEC", "1.5"))
+ARXIV_RETRY_ATTEMPTS = int(os.getenv("JOBNAV_TREND_ARXIV_RETRY_ATTEMPTS", "3"))
+ARXIV_RETRY_BACKOFF_SEC = float(os.getenv("JOBNAV_TREND_ARXIV_RETRY_BACKOFF_SEC", "20"))
+ARXIV_MAX_QUERY_TERMS = int(os.getenv("JOBNAV_TREND_ARXIV_MAX_QUERY_TERMS", "10"))
+ARXIV_SKILL_CANDIDATE_LIMIT = int(os.getenv("JOBNAV_TREND_ARXIV_SKILL_CANDIDATE_LIMIT", "15"))
 FINE_GRAINED_ROLE_PATH = Path("data/gold/fine_grained_roles_v1.json")
 GENERIC_TECH_SKILL_TERMS = {
     "python",
@@ -143,6 +148,170 @@ GENERIC_ROLE_PHRASES = {
     "information",
     "delivery",
     "manual qa",
+}
+LOW_SIGNAL_ALIAS_SUBSTRINGS = {
+    "manager",
+    "expert",
+    "contracts",
+    "stand-in",
+    "grinder",
+    "setter",
+    "director",
+    "translation",
+    "quality control",
+    "safety",
+    "color expert",
+    "machine tool",
+}
+ARXIV_QUERY_STOP_TERMS = {
+    "microsoft azure",
+    "oracle database",
+    "sql server",
+    "db2",
+    "tableau",
+    "power bi",
+    "kanban",
+    "jira",
+    "confluence",
+    "cloudformation",
+    "prometheus",
+    "grafana",
+    "ansible",
+    "jenkins",
+    "github actions",
+    "github",
+    "gitlab ci",
+    "nginx",
+    "apache airflow",
+    "databricks",
+    "snowflake",
+    "hadoop",
+    "etl",
+    "fastapi",
+    "django",
+    "flask",
+    "laravel",
+    "symfony",
+    "nestjs",
+    "sass",
+    "webpack",
+    "next.js",
+    "objective-c",
+    "sqlite",
+    "appium",
+    "jmeter",
+    "postman",
+    "pytest",
+    "junit",
+}
+ARXIV_RESEARCH_KEYWORDS = {
+    "ai",
+    "agent",
+    "llm",
+    "language model",
+    "machine learning",
+    "deep learning",
+    "computer vision",
+    "multimodal",
+    "transformer",
+    "diffusion",
+    "rag",
+    "retrieval",
+    "recommendation",
+    "recommender",
+    "nlp",
+    "natural language",
+    "security",
+    "cyber",
+    "penetration",
+    "vulnerability",
+    "threat",
+    "detection",
+    "privacy",
+    "encryption",
+    "game",
+    "graphics",
+    "rendering",
+    "simulation",
+    "robot",
+}
+ARXIV_TERM_REWRITES = {
+    "rag": "retrieval augmented generation",
+    "llm": "large language model",
+    "ai agent": "large language model agents",
+    "prompt engineering": "prompt engineering",
+    "nlp": "natural language processing",
+    "recommendation system": "recommender systems",
+    "computer vision": "computer vision",
+    "multimodal": "multimodal learning",
+    "information security": "cybersecurity",
+    "security operations": "security operations center",
+    "penetration testing": "vulnerability assessment",
+    "security software": "software security",
+    "unity": "game development",
+    "unreal engine": "real-time rendering",
+    "game designer": "game design",
+    "game technical artist": "real-time rendering",
+    "pytorch": "deep learning",
+    "tensorflow": "deep learning",
+    "feature stores": "feature store",
+    "stream processing": "stream processing",
+    "query optimization": "query optimization",
+    "database systems": "database systems",
+    "transaction processing": "transaction processing",
+    "model serving": "model serving",
+    "distributed training": "distributed training",
+    "cloud security": "cloud security",
+    "zero trust": "zero trust",
+    "computer graphics": "computer graphics",
+    "shader generation": "shader generation",
+    "3d scene generation": "3d scene generation",
+}
+ARXIV_REWRITE_VALUES = {normalized for normalized in [term.strip().lower() for term in ARXIV_TERM_REWRITES.values()]}
+ARXIV_ROLE_SEED_TERMS = {
+    "AI Agent Engineer": ["large language model agents", "agentic ai", "tool-using agents"],
+    "AI Evaluation Engineer": ["llm evaluation", "model evaluation", "benchmarking large language models"],
+    "LLM Inference Engineer": ["large language model inference", "llm serving", "inference optimization"],
+    "RAG Engineer": ["retrieval augmented generation", "dense retrieval", "vector retrieval"],
+    "Computer Vision Engineer": ["computer vision", "multimodal learning", "image understanding"],
+    "Machine Learning Research Engineer": ["machine learning research", "recommender systems", "representation learning"],
+    "AI Solutions Architect": ["large language model applications", "ai systems", "multimodal systems"],
+    "Applied AI Engineer": ["applied machine learning", "foundation models", "large language model applications"],
+    "AI Infrastructure Engineer": ["machine learning systems", "distributed training", "model serving"],
+    "Forward Deployed AI Engineer": ["ai deployment", "enterprise ai systems", "agentic ai applications"],
+    "Context Engineer": ["conversational ai", "retrieval systems", "context management for llms"],
+    "MLOps Engineer": ["mlops", "machine learning systems", "model serving"],
+    "Prompt Engineer": ["prompt engineering", "in-context learning", "large language model prompting"],
+    "AI Data Engineer": ["data engineering for ai", "retrieval systems", "feature stores"],
+    "Data Engineer": ["data engineering", "stream processing", "data integration"],
+    "Database Administrator": ["database systems", "query optimization", "transaction processing", "learned database systems"],
+    "Business Analyst": ["business intelligence", "decision support systems", "analytics"],
+    "Information Security Analyst": ["cybersecurity", "network security", "threat detection"],
+    "Cloud Security Engineer": ["cloud security", "zero trust", "security architecture"],
+    "Penetration Testing Engineer": ["penetration testing", "vulnerability assessment", "security testing"],
+    "Security Operations Engineer": ["intrusion detection system", "security information and event management", "log anomaly detection", "threat detection"],
+    "Security Software Engineer": ["software security", "program analysis", "secure coding"],
+    "Game Designer": ["procedural content generation", "player behavior modeling", "game analytics", "interactive storytelling"],
+    "Game C++ Engineer": ["game engine", "real-time simulation", "physics simulation"],
+    "Game Technical Artist": ["neural rendering", "differentiable rendering", "computer graphics", "shader generation", "image stylization", "3d scene generation"],
+    "Unity Developer": ["game development", "real-time rendering", "interactive simulation"],
+    "Unreal Engine Developer": ["real-time rendering", "game engine", "virtual production"],
+    "Data Scientist": ["machine learning", "data mining", "statistical learning"],
+    "Rust Blockchain Engineer": ["smart contracts", "consensus protocols", "blockchain scalability", "distributed ledger"],
+}
+ARXIV_FRIENDLY_CATEGORIES = {
+    "Emerging AI",
+    "AI & Data",
+    "Security",
+    "Game Development",
+    "Other IT",
+}
+ARXIV_CATEGORY_ALLOWED_KEYWORDS = {
+    "Emerging AI": {"ai", "agent", "llm", "language model", "machine learning", "deep learning", "computer vision", "multimodal", "transformer", "diffusion", "rag", "retrieval", "nlp", "natural language", "recommendation", "recommender", "inference"},
+    "AI & Data": {"machine learning", "deep learning", "data mining", "statistical", "recommender", "recommendation", "nlp", "natural language", "computer vision"},
+    "Security": {"security", "cyber", "penetration", "vulnerability", "threat", "detection", "privacy", "encryption", "intrusion", "anomaly", "siem", "log"},
+    "Game Development": {"game", "graphics", "rendering", "simulation", "player", "procedural", "virtual production", "storytelling", "analytics", "behavior", "neural", "differentiable", "material", "3d"},
+    "Other IT": {"blockchain", "distributed", "cryptography", "consensus", "web3", "ledger", "contract", "scalability"},
 }
 ROLE_NAME_HINTS = {
     "prompt engineer": {"prompt engineering", "llm", "rag", "vector database", "openai api", "langchain", "langgraph", "embedding", "fine-tuning"},
@@ -549,6 +718,100 @@ def search_terms_for_api(record: dict, max_terms: int) -> list[str]:
     return deduped[:max_terms]
 
 
+def alias_is_arxiv_friendly(alias_text: str) -> bool:
+    lowered = normalized_text(alias_text)
+    if not lowered:
+        return False
+    if any(token in lowered for token in LOW_SIGNAL_ALIAS_SUBSTRINGS):
+        return False
+    if lowered in GENERIC_ALIAS_TERMS:
+        return False
+    return any(keyword_matches_text(keyword, lowered) for keyword in ARXIV_RESEARCH_KEYWORDS) or len(lowered.split()) >= 3
+
+
+def keyword_matches_text(keyword: str, text: str) -> bool:
+    normalized_keyword = normalized_text(keyword)
+    normalized_value = normalized_text(text)
+    if not normalized_keyword or not normalized_value:
+        return False
+    if " " in normalized_keyword:
+        return normalized_keyword in normalized_value
+    return normalized_keyword in set(normalized_value.split())
+
+
+def is_research_term(term: str) -> bool:
+    lowered = normalized_text(term)
+    if not lowered:
+        return False
+    if lowered in ARXIV_QUERY_STOP_TERMS:
+        return False
+    return any(keyword_matches_text(keyword, lowered) for keyword in ARXIV_RESEARCH_KEYWORDS)
+
+
+def category_term_allowed(coarse_role: str, term: str) -> bool:
+    allowed = ARXIV_CATEGORY_ALLOWED_KEYWORDS.get(coarse_role)
+    if not allowed:
+        return False
+    lowered = normalized_text(term)
+    return any(keyword_matches_text(keyword, lowered) for keyword in allowed)
+
+
+def arxiv_term_candidates(record: dict) -> list[str]:
+    canonical_role = str(record.get("canonical_role") or "").strip()
+    coarse_role = str(record.get("coarse_role") or "").strip()
+    candidates: list[str] = []
+    candidates.extend(ARXIV_ROLE_SEED_TERMS.get(canonical_role, []))
+    normalized_phrase = normalized_role_phrase(canonical_role)
+    if canonical_role and (coarse_role in ARXIV_FRIENDLY_CATEGORIES or is_research_term(canonical_role)):
+        candidates.append(canonical_role)
+    if normalized_phrase and (coarse_role in ARXIV_FRIENDLY_CATEGORIES or is_research_term(normalized_phrase)):
+        candidates.append(normalized_phrase)
+    for alias in record.get("aliases", [])[:6]:
+        alias_text = str(alias).strip()
+        if alias_is_arxiv_friendly(alias_text) and category_term_allowed(coarse_role, alias_text):
+            candidates.append(alias_text)
+    for skill in record.get("top_skills", [])[: max(ARXIV_SKILL_CANDIDATE_LIMIT, 1)]:
+        skill_text = str(skill).strip()
+        lowered = normalized_text(skill_text)
+        if not skill_text or lowered in ARXIV_QUERY_STOP_TERMS:
+            continue
+        rewritten = ARXIV_TERM_REWRITES.get(lowered, skill_text)
+        if is_research_term(rewritten) and category_term_allowed(coarse_role, rewritten):
+            candidates.append(rewritten)
+    if len(candidates) < 6:
+        for skill in record.get("top_skills", [])[: max(ARXIV_SKILL_CANDIDATE_LIMIT, 1)]:
+            skill_text = str(skill).strip()
+            lowered = normalized_text(skill_text)
+            if not skill_text or lowered in ARXIV_QUERY_STOP_TERMS:
+                continue
+            rewritten = ARXIV_TERM_REWRITES.get(lowered, skill_text)
+            if category_term_allowed(coarse_role, rewritten):
+                candidates.append(rewritten)
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for term in candidates:
+        key = normalized_text(term)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(term)
+    return deduped
+
+
+def arxiv_term_score(term: str) -> tuple[int, int, int, int]:
+    lowered = normalized_text(term)
+    research_hits = sum(1 for keyword in ARXIV_RESEARCH_KEYWORDS if keyword_matches_text(keyword, lowered))
+    has_role_suffix = int(any(lowered.endswith(suffix) for suffix in ("engineer", "developer", "architect", "analyst", "manager")))
+    token_count = len(lowered.split())
+    rewritten_bonus = int(lowered in ARXIV_REWRITE_VALUES)
+    return (research_hits, rewritten_bonus, -has_role_suffix, token_count)
+
+
+def search_terms_for_arxiv(record: dict, max_terms: int) -> list[str]:
+    ranked = sorted(arxiv_term_candidates(record), key=lambda term: arxiv_term_score(term), reverse=True)
+    return ranked[:max_terms]
+
+
 def expand_keyword_rows(keyword_rows: list[dict], keyword_role_map: dict[str, list[str]]) -> list[dict]:
     rows: list[dict] = []
     for row in keyword_rows:
@@ -743,7 +1006,7 @@ def collect_arxiv(records: list[dict]) -> list[dict]:
     rows: list[dict] = []
     cache: dict[str, dict[str, int]] = {}
     for record in records:
-        query_terms = search_terms_for_api(record, max_terms=5)
+        query_terms = search_terms_for_arxiv(record, max_terms=max(ARXIV_MAX_QUERY_TERMS, 1))
         if not query_terms:
             continue
         for term in query_terms:
@@ -756,24 +1019,32 @@ def collect_arxiv(records: list[dict]) -> list[dict]:
                     "sortOrder": "descending",
                 }
                 url = f"{ARXIV_API_URL}?{urllib.parse.urlencode(params)}"
-                try:
-                    xml_text = http_get_text(url, headers={"User-Agent": "JobNavigator-IT/tech-heat"}, timeout=30)
-                except Exception:
-                    cache[term] = {}
-                    continue
-                root = ET.fromstring(xml_text)
                 counts: dict[str, int] = {}
-                for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-                    published = entry.findtext("{http://www.w3.org/2005/Atom}published")
-                    published_date = parse_iso_date(published)
-                    if published_date is None:
-                        continue
-                    month = published_date.replace(day=1).isoformat()
-                    if month not in windows:
-                        continue
-                    counts[month] = counts.get(month, 0) + 1
+                for attempt in range(max(ARXIV_RETRY_ATTEMPTS, 1)):
+                    try:
+                        xml_text = http_get_text(url, headers={"User-Agent": "JobNavigator-IT/tech-heat"}, timeout=30)
+                        root = ET.fromstring(xml_text)
+                        for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
+                            published = entry.findtext("{http://www.w3.org/2005/Atom}published")
+                            published_date = parse_iso_date(published)
+                            if published_date is None:
+                                continue
+                            month = published_date.replace(day=1).isoformat()
+                            if month not in windows:
+                                continue
+                            counts[month] = counts.get(month, 0) + 1
+                        break
+                    except urllib.error.HTTPError as exc:
+                        if exc.code == 429 and attempt < max(ARXIV_RETRY_ATTEMPTS, 1) - 1:
+                            time.sleep(ARXIV_RETRY_BACKOFF_SEC * (attempt + 1))
+                            continue
+                        counts = {}
+                        break
+                    except Exception:
+                        counts = {}
+                        break
                 cache[term] = counts
-                time.sleep(0.2)
+                time.sleep(ARXIV_QUERY_DELAY_SEC)
             for month, count in cache[term].items():
                 rows.append(
                     {
