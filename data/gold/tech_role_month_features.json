@@ -1,0 +1,2762 @@
+[
+  {
+    "canonical_role":".NET Backend Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10706.4985552388,
+    "github_repo_stars":11.8653285999,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET Backend Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11258.6307846392,
+    "github_repo_stars":39.987594964,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET Backend Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":14051.9240037384,
+    "github_repo_stars":64.5653022111,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET Backend Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15472.7313284399,
+    "github_repo_stars":281.7319929308,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET Backend Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20927.5073644757,
+    "github_repo_stars":2.9335165436,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5863.7864726973,
+    "github_repo_stars":0.1676295168,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5838.0632970855,
+    "github_repo_stars":0.0,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7009.316017307,
+    "github_repo_stars":0.2988919424,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7467.6040355936,
+    "github_repo_stars":23.6916383709,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":".NET QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9338.9029043822,
+    "github_repo_stars":4.5539352057,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Agent Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26760.3030945794,
+    "github_repo_stars":1.7896364224,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Agent Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35740.8747496999,
+    "github_repo_stars":3.2287546658,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Agent Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":56316.1118763261,
+    "github_repo_stars":1.9444317081,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Agent Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":67429.9378486957,
+    "github_repo_stars":165.0927161103,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Agent Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":88291.4399466528,
+    "github_repo_stars":1.5010363578,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Data Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30801.627386166,
+    "github_repo_stars":1.8172677117,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Data Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":41517.430769263,
+    "github_repo_stars":3.7989070012,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"AI Data Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":65925.0598313327,
+    "github_repo_stars":1.3287431557,
+    "arxiv_paper_count":10.0
+  },
+  {
+    "canonical_role":"AI Data Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":79479.4682363334,
+    "github_repo_stars":2.6437157786,
+    "arxiv_paper_count":15.0
+  },
+  {
+    "canonical_role":"AI Data Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":104289.1380488949,
+    "github_repo_stars":0.4132240335,
+    "arxiv_paper_count":18.0
+  },
+  {
+    "canonical_role":"AI Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33530.0082065139,
+    "github_repo_stars":1.5765810886,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"AI Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":40787.9018042051,
+    "github_repo_stars":0.2919594609,
+    "arxiv_paper_count":2.5
+  },
+  {
+    "canonical_role":"AI Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":60092.4733567526,
+    "github_repo_stars":12.8608919438,
+    "arxiv_paper_count":5.5
+  },
+  {
+    "canonical_role":"AI Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":72042.5343981164,
+    "github_repo_stars":24.3202230891,
+    "arxiv_paper_count":10.0
+  },
+  {
+    "canonical_role":"AI Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":95463.2109084093,
+    "github_repo_stars":1.6641689269,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"AI Evaluation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":22444.1150716499,
+    "github_repo_stars":1.0177730421,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Evaluation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27854.2537756149,
+    "github_repo_stars":2.1888829693,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"AI Evaluation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":42786.3203296246,
+    "github_repo_stars":0.5677819215,
+    "arxiv_paper_count":14.0
+  },
+  {
+    "canonical_role":"AI Evaluation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":51574.4338588893,
+    "github_repo_stars":0.6755531877,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"AI Evaluation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":69471.3601111972,
+    "github_repo_stars":0.4144450364,
+    "arxiv_paper_count":20.0
+  },
+  {
+    "canonical_role":"AI Infrastructure Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":2825.6666666667,
+    "github_repo_stars":2.7,
+    "arxiv_paper_count":3.0
+  },
+  {
+    "canonical_role":"AI Infrastructure Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":3443.7833333333,
+    "github_repo_stars":35.0833333333,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"AI Infrastructure Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":4249.8166666667,
+    "github_repo_stars":1.1333333333,
+    "arxiv_paper_count":8.0
+  },
+  {
+    "canonical_role":"AI Infrastructure Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":4918.9333333333,
+    "github_repo_stars":0.3166666667,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"AI Infrastructure Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7495.15,
+    "github_repo_stars":3.8166666667,
+    "arxiv_paper_count":13.0
+  },
+  {
+    "canonical_role":"AI Research Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":21612.3198957437,
+    "github_repo_stars":0.5775956113,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Research Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26166.3141348911,
+    "github_repo_stars":1.1689617555,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"AI Research Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":41295.926313218,
+    "github_repo_stars":1.2350819227,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"AI Research Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":51679.612446341,
+    "github_repo_stars":2.2213113899,
+    "arxiv_paper_count":5.0
+  },
+  {
+    "canonical_role":"AI Research Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":69125.4023487298,
+    "github_repo_stars":0.6574863114,
+    "arxiv_paper_count":14.0
+  },
+  {
+    "canonical_role":"AI Solutions Architect",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8822.532694681,
+    "github_repo_stars":0.662076489,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"AI Solutions Architect",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11486.6650086137,
+    "github_repo_stars":5.5932238248,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"AI Solutions Architect",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17523.5229053183,
+    "github_repo_stars":1.0798907001,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"AI Solutions Architect",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20008.8228041091,
+    "github_repo_stars":375.7102577031,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"AI Solutions Architect",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26001.2024579589,
+    "github_repo_stars":17.7272137921,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"API QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5506.5005417431,
+    "github_repo_stars":0.5782744704,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"API QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5425.8543601229,
+    "github_repo_stars":0.07538592,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"API QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6518.5305075435,
+    "github_repo_stars":0.2235060224,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"API QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7520.7842629778,
+    "github_repo_stars":23.6916383709,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"API QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9129.1051880496,
+    "github_repo_stars":4.8891942393,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Android Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24542.7937936725,
+    "github_repo_stars":2.0948953345,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Android Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27258.8946245142,
+    "github_repo_stars":1.2678283267,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Android Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38786.8169177585,
+    "github_repo_stars":0.3937872769,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Android Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":47662.9917158507,
+    "github_repo_stars":3.0322944778,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Android Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":70273.2351924184,
+    "github_repo_stars":15.2444363125,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Applied AI Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":55602.5833333333,
+    "github_repo_stars":3.859375,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Applied AI Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":70997.125,
+    "github_repo_stars":3.3229166667,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"Applied AI Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":112369.0572916667,
+    "github_repo_stars":2.53125,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Applied AI Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":139272.8385416667,
+    "github_repo_stars":5.03125,
+    "arxiv_paper_count":8.0
+  },
+  {
+    "canonical_role":"Applied AI Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":184297.8333333333,
+    "github_repo_stars":7.8385416667,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Azure DevOps Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6086.1893355448,
+    "github_repo_stars":2.0226347774,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Azure DevOps Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6842.5088967079,
+    "github_repo_stars":4.3246520827,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Azure DevOps Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8651.5981677128,
+    "github_repo_stars":8.3255993332,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Azure DevOps Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9813.7868633841,
+    "github_repo_stars":382.812591546,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Azure DevOps Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":14032.3514528311,
+    "github_repo_stars":2.7964770173,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Go Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33166.6534765145,
+    "github_repo_stars":0.9219623423,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Go Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38342.6911724779,
+    "github_repo_stars":0.695330957,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Go Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":51885.508233331,
+    "github_repo_stars":0.5782744704,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Go Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":60654.9447724544,
+    "github_repo_stars":1.2851596286,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Go Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":83554.1331451964,
+    "github_repo_stars":29.4910479197,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Java Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24134.0386361148,
+    "github_repo_stars":0.279382528,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Java Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":25687.1435339343,
+    "github_repo_stars":0.2514442752,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Java Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":34902.4718226191,
+    "github_repo_stars":0.3352590335,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Java Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":39678.1653317255,
+    "github_repo_stars":539.9476745805,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Java Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":52305.3152186772,
+    "github_repo_stars":0.9161852416,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Node.js Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27160.7650979426,
+    "github_repo_stars":0.8660858367,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Node.js Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30036.346383842,
+    "github_repo_stars":0.4886826113,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Node.js Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38909.6873962108,
+    "github_repo_stars":1.863434099,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Node.js Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":46722.1769713117,
+    "github_repo_stars":0.1676295168,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Node.js Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":62752.3967478767,
+    "github_repo_stars":2.1955677696,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend PHP Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35382.5746415596,
+    "github_repo_stars":1.1454683646,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend PHP Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":36212.6748770005,
+    "github_repo_stars":0.9720617472,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend PHP Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":42612.6573967282,
+    "github_repo_stars":0.4106449536,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend PHP Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":53451.8246691311,
+    "github_repo_stars":889.1907717326,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend PHP Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":69648.1840026901,
+    "github_repo_stars":1.5281750654,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Python Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":54232.0356523828,
+    "github_repo_stars":0.6146415615,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Python Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":59665.1686722216,
+    "github_repo_stars":0.6869021186,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Python Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":83843.9602096268,
+    "github_repo_stars":0.5614167936,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Python Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":100372.2048807968,
+    "github_repo_stars":1.8439246845,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Python Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":123281.6972031992,
+    "github_repo_stars":0.9046310403,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Ruby Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24062.6903760327,
+    "github_repo_stars":173.8233800572,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Ruby Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27665.8261327539,
+    "github_repo_stars":0.1117530112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Ruby Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":37123.5466372749,
+    "github_repo_stars":5.1042714233,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Ruby Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":43405.5022708693,
+    "github_repo_stars":0.4190737919,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Backend Ruby Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":61169.6380921588,
+    "github_repo_stars":12.1252017134,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Business Analyst",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15188.5052730012,
+    "github_repo_stars":1.7783539688,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Business Analyst",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15379.323252504,
+    "github_repo_stars":4.1962594949,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Business Analyst",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20489.4999510868,
+    "github_repo_stars":2.6655863085,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Business Analyst",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":22285.397615899,
+    "github_repo_stars":0.3938154197,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"Business Analyst",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27004.4069174699,
+    "github_repo_stars":0.3807980441,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"C++ Software Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":116991.1965313582,
+    "github_repo_stars":0.7680651393,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"C++ Software Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":126708.3089399263,
+    "github_repo_stars":1.8097357059,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"C++ Software Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":176132.3407541819,
+    "github_repo_stars":5.6994035703,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"C++ Software Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":212413.9684298841,
+    "github_repo_stars":58.9159980457,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"C++ Software Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":288731.1585788024,
+    "github_repo_stars":58.4680387506,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Java Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10050.6323560798,
+    "github_repo_stars":4.0563501308,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Java Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11329.9914350569,
+    "github_repo_stars":0.0,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Java Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15162.9268026116,
+    "github_repo_stars":4.0789849082,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Java Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17284.2783373982,
+    "github_repo_stars":0.9135335039,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Java Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24985.3546800049,
+    "github_repo_stars":13.6200386349,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Cloud Security Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5016.3550282942,
+    "github_repo_stars":4.6962782074,
+    "arxiv_paper_count":2.307826114
+  },
+  {
+    "canonical_role":"Cloud Security Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5562.6797936992,
+    "github_repo_stars":34.0232984162,
+    "arxiv_paper_count":3.4626089116
+  },
+  {
+    "canonical_role":"Cloud Security Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7269.3486608166,
+    "github_repo_stars":7.0821102711,
+    "arxiv_paper_count":5.0782611395
+  },
+  {
+    "canonical_role":"Cloud Security Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8174.9467593084,
+    "github_repo_stars":382.0108110533,
+    "arxiv_paper_count":4.7704350256
+  },
+  {
+    "canonical_role":"Cloud Security Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11140.2841902073,
+    "github_repo_stars":0.5028885503,
+    "arxiv_paper_count":4.0782611395
+  },
+  {
+    "canonical_role":"Computer Vision Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":22179.1026763093,
+    "github_repo_stars":1.0576531846,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Computer Vision Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24908.9636232916,
+    "github_repo_stars":22.3095731963,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Computer Vision Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":37251.0118393171,
+    "github_repo_stars":1.09048523,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Computer Vision Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":45238.2274621723,
+    "github_repo_stars":1.8353141593,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Computer Vision Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":59524.0121769932,
+    "github_repo_stars":0.8971042004,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Context Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":29788.3333333333,
+    "github_repo_stars":6.6666666667,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Context Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35196.1666666667,
+    "github_repo_stars":0.1666666667,
+    "arxiv_paper_count":5.0
+  },
+  {
+    "canonical_role":"Context Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":49401.8333333333,
+    "github_repo_stars":5.6666666667,
+    "arxiv_paper_count":13.0
+  },
+  {
+    "canonical_role":"Context Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":61140.1666666667,
+    "github_repo_stars":9.5,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"Context Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":80368.5,
+    "github_repo_stars":0.5,
+    "arxiv_paper_count":13.0
+  },
+  {
+    "canonical_role":"Data Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5130.7466898997,
+    "github_repo_stars":3.943940463,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Data Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5273.8790549067,
+    "github_repo_stars":0.2280584248,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Data Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7170.8422798403,
+    "github_repo_stars":2.9181548728,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Data Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8150.6628388288,
+    "github_repo_stars":53.1625457058,
+    "arxiv_paper_count":13.0
+  },
+  {
+    "canonical_role":"Data Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10006.8172555777,
+    "github_repo_stars":1.2677872585,
+    "arxiv_paper_count":34.0
+  },
+  {
+    "canonical_role":"Data Scientist",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8808.2419246266,
+    "github_repo_stars":0.7269326814,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Data Scientist",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8907.8005345803,
+    "github_repo_stars":46.7642315762,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Data Scientist",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11942.4789869872,
+    "github_repo_stars":1.2346634068,
+    "arxiv_paper_count":5.0
+  },
+  {
+    "canonical_role":"Data Scientist",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13116.7365807437,
+    "github_repo_stars":0.5077307254,
+    "arxiv_paper_count":8.0
+  },
+  {
+    "canonical_role":"Data Scientist",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":16158.1769163579,
+    "github_repo_stars":0.3046384353,
+    "arxiv_paper_count":14.0197356877
+  },
+  {
+    "canonical_role":"Database Administrator",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38481.9199666205,
+    "github_repo_stars":5.9494269698,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Database Administrator",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":41376.4312401481,
+    "github_repo_stars":1.3410361342,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Database Administrator",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":53984.6607701208,
+    "github_repo_stars":3.5871769339,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Database Administrator",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":63216.2237203698,
+    "github_repo_stars":99.3882001898,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Database Administrator",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":84114.4355032342,
+    "github_repo_stars":0.8855952511,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Delivery Manager",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7672.1320141538,
+    "github_repo_stars":0.407583787,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Delivery Manager",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8592.1519914158,
+    "github_repo_stars":3.1424357063,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Delivery Manager",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11579.6665503775,
+    "github_repo_stars":1.2272291455,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Delivery Manager",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13195.7577937075,
+    "github_repo_stars":0.4855183169,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Delivery Manager",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17453.5151765161,
+    "github_repo_stars":0.5724084156,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"DevOps Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15614.6581756336,
+    "github_repo_stars":3.5481581051,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"DevOps Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17661.1417532364,
+    "github_repo_stars":0.3099725185,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"DevOps Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":23337.7355721946,
+    "github_repo_stars":10.1442375026,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"DevOps Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26369.9671552057,
+    "github_repo_stars":2.0669570817,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"DevOps Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":37426.1445430447,
+    "github_repo_stars":2.8465764222,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Flutter Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26346.77776343,
+    "github_repo_stars":0.6874224246,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Flutter Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27454.2903537254,
+    "github_repo_stars":38.1167956313,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Flutter Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35384.0740795364,
+    "github_repo_stars":747.2213958624,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Flutter Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":41255.148836113,
+    "github_repo_stars":0.6198071041,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Flutter Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":56658.3075266339,
+    "github_repo_stars":11.8344954124,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Forward Deployed AI Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":14797.3299641908,
+    "github_repo_stars":1.6289130184,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Forward Deployed AI Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17860.0803973663,
+    "github_repo_stars":0.9937622733,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Forward Deployed AI Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27788.315871549,
+    "github_repo_stars":3.4526972392,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Forward Deployed AI Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":34774.2854915098,
+    "github_repo_stars":134.2023795772,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Forward Deployed AI Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":45366.2332216703,
+    "github_repo_stars":1.1446228486,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Angular Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19744.4282155254,
+    "github_repo_stars":1.1734066174,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Angular Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":34750.8023025222,
+    "github_repo_stars":0.2261577601,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Angular Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24008.7669336417,
+    "github_repo_stars":31.5702256593,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Angular Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26326.7547975168,
+    "github_repo_stars":2.8692111996,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Angular Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33801.3786971921,
+    "github_repo_stars":0.3184013568,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7174.9845529108,
+    "github_repo_stars":3.0173313019,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8003.594112006,
+    "github_repo_stars":0.5028885503,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10932.4449673502,
+    "github_repo_stars":1.3410361342,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":12775.3918130265,
+    "github_repo_stars":69.3148051864,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":18240.6475384298,
+    "github_repo_stars":6.0346626039,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend React Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":39563.7606390548,
+    "github_repo_stars":1.2319348607,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend React Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":64804.8380244757,
+    "github_repo_stars":0.4217255296,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend React Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":54962.2549729501,
+    "github_repo_stars":51.8727165898,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend React Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":63372.6197157055,
+    "github_repo_stars":1.3489913473,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend React Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":81543.618922209,
+    "github_repo_stars":0.6536603904,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Vue Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9093.0077915423,
+    "github_repo_stars":1.089591859,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Vue Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":22799.301427671,
+    "github_repo_stars":1.3157496191,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Vue Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10253.2672135727,
+    "github_repo_stars":31.4025961425,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Vue Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11133.2124996912,
+    "github_repo_stars":0.505540288,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Frontend Vue Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13820.9292085919,
+    "github_repo_stars":1844.2847564476,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack .NET Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19281.6699262266,
+    "github_repo_stars":1.4164220542,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack .NET Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":34147.2004685662,
+    "github_repo_stars":0.0,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack .NET Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":23502.5051090603,
+    "github_repo_stars":31.7963834194,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack .NET Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":25697.1690809072,
+    "github_repo_stars":25.0885510106,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack .NET Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":32918.0926438507,
+    "github_repo_stars":0.3937872769,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":75192.3716528604,
+    "github_repo_stars":0.7290463104,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":97894.3338791134,
+    "github_repo_stars":0.6368027137,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":108440.4686698427,
+    "github_repo_stars":31.7963834194,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":124191.7666474959,
+    "github_repo_stars":0.1117530112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Full-Stack JavaScript Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":165315.0430532816,
+    "github_repo_stars":0.1676295168,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game C++ Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":89225.9234736496,
+    "github_repo_stars":0.7448289293,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game C++ Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":97534.5950376346,
+    "github_repo_stars":0.3950357722,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game C++ Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":135594.0811343837,
+    "github_repo_stars":8.9685793658,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game C++ Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":164254.643327189,
+    "github_repo_stars":54.2045749422,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game C++ Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":225562.8632356575,
+    "github_repo_stars":25.1433785673,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game Designer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":75261.222711433,
+    "github_repo_stars":1.9120791204,
+    "arxiv_paper_count":3.0
+  },
+  {
+    "canonical_role":"Game Designer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":78005.5441702235,
+    "github_repo_stars":4.4856526893,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"Game Designer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":100390.312851855,
+    "github_repo_stars":8.1389990296,
+    "arxiv_paper_count":8.0
+  },
+  {
+    "canonical_role":"Game Designer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":115483.0678734777,
+    "github_repo_stars":23.7024382875,
+    "arxiv_paper_count":5.0
+  },
+  {
+    "canonical_role":"Game Designer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":154845.5049061905,
+    "github_repo_stars":278.3980448637,
+    "arxiv_paper_count":8.0
+  },
+  {
+    "canonical_role":"Game Technical Artist",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":120387.2429602888,
+    "github_repo_stars":0.3682310469,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game Technical Artist",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":131673.3527075812,
+    "github_repo_stars":12.5198555957,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game Technical Artist",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":183129.8729241877,
+    "github_repo_stars":13.4097472924,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game Technical Artist",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":221166.1151624549,
+    "github_repo_stars":75.8862815884,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Game Technical Artist",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":302599.7664259928,
+    "github_repo_stars":10.0032490975,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Information Security Analyst",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13167.6045225981,
+    "github_repo_stars":25.4720737694,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Information Security Analyst",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15043.8751201621,
+    "github_repo_stars":21.6232417896,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Information Security Analyst",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19117.0121305737,
+    "github_repo_stars":3.7008752921,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Information Security Analyst",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":22208.6563486985,
+    "github_repo_stars":0.7538820039,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Information Security Analyst",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30514.064436741,
+    "github_repo_stars":0.0,
+    "arxiv_paper_count":20.0
+  },
+  {
+    "canonical_role":"LLM Inference Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":43275.4579027138,
+    "github_repo_stars":1.3195628005,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"LLM Inference Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":52594.6050610628,
+    "github_repo_stars":0.9201092999,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"LLM Inference Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":82447.1127993351,
+    "github_repo_stars":3.4178142111,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"LLM Inference Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":103540.6461435551,
+    "github_repo_stars":4.3719124349,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"LLM Inference Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":138496.6839414945,
+    "github_repo_stars":0.0844808777,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Linux C++ Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":89993.443667459,
+    "github_repo_stars":1.2736555216,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Linux C++ Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":98417.0755664212,
+    "github_repo_stars":0.7757239499,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Linux C++ Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":136530.1712218157,
+    "github_repo_stars":336.8213748803,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Linux C++ Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":165281.8881818552,
+    "github_repo_stars":51.8484450968,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Linux C++ Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":226995.1945559954,
+    "github_repo_stars":4.2096656488,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"MLOps Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17322.173048119,
+    "github_repo_stars":0.9050743286,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"MLOps Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":18141.7037208937,
+    "github_repo_stars":3.4966418561,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"MLOps Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":25563.3164789022,
+    "github_repo_stars":1.7517567651,
+    "arxiv_paper_count":5.0
+  },
+  {
+    "canonical_role":"MLOps Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30773.1391317696,
+    "github_repo_stars":0.9197499948,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"MLOps Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":40518.2386575812,
+    "github_repo_stars":0.6204527009,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Machine Learning Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":28320.504128968,
+    "github_repo_stars":1.8151675741,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"Machine Learning Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":28806.8511000754,
+    "github_repo_stars":1.3741426363,
+    "arxiv_paper_count":4.75
+  },
+  {
+    "canonical_role":"Machine Learning Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":39780.0314583345,
+    "github_repo_stars":2.0689789609,
+    "arxiv_paper_count":2.25
+  },
+  {
+    "canonical_role":"Machine Learning Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":45998.046993171,
+    "github_repo_stars":0.8106897896,
+    "arxiv_paper_count":3.25
+  },
+  {
+    "canonical_role":"Machine Learning Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":58115.0606637151,
+    "github_repo_stars":0.5634528467,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"Machine Learning Research Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6956.2105263158,
+    "github_repo_stars":0.8,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Machine Learning Research Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6167.45,
+    "github_repo_stars":5.3,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Machine Learning Research Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8844.75,
+    "github_repo_stars":5.5,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Machine Learning Research Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10495.75,
+    "github_repo_stars":358.55,
+    "arxiv_paper_count":18.0
+  },
+  {
+    "canonical_role":"Machine Learning Research Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":12900.5,
+    "github_repo_stars":20.1,
+    "arxiv_paper_count":26.0
+  },
+  {
+    "canonical_role":"Manual QA Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11618.3465294843,
+    "github_repo_stars":0.4225957528,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Manual QA Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11575.2753787454,
+    "github_repo_stars":0.4561168497,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Manual QA Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13933.6778917128,
+    "github_repo_stars":0.3380766023,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Manual QA Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15884.6975258269,
+    "github_repo_stars":35.1036205349,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Manual QA Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19039.5172137109,
+    "github_repo_stars":4.2680738219,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile C++ Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":112494.1535544615,
+    "github_repo_stars":0.7822710783,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile C++ Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":122648.5261366612,
+    "github_repo_stars":0.8882469888,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile C++ Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":169050.2699304243,
+    "github_repo_stars":9.7557537012,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile C++ Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":204356.8715257436,
+    "github_repo_stars":58.5027013544,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile C++ Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":282429.4310002868,
+    "github_repo_stars":312.5855406847,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10567.7332382529,
+    "github_repo_stars":0.1117530112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11030.4576616334,
+    "github_repo_stars":0.1117530112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13549.7337309909,
+    "github_repo_stars":0.9135335039,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":15180.7968674637,
+    "github_repo_stars":17.5452227558,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Mobile QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20623.9002101377,
+    "github_repo_stars":20.6463688161,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Node.js DevOps Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19954.0264273395,
+    "github_repo_stars":4.4337533562,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Node.js DevOps Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19671.2997378842,
+    "github_repo_stars":0.2625248512,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Node.js DevOps Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27462.3719170973,
+    "github_repo_stars":4.106923161,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Node.js DevOps Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":32111.6639785964,
+    "github_repo_stars":1.1734066174,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Node.js DevOps Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":48119.7732177001,
+    "github_repo_stars":0.1117530112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Penetration Testing Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5010.0947650224,
+    "github_repo_stars":16.4032237007,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Penetration Testing Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5696.2257857642,
+    "github_repo_stars":69.5651588633,
+    "arxiv_paper_count":3.0
+  },
+  {
+    "canonical_role":"Penetration Testing Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7609.8620187964,
+    "github_repo_stars":11.5405496286,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Penetration Testing Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8772.9589449363,
+    "github_repo_stars":1.3093272199,
+    "arxiv_paper_count":4.0
+  },
+  {
+    "canonical_role":"Penetration Testing Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":12222.2930846095,
+    "github_repo_stars":5.8747494348,
+    "arxiv_paper_count":12.8
+  },
+  {
+    "canonical_role":"Product Manager",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":10436.079411654,
+    "github_repo_stars":1.181477236,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Product Manager",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11019.0925309999,
+    "github_repo_stars":3.777331805,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Product Manager",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":14813.74890683,
+    "github_repo_stars":1.8062181466,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Product Manager",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":16280.0871167964,
+    "github_repo_stars":0.2268136261,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Product Manager",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20022.2330049986,
+    "github_repo_stars":2.4845863093,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Project Manager",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7566.1585418484,
+    "github_repo_stars":0.6062181466,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Project Manager",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8549.5346356286,
+    "github_repo_stars":3.7152820149,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Project Manager",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11507.4301826451,
+    "github_repo_stars":0.4948182112,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Project Manager",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13112.5083814401,
+    "github_repo_stars":113.5278793692,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Project Manager",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17652.1308919232,
+    "github_repo_stars":1.3155453665,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Prompt Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":4876.8912999453,
+    "github_repo_stars":1.2021972338,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Prompt Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":5148.2891887561,
+    "github_repo_stars":0.2021972338,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Prompt Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7558.1871041947,
+    "github_repo_stars":3.1230709553,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Prompt Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8638.6927999097,
+    "github_repo_stars":0.5054930846,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Prompt Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11806.6600788672,
+    "github_repo_stars":1.6747318108,
+    "arxiv_paper_count":40.0
+  },
+  {
+    "canonical_role":"Python QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":16613.3117675818,
+    "github_repo_stars":0.3287431557,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Python QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":21108.2169356738,
+    "github_repo_stars":0.3287431557,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Python QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30562.0004766928,
+    "github_repo_stars":0.5068852664,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Python QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38964.8307279923,
+    "github_repo_stars":0.2488524556,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Python QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":55950.937234155,
+    "github_repo_stars":0.4132240335,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"QA Automation Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":6908.5884544748,
+    "github_repo_stars":0.07538592,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"QA Automation Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":7067.0448454261,
+    "github_repo_stars":0.3352590335,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"QA Automation Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8644.7070761548,
+    "github_repo_stars":1.3738042372,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"QA Automation Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9355.1905714308,
+    "github_repo_stars":17.9026429415,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"QA Automation Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11955.6418285843,
+    "github_repo_stars":9.1606215541,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"RAG Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":18021.0453318111,
+    "github_repo_stars":1.7382135615,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"RAG Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20395.5132951092,
+    "github_repo_stars":0.0,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"RAG Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":30656.8375669142,
+    "github_repo_stars":0.1484454634,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"RAG Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":37830.1368652048,
+    "github_repo_stars":46.2841571852,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"RAG Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":51873.5182652027,
+    "github_repo_stars":1.0143773329,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"React Native Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":26526.2331223618,
+    "github_repo_stars":0.8027886487,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"React Native Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":39274.6825400362,
+    "github_repo_stars":4.4062650495,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"React Native Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33997.3619785631,
+    "github_repo_stars":28.4150518568,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"React Native Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":38675.0210760588,
+    "github_repo_stars":1.4958456833,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"React Native Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":52086.8573912933,
+    "github_repo_stars":8.9047847561,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Rust Blockchain Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":11154.7906306422,
+    "github_repo_stars":1.1113102023,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Rust Blockchain Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":12770.4817969083,
+    "github_repo_stars":15.5693095891,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Rust Blockchain Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17731.2300750447,
+    "github_repo_stars":2.8484064085,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Rust Blockchain Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":21459.8092601626,
+    "github_repo_stars":24.4351533011,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Rust Blockchain Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":29108.0613366906,
+    "github_repo_stars":3.5479236166,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Scrum Master",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13368.0876136276,
+    "github_repo_stars":1.6867329091,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Scrum Master",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13853.2798237686,
+    "github_repo_stars":2.9609478733,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Scrum Master",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":18347.1764212065,
+    "github_repo_stars":0.3492269275,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Scrum Master",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":20949.7947793799,
+    "github_repo_stars":116.0833534998,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Scrum Master",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27614.5663002001,
+    "github_repo_stars":1.6359598366,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Security Operations Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":8080.5739138042,
+    "github_repo_stars":4.3310458994,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"Security Operations Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":9090.2932609897,
+    "github_repo_stars":43.6483671951,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Security Operations Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":13302.5411564959,
+    "github_repo_stars":1015.4071624998,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"Security Operations Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":16567.7614069263,
+    "github_repo_stars":3.0206842826,
+    "arxiv_paper_count":14.0
+  },
+  {
+    "canonical_role":"Security Operations Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":24765.6190121569,
+    "github_repo_stars":2.2510342141,
+    "arxiv_paper_count":17.4655736679
+  },
+  {
+    "canonical_role":"Security Software Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":54303.032767241,
+    "github_repo_stars":18.9104005676,
+    "arxiv_paper_count":1.75
+  },
+  {
+    "canonical_role":"Security Software Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":59723.9403715916,
+    "github_repo_stars":3.6604175807,
+    "arxiv_paper_count":2.25
+  },
+  {
+    "canonical_role":"Security Software Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":81452.6128779274,
+    "github_repo_stars":21.7483427951,
+    "arxiv_paper_count":3.0
+  },
+  {
+    "canonical_role":"Security Software Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":97941.6142623745,
+    "github_repo_stars":611.1056787799,
+    "arxiv_paper_count":2.0
+  },
+  {
+    "canonical_role":"Security Software Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":134320.7416670345,
+    "github_repo_stars":1.1522752711,
+    "arxiv_paper_count":16.5244642003
+  },
+  {
+    "canonical_role":"System Administrator",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":63336.8980852411,
+    "github_repo_stars":4.6540808925,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"System Administrator",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":69295.5724951795,
+    "github_repo_stars":4.5867425837,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"System Administrator",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":92431.3568484378,
+    "github_repo_stars":3.9544945782,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"System Administrator",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":109809.6149982249,
+    "github_repo_stars":3.3293716814,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"System Administrator",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":142192.0043638425,
+    "github_repo_stars":7.3050761558,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"UI\/UX Designer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35122.5242914905,
+    "github_repo_stars":0.7940110429,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"UI\/UX Designer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":35469.6297823069,
+    "github_repo_stars":2.8847551621,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"UI\/UX Designer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":43549.8181998279,
+    "github_repo_stars":2.5521783523,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"UI\/UX Designer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":49683.4271122936,
+    "github_repo_stars":0.7617966871,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"UI\/UX Designer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":67515.0544420669,
+    "github_repo_stars":19.4210561963,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Unity Developer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":57407.8429984033,
+    "github_repo_stars":1.4248508926,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Unity Developer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":61986.1820367621,
+    "github_repo_stars":1.2514442752,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Unity Developer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":82823.1782259607,
+    "github_repo_stars":12.2116682095,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"Unity Developer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":98238.5617854621,
+    "github_repo_stars":21.2126154599,
+    "arxiv_paper_count":1.0
+  },
+  {
+    "canonical_role":"Unity Developer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":135278.4710844072,
+    "github_repo_stars":20.3388580217,
+    "arxiv_paper_count":16.0
+  },
+  {
+    "canonical_role":"Unreal Engine Developer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":110413.2709831337,
+    "github_repo_stars":29.1695211999,
+    "arxiv_paper_count":9.0
+  },
+  {
+    "canonical_role":"Unreal Engine Developer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":120722.0400099836,
+    "github_repo_stars":1.9046310403,
+    "arxiv_paper_count":3.0
+  },
+  {
+    "canonical_role":"Unreal Engine Developer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":167124.1209460099,
+    "github_repo_stars":14.700824446,
+    "arxiv_paper_count":10.0
+  },
+  {
+    "canonical_role":"Unreal Engine Developer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":202323.3503367104,
+    "github_repo_stars":58.8321832873,
+    "arxiv_paper_count":7.0
+  },
+  {
+    "canonical_role":"Unreal Engine Developer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":278721.734626887,
+    "github_repo_stars":1670.1421964778,
+    "arxiv_paper_count":6.0
+  },
+  {
+    "canonical_role":"WordPress Developer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":23141.3705691123,
+    "github_repo_stars":1.7179657343,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"WordPress Developer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":37559.9172857654,
+    "github_repo_stars":0.1676295168,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"WordPress Developer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27237.7689132872,
+    "github_repo_stars":31.5533679826,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"WordPress Developer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33054.0492474779,
+    "github_repo_stars":20.7258245318,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"WordPress Developer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":42333.8214572693,
+    "github_repo_stars":64.2124198108,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"iOS Engineer",
+    "month":"2026-01-01",
+    "google_trend_index":0.0,
+    "github_repo_count":17351.363023855,
+    "github_repo_stars":11.159201898,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"iOS Engineer",
+    "month":"2026-02-01",
+    "google_trend_index":0.0,
+    "github_repo_count":19566.7348762448,
+    "github_repo_stars":32.37350869,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"iOS Engineer",
+    "month":"2026-03-01",
+    "google_trend_index":0.0,
+    "github_repo_count":27187.4426678728,
+    "github_repo_stars":72.1524227393,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"iOS Engineer",
+    "month":"2026-04-01",
+    "google_trend_index":0.0,
+    "github_repo_count":33344.2041873188,
+    "github_repo_stars":0.8816731892,
+    "arxiv_paper_count":0.0
+  },
+  {
+    "canonical_role":"iOS Engineer",
+    "month":"2026-05-01",
+    "google_trend_index":0.0,
+    "github_repo_count":45930.4496059588,
+    "github_repo_stars":20.769172599,
+    "arxiv_paper_count":0.0
+  }
+]
