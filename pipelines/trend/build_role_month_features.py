@@ -12,6 +12,7 @@ LOCAL_GDELT_DOC_JSON = DATA_GOLD_DIR / "gdelt_role_month_features.json"
 LOCAL_GDELT_GKG_JSON = DATA_GOLD_DIR / "gdelt_gkg_role_month_features.json"
 LOCAL_GDELT_IMPACT_JSON = DATA_GOLD_DIR / "gdelt_impact_role_month_features.json"
 LOCAL_TECH_JSON = DATA_GOLD_DIR / "tech_keyword_month_features.json"
+LOCAL_TECH_ROLE_JSON = DATA_GOLD_DIR / "tech_role_month_features.json"
 JD_COLUMNS = [
     "canonical_role",
     "month",
@@ -64,6 +65,7 @@ GDELT_GKG_COLUMNS = [
 ]
 GDELT_IMPACT_COLUMNS = ["canonical_role", "month", "impact_score"]
 TECH_COLUMNS = ["canonical_role", "keyword", "month", "google_trend_index", "github_repo_count", "github_repo_stars", "arxiv_paper_count"]
+TECH_ROLE_COLUMNS = ["canonical_role", "month", "google_trend_index", "github_repo_count", "github_repo_stars", "arxiv_paper_count"]
 
 
 def normalized_role_phrase(canonical_role: str) -> str | None:
@@ -188,7 +190,9 @@ def main() -> None:
 
         taxonomy_rows = load_role_taxonomy_local()
 
-    tech_role = aggregate_tech(tech, taxonomy_rows)
+    tech_role = load_local_table(LOCAL_TECH_ROLE_JSON, TECH_ROLE_COLUMNS)
+    if tech_role.empty:
+        tech_role = aggregate_tech(tech, taxonomy_rows)
     if gdelt_gkg.empty:
         gdelt = gdelt_doc.copy()
         gdelt["gdelt_source_count"] = 0.0
@@ -214,7 +218,12 @@ def main() -> None:
     if gdelt_events.empty:
         gdelt_events = pd.DataFrame(columns=["canonical_role", "month", "gdelt_event_impact_score"])
     else:
-        gdelt_events = gdelt_events.rename(columns={"event_impact_score": "gdelt_event_impact_score"})
+        gdelt_events = gdelt_events.rename(
+            columns={
+                "event_impact_score": "gdelt_event_impact_score",
+                "impact_score": "gdelt_event_impact_score",
+            }
+        )
         if "gdelt_event_impact_score" not in gdelt_events.columns:
             gdelt_events["gdelt_event_impact_score"] = 0.0
 

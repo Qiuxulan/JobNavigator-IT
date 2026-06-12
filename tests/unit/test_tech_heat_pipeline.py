@@ -1,4 +1,5 @@
 import pandas as pd
+import pytest
 
 from pipelines.trend.build_role_month_features import aggregate_tech
 from datetime import date
@@ -151,3 +152,125 @@ def test_build_patchtst_panel_creates_dense_role_month_grid(monkeypatch):
     assert rag_feb["time_idx"] == 1
     ai_jan = panel[(panel["canonical_role"] == "AI Agent Engineer") & (panel["month"] == "2026-01-01")].iloc[0]
     assert ai_jan["job_post_count"] == 0.0
+
+
+def test_build_patchtst_panel_does_not_turn_missing_future_jd_data_into_zero(monkeypatch):
+    from app.core import config as config_module
+
+    monkeypatch.setattr(config_module.settings, "trend_patchtst_lookback_months", 4)
+    role_month = pd.DataFrame(
+        [
+            {"canonical_role": "AI Engineer", "month": "2026-01-01", "jd_demand_index": 0.6, "job_post_count": 10},
+            {"canonical_role": "AI Engineer", "month": "2026-02-01", "jd_demand_index": 0.7, "job_post_count": 12},
+            {"canonical_role": "AI Engineer", "month": "2026-04-01", "gdelt_article_count": 5},
+        ]
+    )
+    taxonomy = pd.DataFrame([{"role_id": "role_001", "canonical_role": "AI Engineer"}])
+
+    panel = build_patchtst_panel(role_month, taxonomy)
+    march = panel[panel["month"] == "2026-03-01"].iloc[0]
+    april = panel[panel["month"] == "2026-04-01"].iloc[0]
+
+    assert march["jd_demand_index"] == pytest.approx(0.7)
+    assert april["jd_demand_index"] == pytest.approx(0.7)
+    assert not bool(march["jd_demand_observed"])
+    assert not bool(april["jd_demand_observed"])
+
+
+def test_build_patchtst_panel_does_not_mark_roles_without_jd_labels_as_observed(monkeypatch):
+    from app.core import config as config_module
+
+    monkeypatch.setattr(config_module.settings, "trend_patchtst_lookback_months", 2)
+    role_month = pd.DataFrame(
+        [
+            {"canonical_role": "AI Engineer", "month": "2026-01-01", "jd_demand_index": 0.6, "job_post_count": 10},
+            {"canonical_role": "RAG Engineer", "month": "2026-01-01", "gdelt_article_count": 5},
+            {"canonical_role": "RAG Engineer", "month": "2026-02-01", "gdelt_article_count": 8},
+        ]
+    )
+    taxonomy = pd.DataFrame(
+        [
+            {"role_id": "role_001", "canonical_role": "AI Engineer"},
+            {"role_id": "role_002", "canonical_role": "RAG Engineer"},
+        ]
+    )
+
+    panel = build_patchtst_panel(role_month, taxonomy)
+
+    assert panel.loc[panel["canonical_role"] == "AI Engineer", "jd_demand_observed"].any()
+    assert not panel.loc[panel["canonical_role"] == "RAG Engineer", "jd_demand_observed"].any()
+
+
+def test_build_patchtst_panel_marks_only_real_supplemental_source_rows(monkeypatch):
+    from app.core import config as config_module
+
+    monkeypatch.setattr(config_module.settings, "trend_patchtst_lookback_months", 2)
+    role_month = pd.DataFrame(
+        [
+            {
+                "canonical_role": "AI Engineer",
+                "month": "2026-01-01",
+                "gdelt_article_count": 4,
+                "github_repo_count": 20,
+                "arxiv_paper_count": 0,
+            },
+            {
+                "canonical_role": "AI Engineer",
+                "month": "2026-02-01",
+                "gdelt_article_count": 0,
+                "github_repo_count": 25,
+                "arxiv_paper_count": 3,
+            },
+        ]
+    )
+    taxonomy = pd.DataFrame([{"role_id": "role_001", "canonical_role": "AI Engineer"}])
+
+    panel = build_patchtst_panel(role_month, taxonomy).sort_values("month")
+
+    assert panel["gdelt_observed"].tolist() == [True, False]
+    assert panel["github_observed"].tolist() == [True, True]
+    assert panel["arxiv_observed"].tolist() == [False, True]
+
+
+def test_prepare_patchtst_dataset_uses_corrected_local_json(monkeypatch, tmp_path):
+    from pipelines.trend import prepare_trend_model_dataset as dataset_module
+
+    source_path = tmp_path / "role_month_features.json"
+    source_path.write_text("[]", encoding="utf-8")
+    role_month = pd.DataFrame(
+        [
+            {
+                "canonical_role": "AI Engineer",
+                "month": "2026-01-01",
+                "jd_demand_index": 0.6,
+                "job_post_count": 10,
+            }
+        ]
+    )
+    read_paths = []
+    written = {}
+
+    def fake_read_json(path):
+        read_paths.append(path)
+        return role_month.copy()
+
+    def fake_write(panel, parquet_path, json_path):
+        written["panel"] = panel
+        written["parquet_path"] = parquet_path
+        written["json_path"] = json_path
+
+    monkeypatch.setattr(dataset_module, "ROLE_MONTH_FEATURES_JSON", source_path)
+    monkeypatch.setattr(dataset_module.settings, "trend_patchtst_lookback_months", 1)
+    monkeypatch.setattr(dataset_module.pd, "read_json", fake_read_json)
+    monkeypatch.setattr(
+        dataset_module,
+        "load_role_taxonomy_local",
+        lambda: [{"role_id": "role_001", "canonical_role": "AI Engineer"}],
+    )
+    monkeypatch.setattr(dataset_module, "safe_write_dataframe", fake_write)
+
+    dataset_module.main()
+
+    assert read_paths == [source_path]
+    assert len(written["panel"]) == 1
+    assert written["panel"].iloc[0]["canonical_role"] == "AI Engineer"
