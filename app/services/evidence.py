@@ -68,7 +68,73 @@ ECON_THEMES = (
 JUNK_DOMAIN_SUBSTR = (
     "ticker", "marketsdaily", "dailypolitical", "defenseworld", "prokerala",
     "starmagazine", "newsbusters", "ghanamma", "wyomingnewsnow", "dailymail",
+    "insidermonkey", "finanznachrichten",
 )
+# 弱可信来源（财经自动聚合/泛地方新闻）：不删，降权
+WEAK_DOMAIN_SUBSTR = ("manilatimes", "webindia", "calcuttanews", "moneycontrol",
+                      "tickerreport", "livemint")
+# 岗位/职业/招聘上下文词：标题或 URL slug 里出现 -> 真 IT 岗位语境
+ROLE_CONTEXT_WORDS = {
+    "frontend", "backend", "fullstack", "devops", "developer", "developers",
+    "engineer", "engineering", "architect", "programmer", "software", "sysadmin",
+    "qa", "sre", "cloud", "data", "mobile", "web", "api", "recruitment",
+    "recruiting", "hiring", "vacancy", "job", "jobs",
+}
+# 内容型强科技主题（比 WB_ 系列更可信）
+STRICT_TECH_THEMES = ("SOFTWARE", "COMPUTER", "CYBER", "ARTIFICIAL_INTELLIGENCE",
+                      "MACHINE_LEARNING")
+# 坏标题模式：非技术/灾难/政治场景，命中直接挡
+BAD_TITLE_PHRASES = ("reacts to", "readers react", "doctor reacts", "bridge cracks",
+                     "schools react", "neighbors react", "netizens react",
+                     "employees react",
+                     "python eggs", "dumsor theatricals", "missing containers",
+                     "florida woman", "is python becoming pinyin", "koenigsegg statistics",
+                     "tarmac scrum", "tony khan", "kapil sibal", "shell casing",
+                     "family of late shell", "saved life",
+                     "amid crisis")
+BAD_TITLE_WORDS = {"war", "iran", "trump", "protesters", "protest", "shooting",
+                   "murder", "ceasefire", "sudan", "gaza", "ukraine", "flood",
+                   "earthquake", "storm", "anxiety", "runner", "collapses",
+                   "pythons"}
+GENERIC_ROLE_TOKENS = {
+    "engineer", "developer", "architect", "specialist", "administrator",
+    "manager", "master", "analyst", "designer", "technical", "software",
+}
+HARD_TECH_CONTEXT_WORDS = {
+    "frontend", "backend", "fullstack", "developer", "developers", "software",
+    "programmer", "devops", "sre", "qa", "cloud", "data", "mobile", "web",
+    "api", "javascript", "typescript", "css", "html", "node", "reactjs",
+    "react.js", "vue", "angular", "kubernetes", "docker", "linux",
+}
+ROLE_ANCHOR_EXPANSIONS = {
+    "ai": {"ai", "artificial", "intelligence", "machine", "learning", "llm", "openai", "agent"},
+    "game": {"game", "gaming", "unreal", "gamedev", "csharp"},
+    "wordpress": {"wordpress", "php", "cms", "woocommerce"},
+    "mobile": {"mobile", "android", "ios", "kotlin", "swift", "react", "native"},
+    "frontend": {"frontend", "front", "react", "vue", "angular", "javascript", "typescript", "css", "html"},
+    "backend": {"backend", "server", "api", "java", "python", "node", "golang", "microservices"},
+    "security": {"security", "cyber", "cybersecurity", "breach", "malware", "ransomware", "vulnerability"},
+    "devops": {"devops", "kubernetes", "docker", "terraform", "ansible", "ci", "cd"},
+    "data": {"data", "etl", "pipeline", "warehouse", "spark", "snowflake", "databricks"},
+    "system": {"system", "sysadmin", "administrator", "linux", "unix", "powershell"},
+}
+ROLE_REQUIRED_TERMS = {
+    "backend go engineer": {"go", "golang"},
+    "backend java engineer": {"java", "spring"},
+    "cloud java engineer": {"java", "spring", "oracle"},
+    "backend ruby engineer": {"ruby", "rails"},
+    "backend php engineer": {"php", "laravel"},
+    "backend node.js engineer": {"node", "nodejs", "javascript", "typescript"},
+    "node.js devops engineer": {"node", "nodejs", "javascript", "typescript", "devops"},
+    "frontend react engineer": {"react", "reactjs", "javascript", "typescript", "frontend"},
+    "frontend angular engineer": {"angular"},
+    "frontend vue engineer": {"vue", "javascript", "typescript", "frontend"},
+    "wordpress developer": {"wordpress", "php", "cms"},
+    "data scientist": {"scientist", "machine", "learning", "model", "analytics"},
+    "mlops engineer": {"mlops"},
+    "mobile c++ engineer": {"c", "cpp"},
+    "mobile qa automation engineer": {"qa", "test", "testing", "automation"},
+}
 
 
 def _load_skill_vocab() -> set[str]:
@@ -96,9 +162,112 @@ def _strong_skill_terms(terms: list[str]) -> list[str]:
             and t not in ARTIFACT_TERMS and len(t) >= 3]
 
 
+def _title_tokens(title: str) -> list[str]:
+    return _TOKEN_RE.findall((title or "").lower())
+
+
+def _is_weak_domain(dom: str) -> bool:
+    d = (dom or "").lower()
+    return any(s in d for s in WEAK_DOMAIN_SUBSTR)
+
+
+def _bad_title(title: str) -> bool:
+    t = (title or "").lower()
+    if any(p in t for p in BAD_TITLE_PHRASES):
+        return True
+    return bool(set(_title_tokens(title)) & BAD_TITLE_WORDS)
+
+
+def _title_has_context(title: str) -> bool:
+    """标题/URL slug 里有岗位/职业词，或另一个明确技能词 -> 真 IT 语境。"""
+    toks = set(_title_tokens(title))
+    if toks & ROLE_CONTEXT_WORDS:
+        return True
+    return any(t in _SKILL_VOCAB and t not in AMBIGUOUS_TERMS and len(t) >= 3 for t in toks)
+
+
+def _title_quality(title: str, domain: str) -> float:
+    """证据可解释性分 0..1：标题越像真 IT 岗位/技术，分越高（坏标题=0）。"""
+    if _bad_title(title):
+        return 0.0
+    toks = _title_tokens(title)
+    if not toks or all(t.isdigit() for t in toks):
+        return 0.1
+    tset, score = set(toks), 0.3
+    if tset & ROLE_CONTEXT_WORDS:
+        score += 0.4
+    if any(t in _SKILL_VOCAB and t not in AMBIGUOUS_TERMS and len(t) >= 3 for t in toks):
+        score += 0.3
+    if _is_weak_domain(domain):
+        score *= 0.7
+    return min(1.0, score)
+
+
+def _role_anchor_terms(role: str, info: dict) -> set[str]:
+    role_tokens = set(_title_tokens(role)) - GENERIC_ROLE_TOKENS
+    anchors = set(role_tokens)
+    role_l = (role or "").lower()
+    for key, terms in ROLE_ANCHOR_EXPANSIONS.items():
+        if key in role_l or key in role_tokens:
+            anchors.update(terms)
+    for alias in info.get("aliases", []) or []:
+        anchors.update(set(_title_tokens(alias)) - GENERIC_ROLE_TOKENS)
+    return {a for a in anchors if len(a) >= 2}
+
+
+def _role_required_terms(role: str) -> set[str]:
+    return ROLE_REQUIRED_TERMS.get((role or "").lower(), set())
+
+
+def _role_required_satisfied(role: str, toks: set[str]) -> bool:
+    role_l = (role or "").lower()
+    required = _role_required_terms(role)
+    if not required:
+        return True
+    if role_l == "mobile qa automation engineer":
+        return bool(toks & {"mobile", "android", "ios"}) and bool(toks & required)
+    if role_l == "mobile c++ engineer":
+        return bool(toks & {"mobile", "android", "ios"}) and bool(toks & required)
+    return bool(toks & required)
+
+
+def _role_title_affinity(role: str, info: dict, title: str) -> float:
+    """岗位相关性 0..1：标题要像该岗位的证据，而不只是泛技术新闻。"""
+    if _bad_title(title):
+        return 0.0
+    toks = set(_title_tokens(title))
+    if not toks:
+        return 0.0
+    anchors = _role_anchor_terms(role, info)
+    hit = toks & anchors
+    if not hit:
+        return 0.0
+    if not _role_required_satisfied(role, toks):
+        return 0.0
+    strong_title_skills = {
+        t for t in toks
+        if t in _SKILL_VOCAB and t not in AMBIGUOUS_TERMS and len(t) >= 3
+    }
+    if all(t in AMBIGUOUS_TERMS for t in hit) and not (toks & HARD_TECH_CONTEXT_WORDS or strong_title_skills):
+        return 0.0
+    score = 0.55
+    if len(hit) >= 2:
+        score += 0.2
+    if toks & ROLE_CONTEXT_WORDS:
+        score += 0.15
+    if strong_title_skills:
+        score += 0.1
+    return min(1.0, score)
+
+
 def _is_relevant(c: dict) -> bool:
-    """四重约束：黑名单域名直接丢；明确技能词放行；歧义技能词需 科技∧经济 主题共现。"""
-    if _is_junk_domain(c.get("source_domain")):
+    """精排前约束：黑名单/坏标题直接丢；明确技能词放行；
+    歧义技能词必须有岗位/技术上下文（标题岗位词 / 另一强技能词 / 科技∧经济主题）。"""
+    domain = c.get("source_domain")
+    if _is_junk_domain(domain):
+        return False
+    title = _title_from_url(c.get("url", ""), domain or "")
+    if _bad_title(title):
         return False
     terms = [str(t).lower() for t in (c.get("matched_terms") or [])]
     if not terms:
@@ -107,8 +276,10 @@ def _is_relevant(c: dict) -> bool:
         return True
     amb_skill = [t for t in terms if t in _SKILL_VOCAB and t in AMBIGUOUS_TERMS]
     if amb_skill:
-        themes = (c.get("themes") or "").upper()
-        if any(t in themes for t in TECH_THEMES) and any(t in themes for t in ECON_THEMES):
+        if _title_has_context(title):                 # 标题有岗位/技术上下文
+            return True
+        themes = (c.get("themes") or "").upper()       # 或 科技∧经济主题共现
+        if any(t in themes for t in STRICT_TECH_THEMES) and any(t in themes for t in ECON_THEMES):
             return True
     return False
 
@@ -142,6 +313,12 @@ def _title_from_url(url: str, domain: str) -> str:
     return slug[:120]
 
 
+def _title_sig(title: str) -> str:
+    """标题归一签名：取前 7 个实词，用于合并同一新闻的近重复版本（不同 URL/日期）。"""
+    words = re.findall(r"[a-z0-9]+", (title or "").lower())
+    return " ".join(words[:7])
+
+
 class BM25:
     def __init__(self, corpus: list[list[str]], k1: float = 1.5, b: float = 0.75):
         self.k1, self.b = k1, b
@@ -173,6 +350,8 @@ def _ym(month: str) -> str:
 class EvidenceService:
     _tax: dict | None = None
     RELEVANCE_GATE = True   # 相关性闸门开关（评估消融时可关）
+    ROLE_AFFINITY_DISPLAY_MIN = 0.5
+    WEAK_TITLE_QUALITY_MIN = 0.5
 
     # ---- 资源加载 ----
     @classmethod
@@ -256,10 +435,20 @@ class EvidenceService:
         aggregate = cls._aggregate(raw_cands)          # 聚合信号：稳健、主力
         cands = [c for c in raw_cands if _is_relevant(c)] if cls.RELEVANCE_GATE else raw_cands
         kept = len(cands)
-        events = cls._rank_events(role, cands, top_k, direction) if cands else []  # 干净样本：佐证
+        # flat/无方向时按聚合真实情绪定排序方向，避免清一色正面招聘霸榜、负面事件被埋
+        eff_dir = direction
+        if direction in (None, "flat", "stable") and aggregate:
+            net = aggregate.get("net_signal")
+            eff_dir = "down" if net == "negative" else "up" if net == "positive" else direction
+        events = cls._rank_events(role, cands, top_k, eff_dir) if cands else []  # 干净样本：佐证
         jobs = cls._load_jobs(role, months, top_k)
-        if events:
+        weak_count = sum(1 for ev in events if ev.get("evidence_strength") == "weak")
+        if events and weak_count:
+            note = f"强相关事件不足，补充 {weak_count} 条弱相关事件；趋势佐证以 aggregate/JD 为准"
+        elif events:
             note = "事件为代表性样本，相关性近似；趋势佐证以 aggregate 为准"
+        elif kept:
+            note = f"基础闸门保留 {kept} 条候选，但 TopK 无足够岗位相关证据；以 aggregate/JD 为准"
         elif total and not kept:
             note = f"召回 {total} 条候选全部被四重约束过滤（疑似纯关键词噪音）；以 aggregate 为准"
         else:
@@ -322,7 +511,8 @@ class EvidenceService:
             q += _tok(s)
 
         corpus = [_tok(" ".join([" ".join(c.get("matched_terms") or []),
-                                 c.get("themes", ""), c.get("source_domain", "")]))
+                                 c.get("themes", ""), c.get("source_domain", ""),
+                                 _title_from_url(c.get("url", ""), c.get("source_domain", ""))]))
                   for c in cands]
         bm25 = BM25(corpus)
         raw = [bm25.score(q, i) for i in range(len(cands))]
@@ -339,32 +529,72 @@ class EvidenceService:
             salience = 0.5 * min(abs(tone) / 10.0, 1.0) + 0.5 * min(float(c.get("match_weight") or 0), 1.0)
             recency = ((dates[i] >= dmin) and dmax != dmin and
                        (int(dates[i] or 0) - int(dmin or 0)) / max(int(dmax or 1) - int(dmin or 0), 1)) or 0.0
-            composite = 0.4 * norm_bm25 + 0.3 * align + 0.2 * salience + 0.1 * float(recency)
-            scored.append((c, composite, etype, tone, align))
+            title = _title_from_url(c.get("url", ""), c.get("source_domain", ""))
+            tq = _title_quality(title, c.get("source_domain", ""))   # 可解释性分
+            role_aff = _role_title_affinity(role, info, title)
+            composite = (0.25 * norm_bm25 + 0.20 * align + 0.10 * salience
+                         + 0.05 * float(recency) + 0.20 * tq + 0.20 * role_aff)
+            scored.append((c, composite, etype, tone, align, title, tq, role_aff))
 
-        seen, out = set(), []
-        for c, sc, etype, tone, align in sorted(scored, key=lambda x: x[1], reverse=True):
+        # 去重：url + 标题近重复
+        seen_urls, seen_titles, deduped = set(), set(), []
+        for c, sc, etype, tone, align, title, tq, role_aff in sorted(scored, key=lambda x: x[1], reverse=True):
             url = c.get("url")
-            if url in seen:
+            if url in seen_urls:
                 continue
-            seen.add(url)
+            tsig = _title_sig(title)
+            if tsig and tsig in seen_titles:        # 近重复(同一新闻不同URL/日期) -> 跳过
+                continue
+            seen_urls.add(url)
+            seen_titles.add(tsig)
             impact = "positive" if tone > 1 else "negative" if tone < -1 else "neutral"
+            deduped.append((c, sc, etype, tone, align, title, impact, tq, role_aff))
+
+        # 方向优先：与趋势方向一致的极性事件优先填 TopK（up->正面/绿, down->负面/红），
+        # 不足再补其他极性。组内仍按复合分排序（稳定排序保持原次序）。
+        want = {"up": "positive", "down": "negative"}.get(direction)
+        if want:
+            deduped.sort(key=lambda it: it[6] != want)
+        role_filtered = [it for it in deduped if it[8] >= cls.ROLE_AFFINITY_DISPLAY_MIN]
+        if role_filtered:
+            picked = role_filtered[:top_k]
+            weak_ids: set[str] = set()
+        elif _role_anchor_terms(role, info):
+            picked = [it for it in deduped if it[7] >= cls.WEAK_TITLE_QUALITY_MIN][:top_k]
+            weak_ids = {it[0].get("url") for it in picked}
+        else:
+            picked = deduped[:top_k]
+            weak_ids = set()
+
+        # 诚实：方向单极性时(跌→全红/涨→全绿)，保留 1 条最强反向信号，
+        # 避免选择性举证，并给 CoT 权衡材料。
+        counter = {"positive": "negative", "negative": "positive"}.get(want)
+        if want and top_k >= 3 and picked and all(it[6] != counter for it in picked):
+            pool = role_filtered or deduped
+            cev = next((it for it in pool if it[6] == counter), None)
+            if cev and cev not in picked:
+                picked[-1] = cev
+
+        out = []
+        for c, sc, etype, tone, align, title, impact, tq, role_aff in picked:
             out.append({
                 "evidence_type": "news_event",
-                "url": url,
+                "url": c.get("url"),
                 "source_domain": c.get("source_domain"),
-                "title": _title_from_url(url, c.get("source_domain", "")),
+                "title": title,
                 "published_at": _iso(c.get("event_date")),
                 "tone": round(tone, 3),
                 "themes": (c.get("themes") or "").split(";")[:6],
                 "match_weight": c.get("match_weight"),
                 "event_type": etype,
                 "impact_direction": impact,
+                "is_counter_signal": bool(counter and impact == counter),
                 "direction_align": round(align, 3),
+                "title_quality": round(tq, 3),
+                "role_affinity": round(role_aff, 3),
+                "evidence_strength": "weak" if c.get("url") in weak_ids else "strong",
                 "retrieval_score": round(float(sc), 4),
             })
-            if len(out) >= top_k:
-                break
         return out
 
 

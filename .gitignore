@@ -287,6 +287,7 @@ data/gold/processed_jd_jobs.json
 
 # C模块(证据检索)本地产物：索引由 build_evidence_index.py 生成、体量大，不提交
 data/processed/evidence_index/
+!data/processed/event_graph_v1.json
 # 图谱可视化 HTML 可由脚本重新生成，不提交
 reports/event_graph_view.html
 reports/full_unified_graph.html

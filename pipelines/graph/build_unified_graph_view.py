@@ -22,10 +22,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from pipelines.graph.export_graph_interactive_v2 import (  # noqa: E402
     COLORS, REPORT_DIR, _build_html, _node_key, build_full_graph, build_role_graph,
 )
+# 统一着色：单一来源，与标准事件图/组员3 共用
+from app.services.evidence_color import (  # noqa: E402
+    COLOR, TREND_EDGE, edge_color, edge_color_dim, event_polarity,
+)
 
 EVENT_GRAPH = Path("data/processed/event_graph_v1.json")
 TAXONOMY = Path("data/gold/role_taxonomy.json")
-EVENT_COLOR = {"positive": "#22c55e", "negative": "#ef4444", "neutral": "#9ca3af"}
 
 
 def _resolve_role_id(role: str | None, role_id: str | None) -> tuple[str, str]:
@@ -44,8 +47,19 @@ def _attach_events(data: dict, only_role_id: str | None) -> int:
     """把 event_graph_v1.json 的 AFFECTS 事件挂到对应 job 节点。返回挂载数。"""
     g = json.loads(EVENT_GRAPH.read_text(encoding="utf-8"))
     pj = {n["node_id"]: n["payload_json"] for n in g["nodes"]}
+    # 岗位趋势(给 job 标签加箭头)：同一岗位所有边方向一致
+    job_trend = {e["dst_id"]: (e["meta_json"].get("trend_impact_direction") or "neutral")
+                 for e in g["edges"]}
     job_ids = {n["meta"].get("role_id") for n in data["nodes"] if n.get("kind") == "job"}
     existing = {n["id"] for n in data["nodes"]}
+    # 预收集每个事件的边趋势：节点颜色跟随它主导解释的趋势方向（与边一致）
+    ev_trends: dict[str, list[str]] = {}
+    for e in g["edges"]:
+        rid = e["dst_id"]
+        if (only_role_id and rid != only_role_id) or rid not in job_ids:
+            continue
+        ev_trends.setdefault(e["src_id"], []).append(
+            e["meta_json"].get("trend_impact_direction") or "neutral")
     added = 0
     for e in g["edges"]:
         rid = e["dst_id"]
@@ -54,35 +68,48 @@ def _attach_events(data: dict, only_role_id: str | None) -> int:
         if rid not in job_ids:                 # 该岗位不在当前图里，跳过
             continue
         eid = e["src_id"]
-        imp = e["meta_json"].get("impact_direction", "neutral")
-        col = EVENT_COLOR.get(imp, "#9ca3af")
+        p = pj.get(eid, {})
+        trend = e["meta_json"].get("trend_impact_direction") or "neutral"
+        p_for_color = {**p, "impact_direction": e["meta_json"].get("impact_direction")}
         ekey = _node_key("event", eid)
         if ekey not in existing:
             existing.add(ekey)
-            p = pj.get(eid, {})
             data["nodes"].append({
                 "id": ekey,
                 "label": (p.get("title") or "事件")[:36],
                 "kind": "event",
-                "color": col,
+                "color": COLOR["neutral"],
                 "payload": p,
                 "meta": {"event_type": p.get("event_type"), "tone": p.get("tone"),
-                         "source": p.get("source_domain")},
+                         "消息极性": event_polarity(p), "source": p.get("source_domain")},
             })
             added += 1
         data["edges"].append({
             "source": ekey,
             "target": _node_key("job", rid),
-            "label": f"affects/{e['meta_json'].get('event_type', '')}",
-            "color": col,
-            "colorDim": "rgba(71,85,105,0.3)",
+            "label": f"{trend}/{e['meta_json'].get('event_type', '')}",   # 边 = 岗位趋势方向
+            "color": edge_color(trend, p_for_color),
+            "colorDim": edge_color_dim(trend, p_for_color),
+            "width": 1.4,
+            "widthDim": 0.9,
             "length": 150,
         })
+
+    # 受影响的岗位节点标签后加趋势箭头（趋势归岗位，渲染器只吃字符串色，用箭头表达）
+    arrow = {"positive": "↑", "negative": "↓", "neutral": "→"}
+    for n in data["nodes"]:
+        if n.get("kind") == "job":
+            tr = job_trend.get(n["meta"].get("role_id"))
+            if tr:
+                n["label"] = f'{n["label"]} {arrow.get(tr, "")}'.rstrip()
+                n["meta"]["trend"] = tr
+
     data.setdefault("summaryLines", []).append(f"事件证据: 挂载 {added} 条 AFFECTS")
     data.setdefault("legend", []).extend([
-        {"label": "事件·正面", "color": EVENT_COLOR["positive"]},
-        {"label": "事件·负面", "color": EVENT_COLOR["negative"]},
-        {"label": "事件·中性", "color": EVENT_COLOR["neutral"]},
+        {"label": "事件节点", "color": COLOR["neutral"]},
+        {"label": "上升/正向证据边", "color": TREND_EDGE["positive"]},
+        {"label": "下降/风险证据边", "color": TREND_EDGE["negative"]},
+        {"label": "持平/混合证据边", "color": TREND_EDGE["neutral"]},
     ])
     return added
 
@@ -99,6 +126,7 @@ def main() -> None:
     if args.full:
         data = build_full_graph(include_resources=False, top_n=args.top_n)
         added = _attach_events(data, only_role_id=None)
+        data["showLabels"] = False
         html = _build_html("全岗位 · 技能图谱 + 事件证据链", data)
         out = REPORT_DIR / "full_unified_graph.html"
         out.write_text(html, encoding="utf-8")

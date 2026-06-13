@@ -8,13 +8,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+# 统一着色：单一来源，与组员3/融合图共用
+from app.services.evidence_color import (  # noqa: E402
+    COLOR, TREND_EDGE, edge_color, event_polarity, trend_border,
+)
 
 GRAPH = Path("data/processed/event_graph_v1.json")
 TAXONOMY = Path("data/gold/role_taxonomy.json")
 OUT = Path("reports/event_graph_view.html")
-
-COLOR = {"positive": "#22c55e", "negative": "#ef4444", "neutral": "#9ca3af"}
 
 
 def main() -> None:
@@ -22,25 +28,37 @@ def main() -> None:
     tax = {t["role_id"]: t["canonical_role"]
            for t in json.loads(TAXONOMY.read_text(encoding="utf-8"))}
     pj = {n["node_id"]: n["payload_json"] for n in g["nodes"]}
+    # 岗位趋势(给 job 节点描边)：同一岗位所有边的 trend 方向一致
+    job_trend = {e["dst_id"]: (e["meta_json"].get("trend_impact_direction") or "neutral")
+                 for e in g["edges"]}
+    # 每个事件的边趋势：节点颜色跟随其主导解释的趋势方向（与边一致）
+    ev_trends: dict[str, list[str]] = {}
+    for e in g["edges"]:
+        ev_trends.setdefault(e["src_id"], []).append(
+            e["meta_json"].get("trend_impact_direction") or "neutral")
 
     vnodes, vedges, seen_job, seen_ev = [], [], set(), set()
     for e in g["edges"]:
         rid, eid = e["dst_id"], e["src_id"]
-        imp = e["meta_json"]["impact_direction"]
+        p = pj.get(eid, {})
+        trend = e["meta_json"].get("trend_impact_direction") or "neutral"
         if rid not in seen_job:
             seen_job.add(rid)
+            jt = job_trend.get(rid, "neutral")
             vnodes.append({"id": rid, "label": tax.get(rid, rid), "group": "job",
-                           "shape": "box", "color": {"background": "#1e3a8a", "border": "#1e40af"},
-                           "font": {"color": "#fff", "size": 16}})
+                           "shape": "box", "borderWidth": 4,
+                           "color": {"background": "#1e3a8a", "border": trend_border(jt)},
+                           "font": {"color": "#fff", "size": 16},
+                           "title": f"岗位 | PatchTST 趋势 {jt}"})
         if eid not in seen_ev:
             seen_ev.add(eid)
-            p = pj.get(eid, {})
             vnodes.append({"id": eid, "label": (p.get("title") or "事件")[:38], "group": "event",
-                           "shape": "dot", "size": 10, "color": COLOR.get(imp, "#9ca3af"),
-                           "title": f"{p.get('source_domain','')} | {p.get('event_type','')} | tone {p.get('tone','')}"})
-        vedges.append({"from": eid, "to": rid, "color": {"color": COLOR.get(imp, "#9ca3af")},
+                           "shape": "dot", "size": 10, "color": COLOR["neutral"],
+                           "title": f"{p.get('source_domain','')} | {p.get('event_type','')} | 消息极性 {event_polarity(p)} | tone {p.get('tone','')}"})
+        p_for_color = {**p, "impact_direction": e["meta_json"].get("impact_direction")}
+        vedges.append({"from": eid, "to": rid, "color": {"color": edge_color(trend, p_for_color)},  # 边=预测优先，证据兜底
                        "width": round(1 + 4 * e["weight"], 1),
-                       "title": f"{e['meta_json']['event_type']} w={e['weight']:.2f}"})
+                       "title": f"{e['meta_json']['event_type']} | 预测方向 {trend} | 证据方向 {e['meta_json'].get('impact_direction')} | w={e['weight']:.2f}"})
 
     st = g["stats"]
     html = f"""<!doctype html><html lang="zh"><head><meta charset="utf-8">
@@ -56,7 +74,8 @@ def main() -> None:
 <div id="h"><b>事件 → 岗位 AFFECTS 图谱</b>
  <span class="pill">event 节点 {st['kept_event_nodes']} · AFFECTS 边 {st['kept_edges']} · 受影响岗位 {st['distinct_jobs_affected']} · 阈值 {st['threshold']}</span>
  <span class="lg"><span class="dot" style="background:#1e3a8a"></span>岗位
- <span class="dot" style="background:#22c55e"></span>正面<span class="dot" style="background:#ef4444"></span>负面<span class="dot" style="background:#9ca3af"></span>中性</span>
+ <span class="dot" style="background:#9ca3af"></span>事件
+ <span class="dot" style="background:#22c55e"></span>上升影响边<span class="dot" style="background:#ef4444"></span>下降影响边<span class="dot" style="background:#3b82f6"></span>持平影响边</span>
 </div><div id="net"></div>
 <script>
 const nodes=new vis.DataSet({json.dumps(vnodes, ensure_ascii=False)});

@@ -8,7 +8,12 @@ import os
 
 import pytest
 
-from app.services.evidence import EvidenceService, _is_relevant, _strong_skill_terms
+from app.services.evidence import (
+    EvidenceService,
+    _is_relevant,
+    _role_title_affinity,
+    _strong_skill_terms,
+)
 
 _INDEX = "data/processed/evidence_index/events"
 _needs_index = pytest.mark.skipif(
@@ -41,14 +46,38 @@ def test_gate_drops_junk_domain():
     assert _is_relevant(ev) is False
 
 
-def test_gate_ambiguous_needs_theme_cooccurrence():
-    """歧义技能词(react)需 科技∧经济 主题共现才放行。"""
+def test_gate_ambiguous_needs_strict_theme_or_title_context():
+    """歧义技能词(react)需明确技术主题，或标题里有岗位/技术上下文才放行。"""
     no_econ = {"matched_terms": ["react"], "matched_term_count": 1,
                "themes": "WB_652_ICT_APPLICATIONS;MEDIA_SOCIAL", "source_domain": "news.com"}
-    with_econ = {"matched_terms": ["react"], "matched_term_count": 1,
-                 "themes": "WB_652_ICT_APPLICATIONS;ECON_STOCKMARKET", "source_domain": "news.com"}
+    broad_theme = {"matched_terms": ["react"], "matched_term_count": 1,
+                   "themes": "WB_652_ICT_APPLICATIONS;ECON_STOCKMARKET", "source_domain": "news.com"}
+    strict_theme = {"matched_terms": ["react"], "matched_term_count": 1,
+                    "themes": "SOFTWARE;ECON_STOCKMARKET", "source_domain": "news.com"}
+    title_context = {"matched_terms": ["react"], "matched_term_count": 1,
+                     "themes": "MEDIA_SOCIAL", "source_domain": "jobs.example.com",
+                     "url": "https://jobs.example.com/frontend-react-developer"}
     assert _is_relevant(no_econ) is False
-    assert _is_relevant(with_econ) is True
+    assert _is_relevant(broad_theme) is False
+    assert _is_relevant(strict_theme) is True
+    assert _is_relevant(title_context) is True
+
+
+def test_gate_drops_python_animal_noise():
+    """Python 动物/泛新闻标题不应进入干净样本。"""
+    ev = {"matched_terms": ["python"], "matched_term_count": 1,
+          "themes": "SOFTWARE;ECON_STOCKMARKET", "source_domain": "news.com",
+          "url": "https://news.com/dumsor-theatricals-pythons-missing-containers"}
+    assert _is_relevant(ev) is False
+
+
+def test_role_title_affinity_requires_role_anchor():
+    """标题像技术内容还不够，入图前要像目标岗位。"""
+    info = {"aliases": ["AI Software Engineer"]}
+    bad = _role_title_affinity("AI Engineer", info, "senior javascript developer postgresql python docker")
+    good = _role_title_affinity("AI Engineer", info, "openai trades azure exclusivity for enterprise ai reach")
+    assert bad == 0.0
+    assert good >= 0.5
 
 
 # ---- retrieve_evidence 契约结构（需索引） ----

@@ -183,7 +183,7 @@ def _build_html(title: str, data: dict[str, Any]) -> str:
     let panning = false;
     let lastX = 0;
     let lastY = 0;
-    let showLabels = true;
+    let showLabels = GRAPH.showLabels !== false;
     let physicsRunning = true;
     let hoveredNode = null;
     let selectedNode = null;
@@ -257,7 +257,7 @@ def _build_html(title: str, data: dict[str, Any]) -> str:
     }}
 
     function getNodeRadius(node) {{
-      return node.kind === 'job' ? 8 : node.kind === 'resource' ? 3 : 5;
+      return node.kind === 'job' ? 8 : node.kind === 'event' ? 7 : node.kind === 'resource' ? 3 : 5;
     }}
 
     function getNodeColor(node) {{
@@ -279,7 +279,7 @@ def _build_html(title: str, data: dict[str, Any]) -> str:
           (neighborSet.has(edge.source.id) && neighborSet.has(edge.target.id))
         );
         ctx.strokeStyle = active ? (edge.color || 'rgba(201,143,128,0.16)') : (edge.colorDim || 'rgba(188,181,177,0.018)');
-        ctx.lineWidth = active ? 0.8 : 0.25;
+        ctx.lineWidth = active ? (edge.width || 0.8) : (edge.widthDim || 0.25);
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
@@ -494,6 +494,7 @@ def _build_html(title: str, data: dict[str, Any]) -> str:
       fitView();
     }});
 
+    toggleLabelsBtn.textContent = showLabels ? '隐藏标签' : '显示标签';
     resize();
     fitView();
     renderDetails(null);
