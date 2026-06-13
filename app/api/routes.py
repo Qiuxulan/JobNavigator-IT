@@ -23,8 +23,14 @@ from app.services.extractor import ExtractorService
 from app.services.path_planner import PathPlannerService
 from app.services.recommender import RecommenderService
 from app.services.report_generator import ReportGenerationError, generate_career_report
+from app.services.evidence import EvidenceService
 from app.services.skill_norm import normalize_skill_id
-from app.services.trend import TrendNotFoundError, TrendService, TrendServiceError
+from app.services.trend import (
+    TrendNotFoundError,
+    TrendService,
+    TrendServiceError,
+    _resolve_role,
+)
 
 router = APIRouter(prefix="/v1")
 
@@ -145,6 +151,27 @@ def trends(job_role: str, horizon_months: int = 3) -> TrendResponse:
     except TrendServiceError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     return TrendResponse(signal=signal)
+
+
+@router.get("/evidence/{job_role}")
+def evidence(
+    job_role: str,
+    start_month: str = "2026-01",
+    end_month: str = "2026-06",
+    top_k: int = 5,
+    direction: str | None = None,
+) -> dict:
+    """证据检索：给岗位(+月份区间+方向)，返回 aggregate + 干净事件 + JD 证据。
+
+    direction 可选（up/flat/down）；给了就做方向归因排序。
+    """
+    try:
+        resolved = _resolve_role(job_role)
+    except TrendNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    return EvidenceService.retrieve_evidence(
+        resolved.canonical_role, (start_month, end_month), top_k, direction
+    )
 
 
 @router.post("/chat/decision", response_model=ChatDecisionResponse)

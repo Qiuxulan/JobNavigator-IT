@@ -284,3 +284,14 @@ service-account-key.json
 # 超大文件重写忽略（放在 ! 规则之后，确保生效）
 data/gold/gdelt_gkg_role_documents.jsonl
 data/gold/processed_jd_jobs.json
+
+# C模块(证据检索)本地产物：索引由 build_evidence_index.py 生成、体量大，不提交
+data/processed/evidence_index/
+!data/processed/event_graph_v1.json
+# 图谱可视化 HTML 可由脚本重新生成，不提交
+reports/event_graph_view.html
+reports/full_unified_graph.html
+reports/*_unified_graph.html
+reports/*_role_graph_v2.html
+# 注：data/gold/trend_evidence_v1.jsonl 与 data/processed/event_graph_v1.json
+#     是小体量交付物，保留提交（给 D 与图谱消费）。
