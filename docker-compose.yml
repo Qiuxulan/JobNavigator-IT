@@ -1,7 +1,10 @@
+version: "3.9"
+
 services:
+  # ── Frontend (Nginx + React SPA) ────────────────────────
   frontend:
     build:
-      context: ../..
+      context: .
       dockerfile: infra/docker/Dockerfile.frontend
     container_name: jobnav-frontend
     ports:
@@ -11,34 +14,47 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
+  # ── Backend API (FastAPI) ───────────────────────────────
   api:
     build:
-      context: ../..
+      context: .
       dockerfile: infra/docker/Dockerfile.api
     container_name: jobnav-api
+    env_file: .env
     environment:
       JOBNAV_APP_ENV: docker
       JOBNAV_POSTGRES_DSN: postgresql://jobnav:jobnav@postgres:5432/jobnavigator
       JOBNAV_REDIS_URL: redis://redis:6379/0
-      JOBNAV_LLM_BASE_URL: ${JOBNAV_LLM_BASE_URL:-https://dashscope.aliyuncs.com/compatible-mode/v1}
-      JOBNAV_LLM_API_KEY: ${JOBNAV_LLM_API_KEY:-}
-      JOBNAV_LLM_MODEL: ${JOBNAV_LLM_MODEL:-qwen-plus}
-      JOBNAV_LLM_TIMEOUT_SEC: ${JOBNAV_LLM_TIMEOUT_SEC:-60}
     ports:
       - "8000:8000"
     depends_on:
       postgres:
         condition: service_healthy
       redis:
-        condition: service_healthy
+        condition: service_started
     healthcheck:
       test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/v1/health').raise_for_status()"]
       interval: 10s
       timeout: 5s
       retries: 5
-      start_period: 15s
+      start_period: 30s
     restart: unless-stopped
 
+  # ── Vector seeding (one-shot: generate embeddings → pgvector) ──
+  vector-seed:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile.api
+    container_name: jobnav-vector-seed
+    environment:
+      JOBNAV_POSTGRES_DSN: postgresql://jobnav:jobnav@postgres:5432/jobnavigator
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["python", "-m", "pipelines.taxonomy.build_job_vectors"]
+    profiles: ["seed"]
+
+  # ── PostgreSQL + pgvector ───────────────────────────────
   postgres:
     image: pgvector/pgvector:pg16
     container_name: jobnav-postgres
@@ -50,7 +66,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ../db/migrations:/docker-entrypoint-initdb.d
+      - ./infra/db/migrations:/docker-entrypoint-initdb.d
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U jobnav -d jobnavigator"]
       interval: 5s
@@ -58,6 +74,7 @@ services:
       retries: 10
     restart: unless-stopped
 
+  # ── Redis ───────────────────────────────────────────────
   redis:
     image: redis:7-alpine
     container_name: jobnav-redis
@@ -65,11 +82,6 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 3s
-      retries: 3
     restart: unless-stopped
 
 volumes:

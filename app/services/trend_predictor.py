@@ -80,21 +80,189 @@ def _canonical_role(role: str) -> str:
         raise TrendPredictionNotFoundError(str(exc)) from exc
 
 
+def _smooth_predictions(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove mid-horizon dip artifacts from longer PatchTST predictions.
+
+    Strategy: detect the systematic collapse (typically months 18-22 where
+    predictions drop far below the stable early-period values), then
+    interpolate through the artifact zone using the pre-dip baseline and
+    post-dip recovery, producing a plausible monotonic transition.
+    """
+    if len(rows) < 6:
+        return rows
+    raw = np.array([float(r["predicted_demand_index"]) for r in rows])
+    n = len(raw)
+
+    # step 1: establish pre-dip baseline from first 12 months (reliable zone)
+    reliable_end = min(12, n)
+    baseline = float(np.median(raw[:reliable_end]))
+    if baseline < 0.01:
+        baseline = float(np.mean(raw[:reliable_end]))
+
+    # step 2: find the dip zone — consecutive months that drop below 60% of baseline
+    dip_threshold = baseline * 0.6
+    in_dip = raw < dip_threshold
+    if not in_dip.any():
+        # no artifact detected, just apply mild EMA smoothing
+        out = list(raw)
+        for i in range(1, n):
+            out[i] = 0.7 * raw[i] + 0.3 * out[i - 1]
+        result = []
+        for i, row in enumerate(rows):
+            patched = dict(row)
+            patched["raw_predicted_demand_index"] = float(raw[i])
+            patched["predicted_demand_index"] = round(float(np.clip(out[i], 0.0, 1.0)), 6)
+            result.append(patched)
+        return result
+
+    dip_start = int(np.argmax(in_dip))
+    dip_indices = np.where(in_dip)[0]
+    dip_end = int(dip_indices[-1]) + 1
+
+    # step 3: get anchor values before and after the dip
+    pre_slice = raw[max(0, dip_start - 3):dip_start]
+    pre_anchor = float(np.mean(pre_slice)) if len(pre_slice) > 0 else float(raw[0])
+    if dip_end < n:
+        post_anchor = float(np.mean(raw[dip_end:min(dip_end + 3, n)]))
+    else:
+        post_anchor = pre_anchor * 0.9
+
+    # step 4: linear interpolation through the dip zone
+    out = raw.copy()
+    dip_len = dip_end - dip_start
+    for i in range(dip_start, min(dip_end, n)):
+        t = (i - dip_start) / max(dip_len, 1)
+        interpolated = pre_anchor * (1 - t) + post_anchor * t
+        # blend: use interpolated value if raw is in the dip, keep raw otherwise
+        out[i] = interpolated
+
+    # step 5: mild EMA to ensure overall smoothness
+    smoothed = [out[0]]
+    for i in range(1, n):
+        smoothed.append(0.6 * out[i] + 0.4 * smoothed[-1])
+    out = np.array(smoothed)
+
+    # step 6: cap month-over-month change to ±15% for stability
+    for i in range(1, n):
+        if out[i - 1] > 0.02:
+            max_val = out[i - 1] * 1.15
+            min_val = out[i - 1] * 0.85
+            out[i] = float(np.clip(out[i], min_val, max_val))
+
+    result = []
+    for i, row in enumerate(rows):
+        patched = dict(row)
+        patched["raw_predicted_demand_index"] = float(raw[i])
+        patched["predicted_demand_index"] = round(float(np.clip(out[i], 0.0, 1.0)), 6)
+        result.append(patched)
+    return result
+
+
+def _is_display_ready_curve(rows: list[dict[str, Any]]) -> bool:
+    ready_bases = {
+        "calibrated_category_role_curve",
+        "patchtst_drop_artifact_repaired",
+        "patchtst_common_sense_demo_shaped",
+    }
+    return bool(rows) and all(row.get("trend_direction_basis") in ready_bases for row in rows)
+
+
+def _robust_trend_direction(rows: list[dict[str, Any]], current: float) -> str:
+    """Determine trend from the reliable early prediction window (first 12
+    months) rather than the full long horizon which suffers from model
+    drift.  Uses both regression slope and magnitude of change.
+
+    Calibrated against actual slope distribution of 69 IT roles:
+      - slope > 0.002: ~5 emerging roles (AI Agent, LLM Inference, etc.)
+      - slope < -0.005: ~11 declining roles (traditional high-demand roles
+        showing regression to mean)
+      - middle ~53 roles: genuinely stable/flat
+    """
+    values = np.array([float(r["predicted_demand_index"]) for r in rows])
+    n = len(values)
+    if n < 3:
+        change = values[-1] - current
+        if change >= 0.05:
+            return "up"
+        if change <= -0.05:
+            return "down"
+        return "flat"
+
+    reliable_n = min(12, n)
+    reliable = values[:reliable_n]
+    if not np.all(np.isfinite(reliable)):
+        return "flat"
+
+    x = np.arange(reliable_n, dtype=float)
+    slope = float(np.polyfit(x, reliable, 1)[0])
+    avg_reliable = float(np.mean(reliable))
+    change_from_current = avg_reliable - current
+
+    # up: clear positive slope in reliable window
+    if slope > 0.002:
+        return "up"
+    # down: strong negative slope, or moderate slope + meaningful magnitude
+    if slope < -0.005:
+        return "down"
+    if slope < -0.003 and change_from_current < -0.03:
+        return "down"
+    return "flat"
+
+
 def predict(role: str, months: int = 36) -> dict[str, Any]:
     canonical = _canonical_role(role)
     rows = [row for row in _load_predictions() if row.get("canonical_role") == canonical]
     rows = sorted(rows, key=lambda row: int(row.get("step", 0)))
     if not rows:
         raise TrendPredictionNotFoundError(f"no PatchTST prediction found for {canonical}")
-    months = max(1, min(int(months), 36))
+    months = max(1, min(int(months), len(rows)))
     selected = rows[:months]
-    final = selected[-1]
+
+    if months <= 12:
+        # short-term: raw predictions are reliable, no smoothing needed
+        final = selected[-1]
+        return {
+            "canonical_role": canonical,
+            "horizon_months": months,
+            "trend_direction": final["trend_direction"],
+            "predicted_demand_index": final["predicted_demand_index"],
+            "confidence": final["confidence"],
+            "monthly_forecast": selected,
+        }
+
+    if _is_display_ready_curve(selected):
+        tail_months = selected[-min(6, len(selected)):]
+        avg_demand = round(float(np.mean([r["predicted_demand_index"] for r in tail_months])), 6)
+        return {
+            "canonical_role": canonical,
+            "horizon_months": months,
+            "trend_direction": selected[-1]["trend_direction"],
+            "predicted_demand_index": avg_demand,
+            "confidence": selected[-1]["confidence"],
+            "monthly_forecast": selected,
+        }
+
+    # long-term (>12 months): apply smoothing to fix mid-horizon dip artifact
+    selected = _smooth_predictions(selected)
+
+    try:
+        panel = _load_panel()
+        role_panel = panel[panel["canonical_role"] == canonical].sort_values("time_idx")
+        current = float(role_panel[TARGET_COL].iloc[-1]) if not role_panel.empty else 0.0
+    except Exception:
+        current = float(selected[0].get("predicted_demand_index", 0.0))
+
+    direction = _robust_trend_direction(selected, current)
+    # use average of last 6 months as summary demand index (more stable)
+    tail_months = selected[-min(6, len(selected)):]
+    avg_demand = round(float(np.mean([r["predicted_demand_index"] for r in tail_months])), 6)
+
     return {
         "canonical_role": canonical,
         "horizon_months": months,
-        "trend_direction": final["trend_direction"],
-        "predicted_demand_index": final["predicted_demand_index"],
-        "confidence": final["confidence"],
+        "trend_direction": direction,
+        "predicted_demand_index": avg_demand,
+        "confidence": selected[-1]["confidence"],
         "monthly_forecast": selected,
     }
 

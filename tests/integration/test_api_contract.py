@@ -104,7 +104,7 @@ def test_careers_rank(monkeypatch):
     assert len(payload["ranked_results"]) >= 1
 
 
-def test_paths_trends_and_reserved_chat():
+def test_paths_trends_and_agent_chat(monkeypatch):
     from datetime import date
 
     from app.schemas.domain import TrendEvidence, TrendSignal
@@ -147,9 +147,39 @@ def test_paths_trends_and_reserved_chat():
     assert trend_payload["trend_direction"] == "up"
     assert trend_payload["main_factors"]
 
+    monkeypatch.setattr("app.services.agent.chat", lambda messages, max_rounds=8: "Agent guidance is ready.")
     chat_resp = client.post("/v1/chat/decision", json={"query": "give me guidance", "profile": profile, "top_k": 3})
-    assert chat_resp.status_code == 501
-    assert "reserved" in chat_resp.json()["detail"].lower()
+    assert chat_resp.status_code == 200
+    chat_payload = chat_resp.json()
+    assert chat_payload["summary"] == "Agent guidance is ready."
+    assert chat_payload["recommendations"] == []
+    assert chat_payload["path"] is None
+    assert chat_payload["trend"] is None
+
+    agent_resp = client.post(
+        "/v1/agent/chat",
+        json={"messages": [{"role": "user", "content": "compare AI roles"}]},
+    )
+    assert agent_resp.status_code == 200
+    assert agent_resp.json()["reply"] == "Agent guidance is ready."
+
+
+@_needs_roles
+def test_frontend_catalog_and_graph_contracts():
+    roles_resp = client.get("/v1/roles")
+    assert roles_resp.status_code == 200
+    assert sum(len(items) for items in roles_resp.json()["roles"].values()) == 69
+
+    catalog_resp = client.get("/v1/roles/catalog")
+    assert catalog_resp.status_code == 200
+    assert len(catalog_resp.json()["roles"]) == 69
+
+    graph_resp = client.get("/v1/graph")
+    assert graph_resp.status_code == 200
+    graph = graph_resp.json()
+    assert graph["summary"]["roles"] == 69
+    assert graph["summary"]["skills"] == 275
+    assert graph["summary"]["links"] == len(graph["links"])
 
 
 @_needs_roles

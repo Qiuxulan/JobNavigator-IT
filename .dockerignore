@@ -1,0 +1,37 @@
+﻿# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Build artifacts
+frontend/dist/
+frontend/node_modules/
+
+# Data (raw/processed — gold is needed)
+data/raw/
+data/processed/
+data/GDELT/
+
+# Secrets
+.env
+secrets/
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# Git
+.git/
+.github/
+
+# Docker volumes
+postgres_data/
+redis_data/
+
+# Large model files (comment out if you need full model support)
+# models/st_finetuned/model.safetensors
+# models/graphsage_v2/*.pt

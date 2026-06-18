@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Literal, Optional
+from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field
 
@@ -84,12 +84,14 @@ class TrendEvidence(BaseModel):
 
 class TrendSignal(BaseModel):
     canonical_role: str
+    role_name_zh: Optional[str] = None
     horizon_months: int = 3
     trend_direction: Literal["up", "flat", "down"] = "flat"
     predicted_demand_index: float = 0.5
     confidence: float = 0.0
     main_factors: list[str] = Field(default_factory=list)
     evidence: list[TrendEvidence] = Field(default_factory=list)
+    monthly_forecast: list[dict[str, Any]] = Field(default_factory=list)
 
 
 class CoarseMatch(BaseModel):

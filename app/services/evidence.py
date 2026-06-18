@@ -23,6 +23,7 @@ INDEX_DIR = Path("data/processed/evidence_index")
 EVENTS_DIR = INDEX_DIR / "events"
 JOBS_DIR = INDEX_DIR / "jobs"
 TAXONOMY_PATH = Path("data/gold/role_taxonomy.json")
+PRECOMPUTED_EVIDENCE_PATH = Path("data/gold/trend_evidence_v1.jsonl")
 
 OPPORTUNITY_TYPES = {"funding", "product_release", "research_breakthrough"}
 RISK_TYPES = {"layoff", "policy", "security_incident"}
@@ -347,8 +348,16 @@ def _ym(month: str) -> str:
     return str(month or "")[:7]
 
 
+def _tone_from_text(text: str | None) -> float | None:
+    if not text:
+        return None
+    m = re.search(r"tone\s+(-?\d+(?:\.\d+)?)", text)
+    return round(float(m.group(1)), 3) if m else None
+
+
 class EvidenceService:
     _tax: dict | None = None
+    _precomputed_rows: dict[str, list[dict]] | None = None
     RELEVANCE_GATE = True   # 相关性闸门开关（评估消融时可关）
     ROLE_AFFINITY_DISPLAY_MIN = 0.5
     WEAK_TITLE_QUALITY_MIN = 0.5
@@ -411,6 +420,77 @@ class EvidenceService:
             })
         return out
 
+    @classmethod
+    def _load_precomputed_rows(cls) -> dict[str, list[dict]]:
+        if cls._precomputed_rows is not None:
+            return cls._precomputed_rows
+        rows: dict[str, list[dict]] = {}
+        if not PRECOMPUTED_EVIDENCE_PATH.exists():
+            cls._precomputed_rows = rows
+            return rows
+        with open(PRECOMPUTED_EVIDENCE_PATH, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                role = str(row.get("canonical_role") or "")
+                if role:
+                    rows.setdefault(role.lower(), []).append(row)
+        cls._precomputed_rows = rows
+        return rows
+
+    @classmethod
+    def _load_precomputed_evidence(cls, role: str, months: tuple[str, str],
+                                   top_k: int, direction: str | None) -> dict | None:
+        rows = cls._load_precomputed_rows().get(role.lower(), [])
+        if not rows:
+            return None
+
+        def score_row(row: dict) -> tuple[int, int, str]:
+            raw_direction = row.get("trend_direction_raw") or row.get("trend_direction")
+            wanted = "stable" if direction == "flat" else direction
+            direction_match = int(bool(wanted and raw_direction in {direction, wanted}))
+            horizon = int(row.get("horizon_months") or 999)
+            return direction_match, -abs(horizon - 3), str(row.get("month") or "")
+
+        row = max(rows, key=score_row)
+        events = []
+        for ev in (row.get("evidence_topk") or [])[:top_k]:
+            events.append({
+                "evidence_type": "news_event",
+                "url": ev.get("source_url"),
+                "source_domain": ev.get("source_name") or "GDELT",
+                "title": ev.get("title"),
+                "published_at": ev.get("published_at"),
+                "tone": _tone_from_text(ev.get("evidence_text")),
+                "themes": [],
+                "match_weight": None,
+                "event_type": ev.get("evidence_type"),
+                "impact_direction": ev.get("impact_direction") or "neutral",
+                "is_counter_signal": False,
+                "direction_align": None,
+                "title_quality": None,
+                "role_affinity": None,
+                "evidence_strength": ev.get("evidence_strength", "precomputed"),
+                "retrieval_score": ev.get("retrieval_score"),
+            })
+
+        jobs = (row.get("jd_evidence") or [])[:top_k]
+        note = row.get("risk_notes") or "使用预计算趋势证据；完整 evidence_index 缺失时自动降级。"
+        return {
+            "role": role,
+            "months": list(months),
+            "direction": direction,
+            "aggregate": row.get("aggregate"),
+            "events": events,
+            "jobs": jobs,
+            "major_industry_events": row.get("major_industry_events", []),
+            "candidates_total": (row.get("aggregate") or {}).get("article_count", len(events)),
+            "candidates_kept": len(events),
+            "note": note,
+        }
+
     # ---- 方向对齐 ----
     @staticmethod
     def _direction_align(tone: float, etype: str, direction: str | None) -> float:
@@ -431,6 +511,10 @@ class EvidenceService:
                           top_k: int = 5, direction: str | None = None) -> dict:
         """契约接口。direction 可选（'up'/'down'/'flat'），给了就做方向归因排序。"""
         raw_cands = cls._load_events(role, months)
+        if not raw_cands:
+            precomputed = cls._load_precomputed_evidence(role, months, top_k, direction)
+            if precomputed is not None:
+                return precomputed
         total = len(raw_cands)
         aggregate = cls._aggregate(raw_cands)          # 聚合信号：稳健、主力
         cands = [c for c in raw_cands if _is_relevant(c)] if cls.RELEVANCE_GATE else raw_cands

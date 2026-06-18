@@ -1,6 +1,6 @@
 # JobNavigator-IT
 
-**环境在docs\04-deployment-ops\03-setup-on-new-machine.md！！**
+**快速启动见 `SETUP_GUIDE.md`；完整环境说明见 `docs/04-deployment-ops/03-setup-on-new-machine.md`。**
 
 **分工在docs\01-product-roadmap\03-overall-team-assignment-3-weeks.md！！**
 
@@ -21,7 +21,7 @@
 
 1. 领域：仅 IT 岗位
 2. 语言：中文优先，中英混合可支持
-3. Agent：当前阶段不实现，`/v1/chat/decision` 仅预留（501）
+3. Agent：已实现 Orchestrator 风格工具调用 Agent；外部 LLM、数据库或完整证据索引缺失时支持本地降级
 
 ## 2. 总体架构
 
@@ -29,9 +29,9 @@
 
 1. `api-service`（FastAPI）
    : 提供统一 REST API，对接前端/调用方
-2. `worker-service`（Celery + Redis）
-   : 承担异步任务（数据处理、训练、批量计算）
-3. `data-service`（PostgreSQL + pgvector）
+2. `frontend`（React + TypeScript + ECharts）
+   : 提供趋势、岗位对比、图谱、学习路径和 Agent 交互页面
+3. `data-service`（PostgreSQL + pgvector，可选）
    : 管理结构化数据、关系边、向量索引
 4. `model-service`（脚本层）
    : 承担抽取模型训练与推理封装
@@ -44,6 +44,7 @@ app/
   core/                 # 配置管理
   schemas/              # 领域模型与请求响应模型
   services/             # 业务服务（抽取/推荐/路径/趋势）
+frontend/               # React + TypeScript 前端
 services/
   worker/               # Celery worker
   model/                # 本地模型脚本占位（训练/推理）
@@ -157,22 +158,25 @@ docs/
 
 ### 4.7 趋势层（Trend）
 
-先用稳定基线确保可落地，再保留升级位：
+以 PatchTST 逐月预测为主，并提供基线降级：
 
-1. 基线
-   : ARIMA/线性方案
+1. 主模型
+   : PatchTST 24 个月岗位需求预测
 2. 输入
    : 岗位时序、技能热度、事件证据
 3. 输出
-   : 短期/长期趋势方向 + 证据摘要
+   : 逐月需求指数、趋势方向、证据摘要和解释上下文
 
 ## 5. API 冻结范围（V1）
 
-1. `POST /v1/profile/extract`
-2. `POST /v1/jobs/recommend`
-3. `POST /v1/paths/generate`
-4. `GET /v1/trends/{job_role}`
-5. `POST /v1/chat/decision`（预留）
+1. `GET /v1/roles`、`GET /v1/roles/catalog`
+2. `POST /v1/profile/extract`
+3. `POST /v1/jobs/recommend`、`POST /v1/careers/rank`
+4. `POST /v1/paths/generate`
+5. `GET /v1/trends/batch`、`GET /v1/trends/{job_role}`
+6. `GET /v1/evidence/{job_role}`、`GET /v1/cot/{job_role}`
+7. `GET /v1/graph`
+8. `POST /v1/chat/decision`、`POST /v1/agent/chat`
 
 ## 6. 测试与验收
 
@@ -190,8 +194,9 @@ docs/
 
 ## 7. 环境安装与运行
 
-环境安装、Conda 启动、Docker 启动、常见问题等统一放在：
+前后端本地启动、Docker Compose、Agent 环境变量和常见问题见：
 
+- `SETUP_GUIDE.md`
 - `docs/04-deployment-ops/03-setup-on-new-machine.md`
 
 ## 8. 文档导航
@@ -200,6 +205,7 @@ docs/
 2. 系统与数据：`docs/02-system-data/`
 3. 接口与测试：`docs/03-api-testing/`
 4. 部署与运维：`docs/04-deployment-ops/`
+5. D 模块全链路与 Agent：`reports/04_full_chain_agent_integration.md`
 
 ## 9. A 模块：英文简历 / JD 技能抽取
 

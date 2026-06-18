@@ -15,7 +15,7 @@ class Settings(BaseSettings):
 
     llm_base_url: str = "https://api.openai.com/v1"
     llm_api_key: str = ""
-    llm_model: str = ""
+    llm_model: str = "gpt-4o-mini"
     llm_timeout_sec: int = 60
 
     trend_horizon_months: int = 3
@@ -73,7 +73,7 @@ class Settings(BaseSettings):
     trend_arxiv_max_results: int = 50
     trend_patchtst_lookback_months: int = 77
 
-    model_config = SettingsConfigDict(env_file=".env", env_prefix="JOBNAV_")
+    model_config = SettingsConfigDict(env_file=".env", env_prefix="JOBNAV_", extra="ignore")
 
 
 settings = Settings()
