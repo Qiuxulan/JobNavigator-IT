@@ -4,10 +4,12 @@ import hashlib
 import json
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from app.core.config import settings
 from app.schemas.domain import TrendEvidence, TrendSignal
 from app.services.evidence import EvidenceService
+from app.services.role_i18n import role_zh
 
 
 class TrendServiceError(RuntimeError):
@@ -26,11 +28,10 @@ class ResolvedRole:
 
 ROLE_TAXONOMY_PATH = Path("data/gold/role_taxonomy.json")
 ROLE_TREND_SCORES_PATH = Path("data/gold/role_trend_scores.json")
-# PatchTST 预测未来、未来月无新闻 -> 证据统一取最近真实事件窗口
 EVIDENCE_WINDOW = ("2026-01", "2026-06")
 
 
-def _load_json(path: Path) -> list[dict]:
+def _load_json(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
     try:
@@ -40,37 +41,28 @@ def _load_json(path: Path) -> list[dict]:
         return []
 
 
-def _month_minus(month: str, k: int) -> str:
-    """'2026-05-01' 往前推 k 个月 -> '2026-03'。"""
-    try:
-        y, m = int(month[:4]), int(month[5:7])
-    except (ValueError, IndexError):
-        return str(month)[:7]
-    idx = y * 12 + (m - 1) - k
-    return f"{idx // 12:04d}-{idx % 12 + 1:02d}"
-
-
-def _retrieve_trend_evidence(role: str, direction: str,
-                             top_k: int = 5) -> list[TrendEvidence]:
-    """从最近真实事件窗口取证据，映射成 TrendEvidence；索引缺失时返回空不报错。"""
+def _retrieve_trend_evidence(role: str, direction: str, top_k: int = 5) -> list[TrendEvidence]:
     try:
         res = EvidenceService.retrieve_evidence(role, EVIDENCE_WINDOW, top_k, direction)
     except Exception:
         return []
+
     fallback_date = f"{EVIDENCE_WINDOW[1]}-01"
     out: list[TrendEvidence] = []
     for ev in res.get("events", []):
         url = ev.get("url") or ""
         eid = "evt_" + hashlib.sha1(url.encode("utf-8")).hexdigest()[:12]
-        out.append(TrendEvidence(
-            event_id=eid,
-            source=ev.get("source_domain") or "GDELT",
-            title=ev.get("title") or "事件",
-            event_date=ev.get("published_at") or fallback_date,
-            summary=f"{ev.get('event_type', 'news')} · tone {ev.get('tone')} · 来源 {ev.get('source_domain')}",
-            impact=ev.get("impact_direction") or "neutral",
-            url=url or None,
-        ))
+        out.append(
+            TrendEvidence(
+                event_id=eid,
+                source=ev.get("source_domain") or ev.get("source") or "GDELT",
+                title=ev.get("title") or "行业事件",
+                event_date=ev.get("published_at") or ev.get("event_date") or fallback_date,
+                summary=f"{ev.get('event_type', 'news')} · tone {ev.get('tone')} · {ev.get('source_domain') or ''}",
+                impact=ev.get("impact_direction") or "neutral",
+                url=url or None,
+            )
+        )
     return out
 
 
@@ -96,38 +88,63 @@ def _resolve_role(job_role: str) -> ResolvedRole:
     raise TrendNotFoundError(f"no canonical role found for {job_role!r}")
 
 
-def _extract_factors(forecast_row: dict) -> list[str]:
+def _extract_factors(forecast_row: dict[str, Any]) -> list[str]:
     raw = forecast_row.get("supplemental_signals")
     if isinstance(raw, list):
         return [str(x) for x in raw][:3]
-    if isinstance(raw, dict):
-        return [str(k) for k in raw][:3]
-    return []
+    if not isinstance(raw, dict):
+        return []
+
+    labels = {
+        "gdelt": "新闻情绪信号参与修正",
+        "github": "GitHub 活跃度信号参与修正",
+        "arxiv": "论文热度信号参与修正",
+    }
+    factors: list[str] = []
+    for key, value in raw.items():
+        if not isinstance(value, dict):
+            factors.append(labels.get(str(key), str(key)))
+            continue
+        contribution = float(value.get("contribution") or 0.0)
+        signal = value.get("signal")
+        observed = bool(value.get("observed"))
+        if not observed and contribution == 0:
+            continue
+        direction = "正向" if contribution > 0 else "负向" if contribution < 0 else "中性"
+        signal_text = "" if signal is None else f"，信号值 {float(signal):.3f}"
+        factors.append(f"{labels.get(str(key), str(key))}：{direction}贡献 {contribution:.4f}{signal_text}")
+    return factors[:3]
 
 
-def _patchtst_signal(canonical_role: str, horizon: int):
-    """优先用组员1 PatchTST 预测。返回 (direction, idx, conf, factors) 或 None(缺失时)。"""
+def _patchtst_signal(canonical_role: str, horizon: int) -> tuple[str, float, float, list[str], list[dict[str, Any]], int] | None:
     try:
-        from app.services.trend_predictor import predict   # 懒加载, 避免启动拽 torch
-        p = predict(canonical_role, horizon)
+        from app.services.trend_predictor import predict
+
+        payload = predict(canonical_role, horizon)
     except Exception:
         return None
-    forecast = p.get("monthly_forecast") or [{}]
+
+    forecast = payload.get("monthly_forecast") or []
+    final_row = forecast[-1] if forecast else {}
     return (
-        p.get("trend_direction", "flat"),
-        float(p.get("predicted_demand_index", 0.0)),
-        float(p.get("confidence", 0.0)),
-        _extract_factors(forecast[-1]),
+        payload.get("trend_direction", "flat"),
+        float(payload.get("predicted_demand_index", 0.0)),
+        float(payload.get("confidence", 0.0)),
+        _extract_factors(final_row),
+        forecast,
+        int(payload.get("horizon_months") or len(forecast) or horizon),
     )
 
 
-def _baseline_signal(canonical_role: str):
-    """回退：基线 role_trend_scores.json。返回 (direction, idx, conf, factors)。"""
+def _baseline_signal(canonical_role: str) -> tuple[str, float, float, list[str]]:
     scores = _load_json(ROLE_TREND_SCORES_PATH)
-    role_scores = [s for s in scores
-                   if s.get("canonical_role", "").lower() == canonical_role.lower()]
+    role_scores = [
+        s for s in scores
+        if s.get("canonical_role", "").lower() == canonical_role.lower()
+    ]
     if not role_scores:
         raise TrendNotFoundError(f"no trend result found for {canonical_role}")
+
     role_scores.sort(key=lambda x: str(x.get("month", "")), reverse=True)
     latest = role_scores[0]
     idx = float(latest.get("predicted_demand_index", 0.0))
@@ -145,17 +162,23 @@ class TrendService:
     def get_signal(job_role: str, horizon_months: int | None = None) -> TrendSignal:
         resolved = _resolve_role(job_role)
         horizon = int(horizon_months or settings.trend_horizon_months)
-        sig = _patchtst_signal(resolved.canonical_role, horizon)   # 优先 PatchTST
-        if sig is None:                                            # 缺失 -> 回退基线
-            sig = _baseline_signal(resolved.canonical_role)
-        direction, idx, conf, factors = sig
+        patchtst = _patchtst_signal(resolved.canonical_role, horizon)
+
+        if patchtst is None:
+            direction, idx, conf, factors = _baseline_signal(resolved.canonical_role)
+            monthly_forecast: list[dict[str, Any]] = []
+        else:
+            direction, idx, conf, factors, monthly_forecast, horizon = patchtst
+
         evidence = _retrieve_trend_evidence(resolved.canonical_role, direction)
         return TrendSignal(
             canonical_role=resolved.canonical_role,
+            role_name_zh=role_zh(resolved.canonical_role),
             horizon_months=horizon,
             trend_direction=direction,
             predicted_demand_index=idx,
             confidence=conf,
             main_factors=factors,
             evidence=evidence,
+            monthly_forecast=monthly_forecast,
         )

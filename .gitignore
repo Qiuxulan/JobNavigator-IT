@@ -293,5 +293,11 @@ reports/event_graph_view.html
 reports/full_unified_graph.html
 reports/*_unified_graph.html
 reports/*_role_graph_v2.html
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+!frontend/*.json
+!frontend/**/*.json
 # 注：data/gold/trend_evidence_v1.jsonl 与 data/processed/event_graph_v1.json
 #     是小体量交付物，保留提交（给 D 与图谱消费）。

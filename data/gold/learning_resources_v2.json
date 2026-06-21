@@ -1,0 +1,5750 @@
+{
+  "version": "v2",
+  "created": "2026-06-13",
+  "description": "学习资源库补充版（v1 中缺少资源的 231 个技能），整合 Coursera/Bilibili/GitHub 三源，按重要性排序补充",
+  "metadata": {
+    "total_skills_supplemented": 231,
+    "skills_with_resources": 231,
+    "skills_without_resources": 0,
+    "source_counts": {
+      "coursera": 183,
+      "bilibili": 49,
+      "github": 35
+    },
+    "total_resource_skill_pairs": 267,
+    "importance_scoring": "required_count * 2 + core_count + hot_bonus(5)"
+  },
+  "skills": {
+    "java": {
+      "skill_name": "Java",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0501",
+          "title": "Java Programming and Software Engineering Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/java-programming",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0502",
+          "title": "Object Oriented Programming in Java",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/object-oriented-programming",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Duke University + UC San Diego",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0503",
+          "title": "Java 入门到精通",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Cv411372m",
+          "difficulty": "beginner",
+          "hours_estimate": 50.0,
+          "language": "zh",
+          "note": "黑马程序员 | 播放量1000万+",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "c": {
+      "skill_name": "C",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 50,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0504",
+          "title": "C for Everyone: Programming Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/c-for-everyone",
+          "difficulty": "beginner",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "UC Santa Cruz | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0505",
+          "title": "Introduction to Programming in C",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/introduction-programming-c",
+          "difficulty": "beginner",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "go": {
+      "skill_name": "Go",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0506",
+          "title": "Programming with Google Go",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/google-golang",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "UC Irvine | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0507",
+          "title": "Programming with Golang",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/programming-with-golang",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Coursera",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0508",
+          "title": "Go 语言从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1gf4y1r79E",
+          "difficulty": "beginner",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "极客时间 | Go 核心语法+并发编程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rust": {
+      "skill_name": "Rust",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0509",
+          "title": "Rust Programming Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Rust+Programming",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "Duke University",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0510",
+          "title": "Rust 编程语言入门教程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hp4y1k7SV",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "Rust 官方文档讲解",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ruby": {
+      "skill_name": "Ruby",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0511",
+          "title": "Ruby on Rails Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/ruby-on-rails",
+          "difficulty": "beginner",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.2",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "php": {
+      "skill_name": "PHP",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0512",
+          "title": "Building Web Applications in PHP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/web-applications-php",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Michigan | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "swift": {
+      "skill_name": "Swift",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0513",
+          "title": "Developing iOS Apps with Swift",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Swift+iOS+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Meta | iOS Developer Certificate",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "kotlin": {
+      "skill_name": "Kotlin",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0514",
+          "title": "Kotlin for Java Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/kotlin-for-java-developers",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "JetBrains | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0515",
+          "title": "Android App Development with Kotlin",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Android+Kotlin+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Meta Android Developer Certificate",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "r": {
+      "skill_name": "R",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0516",
+          "title": "Data Science: Foundations using R",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/data-science-foundations-r",
+          "difficulty": "beginner",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0517",
+          "title": "R Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/r-programming",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Johns Hopkins University",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "matlab": {
+      "skill_name": "MATLAB",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 30,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0518",
+          "title": "Introduction to Programming with MATLAB",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/matlab",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Vanderbilt University | rating:4.8",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "perl": {
+      "skill_name": "Perl",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0519",
+          "title": "Perl Tutorial for Beginners",
+          "source": "github",
+          "url": "https://github.com/perladvent/perldotcom",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Perl 社区教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dart": {
+      "skill_name": "Dart",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0520",
+          "title": "Introduction to Dart",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Dart+Flutter",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Google | Flutter & Dart",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "lua": {
+      "skill_name": "Lua",
+      "category": "language",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0521",
+          "title": "Programming in Lua",
+          "source": "github",
+          "url": "https://github.com/lua/lua",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "Lua 官方文档",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "solidity": {
+      "skill_name": "Solidity",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0522",
+          "title": "Blockchain Basics and Smart Contract Foundations",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/packt-blockchain-basics-and-smart-contract-foundations-bfx1b",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Packt | Solidity + DApps",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0523",
+          "title": "Complete Cryptocurrency & Blockchain Course | Learn Solidity",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/packt-complete-cryptocurrency-and-blockchain-course-learn-solidity-ihzll",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Packt | Ethereum + Truffle + Web3",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "scala": {
+      "skill_name": "Scala",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0524",
+          "title": "Functional Programming Principles in Scala",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/scala-functional-programming",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "EPFL | rating:4.6",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "groovy": {
+      "skill_name": "Groovy",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0525",
+          "title": "Groovy Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Groovy+programming",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Jenkins Pipeline 常用语言",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cpp": {
+      "skill_name": "C++",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 60,
+      "prerequisites": [
+        "c"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0526",
+          "title": "Object-Oriented Data Structures in C++",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/cs-fundamentals-1",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "University of Illinois | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0527",
+          "title": "C++ For C Programmers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/c-plus-plus-a",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "UC Santa Cruz",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0528",
+          "title": "C++ 从入门到进阶",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1et411b73Z",
+          "difficulty": "beginner",
+          "hours_estimate": 50.0,
+          "language": "zh",
+          "note": "黑马程序员 | C++ 全套教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "csharp": {
+      "skill_name": "C#",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0529",
+          "title": "Introduction to C# Programming and Unity",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=C%23+programming",
+          "difficulty": "beginner",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "University of Colorado | C# + Unity",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "typescript": {
+      "skill_name": "TypeScript",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0530",
+          "title": "TypeScript for Professionals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=TypeScript",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "类型系统 + 泛型 + 装饰器",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0531",
+          "title": "TypeScript 入门教程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Xy4y1v7S2",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "TypeScript 核心语法讲解",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "objective-c": {
+      "skill_name": "Objective-C",
+      "category": "language",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "c"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0532",
+          "title": "Introduction to Objective-C",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Objective-C+programming",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "iOS Legacy 开发语言",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "shell": {
+      "skill_name": "Shell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0533",
+          "title": "Linux Commands & Shell Scripting",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/linux-commands-and-shell-scripting-bits",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "BITS Pilani | Bash 脚本入门",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0534",
+          "title": "Advanced Linux Administration and Shell Scripting",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/packt-advanced-linux-administration-and-shell-scripting-2g5xt",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Packt | 系统管理+自动化",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "powershell": {
+      "skill_name": "PowerShell",
+      "category": "language",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0535",
+          "title": "PowerShell Scripting for System Admins",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=PowerShell+scripting",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Windows 系统自动化管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "haskell": {
+      "skill_name": "Haskell",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 60,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0536",
+          "title": "Introduction to Haskell Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Haskell+functional+programming",
+          "difficulty": "advanced",
+          "hours_estimate": 40.0,
+          "language": "en",
+          "note": "函数式编程核心语言",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "elixir": {
+      "skill_name": "Elixir",
+      "category": "language",
+      "level": 1,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0537",
+          "title": "Elixir & Phoenix for Beginners",
+          "source": "github",
+          "url": "https://github.com/elixirschool/elixirschool",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Elixir School 开源教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "clojure": {
+      "skill_name": "Clojure",
+      "category": "language",
+      "level": 1,
+      "difficulty": "advanced",
+      "hours_estimate": 50,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0538",
+          "title": "Clojure Programming Fundamentals",
+          "source": "github",
+          "url": "https://github.com/clojure/clojure",
+          "difficulty": "advanced",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Clojure 官方学习资源",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "css": {
+      "skill_name": "CSS",
+      "category": "frontend",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "html"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0539",
+          "title": "HTML, CSS, and JavaScript for Web Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/html-css-javascript-for-web-developers",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Johns Hopkins University | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0540",
+          "title": "Front-End Web Development with React",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=CSS+web+development",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Meta | 前端开发基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "tailwind": {
+      "skill_name": "Tailwind CSS",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "css"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0541",
+          "title": "Tailwind CSS 实战教程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Zf4y1G7Wj",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "Tailwind CSS 从零开始",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "bootstrap": {
+      "skill_name": "Bootstrap",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "html",
+        "css"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0542",
+          "title": "Introduction to Bootstrap",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Bootstrap+framework",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "前端 UI 组件框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sass": {
+      "skill_name": "Sass",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "css"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0543",
+          "title": "Sass Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Sass+CSS+preprocessor",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "CSS 预处理器",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jquery": {
+      "skill_name": "jQuery",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0544",
+          "title": "jQuery 基础教程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Jt411w7Fy",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "DOM 操作简化库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "webpack": {
+      "skill_name": "Webpack",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0545",
+          "title": "Webpack for Beginners",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Webpack+module+bundler",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "前端模块打包工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "vite": {
+      "skill_name": "Vite",
+      "category": "frontend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0546",
+          "title": "Vite 构建工具入门",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1GN4y1M7P5",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "下一代前端构建工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "angular": {
+      "skill_name": "Angular",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "typescript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0547",
+          "title": "Angular Development",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Angular+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Google | 企业级前端框架",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0548",
+          "title": "Angular 从入门到精通",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Zy4y1K7SH",
+          "difficulty": "intermediate",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "Angular 全套教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "svelte": {
+      "skill_name": "Svelte",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0549",
+          "title": "Svelte 框架入门",
+          "source": "github",
+          "url": "https://github.com/sveltejs/svelte",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Svelte 官方学习资源",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "redux": {
+      "skill_name": "Redux",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0550",
+          "title": "Redux 状态管理",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Redux+React+state+management",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "React 全局状态管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "nextjs": {
+      "skill_name": "Next.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0551",
+          "title": "Next.js & React",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Next.js+React",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "React 全栈框架 | SSR + SSG",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "nuxt": {
+      "skill_name": "Nuxt.js",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "vue"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0552",
+          "title": "Nuxt.js 全栈开发",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1j341117UG",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "zh",
+          "note": "Vue 全栈框架 | SSR",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "electron": {
+      "skill_name": "Electron",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "javascript",
+        "nodejs"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0553",
+          "title": "Electron 桌面应用开发",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1QB4y1F722",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "跨平台桌面应用开发",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "threejs": {
+      "skill_name": "Three.js",
+      "category": "frontend",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0554",
+          "title": "Three.js 3D Web 开发",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Gg411X7FY",
+          "difficulty": "advanced",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "WebGL 3D 可视化",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "webgl": {
+      "skill_name": "WebGL",
+      "category": "frontend",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "javascript",
+        "threejs"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0555",
+          "title": "WebGL 编程指南",
+          "source": "github",
+          "url": "https://github.com/nickyc975/WebGL-Programming-Guide",
+          "difficulty": "advanced",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "WebGL 核心编程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "express": {
+      "skill_name": "Express.js",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0556",
+          "title": "Server-side Development with NodeJS, Express and MongoDB",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/server-side-nodejs",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "HKUST | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "nestjs": {
+      "skill_name": "NestJS",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "nodejs",
+        "typescript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0557",
+          "title": "NestJS 企业级 Node.js 框架",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1T44y1W7Si",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "TypeScript 全栈后端框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "flask": {
+      "skill_name": "Flask",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0558",
+          "title": "Python Flask Web 开发",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV17r4y1y7jJ",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "Python 轻量级 Web 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "spring": {
+      "skill_name": "Spring",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0559",
+          "title": "Spring Framework Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Spring+Framework+Java",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Spring Boot + Spring MVC + Spring Security",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0560",
+          "title": "Spring Boot 微服务实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV15b4y1a7yG",
+          "difficulty": "intermediate",
+          "hours_estimate": 40.0,
+          "language": "zh",
+          "note": "尚硅谷 | Spring Boot 企业级开发",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dotnet": {
+      "skill_name": ".NET",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "csharp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0561",
+          "title": ".NET Core Development",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=.NET+Core+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Microsoft .NET 全栈开发",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "laravel": {
+      "skill_name": "Laravel",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "php"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0562",
+          "title": "Laravel PHP Framework",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Laravel+PHP",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "PHP 全栈 Web 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "symfony": {
+      "skill_name": "Symfony",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "php"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0563",
+          "title": "Symfony PHP Framework",
+          "source": "github",
+          "url": "https://github.com/symfony/symfony",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Symfony 官方文档",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rails": {
+      "skill_name": "Ruby on Rails",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "ruby"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0564",
+          "title": "Ruby on Rails Full Stack Development",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/ruby-on-rails",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Johns Hopkins University",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gin": {
+      "skill_name": "Gin",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "go"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0565",
+          "title": "Gin Web Framework for Go",
+          "source": "github",
+          "url": "https://github.com/gin-gonic/gin",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Go 高性能 HTTP 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "hibernate": {
+      "skill_name": "Hibernate",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "spring"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0566",
+          "title": "Hibernate / JPA 持久层框架",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Y4411F7cX",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "Java ORM 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "grpc": {
+      "skill_name": "gRPC",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0567",
+          "title": "gRPC 微服务通信",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=gRPC+microservices",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "高性能 RPC 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "graphql": {
+      "skill_name": "GraphQL",
+      "category": "backend",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0568",
+          "title": "Advanced GraphQL for Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/advanced-grap-ql-for-developers",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Board Infinity | Apollo Federation",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0569",
+          "title": "GraphQL 从入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1fE411D75f",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "API 查询语言",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rest": {
+      "skill_name": "REST API",
+      "category": "backend",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0570",
+          "title": "RESTful API Design",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=RESTful+API+design",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "REST 架构风格 + API 设计最佳实践",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0571",
+          "title": "APIs Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=APIs+RESTful+web+services",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Meta | API 开发与集成",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "mysql": {
+      "skill_name": "MySQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0572",
+          "title": "MySQL for Data Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=MySQL+database",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "MySQL 基础 + 数据分析",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0573",
+          "title": "MySQL 数据库入门到精通",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1iq4y1u7vj",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "黑马程序员 | MySQL 全套",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "oracle-db": {
+      "skill_name": "Oracle DB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0574",
+          "title": "Oracle Database Administration",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Oracle+database+administration",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Oracle DBA 管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sqlserver": {
+      "skill_name": "SQL Server",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0575",
+          "title": "SQL Server Database Development",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SQL+Server+database",
+          "difficulty": "beginner",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Microsoft SQL Server",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sqlite": {
+      "skill_name": "SQLite",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0576",
+          "title": "SQLite 轻量级数据库",
+          "source": "github",
+          "url": "https://github.com/nicholasgasior/gso",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "嵌入式数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "mariadb": {
+      "skill_name": "MariaDB",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0577",
+          "title": "MariaDB 数据库入门",
+          "source": "github",
+          "url": "https://github.com/MariaDB/server",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "MySQL 开源分支",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "db2": {
+      "skill_name": "DB2",
+      "category": "database",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0578",
+          "title": "IBM DB2 数据库管理",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=IBM+DB2+database",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM 企业级数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "nosql": {
+      "skill_name": "NoSQL",
+      "category": "database",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0579",
+          "title": "NoSQL, Big Data, and Spark Foundations",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/nosql-big-data-and-spark-foundations",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "IBM | MongoDB + Cassandra + Cloudant",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cassandra": {
+      "skill_name": "Cassandra",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0580",
+          "title": "Apache Cassandra 分布式数据库",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Apache+Cassandra",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "列式存储 NoSQL",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "elasticsearch": {
+      "skill_name": "Elasticsearch",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0581",
+          "title": "Elasticsearch 搜索引擎实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hh411D7sb",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "分布式搜索与分析引擎",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dynamodb": {
+      "skill_name": "DynamoDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql",
+        "aws"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0582",
+          "title": "Amazon DynamoDB Deep Dive",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=DynamoDB+AWS",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "AWS NoSQL 数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "neo4j": {
+      "skill_name": "Neo4j",
+      "category": "database",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0583",
+          "title": "Neo4j Graph Database",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Neo4j+graph+database",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "图数据库 + Cypher 查询",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "clickhouse": {
+      "skill_name": "ClickHouse",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "postgresql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0584",
+          "title": "ClickHouse 列式数据库",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Yy4y1K7zg",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "zh",
+          "note": "OLAP 实时分析数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "couchbase": {
+      "skill_name": "Couchbase",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0585",
+          "title": "Couchbase NoSQL 数据库",
+          "source": "github",
+          "url": "https://github.com/couchbase",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "文档型 NoSQL 数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "influxdb": {
+      "skill_name": "InfluxDB",
+      "category": "database",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nosql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0586",
+          "title": "InfluxDB 时序数据库",
+          "source": "github",
+          "url": "https://github.com/influxdata/influxdb",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "时间序列数据存储",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cloud-computing": {
+      "skill_name": "Cloud Computing",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0587",
+          "title": "Cloud Computing Concepts",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=cloud+computing+concepts",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "IaaS + PaaS + SaaS 基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gcp": {
+      "skill_name": "Google Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0588",
+          "title": "Preparing for Google Cloud Certification: Cloud Engineer",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Cloud+certification",
+          "difficulty": "intermediate",
+          "hours_estimate": 35.0,
+          "language": "en",
+          "note": "Google Cloud 官方认证课程",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0589",
+          "title": "Google Cloud Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Google+Cloud+Fundamentals",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "GCP 核心基础设施",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "alicloud": {
+      "skill_name": "Alibaba Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0590",
+          "title": "阿里云云计算 ACA 认证",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1TJ411C7yP",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "阿里云官方认证教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "tencent-cloud": {
+      "skill_name": "Tencent Cloud",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0591",
+          "title": "腾讯云从入门到实践",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Jb4y1z7yH",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "腾讯云核心产品教程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cloudflare": {
+      "skill_name": "Cloudflare",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0592",
+          "title": "Cloudflare CDN & Security",
+          "source": "github",
+          "url": "https://github.com/nicholasgasior/cloudflare-docs",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "CDN + DDoS 防护 + Workers",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "heroku": {
+      "skill_name": "Heroku",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "git"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0593",
+          "title": "Heroku 应用部署入门",
+          "source": "github",
+          "url": "https://github.com/heroku/heroku-buildpack-python",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "PaaS 云平台部署",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "digitalocean": {
+      "skill_name": "DigitalOcean",
+      "category": "cloud",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0594",
+          "title": "DigitalOcean 云服务入门",
+          "source": "github",
+          "url": "https://github.com/digitalocean/sample-nodejs",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "VPS 云服务器管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "s3": {
+      "skill_name": "Amazon S3",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0595",
+          "title": "Amazon S3 对象存储",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Amazon+S3+AWS",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "AWS 对象存储服务",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ec2": {
+      "skill_name": "Amazon EC2",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0596",
+          "title": "Amazon EC2 Basics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Amazon+EC2+cloud",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "AWS 弹性计算实例",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "lambda": {
+      "skill_name": "AWS Lambda",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0597",
+          "title": "AWS Lambda & Serverless",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AWS+Lambda+serverless",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "无服务器计算",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "redshift": {
+      "skill_name": "Amazon Redshift",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0598",
+          "title": "Amazon Redshift 数据仓库",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Amazon+Redshift+data+warehouse",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "AWS 数据仓库服务",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "aurora": {
+      "skill_name": "Amazon Aurora",
+      "category": "cloud",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws",
+        "postgresql"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0599",
+          "title": "Amazon Aurora 数据库",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Amazon+Aurora+database",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "AWS 托管关系型数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "edge-computing": {
+      "skill_name": "Edge Computing",
+      "category": "cloud",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0600",
+          "title": "Edge Computing Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=edge+computing",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "边缘计算 + IoT 网关",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "hadoop": {
+      "skill_name": "Hadoop",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "linux",
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0601",
+          "title": "Hadoop Platform and Application Framework",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Hadoop+big+data",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "UC San Diego | 大数据处理框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "flink": {
+      "skill_name": "Apache Flink",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0602",
+          "title": "Apache Flink 实时流处理",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1qy4y1q728",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "实时流计算引擎",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "airflow": {
+      "skill_name": "Apache Airflow",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0603",
+          "title": "Apache Airflow 工作流编排",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Apache+Airflow+workflow",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "数据管道编排平台",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dbt": {
+      "skill_name": "dbt",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0604",
+          "title": "dbt 数据转换工具",
+          "source": "github",
+          "url": "https://github.com/dbt-labs/dbt-core",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "数据仓库转换框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "hive": {
+      "skill_name": "Hive",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "hadoop",
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0605",
+          "title": "Apache Hive 数据仓库",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Apache+Hive+Hadoop",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Hadoop SQL 查询引擎",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "snowflake": {
+      "skill_name": "Snowflake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0606",
+          "title": "Snowflake Cloud Data Platform",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Snowflake+data+warehouse",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "云原生数据仓库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "databricks": {
+      "skill_name": "Databricks",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0607",
+          "title": "Databricks Lakehouse Platform",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Databricks+Apache+Spark",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "统一分析平台 + Spark",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "etl": {
+      "skill_name": "ETL",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0608",
+          "title": "ETL and Data Pipelines with Shell, Airflow and Kafka",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=ETL+data+pipelines",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "IBM | 数据抽取转换加载",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "bigquery": {
+      "skill_name": "BigQuery",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang",
+        "gcp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0609",
+          "title": "Google BigQuery for Data Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=BigQuery+Google+Cloud",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "GCP 大数据分析服务",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rabbitmq": {
+      "skill_name": "RabbitMQ",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0610",
+          "title": "RabbitMQ 消息队列",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV15k4y1k7Ep",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "AMQP 消息中间件",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dagster": {
+      "skill_name": "Dagster",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0611",
+          "title": "Dagster 数据编排平台",
+          "source": "github",
+          "url": "https://github.com/dagster-io/dagster",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "现代数据编排框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-warehouse": {
+      "skill_name": "Data Warehouse",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0612",
+          "title": "Data Warehousing for Business Intelligence",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/data-warehousing",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "University of Colorado | 数据仓库设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-lake": {
+      "skill_name": "Data Lake",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "spark"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0613",
+          "title": "Data Lake Architecture",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+lake+architecture",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "数据湖架构设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-pipeline": {
+      "skill_name": "Data Pipeline",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "airflow"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0614",
+          "title": "Building Data Pipelines",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+pipelines+engineering",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "数据管道工程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-governance": {
+      "skill_name": "Data Governance",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0615",
+          "title": "Data Governance Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+governance",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "数据治理框架与实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-modeling": {
+      "skill_name": "Data Modeling",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0616",
+          "title": "Database Design and Data Modeling",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+modeling+database+design",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "数据建模方法论",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-quality": {
+      "skill_name": "Data Quality",
+      "category": "bigdata",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0617",
+          "title": "Data Quality Management",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+quality+management",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "数据质量管控",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dimensional-modeling": {
+      "skill_name": "Dimensional Modeling",
+      "category": "bigdata",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "data-modeling"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0618",
+          "title": "Dimensional Modeling 维度建模",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=dimensional+modeling+star+schema",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "星型模型 + 雪花模型",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "powerbi": {
+      "skill_name": "Power BI",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0619",
+          "title": "Microsoft Power BI Data Analyst",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Power+BI+data+analyst",
+          "difficulty": "beginner",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Microsoft | BI 可视化分析",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "excel": {
+      "skill_name": "Excel",
+      "category": "data_analysis",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0620",
+          "title": "Excel Skills for Data Analytics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Excel+data+analytics",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Macquarie University | 数据分析基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "looker": {
+      "skill_name": "Looker",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0621",
+          "title": "Looker Studio 数据可视化",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Looker+data+visualization",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Google | 数据探索平台",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-analysis": {
+      "skill_name": "Data Analysis",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0622",
+          "title": "Google Data Analytics Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "difficulty": "beginner",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Google | rating:4.8 | 入门数据分析",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0623",
+          "title": "数据分析入门到精通",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1hx411d7jb",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "Python 数据分析实战",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-visualization": {
+      "skill_name": "Data Visualization",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0624",
+          "title": "Data Visualization with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+visualization+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "IBM | Matplotlib + Seaborn",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-mining": {
+      "skill_name": "Data Mining",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0625",
+          "title": "Data Mining Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/data-mining",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "UIUC | 数据挖掘算法",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "business-intelligence": {
+      "skill_name": "Business Intelligence",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "sql-lang",
+        "tableau"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0626",
+          "title": "Business Intelligence Foundations",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=business+intelligence",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "商业智能决策支持",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "dashboard": {
+      "skill_name": "Dashboard",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "sql-lang"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0627",
+          "title": "Dashboard Design & Data Storytelling",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=dashboard+data+storytelling",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "数据看板设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-cleaning": {
+      "skill_name": "Data Cleaning",
+      "category": "data_analysis",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "pandas"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0628",
+          "title": "Data Cleaning and Preparation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+cleaning+wrangling",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "数据清洗与预处理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "hypothesis-testing": {
+      "skill_name": "Hypothesis Testing",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "statistics"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0629",
+          "title": "Inferential Statistics and Hypothesis Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=hypothesis+testing+statistics",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "统计推断与假设检验",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "time-series": {
+      "skill_name": "Time Series",
+      "category": "data_analysis",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "statistics",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0630",
+          "title": "Practical Time Series Analysis",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/practical-time-series-analysis",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "SUNY | 时间序列分析",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "tensorflow": {
+      "skill_name": "TensorFlow",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0631",
+          "title": "DeepLearning.AI TensorFlow Developer",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/tensorflow-in-practice",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "keras": {
+      "skill_name": "Keras",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "tensorflow"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0632",
+          "title": "Intro to TensorFlow & Keras",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Keras+deep+learning",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Keras 高阶深度学习 API",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "scikit-learn": {
+      "skill_name": "scikit-learn",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "numpy"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0633",
+          "title": "Machine Learning with scikit-learn",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=scikit-learn+machine+learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "sklearn 机器学习库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "reinforcement-learning": {
+      "skill_name": "Reinforcement Learning",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 50,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0634",
+          "title": "Reinforcement Learning Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/reinforcement-learning",
+          "difficulty": "advanced",
+          "hours_estimate": 35.0,
+          "language": "en",
+          "note": "University of Alberta | rating:4.7",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "xgboost": {
+      "skill_name": "XGBoost",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0635",
+          "title": "XGBoost & Gradient Boosting",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=XGBoost+gradient+boosting",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "集成学习算法",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-science": {
+      "skill_name": "Data Science",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python",
+        "statistics"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0636",
+          "title": "IBM Data Science Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/ibm-data-science",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "IBM | rating:4.6 | 全栈数据科学",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0637",
+          "title": "数据科学入门",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1xE411N76P",
+          "difficulty": "beginner",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "Python 数据科学基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jupyter": {
+      "skill_name": "Jupyter",
+      "category": "ai_ml",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0638",
+          "title": "Jupyter Notebook 入门",
+          "source": "github",
+          "url": "https://github.com/jupyter/notebook",
+          "difficulty": "beginner",
+          "hours_estimate": 3.0,
+          "language": "en",
+          "note": "交互式计算笔记本",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cuda": {
+      "skill_name": "CUDA",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0639",
+          "title": "GPU Programming with CUDA",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=CUDA+GPU+programming",
+          "difficulty": "advanced",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "NVIDIA GPU 并行计算",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "recommendation-system": {
+      "skill_name": "Recommendation System",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0640",
+          "title": "Recommender Systems Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=recommender+systems",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "University of Minnesota | 推荐系统",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "feature-engineering": {
+      "skill_name": "Feature Engineering",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0641",
+          "title": "Feature Engineering for ML",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=feature+engineering+machine+learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Google Cloud | 特征工程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "model-deployment": {
+      "skill_name": "Model Deployment",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "docker",
+        "fastapi"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0642",
+          "title": "MLOps: ML Model Deployment",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=model+deployment+MLOps",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "模型部署与服务化",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cnn": {
+      "skill_name": "CNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0643",
+          "title": "Convolutional Neural Networks",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/convolutional-neural-networks",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.9",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rnn": {
+      "skill_name": "RNN",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0644",
+          "title": "Sequence Models (RNN/LSTM)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/nlp-sequence-models",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.8",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "crf": {
+      "skill_name": "CRF",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0645",
+          "title": "CRF 条件随机场",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19t4y1E7gj",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "序列标注模型",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gnn": {
+      "skill_name": "Graph Neural Network",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning",
+        "pytorch"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0646",
+          "title": "Graph Neural Networks",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=graph+neural+networks",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "图神经网络前沿",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ner": {
+      "skill_name": "NER",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0647",
+          "title": "Named Entity Recognition with NLP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=NER+named+entity+recognition",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "命名实体识别",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sentiment-analysis": {
+      "skill_name": "Sentiment Analysis",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0648",
+          "title": "Sentiment Analysis with NLP",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=sentiment+analysis+NLP",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "情感分析技术",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "text-classification": {
+      "skill_name": "Text Classification",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0649",
+          "title": "Natural Language Processing with Classification",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/classification-vector-spaces-in-nlp",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "DeepLearning.AI | 文本分类",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "information-extraction": {
+      "skill_name": "Information Extraction",
+      "category": "ai_ml",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0650",
+          "title": "信息抽取与知识图谱",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a54y1B74z",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "关系抽取 + 事件抽取",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "supervised-learning": {
+      "skill_name": "Supervised Learning",
+      "category": "ai_ml",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0651",
+          "title": "Supervised Machine Learning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/machine-learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Stanford | Andrew Ng | rating:4.9",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "unsupervised-learning": {
+      "skill_name": "Unsupervised Learning",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0652",
+          "title": "Unsupervised Learning & Recommenders",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "Stanford | 聚类+降维",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "model-evaluation": {
+      "skill_name": "Model Evaluation",
+      "category": "ai_ml",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "machine-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0653",
+          "title": "Model Evaluation and Selection",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=model+evaluation+machine+learning",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "交叉验证 + 评价指标",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "bert": {
+      "skill_name": "BERT",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "transformer"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0654",
+          "title": "BERT and Transformers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=BERT+transformers+NLP",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "预训练语言模型",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gpt": {
+      "skill_name": "GPT",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0655",
+          "title": "GPT and Large Language Models",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GPT+large+language+models",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "GPT 系列模型原理与应用",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "qwen": {
+      "skill_name": "Qwen",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0656",
+          "title": "通义千问 Qwen 模型实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1wC4y1Y7Hs",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "阿里 | 大模型应用开发",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "openai-api": {
+      "skill_name": "OpenAI API",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "llm"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0657",
+          "title": "ChatGPT Prompt Engineering for Developers",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=OpenAI+API+ChatGPT",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "DeepLearning.AI | OpenAI API 入门",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0658",
+          "title": "OpenAI API 应用开发",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Xs4y1P7AJ",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "大模型 API 调用实战",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "huggingface": {
+      "skill_name": "Hugging Face",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "transformer"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0659",
+          "title": "Hugging Face Transformers Course",
+          "source": "github",
+          "url": "https://github.com/huggingface/course",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Hugging Face 官方教程",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0660",
+          "title": "Hugging Face NLP 实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1a14y1J7bM",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "Transformers 库使用指南",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "pinecone": {
+      "skill_name": "Pinecone",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0661",
+          "title": "Vector Databases with Pinecone",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Pinecone+vector+database",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "向量数据库服务",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "milvus": {
+      "skill_name": "Milvus",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0662",
+          "title": "Milvus 向量数据库",
+          "source": "github",
+          "url": "https://github.com/milvus-io/milvus",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "开源向量数据库",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "weaviate": {
+      "skill_name": "Weaviate",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0663",
+          "title": "Weaviate Vector Database",
+          "source": "github",
+          "url": "https://github.com/weaviate/weaviate",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "AI 原生向量搜索引擎",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "chroma": {
+      "skill_name": "Chroma",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0664",
+          "title": "Chroma 嵌入式向量数据库",
+          "source": "github",
+          "url": "https://github.com/chroma-core/chroma",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "轻量级向量存储",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "faiss": {
+      "skill_name": "FAISS",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "vector-database"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0665",
+          "title": "FAISS 向量检索库",
+          "source": "github",
+          "url": "https://github.com/facebookresearch/faiss",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Meta | 高效相似度搜索",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "llamaindex": {
+      "skill_name": "LlamaIndex",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "langchain"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0666",
+          "title": "LlamaIndex RAG Framework",
+          "source": "github",
+          "url": "https://github.com/run-llama/llama_index",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "RAG 应用开发框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "langgraph": {
+      "skill_name": "LangGraph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "langchain"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0667",
+          "title": "LangGraph Agent Framework",
+          "source": "github",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "多步 Agent 编排框架",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0668",
+          "title": "LangGraph 实战教程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV14Z4y117FP",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "Agent 工作流构建",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "quantization": {
+      "skill_name": "Quantization",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0669",
+          "title": "Model Quantization Techniques",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=model+quantization+optimization",
+          "difficulty": "advanced",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "模型量化压缩技术",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "multi-agent": {
+      "skill_name": "Multi-Agent",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "agent"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0670",
+          "title": "Multi-Agent Systems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=multi+agent+systems+AI",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "多智能体协作系统",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "mcp": {
+      "skill_name": "MCP",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "tool-calling"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0671",
+          "title": "Model Context Protocol 实践",
+          "source": "github",
+          "url": "https://github.com/modelcontextprotocol/servers",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "LLM 工具调用协议",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "coze": {
+      "skill_name": "Coze",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "agent"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0672",
+          "title": "Coze AI 应用构建平台",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1x1421Z7qH",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "字节 | 零代码 AI Bot 构建",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "mlops": {
+      "skill_name": "MLOps",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "machine-learning",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0673",
+          "title": "Machine Learning Engineering for Production (MLOps)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "DeepLearning.AI | rating:4.7",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0674",
+          "title": "MLOps 机器学习工程",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV18S4y1V7sq",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "ML 生产部署全流程",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "multimodal": {
+      "skill_name": "Multimodal",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0675",
+          "title": "End-to-End Multimodal AI",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/end-to-end-multimodal-ai-fine-tuning-fusion-and-mlops",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "多模态 AI + Fine-tuning + MLOps",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "diffusion": {
+      "skill_name": "Diffusion Model",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "deep-learning"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0676",
+          "title": "Diffusion Models 扩散模型",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=diffusion+models+generative+AI",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "图像生成核心模型",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "knowledge-graph": {
+      "skill_name": "Knowledge Graph",
+      "category": "ai_emerging",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "embedding",
+        "nlp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0677",
+          "title": "知识图谱实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1cJ411W7hP",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "zh",
+          "note": "知识表示 + 图谱构建",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "aigc": {
+      "skill_name": "AIGC",
+      "category": "ai_emerging",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "llm"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0678",
+          "title": "Generative AI for Everyone",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/generative-ai-for-everyone",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "DeepLearning.AI | Andrew Ng | AIGC 入门",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "kubernetes": {
+      "skill_name": "Kubernetes",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 35,
+      "prerequisites": [
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0679",
+          "title": "Certified Kubernetes Administrator (CKA)",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Kubernetes+CKA+certification",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "K8s 管理员认证课程",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0680",
+          "title": "Kubernetes 从入门到实践",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Qj411u7gi",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "zh",
+          "note": "K8s 集群部署与管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "terraform": {
+      "skill_name": "Terraform",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0681",
+          "title": "HashiCorp Terraform",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Terraform+infrastructure+as+code",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "基础设施即代码",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ansible": {
+      "skill_name": "Ansible",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0682",
+          "title": "Ansible Automation Platform",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Ansible+automation",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Red Hat 自动化工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jenkins": {
+      "skill_name": "Jenkins",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0683",
+          "title": "Jenkins CI/CD Pipeline",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Jenkins+CI+CD+pipeline",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "持续集成/交付服务器",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0684",
+          "title": "Jenkins 持续集成实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1GJ411x7NV",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "Jenkins Pipeline 自动化构建",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gitlab-ci": {
+      "skill_name": "GitLab CI",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0685",
+          "title": "GitLab CI/CD 流水线",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1d64y1S73d",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "GitLab 持续集成配置",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "github-actions": {
+      "skill_name": "GitHub Actions",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "git"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0686",
+          "title": "GitHub Actions CI/CD",
+          "source": "github",
+          "url": "https://github.com/features/actions",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "GitHub 原生 CI/CD 工作流",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cicd": {
+      "skill_name": "CI/CD",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "git",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0687",
+          "title": "IBM DevOps and Software Engineering",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "IBM | CI/CD 全流程 | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0688",
+          "title": "CI/CD 持续集成交付入门",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zf4y1u7B6",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "DevOps 自动化实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "helm": {
+      "skill_name": "Helm",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0689",
+          "title": "Helm Kubernetes 包管理",
+          "source": "github",
+          "url": "https://github.com/helm/helm",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "K8s 应用包管理器",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "prometheus": {
+      "skill_name": "Prometheus",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux",
+        "docker"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0690",
+          "title": "Prometheus 监控系统",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1PT4y1P7gj",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "云原生监控 + 告警",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "grafana": {
+      "skill_name": "Grafana",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "prometheus"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0691",
+          "title": "Grafana 可视化监控",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1PQ4y1F73m",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "zh",
+          "note": "数据可视化仪表板",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "nginx": {
+      "skill_name": "Nginx",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0692",
+          "title": "Nginx 反向代理与负载均衡",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1yS4y1N76R",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "zh",
+          "note": "Web 服务器 + 反向代理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "devops": {
+      "skill_name": "DevOps",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "linux",
+        "docker",
+        "git"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0693",
+          "title": "IBM DevOps and Software Engineering Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "IBM | DevOps 全栈 | rating:4.6",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0694",
+          "title": "DevOps 文化与实践",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zJ411w7pQ",
+          "difficulty": "beginner",
+          "hours_estimate": 15.0,
+          "language": "zh",
+          "note": "DevOps 理念与工具链",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "microservices": {
+      "skill_name": "Microservices",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "docker",
+        "system-design"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0695",
+          "title": "Microservices Architecture: Design Patterns & Principles",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/packt-microservices-architecture-design-patterns-principles",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "Packt | 微服务设计模式",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0696",
+          "title": "Microservices Design, Communication, and Data Handling",
+          "source": "coursera",
+          "url": "https://www.coursera.org/learn/packt-microservices-design-communication-and-data-handling-jwxt9",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Packt | REST + GraphQL + Kafka 通信",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "serverless": {
+      "skill_name": "Serverless",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cloud-computing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0697",
+          "title": "Serverless Architecture",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=serverless+architecture+cloud",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "无服务器架构设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "argocd": {
+      "skill_name": "ArgoCD",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0698",
+          "title": "ArgoCD GitOps 持续部署",
+          "source": "github",
+          "url": "https://github.com/argoproj/argo-cd",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "K8s GitOps CD 工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cloudformation": {
+      "skill_name": "CloudFormation",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "aws"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0699",
+          "title": "AWS CloudFormation IaC",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=AWS+CloudFormation",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "AWS 基础设施即代码",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "vagrant": {
+      "skill_name": "Vagrant",
+      "category": "devops",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0700",
+          "title": "Vagrant 虚拟化环境",
+          "source": "github",
+          "url": "https://github.com/hashicorp/vagrant",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "开发环境自动化",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "istio": {
+      "skill_name": "Istio",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "kubernetes"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0701",
+          "title": "Istio Service Mesh",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Istio+service+mesh+Kubernetes",
+          "difficulty": "advanced",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "K8s 服务网格",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "caching": {
+      "skill_name": "Caching",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "redis"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0702",
+          "title": "Caching Strategies 缓存策略",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=caching+strategies+Redis",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "缓存设计模式",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "high-availability": {
+      "skill_name": "High Availability",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0703",
+          "title": "High Availability Architecture",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=high+availability+system+design",
+          "difficulty": "advanced",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "高可用架构设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "load-balancing": {
+      "skill_name": "Load Balancing",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "linux",
+        "system-design"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0704",
+          "title": "Load Balancing 负载均衡",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=load+balancing+distributed+systems",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "负载均衡策略与实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "message-queue": {
+      "skill_name": "Message Queue",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "kafka"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0705",
+          "title": "Message Queue 消息队列",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=message+queue+Kafka+RabbitMQ",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "异步通信中间件",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "capacity-planning": {
+      "skill_name": "Capacity Planning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0706",
+          "title": "Capacity Planning 容量规划",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=capacity+planning+cloud",
+          "difficulty": "advanced",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "系统容量规划",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "performance-tuning": {
+      "skill_name": "Performance Tuning",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0707",
+          "title": "Performance Tuning 性能调优",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=performance+tuning+optimization",
+          "difficulty": "advanced",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "系统性能优化实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "sre": {
+      "skill_name": "SRE",
+      "category": "devops",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "system-design",
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0708",
+          "title": "Site Reliability Engineering",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=site+reliability+engineering+SRE",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "Google SRE 运维理念",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "root-cause-analysis": {
+      "skill_name": "Root Cause Analysis",
+      "category": "devops",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0709",
+          "title": "Root Cause Analysis 根因分析",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=root+cause+analysis",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "故障排查方法论",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "unix": {
+      "skill_name": "Unix",
+      "category": "devops",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0710",
+          "title": "Unix/Linux Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Unix+Linux+fundamentals",
+          "difficulty": "beginner",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "Unix 系统基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "selenium": {
+      "skill_name": "Selenium",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0711",
+          "title": "Selenium WebDriver 自动化测试",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Selenium+WebDriver+testing",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Web 自动化测试框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cypress": {
+      "skill_name": "Cypress",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0712",
+          "title": "Cypress E2E Testing",
+          "source": "github",
+          "url": "https://github.com/cypress-io/cypress",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "现代前端 E2E 测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "playwright": {
+      "skill_name": "Playwright",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0713",
+          "title": "Playwright 自动化测试",
+          "source": "github",
+          "url": "https://github.com/microsoft/playwright",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Microsoft | 跨浏览器测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jest": {
+      "skill_name": "Jest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "javascript"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0714",
+          "title": "Jest JavaScript 测试框架",
+          "source": "github",
+          "url": "https://github.com/jestjs/jest",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "Facebook | JS 单元测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "pytest": {
+      "skill_name": "pytest",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0715",
+          "title": "pytest Python 测试框架",
+          "source": "github",
+          "url": "https://github.com/pytest-dev/pytest",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "Python 最流行的测试框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "junit": {
+      "skill_name": "JUnit",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0716",
+          "title": "JUnit Java 测试框架",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JUnit+Java+testing",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "Java 单元测试标准",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "appium": {
+      "skill_name": "Appium",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "python",
+        "java"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0717",
+          "title": "Appium 移动端自动化测试",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Appium+mobile+testing",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "移动应用自动化测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jmeter": {
+      "skill_name": "JMeter",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "java",
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0718",
+          "title": "Apache JMeter 性能测试",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JMeter+performance+testing",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "压力测试 + 负载测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "postman": {
+      "skill_name": "Postman",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0719",
+          "title": "Postman API Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Postman+API+testing",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "API 调试与测试工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "qa-automation": {
+      "skill_name": "QA Automation",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "python",
+        "selenium"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0720",
+          "title": "Software Testing and Automation",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/software-testing-automation",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "University of Minnesota | 自动化测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "unit-testing": {
+      "skill_name": "Unit Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0721",
+          "title": "Unit Testing Best Practices",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=unit+testing+best+practices",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "单元测试方法论",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "integration-testing": {
+      "skill_name": "Integration Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "unit-testing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0722",
+          "title": "Integration Testing Strategies",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=integration+testing",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "集成测试策略",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "load-testing": {
+      "skill_name": "Load Testing",
+      "category": "testing",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "jmeter"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0723",
+          "title": "Performance & Load Testing",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=load+testing+performance",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "性能与负载测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "rest-api-testing": {
+      "skill_name": "REST API Testing",
+      "category": "testing",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest",
+        "postman"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0724",
+          "title": "REST API Testing with Postman",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=REST+API+testing+Postman",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "API 接口测试",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "android": {
+      "skill_name": "Android",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "kotlin"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0725",
+          "title": "Meta Android Developer Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/meta-android-developer",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Meta | Android 官方认证",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0726",
+          "title": "Android 开发入门到实战",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19U4y1R7zV",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "Kotlin + Jetpack + MVVM",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ios": {
+      "skill_name": "iOS",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "swift"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0727",
+          "title": "Meta iOS Developer Professional Certificate",
+          "source": "coursera",
+          "url": "https://www.coursera.org/professional-certificates/meta-ios-developer",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Meta | iOS 官方认证",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0728",
+          "title": "iOS 开发入门到精通",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1HB4y1R78K",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "zh",
+          "note": "Swift + SwiftUI + UIKit",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "react-native": {
+      "skill_name": "React Native",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "react"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0729",
+          "title": "Meta React Native Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=React+Native+mobile+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Meta | 跨平台移动开发",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "xamarin": {
+      "skill_name": "Xamarin",
+      "category": "mobile",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "csharp"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0730",
+          "title": "Xamarin 跨平台开发",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Xamarin+mobile+development",
+          "difficulty": "intermediate",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "C# 跨平台移动框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jetpack-compose": {
+      "skill_name": "Jetpack Compose",
+      "category": "mobile",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "android"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0731",
+          "title": "Jetpack Compose for Android",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Jetpack+Compose+Android",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "Android 声明式 UI 框架",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "penetration-testing": {
+      "skill_name": "Penetration Testing",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0732",
+          "title": "Penetration Testing & Ethical Hacking",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=penetration+testing+ethical+hacking",
+          "difficulty": "advanced",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Metasploit + Burp Suite + Wireshark",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "oauth": {
+      "skill_name": "OAuth",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0733",
+          "title": "OAuth 2.0 认证授权",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=OAuth+authentication+authorization",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "OAuth 2.0 + OpenID Connect",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jwt": {
+      "skill_name": "JWT",
+      "category": "security",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0734",
+          "title": "JWT 令牌认证",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=JWT+JSON+Web+Token",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "JSON Web Token 身份验证",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "encryption": {
+      "skill_name": "Encryption",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0735",
+          "title": "Applied Cryptography and Encryption",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=encryption+applied+cryptography",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "加密算法与数据保护",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "ssl-tls": {
+      "skill_name": "SSL/TLS",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0736",
+          "title": "SSL/TLS 证书与 HTTPS",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SSL+TLS+HTTPS+security",
+          "difficulty": "intermediate",
+          "hours_estimate": 10.0,
+          "language": "en",
+          "note": "传输层安全协议",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "siem": {
+      "skill_name": "SIEM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0737",
+          "title": "SIEM Security Operations",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=SIEM+security+information+event+management",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "安全信息与事件管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "owasp": {
+      "skill_name": "OWASP",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity",
+        "rest"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0738",
+          "title": "OWASP Top 10 Web Security",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=OWASP+web+application+security",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "Web 应用安全漏洞防护",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "zero-trust": {
+      "skill_name": "Zero Trust",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0739",
+          "title": "Zero Trust Security Architecture",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=zero+trust+security",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "零信任安全架构",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "compliance": {
+      "skill_name": "Compliance",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0740",
+          "title": "Security Compliance Frameworks",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=security+compliance+frameworks",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "安全合规框架 (GDPR/SOC2)",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "cryptography": {
+      "skill_name": "Cryptography",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0741",
+          "title": "Cryptography Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/cryptography",
+          "difficulty": "advanced",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "Stanford | 密码学原理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "data-privacy": {
+      "skill_name": "Data Privacy",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "cybersecurity"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0742",
+          "title": "Data Privacy Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=data+privacy+protection",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "数据隐私保护",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "iam": {
+      "skill_name": "IAM",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "cybersecurity",
+        "cloud-computing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0743",
+          "title": "Identity and Access Management",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=IAM+identity+access+management",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "身份与访问管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "network-security": {
+      "skill_name": "Network Security",
+      "category": "security",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity",
+        "linux"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0744",
+          "title": "Network Security & Database Vulnerabilities",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=network+security",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "IBM | 网络安全基础",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "vulnerability-assessment": {
+      "skill_name": "Vulnerability Assessment",
+      "category": "security",
+      "level": 3,
+      "difficulty": "advanced",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "penetration-testing"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0745",
+          "title": "Vulnerability Assessment & Scanning",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=vulnerability+assessment+scanning",
+          "difficulty": "advanced",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "漏洞评估与扫描",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "incident-response": {
+      "skill_name": "Incident Response",
+      "category": "security",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "cybersecurity",
+        "sre"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0746",
+          "title": "Incident Response & Digital Forensics",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=incident+response+forensics",
+          "difficulty": "advanced",
+          "hours_estimate": 20.0,
+          "language": "en",
+          "note": "安全事件响应",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "agile": {
+      "skill_name": "Agile",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0747",
+          "title": "Google Project Management: Agile",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Agile+project+management",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "Google | Agile 敏捷方法论",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0748",
+          "title": "Agile 敏捷开发入门",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1NJ411J7S7",
+          "difficulty": "beginner",
+          "hours_estimate": 6.0,
+          "language": "zh",
+          "note": "敏捷开发核心实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "scrum": {
+      "skill_name": "Scrum",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 8,
+      "prerequisites": [
+        "agile"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0749",
+          "title": "Scrum Master Certification",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Scrum+Master+certification",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "Scrum 框架 + Sprint 管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "kanban": {
+      "skill_name": "Kanban",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "agile"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0750",
+          "title": "Kanban 看板方法",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Kanban+project+management",
+          "difficulty": "beginner",
+          "hours_estimate": 5.0,
+          "language": "en",
+          "note": "可视化工作流管理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "jira": {
+      "skill_name": "Jira",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0751",
+          "title": "Jira Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Jira+project+management",
+          "difficulty": "beginner",
+          "hours_estimate": 5.0,
+          "language": "en",
+          "note": "Atlassian | 项目管理工具",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "confluence": {
+      "skill_name": "Confluence",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "prerequisites": [],
+      "resources": [
+        {
+          "resource_id": "coursera_0752",
+          "title": "Confluence 团队协作",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=Confluence+Atlassian",
+          "difficulty": "beginner",
+          "hours_estimate": 3.0,
+          "language": "en",
+          "note": "Atlassian | 知识库与文档协作",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "websocket": {
+      "skill_name": "WebSocket",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "nodejs"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0753",
+          "title": "WebSocket 实时通信",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1dJ411D7cK",
+          "difficulty": "intermediate",
+          "hours_estimate": 8.0,
+          "language": "zh",
+          "note": "全双工实时通信协议",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "json": {
+      "skill_name": "JSON",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 3,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0754",
+          "title": "JSON 数据格式",
+          "source": "github",
+          "url": "https://github.com/json-path/JsonPath",
+          "difficulty": "beginner",
+          "hours_estimate": 2.0,
+          "language": "en",
+          "note": "JSON 数据交换格式",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "xml": {
+      "skill_name": "XML",
+      "category": "methods",
+      "level": 1,
+      "difficulty": "beginner",
+      "hours_estimate": 5,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0755",
+          "title": "XML 标记语言基础",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=XML+data+exchange",
+          "difficulty": "beginner",
+          "hours_estimate": 4.0,
+          "language": "en",
+          "note": "可扩展标记语言",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "oop": {
+      "skill_name": "OOP",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0756",
+          "title": "Object-Oriented Programming",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=object+oriented+programming",
+          "difficulty": "beginner",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "OOP 四大特性 + SOLID 原则",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "distributed-systems": {
+      "skill_name": "Distributed Systems",
+      "category": "methods",
+      "level": 4,
+      "difficulty": "advanced",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "system-design"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0757",
+          "title": "Distributed Systems",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=distributed+systems",
+          "difficulty": "advanced",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "分布式系统原理与设计",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "blockchain": {
+      "skill_name": "Blockchain",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0758",
+          "title": "Blockchain Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/blockchain",
+          "difficulty": "intermediate",
+          "hours_estimate": 25.0,
+          "language": "en",
+          "note": "University at Buffalo | rating:4.5",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0759",
+          "title": "区块链技术与应用",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Vt411X7JF",
+          "difficulty": "intermediate",
+          "hours_estimate": 20.0,
+          "language": "zh",
+          "note": "北京大学 | 肖臻 | 区块链原理",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "algorithms": {
+      "skill_name": "Algorithms",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 40,
+      "prerequisites": [
+        "data-structures"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0760",
+          "title": "Algorithms Specialization",
+          "source": "coursera",
+          "url": "https://www.coursera.org/specializations/algorithms",
+          "difficulty": "intermediate",
+          "hours_estimate": 30.0,
+          "language": "en",
+          "note": "Stanford | Tim Roughgarden | rating:4.8",
+          "match_reason": "keyword_score"
+        },
+        {
+          "resource_id": "coursera_0761",
+          "title": "数据结构与算法",
+          "source": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1E4411H73v",
+          "difficulty": "intermediate",
+          "hours_estimate": 35.0,
+          "language": "zh",
+          "note": "清华大学 | 邓俊辉 | 数据结构",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "api-design": {
+      "skill_name": "API Design",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 20,
+      "prerequisites": [
+        "rest",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0762",
+          "title": "API Design and Fundamentals",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=API+design+fundamentals",
+          "difficulty": "intermediate",
+          "hours_estimate": 15.0,
+          "language": "en",
+          "note": "API 设计最佳实践",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "design-patterns": {
+      "skill_name": "Design Patterns",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 25,
+      "prerequisites": [
+        "oop",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0763",
+          "title": "Design Patterns",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=design+patterns+software",
+          "difficulty": "intermediate",
+          "hours_estimate": 18.0,
+          "language": "en",
+          "note": "University of Alberta | 设计模式",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "regex": {
+      "skill_name": "Regular Expression",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "beginner",
+      "hours_estimate": 10,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0764",
+          "title": "Regular Expression 正则表达式",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=regular+expression",
+          "difficulty": "beginner",
+          "hours_estimate": 8.0,
+          "language": "en",
+          "note": "文本模式匹配",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "web-scraping": {
+      "skill_name": "Web Scraping",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 15,
+      "prerequisites": [
+        "python",
+        "regex"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0765",
+          "title": "Web Scraping with Python",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=web+scraping+Python",
+          "difficulty": "intermediate",
+          "hours_estimate": 12.0,
+          "language": "en",
+          "note": "Scrapy + BeautifulSoup",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "gis": {
+      "skill_name": "GIS",
+      "category": "methods",
+      "level": 2,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0766",
+          "title": "GIS 地理信息系统",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=GIS+geographic+information+systems",
+          "difficulty": "intermediate",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "UC Davis | 地理信息系统",
+          "match_reason": "keyword_score"
+        }
+      ]
+    },
+    "iot": {
+      "skill_name": "IoT",
+      "category": "methods",
+      "level": 3,
+      "difficulty": "intermediate",
+      "hours_estimate": 30,
+      "prerequisites": [
+        "linux",
+        "python"
+      ],
+      "resources": [
+        {
+          "resource_id": "coursera_0767",
+          "title": "IoT 物联网入门",
+          "source": "coursera",
+          "url": "https://www.coursera.org/search?query=IoT+Internet+of+Things",
+          "difficulty": "intermediate",
+          "hours_estimate": 22.0,
+          "language": "en",
+          "note": "物联网技术与应用",
+          "match_reason": "keyword_score"
+        }
+      ]
+    }
+  }
+}

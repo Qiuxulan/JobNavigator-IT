@@ -8,6 +8,7 @@ import os
 
 import pytest
 
+import app.services.evidence as evidence_module
 from app.services.evidence import (
     EvidenceService,
     _is_relevant,
@@ -78,6 +79,38 @@ def test_role_title_affinity_requires_role_anchor():
     good = _role_title_affinity("AI Engineer", info, "openai trades azure exclusivity for enterprise ai reach")
     assert bad == 0.0
     assert good >= 0.5
+
+
+def test_retrieve_evidence_falls_back_to_precomputed_file(tmp_path, monkeypatch):
+    p = tmp_path / "trend_evidence_v1.jsonl"
+    p.write_text(
+        (
+            '{"canonical_role":"RAG Engineer","horizon_months":3,'
+            '"trend_direction_raw":"flat","month":"2026-08-01",'
+            '"aggregate":{"article_count":12,"net_signal":"mixed"},'
+            '"evidence_topk":[{"source_name":"GDELT","source_url":"https://example.com/a",'
+            '"title":"rag engineer demand signal","published_at":"2026-06-01",'
+            '"evidence_text":"example.com · market_report · tone 1.25",'
+            '"retrieval_score":0.77,"evidence_type":"market_report",'
+            '"impact_direction":"positive","evidence_strength":"weak"}],'
+            '"jd_evidence":[{"evidence_type":"job_posting","company_name":"Acme",'
+            '"title":"RAG Engineer","post_date":"2026-05-01"}],'
+            '"risk_notes":"precomputed fallback"}\n'
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(evidence_module, "PRECOMPUTED_EVIDENCE_PATH", p)
+    monkeypatch.setattr(EvidenceService, "_precomputed_rows", None)
+
+    res = EvidenceService.retrieve_evidence(
+        "RAG Engineer", ("2026-01", "2026-06"), top_k=5, direction="flat"
+    )
+
+    assert res["aggregate"]["article_count"] == 12
+    assert res["events"][0]["url"] == "https://example.com/a"
+    assert res["events"][0]["tone"] == 1.25
+    assert res["jobs"][0]["company_name"] == "Acme"
+    assert res["note"] == "precomputed fallback"
 
 
 # ---- retrieve_evidence 契约结构（需索引） ----

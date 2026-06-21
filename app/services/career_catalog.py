@@ -13,6 +13,7 @@ GOLD_DIR = ROOT / "data" / "gold"
 ROLE_PATH = GOLD_DIR / "fine_grained_roles_v1.json"
 SKILL_GRAPH_PATH = GOLD_DIR / "skill_prerequisite_v2.json"
 RESOURCE_PATH = GOLD_DIR / "learning_resources_v1.json"
+RESOURCE_V2_PATH = GOLD_DIR / "learning_resources_v2.json"
 VOCAB_PATH = GOLD_DIR / "skill_vocab.json"
 
 
@@ -36,12 +37,10 @@ def load_vocab() -> dict[str, Any]:
         return json.load(f)
 
 
-@lru_cache(maxsize=1)
-def load_resources() -> dict[str, list[LearningResource]]:
-    with RESOURCE_PATH.open(encoding="utf-8") as f:
-        payload = json.load(f)
-    resource_map: dict[str, list[LearningResource]] = {}
+def _parse_resource_payload(payload: dict, resource_map: dict[str, list[LearningResource]]) -> None:
     for skill_id, item in payload.get("skills", {}).items():
+        if resource_map.get(skill_id):
+            continue
         resources = []
         for resource in item.get("resources", [])[:3]:
             level = (resource.get("difficulty") or "beginner").lower()
@@ -57,6 +56,16 @@ def load_resources() -> dict[str, list[LearningResource]]:
                 )
             )
         resource_map[skill_id] = resources
+
+
+@lru_cache(maxsize=1)
+def load_resources() -> dict[str, list[LearningResource]]:
+    resource_map: dict[str, list[LearningResource]] = {}
+    with RESOURCE_PATH.open(encoding="utf-8") as f:
+        _parse_resource_payload(json.load(f), resource_map)
+    if RESOURCE_V2_PATH.exists():
+        with RESOURCE_V2_PATH.open(encoding="utf-8") as f:
+            _parse_resource_payload(json.load(f), resource_map)
     return resource_map
 
 
