@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -8,8 +8,8 @@ from fastapi.testclient import TestClient
 from app.main import app
 
 ROOT = Path(__file__).parents[2]
-REPORT_JSON = ROOT / "reports" / "resource_rich_career_reports_api_output.json"
-REPORT_MD = ROOT / "reports" / "resource_rich_career_reports_summary.md"
+REPORT_JSON = ROOT / "reports" / "summary" / "job_resource_rich_career_reports_api_output.json"
+REPORT_MD = ROOT / "reports" / "summary" / "job_resource_rich_career_reports_summary.md"
 
 SAMPLES = [
     {
@@ -44,25 +44,25 @@ def summarize(payload: dict) -> str:
     lines = [
         f"## {payload['profile']['user_id']}",
         "",
-        f"- 技能：{', '.join(payload['profile']['skills'])}",
-        f"- Top1 岗位：`{top['job']['title']}`",
+        f"- 鎶€鑳斤細{', '.join(payload['profile']['skills'])}",
+        f"- Top1 宀椾綅锛歚{top['job']['title']}`",
         f"- final_score={top['final_score']:.4f}, semantic_score={top['semantic_score']:.4f}",
-        f"- 学习路径步数：{top['path']['total_steps']}",
-        f"- 学习路径总学时：{top['path']['total_estimated_hours']}",
+        f"- 瀛︿範璺緞姝ユ暟锛歿top['path']['total_steps']}",
+        f"- 瀛︿範璺緞鎬诲鏃讹細{top['path']['total_estimated_hours']}",
         "",
-        "**Top1 路径前 6 步资源概览**",
+        "**Top1 璺緞鍓?6 姝ヨ祫婧愭瑙?*",
     ]
     for step in top["path"]["steps"][:6]:
         resource_titles = [resource["title"] for resource in step["resources"][:2]]
-        lines.append(f"- {step['step_no']}. {step['skill']} -> {', '.join(resource_titles) if resource_titles else '无资源'}")
-    lines.extend(["", "**报告摘要**", "", payload["report_markdown"][:1800], ""])
+        lines.append(f"- {step['step_no']}. {step['skill']} -> {', '.join(resource_titles) if resource_titles else '鏃犺祫婧?}")
+    lines.extend(["", "**鎶ュ憡鎽樿**", "", payload["report_markdown"][:1800], ""])
     return "\n".join(lines)
 
 
 def main() -> None:
     client = TestClient(app)
     outputs = []
-    md_parts = ["# 高资源覆盖方向的 3 条模拟简历报告", ""]
+    md_parts = ["# 楂樿祫婧愯鐩栨柟鍚戠殑 3 鏉℃ā鎷熺畝鍘嗘姤鍛?, ""]
     for sample in SAMPLES:
         resp = client.post(
             "/v1/careers/report",
@@ -112,3 +112,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

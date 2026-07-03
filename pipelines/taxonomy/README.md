@@ -1,53 +1,54 @@
-# 岗位体系流水线（B 模块）
+﻿# 岗位体系与向量召回流水线
 
-细粒度岗位库 + 双阶段推荐的离线流水线。负责：从统一抽取产物出发，做岗位文本向量化、聚类、专家规则合并、簇命名，产出岗位库与岗位技能画像，并把岗位向量写入 pgvector 供线上召回。
+`pipelines/taxonomy` 负责维护细粒度岗位库、技能词表和 JobBERT 向量召回链路。当前线上粗召回依赖 PostgreSQL/pgvector 中的 `job_roles.embedding`，不再把 JSON 岗位匹配作为主路径。
 
-> 不做学习路径本身（C 模块），不做趋势热度真实计算（D 模块）。本流水线只产出岗位库、技能画像和召回所需的向量。
+## 数据流
 
-## 数据流总览
-
-```
-data/silver/all_jd_skills_v1.jsonl   (来自 pipelines/extract)
-        │  build_skill_vocab → data/gold/skill_vocab.json (skill_norm 实际使用)
-        ▼
-   cluster_roles.py        分层聚类 → 原始簇 fine_grained_roles_v1.json
-        ▼
-   postprocess_roles.py    人工审定合并(role_decisions.json) → 最终岗位库 + 技能画像 + 91→70 映射
-        ▼
-   build_job_vectors.py    JobBERT-v3 编码 → UPSERT 进 postgres job_roles.embedding (VECTOR 1024)
-        ▼
-   recall.py               线上召回:query 向量 ⨯ pgvector ANN(<=> 余弦) → TopN
-        ▼
-   rank.py / app.services.recommender   精排 + 缺口分析 + 可解释输出
-        ▼
-   evaluate.py             Hit@1 / Hit@K / MRR / NDCG@K
+```text
+岗位/技能原始数据
+  -> build_skill_vocab.py
+  -> data/gold/skill_vocab.json
+  -> cluster_roles.py / postprocess_roles.py
+  -> data/gold/fine_grained_roles_v1.json
+  -> build_job_vectors.py
+  -> PostgreSQL job_roles.embedding
+  -> recall.py / app.services.recommender
 ```
 
-## 文件说明
+## 当前主数据
 
-| 文件 | 作用 | 运行 | 产出 |
-|------|------|------|------|
-| `build_skill_vocab.py` | 全队统一的完整 IT 技能标准词表（id/name/aliases/category/hot），供 `app.services.skill_norm` 归一化使用 —— **实际被消费的词表** | `python -m pipelines.taxonomy.build_skill_vocab` | `data/gold/skill_vocab.json` |
-| `build_skill_vocab_onet.py` | 由 O*NET Technology Skills 生成的辅助/参考词表（方案 A：取全部技术名去重，标记 Hot）。当前不被任何代码消费 | `python -m pipelines.taxonomy.build_skill_vocab_onet` | `data/gold/skill_vocab_onet.json` |
-| `cluster_roles.py` | 分层 KMeans 聚类；emerging 单独聚类避免被 Djinni 大类淹没；簇命名优先看 search_keyword + 技能画像 | `python -m pipelines.taxonomy.cluster_roles` | `data/gold/fine_grained_roles_v1.json`（原始簇）、`job_skill_profile_v1.json` |
-| `postprocess_roles.py` | 按人工审定决策表 `role_decisions.json` 合并/改名原始簇 → 最终岗位库；自动备份原文件 | `python -m pipelines.taxonomy.postprocess_roles` | `fine_grained_roles_v1.json`（最终 70 岗）、`job_skill_profile_v1.json`、`role_name_mapping_v1.json` |
-| `build_job_vectors.py` | 用 JobBERT-v3 编码岗位文本，UPSERT 进 postgres `job_roles`（含 1024 维 embedding） | `python -m pipelines.taxonomy.build_job_vectors` | postgres `job_roles` 表 |
-| `recall.py` | 线上召回（pgvector ANN）。冒烟：需先起 postgres 且跑过 build_job_vectors | `python -m pipelines.taxonomy.recall` | TopN 候选（内存返回） |
-| `rank.py` | 精排原型：`Final = α·语义 + β·约束 − γ·缺口 + δ·趋势`，输出重合/缺口技能与理由 | `python pipelines/taxonomy/rank.py` | 控制台 |
-| `evaluate.py` | 评估：Hit@1 / Hit@K / MRR / NDCG@K（评测集 `data/gold/eval_set_v1.json`） | `python -m pipelines.taxonomy.evaluate` | 控制台 / 报告数据 |
-| `diagnose_skills.py` | 诊断岗位库技能不统一程度（疑似重复组、`(方向)` 残留） | `python -m pipelines.taxonomy.diagnose_skills` | 控制台 |
-| `role_decisions.json` | 人工审定决策表（91→70 的合并/改名依据），`postprocess_roles.py` 的输入 | — | — |
+- `data/gold/fine_grained_roles_v1.json`：69 个细粒度岗位及岗位技能画像。
+- `data/gold/skill_vocab.json`：全项目统一技能标准化词表。
+- `data/gold/eval_set_v1.json`：岗位召回/推荐评估样本。
+- PostgreSQL `job_roles.embedding`：JobBERT-v3 编码后的岗位向量。
 
-## 关键约束（务必一致）
+`job_skill_profile_v1.json` 和 `role_name_mapping_v1.json` 属于旧版中间产物，当前运行链路不再保留为主数据。
 
-线上 query 向量与离线岗位向量必须在同一语义空间，否则 ANN 召回错位：
+## 主要脚本
 
-- 模型：`TechWolf/JobBERT-v3`
-- 文本拼法：`f"{role_name}. Required skills: {required_skills 去(方向)}"`（用 15 个宽画像 `required_skills`，不是 `core_skills`）
-- `normalize_embeddings=True`（余弦口径）
-- 向量维度 1024，与 `infra/db/migrations/001_init.sql` 的 `VECTOR(1024)` 对齐
+| 脚本 | 作用 |
+|---|---|
+| `build_skill_vocab.py` | 构建当前统一技能词表 |
+| `cluster_roles.py` | 从岗位技能文本聚类生成岗位草稿 |
+| `postprocess_roles.py` | 根据人工规则合并、改名并生成最终岗位库 |
+| `build_job_vectors.py` | 使用 `TechWolf/JobBERT-v3` 编码岗位文本并写入 pgvector |
+| `recall.py` | 从 pgvector 召回 TopN 岗位候选 |
+| `rank.py` | 早期精排原型，当前线上主要由服务层和 D 图谱精排接管 |
+| `evaluate.py` | 计算 Hit@K、MRR、NDCG 等推荐评估指标 |
+| `diagnose_skills.py` | 检查岗位技能命名和标准化问题 |
 
-## 当前状态 / 待办
+## 向量召回约束
 
-- 岗位库当前基于 6000 条抽样，Djinni 部分技能尚未全量抽取；定稿时需用全量数据重跑 `cluster_roles.py` + `build_job_vectors.py`。
-- 打分权重 ALPHA/BETA/GAMMA/DELTA 为经验值，已用评估集初步校准（GAMMA=0.02），详见 `reports/recommend_eval_v1.md`。
+- 角色向量和用户 query 必须使用同一模型：`TechWolf/JobBERT-v3`。
+- 向量维度为 1024，对齐 `infra/db/migrations/001_init.sql` 中的 `VECTOR(1024)`。
+- 本地脚本连接数据库时使用 `localhost`；Docker 容器内使用 `postgres`。
+- 缺模型缓存、缺 pgvector 或缺 `job_roles.embedding` 时应快速失败，而不是隐式降级。
+
+## 常用命令
+
+```powershell
+python -m pipelines.taxonomy.build_skill_vocab
+python -m pipelines.taxonomy.build_job_vectors
+python -m pipelines.taxonomy.recall
+python -m pipelines.taxonomy.evaluate
+```
