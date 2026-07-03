@@ -1,264 +1,92 @@
-# Byte-compiled / optimized / DLL files
+# Python bytecode / caches
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
 htmlcov/
 .tox/
 .nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
 
-# Translations
-*.mo
-*.pot
+# Python packaging / builds
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+*.egg
+.installed.cfg
+MANIFEST
+*.manifest
+*.spec
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
+# Virtual environments / local env helpers
 .env
+.env.*
+!.env.example
 .envrc
-.venv
-env/
+.venv/
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
-
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
-
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-
-# Ruff stuff:
-.ruff_cache/
-
-# PyPI configuration file
-.pypirc
-
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
-
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
-
-# -----------------------------
-# Project-specific ignores
-# -----------------------------
-
-# OS files
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# IDE/editor
-.idea/
-.vscode/
-
-# Local Python / Conda helpers
 .python-version
 *.conda
 
-# Temp / lock / runtime dumps
+# Secrets / credentials
+secrets/
+application_default_credentials.json
+service-account-key.json
+.pypirc
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+.cursorignore
+.cursorindexingignore
+*.swp
+*.swo
 *.tmp
 *.temp
 *.bak
-*.swp
-*.swo
-*.pid.lock
+*.log
 
-# Local accidental cache dirs seen in this repo
+# Runtime / local state
+*.pid
+*.pid.lock
+celerybeat-schedule
+celerybeat.pid
+db.sqlite3
+db.sqlite3-journal
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Test scratch directories
 pytest-cache-files-*/
 tests/.tmp_trend_pipeline*/
 tests/.tmp_gdelt_bigquery*/
 tmp_*.py
 
-# D-module transient outputs and old exploratory artifacts
-reports/role_*_graph_v2.html
-reports/role_*_graph_v2.md
-reports/sample_career_reports_api_output.json
-reports/sample_career_reports_summary.md
-reports/sample_resume_rankings_v2.json
-
-# Environment / secrets
-.env.*
-!.env.example
-
-# Local data artifacts (keep folder structure with .gitkeep if needed)
+# Raw and local-only datasets
+# Keep directory placeholders and small curated files explicitly allowed below.
 data/raw/*
 data/silver/*
-# 其余 data/gold 小文件默认放行
 data/metadata/*
 data/GDELT/*
 !data/raw/.gitkeep
 !data/silver/.gitkeep
 !data/metadata/.gitkeep
 !data/GDELT/.gitkeep
-# C模块: 原始资源CSV爬取数据（共~1.9MB，供重新生成资源库，默认 data/raw/* 被忽略）
 !data/raw/bilibili_resources_C部分.csv
 !data/raw/github_resources.csv
 !data/raw/coursera_it_courses.csv
@@ -267,37 +95,37 @@ data/GDELT/*
 !data/silver/resume_it_english.jsonl
 !data/silver/skillspan_skill_eval.jsonl
 
-# C模块: 机器学习模型权重大文件（449MB，超GitHub 100MB限制，用训练脚本重新生成）
-models/st_finetuned/model.safetensors
-models/st_finetuned/1_Pooling/
-
-.env
-secrets/
-*.json
-application_default_credentials.json
-service-account-key.json
-
-# 但 data/gold 下的小文件放行（超大文件已在上面显式忽略）
-!data/gold/*.json
-!data/gold/*.parquet
-
-# 超大文件重写忽略（放在 ! 规则之后，确保生效）
+# Large generated trend artifacts kept local
 data/gold/gdelt_gkg_role_documents.jsonl
 data/gold/processed_jd_jobs.json
+data/gold/gdelt_gkg_processed/
 
-# C模块(证据检索)本地产物：索引由 build_evidence_index.py 生成、体量大，不提交
+# Evidence index is regenerated locally; keep the small event graph JSON if tracked.
 data/processed/evidence_index/
-!data/processed/event_graph_v1.json
-# 图谱可视化 HTML 可由脚本重新生成，不提交
+
+# Model files that exceed GitHub limits or are regenerated locally
+models/st_finetuned/model.safetensors
+models/st_finetuned/1_Pooling/
+models/graphsage_v2/*.pt
+models/patchtst/*.pt
+
+# Generated reports / visualizations
+reports/role_*_graph_v2.html
+reports/role_*_graph_v2.md
+reports/*_role_graph_v2.html
+reports/*_unified_graph.html
 reports/event_graph_view.html
 reports/full_unified_graph.html
-reports/*_unified_graph.html
-reports/*_role_graph_v2.html
+reports/sample_career_reports_api_output.json
+reports/sample_career_reports_summary.md
+reports/sample_resume_rankings_v2.json
+reports/*_api_output.json
+reports/summary/*_api_output.json
 
-# Frontend dependencies and build output
-frontend/node_modules/
-frontend/dist/
-!frontend/*.json
-!frontend/**/*.json
-# 注：data/gold/trend_evidence_v1.jsonl 与 data/processed/event_graph_v1.json
-#     是小体量交付物，保留提交（给 D 与图谱消费）。
+# Generated diagnostic JSON reports
+reports/graphsage_ablation_*.json
+reports/skill_prerequisite_structured_review.json
+reports/trend_score_breakdown_v1.json
+reports/trend/arxiv_*test*.json
+reports/trend/arxiv_full_rebuild_report.json
+reports/trend/gdelt_small_sample_*.json

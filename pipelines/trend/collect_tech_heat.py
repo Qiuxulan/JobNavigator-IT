@@ -840,8 +840,20 @@ def month_windows(months_back: int) -> list[MonthWindow]:
 
 
 def complete_month_windows(months_back: int, today: date | None = None) -> list[MonthWindow]:
-    anchor = (today or datetime.now(UTC).date()).replace(day=1).isoformat()
-    return [window for window in month_windows(months_back) if window.month < anchor]
+    anchor = (today or datetime.now(UTC).date()).replace(day=1)
+    current = anchor
+    windows: list[MonthWindow] = []
+    for _ in range(max(months_back - 1, 0)):
+        prev_month = current.month - 1
+        prev_year = current.year
+        if prev_month == 0:
+            prev_month = 12
+            prev_year -= 1
+        start = date(prev_year, prev_month, 1)
+        windows.append(MonthWindow(month=start.isoformat(), start=start, end=current))
+        current = start
+    windows.reverse()
+    return windows
 
 
 def http_get_text(url: str, headers: dict[str, str] | None = None, timeout: int = 30) -> str:
