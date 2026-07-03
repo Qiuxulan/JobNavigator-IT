@@ -1,14 +1,14 @@
-"""C 模块 ③/⑤：批量产出趋势证据文件 + 评估报告（完整版，复用 EvidenceService）。
+﻿"""C 妯″潡 鈶?鈶わ細鎵归噺浜у嚭瓒嬪娍璇佹嵁鏂囦欢 + 璇勪及鎶ュ憡锛堝畬鏁寸増锛屽鐢?EvidenceService锛夈€?
 
-对 B 的每条趋势结论，调用统一检索核心取「聚合信号 + 干净样本事件 + JD 证据」，
-按契约 §5 写 data/gold/trend_evidence_v1.jsonl，并生成评估报告。
+瀵?B 鐨勬瘡鏉¤秼鍔跨粨璁猴紝璋冪敤缁熶竴妫€绱㈡牳蹇冨彇銆岃仛鍚堜俊鍙?+ 骞插噣鏍锋湰浜嬩欢 + JD 璇佹嵁銆嶏紝
+鎸夊绾?搂5 鍐?data/gold/trend_evidence_v1.jsonl锛屽苟鐢熸垚璇勪及鎶ュ憡銆?
 
-与运行时接口 retrieve_evidence 共用同一个检索核心，不重复实现检索逻辑。
+涓庤繍琛屾椂鎺ュ彛 retrieve_evidence 鍏辩敤鍚屼竴涓绱㈡牳蹇冿紝涓嶉噸澶嶅疄鐜版绱㈤€昏緫銆?
 
-用法：
+鐢ㄦ硶锛?
   python -m pipelines.trend.build_trend_evidence
   python pipelines/trend/build_trend_evidence.py
-前置：先跑 build_evidence_index.py 生成索引。
+鍓嶇疆锛氬厛璺?build_evidence_index.py 鐢熸垚绱㈠紩銆?
 """
 
 from __future__ import annotations
@@ -28,11 +28,11 @@ from pipelines.trend._trend_source import EVENT_WINDOW, load_conclusions
 TAXONOMY_PATH = Path("data/gold/role_taxonomy.json")
 OUT_JSONL = Path("data/gold/trend_evidence_v1.jsonl")
 OUT_JSONL_MONTHLY = Path("data/gold/trend_evidence_monthly_v1.jsonl")
-OUT_REPORT = Path("reports/trend_explanation_eval_v1.md")
+OUT_REPORT = Path("reports/eval/industry_trend_explanation_eval_v1.md")
 MAJOR_EVENTS_PATH = Path("data/gold/major_industry_events_v1.json")
 
 DIRECTION_NORMALIZE = {"up": "up", "flat": "stable", "stable": "stable", "down": "down"}
-DIRECTION_CN = {"up": "上升", "stable": "持平", "down": "下降"}
+DIRECTION_CN = {"up": "涓婂崌", "stable": "鎸佸钩", "down": "涓嬮檷"}
 TOPK = 5
 
 
@@ -61,7 +61,7 @@ def _make_evidence_topk(events: list[dict]) -> list[dict]:
             "source_url": ev.get("url"),
             "title": ev.get("title"),
             "published_at": ev.get("published_at"),
-            "evidence_text": f"{ev.get('source_domain', '')} · {ev.get('event_type', '')} · tone {ev.get('tone')}",
+            "evidence_text": f"{ev.get('source_domain', '')} 路 {ev.get('event_type', '')} 路 tone {ev.get('tone')}",
             "retrieval_score": ev.get("retrieval_score"),
             "evidence_type": ev.get("event_type"),
             "impact_direction": ev.get("impact_direction"),
@@ -121,42 +121,42 @@ def _make_major_events(role: str, raw_direction: str, role_family: str | None,
 
 
 def _risk_notes(direction: str, agg: dict | None, events: list[dict]) -> list[str]:
-    notes = ["证据相关性为近似（GDELT 无正文，基于技能白名单+主题共现约束）。"]
+    notes = ["璇佹嵁鐩稿叧鎬т负杩戜技锛圙DELT 鏃犳鏂囷紝鍩轰簬鎶€鑳界櫧鍚嶅崟+涓婚鍏辩幇绾︽潫锛夈€?]
     if agg:
         net = agg.get("net_signal")
         if direction == "up" and net == "negative":
-            notes.append("聚合净信号偏负，与上升结论不一致，需谨慎。")
+            notes.append("鑱氬悎鍑€淇″彿鍋忚礋锛屼笌涓婂崌缁撹涓嶄竴鑷达紝闇€璋ㄦ厧銆?)
         elif direction == "down" and net == "positive":
-            notes.append("聚合净信号偏正，与下降结论不一致，需谨慎。")
+            notes.append("鑱氬悎鍑€淇″彿鍋忔锛屼笌涓嬮檷缁撹涓嶄竴鑷达紝闇€璋ㄦ厧銆?)
         if agg.get("article_count", 0) < 20:
-            notes.append(f"本月相关新闻仅 {agg.get('article_count')} 篇，样本偏小。")
+            notes.append(f"鏈湀鐩稿叧鏂伴椈浠?{agg.get('article_count')} 绡囷紝鏍锋湰鍋忓皬銆?)
     weak_count = sum(1 for ev in events if ev.get("evidence_strength") == "weak")
     if weak_count:
-        notes.append(f"含 {weak_count} 条弱相关补充事件；强结论以 aggregate/JD 为准。")
+        notes.append(f"鍚?{weak_count} 鏉″急鐩稿叧琛ュ厖浜嬩欢锛涘己缁撹浠?aggregate/JD 涓哄噯銆?)
     if not events:
-        notes.append("无通过四重约束的干净事件样本，趋势佐证以 aggregate 为准。")
-    notes.append("证据多为英文新闻源，中文本土市场需补充。")
+        notes.append("鏃犻€氳繃鍥涢噸绾︽潫鐨勫共鍑€浜嬩欢鏍锋湰锛岃秼鍔夸綈璇佷互 aggregate 涓哄噯銆?)
+    notes.append("璇佹嵁澶氫负鑻辨枃鏂伴椈婧愶紝涓枃鏈湡甯傚満闇€琛ュ厖銆?)
     return notes
 
 
 def main(granularity: str = "milestone") -> None:
-    conclusions = load_conclusions(granularity=granularity)   # 里程碑 或 逐月全量
+    conclusions = load_conclusions(granularity=granularity)   # 閲岀▼纰?鎴?閫愭湀鍏ㄩ噺
     tax = {t["canonical_role"]: t for t in json.loads(TAXONOMY_PATH.read_text(encoding="utf-8"))}
     out_path = OUT_JSONL_MONTHLY if granularity == "monthly" else OUT_JSONL
 
     t0 = time.time()
     rows_out = []
-    ev_cache: dict = {}                         # (role,方向)->检索结果; 逐月模式避免重复检索
+    ev_cache: dict = {}                         # (role,鏂瑰悜)->妫€绱㈢粨鏋? 閫愭湀妯″紡閬垮厤閲嶅妫€绱?
     major_catalog, major_mapping = _load_major_events()
     stats = {"total": 0, "with_events": 0, "with_aggregate": 0,
              "aligned": 0, "event_counts": [], "roles": set(), "roles_with_events": set()}
 
     n = len(conclusions)
     src = conclusions[0]["source"] if conclusions else "?"
-    print(f"[trend_evidence] {n} 条结论(来源={src})，证据窗口 {EVENT_WINDOW}，逐个检索 ...", flush=True)
+    print(f"[trend_evidence] {n} 鏉＄粨璁?鏉ユ簮={src})锛岃瘉鎹獥鍙?{EVENT_WINDOW}锛岄€愪釜妫€绱?...", flush=True)
     for i, row in enumerate(conclusions, 1):
         role = row["canonical_role"]
-        month = row["month"]                   # 预测月份(可能在未来)
+        month = row["month"]                   # 棰勬祴鏈堜唤(鍙兘鍦ㄦ湭鏉?
         horizon = int(row.get("horizon_months", 3))
         horizon_label = row.get("horizon_label", f"{horizon}_month")
         raw_dir = row.get("trend_direction", "flat")
@@ -169,7 +169,7 @@ def main(granularity: str = "milestone") -> None:
         if i % 50 == 0 or i == n:
             print(f"  ... {i}/{n}", flush=True)
 
-        # 预测在未来无新闻 -> 证据从最近真实事件窗口取；同(角色,方向)缓存复用
+        # 棰勬祴鍦ㄦ湭鏉ユ棤鏂伴椈 -> 璇佹嵁浠庢渶杩戠湡瀹炰簨浠剁獥鍙ｅ彇锛涘悓(瑙掕壊,鏂瑰悜)缂撳瓨澶嶇敤
         ck = (role, raw_dir)
         res = ev_cache.get(ck)
         if res is None:
@@ -179,10 +179,10 @@ def main(granularity: str = "milestone") -> None:
         agg = res.get("aggregate")
         major_events = _make_major_events(role, raw_dir, info.get("category"), major_catalog, major_mapping)
 
-        conclusion = (f"{role} 预计未来 {horizon} 个月需求{DIRECTION_CN[direction]}"
-                      f"（预测月 {month}，需求指数 {idx:.2f}，置信度 {conf:.0%}）。")
+        conclusion = (f"{role} 棰勮鏈潵 {horizon} 涓湀闇€姹倇DIRECTION_CN[direction]}"
+                      f"锛堥娴嬫湀 {month}锛岄渶姹傛寚鏁?{idx:.2f}锛岀疆淇″害 {conf:.0%}锛夈€?)
         if agg:
-            conclusion += f" 近 6 个月相关新闻 {agg['article_count']} 篇，净信号 {agg['net_signal']}。"
+            conclusion += f" 杩?6 涓湀鐩稿叧鏂伴椈 {agg['article_count']} 绡囷紝鍑€淇″彿 {agg['net_signal']}銆?
 
         rows_out.append({
             "trend_id": f"{_slug(role)}_{horizon_label}",
@@ -206,7 +206,7 @@ def main(granularity: str = "milestone") -> None:
             "model_version": "trend-evidence-v2-constrained",
         })
 
-        # 统计
+        # 缁熻
         stats["total"] += 1
         stats["roles"].add(role)
         if agg:
@@ -215,7 +215,7 @@ def main(granularity: str = "milestone") -> None:
             stats["with_events"] += 1
             stats["roles_with_events"].add(role)
             stats["event_counts"].append(len(events))
-            # 方向对齐：聚合净信号方向与结论一致
+            # 鏂瑰悜瀵归綈锛氳仛鍚堝噣淇″彿鏂瑰悜涓庣粨璁轰竴鑷?
             if agg and ((direction == "up" and agg["net_signal"] == "positive")
                         or (direction == "down" and agg["net_signal"] == "negative")
                         or (direction == "stable")):
@@ -227,12 +227,12 @@ def main(granularity: str = "milestone") -> None:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     if granularity != "monthly":
-        _write_report(stats, rows_out)         # 评估报告只为里程碑版生成
+        _write_report(stats, rows_out)         # 璇勪及鎶ュ憡鍙负閲岀▼纰戠増鐢熸垚
     cov = stats["with_events"] / stats["total"] if stats["total"] else 0
-    print(f"[ok] {len(rows_out)} 行 -> {out_path}")
-    print(f"[ok] 报告 -> {OUT_REPORT}")
-    print(f"[stat] 含干净事件: {stats['with_events']}/{stats['total']} = {cov:.1%} | "
-          f"含聚合: {stats['with_aggregate']}/{stats['total']} | 用时 {time.time()-t0:.1f}s")
+    print(f"[ok] {len(rows_out)} 琛?-> {out_path}")
+    print(f"[ok] 鎶ュ憡 -> {OUT_REPORT}")
+    print(f"[stat] 鍚共鍑€浜嬩欢: {stats['with_events']}/{stats['total']} = {cov:.1%} | "
+          f"鍚仛鍚? {stats['with_aggregate']}/{stats['total']} | 鐢ㄦ椂 {time.time()-t0:.1f}s")
 
 
 def _write_report(stats: dict, rows_out: list[dict]) -> None:
@@ -245,32 +245,32 @@ def _write_report(stats: dict, rows_out: list[dict]) -> None:
     avg_ev = sum(counts) / len(counts) if counts else 0
 
     L = []
-    L.append("# 趋势证据评估报告 (trend_explanation_eval_v1)\n")
-    L.append(f"- 生成：{datetime.now().isoformat(timespec='seconds')}")
-    L.append("- 模块：C（证据检索 RAG，完整版四重约束 + 聚合信号）")
-    L.append("- 输出：`data/gold/trend_evidence_v1.jsonl`\n")
-    L.append("## 1. 核心指标\n")
-    L.append("| 指标 | 数值 |")
+    L.append("# 瓒嬪娍璇佹嵁璇勪及鎶ュ憡 (trend_explanation_eval_v1)\n")
+    L.append(f"- 鐢熸垚锛歿datetime.now().isoformat(timespec='seconds')}")
+    L.append("- 妯″潡锛欳锛堣瘉鎹绱?RAG锛屽畬鏁寸増鍥涢噸绾︽潫 + 鑱氬悎淇″彿锛?)
+    L.append("- 杈撳嚭锛歚data/gold/trend_evidence_v1.jsonl`\n")
+    L.append("## 1. 鏍稿績鎸囨爣\n")
+    L.append("| 鎸囨爣 | 鏁板€?|")
     L.append("|---|---|")
-    L.append(f"| 趋势结论总数 | {total} |")
-    L.append(f"| **含聚合信号(aggregate)覆盖率** | **{agg_cov:.1%}**（{wa}/{total}） |")
-    L.append(f"| 含干净事件样本覆盖率 | {cov:.1%}（{we}/{total}） |")
-    L.append(f"| 平均干净事件数/条 | {avg_ev:.2f}（TopK={TOPK}） |")
-    L.append(f"| 聚合方向与结论一致 | {stats['aligned']}/{total} |")
-    L.append(f"| 覆盖角色 | {len(stats['roles'])} |\n")
-    L.append("## 2. 两层证据说明\n")
-    L.append("**主力 = 聚合信号**：每条结论几乎都有 aggregate（篇数/情绪/机会·风险/净信号），"
-             "由多篇文档统计而来，对单篇噪音稳健，是趋势佐证主力，覆盖率远高于干净事件。\n")
-    L.append("**佐证 = 干净事件样本**：过四重约束（技能白名单+主题共现+域名黑名单+方向一致）才入选，"
-             "少而精，标注“相关性近似”。\n")
-    L.append("## 3. 数据质量与口径\n")
-    L.append("1. GDELT 无标题/正文，匹配多为关键词/URL 伪词；本模块用约束换精度，召回不足由聚合兜底。")
-    L.append("2. 方向归一：B 的 `flat` → 契约 `stable`，原值存 `trend_direction_raw`。")
-    L.append("3. 粒度：按 `canonical_role` 出行，`role_family`=taxonomy.category，D 可聚合。")
-    L.append("4. JD 证据 `job_url` 源数据为空，降级为存在性证据（公司/标题/薪资）。\n")
+    L.append(f"| 瓒嬪娍缁撹鎬绘暟 | {total} |")
+    L.append(f"| **鍚仛鍚堜俊鍙?aggregate)瑕嗙洊鐜?* | **{agg_cov:.1%}**锛坽wa}/{total}锛?|")
+    L.append(f"| 鍚共鍑€浜嬩欢鏍锋湰瑕嗙洊鐜?| {cov:.1%}锛坽we}/{total}锛?|")
+    L.append(f"| 骞冲潎骞插噣浜嬩欢鏁?鏉?| {avg_ev:.2f}锛圱opK={TOPK}锛?|")
+    L.append(f"| 鑱氬悎鏂瑰悜涓庣粨璁轰竴鑷?| {stats['aligned']}/{total} |")
+    L.append(f"| 瑕嗙洊瑙掕壊 | {len(stats['roles'])} |\n")
+    L.append("## 2. 涓ゅ眰璇佹嵁璇存槑\n")
+    L.append("**涓诲姏 = 鑱氬悎淇″彿**锛氭瘡鏉＄粨璁哄嚑涔庨兘鏈?aggregate锛堢瘒鏁?鎯呯华/鏈轰細路椋庨櫓/鍑€淇″彿锛夛紝"
+             "鐢卞绡囨枃妗ｇ粺璁¤€屾潵锛屽鍗曠瘒鍣煶绋冲仴锛屾槸瓒嬪娍浣愯瘉涓诲姏锛岃鐩栫巼杩滈珮浜庡共鍑€浜嬩欢銆俓n")
+    L.append("**浣愯瘉 = 骞插噣浜嬩欢鏍锋湰**锛氳繃鍥涢噸绾︽潫锛堟妧鑳界櫧鍚嶅崟+涓婚鍏辩幇+鍩熷悕榛戝悕鍗?鏂瑰悜涓€鑷达級鎵嶅叆閫夛紝"
+             "灏戣€岀簿锛屾爣娉ㄢ€滅浉鍏虫€ц繎浼尖€濄€俓n")
+    L.append("## 3. 鏁版嵁璐ㄩ噺涓庡彛寰刓n")
+    L.append("1. GDELT 鏃犳爣棰?姝ｆ枃锛屽尮閰嶅涓哄叧閿瘝/URL 浼瘝锛涙湰妯″潡鐢ㄧ害鏉熸崲绮惧害锛屽彫鍥炰笉瓒崇敱鑱氬悎鍏滃簳銆?)
+    L.append("2. 鏂瑰悜褰掍竴锛欱 鐨?`flat` 鈫?濂戠害 `stable`锛屽師鍊煎瓨 `trend_direction_raw`銆?)
+    L.append("3. 绮掑害锛氭寜 `canonical_role` 鍑鸿锛宍role_family`=taxonomy.category锛孌 鍙仛鍚堛€?)
+    L.append("4. JD 璇佹嵁 `job_url` 婧愭暟鎹负绌猴紝闄嶇骇涓哄瓨鍦ㄦ€ц瘉鎹紙鍏徃/鏍囬/钖祫锛夈€俓n")
     sample = next((r for r in rows_out if r["evidence_topk"]), rows_out[0] if rows_out else None)
     if sample:
-        L.append("## 4. 抽检样例\n")
+        L.append("## 4. 鎶芥鏍蜂緥\n")
         slim = dict(sample)
         slim["evidence_topk"] = slim["evidence_topk"][:2]
         slim["jd_evidence"] = slim["jd_evidence"][:1]
@@ -285,6 +285,7 @@ if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--monthly", action="store_true",
-                    help="逐月全量(69×36=2484行,带缓存,出 trend_evidence_monthly_v1.jsonl)；默认里程碑(345行)")
+                    help="閫愭湀鍏ㄩ噺(69脳36=2484琛?甯︾紦瀛?鍑?trend_evidence_monthly_v1.jsonl)锛涢粯璁ら噷绋嬬(345琛?")
     args = ap.parse_args()
     main(granularity="monthly" if args.monthly else "milestone")
+

@@ -1,7 +1,7 @@
 """
 build_resources_json.py
 一次性脚本：从三源CSV生成 data/gold/learning_resources_v1.json
-逻辑与 path_planner_v1.py 的资源加载保持一致，额外添加：
+逻辑沿用旧资源匹配规则并生成当前 D 模块使用的学习资源索引，额外添加：
   - 每个技能的完整资源列表（非截断到5条）
   - 技能元数据（skill_name / category / level / difficulty / hours_estimate）
   - 统计摘要（覆盖技能数、各源数量、无资源技能列表）
@@ -49,7 +49,7 @@ BILI_TAG_TO_SKILL = {
     "nlp":                "nlp",
 }
 
-# ── 关键词评分表（与 path_planner_v1.py 保持同步）────────────────────────
+# ── 关键词评分表（资源与技能匹配规则）────────────────────────
 SKILL_KEYWORDS = {
     "python":   ["python programming", "learn python", "python for beginners",
                           "intro to python", "python basics", "python tutorial"],

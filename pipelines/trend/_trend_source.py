@@ -1,6 +1,6 @@
 """趋势结论数据源适配器：统一从 PatchTST 里程碑 或 基线分数 读出结论。
 
-让证据批处理（build_trend_evidence / build_event_graph）与上游趋势模型解耦：
+让证据批处理（build_trend_evidence）与上游趋势模型解耦：
 - 优先读组员1 的 PatchTST 里程碑（3/6/12 个月预测）；
 - 缺失时回退到基线 role_trend_scores.json。
 

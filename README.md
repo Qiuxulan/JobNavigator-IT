@@ -1,220 +1,294 @@
-# JobNavigator-IT
+﻿# JobNavigator-IT
 
-**快速启动见 `SETUP_GUIDE.md`；完整环境说明见 `docs/04-deployment-ops/03-setup-on-new-machine.md`。**
+JobNavigator-IT 是一个面向 IT 职业决策的原型系统，围绕“简历技能抽取 → 岗位匹配 → 技能缺口 → 学习路径 → 行业趋势 → 报告生成”构建完整链路。项目当前重点覆盖 69 个细粒度 IT 岗位，并把职业图谱、GraphSAGE、PatchTST 趋势预测和证据检索整合到 FastAPI + React 原型中。
 
-**分工在docs\01-product-roadmap\03-overall-team-assignment-3-weeks.md！！**
+## 当前能力
 
-面向 IT 细粒度岗位的职业决策系统（V1）。本项目以 `JobNavigator-IT_26双创立项_文字提取.txt` 作为需求基线，重点解决“岗位推荐-能力缺口-学习路径-趋势判断”的闭环问题。
+- **技能抽取**：`ExtractorService` 默认尝试本地微调模型 `models/extractor_v1`，失败或空输出时使用规则抽取兜底，输出统一 `UserProfile`。
+- **岗位推荐**：使用 `TechWolf/JobBERT-v3` 编码用户画像，并通过 PostgreSQL/pgvector 中的 `job_roles.embedding` 做 TopK 粗召回。
+- **图谱精排**：基于 `fine_grained_roles_v1.json`、`skill_vocab.json`、`skill_prerequisite_v2.json` 和学习资源构建职业图谱，对候选岗位做技能覆盖、缺口成本、资源覆盖和 GraphSAGE 可达性评分。
+- **学习路径**：对目标岗位前 30 个关键技能中的缺失技能做先修链搜索，合并共享先修，并挂载学习资源。
+- **行业趋势**：整合 JD、GDELT GKG/事件冲击、GitHub/arXiv 技术热度，生成 `role_month_features` 和 PatchTST 预测结果。
+- **趋势证据与报告**：趋势接口、证据检索、CoT 上下文和报告生成服务读取真实数据产物，不再依赖硬编码 mock。
+- **前端原型**：提供趋势仪表盘、岗位详情、岗位对比、知识图谱、学习路径和 AI 助手页面。
 
-## 1. 项目目标与边界
-
-### 1.1 目标
-
-构建一个可部署的职业决策系统，支持：
-
-1. 用户画像抽取（简历/GitHub 文本）
-2. 细粒度岗位推荐（TopK + 可解释打分）
-3. 技能缺口识别与学习路径生成
-4. 行业趋势分析与证据提示
-
-### 1.2 当前边界
-
-1. 领域：仅 IT 岗位
-2. 语言：中文优先，中英混合可支持
-3. Agent：已实现 Orchestrator 风格工具调用 Agent；外部 LLM、数据库或完整证据索引缺失时支持本地降级
-
-## 2. 总体架构
-
-系统采用“单机服务化”部署，便于比赛阶段快速落地并保留后续扩展能力。
-
-1. `api-service`（FastAPI）
-   : 提供统一 REST API，对接前端/调用方
-2. `frontend`（React + TypeScript + ECharts）
-   : 提供趋势、岗位对比、图谱、学习路径和 Agent 交互页面
-3. `data-service`（PostgreSQL + pgvector，可选）
-   : 管理结构化数据、关系边、向量索引
-4. `model-service`（脚本层）
-   : 承担抽取模型训练与推理封装
-
-## 3. 项目目录结构（当前实现）
+## 目录结构
 
 ```text
-app/
-  api/                  # 路由与接口层
-  core/                 # 配置管理
-  schemas/              # 领域模型与请求响应模型
-  services/             # 业务服务（抽取/推荐/路径/趋势）
-frontend/               # React + TypeScript 前端
-services/
-  worker/               # Celery worker
-  model/                # 本地模型脚本占位（训练/推理）
-pipelines/
-  extract/              # 弱监督与标注流水线说明
-  taxonomy/             # 细粒度岗位体系构建说明
-  graph/                # 图谱构建流程说明
-  trend/                # 趋势建模流程说明
-infra/
-  docker/               # Dockerfile 与 compose
-  db/
-    migrations/         # 初始化 SQL（含 pgvector）
-    seed/               # 种子数据
-data/
-  raw/ silver/ gold/ metadata/
-tests/
-  unit/ integration/
-docs/
-  01-product-roadmap/
-  02-system-data/
-  03-api-testing/
-  04-deployment-ops/
+app/                    FastAPI 接口、schema、业务服务
+frontend/               React + TypeScript + Vite 前端
+pipelines/extract/      技能抽取、弱监督数据、模型训练与评估
+pipelines/taxonomy/     岗位库、技能词表、JobBERT 向量库构建
+pipelines/graph/        职业图谱、GraphSAGE、路径样例和可视化
+pipelines/trend/        JD/GDELT/技术热度、趋势评分、PatchTST 数据链路
+infra/db/migrations/    PostgreSQL、pgvector 和业务表初始化 SQL
+infra/docker/           API 与前端 Dockerfile
+models/                 本地抽取模型、GraphSAGE、PatchTST 等模型产物
+data/raw/               本地原始数据入口，通常不提交大文件
+data/silver/            抽取和评估中间数据
+data/gold/              当前主链路使用的标准数据和模型输入输出
+reports/                实验报告、模块说明、行业数据处理说明
 ```
 
-## 4. 核心模块划分与技术栈
+## 关键数据产物
 
-### 4.1 数据层（Data Pipeline）
+- `data/gold/fine_grained_roles_v1.json`：69 个细粒度岗位主库。
+- `data/gold/skill_vocab.json`：技能标准化词表，供抽取、图谱和路径统一映射。
+- `data/gold/skill_prerequisite_v2.json`：技能先修、难度、学时估计。
+- `data/gold/learning_resources_v1.json` / `data/gold/learning_resources_v2.json`：学习资源。
+- `data/gold/role_taxonomy.json`：趋势侧岗位标准库。
+- `data/gold/jd_role_month_features.json`：JD 月度特征。
+- `data/gold/gdelt_gkg_role_month_features.json`：GDELT GKG 月度特征。
+- `data/gold/gdelt_impact_role_month_features.json`：GDELT 事件冲击特征。
+- `data/gold/tech_role_month_features.json`：GitHub/arXiv 技术热度岗位月特征。
+- `data/gold/role_month_features.json`：行业趋势统一合并特征。
+- `data/gold/patchtst_role_month_features.json`：PatchTST 输入面板。
+- `data/gold/patchtst_predictions_36m.json`：36 个月趋势预测结果。
 
-目标：把多源异构数据变成可训练、可检索、可追溯的数据资产。
+大体量原始数据，如 `data/GDELT/`、完整 JD 原始文件和部分证据索引，默认通过 `.gitignore` 排除。运行全量趋势链路前需要确认本地数据已经放在对应路径。
 
-1. 数据来源
-   : 招聘 JD、公开技能体系（ESCO/O*NET）、学习资源、趋势事件
-2. 分层
-   : `raw -> silver -> gold`
-3. 关键约束
-   : 每条记录必须保留来源、时间、许可、采集方式
+## 环境要求
 
-技术：
+- Python 3.11，推荐使用项目 conda 环境 `jobnavigator-it`。
+- Node.js 18+ 与 npm。
+- Docker Desktop，用于 PostgreSQL/pgvector、Redis 和可选的一键部署。
+- 可选：本地已缓存 `TechWolf/JobBERT-v3`，否则首次构建岗位向量会尝试联网下载。
+- 可选：LLM API Key，用于 AI 助手和报告生成；没有 Key 时部分报告能力不可用。
 
-- Python ETL
-- PostgreSQL
+## 从零启动
 
-### 4.2 抽取层（Extraction）
+### 1. 安装 Python 依赖
 
-你提出的关键问题是“结构化字段与非结构化文本如何统一抽取”。当前方案：
+如果已经有 conda 环境：
 
-1. 结构化来源（JD 页面字段）
-   : 直接字段抽取 + 标准化映射
-2. 非结构化来源（简历/GitHub 文本）
-   : 先规则+弱监督，后 LoRA/QLoRA 微调
-3. 目标标签
-   : 技能、岗位、学历、年限、薪资、城市、项目证据
+```powershell
+conda activate jobnavigator-it
+pip install -r requirements.txt
+```
 
-技术：
+如果需要新建环境，可按项目环境文件创建或手动创建 Python 3.11 环境后安装依赖：
 
-- 正则与模板规则
-- 弱监督标注
-- 本地微调（阶段二）
+```powershell
+conda create -n jobnavigator-it python=3.11
+conda activate jobnavigator-it
+pip install -r requirements.txt
+```
 
-### 4.3 岗位体系层（粗细粒度）
+### 2. 配置环境变量
 
-你关注“细粒度岗位怎么构建”。本项目采用：
+```powershell
+Copy-Item .env.example .env
+```
 
-1. 粗粒度锚点
-   : 直接使用 ESCO/O*NET 职业类目
-2. 细粒度岗位树
-   : 岗位文本向量化 -> 聚类 -> 专家规则合并 -> LLM 命名
+常用配置：
 
-这能兼顾标准兼容性与岗位时效性。
+```dotenv
+JOBNAV_APP_ENV=dev
+JOBNAV_POSTGRES_DSN=postgresql://jobnav:jobnav@localhost:5432/jobnavigator
+JOBNAV_REDIS_URL=redis://localhost:6379/0
+JOBNAV_LLM_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+JOBNAV_LLM_API_KEY=
+JOBNAV_LLM_MODEL=qwen-plus
+```
 
-### 4.4 图谱层（Graph）
+本地直接运行 Python 脚本时，数据库主机使用 `localhost`；在 Docker 容器内部运行时，数据库主机使用 compose 服务名 `postgres`。
 
-你提出“岗位涉及技能是全挂载还是筛选挂载”。本项目采用加权挂载，不是出现即挂载：
+### 3. 启动数据库和 Redis
 
-1. 节点
-   : `JobRole / Skill / Resource / TrendEvent`
-2. 关系
-   : `REQUIRES / PREREQ / TEACHES / AFFECTS`
-3. 关系属性
-   : `weight / confidence / source_time`
+仅启动基础设施：
 
-只有分数高于阈值的关系才入图。
+```powershell
+docker compose up -d postgres redis
+```
 
-### 4.5 推荐层（Two-Stage Matching）
+初始化 SQL 位于 `infra/db/migrations/`，PostgreSQL 容器首次创建数据卷时会自动执行。若你复用旧 volume，表结构不会自动重跑，需要手动确认迁移状态或重建 volume。
 
-你担心“全量相似度计算算力爆炸”。本项目采用双阶段：
+### 4. 构建岗位向量库
 
-1. 召回阶段
-   : pgvector ANN 从岗位向量中检索 TopN
-2. 精排阶段
-   : 融合语义相似、硬约束（学历/薪资/城市）、路径代价、趋势奖励
+粗召回依赖 `job_roles.embedding`，因此需要先写入岗位向量：
 
-输出：
+```powershell
+python -m pipelines.taxonomy.build_job_vectors
+```
 
-- TopK 细粒度岗位
-- 技能重合/缺口
-- 分数分解与解释
+也可以用 Docker 的一次性 seed profile：
 
-### 4.6 学习路径层（Path Planning）
+```powershell
+docker compose --profile seed up vector-seed
+```
 
-你关注“路径顺序如何得到”。本项目采用：
+如果缺少 JobBERT 缓存、pgvector 或 `job_roles.embedding`，相关召回脚本会快速失败并提示缺项，不应长时间阻塞。
 
-1. 缺口识别
-   : `gap = target_skills - user_skills`
-2. 子图排序
-   : 在 `PREREQ` 子图中进行 DAG/近似 DAG 排序
-3. 多候选路径打分
-   : `Score = Gain - Cost - Difficulty + MarketReward`
-4. 资源挂载
-   : 每步技能挂载 TopK 学习资源
+### 5. 启动后端
 
-### 4.7 趋势层（Trend）
+```powershell
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+```
 
-以 PatchTST 逐月预测为主，并提供基线降级：
+检查：
 
-1. 主模型
-   : PatchTST 24 个月岗位需求预测
-2. 输入
-   : 岗位时序、技能热度、事件证据
-3. 输出
-   : 逐月需求指数、趋势方向、证据摘要和解释上下文
+```text
+http://127.0.0.1:8000/v1/health
+http://127.0.0.1:8000/docs
+```
 
-## 5. API 冻结范围（V1）
+### 6. 启动前端
 
-1. `GET /v1/roles`、`GET /v1/roles/catalog`
-2. `POST /v1/profile/extract`
-3. `POST /v1/jobs/recommend`、`POST /v1/careers/rank`
-4. `POST /v1/paths/generate`
-5. `GET /v1/trends/batch`、`GET /v1/trends/{job_role}`
-6. `GET /v1/evidence/{job_role}`、`GET /v1/cot/{job_role}`
-7. `GET /v1/graph`
-8. `POST /v1/chat/decision`、`POST /v1/agent/chat`
+```powershell
+cd frontend
+npm install
+npm run dev
+```
 
-## 6. 测试与验收
+打开：
 
-### 6.1 当前已接入
+```text
+http://127.0.0.1:5173
+```
 
-1. 单测：服务层基础逻辑
-2. 集成测：核心接口契约
+Vite 会把 `/api/*` 代理到 `http://127.0.0.1:8000/*`。
 
-### 6.2 目标指标（阶段二）
+### 7. Docker 一键运行
 
-1. 抽取：实体 F1、归一化准确率、OOV 技能召回
-2. 推荐：TopK 命中率、NDCG@5、约束违规率
-3. 路径：先修冲突率、路径可执行性
-4. 趋势：方向准确率、证据覆盖率
+如果希望前后端和基础设施一起运行：
 
-## 7. 环境安装与运行
+```powershell
+docker compose --env-file .env up --build
+```
 
-前后端本地启动、Docker Compose、Agent 环境变量和常见问题见：
+服务地址：
 
-- `SETUP_GUIDE.md`
-- `docs/04-deployment-ops/03-setup-on-new-machine.md`
+| 服务 | 地址 |
+|---|---|
+| 前端 | `http://127.0.0.1` |
+| 后端健康检查 | `http://127.0.0.1:8000/v1/health` |
+| API 文档 | `http://127.0.0.1:8000/docs` |
+| PostgreSQL | `127.0.0.1:5432` |
+| Redis | `127.0.0.1:6379` |
 
-## 8. 文档导航
+停止：
 
-1. 产品与路线：`docs/01-product-roadmap/`
-2. 系统与数据：`docs/02-system-data/`
-3. 接口与测试：`docs/03-api-testing/`
-4. 部署与运维：`docs/04-deployment-ops/`
-5. D 模块全链路与 Agent：`reports/04_full_chain_agent_integration.md`
+```powershell
+docker compose down
+```
 
-## 9. A 模块：英文简历 / JD 技能抽取
+## 主要 API
 
-A 模块已合并到项目根目录，不再使用独立的 `A_module_extract/` 文件夹。
+| 接口 | 作用 |
+|---|---|
+| `GET /v1/health` | 健康检查 |
+| `GET /v1/roles` / `GET /v1/roles/catalog` | 岗位列表与岗位目录 |
+| `GET /v1/graph` | 职业图谱数据 |
+| `POST /v1/profile/extract` | 简历/文本抽取为 `UserProfile` |
+| `POST /v1/jobs/recommend` | 岗位推荐 |
+| `POST /v1/careers/rank` | D 模块端到端：抽取、召回、图谱精排、学习路径 |
+| `POST /v1/careers/report` | 基于职业匹配结果生成报告 |
+| `POST /v1/paths/generate` | 学习路径生成 |
+| `GET /v1/trends/batch` | 批量趋势结果 |
+| `GET /v1/trends/{job_role}` | 单岗位趋势结果 |
+| `GET /v1/evidence/{job_role}` | 趋势证据 |
+| `GET /v1/cot/{job_role}` | 趋势解释上下文 |
+| `POST /v1/chat/decision` | 决策问答 |
+| `POST /v1/agent/chat` | Agent 聊天入口 |
 
-- 抽取与训练脚本：`pipelines/extract/`
-- 训练与评测数据：`data/silver/`
-- 下游结构化输出：`data/processed/`
-- 本地技能抽取模型：`models/extractor_v1/`
-- 评测报告：`reports/extractor_eval_v1.md`
+## 常用离线流水线
 
-最终模型基于 `jjzha/jobbert_skill_extraction`，使用 1000 条 SkillSpan 人工 BIO 标注和 989 条 JD 弱标注继续训练。模型权重通过 Git LFS 管理。
+职业部分：
+
+```powershell
+python -m pipelines.extract.diagnose_extractor_v1
+python -m pipelines.taxonomy.build_skill_vocab
+python -m pipelines.taxonomy.build_job_vectors
+python -m pipelines.graph.build_career_graph_v2
+python -m pipelines.graph.train_graphsage_v2
+python -m pipelines.graph.run_sample_rankings_v2
+```
+
+行业趋势部分：
+
+```powershell
+python -m pipelines.trend.build_role_taxonomy
+python -m pipelines.trend.collect_hf_recruitment_jobs
+python -m pipelines.trend.collect_ai_job_dataset_jobs
+python -m pipelines.trend.standardize_jd_roles
+python -m pipelines.trend.build_jd_role_month_features
+python -m pipelines.trend.process_gdelt_gkg_local
+python -m pipelines.trend.collect_tech_heat
+python -m pipelines.trend.build_role_month_features
+python -m pipelines.trend.prepare_trend_model_dataset
+python -m pipelines.trend.train_patchtst_predictor
+python -m pipelines.trend.generate_patchtst_predictions
+python -m pipelines.trend.build_trend_evidence
+```
+
+全量 JD、GDELT 和 arXiv/GitHub 采集会比较慢，建议先用 `.env` 中的 sample/limit 参数跑小样本，再切全量。
+
+## 前端页面
+
+| 页面 | 路径 | 说明 |
+|---|---|---|
+| 首页 | `/` | 项目入口 |
+| 趋势仪表盘 | `/dashboard` | 69 岗位趋势、排名和分布 |
+| 岗位详情 | `/role/:roleName` | PatchTST 预测、证据摘要和解释上下文 |
+| 岗位对比 | `/compare` | 多岗位需求指数和趋势方向对比 |
+| 知识图谱 | `/graph` | 岗位、技能、资源、趋势事件关系图 |
+| 学习路径 | `/path` | 根据已有技能和目标岗位生成路径 |
+| AI 助手 | `/chat` | 调用 Agent 查询趋势、岗位、技能缺口和学习建议 |
+
+## 验证命令
+
+后端接口契约：
+
+```powershell
+python -m pytest tests/integration/test_api_contract.py
+```
+
+前端构建：
+
+```powershell
+cd frontend
+npm run build
+```
+
+Python 语法快速检查可按需运行，但在受限目录中可能因为无法写 `__pycache__` 报权限问题。遇到这种情况优先使用具体单测或设置可写缓存目录。
+
+## 常见问题
+
+### 粗召回不可用
+
+检查三项：本地是否能加载 `TechWolf/JobBERT-v3`，PostgreSQL/pgvector 是否可用，`job_roles.embedding` 是否已有数据。缺任一项时需要先补模型缓存、启动数据库或重跑 `pipelines.taxonomy.build_job_vectors`。
+
+### 本地脚本连接不上数据库
+
+本地 PowerShell/conda 运行脚本时使用：
+
+```dotenv
+JOBNAV_POSTGRES_DSN=postgresql://jobnav:jobnav@localhost:5432/jobnavigator
+```
+
+Docker 容器内部运行时使用：
+
+```dotenv
+JOBNAV_POSTGRES_DSN=postgresql://jobnav:jobnav@postgres:5432/jobnavigator
+```
+
+### 抽取模型不可用
+
+`ExtractorService` 会先尝试 `models/extractor_v1`，失败时规则抽取继续生效。若需要诊断模型加载、模型空输出和规则兜底情况，运行：
+
+```powershell
+python -m pipelines.extract.diagnose_extractor_v1
+```
+
+### 趋势或证据为空
+
+确认 `data/gold/role_month_features.json`、`data/gold/patchtst_predictions_36m.json`、`data/gold/trend_evidence_v1.jsonl` 等文件存在。GDELT 原始压缩数据通常不提交，需要本地放在 `data/GDELT/` 后再运行处理脚本。
+
+## 文档入口
+
+- 总体分工：`03-overall-team-assignment-3-weeks.md`
+- 行业部分分工：`reports/trend/02_队友任务分工.md`
+- 行业数据处理：`reports/trend/01_行业数据处理说明.md`
+- 行业数据修正：`reports/trend/04_行业数据处理修正说明.md`
+- D 模块总结：`reports/module_d_implementation_summary.md`
+- 抽取、岗位、图谱、趋势流水线说明：`pipelines/*/README.md`

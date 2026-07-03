@@ -1,72 +1,59 @@
-# A 模块：简历 / JD 文本抽取
+﻿# 技能抽取流水线
 
-这个目录是 A 模块的核心抽取流水线，用来把简历、GitHub 风格文本和招聘 JD 文本转换成结构化数据，供后续的岗位推荐、学习路径规划和职业图谱融合模块使用。
+`pipelines/extract` 负责把简历、GitHub 风格文本和 JD 文本转换为结构化技能信息，并为 `app.services.extractor.ExtractorService` 提供训练、评估和诊断能力。
 
-## 运行评测
+## 当前运行策略
 
-```bash
-python pipelines/extract/eval_extractor.py --gold pipelines/extract/eval/jd_gold.jsonl --mode jd
-python pipelines/extract/eval_extractor.py --gold pipelines/extract/eval/resume_gold.jsonl --mode resume
-python pipelines/extract/eval_extractor.py --gold data/silver/profile_labeled_v1.jsonl --mode resume
+- API 主入口是 `ExtractorService`。
+- 服务默认尝试加载本地微调权重 `models/extractor_v1`。
+- 模型加载失败、推理报错或输出为空时，规则抽取结果继续生效。
+- 输出结构保持 `UserProfile`，下游推荐、图谱精排和学习路径均使用同一结构。
+
+## 主要脚本
+
+| 脚本 | 作用 |
+|---|---|
+| `rule_extractor.py` | 规则版简历/JD 技能抽取，可用于快速调试 |
+| `model_extractor.py` | JobBERT 技能抽取封装 |
+| `train_extractor_v1.py` | 使用弱监督 JD 与 SkillSpan 数据继续训练抽取模型 |
+| `eval_extractor.py` | 在 JD、简历或银标数据上评估抽取效果 |
+| `diagnose_extractor_v1.py` | 区分模型加载失败、模型空输出、规则兜底等情况 |
+| `prepare_skillspan.py` | 从 SkillSpan BIO 标注恢复技能短语并生成评估样本 |
+| `prepare_profile_labeled_v1.py` | 构建简历侧弱标注样本 |
+| `prepare_english_supplement.py` | 构建英文补充样本 |
+| `filter_it_resumes.py` | 从简历数据中过滤 IT 相关样本 |
+
+## 常用命令
+
+诊断当前模型与规则兜底：
+
+```powershell
+python -m pipelines.extract.diagnose_extractor_v1
 ```
 
-## 命令行抽取
+评估抽取效果：
 
-```bash
+```powershell
+python pipelines/extract/eval_extractor.py --gold data/silver/profile_labeled_v1.jsonl --mode resume
+python pipelines/extract/eval_extractor.py --gold data/silver/jd_skill_list_eval.jsonl --mode jd
+python pipelines/extract/eval_extractor.py --gold data/silver/skillspan_skill_eval.jsonl --mode jd
+```
+
+命令行抽取单个文本：
+
+```powershell
 python pipelines/extract/rule_extractor.py resume path/to/resume.txt --out data/processed/user_profile_demo.json
 python pipelines/extract/rule_extractor.py jd path/to/jd.txt --out data/processed/structured_job_demo.json
-python pipelines/extract/rule_extractor.py resume path/to/resume.txt --use-model
 ```
 
-说明：
+`data/processed/` 主要用于本地临时调试输出，当前主链路不依赖其中的历史文件。
 
-- `resume` 表示输入是简历或 GitHub 风格个人文本。
-- `jd` 表示输入是招聘 JD 文本。
-- `--out` 指定输出 JSON 文件路径。
-- `--use-model` 会启用可选的 JobBERT 技能抽取模型 `jjzha/jobbert_skill_extraction`。
-- 如果本地没有安装模型依赖，或模型暂时无法下载，程序会自动回退到规则版抽取，不会中断。
+## 当前保留数据
 
-## 处理 SkillSpan 数据集
+- `data/silver/profile_labeled_v1.jsonl`：简历弱标注数据。
+- `data/silver/jd_skill_list_eval.jsonl`：JD 技能评估数据。
+- `data/silver/skillspan_skill_eval.jsonl`：SkillSpan BIO 恢复后的评估样本。
+- `data/silver/resume_it_english.jsonl`：英文 IT 简历补充样本。
+- `models/extractor_v1/`：当前 API 默认尝试加载的本地微调权重。
+- `reports/eval/job_extractor_eval_v1.md`：抽取评估报告。
 
-```bash
-python pipelines/extract/prepare_skillspan.py --out data/processed/skillspan_skills.json --eval-out data/silver/skillspan_skill_eval.jsonl
-```
-
-这个脚本会读取 Hugging Face 数据集 `jjzha/skillspan`，根据 `tokens` 和 `tags_skill` 的 BIO 标签还原技能短语，并输出：
-
-- `data/processed/skillspan_skills.json`：SkillSpan 高频技能候选。
-- `data/silver/skillspan_skill_eval.jsonl`：可用于后续评测的 JSONL 样本。
-
-注意：这一步需要安装 `datasets`，并且需要能访问 Hugging Face 或已有本地缓存。
-
-## 在 API 中启用 JobBERT
-
-```bash
-set JNIT_ENABLE_JOBBERT=1
-```
-
-默认情况下，在线 API 仍然只使用规则版抽取，保证演示稳定。设置 `JNIT_ENABLE_JOBBERT=1` 后，`ExtractorService` 会尝试启用 JobBERT 技能抽取增强。
-
-API 输出结构不变，仍然返回统一的 `UserProfile`：
-
-- `user_id`
-- `skills`
-- `target_role`
-- `years_experience`
-- `education`
-- `city`
-- `github_url`
-
-## 下游交付文件
-
-- `data/processed/user_profiles.jsonl`
-- `data/processed/structured_jobs.jsonl`
-- `data/processed/skill_vocab.json`
-- `data/processed/skill_alias_map.json`
-- `data/processed/skillspan_skills.json`
-- `data/silver/skillspan_skill_eval.jsonl`
-- `reports/extractor_eval_v1.md`
-
-## 当前版本说明
-
-V1 版本以规则抽取为主，优先保证输出字段稳定、可评测、能被 B/C/D 模块直接使用。JobBERT 和 SkillSpan 是可选增强：JobBERT 用于补充英文技能 span，SkillSpan 用于扩充英文技能候选和后续评测数据。
