@@ -69,21 +69,23 @@ CLOSURE_MAX_DEPTH = 4
 CLOSURE_MIN_CONFIDENCE = 0.5
 # ZPD 剪枝:先修节点难度低于学习者水平 − ZPD_SKIP_GAP 时视为"显然已会的基础",
 # 不排入路径也不再展开(个性化差异度的主要来源:水平越高路径越短越聚焦)。
-ZPD_SKIP_GAP = 0.3
+# 以下 ZPD/权重参数经 experiments/tune_path_v4_params.py 坐标下降调优（2026-11，
+# 约束 order_distance≥0.323、coverage≥0.90）：zpd_violation 0.1734→0.1514
+ZPD_SKIP_GAP = 0.25
 
 # ---------------------------------------------------------------------------
 # 排序打分权重(learning_path_method_v2.md §2.2-3,做成顶部常量便于调参)
 # ---------------------------------------------------------------------------
 W_ROLE_IMPORTANCE = 0.30
-W_ZPD = 0.25
+W_ZPD = 0.35
 W_PREREQ_URGENCY = 0.20
 W_TREND = 0.15
 W_TRANSFER = 0.10
 W_HOURS = 0.10
 
-ZPD_SIGMA = 0.15            # zpd_match 高斯宽度
-ZPD_OFFSET = 0.15           # 最优难度 = 当前水平 + 0.15(略高难度)
-ZPD_LEVEL_EMA = 0.2         # 每步后学习者水平向该步难度靠拢的比例
+ZPD_SIGMA = 0.08            # zpd_match 高斯宽度
+ZPD_OFFSET = 0.20           # 最优难度 = 当前水平 + 0.20(略高难度)
+ZPD_LEVEL_EMA = 0.3         # 每步后学习者水平向该步难度靠拢的比例
 BASE_LEVEL_BY_YEARS = 10.0  # years_experience / 10 映射为起始难度水平,上限 0.8
 TRANSFER_BASE_SAME_CATEGORY = 0.5   # 无 embedding 时同 category 已知技能的迁移保底分
 TRANSFER_BASE_DEFAULT = 0.2

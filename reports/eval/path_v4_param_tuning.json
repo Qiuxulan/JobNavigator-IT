@@ -1,0 +1,123 @@
+{
+ "baseline_params": {
+  "ZPD_SKIP_GAP": 0.3,
+  "ZPD_OFFSET": 0.15,
+  "ZPD_SIGMA": 0.15,
+  "ZPD_LEVEL_EMA": 0.2,
+  "W_ZPD": 0.25
+ },
+ "best_params": {
+  "ZPD_SKIP_GAP": 0.25,
+  "ZPD_OFFSET": 0.2,
+  "ZPD_SIGMA": 0.08,
+  "ZPD_LEVEL_EMA": 0.3,
+  "W_ZPD": 0.35
+ },
+ "history": [
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.3,
+    "ZPD_OFFSET": 0.15,
+    "ZPD_SIGMA": 0.15,
+    "ZPD_LEVEL_EMA": 0.2,
+    "W_ZPD": 0.25
+   },
+   "metrics": {
+    "zpd_violation": 0.1715,
+    "coverage": 0.9091,
+    "order_distance": 0.3654,
+    "hours_mean": 116.7
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.2,
+    "ZPD_OFFSET": 0.15,
+    "ZPD_SIGMA": 0.15,
+    "ZPD_LEVEL_EMA": 0.2,
+    "W_ZPD": 0.25
+   },
+   "metrics": {
+    "zpd_violation": 0.1714,
+    "coverage": 0.908,
+    "order_distance": 0.3654,
+    "hours_mean": 116.5
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.2,
+    "ZPD_OFFSET": 0.2,
+    "ZPD_SIGMA": 0.15,
+    "ZPD_LEVEL_EMA": 0.2,
+    "W_ZPD": 0.25
+   },
+   "metrics": {
+    "zpd_violation": 0.1606,
+    "coverage": 0.908,
+    "order_distance": 0.3468,
+    "hours_mean": 116.5
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.2,
+    "ZPD_OFFSET": 0.2,
+    "ZPD_SIGMA": 0.08,
+    "ZPD_LEVEL_EMA": 0.2,
+    "W_ZPD": 0.25
+   },
+   "metrics": {
+    "zpd_violation": 0.1542,
+    "coverage": 0.908,
+    "order_distance": 0.3787,
+    "hours_mean": 116.5
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.2,
+    "ZPD_OFFSET": 0.2,
+    "ZPD_SIGMA": 0.08,
+    "ZPD_LEVEL_EMA": 0.3,
+    "W_ZPD": 0.25
+   },
+   "metrics": {
+    "zpd_violation": 0.1534,
+    "coverage": 0.908,
+    "order_distance": 0.3406,
+    "hours_mean": 116.5
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.2,
+    "ZPD_OFFSET": 0.2,
+    "ZPD_SIGMA": 0.08,
+    "ZPD_LEVEL_EMA": 0.3,
+    "W_ZPD": 0.35
+   },
+   "metrics": {
+    "zpd_violation": 0.1516,
+    "coverage": 0.908,
+    "order_distance": 0.3454,
+    "hours_mean": 116.5
+   }
+  },
+  {
+   "params": {
+    "ZPD_SKIP_GAP": 0.25,
+    "ZPD_OFFSET": 0.2,
+    "ZPD_SIGMA": 0.08,
+    "ZPD_LEVEL_EMA": 0.3,
+    "W_ZPD": 0.35
+   },
+   "metrics": {
+    "zpd_violation": 0.1514,
+    "coverage": 0.9091,
+    "order_distance": 0.3447,
+    "hours_mean": 116.7
+   }
+  }
+ ]
+}

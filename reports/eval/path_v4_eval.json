@@ -2,55 +2,55 @@
  "v3": {
   "paths": 297,
   "personalization": {
-   "jaccard_distance_mean": 0.2606,
-   "jaccard_distance_median": 0.2308,
-   "order_distance_mean": 0.001
+   "jaccard_distance_mean": 0.2638,
+   "jaccard_distance_median": 0.2353,
+   "order_distance_mean": 0.0008
   },
   "total_hours": {
    "n": 297,
-   "mean": 441.8148,
+   "mean": 443.7609,
    "median": 437,
-   "p25": 275,
-   "p75": 598
+   "p25": 283,
+   "p75": 593
   },
   "resource_mount_rate": 1.0,
-  "zpd_violation_rate_mean": 0.2653,
-  "target_coverage_mean": 0.9099,
-  "avg_prereq_depth": 4.599
+  "zpd_violation_rate_mean": 0.2677,
+  "target_coverage_mean": 0.9115,
+  "avg_prereq_depth": 4.596
  },
  "v4": {
   "paths": 297,
   "personalization": {
-   "jaccard_distance_mean": 0.2379,
-   "jaccard_distance_median": 0.2222,
-   "order_distance_mean": 0.3432
+   "jaccard_distance_mean": 0.2358,
+   "jaccard_distance_median": 0.2174,
+   "order_distance_mean": 0.3424
   },
   "total_hours": {
    "n": 297,
-   "mean": 115.5522,
-   "median": 112,
+   "mean": 116.6263,
+   "median": 113,
    "p25": 51,
-   "p75": 156
+   "p75": 157
   },
   "resource_mount_rate": 1.0,
-  "zpd_violation_rate_mean": 0.1734,
-  "target_coverage_mean": 0.9072,
-  "avg_prereq_depth": 3.953
+  "zpd_violation_rate_mean": 0.1514,
+  "target_coverage_mean": 0.9088,
+  "avg_prereq_depth": 3.912
  },
  "paired_t": {
   "n_roles": 99,
-  "mean_diff_v4_minus_v3": -0.0227,
-  "t_stat": -2.3432,
-  "p_value": 0.019121,
+  "mean_diff_v4_minus_v3": -0.0279,
+  "t_stat": -2.945,
+  "p_value": 0.003229,
   "conclusion": "集合 Jaccard 差异不显著(岗位目标集主导,见顺序不一致度)"
  },
  "personalization_order": {
-  "v3_order_distance_mean": 0.001,
-  "v4_order_distance_mean": 0.3432,
+  "v3_order_distance_mean": 0.0008,
+  "v4_order_distance_mean": 0.3424,
   "paired_t": {
    "n_roles": 99,
-   "mean_diff_v4_minus_v3": 0.3422,
-   "t_stat": 13.8914,
+   "mean_diff_v4_minus_v3": 0.3416,
+   "t_stat": 13.341,
    "p_value": 0.0,
    "conclusion": "v4 排序个性化显著优于 v3"
   }
