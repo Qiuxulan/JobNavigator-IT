@@ -1,0 +1,302 @@
+@import '../../styles/tokens.scss';
+
+/* ===== 公司雷达主板块 ===== */
+.radar-card {
+  padding-top: 24px;
+}
+
+.radar-tabs {
+  display: flex;
+  background: #e9ecf2;
+  border-radius: $radius-pill;
+  padding: 6px;
+  margin-bottom: 12px;
+}
+
+.radar-tab {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 0;
+  border-radius: $radius-pill;
+  color: $c-text-2;
+}
+
+.radar-tab--active {
+  background: $gradient;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: $shadow-pop;
+}
+
+.radar-row {
+  display: flex;
+  align-items: center;
+  padding: 18px 4px;
+  border-bottom: 1px solid $c-line;
+}
+
+.radar-row:last-of-type {
+  border-bottom: none;
+}
+
+.radar-row--static {
+  /* WARN 雇主不在追踪公司池内，不可点击 */
+}
+
+.radar-rank {
+  width: 48px;
+  flex-shrink: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: $c-text-3;
+  text-align: center;
+}
+
+.radar-rank--1 {
+  color: #f5a623;
+}
+
+.radar-rank--2 {
+  color: #a8b4c9;
+}
+
+.radar-rank--3 {
+  color: #cd7f4b;
+}
+
+.radar-rank--warn-1,
+.radar-rank--warn-2,
+.radar-rank--warn-3 {
+  color: $c-danger;
+  opacity: 0.75;
+}
+
+.radar-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.radar-name-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.radar-name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.radar-name--single {
+  display: block;
+  max-width: 380px;
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+
+.radar-sector {
+  font-size: 20px;
+  padding: 2px 14px;
+  border-radius: $radius-pill;
+  background: $primary-soft;
+  color: $primary;
+  flex-shrink: 0;
+}
+
+.radar-sub {
+  display: block;
+  font-size: 22px;
+}
+
+.radar-delta {
+  flex-shrink: 0;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: $radius-pill;
+  padding: 4px 16px;
+  margin-left: 12px;
+}
+
+.radar-delta--up {
+  color: $c-down;
+  background: #e7f8f0;
+}
+
+.radar-delta--down {
+  color: $c-up;
+  background: #feeceb;
+}
+
+.radar-delta--hc {
+  color: $primary;
+  background: $primary-soft;
+  font-size: 28px;
+}
+
+.radar-delta-unit {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.radar-footnote {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: $c-text-3;
+  padding-top: 16px;
+  margin-top: 4px;
+  border-top: 1px solid $c-line;
+}
+
+/* ===== 技能风向小板块 ===== */
+.skill-mini-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.skill-mini-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.skill-mini-more {
+  font-size: 24px;
+  color: $primary;
+}
+
+.skill-mini-cols {
+  display: flex;
+}
+
+.skill-mini-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.skill-mini-col-title {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skill-mini-col-title--emerging {
+  color: #0da163;
+}
+
+.skill-mini-col-title--rising {
+  color: $primary;
+}
+
+.skill-mini-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.skill-mini-name {
+  font-size: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 180px;
+}
+
+.skill-mini-val {
+  font-size: 24px;
+  font-weight: 600;
+  color: $c-text-2;
+}
+
+.skill-mini-none {
+  font-size: 26px;
+}
+
+.skill-mini-divider {
+  width: 1px;
+  background: $c-line;
+  margin: 0 24px;
+}
+
+/* ===== HN 月度小卡 ===== */
+.card-title {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hn-bars {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px 0 4px;
+}
+
+.hn-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.hn-bar-col:last-child {
+  margin-right: 0;
+}
+
+.hn-bar-val {
+  font-size: 20px;
+  color: $c-text-2;
+  margin-bottom: 6px;
+}
+
+.hn-bar-track {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  background: $c-fill;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hn-bar {
+  width: 100%;
+  background: $gradient;
+  border-radius: 8px 8px 0 0;
+}
+
+.hn-bar-month {
+  font-size: 20px;
+  color: $c-text-3;
+  margin-top: 6px;
+}
+
+.hn-note {
+  display: block;
+  font-size: 22px;
+  color: $c-text-3;
+  margin-top: 12px;
+}
+
+.region-tabs { display: flex; margin: 0 24px 24px; padding: 6px; background: #eef0f4; border-radius: 16px; }
+.region-tab { flex: 1; text-align: center; padding: 14px 0; font-size: 28px; color: #5c626c; border-radius: 12px; }
+.region-tab--active { background: #fff; color: #4f6ef7; font-weight: 600; box-shadow: 0 2px 8px rgba(20, 30, 60, 0.06); }
+.cn-kpis { display: flex; gap: 16px; margin: 0 24px 24px; }
+.cn-kpi { flex: 1; min-width: 0; background: #fff; border-radius: 20px; padding: 22px 8px; display: flex; flex-direction: column; align-items: center; }
+.cn-kpi-v { font-size: 38px; font-weight: 700; color: #1b1d22; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cn-kpi-l { font-size: 22px; color: #8a909b; margin-top: 6px; }
+.cn-skill { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
+.cn-skill-name { width: 200px; flex-shrink: 0; font-size: 26px; color: #1b1d22; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cn-skill-track { flex: 1; height: 14px; border-radius: 99px; background: #f0f2f6; overflow: hidden; }
+.cn-skill-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #4f6ef7, #7a5cff); }
+.cn-skill-val { width: 80px; flex-shrink: 0; text-align: right; font-size: 24px; color: #5c626c; }

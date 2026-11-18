@@ -1,0 +1,176 @@
+@import './tokens.scss';
+
+/* 轻量 Markdown 渲染器样式（View/Text 块级渲染） */
+.md-root {
+  width: 100%;
+}
+
+.md-h {
+  display: block;
+  font-weight: 700;
+  color: $c-text;
+  margin: 12px 0 8px;
+}
+
+.md-h:first-child {
+  margin-top: 0;
+}
+
+.md-h1 {
+  font-size: 34px;
+}
+
+.md-h2 {
+  font-size: 31px;
+}
+
+.md-h3 {
+  font-size: 28px;
+}
+
+.md-p {
+  display: block;
+  font-size: 27px;
+  line-height: 1.65;
+  color: $c-text;
+  margin: 8px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.md-p-line {
+  /* 保留段落内换行 */
+}
+
+.md-strong {
+  font-weight: 700;
+  color: $c-text;
+}
+
+.md-em {
+  font-style: italic;
+}
+
+.md-code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  font-size: 24px;
+  background: $c-fill;
+  border-radius: 8px;
+  padding: 2px 10px;
+  color: $primary-deep;
+  word-break: break-all;
+}
+
+.md-list {
+  margin: 8px 0;
+}
+
+.md-li {
+  display: flex;
+  align-items: flex-start;
+  margin: 6px 0;
+}
+
+.md-li-bullet {
+  flex-shrink: 0;
+  width: 36px;
+  font-size: 27px;
+  line-height: 1.65;
+  color: $primary;
+}
+
+.md-li-num {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.md-li-text {
+  flex: 1;
+  font-size: 27px;
+  line-height: 1.65;
+  color: $c-text;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.md-codeblock-scroll {
+  background: #1e2230;
+  border-radius: $radius-md;
+  margin: 10px 0;
+}
+
+.md-codeblock {
+  display: block;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #e6e9f5;
+  padding: 18px 22px;
+  white-space: pre;
+  word-break: normal;
+  box-sizing: border-box;
+}
+
+.md-table-scroll {
+  margin: 10px 0;
+  border: 1px solid $c-line;
+  border-radius: $radius-md;
+  background: $c-card;
+}
+
+.md-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-tr {
+  display: flex;
+  border-bottom: 1px solid $c-line;
+}
+
+.md-tr:last-child {
+  border-bottom: none;
+}
+
+.md-tr--head {
+  background: $primary-soft;
+}
+
+.md-td {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px 16px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $c-text;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.md-th {
+  font-weight: 700;
+  color: $primary-deep;
+}
+
+.md-quote {
+  border-left: 6px solid $primary-border;
+  background: $primary-soft;
+  border-radius: 0 $radius-md $radius-md 0;
+  padding: 14px 20px;
+  margin: 10px 0;
+}
+
+.md-quote-line {
+  display: block;
+  font-size: 25px;
+  line-height: 1.6;
+  color: $c-text-2;
+  word-break: break-word;
+}
+
+.md-hr {
+  height: 1px;
+  background: $c-line;
+  margin: 16px 0;
+}

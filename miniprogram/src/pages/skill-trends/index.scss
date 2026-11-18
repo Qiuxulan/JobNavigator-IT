@@ -1,0 +1,162 @@
+@import '../../styles/tokens.scss';
+
+/* 分段切换器 */
+.trends-segments {
+  display: flex;
+  background: #e9ecf2;
+  border-radius: $radius-pill;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+
+.trends-segment {
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+  padding: 12px 0;
+  border-radius: $radius-pill;
+  color: $c-text-2;
+}
+
+.trends-segment--active {
+  background: $gradient;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: $shadow-pop;
+}
+
+.trends-item {
+  display: flex;
+  align-items: center;
+}
+
+/* 名次：前三名金银铜奖牌 */
+.trends-rank {
+  width: 64px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.trends-rank-no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  color: $c-text-3;
+  background: $c-fill;
+}
+
+.trends-rank--1 .trends-rank-no {
+  background: linear-gradient(135deg, #ffd66b, #f5a623);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(245, 166, 35, 0.35);
+}
+
+.trends-rank--2 .trends-rank-no {
+  background: linear-gradient(135deg, #d5dcea, #a8b4c9);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(140, 155, 180, 0.3);
+}
+
+.trends-rank--3 .trends-rank-no {
+  background: linear-gradient(135deg, #ecb286, #cd7f4b);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(205, 127, 75, 0.3);
+}
+
+.trends-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.trends-name-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.trends-name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.trends-status {
+  font-size: 20px;
+  padding: 2px 14px;
+  border-radius: $radius-pill;
+  background: $c-fill;
+  color: $c-text-2;
+}
+
+.trends-status--emerging {
+  background: #e7f8f0;
+  color: #0da163;
+}
+
+.trends-status--growing {
+  background: $primary-soft;
+  color: $primary;
+}
+
+.trends-status--declining {
+  background: #feeceb;
+  color: #e03c31;
+}
+
+/* 动能：红涨绿跌小胶囊 */
+.trends-momentum-row {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.trends-momentum-tag {
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: $radius-pill;
+  padding: 3px 14px;
+  margin: 0 12px;
+}
+
+.trends-momentum-tag--up {
+  color: $c-up;
+  background: #feeceb;
+}
+
+.trends-momentum-tag--down {
+  color: $c-down;
+  background: #e7f8f0;
+}
+
+/* 迷你趋势条 */
+.spark {
+  width: 150px;
+  height: 64px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.spark--empty {
+  background: $c-fill;
+  border-radius: 8px;
+}
+
+.spark-bar {
+  flex: 1;
+  background: linear-gradient(180deg, #7a5cff, #4f6ef7);
+  opacity: 0.8;
+  border-radius: 3px 3px 0 0;
+  margin-right: 3px;
+}
+
+.spark-bar:last-child {
+  margin-right: 0;
+}

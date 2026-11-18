@@ -1,0 +1,4087 @@
+{
+ "generated_at": "2026-11-05T21:23:04.832575+00:00",
+ "source": "roletrends/company-job-postings-daily-sample (CC-BY-NC-4.0, 内部使用)",
+ "raw_files": [
+  "roletrends-company-days-sample.csv"
+ ],
+ "window": [
+  "2026-10-04",
+  "2026-11-02"
+ ],
+ "n_companies": 25,
+ "n_days": 28,
+ "companies": {
+  "airbnb.com": {
+   "company": "airbnb",
+   "domain": "airbnb.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "消费/平台",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 202
+   },
+   "open_roles_avg_30d": 177.5,
+   "momentum_7d": {
+    "delta": 11.0,
+    "pct": 0.0576,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 48.0,
+    "pct": 0.3117,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 154
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 149
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 159
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 159
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 164
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 169
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 173
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 174
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 194
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 195
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 195
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 191
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 191
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 191
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 190
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 196
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 190
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 197
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 202
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 202
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 202
+    }
+   ]
+  },
+  "airtable.com": {
+   "company": "airtable",
+   "domain": "airtable.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "安全/企业软件",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 5
+   },
+   "open_roles_avg_30d": 4.2,
+   "momentum_7d": {
+    "delta": -1.0,
+    "pct": -0.1667,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 1.0,
+    "pct": 0.25,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 3
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 3
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 6
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 4
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 5
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 5
+    }
+   ]
+  },
+  "anthropic.com": {
+   "company": "anthropic",
+   "domain": "anthropic.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "AI",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 678
+   },
+   "open_roles_avg_30d": 661.1,
+   "momentum_7d": {
+    "delta": -5.0,
+    "pct": -0.0073,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 39.0,
+    "pct": 0.061,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 639
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 637
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 641
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 643
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 646
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 645
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 645
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 645
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 646
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 647
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 650
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 649
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 651
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 655
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 656
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 675
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 678
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 680
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 681
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 682
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 683
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 679
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 681
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 680
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 670
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 675
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 675
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 678
+    }
+   ]
+  },
+  "confluent.io": {
+   "company": "confluent",
+   "domain": "confluent.io",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "数据/云",
+   "n_days": 27,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 0
+   },
+   "open_roles_avg_30d": 5.6,
+   "momentum_7d": {
+    "delta": 0.0,
+    "pct": null,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -17.0,
+    "pct": -1.0,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 17
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 14
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 0
+    }
+   ]
+  },
+  "databricks.com": {
+   "company": "databricks",
+   "domain": "databricks.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "数据/云",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 909
+   },
+   "open_roles_avg_30d": 895.6,
+   "momentum_7d": {
+    "delta": 15.0,
+    "pct": 0.0168,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 22.0,
+    "pct": 0.0248,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 887
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 892
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 886
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 889
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 893
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 893
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 892
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 892
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 891
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 895
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 894
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 896
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 896
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 898
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 898
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 898
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 898
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 895
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 896
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 896
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 894
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 895
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 893
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 902
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 903
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 901
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 904
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 909
+    }
+   ]
+  },
+  "datadog.com": {
+   "company": "datadog",
+   "domain": "datadog.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "开发者工具",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 397
+   },
+   "open_roles_avg_30d": 427.4,
+   "momentum_7d": {
+    "delta": -30.0,
+    "pct": -0.0703,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -47.0,
+    "pct": -0.1059,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 444
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 441
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 435
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 435
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 438
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 436
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 435
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 435
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 434
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 437
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 438
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 439
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 433
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 433
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 433
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 439
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 439
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 436
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 433
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 433
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 427
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 429
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 402
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 396
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 397
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 397
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 397
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 397
+    }
+   ]
+  },
+  "duffel.com": {
+   "company": "duffel",
+   "domain": "duffel.com",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "开发者工具",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 10
+   },
+   "open_roles_avg_30d": 5.2,
+   "momentum_7d": {
+    "delta": 0.0,
+    "pct": 0.0,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 10.0,
+    "pct": null,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 11
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 11
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 10
+    }
+   ]
+  },
+  "gitlab.com": {
+   "company": "gitlab",
+   "domain": "gitlab.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "开发者工具",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 235
+   },
+   "open_roles_avg_30d": 226.8,
+   "momentum_7d": {
+    "delta": -3.0,
+    "pct": -0.0126,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 24.0,
+    "pct": 0.1137,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 211
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 210
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 209
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 210
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 221
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 219
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 221
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 221
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 221
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 219
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 215
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 216
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 224
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 232
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 232
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 230
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 232
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 237
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 239
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 239
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 238
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 238
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 237
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 232
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 236
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 238
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 238
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 235
+    }
+   ]
+  },
+  "increase.com": {
+   "company": "increase",
+   "domain": "increase.com",
+   "ats": [
+    "lever"
+   ],
+   "sector": "金融科技",
+   "n_days": 27,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 0
+   },
+   "open_roles_avg_30d": 0.0,
+   "momentum_7d": {
+    "delta": 0.0,
+    "pct": null,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 0.0,
+    "pct": null,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 0
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 0
+    }
+   ]
+  },
+  "instacart.com": {
+   "company": "instacart",
+   "domain": "instacart.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "消费/平台",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 94
+   },
+   "open_roles_avg_30d": 114.4,
+   "momentum_7d": {
+    "delta": -10.0,
+    "pct": -0.0962,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -37.0,
+    "pct": -0.2824,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 131
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 122
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 122
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 126
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 120
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 119
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 119
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 119
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 115
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 124
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 124
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 126
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 126
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 125
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 124
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 115
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 113
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 113
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 104
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 100
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 94
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 93
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 93
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 96
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 96
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 94
+    }
+   ]
+  },
+  "lattice.com": {
+   "company": "lattice",
+   "domain": "lattice.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "安全/企业软件",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 8
+   },
+   "open_roles_avg_30d": 10.0,
+   "momentum_7d": {
+    "delta": -1.0,
+    "pct": -0.1111,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -4.0,
+    "pct": -0.3333,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 11
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 11
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 8
+    }
+   ]
+  },
+  "miro.com": {
+   "company": "miro",
+   "domain": "miro.com",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "安全/企业软件",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 18
+   },
+   "open_roles_avg_30d": 21.5,
+   "momentum_7d": {
+    "delta": -3.0,
+    "pct": -0.1429,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -10.0,
+    "pct": -0.3571,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 28
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 26
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 26
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 25
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 20
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 18
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 18
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 18
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 18
+    }
+   ]
+  },
+  "neon.tech": {
+   "company": "neon",
+   "domain": "neon.tech",
+   "ats": [
+    "lever"
+   ],
+   "sector": "数据/云",
+   "n_days": 27,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 9
+   },
+   "open_roles_avg_30d": 10.1,
+   "momentum_7d": {
+    "delta": 1.0,
+    "pct": 0.125,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -3.0,
+    "pct": -0.25,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 12
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 13
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 10
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 9
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 9
+    }
+   ]
+  },
+  "okta.com": {
+   "company": "okta",
+   "domain": "okta.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "安全/企业软件",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 390
+   },
+   "open_roles_avg_30d": 382.3,
+   "momentum_7d": {
+    "delta": 2.0,
+    "pct": 0.0052,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 22.0,
+    "pct": 0.0598,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 368
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 364
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 376
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 373
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 365
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 378
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 378
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 378
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 377
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 379
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 373
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 376
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 376
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 393
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 393
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 398
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 393
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 388
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 390
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 390
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 388
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 391
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 384
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 384
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 387
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 388
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 387
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 390
+    }
+   ]
+  },
+  "palantir.com": {
+   "company": "palantir",
+   "domain": "palantir.com",
+   "ats": [
+    "lever"
+   ],
+   "sector": "安全/企业软件",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 301
+   },
+   "open_roles_avg_30d": 308.7,
+   "momentum_7d": {
+    "delta": -6.0,
+    "pct": -0.0195,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -18.0,
+    "pct": -0.0564,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 319
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 316
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 314
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 314
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 313
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 312
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 310
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 314
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 312
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 310
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 310
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 310
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 306
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 304
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 309
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 307
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 307
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 304
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 304
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 302
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 299
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 301
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 301
+    }
+   ]
+  },
+  "perplexity.ai": {
+   "company": "perplexity",
+   "domain": "perplexity.ai",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "AI",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 138
+   },
+   "open_roles_avg_30d": 132.0,
+   "momentum_7d": {
+    "delta": 7.0,
+    "pct": 0.0534,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 11.0,
+    "pct": 0.0866,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 127
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 130
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 134
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 130
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 131
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 133
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 133
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 133
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 127
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 128
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 131
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 134
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 133
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 134
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 138
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 138
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 138
+    }
+   ]
+  },
+  "pinterest.com": {
+   "company": "pinterest",
+   "domain": "pinterest.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "消费/平台",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 171
+   },
+   "open_roles_avg_30d": 166.6,
+   "momentum_7d": {
+    "delta": 10.0,
+    "pct": 0.0621,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 3.0,
+    "pct": 0.0179,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 168
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 166
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 176
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 177
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 181
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 179
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 180
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 180
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 179
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 175
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 152
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 157
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 156
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 156
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 156
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 159
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 164
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 163
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 163
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 158
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 162
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 170
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 170
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 171
+    }
+   ]
+  },
+  "plaid.com": {
+   "company": "plaid",
+   "domain": "plaid.com",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "金融科技",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 134
+   },
+   "open_roles_avg_30d": 126.8,
+   "momentum_7d": {
+    "delta": 1.0,
+    "pct": 0.0075,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 15.0,
+    "pct": 0.1261,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 119
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 118
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 122
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 122
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 120
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 121
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 122
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 126
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 127
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 128
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 128
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 130
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 134
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 135
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 134
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 133
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 130
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 129
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 130
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 132
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 134
+    }
+   ]
+  },
+  "railway.app": {
+   "company": "railway",
+   "domain": "railway.app",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "开发者工具",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 7
+   },
+   "open_roles_avg_30d": 7.4,
+   "momentum_7d": {
+    "delta": 0.0,
+    "pct": 0.0,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -1.0,
+    "pct": -0.125,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 8
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 7
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 7
+    }
+   ]
+  },
+  "ramp.com": {
+   "company": "ramp",
+   "domain": "ramp.com",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "金融科技",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 172
+   },
+   "open_roles_avg_30d": 166.4,
+   "momentum_7d": {
+    "delta": -1.0,
+    "pct": -0.0058,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 14.0,
+    "pct": 0.0886,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 158
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 159
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 161
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 163
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 166
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 162
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 165
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 163
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 167
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 167
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 169
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 170
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 169
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 167
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 167
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 173
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 173
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 172
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 168
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 168
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 171
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 172
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 172
+    }
+   ]
+  },
+  "robinhood.com": {
+   "company": "robinhood",
+   "domain": "robinhood.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "金融科技",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 162
+   },
+   "open_roles_avg_30d": 161.6,
+   "momentum_7d": {
+    "delta": 7.0,
+    "pct": 0.0452,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 0.0,
+    "pct": 0.0,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 162
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 162
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 164
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 170
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 182
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 182
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 179
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 178
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 154
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 152
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 154
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 153
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 152
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 155
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 155
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 157
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 157
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 157
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 155
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 156
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 159
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 162
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 167
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 160
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 162
+    }
+   ]
+  },
+  "roblox.com": {
+   "company": "roblox",
+   "domain": "roblox.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "消费/平台",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 268
+   },
+   "open_roles_avg_30d": 263.9,
+   "momentum_7d": {
+    "delta": 0.0,
+    "pct": 0.0,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 15.0,
+    "pct": 0.0593,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 253
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 253
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 261
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 259
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 262
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 262
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 265
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 265
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 267
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 260
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 258
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 260
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 260
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 263
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 263
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 262
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 263
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 269
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 269
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 271
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 267
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 268
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 268
+    }
+   ]
+  },
+  "snowflake.com": {
+   "company": "snowflake",
+   "domain": "snowflake.com",
+   "ats": [
+    "ashby"
+   ],
+   "sector": "数据/云",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 369
+   },
+   "open_roles_avg_30d": 358.0,
+   "momentum_7d": {
+    "delta": 16.0,
+    "pct": 0.0453,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 21.0,
+    "pct": 0.0603,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 348
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 348
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 354
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 352
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 358
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 361
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 358
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 358
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 356
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 354
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 356
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 358
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 360
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 359
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 359
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 361
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 356
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 353
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 355
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 355
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 353
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 359
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 366
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 363
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 363
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 366
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 366
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 369
+    }
+   ]
+  },
+  "stripe.com": {
+   "company": "stripe",
+   "domain": "stripe.com",
+   "ats": [
+    "greenhouse"
+   ],
+   "sector": "金融科技",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 749
+   },
+   "open_roles_avg_30d": 726.7,
+   "momentum_7d": {
+    "delta": 32.0,
+    "pct": 0.0446,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": 33.0,
+    "pct": 0.0461,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 716
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 718
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 727
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 714
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 728
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 728
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 728
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 728
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 724
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 722
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 724
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 728
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 732
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 732
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 731
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 731
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 725
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 722
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 719
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 719
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 717
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 714
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 716
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 724
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 740
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 746
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 745
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 749
+    }
+   ]
+  },
+  "wealthfront.com": {
+   "company": "wealthfront",
+   "domain": "wealthfront.com",
+   "ats": [
+    "lever"
+   ],
+   "sector": "金融科技",
+   "n_days": 28,
+   "latest": {
+    "date": "2026-11-02",
+    "open_roles": 21
+   },
+   "open_roles_avg_30d": 22.5,
+   "momentum_7d": {
+    "delta": -1.0,
+    "pct": -0.0455,
+    "window_days": 7
+   },
+   "momentum_30d": {
+    "delta": -2.0,
+    "pct": -0.087,
+    "window_days": 29
+   },
+   "daily": [
+    {
+     "date": "2026-10-04",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-05",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-06",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-07",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-08",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-09",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-10",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-11",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-12",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-13",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-14",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-15",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-16",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-17",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-18",
+     "open_roles": 24
+    },
+    {
+     "date": "2026-10-21",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-22",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-23",
+     "open_roles": 23
+    },
+    {
+     "date": "2026-10-24",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-25",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-26",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-27",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-28",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-29",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-30",
+     "open_roles": 22
+    },
+    {
+     "date": "2026-10-31",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-11-01",
+     "open_roles": 21
+    },
+    {
+     "date": "2026-11-02",
+     "open_roles": 21
+    }
+   ]
+  }
+ },
+ "by_sector": {
+  "数据/云": {
+   "companies": [
+    {
+     "domain": "databricks.com",
+     "company": "databricks",
+     "latest_open_roles": 909,
+     "momentum_7d": {
+      "delta": 15.0,
+      "pct": 0.0168,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 22.0,
+      "pct": 0.0248,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "snowflake.com",
+     "company": "snowflake",
+     "latest_open_roles": 369,
+     "momentum_7d": {
+      "delta": 16.0,
+      "pct": 0.0453,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 21.0,
+      "pct": 0.0603,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "neon.tech",
+     "company": "neon",
+     "latest_open_roles": 9,
+     "momentum_7d": {
+      "delta": 1.0,
+      "pct": 0.125,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -3.0,
+      "pct": -0.25,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "confluent.io",
+     "company": "confluent",
+     "latest_open_roles": 0,
+     "momentum_7d": {
+      "delta": 0.0,
+      "pct": null,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -17.0,
+      "pct": -1.0,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 1287,
+   "n_companies": 4
+  },
+  "金融科技": {
+   "companies": [
+    {
+     "domain": "stripe.com",
+     "company": "stripe",
+     "latest_open_roles": 749,
+     "momentum_7d": {
+      "delta": 32.0,
+      "pct": 0.0446,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 33.0,
+      "pct": 0.0461,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "ramp.com",
+     "company": "ramp",
+     "latest_open_roles": 172,
+     "momentum_7d": {
+      "delta": -1.0,
+      "pct": -0.0058,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 14.0,
+      "pct": 0.0886,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "robinhood.com",
+     "company": "robinhood",
+     "latest_open_roles": 162,
+     "momentum_7d": {
+      "delta": 7.0,
+      "pct": 0.0452,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 0.0,
+      "pct": 0.0,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "plaid.com",
+     "company": "plaid",
+     "latest_open_roles": 134,
+     "momentum_7d": {
+      "delta": 1.0,
+      "pct": 0.0075,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 15.0,
+      "pct": 0.1261,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "wealthfront.com",
+     "company": "wealthfront",
+     "latest_open_roles": 21,
+     "momentum_7d": {
+      "delta": -1.0,
+      "pct": -0.0455,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -2.0,
+      "pct": -0.087,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "increase.com",
+     "company": "increase",
+     "latest_open_roles": 0,
+     "momentum_7d": {
+      "delta": 0.0,
+      "pct": null,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 0.0,
+      "pct": null,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 1238,
+   "n_companies": 6
+  },
+  "AI": {
+   "companies": [
+    {
+     "domain": "anthropic.com",
+     "company": "anthropic",
+     "latest_open_roles": 678,
+     "momentum_7d": {
+      "delta": -5.0,
+      "pct": -0.0073,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 39.0,
+      "pct": 0.061,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "perplexity.ai",
+     "company": "perplexity",
+     "latest_open_roles": 138,
+     "momentum_7d": {
+      "delta": 7.0,
+      "pct": 0.0534,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 11.0,
+      "pct": 0.0866,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 816,
+   "n_companies": 2
+  },
+  "消费/平台": {
+   "companies": [
+    {
+     "domain": "roblox.com",
+     "company": "roblox",
+     "latest_open_roles": 268,
+     "momentum_7d": {
+      "delta": 0.0,
+      "pct": 0.0,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 15.0,
+      "pct": 0.0593,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "airbnb.com",
+     "company": "airbnb",
+     "latest_open_roles": 202,
+     "momentum_7d": {
+      "delta": 11.0,
+      "pct": 0.0576,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 48.0,
+      "pct": 0.3117,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "pinterest.com",
+     "company": "pinterest",
+     "latest_open_roles": 171,
+     "momentum_7d": {
+      "delta": 10.0,
+      "pct": 0.0621,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 3.0,
+      "pct": 0.0179,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "instacart.com",
+     "company": "instacart",
+     "latest_open_roles": 94,
+     "momentum_7d": {
+      "delta": -10.0,
+      "pct": -0.0962,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -37.0,
+      "pct": -0.2824,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 735,
+   "n_companies": 4
+  },
+  "安全/企业软件": {
+   "companies": [
+    {
+     "domain": "okta.com",
+     "company": "okta",
+     "latest_open_roles": 390,
+     "momentum_7d": {
+      "delta": 2.0,
+      "pct": 0.0052,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 22.0,
+      "pct": 0.0598,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "palantir.com",
+     "company": "palantir",
+     "latest_open_roles": 301,
+     "momentum_7d": {
+      "delta": -6.0,
+      "pct": -0.0195,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -18.0,
+      "pct": -0.0564,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "miro.com",
+     "company": "miro",
+     "latest_open_roles": 18,
+     "momentum_7d": {
+      "delta": -3.0,
+      "pct": -0.1429,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -10.0,
+      "pct": -0.3571,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "lattice.com",
+     "company": "lattice",
+     "latest_open_roles": 8,
+     "momentum_7d": {
+      "delta": -1.0,
+      "pct": -0.1111,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -4.0,
+      "pct": -0.3333,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "airtable.com",
+     "company": "airtable",
+     "latest_open_roles": 5,
+     "momentum_7d": {
+      "delta": -1.0,
+      "pct": -0.1667,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 1.0,
+      "pct": 0.25,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 722,
+   "n_companies": 5
+  },
+  "开发者工具": {
+   "companies": [
+    {
+     "domain": "datadog.com",
+     "company": "datadog",
+     "latest_open_roles": 397,
+     "momentum_7d": {
+      "delta": -30.0,
+      "pct": -0.0703,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -47.0,
+      "pct": -0.1059,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "gitlab.com",
+     "company": "gitlab",
+     "latest_open_roles": 235,
+     "momentum_7d": {
+      "delta": -3.0,
+      "pct": -0.0126,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 24.0,
+      "pct": 0.1137,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "duffel.com",
+     "company": "duffel",
+     "latest_open_roles": 10,
+     "momentum_7d": {
+      "delta": 0.0,
+      "pct": 0.0,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": 10.0,
+      "pct": null,
+      "window_days": 29
+     }
+    },
+    {
+     "domain": "railway.app",
+     "company": "railway",
+     "latest_open_roles": 7,
+     "momentum_7d": {
+      "delta": 0.0,
+      "pct": 0.0,
+      "window_days": 7
+     },
+     "momentum_30d": {
+      "delta": -1.0,
+      "pct": -0.125,
+      "window_days": 29
+     }
+    }
+   ],
+   "total_latest_open_roles": 649,
+   "n_companies": 4
+  }
+ },
+ "top_momentum_30d": [
+  {
+   "domain": "airbnb.com",
+   "company": "airbnb",
+   "sector": "消费/平台",
+   "momentum_30d": {
+    "delta": 48.0,
+    "pct": 0.3117,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "anthropic.com",
+   "company": "anthropic",
+   "sector": "AI",
+   "momentum_30d": {
+    "delta": 39.0,
+    "pct": 0.061,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "stripe.com",
+   "company": "stripe",
+   "sector": "金融科技",
+   "momentum_30d": {
+    "delta": 33.0,
+    "pct": 0.0461,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "gitlab.com",
+   "company": "gitlab",
+   "sector": "开发者工具",
+   "momentum_30d": {
+    "delta": 24.0,
+    "pct": 0.1137,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "databricks.com",
+   "company": "databricks",
+   "sector": "数据/云",
+   "momentum_30d": {
+    "delta": 22.0,
+    "pct": 0.0248,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "okta.com",
+   "company": "okta",
+   "sector": "安全/企业软件",
+   "momentum_30d": {
+    "delta": 22.0,
+    "pct": 0.0598,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "snowflake.com",
+   "company": "snowflake",
+   "sector": "数据/云",
+   "momentum_30d": {
+    "delta": 21.0,
+    "pct": 0.0603,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "plaid.com",
+   "company": "plaid",
+   "sector": "金融科技",
+   "momentum_30d": {
+    "delta": 15.0,
+    "pct": 0.1261,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "roblox.com",
+   "company": "roblox",
+   "sector": "消费/平台",
+   "momentum_30d": {
+    "delta": 15.0,
+    "pct": 0.0593,
+    "window_days": 29
+   }
+  },
+  {
+   "domain": "ramp.com",
+   "company": "ramp",
+   "sector": "金融科技",
+   "momentum_30d": {
+    "delta": 14.0,
+    "pct": 0.0886,
+    "window_days": 29
+   }
+  }
+ ],
+ "cohort_daily_total": [
+  {
+   "date": "2026-10-04",
+   "total_open_roles": 5308
+  },
+  {
+   "date": "2026-10-05",
+   "total_open_roles": 5293
+  },
+  {
+   "date": "2026-10-06",
+   "total_open_roles": 5337
+  },
+  {
+   "date": "2026-10-07",
+   "total_open_roles": 5324
+  },
+  {
+   "date": "2026-10-08",
+   "total_open_roles": 5366
+  },
+  {
+   "date": "2026-10-09",
+   "total_open_roles": 5381
+  },
+  {
+   "date": "2026-10-10",
+   "total_open_roles": 5391
+  },
+  {
+   "date": "2026-10-11",
+   "total_open_roles": 5392
+  },
+  {
+   "date": "2026-10-12",
+   "total_open_roles": 5376
+  },
+  {
+   "date": "2026-10-13",
+   "total_open_roles": 5355
+  },
+  {
+   "date": "2026-10-14",
+   "total_open_roles": 5307
+  },
+  {
+   "date": "2026-10-15",
+   "total_open_roles": 5331
+  },
+  {
+   "date": "2026-10-16",
+   "total_open_roles": 5343
+  },
+  {
+   "date": "2026-10-17",
+   "total_open_roles": 5388
+  },
+  {
+   "date": "2026-10-18",
+   "total_open_roles": 5397
+  },
+  {
+   "date": "2026-10-21",
+   "total_open_roles": 5447
+  },
+  {
+   "date": "2026-10-22",
+   "total_open_roles": 5440
+  },
+  {
+   "date": "2026-10-23",
+   "total_open_roles": 5421
+  },
+  {
+   "date": "2026-10-24",
+   "total_open_roles": 5428
+  },
+  {
+   "date": "2026-10-25",
+   "total_open_roles": 5428
+  },
+  {
+   "date": "2026-10-26",
+   "total_open_roles": 5406
+  },
+  {
+   "date": "2026-10-27",
+   "total_open_roles": 5399
+  },
+  {
+   "date": "2026-10-28",
+   "total_open_roles": 5370
+  },
+  {
+   "date": "2026-10-29",
+   "total_open_roles": 5364
+  },
+  {
+   "date": "2026-10-30",
+   "total_open_roles": 5399
+  },
+  {
+   "date": "2026-10-31",
+   "total_open_roles": 5424
+  },
+  {
+   "date": "2026-11-01",
+   "total_open_roles": 5428
+  },
+  {
+   "date": "2026-11-02",
+   "total_open_roles": 5447
+  }
+ ],
+ "notes": [
+  "open_roles 为该公司当日在招岗位数（ATS 公开页口径），open_roles_capped=True 表示真实值被截断到上限。",
+  "momentum_Nd = 最新值 - N 个观测日前值（window_days 为实际对比跨度）；样本窗口不足 N+1 天时用可用窗口首末对比，滚动满 N 天后口径自动归一。",
+  "行业分组为本文件内人工标注（SECTOR_BY_DOMAIN），新增公司需补标。"
+ ]
+}

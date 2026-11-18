@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-11-08T21:30:13.116417+00:00",
+  "data": "/mnt/afs/JobNavigator-IT/data/silver/ltr_train_v1.jsonl",
+  "model": "/mnt/afs/JobNavigator-IT/models/ltr_ranker_v1.txt",
+  "features": "/mnt/afs/JobNavigator-IT/models/ltr_ranker_v1_features.json",
+  "n_profiles": 250,
+  "n_candidates": 2500,
+  "label_distribution": {
+    "0": 345,
+    "1": 1423,
+    "2": 543,
+    "3": 189
+  },
+  "cv_5fold": {
+    "folds": [
+      {
+        "graded_ndcg@5": 0.9132,
+        "binary_hit@1": 0.82,
+        "binary_hit@5": 1.0,
+        "binary_mrr": 0.9,
+        "binary_ndcg@5": 0.8662,
+        "n_queries": 50,
+        "fold": 1,
+        "n_train_queries": 200,
+        "best_iter": 24
+      },
+      {
+        "graded_ndcg@5": 0.9205,
+        "binary_hit@1": 0.9,
+        "binary_hit@5": 0.98,
+        "binary_mrr": 0.928,
+        "binary_ndcg@5": 0.8561,
+        "n_queries": 50,
+        "fold": 2,
+        "n_train_queries": 200,
+        "best_iter": 23
+      },
+      {
+        "graded_ndcg@5": 0.9518,
+        "binary_hit@1": 0.9,
+        "binary_hit@5": 0.96,
+        "binary_mrr": 0.9267,
+        "binary_ndcg@5": 0.8883,
+        "n_queries": 50,
+        "fold": 3,
+        "n_train_queries": 200,
+        "best_iter": 135
+      },
+      {
+        "graded_ndcg@5": 0.9385,
+        "binary_hit@1": 0.9,
+        "binary_hit@5": 0.98,
+        "binary_mrr": 0.9367,
+        "binary_ndcg@5": 0.8808,
+        "n_queries": 50,
+        "fold": 4,
+        "n_train_queries": 200,
+        "best_iter": 33
+      },
+      {
+        "graded_ndcg@5": 0.9612,
+        "binary_hit@1": 0.98,
+        "binary_hit@5": 1.0,
+        "binary_mrr": 0.99,
+        "binary_ndcg@5": 0.9369,
+        "n_queries": 50,
+        "fold": 5,
+        "n_train_queries": 200,
+        "best_iter": 153
+      }
+    ],
+    "mean": {
+      "graded_ndcg@5": 0.937,
+      "binary_hit@1": 0.9,
+      "binary_hit@5": 0.984,
+      "binary_mrr": 0.9363,
+      "binary_ndcg@5": 0.8857
+    }
+  },
+  "train_set_metrics": {
+    "graded_ndcg@5": 0.9994,
+    "binary_hit@1": 0.984,
+    "binary_hit@5": 0.984,
+    "binary_mrr": 0.984,
+    "binary_ndcg@5": 0.9828,
+    "n_queries": 250
+  },
+  "feature_importance_top10": [
+    {
+      "feature": "target_role_name_match",
+      "gain": 1622.37
+    },
+    {
+      "feature": "role_score_raw",
+      "gain": 1243.25
+    },
+    {
+      "feature": "semantic_cal",
+      "gain": 537.88
+    },
+    {
+      "feature": "coverage_weighted",
+      "gain": 472.79
+    },
+    {
+      "feature": "salary_median_log",
+      "gain": 339.83
+    },
+    {
+      "feature": "jd_count_6m_log",
+      "gain": 254.99
+    },
+    {
+      "feature": "profile_n_skills",
+      "gain": 177.05
+    },
+    {
+      "feature": "learning_feasibility",
+      "gain": 177.05
+    },
+    {
+      "feature": "total_hours_norm",
+      "gain": 134.72
+    },
+    {
+      "feature": "trend_momentum_clip",
+      "gain": 118.74
+    }
+  ],
+  "feature_importance_full": [
+    {
+      "feature": "target_role_name_match",
+      "gain": 1622.37
+    },
+    {
+      "feature": "role_score_raw",
+      "gain": 1243.25
+    },
+    {
+      "feature": "semantic_cal",
+      "gain": 537.88
+    },
+    {
+      "feature": "coverage_weighted",
+      "gain": 472.79
+    },
+    {
+      "feature": "salary_median_log",
+      "gain": 339.83
+    },
+    {
+      "feature": "jd_count_6m_log",
+      "gain": 254.99
+    },
+    {
+      "feature": "profile_n_skills",
+      "gain": 177.05
+    },
+    {
+      "feature": "learning_feasibility",
+      "gain": 177.05
+    },
+    {
+      "feature": "total_hours_norm",
+      "gain": 134.72
+    },
+    {
+      "feature": "trend_momentum_clip",
+      "gain": 118.74
+    },
+    {
+      "feature": "overlap_ratio",
+      "gain": 116.52
+    },
+    {
+      "feature": "trend_momentum_norm",
+      "gain": 114.95
+    },
+    {
+      "feature": "semantic_raw",
+      "gain": 103.5
+    },
+    {
+      "feature": "target_role_coarse_match",
+      "gain": 86.22
+    },
+    {
+      "feature": "has_target_role",
+      "gain": 83.67
+    },
+    {
+      "feature": "n_optional",
+      "gain": 70.52
+    },
+    {
+      "feature": "n_transferable",
+      "gain": 68.91
+    },
+    {
+      "feature": "n_missing",
+      "gain": 68.38
+    },
+    {
+      "feature": "n_role_skills",
+      "gain": 66.05
+    },
+    {
+      "feature": "profile_years_norm",
+      "gain": 48.89
+    },
+    {
+      "feature": "n_overlap",
+      "gain": 27.82
+    }
+  ]
+}

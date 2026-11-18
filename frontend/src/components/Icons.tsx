@@ -25,6 +25,7 @@ export const Ic = {
   target: (p: P) => <svg {...base} {...p}><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>,
   gap: (p: P) => <svg {...base} {...p}><path d="M9 4v16M15 4v16"/><path d="M4 9h3M4 15h3M17 9h3M17 15h3"/></svg>,
   brain: (p: P) => <svg {...base} strokeWidth={1.7} {...p}><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-1 5.5A3 3 0 0 0 7 18a2.5 2.5 0 0 0 5 .5V5.5A2.5 2.5 0 0 0 9 4z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 1 5.5A3 3 0 0 1 17 18a2.5 2.5 0 0 1-5 .5"/></svg>,
+  news: (p: P) => <svg {...base} strokeWidth={1.7} {...p}><path d="M4 5.5h12.5V18a2.5 2.5 0 0 1-2.5 2.5H6.5A2.5 2.5 0 0 1 4 18V5.5z"/><path d="M16.5 8.5H19a1.5 1.5 0 0 1 1.5 1.5V18a2.5 2.5 0 0 1-2.5 2.5h-1"/><path d="M7 9.5h6.5M7 13h6.5M7 16.5h4"/></svg>,
 };
 
 export function Logo({ accent, style, className }: { accent?: string; style?: React.CSSProperties; className?: string }) {

@@ -1,0 +1,35 @@
+{
+  "feature_names": [
+    "coverage_weighted",
+    "semantic_cal",
+    "semantic_raw",
+    "trend_momentum_norm",
+    "learning_feasibility",
+    "role_score_raw",
+    "n_overlap",
+    "n_missing",
+    "n_optional",
+    "n_transferable",
+    "overlap_ratio",
+    "total_hours_norm",
+    "trend_momentum_clip",
+    "salary_median_log",
+    "jd_count_6m_log",
+    "n_role_skills",
+    "profile_n_skills",
+    "profile_years_norm",
+    "has_target_role",
+    "target_role_name_match",
+    "target_role_coarse_match"
+  ],
+  "label_gain": [
+    0.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "objective": "lambdarank",
+  "n_profiles": 250,
+  "n_candidates": 2500,
+  "trained_at": "2026-11-08T21:30:13.101064+00:00"
+}

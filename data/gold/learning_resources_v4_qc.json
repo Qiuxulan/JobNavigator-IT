@@ -1,0 +1,218 @@
+{
+ "generated_at": "2026-11-03T04:31:27+00:00",
+ "version": "v4",
+ "inputs": {
+  "vocab": "/mnt/afs/JobNavigator-IT/data/gold/skill_vocab_v2.json",
+  "roadmap_clone": "/data/shichaojian/JNIT/raw/roadmaps/developer-roadmap",
+  "coursera_csv": "/data/shichaojian/JNIT/raw/courses/coursera_azrai99/coursera_course_2024.csv",
+  "curated_tables": "pipelines/report/learning_resources_v4_curated.py",
+  "no_fetch_mode": false
+ },
+ "source_status": {
+  "roadmap_local": {
+   "reachable": true,
+   "detail": "clone HEAD None, 11043 md files, 19798 links",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "coursera": {
+   "reachable": true,
+   "detail": "6645 rows -> 744 kept (cap 4/skill)",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "freecodecamp": {
+   "reachable": false,
+   "detail": "/learn empty and GitHub listing failed",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "github_readmes:ossu/computer-science": {
+   "reachable": true,
+   "detail": "stars=170000, links=60",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "github_readmes:donnemartin/system-design-primer": {
+   "reachable": true,
+   "detail": "stars=280000, links=60",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "cs_self_learning": {
+   "reachable": true,
+   "detail": "121 course links",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "runoob": {
+   "reachable": false,
+   "detail": "homepage fetch failed",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "curated_docs": {
+   "reachable": true,
+   "detail": "kept 398, dropped_unreachable 9",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "youtube_curated": {
+   "reachable": true,
+   "detail": "kept 12, dropped 9",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  },
+  "bilibili_curated": {
+   "reachable": true,
+   "detail": "kept 6, dropped 9",
+   "fetched_at": "2026-11-03T04:31:27+00:00"
+  }
+ },
+ "pool_counts_by_source": {
+  "roadmap_article": 7514,
+  "roadmap_official": 4503,
+  "roadmap_video": 3452,
+  "roadmap_opensource": 372,
+  "roadmap_course": 212,
+  "roadmap_roadmap": 64,
+  "roadmap_book": 41,
+  "roadmap_podcast": 1,
+  "roadmap_unknown": 1,
+  "coursera": 618,
+  "ossu": 59,
+  "github_awesome": 47,
+  "cs_self_learning": 98,
+  "official_doc": 278,
+  "youtube_curated": 11,
+  "bilibili_curated": 6
+ },
+ "final_counts_by_source": {
+  "coursera": 487,
+  "bilibili_curated": 6,
+  "cs_self_learning": 78,
+  "roadmap_course": 72,
+  "ossu": 25,
+  "youtube_curated": 11,
+  "roadmap_article": 74,
+  "roadmap_official": 289,
+  "roadmap_video": 146,
+  "roadmap_roadmap": 1,
+  "official_doc": 276,
+  "roadmap_opensource": 97,
+  "github_awesome": 15,
+  "roadmap_book": 2
+ },
+ "totals": {
+  "pool_resources": 17277,
+  "final_resources": 1579,
+  "unique_urls": 1579,
+  "target_total": 1500,
+  "target_met": true
+ },
+ "distribution": {
+  "language": {
+   "en": 1483,
+   "zh": 96
+  },
+  "type": {
+   "course": 651,
+   "video": 163,
+   "doc": 633,
+   "project": 103,
+   "interactive": 9,
+   "tutorial": 12,
+   "book": 8
+  },
+  "level": {
+   "intermediate": 322,
+   "unknown": 859,
+   "beginner": 358,
+   "advanced": 40
+  },
+  "is_free": {
+   "unknown": 1246,
+   "true": 333
+  }
+ },
+ "coverage": {
+  "vocab_size": 295,
+  "covered": 294,
+  "coverage": 0.9966,
+  "target": 0.9,
+  "target_met": true,
+  "skills_without_resources": [
+   "qa-testing"
+  ]
+ },
+ "hot_skill_quality": {
+  "n_hot": 127,
+  "hot_with_lt3_resources": [
+   "perl"
+  ],
+  "hot_without_zh": [
+   "argocd",
+   "bootstrap",
+   "chroma",
+   "cloud-computing",
+   "computer-vision",
+   "cypress",
+   "dagster",
+   "databricks",
+   "dbt",
+   "diffusion",
+   "docker",
+   "faiss",
+   "figma",
+   "graphql",
+   "grpc",
+   "hubspot",
+   "huggingface",
+   "jquery",
+   "junit",
+   "langchain",
+   "langgraph",
+   "llamaindex",
+   "mcp",
+   "mlops",
+   "multi-agent",
+   "multimodal",
+   "nextjs",
+   "nlp",
+   "oracle-db",
+   "perl",
+   "pinecone",
+   "playwright",
+   "postgresql",
+   "prometheus",
+   "r",
+   "redis",
+   "redshift",
+   "salesforce",
+   "sap",
+   "scala",
+   "selenium",
+   "snowflake",
+   "sre",
+   "svelte",
+   "swift",
+   "tableau",
+   "terraform",
+   "unix",
+   "weaviate"
+  ],
+  "hot_without_en": []
+ },
+ "quality_score": {
+  "weights": {
+   "source_authority": 0.3,
+   "community_signal": 0.2,
+   "freshness": 0.15,
+   "hands_on": 0.15,
+   "free_access": 0.1,
+   "vocab_alignment": 0.1
+  },
+  "rationale": "见 collect_learning_resources_v4.py 顶部注释",
+  "min": 0.515,
+  "mean": 0.683
+ },
+ "skipped_sources": {
+  "edx": "无公开目录 API（api/discovery 均 404），页面 JS 渲染，跳过",
+  "icourse163": "目录页 JS 渲染，无免登录公开 API，跳过（首页 200 仅壳页面）",
+  "imooc": "course/list 返回 988B JS 壳，跳过",
+  "csdn/juejin 教程栏目": "无稳定结构化目录接口，未采集",
+  "bilibili_search": "无登录态搜索接口被风控（见调研笔记 §8），仅收录已确认 UP 主空间",
+  "kaggle": "需 API key，未配置"
+ }
+}

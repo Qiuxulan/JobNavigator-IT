@@ -1,0 +1,4958 @@
+[
+  {
+    "role_id": "role_000",
+    "canonical_role": "Machine Learning Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 23,
+    "by_type": {
+      "general": 19,
+      "hiring": 3,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "8aa05617a4f2",
+          "title": "Machine Learning Engineer Salary in India: 2026 Trends - Simplilearn.com",
+          "url": "https://www.simplilearn.com/machine-learning-salary-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "484c8122a6b3",
+          "title": "Top 10 Countries to Work Abroad as a Machine Learning Engineer: Salary, Visa & PR Compared - Y-Axis Overseas Careers",
+          "url": "https://www.y-axis.com/blog/top-10-countries-for-machine-learning-engineers/",
+          "url_resolved": true,
+          "source_name": "Y-Axis Overseas Careers",
+          "published_at": "2026-08-20T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "f3bfb87f6cb7",
+          "title": "Machine Learning Engineer Salary: How Much Can You Make? - Coursera",
+          "url": "https://www.coursera.org/ca/articles/machine-learning-engineer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-20T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "22c4fb2d4b59",
+          "title": "Machine Learning Engineer vs. Data Scientist: What’s the Difference? - Coursera",
+          "url": "https://www.coursera.org/articles/machine-learning-engineer-vs-data-scientist",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "80bc36455c06",
+          "title": "How VeriiPro Connects Companies with Machine Learning Engineers - PC Tech Magazine",
+          "url": "https://pctechmag.com/2026/09/how-veriipro-connects-companies-with-machine-learning-engineers/",
+          "url_resolved": true,
+          "source_name": "PC Tech Magazine",
+          "published_at": "2026-09-23T04:24:03+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "9fa8726f8d35",
+          "title": "Data Science vs Machine Learning vs Data Analytics [2026] - Simplilearn.com",
+          "url": "https://www.simplilearn.com/data-science-vs-data-analytics-vs-machine-learning-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-09-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "5814f856e100",
+          "title": "AWS Certified Machine Learning Engineer - Associate Dumps: How Do You Secur - Kompasiana.com",
+          "url": "https://www.kompasiana.com/ben9244/6ac39b90ed641543ec62dc65/aws-certified-machine-learning-engineer-associate-dumps-how-do-you-secur",
+          "url_resolved": true,
+          "source_name": "Kompasiana.com",
+          "published_at": "2026-10-05T12:53:48+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "67f6854fde3a",
+          "title": "Machine Learning Statistics 2026: The Complete Data Roundup - Memeburn",
+          "url": "https://memeburn.com/machine-learning-statistics/",
+          "url_resolved": true,
+          "source_name": "Memeburn",
+          "published_at": "2026-10-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_001",
+    "canonical_role": "AI Agent Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-10"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "ai_adoption": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "48fd1248ac53",
+          "title": "Hyundai AutoEver: Building a multi-tenant generative AI sandbox and production AIOps on Amazon Bedrock - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/industries/hyundai-autoever-building-a-multi-tenant-generative-ai-sandbox-and-production-aiops-on-amazon-bedrock/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "1b66582e5a9c",
+          "title": "Aurora Mobile's GPTBots.ai Showcases Enterprise AI Agent Methodologies at Hong Kong Agentic AI Solution Day - 巴士的報",
+          "url": "https://www.bastillepost.com/global/article/6228472-aurora-mobiles-gptbots-ai-showcases-enterprise-ai-agent-methodologies-at-hong-kong-agentic-ai-solution-day",
+          "url_resolved": true,
+          "source_name": "巴士的報",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_002",
+    "canonical_role": "AI Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 103,
+    "by_type": {
+      "general": 75,
+      "ai_adoption": 19,
+      "hiring": 6,
+      "security_incident": 1,
+      "product_release": 1,
+      "funding": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "593fdd7f955f",
+          "title": "Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS｜AI Engineer - finance.biggo.com",
+          "url": "https://finance.biggo.com/podcast/c70a1ee89ec4a726",
+          "url_resolved": true,
+          "source_name": "finance.biggo.com",
+          "published_at": "2026-08-29T01:51:26+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "eff31915cb13",
+          "title": "12-Year-Old Emirati Aldhabi AlMheiri: AI Engineer & Author - lovin.co",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPb2JDN3VIYk5pckVldW8tbWE5WGZ6azBIQlJpcG9yZWdsU2FhdEpldHZRWWp3Qjd2N3ZyeWJ6Tk1WR2phT1puRl9xOHVKOVBwTy0yNkp3Y0pQSUV3a2hqa3JuYVlSNGdDUlRjNjM3czNWRmsxRFVGa3AtRkxGTF9ocnZoemFEVTlMdWtTVkY5ZVdNdw",
+          "url_resolved": false,
+          "source_name": "lovin.co",
+          "published_at": "2026-08-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "aaa36397fe35",
+          "title": "The Minimal AI Engineer Toolkit for 2026 - KDnuggets",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnTGFVajBiR3JiOTkxNmxXUUJPcVFPMUFxYkRJMUlla0dpb0VLWTl3eGVxbVp2ZVFRQWdlaDM0Rm1fRmR2R1M1bXZYRWM0djFJYkEyQmlOZjd3WEF6V2VyY1QwQUxMWFp5b0E0UGV6ZC03U0xp",
+          "url_resolved": false,
+          "source_name": "KDnuggets",
+          "published_at": "2026-08-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "6ceb4640022a",
+          "title": "Japan AI Engineer Annual Salary Only NT$600,000 — Taiwanese Engineers Mock It as \"Lower Than System Manufacturers\" - BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XR1N2ei1vclRYN1dtY012SElOY2NoWjdwTkM3d1hhbS02YTVRMWI4eFBjOVh0RFhTcVhXNDV0Q2ZZeDkybjNnalJkSFNodXNlWE1HOVFhU01jQ1dPVnluMUpINXhGMFFVVkRmSzlMM2pneGJINXc",
+          "url_resolved": false,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "8e2a238420c4",
+          "title": "POSCO Group Opens Second-Half Entry-Level Hiring; Adds AI Engineer Role for First Time - BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9JWnZTM0tBMERUMi14U1BHTm9lV09ILWlpVlFfZmJFYTlQOEFsei10UUJscmY2bVh2eFd5dFVLbjBkelB1cFZhM3ZzU0duUkViQkJoc0xJdnk5YktqRzZibjMxNFgxNFJYVUp5Y0tLMkpzbDlFUGc",
+          "url_resolved": false,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "5ce0e6c5d83e",
+          "title": "Posco Group to hire hundreds of new graduates, adds AI engineer role - 헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE15V0dLMnZHVWFyOVFtWmRaRjd3VC1PY2t0U0ZRRThoaXBXWlM1dks0OWlrajJSMm05TjJNLXAzbkVhMzFpdFVOLVA0NE5QOXdFOGNCZTVn",
+          "url_resolved": false,
+          "source_name": "헤럴드경제",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "02e37b3a6da7",
+          "title": "Your AI Agent Has No Nervous System — Matt Gibiec, Dynatrace｜AI Engineer - BigGo Finance",
+          "url": "https://finance.biggo.com/podcast/e1009e214ed004d9",
+          "url_resolved": true,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-10-08T20:58:03+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "2d81f7a2feb1",
+          "title": "Agent Speedrun — Elizabeth Fuentes Leone & Sandhya Subramani, AWS｜AI Engineer - finance.biggo.com",
+          "url": "https://finance.biggo.com/podcast/d25e273779a87ced",
+          "url_resolved": true,
+          "source_name": "finance.biggo.com",
+          "published_at": "2026-10-11T17:29:31+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_003",
+    "canonical_role": "AI Data Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_004",
+    "canonical_role": "AI Research Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 3,
+      "hiring": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "ece663fe5dc1",
+          "title": "From cracking IIT at 12 to AI research engineer in US, farmer's son Satyam Kumar's inspiring journey - Daijiworld",
+          "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1322305",
+          "url_resolved": true,
+          "source_name": "Daijiworld",
+          "published_at": "2026-08-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "484c8122a6b3",
+          "title": "Top 10 Countries to Work Abroad as a Machine Learning Engineer: Salary, Visa & PR Compared - Y-Axis Overseas Careers",
+          "url": "https://www.y-axis.com/blog/top-10-countries-for-machine-learning-engineers/",
+          "url_resolved": true,
+          "source_name": "Y-Axis Overseas Careers",
+          "published_at": "2026-08-20T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "aae6be257fe9",
+          "title": "10 Machine Learning Jobs That Pay the Highest in India 2026 - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/top-10-machine-learning-jobs",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-09-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "7c9207892f1e",
+          "title": "Career Path after B.Tech. (ME – Artificial Intelligence and Machine Learning) - LPU",
+          "url": "https://www.lpu.in/blog/career-path-after-b-tech-me-artificial-intelligence-and-machine-learning/",
+          "url_resolved": true,
+          "source_name": "LPU",
+          "published_at": "2026-09-25T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "14cfd7ac243d",
+          "title": "Jobs in Singapore: “I’m an AI research engineer – here’s why I’m excited about how AI can benefit people” - Singapore Economic Development Board (EDB)",
+          "url": "https://www.edb.gov.sg/news-and-insights/jobs-in-singapore-im-an-ai-research-engineer-heres-why-im-excited-about-how-ai-can-benefit-people",
+          "url_resolved": true,
+          "source_name": "Singapore Economic Development Board (EDB)",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_005",
+    "canonical_role": "AI Evaluation Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_006",
+    "canonical_role": "MLOps Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 16,
+    "by_type": {
+      "general": 10,
+      "hiring": 4,
+      "ai_adoption": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "b5e311324c5f",
+          "title": "MLOps Engineer: Roles, Skills, and Career Path - Coursera",
+          "url": "https://www.coursera.org/articles/mlops-engineer",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-25T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "48fd1248ac53",
+          "title": "Hyundai AutoEver: Building a multi-tenant generative AI sandbox and production AIOps on Amazon Bedrock - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/industries/hyundai-autoever-building-a-multi-tenant-generative-ai-sandbox-and-production-aiops-on-amazon-bedrock/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "0ccdf5ed972e",
+          "title": "7 Popular Machine Learning Certifications: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/machine-learning-certification",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "1d14b1b00393",
+          "title": "Meet Pragya, the student who found an alternative route to IIT Madras and became an AI/ML Engineer - The Times of India",
+          "url": "https://timesofindia.indiatimes.com/education/news/meet-pragya-the-student-who-found-an-alternative-route-to-iit-madras-and-became-an-ai/ml-engineer/articleshow/133701189.cms",
+          "url_resolved": true,
+          "source_name": "The Times of India",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "9fa8726f8d35",
+          "title": "Data Science vs Machine Learning vs Data Analytics [2026] - Simplilearn.com",
+          "url": "https://www.simplilearn.com/data-science-vs-data-analytics-vs-machine-learning-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-09-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "1af431bff276",
+          "title": "Certification updates from AWS Training and Certification: September 2026 | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "28fe46d339c2",
+          "title": "NeGD Recruitment 2026 – Apply Online for 3 Full Stack Developer, AI/ML Engineer & Other Posts - FreeJobAlert.Com",
+          "url": "https://www.freejobalert.com/articles/negd-recruitment-2026-apply-online-for-3-full-stack-developer-ai-ml-engineer-and-other-posts-3073270",
+          "url_resolved": true,
+          "source_name": "FreeJobAlert.Com",
+          "published_at": "2026-10-13T12:38:55+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "67f6854fde3a",
+          "title": "Machine Learning Statistics 2026: The Complete Data Roundup - Memeburn",
+          "url": "https://memeburn.com/machine-learning-statistics/",
+          "url_resolved": true,
+          "source_name": "Memeburn",
+          "published_at": "2026-10-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_007",
+    "canonical_role": "Applied AI Engineer",
+    "months_covered": [
+      "2026-10"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "ai_adoption": 2
+    },
+    "top_items": {
+      "2026-10": [
+        {
+          "evidence_id": "f6cfdc53b295",
+          "title": "Deploying AI Inside a Bank Is Not an Engineering Problem — Paden Gayle, Applied AI Engineers - finance.biggo.com",
+          "url": "https://finance.biggo.com/podcast/d1ecb0fd2222a24e",
+          "url_resolved": true,
+          "source_name": "finance.biggo.com",
+          "published_at": "2026-10-13T15:40:31+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T14:18:19+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_008",
+    "canonical_role": "LLM Inference Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 11,
+    "by_type": {
+      "ai_adoption": 9,
+      "funding": 1,
+      "general": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "e3e4631253a8",
+          "title": "Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference | NVIDIA Technical Blog - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "9c58a127d769",
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "55912b531fd5",
+          "title": "Benchmarking LLM Inference at Scale with AIPerf | NVIDIA Technical Blog - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "97b27dba60f7",
+          "title": "Joshua Mo: Your AI Agent's Secret Leaks Because You Fed It to the LLM - BigGo Finance",
+          "url": "https://finance.biggo.com/news/c1bc6489b687180d",
+          "url_resolved": true,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-10-11T18:08:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "89b91d2f7734",
+          "title": "Prompt Engineering: How to Design, Test and Optimize Prompts for Production AI - Snowflake",
+          "url": "https://www.snowflake.com/en/artificial-intelligence/agents/prompt-engineering/",
+          "url_resolved": true,
+          "source_name": "Snowflake",
+          "published_at": "2026-10-06T22:40:53+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T14:18:19+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_009",
+    "canonical_role": "Prompt Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 17,
+    "by_type": {
+      "general": 13,
+      "hiring": 3,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "23c3738bf58c",
+          "title": "Man Tried to Prompt Engineer His Way to a Legal Victory. It Didn't Work. - PCMag",
+          "url": "https://www.pcmag.com/news/man-tried-to-prompt-engineer-his-way-to-a-legal-victory-it-didnt-work",
+          "url_resolved": true,
+          "source_name": "PCMag",
+          "published_at": "2026-08-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "e18305cc9efd",
+          "title": "1,247 Participants Attend ‘1 NADI, 1 Prompt Engineer’ Training - Bernama",
+          "url": "https://www.bernama.com/en/general/news.php?id=2596683",
+          "url_resolved": true,
+          "source_name": "Bernama",
+          "published_at": "2026-08-20T04:01:19+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "1e63cccb1af2",
+          "title": "Top 10 Countries to Work Abroad as a Prompt Engineer: Salary, Visa & PR Compared - Y-Axis Overseas Careers",
+          "url": "https://www.y-axis.com/overseas-jobs/top-10-countries-for-prompt-engineers/",
+          "url_resolved": true,
+          "source_name": "Y-Axis Overseas Careers",
+          "published_at": "2026-08-24T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "2d622e0f2153",
+          "title": "Prompt Engineering Guide 2026: 13 Steps, Fewer AI Errors - tech-insider.org",
+          "url": "https://tech-insider.org/au/prompt-engineering-guide-2026/",
+          "url_resolved": true,
+          "source_name": "tech-insider.org",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "64b7c55a8a89",
+          "title": "AWS Certified AI Practitioner vs. AWS Certified Cloud Practitioner - Coursera",
+          "url": "https://www.coursera.org/articles/aws-certified-ai-practitioner-vs-aws-certified-cloud-practitioner",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "b01e6088f294",
+          "title": "What Is Prompt Engineering? - TechRound",
+          "url": "https://techround.co.uk/artificial-intelligence/what-is-prompt-engineering/",
+          "url_resolved": true,
+          "source_name": "TechRound",
+          "published_at": "2026-09-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "5eaa5ea45b60",
+          "title": "How to Become a Prompt Engineer: A Complete Guide - Simplilearn.com",
+          "url": "https://www.simplilearn.com/how-to-become-a-prompt-engineer-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-10-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "89b91d2f7734",
+          "title": "Prompt Engineering: How to Design, Test and Optimize Prompts for Production AI - Snowflake",
+          "url": "https://www.snowflake.com/en/artificial-intelligence/agents/prompt-engineering/",
+          "url_resolved": true,
+          "source_name": "Snowflake",
+          "published_at": "2026-10-06T22:40:53+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_010",
+    "canonical_role": "AI Solutions Architect",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 6,
+    "by_type": {
+      "general": 5,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "8483b046e9ca",
+          "title": "Deepgram deepens Amazon SageMaker AI observability with Enhanced Metrics - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-27T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "de8a98a37d06",
+          "title": "Build a multi-account AI agent with AgentCore Gateway and MCP | Artificial Intelligence - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-24T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "dacc2f418384",
+          "title": "How Boomi Scribe streamlines documentation using AWS | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-boomi-scribe-streamlines-documentation-using-aws/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "d44d40b497ff",
+          "title": "Pathway’s brain-inspired architecture development on Amazon SageMaker HyperPod | Artificial Intelligence - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/pathway-s-brain-inspired-architecture-development-on-amazon-sagemaker-hyperpod/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "2e0eff293adc",
+          "title": "Serve live, governed data in AI-built apps with Amazon Quick | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_011",
+    "canonical_role": "RAG Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-10"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "general": 2,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "abf63cc75ca4",
+          "title": "How Does a RAG Reranker Really Work? - Towards Data Science",
+          "url": "https://towardsdatascience.com/how-does-a-rag-reranker-really-work-the-honest-answer-most-data-scientists-wont-give-you/",
+          "url_resolved": true,
+          "source_name": "Towards Data Science",
+          "published_at": "2026-08-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "7dc01a5a93cb",
+          "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression | Artificial Intelligence - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "116b47da0dda",
+          "title": "ML Engineer, AI Engineer, or LLM Engineer: Which Role Actually Builds What in 2026? - KDnuggets",
+          "url": "https://www.kdnuggets.com/ml-engineer-ai-engineer-or-llm-engineer-which-role-actually-builds-what-in-2026",
+          "url_resolved": true,
+          "source_name": "KDnuggets",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_012",
+    "canonical_role": "Computer Vision Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 3,
+      "hiring": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "f4a6448ecc9e",
+          "title": "Machine Learning Salary: A 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/machine-learning-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-25T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "9fa8726f8d35",
+          "title": "Data Science vs Machine Learning vs Data Analytics [2026] - Simplilearn.com",
+          "url": "https://www.simplilearn.com/data-science-vs-data-analytics-vs-machine-learning-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-09-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "93319fa73401",
+          "title": "MSc in AI and Machine Learning: Eligibility, Syllabus, Colleges, Fees & Career Scope - College Mentor",
+          "url": "https://www.collegementor.com/blogs/msc-ai-and-machine-learning",
+          "url_resolved": true,
+          "source_name": "College Mentor",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "aae6be257fe9",
+          "title": "10 Machine Learning Jobs That Pay the Highest in India 2026 - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/top-10-machine-learning-jobs",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-09-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_013",
+    "canonical_role": "Forward Deployed AI Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "ai_adoption": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "77ff61bc59e4",
+          "title": "Hoxton Wealth collaborates with AWS on agentic AI tools - Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/hoxton-wealth-collaborates-aws-agentic-113636651.html",
+          "url_resolved": true,
+          "source_name": "Yahoo Finance",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "f070a96ff636",
+          "title": "Phaedra Solutions Launches Forward Deployed AI Engineers to Bring Enterprise AI Into Production - openPR.com",
+          "url": "https://www.openpr.com/news/4653703/phaedra-solutions-launches-forward-deployed-ai-engineers",
+          "url_resolved": true,
+          "source_name": "openPR.com",
+          "published_at": "2026-10-07T11:08:20+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_014",
+    "canonical_role": "Machine Learning Research Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_015",
+    "canonical_role": "Context Engineer",
+    "months_covered": [
+      "2026-09"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "security_incident": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "74fcceef8edc",
+          "title": "Sarah Sanders: The AI Agent With 'Hands' Is Structurally Indistinguishable From Malware - BigGo Finance",
+          "url": "https://finance.biggo.com/news/1c1f305f83324d12",
+          "url_resolved": true,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "security_incident",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_016",
+    "canonical_role": "AI Infrastructure Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_017",
+    "canonical_role": "Data Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 25,
+    "by_type": {
+      "general": 19,
+      "funding": 3,
+      "hiring": 2,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "074ac0c5922e",
+          "title": "Cloud Data Engineer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/cloud-data-engineer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-19T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "87cacf5b760c",
+          "title": "Big Data Engineer Salary: Your 2026 Pay Guide - Coursera",
+          "url": "https://www.coursera.org/articles/big-data-engineer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "102b9a1eb479",
+          "title": "Pedro Acosta’s data engineer ‘laughs’ when he compares the KTM rider to Marc Marquez - MotoGP News",
+          "url": "https://www.motogpnews.com/2026/08/26/pedro-acostas-data-engineer-laughs-when-he-compares-the-ktm-rider-to-marc-marquez/",
+          "url_resolved": true,
+          "source_name": "MotoGP News",
+          "published_at": "2026-08-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "013eef569618",
+          "title": "Seeing the Enterprise Clearly: How a Data Engineer Enables Army Modernization - AFCEA International",
+          "url": "https://www.afcea.org/signal-media/emerging-edge/seeing-enterprise-clearly-how-data-engineer-enables-army-modernization",
+          "url_resolved": true,
+          "source_name": "AFCEA International",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "3563f5aae605",
+          "title": "YC-backed Zeit AI raises €4.3 million to build Europe’s “autonomous data engineer” - EU-Startups",
+          "url": "https://www.eu-startups.com/2026/09/yc-backed-zeit-ai-raises-e5-million-to-build-europes-autonomous-data-engineer/",
+          "url_resolved": true,
+          "source_name": "EU-Startups",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "54dc54a0cc3e",
+          "title": "Zeit AI raises €5M to give Europe’s mid-market its own data engineer - Tech.eu",
+          "url": "https://tech.eu/2026/09/03/zeit-ai-raises-eur5m-to-give-europes-mid-market-its-own-data-engineer/",
+          "url_resolved": true,
+          "source_name": "Tech.eu",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "400a96c85726",
+          "title": "How Much Do Data Engineers Make in USA? - Simplilearn.com",
+          "url": "https://www.simplilearn.com/data-engineer-salary-in-us-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-10-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "d4d5ad08f754",
+          "title": "Data Engineer Class 1 in Telugu | What is Data Engineering? Career, Skills & Roadmap | CYFT LABS - YouTube",
+          "url": "https://youtu.be/ccR6ovVuAM4",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-10-10T09:56:12+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "eb427db52901",
+          "title": "Data Engineer to MTA: Shut Down 3rd Avenue Subway Stop on L Train - www.otdowntown.com",
+          "url": "https://www.otdowntown.com/news/data-engineer-to-mta-shut-down-3rd-avenue-subway-stop-on-l-train-FL6278340",
+          "url_resolved": true,
+          "source_name": "www.otdowntown.com",
+          "published_at": "2026-10-12T15:03:09+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_018",
+    "canonical_role": "Business Analyst",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 7,
+    "by_type": {
+      "general": 5,
+      "ai_adoption": 1,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "93f944fe517c",
+          "title": "12 business analyst certifications to level up your career - CIO",
+          "url": "https://www.cio.com/article/228834/6-business-analyst-certifications-to-advance-your-analytics-career.html",
+          "url_resolved": true,
+          "source_name": "CIO",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "041028a58817",
+          "title": "How AI is changing the business analyst role for the better - CIO",
+          "url": "https://www.cio.com/article/4206393/how-ai-is-changing-the-business-analyst-role-for-the-better.html",
+          "url_resolved": true,
+          "source_name": "CIO",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "d861c0bc8a2d",
+          "title": "The Business Analyst in the Age of AI Agents - Unite.AI",
+          "url": "https://www.unite.ai/future-of-business-analyst-role-ai/",
+          "url_resolved": true,
+          "source_name": "Unite.AI",
+          "published_at": "2026-08-21T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "af50d447d2c0",
+          "title": "Simplilearn Positions Learners at the Center of a $139 Billion AI Shift and a Widening Business Analyst Talent Gap - The Sunday Guardian",
+          "url": "https://sundayguardianlive.com/brand-desk/simplilearn-positions-learners-at-the-center-of-a-139-billion-ai-shift-and-a-widening-business-analyst-talent-gap-285887/",
+          "url_resolved": true,
+          "source_name": "The Sunday Guardian",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "6296eb66cc0d",
+          "title": "UiPath-ABAv1 Exam Questions 2026 Master Key Automation Business Analyst Topics - Всеосвіта",
+          "url": "https://vseosvita.ua/blogs/uipath-abav1-exam-questions-2026-master-key-automation-business-analyst-topics-129801.html",
+          "url_resolved": true,
+          "source_name": "Всеосвіта",
+          "published_at": "2026-10-06T15:24:46+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "c43384f1317b",
+          "title": "AI can automate processes, but not trust – Digital Business Analyst, Femi Royal - Vanguard News",
+          "url": "https://www.vanguardngr.com/2026/10/ai-can-automate-processes-but-not-trust-digital-business-analyst-femi-royal/",
+          "url_resolved": true,
+          "source_name": "Vanguard News",
+          "published_at": "2026-10-15T12:08:04+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_019",
+    "canonical_role": "Data Scientist",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 73,
+    "by_type": {
+      "general": 62,
+      "hiring": 6,
+      "product_release": 3,
+      "ai_adoption": 1,
+      "policy": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "e654cb79a6d2",
+          "title": "4 Claude Skills Every Data Scientist Needs in 2026 - Towards Data Science",
+          "url": "https://towardsdatascience.com/4-claude-skills-every-data-scientist-needs-in-2026/",
+          "url_resolved": true,
+          "source_name": "Towards Data Science",
+          "published_at": "2026-08-29T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "0cd7139416f9",
+          "title": "Bianca Stanciu, The Sexiest Data Scientist On The Internet, Just Diagnosed Your Doomscrolling - Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTUIyRjIxQ2xoaFVlb0dCcmlOWDFwalBtNXVDa3k1Y3o0c2lpZG5mZi1aV3JPM2Q4cDVUMmpfZEJQalQ5SGpwWjBqdUhrdXFUbWIxWHlWR185VWNtRWVaQ3RoMGdjUnB6T21YcnhObDVOZ3R4RHhpX0pRLTBicUpuRWJRTC1YbngtXzRuSDB6alhFcGd6eU54Q0VXZjFJdXplelRXS1JrXzUzRlk",
+          "url_resolved": false,
+          "source_name": "Yahoo",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "1823c1de9c13",
+          "title": "The Internet's Sexiest Data Scientist Just Explained Why You Can't Put Your Phone Down - OK Magazine",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVFJnVzljRzB5THR1Ykt0YklBdkV2YzlYRW9abVZvSDNPU2d4a1FBd194eUIyUTlmanc4eTluWE1zcVJIWVJFWDZULTgxa3NtdXJUZkEtT1lTVXk4ZC1wM3VucWE0R2djdXhYU1hvajYwd0l1MTZEUUVBYmxDZVpiSHlFdDQ5SDZxNWZ2XzZjR09LMkRHQThVZGJ2MG1LdDJUWkJ2RkNKa1hBZW8",
+          "url_resolved": false,
+          "source_name": "OK Magazine",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "22c4fb2d4b59",
+          "title": "Machine Learning Engineer vs. Data Scientist: What’s the Difference? - Coursera",
+          "url": "https://www.coursera.org/articles/machine-learning-engineer-vs-data-scientist",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "aaaab15acd51",
+          "title": "Data scientist shares insights on future of tech in Nigeria - The Guardian Nigeria News",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT3Vkc3JiOTRTNnplUEs1Q2RrZXA0cGRST2RSazZzVkhvay0xVXhKaDNUMTFxMUl6anhfN2lsVGNKZi1CRmVibFhLNEp4YVFzaU9DcnhvVzh6eHFsUDlVcXJmWEdDQ24zZENUckFkZE1YTmZKcVZvX1B6YUZOWkVNVUdLMFVDWFlTOEpHM0dB",
+          "url_resolved": false,
+          "source_name": "The Guardian Nigeria News",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "99d223a3a5f3",
+          "title": "6 Must-Read Books for Data Scientists - Jaro Education",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9uRWFxcDZuRXNJVjQ0LUxXblBOekY5Vjg4NXVFcEIxQzFyZTlKSU02eV9DM2RWa1dVR3V6S2JTU2JPNGVqdjlvYTFTSzktR1VRbmVNdmdEWXFyQVJYSHJTTGVLd0FuTWtEZHBMM0UycVNfVkVyRzlZRGQyQVA",
+          "url_resolved": false,
+          "source_name": "Jaro Education",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "83ee00bf9718",
+          "title": "FSU data scientist receives NSF CAREER Award to develop AI model to analyze complex numerical data at scale - Florida State University News",
+          "url": "https://news.fsu.edu/news/science-technology/2026/10/05/fsu-data-scientist-receives-nsf-career-award-to-develop-ai-model-to-analyze-complex-numerical-data-at-scale/",
+          "url_resolved": true,
+          "source_name": "Florida State University News",
+          "published_at": "2026-10-05T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "a1e11a2e7b04",
+          "title": "Bengaluru data scientist alleges harassment by manager, seeks legal action: 'I work 12 hours/day' - Moneycontrol.com",
+          "url": "https://www.moneycontrol.com/news/trends/bengaluru-data-scientist-alleges-harassment-by-manager-seeks-legal-action-i-work-12-hours-day-14045622.html",
+          "url_resolved": true,
+          "source_name": "Moneycontrol.com",
+          "published_at": "2026-10-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "03567355ed3c",
+          "title": "Luuk Boekestein joins HCSS as new Data Scientist - The Hague Centre for Strategic Studies",
+          "url": "https://hcss.nl/news/luuk-boekestein-joins-hcss-as-new-data-scientist/",
+          "url_resolved": true,
+          "source_name": "The Hague Centre for Strategic Studies",
+          "published_at": "2026-10-07T08:10:32+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_020",
+    "canonical_role": "Database Administrator",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 8,
+    "by_type": {
+      "general": 4,
+      "product_release": 2,
+      "hiring": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "2d84f72707e5",
+          "title": "Why the Traditional Database Administrator Role is Disappearing with Sanjeev Mohan - YouTube",
+          "url": "https://youtu.be/4hBtnq8UBcw?si=YLcdBafQ8lBhxc4d",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-08-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "290f16f3e66e",
+          "title": "NeverBlink Launches the First AI Database Administrator for ClickHouse - Business Wire",
+          "url": "https://www.businesswire.com/news/home/20260825161737/en/NeverBlink-Launches-the-First-AI-Database-Administrator-for-ClickHouse",
+          "url_resolved": true,
+          "source_name": "Business Wire",
+          "published_at": "2026-08-25T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "e6db51eb736a",
+          "title": "NeverBlink Launches 1st AI Database Administrator for ClickHouse - HPCwire",
+          "url": "https://www.hpcwire.com/bigdatawire/this-just-in/neverblink-launches-1st-ai-database-administrator-for-clickhouse/",
+          "url_resolved": true,
+          "source_name": "HPCwire",
+          "published_at": "2026-08-25T18:18:29+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "2894d789e9eb",
+          "title": "Mercantile Bank opens applications for database administrator - www.daily-sun.com",
+          "url": "http://www.daily-sun.com/sun-jobs/900300/mercantile-bank-opens-applications-for-database-administrator",
+          "url_resolved": true,
+          "source_name": "www.daily-sun.com",
+          "published_at": "2026-09-28T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "18f0c4f60c73",
+          "title": "PostgreSQL 19 Takes Aim at Disruptive Database Maintenance - LinuxInsider",
+          "url": "https://www.linuxinsider.com/story/postgresql-19-takes-aim-at-disruptive-database-maintenance-177788.html",
+          "url_resolved": true,
+          "source_name": "LinuxInsider",
+          "published_at": "2026-09-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "77e557b0e3b8",
+          "title": "Digital India Corporation Recruitment 2026 – Apply Online for Head, Database Administrator Posts - FreeJobAlert.Com",
+          "url": "https://www.freejobalert.com/articles/digital-india-corporation-recruitment-2026-apply-online-for-head-database-administrator-posts-3073173",
+          "url_resolved": true,
+          "source_name": "FreeJobAlert.Com",
+          "published_at": "2026-10-13T10:06:24+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_021",
+    "canonical_role": "Backend Java Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-10"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "hiring": 1,
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "978f58d16abd",
+          "title": "Java Developer Roadmap 2026: Skills and Career Options - Simplilearn.com",
+          "url": "https://www.simplilearn.com/java-developer-roadmap-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-02T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "749c0df0529b",
+          "title": "Best SAST Tools for Python and Java Automation Backends - Robotics & Automation News",
+          "url": "https://roboticsandautomationnews.com/2026/10/15/best-sast-tools-for-python-and-java-automation-backends/105982/",
+          "url_resolved": true,
+          "source_name": "Robotics & Automation News",
+          "published_at": "2026-10-15T21:30:06+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_022",
+    "canonical_role": ".NET Backend Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "general": 1,
+      "ai_adoption": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "e834a0dde2e7",
+          "title": "AWS Durable Execution SDK for .NET now Generally Available - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/developer/aws-durable-execution-sdk-for-net-now-generally-available/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "17d35fff97b3",
+          "title": "Building and Deploying .NET AI Agents with Amazon Bedrock AgentCore - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/developer/building-and-deploying-net-ai-agents-with-amazon-bedrock-agentcore/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-05T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "8fc94300183a",
+          "title": "Learning to Program in .NET in an AI World - Visual Studio Magazine",
+          "url": "https://visualstudiomagazine.com/articles/2026/08/11/learning-to-program-in-net-in-an-ai-world.aspx",
+          "url_resolved": true,
+          "source_name": "Visual Studio Magazine",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_023",
+    "canonical_role": "Backend Node.js Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "general": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "059c9b1e6fde",
+          "title": "Python vs JavaScript: 57.9% vs 66% Usage Gap [2026] - https://tech-insider.org/",
+          "url": "https://tech-insider.org/python-vs-javascript-2026/",
+          "url_resolved": true,
+          "source_name": "https://tech-insider.org/",
+          "published_at": "2026-08-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "f8bd9444207e",
+          "title": "Best Node.js books in 2026: A developer's guide - Netguru",
+          "url": "https://www.netguru.com/blog/node-js-books",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_024",
+    "canonical_role": "Backend PHP Engineer",
+    "months_covered": [
+      "2026-10"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-10": [
+        {
+          "evidence_id": "cd3c59d35352",
+          "title": "Learn PHP Programming in 6 Simple Steps - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/how-learn-php-programming",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-10-13T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_025",
+    "canonical_role": "Backend Python Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 2,
+      "ai_adoption": 2,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "64f2d65dec3b",
+          "title": "Choosing Python for an AI-powered mobile product: when it accelerates delivery and when it creates constraints - Durham Post",
+          "url": "https://durhampost.ca/choosing-python-for-an-ai-powered-mobile-product-when-it-accelerates-delivery-and-when-it-creates-constraints",
+          "url_resolved": true,
+          "source_name": "Durham Post",
+          "published_at": "2026-08-01T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "df1adbe5c4d4",
+          "title": "11 Applications and Uses of Python - Simplilearn.com",
+          "url": "https://www.simplilearn.com/what-is-python-used-for-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "14eb83f41803",
+          "title": "Python Developer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/python-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "7afdfc6ba26e",
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI | NVIDIA Technical Blog - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "a3e178c984be",
+          "title": "Python 3.15 Release: 3.10 End of Life Explained [2026] - tech-insider.org",
+          "url": "https://tech-insider.org/ie/python-3-15-release-3-10-end-of-life-2026/",
+          "url_resolved": true,
+          "source_name": "tech-insider.org",
+          "published_at": "2026-10-12T17:19:36+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_026",
+    "canonical_role": "C++ Software Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 3,
+      "funding": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "0230837c890b",
+          "title": "Bloomberg engineers publish BonoboMock, a C++ mocking library that needs no code changes - Bloomberg.com",
+          "url": "https://www.bloomberg.com/company/stories/bloomberg-engineers-publish-bonobomock-a-c-mocking-library-that-needs-no-code-changes/",
+          "url_resolved": true,
+          "source_name": "Bloomberg.com",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "cf52d36d5acd",
+          "title": "Musk Reveals Grok 4.8’s Pre-Training Stack is Written in C++ by ‘Humans’, Not AI - Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/musk-reveals-grok-48s-pre-training-stack-is-written-in-c-by-humans-not-ai",
+          "url_resolved": true,
+          "source_name": "Analytics India Magazine",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "3b6572082f30",
+          "title": "IIT Delhi-Duo Founded ByteAsk Raises $1M in YC-led Funding to Reinvent AI Coding for C++ - Indianweb2.com",
+          "url": "https://www.indianweb2.com/2026/09/iit-delhi-duo-founded-byteask-raises-1m.html",
+          "url_resolved": true,
+          "source_name": "Indianweb2.com",
+          "published_at": "2026-09-24T06:06:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.6
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "07a2af2c1372",
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_027",
+    "canonical_role": "Backend Go Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 3,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "54945b12597e",
+          "title": "Why Go is an Ideal Language for AI-Assisted Software Engineering - blog.google",
+          "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+          "url_resolved": true,
+          "source_name": "blog.google",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "d9d4b7156992",
+          "title": "‘Nigeria’s next tech revolution must go beyond fintech’ — Chidozie Nwabueze - The Sun Nigeria",
+          "url": "https://thesun.ng/nigerias-next-tech-revolution-must-go-beyond-fintech-chidozie-nwabueze/",
+          "url_resolved": true,
+          "source_name": "The Sun Nigeria",
+          "published_at": "2026-08-22T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "04af1f94fa84",
+          "title": "China's DeepSeek Opens ~150 Backend Engineer Roles in One Go, Team Could Grow by Over a Third - BigGo Finance",
+          "url": "https://finance.biggo.com/news/775b9c54-6779-4dd1-9f0e-99f38eb167ad",
+          "url_resolved": true,
+          "source_name": "BigGo Finance",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "5ade7ba29bf2",
+          "title": "DeepSeek Expands Recruitment by 150 Roles in One Go with Zero AI Research Positions Open - 36Kr",
+          "url": "https://eu.36kr.com/en/p/3974040294388232",
+          "url_resolved": true,
+          "source_name": "36Kr",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_028",
+    "canonical_role": "Backend Ruby Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_029",
+    "canonical_role": "Frontend React Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 2,
+    "by_type": {
+      "general": 1,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "e023a9972c47",
+          "title": "RAGVerse AI Lab: Multi-LLM RAG Comparison Platform | React, FastAPI & Docker - YouTube",
+          "url": "https://youtu.be/32-y42vwzJc?si=si_tEvgwmMEtg7iJ",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "628bfefe27fe",
+          "title": "React Developer Salary Insights: From Entry-Level to Senior Engineer - Coursera",
+          "url": "https://www.coursera.org/gb/articles/react-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_030",
+    "canonical_role": "Frontend Angular Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_031",
+    "canonical_role": "Full-Stack JavaScript Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "general": 3
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "fc13d1c155a3",
+          "title": "How to Build A Calculator App in JavaScript - Full Tutorial - Simplilearn.com",
+          "url": "https://www.simplilearn.com/tutorials/javascript-tutorial/calculator-in-javascript",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "628bfefe27fe",
+          "title": "React Developer Salary Insights: From Entry-Level to Senior Engineer - Coursera",
+          "url": "https://www.coursera.org/gb/articles/react-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "f8bd9444207e",
+          "title": "Best Node.js books in 2026: A developer's guide - Netguru",
+          "url": "https://www.netguru.com/blog/node-js-books",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_032",
+    "canonical_role": "Frontend Vue Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_033",
+    "canonical_role": "React Native Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 6,
+    "by_type": {
+      "general": 5,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "628bfefe27fe",
+          "title": "React Developer Salary Insights: From Entry-Level to Senior Engineer - Coursera",
+          "url": "https://www.coursera.org/gb/articles/react-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "0af2ee151c49",
+          "title": "React Native Apps: 12 Production Examples That Prove the Framework - Netguru",
+          "url": "https://www.netguru.com/blog/react-native-apps",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "e5f38789bee6",
+          "title": "Android Developer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/android-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "51c941227685",
+          "title": "Google’s Android Bench 2.0 tests AI agents on week-long app builds - Tbreak UAE",
+          "url": "https://tbreak.com/android-bench-2-0-ai-agents-week-long-app-builds/",
+          "url_resolved": true,
+          "source_name": "Tbreak UAE",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_034",
+    "canonical_role": "WordPress Developer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_035",
+    "canonical_role": "Full-Stack .NET Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_036",
+    "canonical_role": "iOS Engineer",
+    "months_covered": [
+      "2026-09"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 4
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "74932d442357",
+          "title": "iOS Programming Languages: Swift, Obj-C & Cross-Platform Compared - Netguru",
+          "url": "https://www.netguru.com/blog/top-ios-programming-languages",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.65
+        },
+        {
+          "evidence_id": "6d02c722af74",
+          "title": "Open-Source vphone-cli Boots Full iOS 27 on Mac [2026] - https://tech-insider.org/",
+          "url": "https://tech-insider.org/vphone-cli-ios-27-virtualization-apple-silicon-2026/",
+          "url_resolved": true,
+          "source_name": "https://tech-insider.org/",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "0a112b7c607b",
+          "title": "GRDB.swift in 2026: vs Core Data, SwiftData, and Realm - Netguru",
+          "url": "https://www.netguru.com/blog/grdb.swift-as-a-solution-for-ios-database",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_037",
+    "canonical_role": "Android Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 6,
+    "by_type": {
+      "general": 5,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "e5f38789bee6",
+          "title": "Android Developer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/android-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "cc73b6ecc103",
+          "title": "Google Agent Development Kit for Kotlin Reaches Feature Parity with Python, Supports On-Device AI - infoq.com",
+          "url": "https://www.infoq.com/news/2026/09/google-adk-1-0-released/",
+          "url_resolved": true,
+          "source_name": "infoq.com",
+          "published_at": "2026-09-20T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "b5ab1d84e474",
+          "title": "Google’s Kotlin Agent Development Kit Hits 1.0 with Full Feature Parity and On-Device AI - news.lavx.hu",
+          "url": "https://news.lavx.hu/article/google-s-kotlin-agent-development-kit-hits-1-0-with-full-feature-parity-and-on-device-ai",
+          "url_resolved": true,
+          "source_name": "news.lavx.hu",
+          "published_at": "2026-09-20T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "fd50a920aabe",
+          "title": "What building an Android weather app taught me about designing for reliability - InfoWorld",
+          "url": "https://www.infoworld.com/article/4234483/what-building-an-android-weather-app-taught-me-about-designing-for-reliability.html",
+          "url_resolved": true,
+          "source_name": "InfoWorld",
+          "published_at": "2026-10-14T09:03:30+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_038",
+    "canonical_role": "Flutter Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "product_release": 2,
+      "general": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "60cb8270b6f1",
+          "title": "Build a Flutter SaaS App on AWS for iOS & Android - YouTube",
+          "url": "https://youtu.be/6VhY7j3w8hs?is=jDbH1iEJG-U4E_Vk",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.65
+        },
+        {
+          "evidence_id": "6ff59804dff5",
+          "title": "Serverpod launches App Studio, a Flutter app builder with no built-in AI - Pasquale Pillitteri",
+          "url": "https://pasqualepillitteri.it/en/news/17077/serverpod-launches-app-studio-flutter-app-builder-no-ai",
+          "url_resolved": true,
+          "source_name": "Pasquale Pillitteri",
+          "published_at": "2026-09-20T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "f4ad393137b0",
+          "title": "Software Engineer Samuel Cousin Launches Naki UI, Expanding Dart’s Possibilities on the Web - THISDAYLIVE",
+          "url": "https://www.thisdaylive.com/2026/10/16/software-engineer-samuel-cousin-launches-naki-ui-expanding-darts-possibilities-on-the-web/",
+          "url_resolved": true,
+          "source_name": "THISDAYLIVE",
+          "published_at": "2026-10-16T01:24:50+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_039",
+    "canonical_role": "Mobile C++ Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 4,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "60288abbd1e9",
+          "title": "Introducing Credentio: Open Source C++ Library for C2PA Content Credentials from Google - Google for Developers Blog",
+          "url": "https://developers.googleblog.com/introducing-credentio-open-source-c-library-for-c2pa-content-credentials-from-google/",
+          "url_resolved": true,
+          "source_name": "Google for Developers Blog",
+          "published_at": "2026-08-13T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "978f58d16abd",
+          "title": "Java Developer Roadmap 2026: Skills and Career Options - Simplilearn.com",
+          "url": "https://www.simplilearn.com/java-developer-roadmap-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-02T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "60cb8270b6f1",
+          "title": "Build a Flutter SaaS App on AWS for iOS & Android - YouTube",
+          "url": "https://youtu.be/6VhY7j3w8hs?is=jDbH1iEJG-U4E_Vk",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "2045953ff822",
+          "title": "How Android Strongbox and Open Standards Enable the Future of High-Assurance Digital Credentials - blog.google",
+          "url": "https://blog.google/security/android-strongbox-and-open-standards-digital-credentials/",
+          "url_resolved": true,
+          "source_name": "blog.google",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "e5f38789bee6",
+          "title": "Android Developer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/android-developer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_040",
+    "canonical_role": "UI/UX Designer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "a17425c8cdfe",
+          "title": "UI/UX Designer for AI App Development: User-Centric Design Services Announced - USA Today",
+          "url": "https://www.usatoday.com/press-release/story/41661/uiux-designer-for-ai-app-development-user-centric-design-services-announced/",
+          "url_resolved": true,
+          "source_name": "USA Today",
+          "published_at": "2026-08-31T17:30:25+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_041",
+    "canonical_role": "DevOps Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 22,
+    "by_type": {
+      "general": 18,
+      "hiring": 2,
+      "ai_adoption": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "d3ac58fdd2a4",
+          "title": "AWS vs Azure: Which Cloud Platform Should You Choose? - Simplilearn.com",
+          "url": "https://www.simplilearn.com/tutorials/cloud-computing-tutorial/aws-vs-azure",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "e8d156f585b4",
+          "title": "AWS vs Azure vs Google Cloud: Where Are the Best IT Jobs? - Buttondown",
+          "url": "https://buttondown.com/sparktechblog/archive/aws-vs-azure-vs-google-cloud-where-are-the-best/",
+          "url_resolved": true,
+          "source_name": "Buttondown",
+          "published_at": "2026-08-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "6a55f079e391",
+          "title": "The Carbon-Aware Pipeline: Architecting Sustainable DevOps for Smart City Infrastructure - IEEE Computer Society",
+          "url": "https://www.computer.org/publications/tech-news/trends/smart-city-infrastructure",
+          "url_resolved": true,
+          "source_name": "IEEE Computer Society",
+          "published_at": "2026-08-13T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "a2479a2a5086",
+          "title": "Hackers Weaponize Terraform Lock Files to Infect DevOps Engineers With macOS Backdoors - GBHackers News",
+          "url": "https://gbhackers.com/terraform-lock-files/",
+          "url_resolved": true,
+          "source_name": "GBHackers News",
+          "published_at": "2026-09-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.8
+        },
+        {
+          "evidence_id": "3bc7afe767d1",
+          "title": "10 Docker Questions Every DevOps Engineer Should Know - YouTube",
+          "url": "https://youtu.be/dYjNyB-Q8E8?si=XnrpM6rNpGItCFbw",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-24T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.8
+        },
+        {
+          "evidence_id": "89dc7f6f845f",
+          "title": "Automate planned lifecycle upgrades with AWS DevOps Agent and Kiro | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/devops/automate-planned-lifecycle-upgrades-with-aws-devops-agent-and-kiro/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "0478002bbc4e",
+          "title": "Blender Is Hiring: New Job Openings for Software & DevOps Engineers - 80 Level",
+          "url": "https://80.lv/articles/blender-is-hiring-new-job-openings-for-software-devops-engineers",
+          "url_resolved": true,
+          "source_name": "80 Level",
+          "published_at": "2026-10-16T11:36:12+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "9ead84459714",
+          "title": "Building CI/CD Pipelines for On-Prem Azure DevOps: What the Cloud Docs Don’t Tell You - DevOps.com",
+          "url": "https://devops.com/building-ci-cd-pipelines-for-on-prem-azure-devops-what-the-cloud-docs-dont-tell-you",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-10-14T18:03:41+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "cda66d3def29",
+          "title": "After 3 Failed UPSC Attempts, He Turned To Cloud And DevOps. Now He Has A Rs 17 Lakh Job - News18",
+          "url": "https://www.news18.com/education-career/after-3-failed-upsc-attempts-he-turned-to-cloud-and-devops-now-he-has-a-rs-17-lakh-job-10368877.html",
+          "url_resolved": true,
+          "source_name": "News18",
+          "published_at": "2026-10-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_042",
+    "canonical_role": "Azure DevOps Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_043",
+    "canonical_role": "System Administrator",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_044",
+    "canonical_role": "Node.js DevOps Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 9,
+    "by_type": {
+      "general": 8,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "eb5ec03e8586",
+          "title": "Shift Left Security: 4 Automated Security Gates in GitHub Actions - DevOps.com",
+          "url": "https://devops.com/shift-left-security-4-automated-security-gates-in-github-actions",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "44942119721a",
+          "title": "Critical Flaw in isolated-vm Can Lead to Sandbox Escape, RCE Threat - DevOps.com",
+          "url": "https://devops.com/critical-flaw-in-isolated-vm-can-lead-to-sandbox-escape-rce-threat",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-08-20T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "89dc7f6f845f",
+          "title": "Automate planned lifecycle upgrades with AWS DevOps Agent and Kiro | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/devops/automate-planned-lifecycle-upgrades-with-aws-devops-agent-and-kiro/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "e2689c21f7eb",
+          "title": "Komodor enables AI agent deployment for SREs on Kubernetes - TechGig",
+          "url": "https://techgig.com/news/ai/komodor-enables-ai-agent-deployment-for-sres-on-kubernetes/134323289?utm_source=case-studies_news&utm_medium=homepage",
+          "url_resolved": true,
+          "source_name": "TechGig",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "f8bd9444207e",
+          "title": "Best Node.js books in 2026: A developer's guide - Netguru",
+          "url": "https://www.netguru.com/blog/node-js-books",
+          "url_resolved": true,
+          "source_name": "Netguru",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "e9c3dff168a6",
+          "title": "NodeSource Integration with AppDynamics Lets Users Dive into Advanced Node.js Metrics - DevOps.com",
+          "url": "https://devops.com/nodesource-integration-appdynamics-lets-users-dive-advanced-node-js-metrics",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-10-13T05:28:41+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "1a383320fb2b",
+          "title": "Cloudflare Brings the Deno Team In to Make Self-Hosted Workers Practical - DevOps.com",
+          "url": "https://devops.com/cloudflare-brings-the-deno-team-in-to-make-self-hosted-workers-practical",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-10-13T08:49:30+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "1a2ba522f835",
+          "title": "Node.js creator ditches Deno to work on open source Cloudflare Workers - DevClass",
+          "url": "https://www.devclass.com/devops/2026/10/17/nodejs-creator-ditches-deno-to-work-on-open-source-cloudflare-workers/5303692",
+          "url_resolved": true,
+          "source_name": "DevClass",
+          "published_at": "2026-10-17T20:21:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_045",
+    "canonical_role": "Cloud Java Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 15,
+    "by_type": {
+      "general": 8,
+      "product_release": 3,
+      "hiring": 2,
+      "ai_adoption": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "978f58d16abd",
+          "title": "Java Developer Roadmap 2026: Skills and Career Options - Simplilearn.com",
+          "url": "https://www.simplilearn.com/java-developer-roadmap-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-02T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "5d9cfd058166",
+          "title": "Top 10 Popular SQL Projects: Real-Life Applications - Simplilearn.com",
+          "url": "https://www.simplilearn.com/sql-projects-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "ca55d9bf63d0",
+          "title": "Model routing with Google Cloud API Gateway - blog.google",
+          "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing/",
+          "url_resolved": true,
+          "source_name": "blog.google",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "19ea4fc55e35",
+          "title": "Develop A2UI and MCP Apps with Oracle AI Database and the Java MCP Toolkit running in Google Gemini Enterprise App, ChatGPT, and Claude | developers - Oracle Blogs",
+          "url": "https://blogs.oracle.com/developers/develop-a2ui-and-mcp-apps-with-oracle-ai-database-and-the-java-mcp-toolkit-running-in-google-gemini-enterprise-app-chatgpt-and-claude",
+          "url_resolved": true,
+          "source_name": "Oracle Blogs",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "dd5693b1571a",
+          "title": "GitHub Puts Guardrails on Copilot’s Sandbox Inside JetBrains IDEs - DevOps.com",
+          "url": "https://devops.com/github-puts-guardrails-on-copilots-sandbox-inside-jetbrains-ides/",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "f11ef4c212db",
+          "title": "Azul Launches AI Assistant That Tells IT and Security Teams Where Java Licensing and Security Risk Is Hiding - Business Wire",
+          "url": "https://www.businesswire.com/news/home/20260923188716/en/Azul-Launches-AI-Assistant-That-Tells-IT-and-Security-Teams-Where-Java-Licensing-and-Security-Risk-Is-Hiding",
+          "url_resolved": true,
+          "source_name": "Business Wire",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "cc92e1884407",
+          "title": "Coding Agents Broke Git’s Scaling Math. GitHub Is Rebuilding to Keep Up - DevOps.com",
+          "url": "https://devops.com/coding-agents-broke-gits-scaling-math-github-is-rebuilding-to-keep-up",
+          "url_resolved": true,
+          "source_name": "DevOps.com",
+          "published_at": "2026-10-08T07:48:38+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "94da085f4e9a",
+          "title": "Oracle Ships Java 27 With 9 JEPs, 20% Less Heap [2026] - https://tech-insider.org/",
+          "url": "https://tech-insider.org/oracle-java-27-release-jeps-heap-2026/",
+          "url_resolved": true,
+          "source_name": "https://tech-insider.org/",
+          "published_at": "2026-10-15T04:41:36+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_046",
+    "canonical_role": "Linux C++ Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 16,
+    "by_type": {
+      "general": 15,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "d6c867eaa133",
+          "title": "Top Uses of C++ in Modern Tech: From AI to Embedded Systems - Simplilearn.com",
+          "url": "https://www.simplilearn.com/tutorials/cpp-tutorial/top-uses-of-c-plus-plus-programming",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "8d6435f57ea7",
+          "title": "Open Source Summit + Embedded Linux Conference Europe 2026 Schedule Champions Open Source Innovation and Marks 35 Years of Linux - Linux Foundation",
+          "url": "https://www.linuxfoundation.org/press/open-source-summit-embedded-linux-conference-europe-2026-schedule-champions-open-source-innovation-and-marks-35-years-of-linux",
+          "url_resolved": true,
+          "source_name": "Linux Foundation",
+          "published_at": "2026-08-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "a5ac74ea15b5",
+          "title": "Top 10 Linux distros for developers and beginners in 2026 - Hostinger",
+          "url": "https://www.hostinger.com/tutorials/best-linux-distros/",
+          "url_resolved": true,
+          "source_name": "Hostinger",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "0230837c890b",
+          "title": "Bloomberg engineers publish BonoboMock, a C++ mocking library that needs no code changes - Bloomberg.com",
+          "url": "https://www.bloomberg.com/company/stories/bloomberg-engineers-publish-bonobomock-a-c-mocking-library-that-needs-no-code-changes/",
+          "url_resolved": true,
+          "source_name": "Bloomberg.com",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "b048db901a7e",
+          "title": "Alibaba Cloud, Ant Group, Cambricon and Huawei Come Together in Shanghai to Advance the Open Source AI Stack at PyTorch Conference China - Linux Foundation",
+          "url": "https://www.linuxfoundation.org/press/alibaba-cloud-ant-group-cambricon-and-huawei-come-together-in-shanghai-to-advance-the-open-source-ai-stack-at-pytorch-conference-china",
+          "url_resolved": true,
+          "source_name": "Linux Foundation",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "bf6bb726a5b0",
+          "title": "Linux Software Market Overview - Market Growth Reports",
+          "url": "https://www.marketgrowthreports.com/market-reports/linux-software-market-102667",
+          "url_resolved": true,
+          "source_name": "Market Growth Reports",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "07a2af2c1372",
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples - NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+          "url_resolved": true,
+          "source_name": "NVIDIA Developer",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "82964c07a6a3",
+          "title": "Linux kernel drops AI-contribution disclosure rule, as Linus Torvalds says banning the tech would be 'utterly stupid' - PC Gamer",
+          "url": "https://www.pcgamer.com/software/linux/linux-kernel-drops-ai-contribution-disclosure-rule-as-linus-torvalds-says-banning-the-tech-would-be-utterly-stupid/",
+          "url_resolved": true,
+          "source_name": "PC Gamer",
+          "published_at": "2026-10-16T15:52:39+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "ef2bde4168b5",
+          "title": "Linux withdraws the Assisted-by AI tag, Torvalds slams anti-AI rules - Pasquale Pillitteri",
+          "url": "https://pasqualepillitteri.it/en/news/25159/linux-withdraws-assisted-by-ai-tag-torvalds-slams-anti-ai-rules",
+          "url_resolved": true,
+          "source_name": "Pasquale Pillitteri",
+          "published_at": "2026-10-18T07:04:09+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_047",
+    "canonical_role": "Cloud Security Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 13,
+    "by_type": {
+      "general": 12,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "55f34ad987cf",
+          "title": "IT Job Watch: Cloud security engineer - Spiceworks",
+          "url": "https://www.spiceworks.com/it-careers/it-job-watch-cloud-security-engineer/",
+          "url_resolved": true,
+          "source_name": "Spiceworks",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "ea696923af7f",
+          "title": "Cloud Security Engineer Salary: What You Can Expect to Earn (2026) - Coursera",
+          "url": "https://www.coursera.org/articles/cloud-security-engineer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-19T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "e8d156f585b4",
+          "title": "AWS vs Azure vs Google Cloud: Where Are the Best IT Jobs? - Buttondown",
+          "url": "https://buttondown.com/sparktechblog/archive/aws-vs-azure-vs-google-cloud-where-are-the-best/",
+          "url_resolved": true,
+          "source_name": "Buttondown",
+          "published_at": "2026-08-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.65
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "002c42e34206",
+          "title": "Cybersecurity jobs available right now: September 1, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/01/cybersecurity-jobs-available-right-now-september-1-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "64b7c55a8a89",
+          "title": "AWS Certified AI Practitioner vs. AWS Certified Cloud Practitioner - Coursera",
+          "url": "https://www.coursera.org/articles/aws-certified-ai-practitioner-vs-aws-certified-cloud-practitioner",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "ec677f582a8b",
+          "title": "20+ Cybersecurity Projects for College Students | Final Year & Beyond - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/cyber-security-projects",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "d8376f28693f",
+          "title": "Ten Great Cybersecurity Job Opportunities - Security Boulevard",
+          "url": "https://securityboulevard.com/2026/10/ten-great-cybersecurity-job-opportunities-26/",
+          "url_resolved": true,
+          "source_name": "Security Boulevard",
+          "published_at": "2026-10-05T20:25:04+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "55112996b006",
+          "title": "Cybersecurity Certifications by Career Level: Finding the Right Credential for Your Goals - https://tech-insider.org/",
+          "url": "https://tech-insider.org/cybersecurity-certifications-by-career-level-finding-the-right-credent/",
+          "url_resolved": true,
+          "source_name": "https://tech-insider.org/",
+          "published_at": "2026-10-15T12:17:23+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_048",
+    "canonical_role": "Manual QA Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "3f9f03f61e91",
+          "title": "First Orion accelerates QA automation using Amazon Nova Act - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_049",
+    "canonical_role": "QA Automation Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "3f9f03f61e91",
+          "title": "First Orion accelerates QA automation using Amazon Nova Act - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_050",
+    "canonical_role": "Frontend QA Automation Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "3f9f03f61e91",
+          "title": "First Orion accelerates QA automation using Amazon Nova Act - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_051",
+    "canonical_role": "Python QA Automation Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 4
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "04c689763445",
+          "title": "Top 20 Python Automation Projects Ideas For Beginners - Simplilearn.com",
+          "url": "https://www.simplilearn.com/tutorials/python-tutorial/python-automation-projects",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "3f9f03f61e91",
+          "title": "First Orion accelerates QA automation using Amazon Nova Act - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "df1adbe5c4d4",
+          "title": "11 Applications and Uses of Python - Simplilearn.com",
+          "url": "https://www.simplilearn.com/what-is-python-used-for-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "d6bdd49ccabe",
+          "title": "An open Python API for AI-ready aerospace test automation - Aerospace Testing International",
+          "url": "https://www.aerospacetestinginternational.com/news/products-services/an-open-python-api-for-ai-ready-aerospace-test-automation.html",
+          "url_resolved": true,
+          "source_name": "Aerospace Testing International",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_052",
+    "canonical_role": ".NET QA Automation Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_053",
+    "canonical_role": "API QA Automation Engineer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_054",
+    "canonical_role": "Mobile QA Automation Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "3f9f03f61e91",
+          "title": "First Orion accelerates QA automation using Amazon Nova Act - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-08-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_055",
+    "canonical_role": "Information Security Analyst",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 9,
+    "by_type": {
+      "general": 8,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "19acc151d3c0",
+          "title": "8 Popular Cybersecurity Certifications in 2026 - Coursera",
+          "url": "https://www.coursera.org/articles/popular-cybersecurity-certifications",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "23bd30dabf62",
+          "title": "What Does a Cybersecurity Analyst Do? 2026 Job Guide - Coursera",
+          "url": "https://www.coursera.org/articles/cybersecurity-analyst-job-guide",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "8e024d146d66",
+          "title": "Cybersecurity Technician Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/cybersecurity-technician-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-19T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "d0bc5bc5b933",
+          "title": "Polk State Revives Cybersecurity Apprenticeship Program With Florida Department of Education — Polk County - Daily Ridge",
+          "url": "https://dailyridge.com/2026/09/16/polk-state-revives-cybersecurity-apprenticeship-program-with-florida-department-of-education/",
+          "url_resolved": true,
+          "source_name": "Daily Ridge",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "d8f448801019",
+          "title": "7 Cybersecurity Trends to Know in 2026 - Coursera",
+          "url": "https://www.coursera.org/articles/cybersecurity-trends",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "ab84592f5fe2",
+          "title": "Cybersecurity Jobs Are Projected to Grow 21%. At 62, a $125,000 Career Pivot Could Replace One of His 35 Social Security Years - 24/7 Wall St.",
+          "url": "https://247wallst.com/personal-finance/social-security/2026/10/01/cybersecurity-jobs-are-projected-to-grow-29-at-62-a-125000-career-pivot-could-replace-one-of-his-35-social-security-years/",
+          "url_resolved": true,
+          "source_name": "24/7 Wall St.",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "1658c554a398",
+          "title": "Best Cybersecurity Courses After 12th - Simplilearn.com",
+          "url": "https://www.simplilearn.com/best-cyber-security-courses-after-12th-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-10-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_056",
+    "canonical_role": "Security Operations Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 14,
+    "by_type": {
+      "general": 13,
+      "layoff": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "c4b434c77658",
+          "title": "Cybersecurity jobs available right now: August 4, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/08/04/cybersecurity-jobs-available-right-now-august-4-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "19acc151d3c0",
+          "title": "8 Popular Cybersecurity Certifications in 2026 - Coursera",
+          "url": "https://www.coursera.org/articles/popular-cybersecurity-certifications",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-08-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "6d4de2640b3f",
+          "title": "Black Hat USA 2026 Cybersecurity and AI Announcements - Channel Insider",
+          "url": "https://www.channelinsider.com/security/black-hat-usa-2026-ai-cybersecurity-announcements/",
+          "url_resolved": true,
+          "source_name": "Channel Insider",
+          "published_at": "2026-08-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "002c42e34206",
+          "title": "Cybersecurity jobs available right now: September 1, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/01/cybersecurity-jobs-available-right-now-september-1-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "f31ff001927d",
+          "title": "Google Cloud Professional Security Operations Engineer Practice Tests | CertShield Academy - YouTube",
+          "url": "https://youtu.be/NyOAvCEL2Q4?si=q6KSGmYwM4trXSpD",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-10-11T07:45:26+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_057",
+    "canonical_role": "Penetration Testing Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 35,
+    "by_type": {
+      "general": 20,
+      "hiring": 5,
+      "ai_adoption": 3,
+      "product_release": 3,
+      "funding": 2,
+      "security_incident": 2
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "ae5207d7c380",
+          "title": "Frenos raises $1.52M seed extension to expand AI-native OT security platform and simulated penetration testing - Industrial Cyber",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcEdyNUkxeEl5V2tHc004Ri1Uck10VEprby1kTEZ2Y2EtZlBvWTY3YlVpeElrZ2xKd1FvWFA4eWw4WUtvZnhIS2ZPLWlteGRFczlVcjI1dklsV0xhT01HQmk3VWNfZ3B1VTVvNUVPSk12TEhlQ3A0REw4T1JNRjNUM1d5U0ctUGNsTlNURWJTTkRPbFNrVjF2aDh1TFlSVklMZEZmM0hDS09VbzlzVjdIZzNENXExM25Ra2pmZmVXelJXUld3dTg4dnJEQngwR3VCRGJFVEZQRk9idw",
+          "url_resolved": false,
+          "source_name": "Industrial Cyber",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "c4b434c77658",
+          "title": "Cybersecurity jobs available right now: August 4, 2026 - Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaG95bXZ0bFB5MkdtMkkwZE5sTTJLQWlyS2FMSmJ3Q1VNemN3OGN3a0RlekdIYTF1ZFQzQnZWN2dEcGtRTTNSTE5aVjdudUpobmcydGNkenhmSWZQdWJWbnRpS1dPTzFRWmpQbVRfUG9sZVdQMW9VbXpzcGlmR2FDSVkyNkVzRXgxMDc2S3hqUHNDMTIxWG9DNGNNRTc",
+          "url_resolved": false,
+          "source_name": "Help Net Security",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "b516b046c860",
+          "title": "Cybersecurity Careers in India 2026: Roles & Salaries Guide - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/cybersecurity-careers-in-india",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-08-05T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "9a2b219fdb4b",
+          "title": "Will AI Replace Cybersecurity Jobs? A Reality Check for Security Professionals - EC-Council",
+          "url": "https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/will-ai-replace-cybersecurity-jobs/",
+          "url_resolved": true,
+          "source_name": "EC-Council",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "13c90713ede1",
+          "title": "Cybersecurity jobs available right now: September 8, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/08/cybersecurity-jobs-available-right-now-september-8-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "c3b0b8dbea6e",
+          "title": "How to Become a Cybersecurity Engineer in 2026 - University of North Dakota",
+          "url": "https://und.edu/blog/how-to-become-a-cybersecurity-engineer.html",
+          "url_resolved": true,
+          "source_name": "University of North Dakota",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "a53a8fa3687e",
+          "title": "Fleuret AI Raises €4M for Agentic AI Penetration Testing - Konsulteer",
+          "url": "https://www.konsulteer.com/article/fleuret-ai-raises-4m-to-advance-ai-powered-offensive-cybersecurity-in-europe",
+          "url_resolved": true,
+          "source_name": "Konsulteer",
+          "published_at": "2026-10-05T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "fe55116cc749",
+          "title": "UNCP cybersecurity student lands security engineer position with Microsoft - Robesonian",
+          "url": "https://www.robesonian.com/news/428266/uncp-cybersecurity-student-lands-security-engineer-position-with-microsoft",
+          "url_resolved": true,
+          "source_name": "Robesonian",
+          "published_at": "2026-10-05T20:34:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "b23dbda73369",
+          "title": "Best Cybersecurity Course with Placement in Thane: What I Would Look for Before Starting a Career - India CSR",
+          "url": "https://indiacsr.in/choosing-cybersecurity-course-placement-thane/",
+          "url_resolved": true,
+          "source_name": "India CSR",
+          "published_at": "2026-10-06T08:38:35+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_058",
+    "canonical_role": "Security Software Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 11,
+    "by_type": {
+      "general": 9,
+      "hiring": 2
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "002c42e34206",
+          "title": "Cybersecurity jobs available right now: September 1, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/01/cybersecurity-jobs-available-right-now-september-1-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "13c90713ede1",
+          "title": "Cybersecurity jobs available right now: September 8, 2026 - Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/08/cybersecurity-jobs-available-right-now-september-8-2026/",
+          "url_resolved": true,
+          "source_name": "Help Net Security",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "c3b0b8dbea6e",
+          "title": "How to Become a Cybersecurity Engineer in 2026 - University of North Dakota",
+          "url": "https://und.edu/blog/how-to-become-a-cybersecurity-engineer.html",
+          "url_resolved": true,
+          "source_name": "University of North Dakota",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "fa61574a6742",
+          "title": "Atlantic Edge: Portugal’s Cybersecurity Leaders to Watch - Security Boulevard",
+          "url": "https://securityboulevard.com/2026/10/atlantic-edge-portugals-cybersecurity-leaders-to-watch/",
+          "url_resolved": true,
+          "source_name": "Security Boulevard",
+          "published_at": "2026-10-11T09:49:11+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "425d61124108",
+          "title": "OpenSSL Conference: AI, Quantum and the Future of Encryption - Cyber Magazine",
+          "url": "https://cybermagazine.com/news/openssl-conference",
+          "url_resolved": true,
+          "source_name": "Cyber Magazine",
+          "published_at": "2026-10-14T06:12:42+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "a4185abee37f",
+          "title": "49 Companies Hiring Cybersecurity Professionals - Built In",
+          "url": "https://builtin.com/articles/companies-hiring-cybersecurity",
+          "url_resolved": true,
+          "source_name": "Built In",
+          "published_at": "2026-10-14T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_059",
+    "canonical_role": "Unity Developer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_060",
+    "canonical_role": "Game C++ Engineer",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "d6c867eaa133",
+          "title": "Top Uses of C++ in Modern Tech: From AI to Embedded Systems - Simplilearn.com",
+          "url": "https://www.simplilearn.com/tutorials/cpp-tutorial/top-uses-of-c-plus-plus-programming",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_061",
+    "canonical_role": "Unreal Engine Developer",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_062",
+    "canonical_role": "Game Designer",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 5
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "a61f99d60193",
+          "title": "VS Studio adds another Tekken veteran as Kohei Ikeda joins as game designer - GameDev.net",
+          "url": "https://gamedev.net/news/5185-vs-studio-adds-another-tekken-veteran-as-kohei-ikeda-joins-as-game-designer/",
+          "url_resolved": true,
+          "source_name": "GameDev.net",
+          "published_at": "2026-08-19T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "2499fcd9894f",
+          "title": "If Kemuri is ported to Xbox, the developers will die - game designer explains refusal to support Microsoft console - iXBT.games",
+          "url": "https://ixbt.games/en/news/2026/09/14/435571-esli-kemuri-portiruiut-na-xbox-to-razrabotciki-umrut-geimdizainer-obieiasnila-otkaz-ot-podderzki-konsoli-microsoft.html",
+          "url_resolved": true,
+          "source_name": "iXBT.games",
+          "published_at": "2026-09-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "c4c17e85b9ad",
+          "title": "Fortnite creators using AI to replace, not help workforce, says game designer. #Fortnite #BBCNews - Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/bbc/1/734177",
+          "url_resolved": true,
+          "source_name": "Modern Ghana",
+          "published_at": "2026-10-13T15:55:45+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "1d56798feaba",
+          "title": "Fortnite creators using AI to replace, not help workforce, says game designer. #Fortnite #BBCNews - Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/bbc/2/734177",
+          "url_resolved": true,
+          "source_name": "Modern Ghana",
+          "published_at": "2026-10-13T16:19:53+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "5223eefc33df",
+          "title": "When AI can create games, what role will the game designer play? - Vietnam.vn",
+          "url": "https://www.vietnam.vn/en/khi-ai-co-the-tao-game-nha-thiet-ke-giu-vai-tro-gi",
+          "url_resolved": true,
+          "source_name": "Vietnam.vn",
+          "published_at": "2026-10-15T04:29:02+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_063",
+    "canonical_role": "Game Technical Artist",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_064",
+    "canonical_role": "Project Manager",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 6,
+    "by_type": {
+      "general": 6
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "104be9e68499",
+          "title": "20 traits of highly effective project managers - CIO",
+          "url": "https://www.cio.com/article/276269/project-management-six-attributes-of-successful-project-managers.html",
+          "url_resolved": true,
+          "source_name": "CIO",
+          "published_at": "2026-08-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "5464db7167fd",
+          "title": "This $49 Microsoft app is like having a project manager in your pocket - Mashable",
+          "url": "https://mashable.com/tech/aug-7-microsoft-project-professional-2024-lifetime-license-for-windows",
+          "url_resolved": true,
+          "source_name": "Mashable",
+          "published_at": "2026-08-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "4faa863a2963",
+          "title": "South Africa DPWI: SANPC Project Manager Appointment Nears - Wansom AI",
+          "url": "https://www.wansom.ai/briefly/news/sanpc-project-manager-appointment-south-africa_640821cf-4754-4e35-903c-5df4f16f42f0",
+          "url_resolved": true,
+          "source_name": "Wansom AI",
+          "published_at": "2026-09-28T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "87b63aa81f27",
+          "title": "5 Ways AI Can Help a Project Manager | AI + Project Management. - YouTube",
+          "url": "https://youtu.be/O7NxVxJNCGs?si=vWNdghYV-_0w6osd",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "3c3f3232a755",
+          "title": "MSA Welcomes John Peterson as Senior Airports Engineering Project Manager - Urban Milwaukee",
+          "url": "https://urbanmilwaukee.com/pressrelease/msa-welcomes-john-peterson-as-senior-airports-engineering-project-manager/",
+          "url_resolved": true,
+          "source_name": "Urban Milwaukee",
+          "published_at": "2026-10-07T19:48:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "0590766bfdea",
+          "title": "An 800-ton boring machine with a 26-foot cutting wheel is more than halfway through 3.4 miles under Cleveland in clay its project manager compares to toothpaste, running three shifts because the ground starts squeezing shut around her whenever she sits sti - Autonocion.com",
+          "url": "https://www.autonocion.com/us/800-ton-boring-machine-26-foot-wheel-cleveland-toothpaste-clay/",
+          "url_resolved": true,
+          "source_name": "Autonocion.com",
+          "published_at": "2026-10-17T22:00:50+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_065",
+    "canonical_role": "Delivery Manager",
+    "months_covered": [
+      "2026-08"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "7104d5f44e15",
+          "title": "Inside Accuris Engineering: Agile Delivery and AI Workflows - Built In",
+          "url": "https://builtin.com/articles/what-its-work-engineering-accuris",
+          "url_resolved": true,
+          "source_name": "Built In",
+          "published_at": "2026-08-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_066",
+    "canonical_role": "Product Manager",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 12,
+    "by_type": {
+      "general": 7,
+      "hiring": 1,
+      "ai_adoption": 1,
+      "product_release": 1,
+      "layoff": 1,
+      "funding": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "df3299f7c492",
+          "title": "An OpenAI product manager's advice for AI prompts: 'I ramble' - Business Insider",
+          "url": "https://www.businessinsider.com/openai-product-manager-ai-prompt-advice-2026-8",
+          "url_resolved": true,
+          "source_name": "Business Insider",
+          "published_at": "2026-08-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "672c1ec7c9c8",
+          "title": "This OpenAI product manager asks ChatGPT to impress him, and his real advice is about how the PM role is changing - The Next Web",
+          "url": "https://thenextweb.com/news/openai-product-manager-chatgpt-prompting-advice-impress-me",
+          "url_resolved": true,
+          "source_name": "The Next Web",
+          "published_at": "2026-08-01T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "f7c2bca10534",
+          "title": "Why The Product Manager To CEO Pipeline Is The Underrated Crash Course For Leadership In Tech - Crunchbase News",
+          "url": "https://news.crunchbase.com/workplace/tech-ceo-leadership-career-path-product-manager/",
+          "url_resolved": true,
+          "source_name": "Crunchbase News",
+          "published_at": "2026-08-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "3d337cd6e80e",
+          "title": "The Product Manager Job Isn’t Disappearing. The Middle Is. - Startup Stash",
+          "url": "https://blog.startupstash.com/the-product-manager-job-isnt-disappearing-the-middle-is-64eb64a30e2a",
+          "url_resolved": true,
+          "source_name": "Startup Stash",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "fd25e9278474",
+          "title": "Meet Victoria Ibekwe, a Product Manager Deepening Financial Inclusion and Technology Adoption at the Grassroots - Techeconomy",
+          "url": "https://techeconomy.ng/meet-victoria-ibekwe-a-product-manager-deepening-financial-inclusion-and-technology-adoption-at-the-grassroots",
+          "url_resolved": true,
+          "source_name": "Techeconomy",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "d8c44960a416",
+          "title": "The co-founder, product manager, and engineering manager of the patronage platform 'Patreon' has joined OpenAI. - GIGAZINE",
+          "url": "https://gigazine.net/gsc_news/en/20260924-patreon-execs-join-openai/",
+          "url_resolved": true,
+          "source_name": "GIGAZINE",
+          "published_at": "2026-09-24T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "f29b182e1e09",
+          "title": "Satlyt, founded by a former Google and SpaceX product manager, raises $8M to run AI on satellites - TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+          "url_resolved": true,
+          "source_name": "TechCrunch",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "82e56bf5109f",
+          "title": "Inside Track - Boosting product manager productivity at Microsoft with AI - Microsoft",
+          "url": "https://www.microsoft.com/insidetrack/blog/boosting-product-manager-productivity-at-microsoft-with-ai/",
+          "url_resolved": true,
+          "source_name": "Microsoft",
+          "published_at": "2026-10-08T15:30:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "5b4dcfc050ad",
+          "title": "‘Use it as a springboard’: AI product manager laid off after 1.5 years fears his nomad dream is over - Indiatimes",
+          "url": "https://www.indiatimes.com/trending/use-it-as-a-springboard-ai-product-manager-laid-off-after-1-5-years-fears-his-nomad-dream-is-over/articleshow/134871923.html",
+          "url_resolved": true,
+          "source_name": "Indiatimes",
+          "published_at": "2026-10-13T04:56:19+00:00",
+          "event_type": "layoff",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_067",
+    "canonical_role": "Scrum Master",
+    "months_covered": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 5
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "e6665cba9143",
+          "title": "Scrum Master Certification: What You Need to Know - Miami Herald",
+          "url": "https://www.miamiherald.com/careers-education/scrum-master-certification/",
+          "url_resolved": true,
+          "source_name": "Miami Herald",
+          "published_at": "2026-08-25T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "7104d5f44e15",
+          "title": "Inside Accuris Engineering: Agile Delivery and AI Workflows - Built In",
+          "url": "https://builtin.com/articles/what-its-work-engineering-accuris",
+          "url_resolved": true,
+          "source_name": "Built In",
+          "published_at": "2026-08-14T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "0a0da7b1d70b",
+          "title": "The scrum master's hidden job, and the AI teammate built to take it - IBM",
+          "url": "https://www.ibm.com/think/perspectives/scrum-masters-hidden-job",
+          "url_resolved": true,
+          "source_name": "IBM",
+          "published_at": "2026-09-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "245dc51349c0",
+          "title": "Scrum Master Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/scrum-master-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "a285f5c242df",
+          "title": "Certified Scrum Developer: Role, Jobs, and Requirements - Miami Herald",
+          "url": "https://www.miamiherald.com/careers-education/certified-scrum-developer/",
+          "url_resolved": true,
+          "source_name": "Miami Herald",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_068",
+    "canonical_role": "Rust Blockchain Engineer",
+    "months_covered": [
+      "2026-08",
+      "2026-09"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "general": 2,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-08": [
+        {
+          "evidence_id": "753d2c010bc4",
+          "title": "Rust supply chain attack exposes Solana ecosystem components to potential remote code execution - Crypto Briefing",
+          "url": "https://cryptobriefing.com/rust-supply-chain-attack-solana-ecosystem/",
+          "url_resolved": true,
+          "source_name": "Crypto Briefing",
+          "published_at": "2026-08-21T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "2f4fffa6803f",
+          "title": "Web3 Hiring Is Moving Beyond the Generalist Blockchain Developer - HackerNoon",
+          "url": "https://hackernoon.com/web3-hiring-is-moving-beyond-the-generalist-blockchain-developer",
+          "url_resolved": true,
+          "source_name": "HackerNoon",
+          "published_at": "2026-08-24T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-09": [
+        {
+          "evidence_id": "60543c91faa7",
+          "title": "Blockchain Developer Salaries Reach $120K in Western Europe, Qubit Labs Data Reveals - EIN News",
+          "url": "https://www.einnews.com/pr_news/944960330/blockchain-developer-salaries-reach-120k-in-western-europe-qubit-labs-data-reveals",
+          "url_resolved": true,
+          "source_name": "EIN News",
+          "published_at": "2026-09-24T19:41:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_069",
+    "canonical_role": "Data Analyst",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 37,
+    "by_type": {
+      "general": 24,
+      "hiring": 11,
+      "funding": 1,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "7d29043f25c4",
+          "title": "Documenting My Data Analyst Journey 📊 - YouTube",
+          "url": "https://youtu.be/7TnFg_c1F9Y?si=I5lTwoL0a1vXukO8",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "87824bdbebdc",
+          "title": "TNFWCCB Recruitment 2026 - Apply Online for 12 DEO, Data Analyst and More Posts - FreeJobAlert.Com",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU1ZxbWdOYmpRcmJpZzBuSEdKUTRTcHNpOVBHMXFUQXc0VDcxVHU0d2RoamluSUhBdWwzb1lDSUVjR3ZPWUlSTHBwMUZyUG1mRm9ieU81UWx3cGlNYlMzVU50TEZmWWR6SE91Z2liRmEzWGdsY0NsSVBMS3BTejFPbjZ2VXMwUVpkR1Y4OFh6b054WWZVVEVKNEs4bndqeUpFS3JJMDQ1MDREMGJsQjVmbkZGQXlIdnkwN2pjNjlydw",
+          "url_resolved": false,
+          "source_name": "FreeJobAlert.Com",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "76c0bf3b1e18",
+          "title": "The AI Data Analyst Trap #dataanlysis #ai - YouTube",
+          "url": "https://youtu.be/6T6mjuj7gQU?si=5gNfmuAbkROHxdAb",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "6add02ffec46",
+          "title": "Senior data analyst who trains new hires and covers manager’s workload got just a 4% raise; then recruiter - The Economic Times",
+          "url": "https://m.economictimes.com/world/us/senior-data-analyst-who-trains-new-hires-and-covers-managers-workload-got-just-a-4-raise-then-recruiter-accidentally-sends-him-a-job-brief-for-his-own-role-paying-18k-more/articleshow/134850795.cms",
+          "url_resolved": true,
+          "source_name": "The Economic Times",
+          "published_at": "2026-10-10T09:26:51+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.8
+        },
+        {
+          "evidence_id": "4bd79189d8b9",
+          "title": "Who will help them communicate with the gods? Ezemuo, Babalawo, or Boka — or the Data Analyst? - YouTube",
+          "url": "https://youtu.be/gUdqYFumPyo?si=EiocC5_8Ojfyx053",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "0cdc2d94f306",
+          "title": "Meet the politician’s son and data analyst running to represent Clovis City Council, District 1 - Fresnoland",
+          "url": "https://fresnoland.org/2026/10/05/meet-the-politicians-son-and-data-analyst-running-to-represent-clovis-city-council-district-1/",
+          "url_resolved": true,
+          "source_name": "Fresnoland",
+          "published_at": "2026-10-05T16:33:07+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_070",
+    "canonical_role": "Analytics Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 4
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "9fa8726f8d35",
+          "title": "Data Science vs Machine Learning vs Data Analytics [2026] - Simplilearn.com",
+          "url": "https://www.simplilearn.com/data-science-vs-data-analytics-vs-machine-learning-article",
+          "url_resolved": true,
+          "source_name": "Simplilearn.com",
+          "published_at": "2026-09-26T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "e579636085f2",
+          "title": "Analytics Engineer: Duties, Salary, and How to Become One - Coursera",
+          "url": "https://www.coursera.org/articles/analytics-engineer",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "d407ef263845",
+          "title": "What Is an Analytics Engineer? - Coursera",
+          "url": "https://www.coursera.org/in/articles/analytics-engineer",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "9c62e5c2527a",
+          "title": "Analytics engineer phished through Google ad for Google Cloud Console - PPC Land",
+          "url": "https://ppc.land/analytics-engineer-phished-through-google-ad-for-google-cloud-console/",
+          "url_resolved": true,
+          "source_name": "PPC Land",
+          "published_at": "2026-10-09T18:32:30+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_071",
+    "canonical_role": "Software Engineer (General)",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 86,
+    "by_type": {
+      "general": 79,
+      "hiring": 3,
+      "product_release": 3,
+      "layoff": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "cddb67c8e467",
+          "title": "Senior Software Engineer - EMobility — Origin Energy - energynews.pro",
+          "url": "https://energynews.pro/en/jobs/senior-software-engineer-emobility-origin-energy-12483",
+          "url_resolved": true,
+          "source_name": "energynews.pro",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.8
+        },
+        {
+          "evidence_id": "e597604d12dd",
+          "title": "My First Vlog ❤️ | Daily Life of a Software Engineer | Work From Home in Village | Village Life - YouTube",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Ebm5CdzhSb0x2UnpvUXdzMEFyU3lDNGJtTmZqenpWOGxYb2FoVXBEZ2tqZVQ0YS0xZ1ZDTXMxV2h3LWp3TktDLTdfeHdyNzEtbEZJWDhuMFVzX0JQ",
+          "url_resolved": false,
+          "source_name": "YouTube",
+          "published_at": "2026-09-04T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "08971d20291d",
+          "title": "Devonte Duncan is a software engineer in Brooklyn, where his total compensation once reached $240,000 with stock awards. Now he's navigating New York City life on a $159,000 base salary. Duncan breaks down his take-home pay, side income, and what i - LinkedIn",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYW1TVlZyRV80clNFS1N5NG5zcmEtYzJ0dy11cjBFR0JkVE13aDROYUhKS09uZHdsdnRFRW1kRkJsSmYwejFKNC1LdkpqcGlpTEprdXg4cnBtRC11YzFjbzJuYmFTSUljclF2TzRZQlpWUEZpWHlBY0ZsSkxvanJ0X2o5X0N4amF0N19JTUh4eHphQlFRVk1HY051ZlVsbU9BV25jSC0tN05LcFRiWFdaNTRBbE9JTUxfQURqSnRR",
+          "url_resolved": false,
+          "source_name": "LinkedIn",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "3ccc322f2f84",
+          "title": "Senior/Lead Software Engineer, Site Reliability (Agentforce Operations) - Salesforce",
+          "url": "https://www.salesforce.com/company/careers/jobs/JR340462/seniorlead-software-engineer-site-reliability-agentforce-operations/",
+          "url_resolved": true,
+          "source_name": "Salesforce",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "c92d40516723",
+          "title": "Seattle software engineer turned general contractor built an AI guide to the patchwork of permit rules - GeekWire",
+          "url": "https://www.geekwire.com/2026/seattle-software-engineer-turned-general-contractor-built-an-ai-guide-to-the-patchwork-of-permit-rules/",
+          "url_resolved": true,
+          "source_name": "GeekWire",
+          "published_at": "2026-10-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "f30b0a9aeab4",
+          "title": "How I spend my salary as a Nepali software engineer living in Chicago - YouTube",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ja3dlRW9xQjM0dlBmTVdZMXRTVHh3aDFUb1RMOTJ6b2pTclIzMVBtd1JQcTVQeUM4WlVNMVFkVkZOalVBbDNncE1FMENqY3Z4ZWQ1TThRU1Rja2Mt",
+          "url_resolved": false,
+          "source_name": "YouTube",
+          "published_at": "2026-10-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_072",
+    "canonical_role": "QA Engineer (General)",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 3,
+      "hiring": 1,
+      "security_incident": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "28056045db60",
+          "title": "Trapped in Testing? 3 Intensive AI Programmes Designed to Help QA Engineers Pivot to AI Product Architects - ANI News",
+          "url": "https://www.aninews.in/news/business/trapped-in-testing-3-intensive-ai-programmes-designed-to-help-qa-engineers-pivot-to-ai-product-architects20260901135408",
+          "url_resolved": true,
+          "source_name": "ANI News",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "d90edb8c83d3",
+          "title": "MetaTrader 5 AI Assistant Becomes a QA Engineer for Trading Bots - Finance Magnates",
+          "url": "https://www.financemagnates.com/forex/metatrader-5-ai-assistant-becomes-a-qa-engineer-for-trading-bots/",
+          "url_resolved": true,
+          "source_name": "Finance Magnates",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "9cdcac68d9d2",
+          "title": "From QA Engineer to AI Validation Engineer: The Career Shift Nobody Saw Coming - HackerNoon",
+          "url": "https://hackernoon.com/from-qa-engineer-to-ai-validation-engineer-the-career-shift-nobody-saw-coming",
+          "url_resolved": true,
+          "source_name": "HackerNoon",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "80ee5bb8c7c8",
+          "title": "Instead of Homebrew, a Mac malware: Ukrainian QA engineer discovered malicious advertising on Google and analyzed the attack scheme - dev.ua",
+          "url": "https://dev.ua/en/news/google-reklamuvav-shkodochynne-pz-dlia-mac-pid-vyhliadom-homebrew-1791460427",
+          "url_resolved": true,
+          "source_name": "dev.ua",
+          "published_at": "2026-10-08T12:18:00+00:00",
+          "event_type": "security_incident",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_073",
+    "canonical_role": "IT Support Specialist",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_074",
+    "canonical_role": "Product Designer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 3,
+      "ai_adoption": 2
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "e6b839227ab1",
+          "title": "Ex-Palantir Founding Product Designer Jacopo Spina Opens AI Transformation Practice to New Companies - EIN News",
+          "url": "https://www.einnews.com/pr_news/945615879/ex-palantir-founding-product-designer-jacopo-spina-opens-ai-transformation-practice-to-new-companies",
+          "url_resolved": true,
+          "source_name": "EIN News",
+          "published_at": "2026-09-29T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "914ab71a7b2d",
+          "title": "How to Survive as a Product Designer in 2026–27 - Medium",
+          "url": "https://medium.com/design-bootcamp/how-to-survive-as-a-product-designer-in-2026-27-a54994da6bcd",
+          "url_resolved": true,
+          "source_name": "Medium",
+          "published_at": "2026-10-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "20844b926ac3",
+          "title": "UK-based Nigerian product designer, Adekunle expands portfolio across AI, Fintech, international markets - The Guardian Nigeria News",
+          "url": "https://guardian.ng/news/uk-based-nigerian-product-designer-adekunle-expands-portfolio-across-ai-fintech-international-markets/",
+          "url_resolved": true,
+          "source_name": "The Guardian Nigeria News",
+          "published_at": "2026-10-14T07:16:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "fb7bd659446f",
+          "title": "How Product Designer Zui Chen Designs Interfaces When AI Acts - dscene magazine",
+          "url": "https://www.designscene.net/2026/10/product-designer-zui-chen.html",
+          "url_resolved": true,
+          "source_name": "dscene magazine",
+          "published_at": "2026-10-15T08:43:37+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_075",
+    "canonical_role": "Engineering Manager",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 15,
+    "by_type": {
+      "general": 10,
+      "product_release": 2,
+      "ai_adoption": 2,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "01f61e8cd8a7",
+          "title": "BigCity Promotions appoints Jayakrishna Dasari as Head of Engineering - BMI",
+          "url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/bigcity-promotions-appoints-jayakrishna-dasari-as-head-of-engineering-12479347",
+          "url_resolved": true,
+          "source_name": "BMI",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "ca6c39cba0b9",
+          "title": "Bank of America hired the head of engineering for JPMorgan's blockchain arm - eFinancialCareers",
+          "url": "https://www.efinancialcareers.com/news/bank-of-america-hired-the-head-of-engineering-for-jp-morgan-s-blockchain-arm",
+          "url_resolved": true,
+          "source_name": "eFinancialCareers",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "de68ea2097ac",
+          "title": "Katoni Engineering Appoints Stuart Gray as Head of Engineering Delivery - Offshore Energies UK",
+          "url": "https://oeuk.org.uk/katoni-engineering-appoints-stuart-gray-as-head-of-engineering-delivery/",
+          "url_resolved": true,
+          "source_name": "Offshore Energies UK",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "f6c368e77a9a",
+          "title": "Synera Names Ben Hesseldieck Head of Engineering, Advances Agentic AI Vision for Global Product Manufacturing - Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20261001266558/synera-names-ben-hesseldieck-head-of-engineering-advances-agentic-ai-vision-for-global-product-manufacturing",
+          "url_resolved": true,
+          "source_name": "Morningstar",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "47c844056d9a",
+          "title": "Synera Names Ben Hesseldieck Head of Engineering to Scale Agentic AI Platform - citybiz",
+          "url": "https://www.citybiz.co/article/913026/synera-names-ben-hesseldieck-head-of-engineering-to-scale-agentic-ai-platform/",
+          "url_resolved": true,
+          "source_name": "citybiz",
+          "published_at": "2026-10-01T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "60fb66e1a91f",
+          "title": "From Staff Engineer to Engineering Manager: Avoiding the Transition Traps - Dice",
+          "url": "https://www.dice.com/career-advice/from-staff-engineer-to-engineering-manager-avoiding-the-transition-traps",
+          "url_resolved": true,
+          "source_name": "Dice",
+          "published_at": "2026-10-05T06:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_076",
+    "canonical_role": "Solutions Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 7,
+    "by_type": {
+      "general": 6,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "af915beb6d84",
+          "title": "Hitachi and Pronto partner to advance open mine autonomous solutions - Engineer Live",
+          "url": "https://engineerlive.com/hitachi-and-pronto-partner-to-advance-open-mine-autonomous-solutions/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "c740c9982924",
+          "title": "Sales Engineer Salary: Your 2026 Guide - Coursera",
+          "url": "https://www.coursera.org/articles/sales-engineer-salary",
+          "url_resolved": true,
+          "source_name": "Coursera",
+          "published_at": "2026-09-11T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "8274dbd3ca9f",
+          "title": "Insider Threat Awareness Month: Rethinking Risk in the Age of AI - Cybersecurity Insiders",
+          "url": "https://www.cybersecurity-insiders.com/insider-threat-awareness-month-rethinking-risk-in-the-age-of-ai/",
+          "url_resolved": true,
+          "source_name": "Cybersecurity Insiders",
+          "published_at": "2026-09-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "4e529066549c",
+          "title": "Unison appoints new technical sales engineer - Aerospace Manufacturing magazine",
+          "url": "https://www.aero-mag.com/unison-appoints-new-technical-sales-engineer",
+          "url_resolved": true,
+          "source_name": "Aerospace Manufacturing magazine",
+          "published_at": "2026-10-07T20:06:50+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "7fe794d3d436",
+          "title": "17 Companies Hiring Sales Engineers - Built In",
+          "url": "https://builtin.com/articles/companies-hiring-sales-engineers",
+          "url_resolved": true,
+          "source_name": "Built In",
+          "published_at": "2026-10-09T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "791c8d30cd36",
+          "title": "CERATIZIT adds technical sales engineer to support aerospace assembly tooling - Defense and Munitions",
+          "url": "https://www.defenseandmunitions.com/news/ceratizit-adds-technical-sales-engineer-to-support-aerospace-assembly-tooling-eric-rose/",
+          "url_resolved": true,
+          "source_name": "Defense and Munitions",
+          "published_at": "2026-10-16T06:30:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_077",
+    "canonical_role": "Solutions Architect",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 14,
+    "by_type": {
+      "general": 10,
+      "ai_adoption": 4
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "920d4fcbdf33",
+          "title": "Senior SAP Solution Architect – EAM, Logistics & Digital Platforms — Vattenfall - energynews.pro",
+          "url": "https://energynews.pro/en/jobs/senior-sap-solution-architect-eam-logistics-digital-platforms",
+          "url_resolved": true,
+          "source_name": "energynews.pro",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "7ac1abedf7d7",
+          "title": "Salesforce+ Create Smarter Agents: Unify Your Data with Salesforce & AWS - Salesforce",
+          "url": "https://www.salesforce.com/plus/experience/dreamforce_2026/series/data_360_-_activate_trusted_context_everywhere_at_dreamforce_2026/episode/episode-s1e3",
+          "url_resolved": true,
+          "source_name": "Salesforce",
+          "published_at": "2026-09-17T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "1af431bff276",
+          "title": "Certification updates from AWS Training and Certification: September 2026 | Amazon Web Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-01T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "e2e5daee3116",
+          "title": "Stop treating AWS like another data centre - ITWeb",
+          "url": "https://www.itweb.co.za/article/stop-treating-aws-like-another-data-centre/lLn147mQNy17J6Aa",
+          "url_resolved": true,
+          "source_name": "ITWeb",
+          "published_at": "2026-10-08T06:36:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "520a8ea92b66",
+          "title": "AdRem Systems Corporation to Bring IT, Cybersecurity and Compliance Expertise to 2026 NCBA Connect - Florida Today",
+          "url": "https://www.floridatoday.com/press-release/story/173264/adrem-systems-corporation-to-bring-it-cybersecurity-and-compliance-expertise-to-2026-ncba-connect/",
+          "url_resolved": true,
+          "source_name": "Florida Today",
+          "published_at": "2026-10-10T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_078",
+    "canonical_role": "Network Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 4
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "98a439c6de38",
+          "title": "Will AI Replace Network Engineers? - Built In",
+          "url": "https://builtin.com/articles/will-ai-replace-network-engineers",
+          "url_resolved": true,
+          "source_name": "Built In",
+          "published_at": "2026-09-22T14:57:37+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "ebb6aba30379",
+          "title": "HHS suicide, crisis lifeline needs cybersecurity improvements, watchdog finds - FedScoop",
+          "url": "https://fedscoop.com/hhs-suicide-crisis-cybersecurity-improvements-watchdog-988/",
+          "url_resolved": true,
+          "source_name": "FedScoop",
+          "published_at": "2026-09-22T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "e18f94013972",
+          "title": "GAO Flags Cybersecurity Weaknesses in HHS 988 Lifeline - ExecutiveGov",
+          "url": "https://www.executivegov.com/articles/gao-cybersecurity-hhs-988-lifeline",
+          "url_resolved": true,
+          "source_name": "ExecutiveGov",
+          "published_at": "2026-09-23T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "b78b068327b6",
+          "title": "Patricia Obo-Nai: From Network Engineer To Ghana’s First Female Telecom CEO - Brand Spur - Brand Spur",
+          "url": "https://brandspurng.com/2026/10/07/patricia-obo-nai-from-network-engineer-to-ghanas-first-female-telecom-ceo/",
+          "url_resolved": true,
+          "source_name": "Brand Spur",
+          "published_at": "2026-10-07T10:02:59+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_079",
+    "canonical_role": "Platform Engineer",
+    "months_covered": [
+      "2026-09"
+    ],
+    "total_items": 3,
+    "by_type": {
+      "product_release": 2,
+      "general": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "7aed85cd35f5",
+          "title": "Senior Agent Platform Engineer — Proxima Fusion - energynews.pro",
+          "url": "https://energynews.pro/en/jobs/senior-agent-platform-engineer-proxima-fusion-9417",
+          "url_resolved": true,
+          "source_name": "energynews.pro",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "18f0293c84f7",
+          "title": "Melexis unveils integrated current sensor platform - Engineer Live",
+          "url": "https://engineerlive.com/melexis-unveils-integrated-current-sensor-platform/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "5ba9cd3b7f14",
+          "title": "Outokumpu launches metal production platform - Engineer Live",
+          "url": "https://engineerlive.com/outokumpu-launches-metal-production-platform/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-09-30T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_080",
+    "canonical_role": "Technical Program Manager",
+    "months_covered": [
+      "2026-09"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "general": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "d3c7368580db",
+          "title": "A Conversation With Bismit Pratapsingh, Technical Program Manager, Enterprise AI & Transformation Leader - Outlook India",
+          "url": "https://www.outlookindia.com/hub4business/a-conversation-with-bismit-pratapsingh-technical-program-manager-enterprise-ai-transformation-leader",
+          "url_resolved": true,
+          "source_name": "Outlook India",
+          "published_at": "2026-09-24T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_081",
+    "canonical_role": "Salesforce Developer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 6,
+    "by_type": {
+      "general": 3,
+      "product_release": 1,
+      "hiring": 1,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "c49a3e116dce",
+          "title": "Salesforce Developer Career Path & Salary in 2026 - Jaro Education",
+          "url": "https://www.jaroeducation.com/blog/salesforce-developer-career",
+          "url_resolved": true,
+          "source_name": "Jaro Education",
+          "published_at": "2026-09-07T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "8a11ff43db93",
+          "title": "Per Scholas Launches Innovative New Salesforce AI Fellowship Pilot - PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/per-scholas-launches-innovative-new-salesforce-ai-fellowship-pilot-302874656.html",
+          "url_resolved": true,
+          "source_name": "PR Newswire",
+          "published_at": "2026-09-10T07:00:00+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "5746852106d1",
+          "title": "Beyond CPQ: Migrate from CPQ to Revenue Cloud Advanced - Salesforce",
+          "url": "https://www.salesforce.com/plus/experience/dreamforce_2026/series/sales_at_dreamforce_2026/episode/episode-s1e16",
+          "url_resolved": true,
+          "source_name": "Salesforce",
+          "published_at": "2026-09-15T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "92e11e1c9e9b",
+          "title": "AI Agents Don’t Live with Disabilities. People Do - Salesforce",
+          "url": "https://www.salesforce.com/blog/accessible-ai-experiences/",
+          "url_resolved": true,
+          "source_name": "Salesforce",
+          "published_at": "2026-10-09T15:57:22+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "e37c7dfef688",
+          "title": "Salesforce Turns Agentforce On by Default: What IT Teams Must Audit Today - Tech Times",
+          "url": "https://www.techtimes.com/articles/328922/20261013/salesforce-turns-agentforce-default-what-it-teams-must-audit-today.htm",
+          "url_resolved": true,
+          "source_name": "Tech Times",
+          "published_at": "2026-10-13T05:35:08+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_082",
+    "canonical_role": "ServiceNow Developer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 2,
+      "hiring": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "3dc6e2fb1a1d",
+          "title": "The $400 Million Admin Tool - Salesforce Devops by Vernon Keenan",
+          "url": "https://salesforcedevops.net/index.php/2026/09/08/the-400-million-admin-tool/",
+          "url_resolved": true,
+          "source_name": "Salesforce Devops by Vernon Keenan",
+          "published_at": "2026-09-08T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        },
+        {
+          "evidence_id": "9a4e00622472",
+          "title": "Automate RCA across ServiceNow, Dynatrace and Slack with AWS DevOps Agent - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com/blogs/mt/automate-rca-across-servicenow-dynatrace-and-slack-with-aws-devops-agent/",
+          "url_resolved": true,
+          "source_name": "Amazon Web Services (AWS)",
+          "published_at": "2026-09-29T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.6
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "192b32cb93c6",
+          "title": "How to Advance Your ServiceNow Developer Career - NowBen",
+          "url": "https://nowben.com/how-to-advance-your-servicenow-developer-career/",
+          "url_resolved": true,
+          "source_name": "NowBen",
+          "published_at": "2026-10-09T15:57:46+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "21be460af165",
+          "title": "Top 5 Brazil Release Features for ServiceNow Developers - NowBen",
+          "url": "https://nowben.com/top-5-brazil-release-features-for-servicenow-developers/",
+          "url_resolved": true,
+          "source_name": "NowBen",
+          "published_at": "2026-10-09T15:57:46+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_083",
+    "canonical_role": "Embedded Software Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 5,
+    "by_type": {
+      "general": 4,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "f2bfd1dc3941",
+          "title": "Humanoid Robotics: Deterministic Motion Control & Edge AI Systems - All About Circuits",
+          "url": "https://www.allaboutcircuits.com/industry-webinars/humanoid-robotics-deterministic-motion-control-edge-ai-systems/",
+          "url_resolved": true,
+          "source_name": "All About Circuits",
+          "published_at": "2026-09-01T11:51:17+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "97b4805b5978",
+          "title": "OpenAI Posts $500K Robotics Salaries to Fund Data Factory Behind Its Robot Comeback - Tech Times",
+          "url": "https://www.techtimes.com/articles/327751/20260920/openai-posts-500k-robotics-salaries-fund-data-factory-behind-its-robot-comeback.htm",
+          "url_resolved": true,
+          "source_name": "Tech Times",
+          "published_at": "2026-09-20T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        },
+        {
+          "evidence_id": "f2e2418506ed",
+          "title": "Raspberry Pi locks boards to factory RAM capacities in firmware — engineer tells DIY modders 'don't waste your time' trying repairs or upgrades, company cites shady reseller scams - Tom's Hardware",
+          "url": "https://www.tomshardware.com/raspberry-pi/raspberry-pi-locks-boards-to-factory-ram-capacities-in-firmware-engineer-tells-diy-modders-dont-waste-your-time-trying-repairs-or-upgrades-company-cites-shady-reseller-scams",
+          "url_resolved": true,
+          "source_name": "Tom's Hardware",
+          "published_at": "2026-09-22T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "bea14a9fc0ca",
+          "title": "Embedded technology: The intelligence behind electronics and the careers of tomorrow - Manufacturing Today India",
+          "url": "https://www.manufacturingtodayindia.com/embedded-technology-transformation",
+          "url_resolved": true,
+          "source_name": "Manufacturing Today India",
+          "published_at": "2026-10-13T06:06:56+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_084",
+    "canonical_role": "Cybersecurity Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 39,
+    "by_type": {
+      "general": 30,
+      "hiring": 5,
+      "security_incident": 2,
+      "ai_adoption": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "c80e4a757794",
+          "title": "Tech Trivia with Adenuga Eniola, Cybersecurity Analyst at First Bank - Technext24.com",
+          "url": "https://technext24.com/women-in-tech/tech-trivia-eniola-adenuga-first-bank/",
+          "url_resolved": true,
+          "source_name": "Technext24.com",
+          "published_at": "2026-09-07T19:16:19+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "c3b0b8dbea6e",
+          "title": "How to Become a Cybersecurity Engineer in 2026 - University of North Dakota",
+          "url": "https://und.edu/blog/how-to-become-a-cybersecurity-engineer.html",
+          "url_resolved": true,
+          "source_name": "University of North Dakota",
+          "published_at": "2026-09-09T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "afb764d11587",
+          "title": "Kotori Technologies Welcomes Jonathan Floyd as Cybersecurity Analyst - EIN News",
+          "url": "https://www.einnews.com/pr_news/946417769/kotori-technologies-welcomes-jonathan-floyd-as-cybersecurity-analyst",
+          "url_resolved": true,
+          "source_name": "EIN News",
+          "published_at": "2026-09-30T17:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "7608b612c50a",
+          "title": "Allan Juma, Lead Cybersecurity Engineer At ESET: Protecting The AI Risk From Within - https://newstrends.co.ke/",
+          "url": "https://newstrends.co.ke/allan-juma-lead-cybersecurity-engineer-at-eset-protecting-the-ai-risk-from-within/",
+          "url_resolved": true,
+          "source_name": "https://newstrends.co.ke/",
+          "published_at": "2026-10-04T05:03:01+00:00",
+          "event_type": "general",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "89282d7a30d9",
+          "title": "Benin: ANIP recruits six data verification agents and one cybersecurity analyst - Bénin Web TV",
+          "url": "https://beninwebtv.bj/en/benin-anip-recruits-six-data-verification-agents-and-one-cybersecurity-analyst/",
+          "url_resolved": true,
+          "source_name": "Bénin Web TV",
+          "published_at": "2026-10-09T08:10:15+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        },
+        {
+          "evidence_id": "69319a76578f",
+          "title": "Benin: ANIP recruits six data verifiers and one cybersecurity analyst - beninwebtv.com",
+          "url": "https://beninwebtv.com/en/benin-anip-recruits-six-data-verifiers-and-one-cybersecurity-analyst/",
+          "url_resolved": true,
+          "source_name": "beninwebtv.com",
+          "published_at": "2026-10-09T11:23:24+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.75
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_085",
+    "canonical_role": "IT Operations Specialist",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 24,
+    "by_type": {
+      "general": 21,
+      "hiring": 1,
+      "security_incident": 1,
+      "product_release": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "609c53894958",
+          "title": "From IT engineer to 8 million subscribers to Bigg Boss 20: Nitish Rajput's unlikely YouTube journey - ET Now",
+          "url": "https://www.etnownews.com/entertainment/nitish-rajput-from-it-engineer-to-8-million-subscribers-to-bigg-boss-20-the-unlikely-journey-of-the-youtuber-article-156036324",
+          "url_resolved": true,
+          "source_name": "ET Now",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "392706ea41b6",
+          "title": "American IT engineer fluent in Vietnamese stunned by Vietnam’s beauty - Báo VietNamNet",
+          "url": "https://vietnamnet.vn/en/american-it-engineer-fluent-in-vietnamese-stunned-by-vietnam-s-beauty-2547916.html",
+          "url_resolved": true,
+          "source_name": "Báo VietNamNet",
+          "published_at": "2026-09-05T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "c62dca0dcb93",
+          "title": "How an IT engineer used AI to aid Nepal’s flood response - The Kathmandu Post",
+          "url": "https://kathmandupost.com/national/2026/09/06/how-an-it-engineer-used-ai-to-aid-nepal-s-flood-response",
+          "url_resolved": true,
+          "source_name": "The Kathmandu Post",
+          "published_at": "2026-09-06T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "3be29cc1eb70",
+          "title": "Indian IT engineer in Abu Dhabi gets birthday surprise with Dh25,000 Big Ticket win - Gulf News",
+          "url": "https://gulfnews.com/uae/indian-it-engineer-in-abu-dhabi-gets-birthday-surprise-with-dh25000-big-ticket-win-1.500696191",
+          "url_resolved": true,
+          "source_name": "Gulf News",
+          "published_at": "2026-10-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "4e679e307305",
+          "title": "Risotto launches an ‘Autonomous IT Engineer’ for complex IT tickets - The Next Web",
+          "url": "https://thenextweb.com/news/risotto-autonomous-it-engineer-tier-2-it-tickets",
+          "url_resolved": true,
+          "source_name": "The Next Web",
+          "published_at": "2026-10-05T20:57:20+00:00",
+          "event_type": "product_release",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "afcc58e8db86",
+          "title": "Former IT Engineer Allegedly Hacked Employer’s Network and Demanded $750,000 Bitcoin Ransom - Cyber Press",
+          "url": "https://cyberpress.org/former-it-engineer-allegedly-hacked-employers-network/",
+          "url_resolved": true,
+          "source_name": "Cyber Press",
+          "published_at": "2026-10-06T09:24:46+00:00",
+          "event_type": "security_incident",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_086",
+    "canonical_role": "SAP Consultant",
+    "months_covered": [],
+    "total_items": 0,
+    "by_type": {},
+    "top_items": {}
+  },
+  {
+    "role_id": "role_087",
+    "canonical_role": "Product Owner",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 4,
+    "by_type": {
+      "general": 3,
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "aa64c34f2ba7",
+          "title": "Skymerse: former Flightradar24 API product owner builds flight-operations AI - Dealroom",
+          "url": "https://app.dealroom.co/news/note/skymerse-former-flightradar24-api-product-owner-builds-flight-operations-ai",
+          "url_resolved": true,
+          "source_name": "Dealroom",
+          "published_at": "2026-09-11T09:37:02+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "f5ccc77925ae",
+          "title": "Secure Web Connectivity Product Owner (m/f/d) — Liebherr Mining - energynews.pro",
+          "url": "https://energynews.pro/en/jobs/secure-web-connectivity-product-owner-m-f-d",
+          "url_resolved": true,
+          "source_name": "energynews.pro",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "930422e28f1d",
+          "title": "End-to-end Agentic DevOps with GitHub Copilot on brownfield and on-prem product development - Tieto",
+          "url": "https://www.tieto.com/en/insights/2026/agentic-devops-with-github-copilot/",
+          "url_resolved": true,
+          "source_name": "Tieto",
+          "published_at": "2026-09-23T10:45:01+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "06c35983b240",
+          "title": "The AI-Augmented product owner: Modernizing your product workflows | Technology News\n(HT Tech) - Hindustan Times",
+          "url": "https://www.hindustantimes.com/technology/the-ai-augmented-product-owner-modernizing-your-product-workflows-101791391574545.html",
+          "url_resolved": true,
+          "source_name": "Hindustan Times",
+          "published_at": "2026-10-07T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_088",
+    "canonical_role": "Enterprise Platform Developer",
+    "months_covered": [
+      "2026-09"
+    ],
+    "total_items": 1,
+    "by_type": {
+      "ai_adoption": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "2641cc18afab",
+          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment - Microsoft Azure",
+          "url": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
+          "url_resolved": true,
+          "source_name": "Microsoft Azure",
+          "published_at": "2026-09-03T07:00:00+00:00",
+          "event_type": "ai_adoption",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_089",
+    "canonical_role": "Systems Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 10,
+    "by_type": {
+      "general": 6,
+      "hiring": 2,
+      "security_incident": 1,
+      "funding": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "f80add415200",
+          "title": "KZN municipal IT manager’s pension frozen over R5m software tender - The Citizen",
+          "url": "https://www.citizen.co.za/news/kzn-it-manager-pension-frozen-5-million-software-tender/",
+          "url_resolved": true,
+          "source_name": "The Citizen",
+          "published_at": "2026-09-02T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "74c5458b80b5",
+          "title": "SIU freezes former municipal IT manager’s pension over R5.27 million fraudulent software tender - Post",
+          "url": "https://thepost.co.za/news/crime-and-courts/2026-09-02-siu-freezes-former-municipal-it-managers-pension-over-r527-million-fraudulent-software-tender/",
+          "url_resolved": true,
+          "source_name": "Post",
+          "published_at": "2026-09-08T12:01:34+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "503ec33fa6b1",
+          "title": "ADIPEC 2026 to mobilise investment in resilient, intelligent energy systems - Engineer Live",
+          "url": "https://engineerlive.com/adipec-2026-to-mobilise-investment-in-resilient-intelligent-energy-systems/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-09-18T07:00:00+00:00",
+          "event_type": "funding",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "49f67317bf69",
+          "title": "Career moves that turn IT managers into business leaders - TechTarget",
+          "url": "https://www.techtarget.com/it-strategy/feature/Career-moves-that-turn-IT-managers-into-business-leaders",
+          "url_resolved": true,
+          "source_name": "TechTarget",
+          "published_at": "2026-10-02T07:00:00+00:00",
+          "event_type": "hiring",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "7318f9973eca",
+          "title": "New Omnivision GS HDR sensor advances next-gen industrial vision systems - Engineer Live",
+          "url": "https://engineerlive.com/new-omnivision-gs-hdr-sensor-advances-next-gen-industrial-vision-systems/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-10-06T14:15:30+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "21ec5b2bc490",
+          "title": "Securing Critical Infrastructure Starts With Skilled Cybersecurity Pros - Dice",
+          "url": "https://www.dice.com/career-advice/securing-critical-infrastructure-starts-with-skilled-cybersecurity-pros",
+          "url_resolved": true,
+          "source_name": "Dice",
+          "published_at": "2026-10-14T06:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.55
+        }
+      ]
+    }
+  },
+  {
+    "role_id": "role_090",
+    "canonical_role": "Product Engineer",
+    "months_covered": [
+      "2026-09",
+      "2026-10"
+    ],
+    "total_items": 11,
+    "by_type": {
+      "general": 10,
+      "hiring": 1
+    },
+    "top_items": {
+      "2026-09": [
+        {
+          "evidence_id": "82b5fb2eeebc",
+          "title": "Side hustle to startup: How one design engineer turned 3D printing into a business - Design World",
+          "url": "https://www.designworldonline.com/side-hustle-to-startup-how-one-design-engineer-turned-3d-printing-into-a-business/",
+          "url_resolved": true,
+          "source_name": "Design World",
+          "published_at": "2026-09-16T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "af29d28bdf24",
+          "title": "EB-2 NIW Case Study: Approval for a Semiconductor Design Engineer from India - The National Law Review",
+          "url": "https://natlawreview.com/article/eb-2-niw-case-study-approval-semiconductor-design-engineer-india",
+          "url_resolved": true,
+          "source_name": "The National Law Review",
+          "published_at": "2026-09-22T13:21:42+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "3ac38468c5d4",
+          "title": "How Air.inc Runs Outbound as a State Machine | Tom Bonagura, GTM Engineer - YouTube",
+          "url": "https://youtu.be/xcmKswWJSY0?is=71YF1RF18vH98n28",
+          "url_resolved": true,
+          "source_name": "YouTube",
+          "published_at": "2026-09-24T07:00:00+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ],
+      "2026-10": [
+        {
+          "evidence_id": "37cb757d85bd",
+          "title": "STEP Fusion reveals new next-gen power plant design - Engineer Live",
+          "url": "https://engineerlive.com/step-fusion-reveals-new-next-gen-power-plant-design/",
+          "url_resolved": true,
+          "source_name": "Engineer Live",
+          "published_at": "2026-10-06T10:19:14+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        },
+        {
+          "evidence_id": "a5973ea36a13",
+          "title": "Tokyo Design Engineer Carlos Lastres Explains Why the City That Coined the Role Has So Few - USA Today",
+          "url": "https://www.usatoday.com/press-release/story/48552/tokyo-design-engineer-carlos-lastres-explains-why-the-city-that-coined-the-role-has-so-few/",
+          "url_resolved": true,
+          "source_name": "USA Today",
+          "published_at": "2026-10-10T12:28:51+00:00",
+          "event_type": "general",
+          "relevance_score": 0.7
+        }
+      ]
+    }
+  }
+]

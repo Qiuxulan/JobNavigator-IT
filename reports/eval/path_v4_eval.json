@@ -1,0 +1,68 @@
+{
+ "v3": {
+  "paths": 297,
+  "personalization": {
+   "jaccard_distance_mean": 0.2606,
+   "jaccard_distance_median": 0.2308,
+   "order_distance_mean": 0.001
+  },
+  "total_hours": {
+   "n": 297,
+   "mean": 441.8148,
+   "median": 437,
+   "p25": 275,
+   "p75": 598
+  },
+  "resource_mount_rate": 1.0,
+  "zpd_violation_rate_mean": 0.2653,
+  "target_coverage_mean": 0.9099,
+  "avg_prereq_depth": 4.599
+ },
+ "v4": {
+  "paths": 297,
+  "personalization": {
+   "jaccard_distance_mean": 0.2379,
+   "jaccard_distance_median": 0.2222,
+   "order_distance_mean": 0.3432
+  },
+  "total_hours": {
+   "n": 297,
+   "mean": 115.5522,
+   "median": 112,
+   "p25": 51,
+   "p75": 156
+  },
+  "resource_mount_rate": 1.0,
+  "zpd_violation_rate_mean": 0.1734,
+  "target_coverage_mean": 0.9072,
+  "avg_prereq_depth": 3.953
+ },
+ "paired_t": {
+  "n_roles": 99,
+  "mean_diff_v4_minus_v3": -0.0227,
+  "t_stat": -2.3432,
+  "p_value": 0.019121,
+  "conclusion": "集合 Jaccard 差异不显著(岗位目标集主导,见顺序不一致度)"
+ },
+ "personalization_order": {
+  "v3_order_distance_mean": 0.001,
+  "v4_order_distance_mean": 0.3432,
+  "paired_t": {
+   "n_roles": 99,
+   "mean_diff_v4_minus_v3": 0.3422,
+   "t_stat": 13.8914,
+   "p_value": 0.0,
+   "conclusion": "v4 排序个性化显著优于 v3"
+  }
+ },
+ "graph": {
+  "v4_edge_count": 443,
+  "v4_coverage": 0.9356,
+  "v4_cycles_broken": 2,
+  "v4_is_dag": true,
+  "llm_v3_agreement_rate": 0.6196,
+  "overlap_rate_vs_v3": 1.0,
+  "llm_api_calls": 365,
+  "llm_cost_yuan": 2.16
+ }
+}

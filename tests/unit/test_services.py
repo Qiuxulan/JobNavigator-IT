@@ -9,7 +9,11 @@ from app.services.path_planner import PathPlannerService
 from app.services.recommender import RecommenderService
 from app.services.report_generator import build_report_messages
 
-_ROLES_JSON = "data/gold/fine_grained_roles_v1.json"
+_ROLES_JSON = (
+    "data/gold/fine_grained_roles_v2.json"
+    if os.path.exists("data/gold/fine_grained_roles_v2.json")
+    else "data/gold/fine_grained_roles_v1.json"
+)
 _needs_roles = pytest.mark.skipif(
     not os.path.exists(_ROLES_JSON),
     reason=f"missing roles json: {_ROLES_JSON}",

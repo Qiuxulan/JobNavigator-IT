@@ -31,11 +31,19 @@ class JobRole(BaseModel):
     required_skills: list[str] = Field(default_factory=list)
 
 
+class SkillTransferableItem(BaseModel):
+    known_skill: str
+    target_skill: str
+    category: Optional[str] = None
+
+
 class SkillGap(BaseModel):
     missing_skills: list[str] = Field(default_factory=list)
     overlap_skills: list[str] = Field(default_factory=list)
     # B 模块精排产出:加分技能(命中可加分,但不计入缺口,仅用于展示/解释)
     optional_skills: list[str] = Field(default_factory=list)
+    # v3:已知技能 -> 可迁移目标技能(同 category 且 level 相近)
+    transferable: Optional[list[SkillTransferableItem]] = None
 
 
 class RecommendationItem(BaseModel):
@@ -47,6 +55,9 @@ class RecommendationItem(BaseModel):
     trend_reward_score: float
     explanation: str
     skill_gap: SkillGap
+    # matching v5(2026-11-06):分数校准后的置信度标签(high/medium/low),
+    # 可选字段,旧前端不受影响。
+    confidence: Optional[str] = None
 
 
 class LearningResource(BaseModel):
@@ -55,6 +66,12 @@ class LearningResource(BaseModel):
     url: str
     provider: str
     level: Literal["beginner", "intermediate", "advanced"] = "beginner"
+    # v3 资源库扩展字段(可选,兼容旧序列化)
+    difficulty: Optional[str] = None
+    hours_estimate: Optional[float] = None
+    language: Optional[str] = None
+    quality_score: Optional[float] = None
+    source: Optional[str] = None
 
 
 class LearningPathStep(BaseModel):
@@ -92,6 +109,11 @@ class TrendSignal(BaseModel):
     main_factors: list[str] = Field(default_factory=list)
     evidence: list[TrendEvidence] = Field(default_factory=list)
     monthly_forecast: list[dict[str, Any]] = Field(default_factory=list)
+    # v2 资产溯源字段（可选，旧数据缺失时为 None）
+    model_used: Optional[str] = None
+    backtest_smape: Optional[float] = None
+    direction_accuracy: Optional[float] = None
+    sparse: Optional[bool] = None
 
 
 class CoarseMatch(BaseModel):
@@ -106,3 +128,13 @@ class CareerRankedResult(BaseModel):
     score_breakdown: dict[str, float] = Field(default_factory=dict)
     skill_gap: SkillGap
     path: LearningPath
+
+
+class RolePathAnalysis(BaseModel):
+    role: dict[str, Any]
+    semantic_score: float
+    role_score: float
+    score_breakdown: dict[str, float]
+    skill_gap: SkillGap
+    path: LearningPath
+    formula_version: str = "v3"

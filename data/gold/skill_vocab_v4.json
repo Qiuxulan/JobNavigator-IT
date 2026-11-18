@@ -1,0 +1,1634 @@
+{
+  "version": "4",
+  "generated_at": "2026-11-06T19:51:01Z",
+  "source": "skill_vocab_candidates_v3 LLM review (keep=true)",
+  "num_skills": 161,
+  "num_aliases": 407,
+  "stats": {
+    "skipped_already_covered_or_no_alias": 11,
+    "dropped_aliases": 180
+  },
+  "skills": {
+    "microsoft-powerpoint": {
+      "aliases": [
+        "microsoft powerpoint",
+        "powerpoint",
+        "ms powerpoint",
+        "ppt"
+      ],
+      "category": "tool"
+    },
+    "microsoft-access": {
+      "aliases": [
+        "microsoft access",
+        "ms access"
+      ],
+      "category": "database"
+    },
+    "microsoft-visio": {
+      "aliases": [
+        "microsoft visio",
+        "ms visio",
+        "visio"
+      ],
+      "category": "tool"
+    },
+    "microsoft-project": {
+      "aliases": [
+        "microsoft project",
+        "ms project"
+      ],
+      "category": "tool"
+    },
+    "microsoft-sharepoint": {
+      "aliases": [
+        "microsoft sharepoint",
+        "sharepoint",
+        "ms sharepoint"
+      ],
+      "category": "platform"
+    },
+    "splunk-enterprise": {
+      "aliases": [
+        "splunk enterprise",
+        "splunk"
+      ],
+      "category": "platform"
+    },
+    "microsoft-visual-basic": {
+      "aliases": [
+        "microsoft visual basic",
+        "visual basic",
+        "vb",
+        "vb6"
+      ],
+      "category": "language"
+    },
+    "microsoft-windows": {
+      "aliases": [
+        "microsoft windows",
+        "windows"
+      ],
+      "category": "os"
+    },
+    "microsoft-word": {
+      "aliases": [
+        "microsoft word",
+        "ms word"
+      ],
+      "category": "tool"
+    },
+    "microsoft-visual-studio": {
+      "aliases": [
+        "microsoft visual studio",
+        "visual studio"
+      ],
+      "category": "tool"
+    },
+    "microsoft-windows-server": {
+      "aliases": [
+        "microsoft windows server",
+        "windows server"
+      ],
+      "category": "os"
+    },
+    "apache-tomcat": {
+      "aliases": [
+        "apache tomcat",
+        "tomcat"
+      ],
+      "category": "platform"
+    },
+    "apple-macos": {
+      "aliases": [
+        "apple macos",
+        "macos",
+        "mac os",
+        "osx",
+        "os x"
+      ],
+      "category": "os"
+    },
+    "microsoft-active-server-pages-asp": {
+      "aliases": [
+        "microsoft active server pages asp",
+        "asp",
+        "active server pages"
+      ],
+      "category": "framework"
+    },
+    "microsoft-outlook": {
+      "aliases": [
+        "microsoft outlook",
+        "outlook",
+        "ms outlook"
+      ],
+      "category": "tool"
+    },
+    "eclipse-ide": {
+      "aliases": [
+        "eclipse ide",
+        "eclipse"
+      ],
+      "category": "tool"
+    },
+    "adobe-acrobat": {
+      "aliases": [
+        "adobe acrobat",
+        "acrobat"
+      ],
+      "category": "tool"
+    },
+    "apache-subversion-svn": {
+      "aliases": [
+        "apache subversion svn",
+        "subversion",
+        "svn"
+      ],
+      "category": "tool"
+    },
+    "puppet": {
+      "aliases": [
+        "puppet",
+        "puppet labs"
+      ],
+      "category": "devops"
+    },
+    "ajax": {
+      "aliases": [
+        "ajax",
+        "ajax framework"
+      ],
+      "category": "framework"
+    },
+    "chef": {
+      "aliases": [
+        "chef"
+      ],
+      "category": "devops"
+    },
+    "microsoft-visual-basic-for-applications-vba": {
+      "aliases": [
+        "microsoft visual basic for applications vba",
+        "vba",
+        "visual basic for applications"
+      ],
+      "category": "language"
+    },
+    "apache-maven": {
+      "aliases": [
+        "apache maven",
+        "maven"
+      ],
+      "category": "tool"
+    },
+    "google-analytics": {
+      "aliases": [
+        "google analytics",
+        "ga"
+      ],
+      "category": "tool"
+    },
+    "epic-systems": {
+      "aliases": [
+        "epic systems",
+        "epic"
+      ],
+      "category": "platform"
+    },
+    "adobe-photoshop": {
+      "aliases": [
+        "adobe photoshop",
+        "photoshop"
+      ],
+      "category": "tool"
+    },
+    "red-hat-openshift": {
+      "aliases": [
+        "red hat openshift",
+        "openshift"
+      ],
+      "category": "platform"
+    },
+    "microsoft-active-directory": {
+      "aliases": [
+        "microsoft active directory",
+        "active directory"
+      ],
+      "category": "platform"
+    },
+    "servicenow": {
+      "aliases": [
+        "servicenow"
+      ],
+      "category": "platform"
+    },
+    "adobe-illustrator": {
+      "aliases": [
+        "adobe illustrator",
+        "illustrator"
+      ],
+      "category": "tool"
+    },
+    "adobe-creative-cloud-software": {
+      "aliases": [
+        "adobe creative cloud software",
+        "adobe creative cloud",
+        "creative cloud"
+      ],
+      "category": "platform"
+    },
+    "microsoft-teams": {
+      "aliases": [
+        "microsoft teams",
+        "ms teams"
+      ],
+      "category": "tool"
+    },
+    "autodesk-autocad": {
+      "aliases": [
+        "autodesk autocad",
+        "autocad"
+      ],
+      "category": "tool"
+    },
+    "google-docs": {
+      "aliases": [
+        "google docs"
+      ],
+      "category": "tool"
+    },
+    "marketo-marketing-automation": {
+      "aliases": [
+        "marketo marketing automation",
+        "marketo"
+      ],
+      "category": "platform"
+    },
+    "slack": {
+      "aliases": [
+        "slack"
+      ],
+      "category": "tool"
+    },
+    "adobe-indesign": {
+      "aliases": [
+        "adobe indesign",
+        "indesign"
+      ],
+      "category": "tool"
+    },
+    "border-gateway-protocol-bgp": {
+      "aliases": [
+        "border gateway protocol bgp",
+        "bgp",
+        "border gateway protocol"
+      ],
+      "category": "protocol"
+    },
+    "trimble-sketchup-pro": {
+      "aliases": [
+        "trimble sketchup pro",
+        "sketchup",
+        "sketchup pro"
+      ],
+      "category": "tool"
+    },
+    "adobe-after-effects": {
+      "aliases": [
+        "adobe after effects",
+        "after effects"
+      ],
+      "category": "tool"
+    },
+    "autodesk-revit": {
+      "aliases": [
+        "autodesk revit",
+        "revit"
+      ],
+      "category": "tool"
+    },
+    "ibm-websphere-mq": {
+      "aliases": [
+        "ibm websphere mq",
+        "websphere mq"
+      ],
+      "category": "platform"
+    },
+    "meditech-software": {
+      "aliases": [
+        "meditech software",
+        "meditech"
+      ],
+      "category": "platform"
+    },
+    "bentley-microstation": {
+      "aliases": [
+        "bentley microstation",
+        "microstation"
+      ],
+      "category": "tool"
+    },
+    "informatica-software": {
+      "aliases": [
+        "informatica software",
+        "informatica"
+      ],
+      "category": "platform"
+    },
+    "dassault-systemes-solidworks": {
+      "aliases": [
+        "dassault systemes solidworks",
+        "solidworks"
+      ],
+      "category": "tool"
+    },
+    "microsoft-team-foundation-server": {
+      "aliases": [
+        "microsoft team foundation server",
+        "team foundation server",
+        "tfs"
+      ],
+      "category": "tool"
+    },
+    "alteryx-software": {
+      "aliases": [
+        "alteryx software",
+        "alteryx"
+      ],
+      "category": "tool"
+    },
+    "microsoft-power-platform-software": {
+      "aliases": [
+        "microsoft power platform software",
+        "microsoft power platform",
+        "power platform"
+      ],
+      "category": "platform"
+    },
+    "wordpress": {
+      "aliases": [
+        "wordpress",
+        "wordpress cms"
+      ],
+      "category": "platform"
+    },
+    "zoom": {
+      "aliases": [
+        "zoom",
+        "zoom meetings"
+      ],
+      "category": "tool"
+    },
+    "apple-safari": {
+      "aliases": [
+        "apple safari",
+        "safari"
+      ],
+      "category": "tool"
+    },
+    "google-sheets": {
+      "aliases": [
+        "google sheets",
+        "sheets"
+      ],
+      "category": "tool"
+    },
+    "google-workspace": {
+      "aliases": [
+        "google workspace",
+        "g suite",
+        "gsuite",
+        "google workspace software"
+      ],
+      "category": "platform"
+    },
+    "microsoft-power-automate": {
+      "aliases": [
+        "microsoft power automate",
+        "power automate"
+      ],
+      "category": "tool"
+    },
+    "mozilla-firefox": {
+      "aliases": [
+        "mozilla firefox",
+        "firefox"
+      ],
+      "category": "tool"
+    },
+    "eclinicalworks": {
+      "aliases": [
+        "eclinicalworks",
+        "eclinicalworks ehr"
+      ],
+      "category": "platform"
+    },
+    "workday": {
+      "aliases": [
+        "workday",
+        "workday software"
+      ],
+      "category": "platform"
+    },
+    "yardi": {
+      "aliases": [
+        "yardi",
+        "yardi software"
+      ],
+      "category": "platform"
+    },
+    "mitre-att-ck": {
+      "aliases": [
+        "mitre att&ck",
+        "att&ck",
+        "mitre attack"
+      ],
+      "category": "framework"
+    },
+    "tenable-nessus": {
+      "aliases": [
+        "tenable nessus",
+        "nessus"
+      ],
+      "category": "tool"
+    },
+    "adobe-xd": {
+      "aliases": [
+        "adobe xd",
+        "xd"
+      ],
+      "category": "tool"
+    },
+    "autodesk-maya": {
+      "aliases": [
+        "autodesk maya",
+        "maya"
+      ],
+      "category": "tool"
+    },
+    "autodesk-navisworks": {
+      "aliases": [
+        "autodesk navisworks",
+        "navisworks"
+      ],
+      "category": "tool"
+    },
+    "drupal": {
+      "aliases": [
+        "drupal"
+      ],
+      "category": "platform"
+    },
+    "emass": {
+      "aliases": [
+        "emass"
+      ],
+      "category": "tool"
+    },
+    "magellan-firmware": {
+      "aliases": [
+        "magellan firmware",
+        "magellan"
+      ],
+      "category": "tool"
+    },
+    "metasploit": {
+      "aliases": [
+        "metasploit",
+        "metasploit framework"
+      ],
+      "category": "tool"
+    },
+    "navisworks-jetstream": {
+      "aliases": [
+        "navisworks jetstream",
+        "jetstream"
+      ],
+      "category": "tool"
+    },
+    "nmap": {
+      "aliases": [
+        "nmap"
+      ],
+      "category": "tool"
+    },
+    "burp-suite": {
+      "aliases": [
+        "burp suite",
+        "burpsuite",
+        "portswigger burp suite"
+      ],
+      "category": "tool"
+    },
+    "qualys-cloud-platform": {
+      "aliases": [
+        "qualys cloud platform",
+        "qualys"
+      ],
+      "category": "platform"
+    },
+    "rockware-arcmap": {
+      "aliases": [
+        "rockware arcmap",
+        "arcmap"
+      ],
+      "category": "tool"
+    },
+    "spice": {
+      "aliases": [
+        "spice",
+        "simulation program with integrated circuit emphasis"
+      ],
+      "category": "tool"
+    },
+    "single-sign-on": {
+      "aliases": [
+        "single sign-on",
+        "sso"
+      ],
+      "category": "method"
+    },
+    "systemverilog": {
+      "aliases": [
+        "systemverilog",
+        "system verilog"
+      ],
+      "category": "language"
+    },
+    "testng": {
+      "aliases": [
+        "testng"
+      ],
+      "category": "framework"
+    },
+    "tcl": {
+      "aliases": [
+        "tcl",
+        "tool command language"
+      ],
+      "category": "language"
+    },
+    "verilog": {
+      "aliases": [
+        "verilog"
+      ],
+      "category": "language"
+    },
+    "cloud-automation": {
+      "aliases": [
+        "cloud automation",
+        "automate cloud tasks",
+        "automation of cloud tasks"
+      ],
+      "category": "devops"
+    },
+    "automation-technology": {
+      "aliases": [
+        "automation technology",
+        "automation technologies",
+        "control systems",
+        "control systems technology"
+      ],
+      "category": "other"
+    },
+    "predictive-modeling": {
+      "aliases": [
+        "predictive modeling",
+        "build predictive models",
+        "predictive models",
+        "construct predictive models"
+      ],
+      "category": "ai"
+    },
+    "building-automation": {
+      "aliases": [
+        "building automation",
+        "building management system",
+        "bas",
+        "building automation system"
+      ],
+      "category": "other"
+    },
+    "cad-software": {
+      "aliases": [
+        "cad software",
+        "cad",
+        "cadd software",
+        "computer assisted design"
+      ],
+      "category": "tool"
+    },
+    "codenvy": {
+      "aliases": [
+        "codenvy"
+      ],
+      "category": "tool"
+    },
+    "debug-software": {
+      "aliases": [
+        "debug software",
+        "debugging",
+        "software debugging"
+      ],
+      "category": "method"
+    },
+    "decentralized-application-frameworks": {
+      "aliases": [
+        "decentralized application frameworks",
+        "dapp frameworks",
+        "decentralized app frameworks"
+      ],
+      "category": "framework"
+    },
+    "define-software-architecture": {
+      "aliases": [
+        "define software architecture",
+        "software architecture",
+        "define application architecture"
+      ],
+      "category": "method"
+    },
+    "deploy-cloud-resource": {
+      "aliases": [
+        "deploy cloud resource",
+        "cloud deployment",
+        "provision cloud resources",
+        "cloud provisioning"
+      ],
+      "category": "cloud"
+    },
+    "deploy-ict-systems": {
+      "aliases": [
+        "deploy ict systems",
+        "deploy system",
+        "ict system deployment",
+        "system deployment"
+      ],
+      "category": "method"
+    },
+    "design-cloud-architecture": {
+      "aliases": [
+        "design cloud architecture",
+        "cloud architecture",
+        "create cloud architecture"
+      ],
+      "category": "cloud"
+    },
+    "develop-automated-migration-methods": {
+      "aliases": [
+        "develop automated migration methods",
+        "automated migration",
+        "automated migration methods"
+      ],
+      "category": "method"
+    },
+    "develop-automated-software-tests": {
+      "aliases": [
+        "develop automated software tests",
+        "automated software testing",
+        "automated testing"
+      ],
+      "category": "method"
+    },
+    "develop-code-exploits": {
+      "aliases": [
+        "develop code exploits",
+        "code exploit development",
+        "exploit development"
+      ],
+      "category": "method"
+    },
+    "device-driver-development": {
+      "aliases": [
+        "device driver development",
+        "develop ict device driver",
+        "device driver"
+      ],
+      "category": "method"
+    },
+    "test-suite-development": {
+      "aliases": [
+        "test suite development",
+        "develop ict test suite",
+        "design software testing",
+        "test suite"
+      ],
+      "category": "method"
+    },
+    "reporting-software": {
+      "aliases": [
+        "reporting software",
+        "reporting tools",
+        "reporting system"
+      ],
+      "category": "tool"
+    },
+    "distributed-computing": {
+      "aliases": [
+        "distributed computing"
+      ],
+      "category": "method"
+    },
+    "field-programmable-gate-arrays": {
+      "aliases": [
+        "field-programmable gate arrays",
+        "fpga",
+        "fpgas"
+      ],
+      "category": "other"
+    },
+    "gimp": {
+      "aliases": [
+        "gimp",
+        "gnu image manipulation program"
+      ],
+      "category": "tool"
+    },
+    "green-computing": {
+      "aliases": [
+        "green computing"
+      ],
+      "category": "method"
+    },
+    "ibm-infosphere-information-server": {
+      "aliases": [
+        "ibm infosphere information server",
+        "infosphere information server",
+        "infosphere"
+      ],
+      "category": "platform"
+    },
+    "ict-accessibility-standards": {
+      "aliases": [
+        "ict accessibility standards",
+        "accessibility standards and guidelines",
+        "assistive technology standards",
+        "wcag"
+      ],
+      "category": "method"
+    },
+    "ict-communications-protocols": {
+      "aliases": [
+        "ict communications protocols",
+        "it communications protocols",
+        "network protocols"
+      ],
+      "category": "protocol"
+    },
+    "cmmi": {
+      "aliases": [
+        "cmmi",
+        "capability maturity model integrated",
+        "cmm",
+        "ict process quality models",
+        "software process quality"
+      ],
+      "category": "method"
+    },
+    "anti-virus-software": {
+      "aliases": [
+        "anti-virus software",
+        "antivirus",
+        "anti-malware software",
+        "malware protection"
+      ],
+      "category": "tool"
+    },
+    "disaster-recovery": {
+      "aliases": [
+        "disaster recovery",
+        "ict recovery system",
+        "recover ict system"
+      ],
+      "category": "method"
+    },
+    "install-software": {
+      "aliases": [
+        "install software",
+        "installing software",
+        "software installation",
+        "software installing"
+      ],
+      "category": "method"
+    },
+    "integrated-development-environment-software": {
+      "aliases": [
+        "integrated development environment software",
+        "ide",
+        "codelite",
+        "code::blocks",
+        "mingw developer studio",
+        "zeus ide"
+      ],
+      "category": "tool"
+    },
+    "kdevelop": {
+      "aliases": [
+        "kdevelop"
+      ],
+      "category": "tool"
+    },
+    "mobile-device-software-frameworks": {
+      "aliases": [
+        "mobile device software frameworks",
+        "mobile phone software frameworks",
+        "mobile software frameworks"
+      ],
+      "category": "framework"
+    },
+    "non-destructive-testing": {
+      "aliases": [
+        "non-destructive testing",
+        "ndt",
+        "non-destructive test",
+        "non-destructive examination"
+      ],
+      "category": "method"
+    },
+    "3d-computer-graphics-software": {
+      "aliases": [
+        "3d computer graphics software",
+        "3d graphics software"
+      ],
+      "category": "tool"
+    },
+    "optical-character-recognition-software": {
+      "aliases": [
+        "optical character recognition software",
+        "ocr software"
+      ],
+      "category": "tool"
+    },
+    "pascal": {
+      "aliases": [
+        "pascal"
+      ],
+      "category": "language"
+    },
+    "software-recovery-testing": {
+      "aliases": [
+        "software recovery testing",
+        "software crash and recovery testing"
+      ],
+      "category": "method"
+    },
+    "ict-capacity-planning": {
+      "aliases": [
+        "ict capacity planning",
+        "plan ict capacity"
+      ],
+      "category": "method"
+    },
+    "cloud-migration-planning": {
+      "aliases": [
+        "cloud migration planning",
+        "plan migration to cloud",
+        "plan refactoring"
+      ],
+      "category": "cloud"
+    },
+    "software-testing-planning": {
+      "aliases": [
+        "software testing planning",
+        "plan software testing"
+      ],
+      "category": "method"
+    },
+    "predictive-maintenance": {
+      "aliases": [
+        "predictive maintenance",
+        "predictive maintenance techniques"
+      ],
+      "category": "method"
+    },
+    "artificial-intelligence-principles": {
+      "aliases": [
+        "artificial intelligence principles",
+        "principles of artificial intelligence",
+        "principles of ai",
+        "ai principles"
+      ],
+      "category": "ai"
+    },
+    "pcb-testing-methods": {
+      "aliases": [
+        "pcb testing methods",
+        "printed circuit boards testing methods",
+        "automated optical inspection",
+        "aoi",
+        "joint test action group test",
+        "jtag"
+      ],
+      "category": "method"
+    },
+    "programmable-logic-controller": {
+      "aliases": [
+        "programmable logic controller",
+        "plc",
+        "plc technology"
+      ],
+      "category": "platform"
+    },
+    "prolog": {
+      "aliases": [
+        "prolog",
+        "prolog (computer programming)"
+      ],
+      "category": "language"
+    },
+    "ict-solutions-consulting": {
+      "aliases": [
+        "ict solutions consulting",
+        "propose ict solutions to business problems",
+        "propose technical solutions to business problems"
+      ],
+      "category": "method"
+    },
+    "prototyping": {
+      "aliases": [
+        "prototyping",
+        "prototyping development"
+      ],
+      "category": "method"
+    },
+    "ict-consulting": {
+      "aliases": [
+        "ict consulting",
+        "provide ict consulting advice",
+        "provide it consulting advice",
+        "it consulting"
+      ],
+      "category": "method"
+    },
+    "ict-support": {
+      "aliases": [
+        "ict support",
+        "provide ict support",
+        "it support"
+      ],
+      "category": "method"
+    },
+    "ict-system-training": {
+      "aliases": [
+        "ict system training",
+        "provide ict system training"
+      ],
+      "category": "method"
+    },
+    "proxy-servers": {
+      "aliases": [
+        "proxy servers",
+        "proxy server",
+        "proxy"
+      ],
+      "category": "protocol"
+    },
+    "rapid-application-development": {
+      "aliases": [
+        "rapid application development",
+        "rad"
+      ],
+      "category": "method"
+    },
+    "real-time-computing": {
+      "aliases": [
+        "real-time computing",
+        "realtime computing",
+        "real time computing"
+      ],
+      "category": "method"
+    },
+    "replicate-customer-software-issues": {
+      "aliases": [
+        "replicate customer software issues",
+        "reproduce customer software issues",
+        "replicate software issues"
+      ],
+      "category": "method"
+    },
+    "report-test-findings": {
+      "aliases": [
+        "report test findings",
+        "report a test finding",
+        "summarise test findings",
+        "summarize test findings"
+      ],
+      "category": "method"
+    },
+    "respond-to-incidents-in-cloud": {
+      "aliases": [
+        "respond to incidents in cloud",
+        "cloud incident response",
+        "cloud incident handling"
+      ],
+      "category": "cloud"
+    },
+    "run-a-media-server": {
+      "aliases": [
+        "run a media server",
+        "operate a media server",
+        "running media servers",
+        "media server"
+      ],
+      "category": "tool"
+    },
+    "salt": {
+      "aliases": [
+        "salt",
+        "saltstack",
+        "salt stack"
+      ],
+      "category": "devops"
+    },
+    "samurai-web-testing-framework": {
+      "aliases": [
+        "samurai web testing framework",
+        "samurai wft",
+        "samurai"
+      ],
+      "category": "tool"
+    },
+    "scratch": {
+      "aliases": [
+        "scratch programming"
+      ],
+      "category": "language"
+    },
+    "smalltalk": {
+      "aliases": [
+        "smalltalk"
+      ],
+      "category": "language"
+    },
+    "software-anomalies": {
+      "aliases": [
+        "software anomalies",
+        "software anomaly",
+        "software defects"
+      ],
+      "category": "method"
+    },
+    "software-architecture-models": {
+      "aliases": [
+        "software architecture models",
+        "software architecture model"
+      ],
+      "category": "method"
+    },
+    "software-components-libraries": {
+      "aliases": [
+        "software components libraries",
+        "software component libraries",
+        "component libraries"
+      ],
+      "category": "library"
+    },
+    "software-design-methodologies": {
+      "aliases": [
+        "software design methodologies",
+        "software design methodology"
+      ],
+      "category": "method"
+    },
+    "software-frameworks": {
+      "aliases": [
+        "software frameworks",
+        "software framework"
+      ],
+      "category": "framework"
+    },
+    "software-interaction-design": {
+      "aliases": [
+        "software interaction design",
+        "interaction design",
+        "ixd"
+      ],
+      "category": "method"
+    },
+    "software-metrics": {
+      "aliases": [
+        "software metrics",
+        "software metric"
+      ],
+      "category": "method"
+    },
+    "solve-ict-system-problems": {
+      "aliases": [
+        "solve ict system problems",
+        "troubleshoot system",
+        "diagnose system problems",
+        "system troubleshooting"
+      ],
+      "category": "method"
+    },
+    "spiral-development": {
+      "aliases": [
+        "spiral development",
+        "spiral model",
+        "spiral methodology"
+      ],
+      "category": "method"
+    },
+    "systems-development-life-cycle": {
+      "aliases": [
+        "systems development life-cycle",
+        "sdlc",
+        "application development life-cycle"
+      ],
+      "category": "method"
+    },
+    "software-configuration-management-tools": {
+      "aliases": [
+        "software configuration management tools",
+        "revision control",
+        "source control",
+        "synctool",
+        "bcfg2"
+      ],
+      "category": "devops"
+    },
+    "warehouse-management-system": {
+      "aliases": [
+        "warehouse management system",
+        "wms",
+        "warehouse management systems"
+      ],
+      "category": "platform"
+    },
+    "access-control-software": {
+      "aliases": [
+        "access control software",
+        "access control",
+        "define user roles for ict system"
+      ],
+      "category": "tool"
+    },
+    "concurrent-programming": {
+      "aliases": [
+        "concurrent programming",
+        "parallel computing",
+        "parallel programming"
+      ],
+      "category": "method"
+    },
+    "functional-programming": {
+      "aliases": [
+        "functional programming"
+      ],
+      "category": "method"
+    },
+    "logic-programming": {
+      "aliases": [
+        "logic programming"
+      ],
+      "category": "method"
+    },
+    "scripting": {
+      "aliases": [
+        "scripting",
+        "scripting programming"
+      ],
+      "category": "method"
+    },
+    "vbscript": {
+      "aliases": [
+        "vbscript",
+        "visual basic script"
+      ],
+      "category": "language"
+    },
+    "waterfall": {
+      "aliases": [
+        "waterfall",
+        "waterfall development",
+        "waterfall methodology"
+      ],
+      "category": "method"
+    },
+    "world-wide-web-consortium-standards": {
+      "aliases": [
+        "world wide web consortium standards",
+        "w3c standards",
+        "w3c"
+      ],
+      "category": "protocol"
+    },
+    "xcode": {
+      "aliases": [
+        "xcode",
+        "xcode ide"
+      ],
+      "category": "tool"
+    }
+  },
+  "alias_to_canonical": {
+    "microsoft powerpoint": "microsoft-powerpoint",
+    "powerpoint": "microsoft-powerpoint",
+    "ms powerpoint": "microsoft-powerpoint",
+    "ppt": "microsoft-powerpoint",
+    "microsoft access": "microsoft-access",
+    "ms access": "microsoft-access",
+    "microsoft visio": "microsoft-visio",
+    "ms visio": "microsoft-visio",
+    "visio": "microsoft-visio",
+    "microsoft project": "microsoft-project",
+    "ms project": "microsoft-project",
+    "microsoft sharepoint": "microsoft-sharepoint",
+    "sharepoint": "microsoft-sharepoint",
+    "ms sharepoint": "microsoft-sharepoint",
+    "splunk enterprise": "splunk-enterprise",
+    "splunk": "splunk-enterprise",
+    "microsoft visual basic": "microsoft-visual-basic",
+    "visual basic": "microsoft-visual-basic",
+    "vb": "microsoft-visual-basic",
+    "vb6": "microsoft-visual-basic",
+    "microsoft windows": "microsoft-windows",
+    "windows": "microsoft-windows",
+    "microsoft word": "microsoft-word",
+    "ms word": "microsoft-word",
+    "microsoft visual studio": "microsoft-visual-studio",
+    "visual studio": "microsoft-visual-studio",
+    "microsoft windows server": "microsoft-windows-server",
+    "windows server": "microsoft-windows-server",
+    "apache tomcat": "apache-tomcat",
+    "tomcat": "apache-tomcat",
+    "apple macos": "apple-macos",
+    "macos": "apple-macos",
+    "mac os": "apple-macos",
+    "osx": "apple-macos",
+    "os x": "apple-macos",
+    "microsoft active server pages asp": "microsoft-active-server-pages-asp",
+    "asp": "microsoft-active-server-pages-asp",
+    "active server pages": "microsoft-active-server-pages-asp",
+    "microsoft outlook": "microsoft-outlook",
+    "outlook": "microsoft-outlook",
+    "ms outlook": "microsoft-outlook",
+    "eclipse ide": "eclipse-ide",
+    "eclipse": "eclipse-ide",
+    "adobe acrobat": "adobe-acrobat",
+    "acrobat": "adobe-acrobat",
+    "apache subversion svn": "apache-subversion-svn",
+    "subversion": "apache-subversion-svn",
+    "svn": "apache-subversion-svn",
+    "puppet": "puppet",
+    "puppet labs": "puppet",
+    "ajax": "ajax",
+    "ajax framework": "ajax",
+    "chef": "chef",
+    "microsoft visual basic for applications vba": "microsoft-visual-basic-for-applications-vba",
+    "vba": "microsoft-visual-basic-for-applications-vba",
+    "visual basic for applications": "microsoft-visual-basic-for-applications-vba",
+    "apache maven": "apache-maven",
+    "maven": "apache-maven",
+    "google analytics": "google-analytics",
+    "ga": "google-analytics",
+    "epic systems": "epic-systems",
+    "epic": "epic-systems",
+    "adobe photoshop": "adobe-photoshop",
+    "photoshop": "adobe-photoshop",
+    "red hat openshift": "red-hat-openshift",
+    "openshift": "red-hat-openshift",
+    "microsoft active directory": "microsoft-active-directory",
+    "active directory": "microsoft-active-directory",
+    "servicenow": "servicenow",
+    "adobe illustrator": "adobe-illustrator",
+    "illustrator": "adobe-illustrator",
+    "adobe creative cloud software": "adobe-creative-cloud-software",
+    "adobe creative cloud": "adobe-creative-cloud-software",
+    "creative cloud": "adobe-creative-cloud-software",
+    "microsoft teams": "microsoft-teams",
+    "ms teams": "microsoft-teams",
+    "autodesk autocad": "autodesk-autocad",
+    "autocad": "autodesk-autocad",
+    "google docs": "google-docs",
+    "marketo marketing automation": "marketo-marketing-automation",
+    "marketo": "marketo-marketing-automation",
+    "slack": "slack",
+    "adobe indesign": "adobe-indesign",
+    "indesign": "adobe-indesign",
+    "border gateway protocol bgp": "border-gateway-protocol-bgp",
+    "bgp": "border-gateway-protocol-bgp",
+    "border gateway protocol": "border-gateway-protocol-bgp",
+    "trimble sketchup pro": "trimble-sketchup-pro",
+    "sketchup": "trimble-sketchup-pro",
+    "sketchup pro": "trimble-sketchup-pro",
+    "adobe after effects": "adobe-after-effects",
+    "after effects": "adobe-after-effects",
+    "autodesk revit": "autodesk-revit",
+    "revit": "autodesk-revit",
+    "ibm websphere mq": "ibm-websphere-mq",
+    "websphere mq": "ibm-websphere-mq",
+    "meditech software": "meditech-software",
+    "meditech": "meditech-software",
+    "bentley microstation": "bentley-microstation",
+    "microstation": "bentley-microstation",
+    "informatica software": "informatica-software",
+    "informatica": "informatica-software",
+    "dassault systemes solidworks": "dassault-systemes-solidworks",
+    "solidworks": "dassault-systemes-solidworks",
+    "microsoft team foundation server": "microsoft-team-foundation-server",
+    "team foundation server": "microsoft-team-foundation-server",
+    "tfs": "microsoft-team-foundation-server",
+    "alteryx software": "alteryx-software",
+    "alteryx": "alteryx-software",
+    "microsoft power platform software": "microsoft-power-platform-software",
+    "microsoft power platform": "microsoft-power-platform-software",
+    "power platform": "microsoft-power-platform-software",
+    "wordpress": "wordpress",
+    "wordpress cms": "wordpress",
+    "zoom": "zoom",
+    "zoom meetings": "zoom",
+    "apple safari": "apple-safari",
+    "safari": "apple-safari",
+    "google sheets": "google-sheets",
+    "sheets": "google-sheets",
+    "google workspace": "google-workspace",
+    "g suite": "google-workspace",
+    "gsuite": "google-workspace",
+    "google workspace software": "google-workspace",
+    "microsoft power automate": "microsoft-power-automate",
+    "power automate": "microsoft-power-automate",
+    "mozilla firefox": "mozilla-firefox",
+    "firefox": "mozilla-firefox",
+    "eclinicalworks": "eclinicalworks",
+    "eclinicalworks ehr": "eclinicalworks",
+    "workday": "workday",
+    "workday software": "workday",
+    "yardi": "yardi",
+    "yardi software": "yardi",
+    "mitre att&ck": "mitre-att-ck",
+    "att&ck": "mitre-att-ck",
+    "mitre attack": "mitre-att-ck",
+    "tenable nessus": "tenable-nessus",
+    "nessus": "tenable-nessus",
+    "adobe xd": "adobe-xd",
+    "xd": "adobe-xd",
+    "autodesk maya": "autodesk-maya",
+    "maya": "autodesk-maya",
+    "autodesk navisworks": "autodesk-navisworks",
+    "navisworks": "autodesk-navisworks",
+    "drupal": "drupal",
+    "emass": "emass",
+    "magellan firmware": "magellan-firmware",
+    "magellan": "magellan-firmware",
+    "metasploit": "metasploit",
+    "metasploit framework": "metasploit",
+    "navisworks jetstream": "navisworks-jetstream",
+    "jetstream": "navisworks-jetstream",
+    "nmap": "nmap",
+    "burp suite": "burp-suite",
+    "burpsuite": "burp-suite",
+    "portswigger burp suite": "burp-suite",
+    "qualys cloud platform": "qualys-cloud-platform",
+    "qualys": "qualys-cloud-platform",
+    "rockware arcmap": "rockware-arcmap",
+    "arcmap": "rockware-arcmap",
+    "spice": "spice",
+    "simulation program with integrated circuit emphasis": "spice",
+    "single sign-on": "single-sign-on",
+    "sso": "single-sign-on",
+    "systemverilog": "systemverilog",
+    "system verilog": "systemverilog",
+    "testng": "testng",
+    "tcl": "tcl",
+    "tool command language": "tcl",
+    "verilog": "verilog",
+    "cloud automation": "cloud-automation",
+    "automate cloud tasks": "cloud-automation",
+    "automation of cloud tasks": "cloud-automation",
+    "automation technology": "automation-technology",
+    "automation technologies": "automation-technology",
+    "control systems": "automation-technology",
+    "control systems technology": "automation-technology",
+    "predictive modeling": "predictive-modeling",
+    "build predictive models": "predictive-modeling",
+    "predictive models": "predictive-modeling",
+    "construct predictive models": "predictive-modeling",
+    "building automation": "building-automation",
+    "building management system": "building-automation",
+    "bas": "building-automation",
+    "building automation system": "building-automation",
+    "cad software": "cad-software",
+    "cad": "cad-software",
+    "cadd software": "cad-software",
+    "computer assisted design": "cad-software",
+    "codenvy": "codenvy",
+    "debug software": "debug-software",
+    "debugging": "debug-software",
+    "software debugging": "debug-software",
+    "decentralized application frameworks": "decentralized-application-frameworks",
+    "dapp frameworks": "decentralized-application-frameworks",
+    "decentralized app frameworks": "decentralized-application-frameworks",
+    "define software architecture": "define-software-architecture",
+    "software architecture": "define-software-architecture",
+    "define application architecture": "define-software-architecture",
+    "deploy cloud resource": "deploy-cloud-resource",
+    "cloud deployment": "deploy-cloud-resource",
+    "provision cloud resources": "deploy-cloud-resource",
+    "cloud provisioning": "deploy-cloud-resource",
+    "deploy ict systems": "deploy-ict-systems",
+    "deploy system": "deploy-ict-systems",
+    "ict system deployment": "deploy-ict-systems",
+    "system deployment": "deploy-ict-systems",
+    "design cloud architecture": "design-cloud-architecture",
+    "cloud architecture": "design-cloud-architecture",
+    "create cloud architecture": "design-cloud-architecture",
+    "develop automated migration methods": "develop-automated-migration-methods",
+    "automated migration": "develop-automated-migration-methods",
+    "automated migration methods": "develop-automated-migration-methods",
+    "develop automated software tests": "develop-automated-software-tests",
+    "automated software testing": "develop-automated-software-tests",
+    "automated testing": "develop-automated-software-tests",
+    "develop code exploits": "develop-code-exploits",
+    "code exploit development": "develop-code-exploits",
+    "exploit development": "develop-code-exploits",
+    "device driver development": "device-driver-development",
+    "develop ict device driver": "device-driver-development",
+    "device driver": "device-driver-development",
+    "test suite development": "test-suite-development",
+    "develop ict test suite": "test-suite-development",
+    "design software testing": "test-suite-development",
+    "test suite": "test-suite-development",
+    "reporting software": "reporting-software",
+    "reporting tools": "reporting-software",
+    "reporting system": "reporting-software",
+    "distributed computing": "distributed-computing",
+    "field-programmable gate arrays": "field-programmable-gate-arrays",
+    "fpga": "field-programmable-gate-arrays",
+    "fpgas": "field-programmable-gate-arrays",
+    "gimp": "gimp",
+    "gnu image manipulation program": "gimp",
+    "green computing": "green-computing",
+    "ibm infosphere information server": "ibm-infosphere-information-server",
+    "infosphere information server": "ibm-infosphere-information-server",
+    "infosphere": "ibm-infosphere-information-server",
+    "ict accessibility standards": "ict-accessibility-standards",
+    "accessibility standards and guidelines": "ict-accessibility-standards",
+    "assistive technology standards": "ict-accessibility-standards",
+    "wcag": "ict-accessibility-standards",
+    "ict communications protocols": "ict-communications-protocols",
+    "it communications protocols": "ict-communications-protocols",
+    "network protocols": "ict-communications-protocols",
+    "cmmi": "cmmi",
+    "capability maturity model integrated": "cmmi",
+    "cmm": "cmmi",
+    "ict process quality models": "cmmi",
+    "software process quality": "cmmi",
+    "anti-virus software": "anti-virus-software",
+    "antivirus": "anti-virus-software",
+    "anti-malware software": "anti-virus-software",
+    "malware protection": "anti-virus-software",
+    "disaster recovery": "disaster-recovery",
+    "ict recovery system": "disaster-recovery",
+    "recover ict system": "disaster-recovery",
+    "install software": "install-software",
+    "installing software": "install-software",
+    "software installation": "install-software",
+    "software installing": "install-software",
+    "integrated development environment software": "integrated-development-environment-software",
+    "ide": "integrated-development-environment-software",
+    "codelite": "integrated-development-environment-software",
+    "code::blocks": "integrated-development-environment-software",
+    "mingw developer studio": "integrated-development-environment-software",
+    "zeus ide": "integrated-development-environment-software",
+    "kdevelop": "kdevelop",
+    "mobile device software frameworks": "mobile-device-software-frameworks",
+    "mobile phone software frameworks": "mobile-device-software-frameworks",
+    "mobile software frameworks": "mobile-device-software-frameworks",
+    "non-destructive testing": "non-destructive-testing",
+    "ndt": "non-destructive-testing",
+    "non-destructive test": "non-destructive-testing",
+    "non-destructive examination": "non-destructive-testing",
+    "3d computer graphics software": "3d-computer-graphics-software",
+    "3d graphics software": "3d-computer-graphics-software",
+    "optical character recognition software": "optical-character-recognition-software",
+    "ocr software": "optical-character-recognition-software",
+    "pascal": "pascal",
+    "software recovery testing": "software-recovery-testing",
+    "software crash and recovery testing": "software-recovery-testing",
+    "ict capacity planning": "ict-capacity-planning",
+    "plan ict capacity": "ict-capacity-planning",
+    "cloud migration planning": "cloud-migration-planning",
+    "plan migration to cloud": "cloud-migration-planning",
+    "plan refactoring": "cloud-migration-planning",
+    "software testing planning": "software-testing-planning",
+    "plan software testing": "software-testing-planning",
+    "predictive maintenance": "predictive-maintenance",
+    "predictive maintenance techniques": "predictive-maintenance",
+    "artificial intelligence principles": "artificial-intelligence-principles",
+    "principles of artificial intelligence": "artificial-intelligence-principles",
+    "principles of ai": "artificial-intelligence-principles",
+    "ai principles": "artificial-intelligence-principles",
+    "pcb testing methods": "pcb-testing-methods",
+    "printed circuit boards testing methods": "pcb-testing-methods",
+    "automated optical inspection": "pcb-testing-methods",
+    "aoi": "pcb-testing-methods",
+    "joint test action group test": "pcb-testing-methods",
+    "jtag": "pcb-testing-methods",
+    "programmable logic controller": "programmable-logic-controller",
+    "plc": "programmable-logic-controller",
+    "plc technology": "programmable-logic-controller",
+    "prolog": "prolog",
+    "prolog (computer programming)": "prolog",
+    "ict solutions consulting": "ict-solutions-consulting",
+    "propose ict solutions to business problems": "ict-solutions-consulting",
+    "propose technical solutions to business problems": "ict-solutions-consulting",
+    "prototyping": "prototyping",
+    "prototyping development": "prototyping",
+    "ict consulting": "ict-consulting",
+    "provide ict consulting advice": "ict-consulting",
+    "provide it consulting advice": "ict-consulting",
+    "it consulting": "ict-consulting",
+    "ict support": "ict-support",
+    "provide ict support": "ict-support",
+    "it support": "ict-support",
+    "ict system training": "ict-system-training",
+    "provide ict system training": "ict-system-training",
+    "proxy servers": "proxy-servers",
+    "proxy server": "proxy-servers",
+    "proxy": "proxy-servers",
+    "rapid application development": "rapid-application-development",
+    "rad": "rapid-application-development",
+    "real-time computing": "real-time-computing",
+    "realtime computing": "real-time-computing",
+    "real time computing": "real-time-computing",
+    "replicate customer software issues": "replicate-customer-software-issues",
+    "reproduce customer software issues": "replicate-customer-software-issues",
+    "replicate software issues": "replicate-customer-software-issues",
+    "report test findings": "report-test-findings",
+    "report a test finding": "report-test-findings",
+    "summarise test findings": "report-test-findings",
+    "summarize test findings": "report-test-findings",
+    "respond to incidents in cloud": "respond-to-incidents-in-cloud",
+    "cloud incident response": "respond-to-incidents-in-cloud",
+    "cloud incident handling": "respond-to-incidents-in-cloud",
+    "run a media server": "run-a-media-server",
+    "operate a media server": "run-a-media-server",
+    "running media servers": "run-a-media-server",
+    "media server": "run-a-media-server",
+    "salt": "salt",
+    "saltstack": "salt",
+    "salt stack": "salt",
+    "samurai web testing framework": "samurai-web-testing-framework",
+    "samurai wft": "samurai-web-testing-framework",
+    "samurai": "samurai-web-testing-framework",
+    "scratch programming": "scratch",
+    "smalltalk": "smalltalk",
+    "software anomalies": "software-anomalies",
+    "software anomaly": "software-anomalies",
+    "software defects": "software-anomalies",
+    "software architecture models": "software-architecture-models",
+    "software architecture model": "software-architecture-models",
+    "software components libraries": "software-components-libraries",
+    "software component libraries": "software-components-libraries",
+    "component libraries": "software-components-libraries",
+    "software design methodologies": "software-design-methodologies",
+    "software design methodology": "software-design-methodologies",
+    "software frameworks": "software-frameworks",
+    "software framework": "software-frameworks",
+    "software interaction design": "software-interaction-design",
+    "interaction design": "software-interaction-design",
+    "ixd": "software-interaction-design",
+    "software metrics": "software-metrics",
+    "software metric": "software-metrics",
+    "solve ict system problems": "solve-ict-system-problems",
+    "troubleshoot system": "solve-ict-system-problems",
+    "diagnose system problems": "solve-ict-system-problems",
+    "system troubleshooting": "solve-ict-system-problems",
+    "spiral development": "spiral-development",
+    "spiral model": "spiral-development",
+    "spiral methodology": "spiral-development",
+    "systems development life-cycle": "systems-development-life-cycle",
+    "sdlc": "systems-development-life-cycle",
+    "application development life-cycle": "systems-development-life-cycle",
+    "software configuration management tools": "software-configuration-management-tools",
+    "revision control": "software-configuration-management-tools",
+    "source control": "software-configuration-management-tools",
+    "synctool": "software-configuration-management-tools",
+    "bcfg2": "software-configuration-management-tools",
+    "warehouse management system": "warehouse-management-system",
+    "wms": "warehouse-management-system",
+    "warehouse management systems": "warehouse-management-system",
+    "access control software": "access-control-software",
+    "access control": "access-control-software",
+    "define user roles for ict system": "access-control-software",
+    "concurrent programming": "concurrent-programming",
+    "parallel computing": "concurrent-programming",
+    "parallel programming": "concurrent-programming",
+    "functional programming": "functional-programming",
+    "logic programming": "logic-programming",
+    "scripting": "scripting",
+    "scripting programming": "scripting",
+    "vbscript": "vbscript",
+    "visual basic script": "vbscript",
+    "waterfall": "waterfall",
+    "waterfall development": "waterfall",
+    "waterfall methodology": "waterfall",
+    "world wide web consortium standards": "world-wide-web-consortium-standards",
+    "w3c standards": "world-wide-web-consortium-standards",
+    "w3c": "world-wide-web-consortium-standards",
+    "xcode": "xcode",
+    "xcode ide": "xcode"
+  }
+}

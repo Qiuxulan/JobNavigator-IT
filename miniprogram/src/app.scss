@@ -1,0 +1,109 @@
+@import './styles/tokens.scss';
+@import './styles/markdown.scss';
+
+page {
+  background-color: $c-bg;
+  color: $c-text;
+  font-size: 28px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card {
+  background: $c-card;
+  border-radius: $radius-card;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: $shadow-card;
+}
+
+/* 页面顶部标题区（tab 页自定义头） */
+.page-hero {
+  padding: 12px 8px 24px;
+}
+
+.page-hero-title {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.page-hero-sub {
+  display: block;
+  font-size: 24px;
+  color: $c-text-3;
+  margin-top: 8px;
+}
+
+.text-secondary {
+  color: $c-text-3;
+}
+
+.text-primary-color {
+  color: $primary;
+}
+
+/* 标签胶囊 */
+.tag {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: $radius-pill;
+  font-size: 22px;
+  background: $primary-soft;
+  color: $primary;
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+.tag-green {
+  background: #e7f8f0;
+  color: #0da163;
+}
+
+.tag-orange {
+  background: #fef3e2;
+  color: #e8790a;
+}
+
+.tag-red {
+  background: #feeceb;
+  color: #e03c31;
+}
+
+.tag-gray {
+  background: $c-fill;
+  color: $c-text-2;
+}
+
+/* 按钮 */
+.btn-primary {
+  background: $gradient;
+  color: #ffffff;
+  border-radius: $radius-pill;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 22px 0;
+  text-align: center;
+  box-shadow: $shadow-pop;
+}
+
+.btn-primary--disabled {
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+/* 加载 / 空状态 */
+.empty {
+  text-align: center;
+  color: $c-text-3;
+  padding: 80px 0;
+  font-size: 26px;
+}

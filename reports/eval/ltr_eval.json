@@ -1,0 +1,1799 @@
+{
+  "generated_at": "2026-11-08T21:34:39.070881+00:00",
+  "eval_sets": [
+    "eval_set_v1.json",
+    "eval_set_v2.json"
+  ],
+  "n_cases": 58,
+  "recall_top_n": 10,
+  "top_k": 5,
+  "model": "/mnt/afs/JobNavigator-IT/models/ltr_ranker_v1.txt",
+  "llm_rerank_model": "deepseek-chat",
+  "variants": {
+    "formula": {
+      "desc": "纯 v3.1 公式排序(无精排)",
+      "metrics": {
+        "n_cases": 58,
+        "hit@1": 0.7931,
+        "hit@5": 1.0,
+        "mrr": 0.8879,
+        "ndcg@5": 0.6951
+      }
+    },
+    "ltr": {
+      "desc": "本地 LightGBM LambdaRank(DeepSeek 蒸馏)",
+      "metrics": {
+        "n_cases": 58,
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.7741
+      }
+    },
+    "llm": {
+      "desc": "DeepSeek 全局精排(教师,matching v4)",
+      "metrics": {
+        "n_cases": 58,
+        "hit@1": 0.9828,
+        "hit@5": 1.0,
+        "mrr": 0.9914,
+        "ndcg@5": 0.7824
+      }
+    }
+  },
+  "deltas": {
+    "ltr_vs_formula": {
+      "hit@1": 0.2069,
+      "hit@5": 0.0,
+      "mrr": 0.1121,
+      "ndcg@5": 0.079
+    },
+    "ltr_vs_llm": {
+      "hit@1": 0.0172,
+      "hit@5": 0.0,
+      "mrr": 0.0086,
+      "ndcg@5": -0.0083
+    }
+  },
+  "verdict": "enable",
+  "notes": [
+    "LTR 与 LLM 教师差距(NDCG@5): 0.0083。"
+  ],
+  "per_case": [
+    {
+      "name": "ML工程师求职者",
+      "target_role": "Machine Learning Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_014",
+        "role_019"
+      ],
+      "formula_top5": [
+        "role_096",
+        "role_000",
+        "role_019",
+        "role_007",
+        "role_009"
+      ],
+      "ltr_top5": [
+        "role_000",
+        "role_096",
+        "role_007",
+        "role_012",
+        "role_019"
+      ],
+      "llm_top5": [
+        "role_000",
+        "role_096",
+        "role_019",
+        "role_004",
+        "role_012"
+      ]
+    },
+    {
+      "name": "RAG应用求职者",
+      "target_role": "RAG Engineer",
+      "relevant_ids": [
+        "role_001",
+        "role_002",
+        "role_011"
+      ],
+      "formula_top5": [
+        "role_011",
+        "role_015",
+        "role_009",
+        "role_001",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_011",
+        "role_001",
+        "role_002",
+        "role_008",
+        "role_096"
+      ],
+      "llm_top5": [
+        "role_011",
+        "role_015",
+        "role_009",
+        "role_001",
+        "role_002"
+      ]
+    },
+    {
+      "name": "计算机视觉求职者",
+      "target_role": "Computer Vision Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_004",
+        "role_012"
+      ],
+      "formula_top5": [
+        "role_012",
+        "role_096",
+        "role_046",
+        "role_000",
+        "role_007"
+      ],
+      "ltr_top5": [
+        "role_012",
+        "role_046",
+        "role_096",
+        "role_000",
+        "role_007"
+      ],
+      "llm_top5": [
+        "role_012",
+        "role_096",
+        "role_000",
+        "role_046",
+        "role_004"
+      ]
+    },
+    {
+      "name": "MLOps求职者",
+      "target_role": "MLOps Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_006"
+      ],
+      "formula_top5": [
+        "role_096",
+        "role_006",
+        "role_009",
+        "role_079",
+        "role_000"
+      ],
+      "ltr_top5": [
+        "role_006",
+        "role_096",
+        "role_000",
+        "role_002",
+        "role_079"
+      ],
+      "llm_top5": [
+        "role_006",
+        "role_096",
+        "role_000",
+        "role_079",
+        "role_094"
+      ]
+    },
+    {
+      "name": "LLM推理求职者",
+      "target_role": "LLM Inference Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_002",
+        "role_008"
+      ],
+      "formula_top5": [
+        "role_015",
+        "role_008",
+        "role_096",
+        "role_007",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_008",
+        "role_007",
+        "role_002",
+        "role_096",
+        "role_000"
+      ],
+      "llm_top5": [
+        "role_008",
+        "role_096",
+        "role_007",
+        "role_002",
+        "role_000"
+      ]
+    },
+    {
+      "name": "数据科学求职者",
+      "target_role": "Data Scientist",
+      "relevant_ids": [
+        "role_000",
+        "role_019"
+      ],
+      "formula_top5": [
+        "role_019",
+        "role_069",
+        "role_018",
+        "role_020",
+        "role_070"
+      ],
+      "ltr_top5": [
+        "role_019",
+        "role_069",
+        "role_018",
+        "role_017",
+        "role_020"
+      ],
+      "llm_top5": [
+        "role_019",
+        "role_069",
+        "role_070",
+        "role_017",
+        "role_020"
+      ]
+    },
+    {
+      "name": "数据工程求职者",
+      "target_role": "Data Engineer",
+      "relevant_ids": [
+        "role_003",
+        "role_017"
+      ],
+      "formula_top5": [
+        "role_017",
+        "role_070",
+        "role_019",
+        "role_003",
+        "role_076"
+      ],
+      "ltr_top5": [
+        "role_017",
+        "role_098",
+        "role_070",
+        "role_003",
+        "role_019"
+      ],
+      "llm_top5": [
+        "role_017",
+        "role_003",
+        "role_070",
+        "role_098",
+        "role_019"
+      ]
+    },
+    {
+      "name": "Java后端求职者",
+      "target_role": "Backend Java Engineer",
+      "relevant_ids": [
+        "role_021",
+        "role_045"
+      ],
+      "formula_top5": [
+        "role_021",
+        "role_092",
+        "role_026",
+        "role_024",
+        "role_027"
+      ],
+      "ltr_top5": [
+        "role_021",
+        "role_092",
+        "role_023",
+        "role_027",
+        "role_028"
+      ],
+      "llm_top5": [
+        "role_021",
+        "role_092",
+        "role_026",
+        "role_024",
+        "role_027"
+      ]
+    },
+    {
+      "name": "Python后端求职者",
+      "target_role": "Backend Python Engineer",
+      "relevant_ids": [
+        "role_025",
+        "role_045"
+      ],
+      "formula_top5": [
+        "role_026",
+        "role_092",
+        "role_025",
+        "role_027",
+        "role_051"
+      ],
+      "ltr_top5": [
+        "role_025",
+        "role_026",
+        "role_092",
+        "role_027",
+        "role_051"
+      ],
+      "llm_top5": [
+        "role_025",
+        "role_092",
+        "role_026",
+        "role_051",
+        "role_027"
+      ]
+    },
+    {
+      "name": "Go后端求职者",
+      "target_role": "Backend Go Engineer",
+      "relevant_ids": [
+        "role_027"
+      ],
+      "formula_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_028",
+        "role_026"
+      ],
+      "ltr_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_023",
+        "role_028"
+      ],
+      "llm_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_028",
+        "role_026"
+      ]
+    },
+    {
+      "name": "前端React求职者",
+      "target_role": "Frontend React Engineer",
+      "relevant_ids": [
+        "role_029",
+        "role_031",
+        "role_033"
+      ],
+      "formula_top5": [
+        "role_032",
+        "role_029",
+        "role_031",
+        "role_030",
+        "role_090"
+      ],
+      "ltr_top5": [
+        "role_029",
+        "role_031",
+        "role_032",
+        "role_030",
+        "role_090"
+      ],
+      "llm_top5": [
+        "role_029",
+        "role_032",
+        "role_031",
+        "role_090",
+        "role_030"
+      ]
+    },
+    {
+      "name": "前端Vue求职者",
+      "target_role": "Frontend Vue Engineer",
+      "relevant_ids": [
+        "role_029",
+        "role_032"
+      ],
+      "formula_top5": [
+        "role_032",
+        "role_030",
+        "role_031",
+        "role_029",
+        "role_074"
+      ],
+      "ltr_top5": [
+        "role_032",
+        "role_031",
+        "role_030",
+        "role_029",
+        "role_034"
+      ],
+      "llm_top5": [
+        "role_032",
+        "role_030",
+        "role_031",
+        "role_029",
+        "role_090"
+      ]
+    },
+    {
+      "name": "iOS求职者",
+      "target_role": "iOS Engineer",
+      "relevant_ids": [
+        "role_036",
+        "role_038"
+      ],
+      "formula_top5": [
+        "role_036",
+        "role_037",
+        "role_040",
+        "role_097",
+        "role_060"
+      ],
+      "ltr_top5": [
+        "role_036",
+        "role_037",
+        "role_097",
+        "role_038",
+        "role_040"
+      ],
+      "llm_top5": [
+        "role_036",
+        "role_037",
+        "role_097",
+        "role_040",
+        "role_038"
+      ]
+    },
+    {
+      "name": "Android求职者",
+      "target_role": "Android Engineer",
+      "relevant_ids": [
+        "role_037",
+        "role_038"
+      ],
+      "formula_top5": [
+        "role_037",
+        "role_048",
+        "role_036",
+        "role_051",
+        "role_097"
+      ],
+      "ltr_top5": [
+        "role_037",
+        "role_036",
+        "role_097",
+        "role_038",
+        "role_051"
+      ],
+      "llm_top5": [
+        "role_037",
+        "role_097",
+        "role_048",
+        "role_036",
+        "role_051"
+      ]
+    },
+    {
+      "name": "DevOps求职者",
+      "target_role": "DevOps Engineer",
+      "relevant_ids": [
+        "role_041",
+        "role_042",
+        "role_044"
+      ],
+      "formula_top5": [
+        "role_041",
+        "role_079",
+        "role_042",
+        "role_094",
+        "role_095"
+      ],
+      "ltr_top5": [
+        "role_041",
+        "role_094",
+        "role_079",
+        "role_095",
+        "role_091"
+      ],
+      "llm_top5": [
+        "role_041",
+        "role_079",
+        "role_094",
+        "role_042",
+        "role_095"
+      ]
+    },
+    {
+      "name": "QA自动化求职者",
+      "target_role": "QA Automation Engineer",
+      "relevant_ids": [
+        "role_049",
+        "role_053"
+      ],
+      "formula_top5": [
+        "role_049",
+        "role_053",
+        "role_048",
+        "role_051",
+        "role_052"
+      ],
+      "ltr_top5": [
+        "role_049",
+        "role_053",
+        "role_051",
+        "role_052",
+        "role_054"
+      ],
+      "llm_top5": [
+        "role_049",
+        "role_053",
+        "role_051",
+        "role_048",
+        "role_052"
+      ]
+    },
+    {
+      "name": "安全运维求职者",
+      "target_role": "Security Operations Engineer",
+      "relevant_ids": [
+        "role_055",
+        "role_056"
+      ],
+      "formula_top5": [
+        "role_056",
+        "role_043",
+        "role_089",
+        "role_085",
+        "role_057"
+      ],
+      "ltr_top5": [
+        "role_056",
+        "role_084",
+        "role_058",
+        "role_085",
+        "role_057"
+      ],
+      "llm_top5": [
+        "role_056",
+        "role_043",
+        "role_089",
+        "role_085",
+        "role_057"
+      ]
+    },
+    {
+      "name": "游戏Unity求职者",
+      "target_role": "Unity Developer",
+      "relevant_ids": [
+        "role_059",
+        "role_060"
+      ],
+      "formula_top5": [
+        "role_059",
+        "role_060",
+        "role_063",
+        "role_062",
+        "role_081"
+      ],
+      "ltr_top5": [
+        "role_059",
+        "role_060",
+        "role_063",
+        "role_061",
+        "role_062"
+      ],
+      "llm_top5": [
+        "role_059",
+        "role_060",
+        "role_063",
+        "role_061",
+        "role_062"
+      ]
+    },
+    {
+      "name": "ML工程师求职者",
+      "target_role": "Machine Learning Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_014",
+        "role_019"
+      ],
+      "formula_top5": [
+        "role_096",
+        "role_000",
+        "role_019",
+        "role_007",
+        "role_009"
+      ],
+      "ltr_top5": [
+        "role_000",
+        "role_096",
+        "role_007",
+        "role_012",
+        "role_019"
+      ],
+      "llm_top5": [
+        "role_000",
+        "role_096",
+        "role_019",
+        "role_004",
+        "role_012"
+      ]
+    },
+    {
+      "name": "大模型应用方向",
+      "target_role": "AI Engineer",
+      "relevant_ids": [
+        "role_001",
+        "role_002",
+        "role_007",
+        "role_011"
+      ],
+      "formula_top5": [
+        "role_011",
+        "role_007",
+        "role_009",
+        "role_015",
+        "role_001"
+      ],
+      "ltr_top5": [
+        "role_002",
+        "role_007",
+        "role_096",
+        "role_001",
+        "role_005"
+      ],
+      "llm_top5": [
+        "role_011",
+        "role_007",
+        "role_001",
+        "role_002",
+        "role_009"
+      ]
+    },
+    {
+      "name": "AI Agent 方向",
+      "target_role": "AI Agent Engineer",
+      "relevant_ids": [
+        "role_001",
+        "role_002",
+        "role_007",
+        "role_011"
+      ],
+      "formula_top5": [
+        "role_015",
+        "role_007",
+        "role_011",
+        "role_001",
+        "role_009"
+      ],
+      "ltr_top5": [
+        "role_001",
+        "role_007",
+        "role_002",
+        "role_015",
+        "role_096"
+      ],
+      "llm_top5": [
+        "role_001",
+        "role_007",
+        "role_011",
+        "role_002",
+        "role_008"
+      ]
+    },
+    {
+      "name": "LLM 推理优化",
+      "target_role": "LLM Inference Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_008",
+        "role_016"
+      ],
+      "formula_top5": [
+        "role_008",
+        "role_096",
+        "role_007",
+        "role_009",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_008",
+        "role_096",
+        "role_007",
+        "role_002",
+        "role_015"
+      ],
+      "llm_top5": [
+        "role_008",
+        "role_096",
+        "role_007",
+        "role_002",
+        "role_009"
+      ]
+    },
+    {
+      "name": "RAG 检索工程师",
+      "target_role": "RAG Engineer",
+      "relevant_ids": [
+        "role_002",
+        "role_007",
+        "role_011"
+      ],
+      "formula_top5": [
+        "role_011",
+        "role_009",
+        "role_015",
+        "role_001",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_011",
+        "role_001",
+        "role_002",
+        "role_005",
+        "role_096"
+      ],
+      "llm_top5": [
+        "role_011",
+        "role_009",
+        "role_015",
+        "role_001",
+        "role_002"
+      ]
+    },
+    {
+      "name": "MLOps 方向",
+      "target_role": "MLOps Engineer",
+      "relevant_ids": [
+        "role_006",
+        "role_016",
+        "role_041",
+        "role_079"
+      ],
+      "formula_top5": [
+        "role_006",
+        "role_079",
+        "role_009",
+        "role_094",
+        "role_096"
+      ],
+      "ltr_top5": [
+        "role_006",
+        "role_002",
+        "role_096",
+        "role_094",
+        "role_079"
+      ],
+      "llm_top5": [
+        "role_006",
+        "role_079",
+        "role_094",
+        "role_009",
+        "role_096"
+      ]
+    },
+    {
+      "name": "CV 工程师",
+      "target_role": "Computer Vision Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_012",
+        "role_014"
+      ],
+      "formula_top5": [
+        "role_012",
+        "role_096",
+        "role_046",
+        "role_000",
+        "role_007"
+      ],
+      "ltr_top5": [
+        "role_012",
+        "role_096",
+        "role_046",
+        "role_000",
+        "role_007"
+      ],
+      "llm_top5": [
+        "role_012",
+        "role_096",
+        "role_000",
+        "role_046",
+        "role_004"
+      ]
+    },
+    {
+      "name": "AI 研究型",
+      "target_role": "Machine Learning Research Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_004",
+        "role_014"
+      ],
+      "formula_top5": [
+        "role_096",
+        "role_004",
+        "role_000",
+        "role_007",
+        "role_014"
+      ],
+      "ltr_top5": [
+        "role_004",
+        "role_014",
+        "role_096",
+        "role_000",
+        "role_012"
+      ],
+      "llm_top5": [
+        "role_096",
+        "role_004",
+        "role_000",
+        "role_014",
+        "role_012"
+      ]
+    },
+    {
+      "name": "AI 基础设施",
+      "target_role": "AI Infrastructure Engineer",
+      "relevant_ids": [
+        "role_006",
+        "role_016",
+        "role_079"
+      ],
+      "formula_top5": [
+        "role_016",
+        "role_094",
+        "role_079",
+        "role_009",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_016",
+        "role_002",
+        "role_094",
+        "role_079",
+        "role_096"
+      ],
+      "llm_top5": [
+        "role_016",
+        "role_094",
+        "role_079",
+        "role_095",
+        "role_009"
+      ]
+    },
+    {
+      "name": "AI 评测方向",
+      "target_role": "AI Evaluation Engineer",
+      "relevant_ids": [
+        "role_005",
+        "role_007",
+        "role_019"
+      ],
+      "formula_top5": [
+        "role_015",
+        "role_007",
+        "role_005",
+        "role_019",
+        "role_002"
+      ],
+      "ltr_top5": [
+        "role_005",
+        "role_007",
+        "role_002",
+        "role_015",
+        "role_096"
+      ],
+      "llm_top5": [
+        "role_005",
+        "role_007",
+        "role_002",
+        "role_019",
+        "role_096"
+      ]
+    },
+    {
+      "name": "数据工程方向",
+      "target_role": "Data Engineer",
+      "relevant_ids": [
+        "role_003",
+        "role_017",
+        "role_070"
+      ],
+      "formula_top5": [
+        "role_017",
+        "role_070",
+        "role_019",
+        "role_003",
+        "role_098"
+      ],
+      "ltr_top5": [
+        "role_017",
+        "role_098",
+        "role_070",
+        "role_003",
+        "role_019"
+      ],
+      "llm_top5": [
+        "role_017",
+        "role_003",
+        "role_070",
+        "role_019",
+        "role_098"
+      ]
+    },
+    {
+      "name": "数据分析方向",
+      "target_role": "Data Analyst",
+      "relevant_ids": [
+        "role_018",
+        "role_019",
+        "role_069"
+      ],
+      "formula_top5": [
+        "role_069",
+        "role_018",
+        "role_019",
+        "role_070",
+        "role_020"
+      ],
+      "ltr_top5": [
+        "role_069",
+        "role_018",
+        "role_019",
+        "role_070",
+        "role_017"
+      ],
+      "llm_top5": [
+        "role_069",
+        "role_019",
+        "role_018",
+        "role_070",
+        "role_017"
+      ]
+    },
+    {
+      "name": "数据科学方向",
+      "target_role": "Data Scientist",
+      "relevant_ids": [
+        "role_000",
+        "role_019",
+        "role_069"
+      ],
+      "formula_top5": [
+        "role_019",
+        "role_069",
+        "role_066",
+        "role_018",
+        "role_070"
+      ],
+      "ltr_top5": [
+        "role_019",
+        "role_069",
+        "role_017",
+        "role_018",
+        "role_066"
+      ],
+      "llm_top5": [
+        "role_019",
+        "role_069",
+        "role_018",
+        "role_066",
+        "role_070"
+      ]
+    },
+    {
+      "name": "分析工程方向",
+      "target_role": "Analytics Engineer",
+      "relevant_ids": [
+        "role_017",
+        "role_069",
+        "role_070"
+      ],
+      "formula_top5": [
+        "role_070",
+        "role_069",
+        "role_019",
+        "role_076",
+        "role_017"
+      ],
+      "ltr_top5": [
+        "role_070",
+        "role_017",
+        "role_098",
+        "role_069",
+        "role_019"
+      ],
+      "llm_top5": [
+        "role_070",
+        "role_069",
+        "role_019",
+        "role_017",
+        "role_076"
+      ]
+    },
+    {
+      "name": "Java 后端",
+      "target_role": "Backend Java Engineer",
+      "relevant_ids": [
+        "role_021",
+        "role_045",
+        "role_071"
+      ],
+      "formula_top5": [
+        "role_092",
+        "role_021",
+        "role_027",
+        "role_026",
+        "role_024"
+      ],
+      "ltr_top5": [
+        "role_021",
+        "role_092",
+        "role_023",
+        "role_027",
+        "role_028"
+      ],
+      "llm_top5": [
+        "role_021",
+        "role_092",
+        "role_045",
+        "role_027",
+        "role_026"
+      ]
+    },
+    {
+      "name": "Python 后端",
+      "target_role": "Backend Python Engineer",
+      "relevant_ids": [
+        "role_025",
+        "role_031",
+        "role_071"
+      ],
+      "formula_top5": [
+        "role_026",
+        "role_092",
+        "role_025",
+        "role_027",
+        "role_028"
+      ],
+      "ltr_top5": [
+        "role_025",
+        "role_026",
+        "role_092",
+        "role_027",
+        "role_028"
+      ],
+      "llm_top5": [
+        "role_025",
+        "role_092",
+        "role_026",
+        "role_027",
+        "role_028"
+      ]
+    },
+    {
+      "name": "Go 后端",
+      "target_role": "Backend Go Engineer",
+      "relevant_ids": [
+        "role_027",
+        "role_071",
+        "role_079"
+      ],
+      "formula_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_028",
+        "role_026"
+      ],
+      "ltr_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_028",
+        "role_023"
+      ],
+      "llm_top5": [
+        "role_027",
+        "role_092",
+        "role_021",
+        "role_045",
+        "role_028"
+      ]
+    },
+    {
+      "name": "Node 后端",
+      "target_role": "Backend Node.js Engineer",
+      "relevant_ids": [
+        "role_023",
+        "role_031",
+        "role_044"
+      ],
+      "formula_top5": [
+        "role_023",
+        "role_031",
+        "role_090",
+        "role_092",
+        "role_044"
+      ],
+      "ltr_top5": [
+        "role_023",
+        "role_031",
+        "role_090",
+        "role_092",
+        "role_022"
+      ],
+      "llm_top5": [
+        "role_023",
+        "role_031",
+        "role_090",
+        "role_092",
+        "role_044"
+      ]
+    },
+    {
+      "name": "C++ 系统方向",
+      "target_role": "C++ Software Engineer",
+      "relevant_ids": [
+        "role_026",
+        "role_046",
+        "role_083"
+      ],
+      "formula_top5": [
+        "role_083",
+        "role_060",
+        "role_026",
+        "role_061",
+        "role_039"
+      ],
+      "ltr_top5": [
+        "role_083",
+        "role_026",
+        "role_046",
+        "role_060",
+        "role_061"
+      ],
+      "llm_top5": [
+        "role_026",
+        "role_046",
+        "role_060",
+        "role_083",
+        "role_061"
+      ]
+    },
+    {
+      "name": "React 前端",
+      "target_role": "Frontend React Engineer",
+      "relevant_ids": [
+        "role_029",
+        "role_031",
+        "role_032"
+      ],
+      "formula_top5": [
+        "role_032",
+        "role_029",
+        "role_031",
+        "role_030",
+        "role_090"
+      ],
+      "ltr_top5": [
+        "role_029",
+        "role_031",
+        "role_032",
+        "role_090",
+        "role_030"
+      ],
+      "llm_top5": [
+        "role_029",
+        "role_032",
+        "role_031",
+        "role_090",
+        "role_030"
+      ]
+    },
+    {
+      "name": "Vue 前端",
+      "target_role": "Frontend Vue Engineer",
+      "relevant_ids": [
+        "role_029",
+        "role_031",
+        "role_032"
+      ],
+      "formula_top5": [
+        "role_032",
+        "role_030",
+        "role_031",
+        "role_029",
+        "role_090"
+      ],
+      "ltr_top5": [
+        "role_032",
+        "role_031",
+        "role_030",
+        "role_029",
+        "role_090"
+      ],
+      "llm_top5": [
+        "role_032",
+        "role_030",
+        "role_031",
+        "role_029",
+        "role_090"
+      ]
+    },
+    {
+      "name": "全栈 JS",
+      "target_role": "Full-Stack JavaScript Engineer",
+      "relevant_ids": [
+        "role_023",
+        "role_029",
+        "role_031"
+      ],
+      "formula_top5": [
+        "role_031",
+        "role_090",
+        "role_032",
+        "role_029",
+        "role_035"
+      ],
+      "ltr_top5": [
+        "role_031",
+        "role_090",
+        "role_032",
+        "role_023",
+        "role_029"
+      ],
+      "llm_top5": [
+        "role_031",
+        "role_090",
+        "role_032",
+        "role_029",
+        "role_023"
+      ]
+    },
+    {
+      "name": "Android 开发",
+      "target_role": "Android Engineer",
+      "relevant_ids": [
+        "role_037",
+        "role_038",
+        "role_039"
+      ],
+      "formula_top5": [
+        "role_037",
+        "role_097",
+        "role_048",
+        "role_036",
+        "role_038"
+      ],
+      "ltr_top5": [
+        "role_037",
+        "role_097",
+        "role_036",
+        "role_038",
+        "role_048"
+      ],
+      "llm_top5": [
+        "role_037",
+        "role_097",
+        "role_038",
+        "role_036",
+        "role_033"
+      ]
+    },
+    {
+      "name": "iOS 开发",
+      "target_role": "iOS Engineer",
+      "relevant_ids": [
+        "role_036",
+        "role_038",
+        "role_039"
+      ],
+      "formula_top5": [
+        "role_036",
+        "role_037",
+        "role_048",
+        "role_097",
+        "role_038"
+      ],
+      "ltr_top5": [
+        "role_036",
+        "role_037",
+        "role_097",
+        "role_038",
+        "role_048"
+      ],
+      "llm_top5": [
+        "role_036",
+        "role_097",
+        "role_037",
+        "role_038",
+        "role_033"
+      ]
+    },
+    {
+      "name": "Flutter 跨端",
+      "target_role": "Flutter Engineer",
+      "relevant_ids": [
+        "role_036",
+        "role_037",
+        "role_038"
+      ],
+      "formula_top5": [
+        "role_038",
+        "role_037",
+        "role_036",
+        "role_097",
+        "role_040"
+      ],
+      "ltr_top5": [
+        "role_038",
+        "role_037",
+        "role_036",
+        "role_097",
+        "role_040"
+      ],
+      "llm_top5": [
+        "role_038",
+        "role_037",
+        "role_036",
+        "role_097",
+        "role_033"
+      ]
+    },
+    {
+      "name": "DevOps 方向",
+      "target_role": "DevOps Engineer",
+      "relevant_ids": [
+        "role_006",
+        "role_041",
+        "role_043",
+        "role_079"
+      ],
+      "formula_top5": [
+        "role_041",
+        "role_079",
+        "role_042",
+        "role_094",
+        "role_044"
+      ],
+      "ltr_top5": [
+        "role_041",
+        "role_079",
+        "role_094",
+        "role_095",
+        "role_042"
+      ],
+      "llm_top5": [
+        "role_041",
+        "role_079",
+        "role_042",
+        "role_094",
+        "role_091"
+      ]
+    },
+    {
+      "name": "平台工程方向",
+      "target_role": "Platform Engineer",
+      "relevant_ids": [
+        "role_016",
+        "role_041",
+        "role_079"
+      ],
+      "formula_top5": [
+        "role_079",
+        "role_094",
+        "role_041",
+        "role_009",
+        "role_095"
+      ],
+      "ltr_top5": [
+        "role_079",
+        "role_094",
+        "role_041",
+        "role_095",
+        "role_091"
+      ],
+      "llm_top5": [
+        "role_079",
+        "role_094",
+        "role_041",
+        "role_095",
+        "role_091"
+      ]
+    },
+    {
+      "name": "云安全方向",
+      "target_role": "Cloud Security Engineer",
+      "relevant_ids": [
+        "role_047",
+        "role_058",
+        "role_084"
+      ],
+      "formula_top5": [
+        "role_047",
+        "role_079",
+        "role_057",
+        "role_056",
+        "role_095"
+      ],
+      "ltr_top5": [
+        "role_047",
+        "role_079",
+        "role_095",
+        "role_056",
+        "role_077"
+      ],
+      "llm_top5": [
+        "role_047",
+        "role_079",
+        "role_095",
+        "role_057",
+        "role_056"
+      ]
+    },
+    {
+      "name": "渗透测试",
+      "target_role": "Penetration Testing Engineer",
+      "relevant_ids": [
+        "role_055",
+        "role_056",
+        "role_057"
+      ],
+      "formula_top5": [
+        "role_057",
+        "role_056",
+        "role_089",
+        "role_079",
+        "role_051"
+      ],
+      "ltr_top5": [
+        "role_057",
+        "role_051",
+        "role_056",
+        "role_084",
+        "role_089"
+      ],
+      "llm_top5": [
+        "role_057",
+        "role_056",
+        "role_084",
+        "role_043",
+        "role_089"
+      ]
+    },
+    {
+      "name": "安全运营",
+      "target_role": "Security Operations Engineer",
+      "relevant_ids": [
+        "role_055",
+        "role_056",
+        "role_084"
+      ],
+      "formula_top5": [
+        "role_056",
+        "role_084",
+        "role_043",
+        "role_057",
+        "role_058"
+      ],
+      "ltr_top5": [
+        "role_056",
+        "role_084",
+        "role_058",
+        "role_055",
+        "role_057"
+      ],
+      "llm_top5": [
+        "role_056",
+        "role_084",
+        "role_055",
+        "role_043",
+        "role_057"
+      ]
+    },
+    {
+      "name": "自动化测试",
+      "target_role": "Python QA Automation Engineer",
+      "relevant_ids": [
+        "role_049",
+        "role_051",
+        "role_053"
+      ],
+      "formula_top5": [
+        "role_049",
+        "role_051",
+        "role_048",
+        "role_053",
+        "role_072"
+      ],
+      "ltr_top5": [
+        "role_051",
+        "role_053",
+        "role_049",
+        "role_072",
+        "role_052"
+      ],
+      "llm_top5": [
+        "role_051",
+        "role_049",
+        "role_053",
+        "role_072",
+        "role_048"
+      ]
+    },
+    {
+      "name": "游戏客户端",
+      "target_role": "Unreal Engine Developer",
+      "relevant_ids": [
+        "role_059",
+        "role_060",
+        "role_061"
+      ],
+      "formula_top5": [
+        "role_061",
+        "role_060",
+        "role_083",
+        "role_026",
+        "role_063"
+      ],
+      "ltr_top5": [
+        "role_061",
+        "role_060",
+        "role_063",
+        "role_059",
+        "role_026"
+      ],
+      "llm_top5": [
+        "role_061",
+        "role_060",
+        "role_026",
+        "role_083",
+        "role_063"
+      ]
+    },
+    {
+      "name": "Unity 开发",
+      "target_role": "Unity Developer",
+      "relevant_ids": [
+        "role_059",
+        "role_060",
+        "role_061"
+      ],
+      "formula_top5": [
+        "role_059",
+        "role_063",
+        "role_062",
+        "role_060",
+        "role_061"
+      ],
+      "ltr_top5": [
+        "role_059",
+        "role_063",
+        "role_062",
+        "role_060",
+        "role_061"
+      ],
+      "llm_top5": [
+        "role_059",
+        "role_063",
+        "role_062",
+        "role_060",
+        "role_061"
+      ]
+    },
+    {
+      "name": "产品经理方向",
+      "target_role": "Product Manager",
+      "relevant_ids": [
+        "role_018",
+        "role_064",
+        "role_066",
+        "role_087"
+      ],
+      "formula_top5": [
+        "role_066",
+        "role_065",
+        "role_067",
+        "role_080",
+        "role_074"
+      ],
+      "ltr_top5": [
+        "role_066",
+        "role_080",
+        "role_065",
+        "role_064",
+        "role_087"
+      ],
+      "llm_top5": [
+        "role_066",
+        "role_065",
+        "role_067",
+        "role_080",
+        "role_064"
+      ]
+    },
+    {
+      "name": "项目管理方向",
+      "target_role": "Project Manager",
+      "relevant_ids": [
+        "role_064",
+        "role_065",
+        "role_067",
+        "role_080"
+      ],
+      "formula_top5": [
+        "role_053",
+        "role_066",
+        "role_064",
+        "role_067",
+        "role_075"
+      ],
+      "ltr_top5": [
+        "role_064",
+        "role_080",
+        "role_087",
+        "role_067",
+        "role_066"
+      ],
+      "llm_top5": [
+        "role_064",
+        "role_067",
+        "role_066",
+        "role_080",
+        "role_075"
+      ]
+    },
+    {
+      "name": "嵌入式方向",
+      "target_role": "Embedded Software Engineer",
+      "relevant_ids": [
+        "role_026",
+        "role_046",
+        "role_083"
+      ],
+      "formula_top5": [
+        "role_083",
+        "role_026",
+        "role_060",
+        "role_061",
+        "role_071"
+      ],
+      "ltr_top5": [
+        "role_083",
+        "role_061",
+        "role_046",
+        "role_071",
+        "role_026"
+      ],
+      "llm_top5": [
+        "role_083",
+        "role_026",
+        "role_060",
+        "role_061",
+        "role_039"
+      ]
+    },
+    {
+      "name": "DBA 方向",
+      "target_role": "Database Administrator",
+      "relevant_ids": [
+        "role_017",
+        "role_020",
+        "role_043"
+      ],
+      "formula_top5": [
+        "role_020",
+        "role_019",
+        "role_018",
+        "role_069",
+        "role_070"
+      ],
+      "ltr_top5": [
+        "role_020",
+        "role_019",
+        "role_069",
+        "role_018",
+        "role_017"
+      ],
+      "llm_top5": [
+        "role_020",
+        "role_019",
+        "role_018",
+        "role_069",
+        "role_070"
+      ]
+    },
+    {
+      "name": "网络工程方向",
+      "target_role": "Network Engineer",
+      "relevant_ids": [
+        "role_043",
+        "role_056",
+        "role_078"
+      ],
+      "formula_top5": [
+        "role_078",
+        "role_043",
+        "role_079",
+        "role_057",
+        "role_094"
+      ],
+      "ltr_top5": [
+        "role_078",
+        "role_043",
+        "role_094",
+        "role_095",
+        "role_079"
+      ],
+      "llm_top5": [
+        "role_078",
+        "role_043",
+        "role_057",
+        "role_089",
+        "role_094"
+      ]
+    },
+    {
+      "name": "解决方案架构",
+      "target_role": "Solutions Architect",
+      "relevant_ids": [
+        "role_010",
+        "role_076",
+        "role_077"
+      ],
+      "formula_top5": [
+        "role_010",
+        "role_077",
+        "role_079",
+        "role_093",
+        "role_047"
+      ],
+      "ltr_top5": [
+        "role_077",
+        "role_093",
+        "role_010",
+        "role_079",
+        "role_047"
+      ],
+      "llm_top5": [
+        "role_077",
+        "role_010",
+        "role_093",
+        "role_079",
+        "role_095"
+      ]
+    },
+    {
+      "name": "零基础的 AI 爱好者",
+      "target_role": "AI Engineer",
+      "relevant_ids": [
+        "role_000",
+        "role_001",
+        "role_002",
+        "role_007",
+        "role_011"
+      ],
+      "formula_top5": [
+        "role_007",
+        "role_009",
+        "role_002",
+        "role_096",
+        "role_001"
+      ],
+      "ltr_top5": [
+        "role_002",
+        "role_007",
+        "role_096",
+        "role_001",
+        "role_013"
+      ],
+      "llm_top5": [
+        "role_002",
+        "role_007",
+        "role_096",
+        "role_001",
+        "role_009"
+      ]
+    }
+  ]
+}

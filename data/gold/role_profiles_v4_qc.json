@@ -1,0 +1,139 @@
+{
+  "inputs": {
+    "jd_total": 129897,
+    "assigned_jd": 53845,
+    "assignment_rate": 0.4145,
+    "roles": 99
+  },
+  "thresholds": {
+    "core": "top10 & >= 0.1",
+    "required": ">= 0.15",
+    "optional": "[0.05, 0.15)"
+  },
+  "half_life_months": 12.0,
+  "ref_month": "2026-10",
+  "momentum_windows": {
+    "recent": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "previous": [
+      "2026-05",
+      "2026-06",
+      "2026-07"
+    ]
+  },
+  "jd_count_distribution": {
+    "min": 0,
+    "p25": 32.5,
+    "median": 173.0,
+    "p75": 395.5,
+    "max": 17209,
+    "mean": 543.9
+  },
+  "skill_count_distribution": {
+    "min": 0,
+    "p25": 34.5,
+    "median": 60.0,
+    "p75": 60.0,
+    "max": 60,
+    "mean": 46.7
+  },
+  "salary_nonnull_rate": {
+    "mean": 0.3079,
+    "roles_with_salary": 69,
+    "roles_without_salary": 30
+  },
+  "low_confidence_roles": [
+    "role_005",
+    "role_008",
+    "role_010",
+    "role_011",
+    "role_014",
+    "role_028",
+    "role_029",
+    "role_030",
+    "role_032",
+    "role_033",
+    "role_034",
+    "role_035",
+    "role_038",
+    "role_039",
+    "role_042",
+    "role_044",
+    "role_045",
+    "role_050",
+    "role_051",
+    "role_052",
+    "role_053",
+    "role_054",
+    "role_058",
+    "role_059",
+    "role_060",
+    "role_061",
+    "role_062",
+    "role_063",
+    "role_065",
+    "role_088"
+  ],
+  "n_low_confidence": 30,
+  "momentum_stats": {
+    "n_with_momentum": 93,
+    "n_null": 6,
+    "top5_up": [
+      [
+        "role_011",
+        "RAG Engineer",
+        39.4
+      ],
+      [
+        "role_010",
+        "AI Solutions Architect",
+        2.5947
+      ],
+      [
+        "role_020",
+        "Database Administrator",
+        1.2241
+      ],
+      [
+        "role_048",
+        "Manual QA Engineer",
+        1.2119
+      ],
+      [
+        "role_073",
+        "IT Support Specialist",
+        0.9807
+      ]
+    ],
+    "top5_down": [
+      [
+        "role_008",
+        "LLM Inference Engineer",
+        -1.0
+      ],
+      [
+        "role_022",
+        ".NET Backend Engineer",
+        -1.0
+      ],
+      [
+        "role_029",
+        "Frontend React Engineer",
+        -1.0
+      ],
+      [
+        "role_033",
+        "React Native Engineer",
+        -1.0
+      ],
+      [
+        "role_034",
+        "WordPress Developer",
+        -1.0
+      ]
+    ]
+  }
+}

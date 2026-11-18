@@ -1,0 +1,5 @@
+# JobNavigator-IT 国内官网岗位每日采集（安装：cp infra/cron/jobnav-cnjobs /etc/cron.d/ && chmod 644 /etc/cron.d/jobnav-cnjobs）
+# 外网代理沿用 /etc/cron.d/jobnav-news 中的配置
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+30 7 * * * root cd /mnt/afs/JobNavigator-IT && eval "$(grep -E '^(https?_proxy|HTTPS?_PROXY)=' /etc/cron.d/jobnav-news)" && export https_proxy http_proxy HTTPS_PROXY HTTP_PROXY && /var/lib/jobnav-env/bin/python -m pipelines.cn_jobs.collect >> /data/shichaojian/JNIT/processed/cn_jobs_cron.log 2>&1 && /var/lib/jobnav-env/bin/python -m pipelines.cn_jobs.build_market >> /data/shichaojian/JNIT/processed/cn_jobs_cron.log 2>&1

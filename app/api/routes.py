@@ -24,7 +24,7 @@ from app.services.extractor import ExtractorService
 from app.services.path_planner import PathPlannerService
 from app.services.recommender import RecommenderService
 from app.services.report_generator import ReportGenerationError, generate_career_report
-from app.services.evidence import EvidenceService
+from app.services.evidence_service_v2 import EvidenceServiceV2
 from app.services.role_i18n import role_zh
 from app.services.skill_norm import normalize_skill_id
 from app.services.trend import (
@@ -35,6 +35,16 @@ from app.services.trend import (
 )
 
 router = APIRouter(prefix="/v1")
+
+
+def _roles_json_path() -> "Path":
+    """岗位库 v3 优先(91 旧岗 + v3 扩充新岗),逐级回退 v2/v1。"""
+    from pathlib import Path as _Path
+    for name in ("fine_grained_roles_v3.json", "fine_grained_roles_v2.json"):
+        p = _Path(f"data/gold/{name}")
+        if p.exists():
+            return p
+    return _Path("data/gold/fine_grained_roles_v1.json")
 
 
 @router.get("/health", response_model=HealthResponse)
@@ -63,7 +73,7 @@ def roles_catalog() -> dict:
     def clean_strings(values: list | None) -> list[str]:
         return [str(value) for value in (values or []) if value]
 
-    roles_path = Path("data/gold/fine_grained_roles_v1.json")
+    roles_path = _roles_json_path()
     roles_data = json.loads(roles_path.read_text(encoding="utf-8"))
     return {
         "roles": [
@@ -89,8 +99,9 @@ def graph() -> dict:
     import json
     from pathlib import Path
 
-    roles_path = Path("data/gold/fine_grained_roles_v1.json")
-    skill_graph_path = Path("data/gold/skill_prerequisite_v2.json")
+    roles_path = _roles_json_path()
+    skill_graph_v3 = Path("data/gold/skill_prerequisite_v3.json")
+    skill_graph_path = skill_graph_v3 if skill_graph_v3.exists() else Path("data/gold/skill_prerequisite_v2.json")
     events_path = Path("data/gold/major_industry_events_v1.json")
 
     roles_data = json.loads(roles_path.read_text(encoding="utf-8"))
@@ -295,11 +306,15 @@ def paths_generate(req: PathGenerateRequest) -> PathGenerateResponse:
 @router.get("/trends/batch")
 def trends_batch(horizon_months: int = 3) -> dict:
     """Return trend predictions for all roles in a single call."""
-    from app.services.trend_predictor import _load_predictions
+    from app.services.trend import v2_role_names
 
-    all_roles = sorted(set(r["canonical_role"] for r in _load_predictions()))
+    role_names = v2_role_names()
+    if not role_names:
+        from app.services.trend_predictor import _load_predictions
+
+        role_names = sorted(set(r["canonical_role"] for r in _load_predictions()))
     results = []
-    for role_name in all_roles:
+    for role_name in role_names:
         try:
             signal = TrendService.get_signal(role_name, horizon_months=horizon_months)
             results.append({
@@ -328,20 +343,20 @@ def trends(job_role: str, horizon_months: int = 3) -> TrendResponse:
 @router.get("/evidence/{job_role}")
 def evidence(
     job_role: str,
-    start_month: str = "2026-01",
-    end_month: str = "2026-06",
+    start_month: str = "2026-08",
+    end_month: str = "2026-10",
     top_k: int = 5,
     direction: str | None = None,
 ) -> dict:
     """证据检索：给岗位(+月份区间+方向)，返回 aggregate + 干净事件 + JD 证据。
 
-    direction 可选（up/flat/down）；给了就做方向归因排序。
+    direction 可选（up/flat/down）。优先 evidence_v2 资产，缺文件回退旧 GDELT 索引。
     """
     try:
         resolved = _resolve_role(job_role)
     except TrendNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
-    return EvidenceService.retrieve_evidence(
+    return EvidenceServiceV2.retrieve_evidence(
         resolved.canonical_role, (start_month, end_month), top_k, direction
     )
 

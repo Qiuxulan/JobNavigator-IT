@@ -1,0 +1,25 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "jobnavigator-miniprogram",
+  "description": "JobNavigator-IT 职业规划微信小程序",
+  "appid": "wx632a3e490ab0efe5",
+  "compileType": "miniprogram",
+  "libVersion": "3.4.12",
+  "setting": {
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "urlCheck": false,
+    "enhance": true,
+    "compileHotReLoad": false
+  },
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "node_modules"
+      }
+    ]
+  },
+  "condition": {}
+}

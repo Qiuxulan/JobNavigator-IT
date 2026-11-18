@@ -10,7 +10,11 @@ from app.services.skill_norm import normalize_skill_id
 
 ROOT = Path(__file__).parents[2]
 GOLD_DIR = ROOT / "data" / "gold"
-ROLE_PATH = GOLD_DIR / "fine_grained_roles_v1.json"
+_ROLES_V3 = GOLD_DIR / "fine_grained_roles_v3.json"
+_ROLES_V2 = GOLD_DIR / "fine_grained_roles_v2.json"
+ROLE_PATH = (_ROLES_V3 if _ROLES_V3.exists()
+             else _ROLES_V2 if _ROLES_V2.exists()
+             else GOLD_DIR / "fine_grained_roles_v1.json")
 SKILL_GRAPH_PATH = GOLD_DIR / "skill_prerequisite_v2.json"
 RESOURCE_PATH = GOLD_DIR / "learning_resources_v1.json"
 RESOURCE_V2_PATH = GOLD_DIR / "learning_resources_v2.json"

@@ -8,8 +8,11 @@ declare module 'echarts-for-react' {
     notMerge?: boolean;
     lazyUpdate?: boolean;
     onEvents?: Record<string, Function>;
+    onChartReady?: (instance: any) => void;
   }
-  export default class ReactECharts extends Component<ReactEChartsProps> {}
+  export default class ReactECharts extends Component<ReactEChartsProps> {
+    getEchartsInstance(): any;
+  }
 }
 
 declare module 'react-markdown' {

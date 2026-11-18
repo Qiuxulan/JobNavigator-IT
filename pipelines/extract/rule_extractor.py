@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -14,7 +15,28 @@ except ImportError:  # pragma: no cover - supports direct CLI execution from thi
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_VOCAB_PATH = ROOT / "skill_vocab.json"
+_REPO_GOLD = ROOT.parents[1] / "data" / "gold"
+GOLD_VOCAB_V2 = _REPO_GOLD / "skill_vocab_v2.json"
+GOLD_VOCAB_V1 = _REPO_GOLD / "skill_vocab.json"
+
+
+def _default_vocab_path() -> Path:
+    """默认词表：优先重建的 skill_vocab_v2（本地副本 -> gold），回退 v1。
+
+    可用环境变量 SKILL_SPAN_VOCAB 覆盖。
+    """
+    env_path = os.environ.get("SKILL_SPAN_VOCAB")
+    if env_path:
+        return Path(env_path)
+    local_v2 = ROOT / "skill_vocab_v2.json"
+    if local_v2.exists():
+        return local_v2
+    if GOLD_VOCAB_V2.exists():
+        return GOLD_VOCAB_V2
+    return ROOT / "skill_vocab.json"
+
+
+DEFAULT_VOCAB_PATH = _default_vocab_path()
 
 
 EDUCATION_ORDER = ["中专", "大专", "本科", "硕士", "博士"]
@@ -104,8 +126,23 @@ def normalize_space(text: str) -> str:
     return text.strip()
 
 
-def load_skill_vocab(path: Path = DEFAULT_VOCAB_PATH) -> dict[str, list[str]]:
-    return json.loads(path.read_text(encoding="utf-8"))
+def load_skill_vocab(path: Path | None = None) -> dict[str, list[str]]:
+    path = path or DEFAULT_VOCAB_PATH
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict) and "skills" in data and "alias_to_id" in data:
+        # gold 结构化词表（skill_vocab_v2）-> {canonical_name: [aliases]}
+        vocab: dict[str, list[str]] = {}
+        for skill in data.get("skills", []):
+            name = skill.get("name")
+            if not name:
+                continue
+            aliases = [
+                a for a in (skill.get("aliases") or [])
+                if str(a).lower() != str(name).lower()
+            ]
+            vocab[name] = aliases
+        return vocab
+    return data
 
 
 def extract_skills(text: str, vocab: dict[str, list[str]]) -> list[str]:

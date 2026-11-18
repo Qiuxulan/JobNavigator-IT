@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Landing from "./pages/Landing";
-import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
 import RoleDetail from "./pages/RoleDetail";
-import Compare from "./pages/Compare";
 import Graph from "./pages/Graph";
 import LearningPath from "./pages/LearningPath";
+import Match from "./pages/Match";
 import Chat from "./pages/Chat";
+import News from "./pages/News";
 import "./App.css";
 
 function Layout({ children }: { children: React.ReactNode }) {
@@ -19,25 +19,31 @@ function Layout({ children }: { children: React.ReactNode }) {
 }
 
 function AppRoutes() {
-  const { pathname } = useLocation();
-  if (pathname === "/") return <Landing />;
   return (
     <Layout>
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Home />} />
+        {/* 旧路径兼容：趋势仪表盘已并入首页 */}
+        <Route path="/dashboard" element={<Navigate to="/" replace />} />
         <Route path="/role/:roleName" element={<RoleDetail />} />
-        <Route path="/compare" element={<Compare />} />
+        <Route path="/compare" element={<Navigate to="/role" replace />} />
+        <Route path="/role" element={<RoleDetail />} />
         <Route path="/graph" element={<Graph />} />
         <Route path="/path" element={<LearningPath />} />
+        <Route path="/match" element={<Match />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Layout>
   );
 }
 
 export default function App() {
+  // Support path-based port proxies (e.g. code-server /proxy/<port>/):
+  // treat the detected prefix as the router basename.
+  const basename = window.location.pathname.match(/^(.+\/proxy\/\d+)/)?.[1] || "/";
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<AppRoutes />} />
         <Route path="/*" element={<AppRoutes />} />

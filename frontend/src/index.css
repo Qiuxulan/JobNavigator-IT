@@ -23,6 +23,14 @@
   --down:      #fb5566;  --down-soft: #ffe7ea;  --down-line: #ffc4cc;
   --flat:      #3b82f6;  --flat-soft: #e6effe;  --flat-line: #c0d8fb;
 
+  /* Brand · 蓝紫渐变（与小程序端设计同源） */
+  --brand:     #4f6ef7;
+  --brand-2:   #7a5cff;
+  --grad:      linear-gradient(135deg, #4f6ef7 0%, #7a5cff 100%);
+  --grad-soft: #eef1ff;
+  --grad-line: #dfe5ff;
+  --grad-pop:  0 6px 20px rgba(79, 110, 247, 0.25);
+
   --line:      rgba(28,30,35,0.085);
   --line-2:    rgba(28,30,35,0.13);
   --line-faint:rgba(28,30,35,0.05);
@@ -55,7 +63,13 @@ body {
   letter-spacing: -0.01em;
 }
 #root { height: 100%; }
-::selection { background: rgba(28,30,35,0.12); }
+::selection { background: rgba(79,110,247,0.18); }
+
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+.btn:focus-visible, .chip:focus-visible, .nav-item:focus-visible, .pager-btn:focus-visible,
+.seg button:focus-visible, .hh-quick-item:focus-visible, .side-cta:focus-visible, .quick:focus-visible {
+  outline: 2px solid var(--brand); outline-offset: 2px;
+}
 
 ::-webkit-scrollbar { width: 11px; height: 11px; }
 ::-webkit-scrollbar-thumb { background: rgba(28,30,35,0.15); border-radius: 99px; border: 3px solid transparent; background-clip: padding-box; }

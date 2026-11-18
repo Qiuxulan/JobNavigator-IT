@@ -1,0 +1,349 @@
+{
+ "version": "v5",
+ "generated_at": "2026-11-05T22:10:28+00:00",
+ "inputs": {
+  "v4": "/mnt/afs/JobNavigator-IT/data/gold/learning_resources_v4.json",
+  "vocab": "/mnt/afs/JobNavigator-IT/data/gold/skill_vocab_v2.json",
+  "chapters_dir": "/data/shichaojian/JNIT/raw/courses/<source>/chapters",
+  "curated_tables": "pipelines/report/learning_resources_v5_curated.py",
+  "linkcheck_cache": "/data/shichaojian/JNIT/raw/courses/_linkcheck/link_status_v5.json"
+ },
+ "totals": {
+  "v4_resources": 1579,
+  "v4_dead_dropped": 34,
+  "v5_resources": 2006,
+  "target_total": 2000,
+  "target_met": true,
+  "chapter_structured_courses": 162,
+  "new_source_dups_merged": 59
+ },
+ "counts_by_source": {
+  "coursera": 463,
+  "roadmap_official": 284,
+  "official_doc": 276,
+  "github_project": 172,
+  "roadmap_video": 145,
+  "roadmap_opensource": 96,
+  "freecodecamp_cert": 80,
+  "cs_self_learning": 76,
+  "roadmap_article": 74,
+  "roadmap_course": 71,
+  "runoob_course": 52,
+  "zh_hot": 48,
+  "free_book": 44,
+  "ossu": 25,
+  "mdn_course": 20,
+  "cert_path": 18,
+  "github_awesome": 15,
+  "youtube_curated": 11,
+  "odin_course": 9,
+  "liaoxuefeng_course": 9,
+  "cs50_course": 7,
+  "bilibili_curated": 6,
+  "d2l_course": 2,
+  "roadmap_book": 2,
+  "roadmap_roadmap": 1
+ },
+ "distribution": {
+  "language": {
+   "en": 1766,
+   "zh": 240
+  },
+  "type": {
+   "project": 288,
+   "interactive": 20,
+   "course": 752,
+   "tutorial": 82,
+   "doc": 669,
+   "video": 163,
+   "book": 29,
+   "article": 3
+  },
+  "link_status": {
+   "alive": 1939,
+   "unknown": 67
+  }
+ },
+ "new_sources": {
+  "chapter_courses": {
+   "theodinproject": 9,
+   "cs50": 8,
+   "d2l": 2,
+   "liaoxuefeng": 9,
+   "runoob": 52,
+   "mdn": 2,
+   "freecodecamp": 80
+  },
+  "chapter_courses_total": 180,
+  "github_project_pool": 176,
+  "curated_v5_pool": 165,
+  "new_dead_dropped": [
+   {
+    "url": "http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio",
+    "title": "[实战] Create a Character Voting App with React, Node, MongoDB and SocketIO",
+    "source": "github_project"
+   }
+  ]
+ },
+ "coverage": {
+  "covered": 295,
+  "skills_without_resources": [],
+  "vocab_size": 295,
+  "coverage": 1.0
+ },
+ "hot_skill_quality": {
+  "n_hot": 127,
+  "hot_with_lt3_resources": [],
+  "hot_without_zh": [
+   "dagster",
+   "junit",
+   "langgraph",
+   "llamaindex",
+   "svelte"
+  ]
+ },
+ "quality_score": {
+  "min": 0.515,
+  "mean": 0.7218
+ },
+ "dead_links_dropped": [
+  {
+   "url": "https://www.coursera.org/learn/gcp-big-data-ml-fundamentals",
+   "title": "Google Cloud Big Data and Machine Learning Fundamentals",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:38+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/specializations/machine-learning-tensorflow-gcp",
+   "title": "Machine Learning on Google Cloud Specialization",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:31+00:00"
+  },
+  {
+   "url": "https://www.youtube.com/playlist?list=https://www.youtube.com/playlist?list=PLf0swTFhTI8pRV9DDzae2o1m-cqe5PtJ2-cqe5PtJ2",
+   "title": "Build a Data Engineering Pipeline using Python and Airflow",
+   "source": "roadmap_video",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:59+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/website-coding",
+   "title": "Responsive Website Basics: Code with HTML, CSS, and JavaScript",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:19+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/google-machine-learning",
+   "title": "How Google does Machine Learning",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:40+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/specializations/aws-devops",
+   "title": "DevOps on AWS Specialization",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:26+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/devops-aws-code-build-test",
+   "title": "DevOps on AWS: Code, Build, and Test",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:33+00:00"
+  },
+  {
+   "url": "https://platform.openai.com/docs/guides/embeddings/what-are-embeddings",
+   "title": "OpenAI Embeddings API Documentation",
+   "source": "roadmap_official",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:53+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/data-analysis-r",
+   "title": "Data Analysis with R Programming",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:27+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/get-started-with-python",
+   "title": "Get Started with Python",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:40+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/robotics-flight",
+   "title": "Robotics: Aerial Robotics",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:08+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az-900",
+   "title": "Microsoft Azure Fundamentals AZ-900 Exam Prep Specialization",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:32+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/meteor-development",
+   "title": "Introduction to Meteor.js Development",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:56+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/site-reliability-engineering-slos",
+   "title": "Site Reliability Engineering: Measuring and Managing Reliability",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:11+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/specializations/compstats",
+   "title": "Introduction to Computational Statistics for Data Scientists Specialization",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:27+00:00"
+  },
+  {
+   "url": "https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/",
+   "title": "Learn how to build with Redis Stack and .NET",
+   "source": "roadmap_official",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:56+00:00"
+  },
+  {
+   "url": "https://nuxt.com/docs/examples/essentials/hello-world",
+   "title": "Nuxt Examples",
+   "source": "roadmap_official",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:50+00:00"
+  },
+  {
+   "url": "https://github.com/DeepRobot2020/books/blob/master/Multiple%20View%20Geometry%20in%20Computer%20Vision%20(Second%20Edition",
+   "title": "Multiple View Geometry in Computer Vision",
+   "source": "cs_self_learning",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:22+00:00"
+  },
+  {
+   "url": "https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/CS61A/",
+   "title": "CS61A",
+   "source": "cs_self_learning",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:00+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/growth-strategy",
+   "title": "Entrepreneurship 3: Growth Strategies",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:41+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/az-900-exam-prep",
+   "title": "Preparing for the AZ-900 Microsoft Azure Fundamentals Exam",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:17+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/oracle-cloud-infrastructure-architect-professional",
+   "title": "Oracle Cloud Infrastructure Architect Professional",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:00+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/developing-websites-and-front-ends-with-bootstrap",
+   "title": "Developing Websites and Front-Ends with Bootstrap",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:32+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/chemistry-1",
+   "title": "Chemistry",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:22+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/introduction-to-pymc3",
+   "title": "Introduction to PyMC3 for Bayesian Modeling and Inference",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:50+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/prototyping-design",
+   "title": "Prototyping and Design",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:04+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/incident-response-recovery-risks-sscp",
+   "title": "Identifying, Monitoring, and Analyzing Risk and Incident Response and Recovery",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:44+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/mcmc",
+   "title": "Bayesian Inference with MCMC",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:56+00:00"
+  },
+  {
+   "url": "https://github.com/darraghh1/my-claude-setup/blob/main/docs/research/anthropic-skills-guide.md",
+   "title": "Anthropic Skills Guide",
+   "source": "roadmap_opensource",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:25+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/juniper-automation-xml",
+   "title": "Juniper Networks Junos Automation Basics and XML",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:52+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/algorithms-part2/lecture/CPVdr/r-way-tries",
+   "title": "1. R Way Tries",
+   "source": "roadmap_course",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:12+00:00"
+  },
+  {
+   "url": "https://openai.com/blog/assistants-api",
+   "title": "OpenAI Blog – Introducing the Assistants API",
+   "source": "roadmap_official",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:26:53+00:00"
+  },
+  {
+   "url": "https://www.postgresql.org/docs/current/gin-intro.html",
+   "title": "GIN Introduction",
+   "source": "roadmap_official",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:28:52+00:00"
+  },
+  {
+   "url": "https://www.coursera.org/learn/intel-solutions-pro-principles-ai-everywhere",
+   "title": "Intel® Solutions Pro – Principles of AI Everywhere",
+   "source": "coursera",
+   "status": "dead",
+   "checked_at": "2026-11-05T21:27:45+00:00"
+  }
+ ]
+}

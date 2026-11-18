@@ -4,9 +4,9 @@
   - 本模块只做「事实组装 + 带引用编号的 grounded prompt 上下文」，不调用 LLM。
   - LLM 链式推理由组员3 的 Agent 层完成（调用 build_cot_prompt 的返回值即可）。
 
-数据来源：
-  - PatchTST 预测（trend_predictor，懒加载）
-  - EvidenceService 证据链（aggregate + 干净事件 + JD，含反向信号）
+数据来源（v2 重建资产优先，旧链路回退）：
+  - TrendService 信号（trend_forecasts_v2.json，含 model_used/sMAPE/稀疏标记）
+  - EvidenceServiceV2 证据链（aggregate + 分片事件，旧 GDELT 索引缺失时回退）
   - 重大行业事件目录（data/gold/major_industry_events_v1.json，公开来源高可信）
 """
 
@@ -15,19 +15,32 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from app.services.evidence import EvidenceService
-from app.services.trend import EVIDENCE_WINDOW, TrendNotFoundError, _resolve_role
+from app.services.evidence_service_v2 import EvidenceServiceV2
+from app.services.trend import EVIDENCE_WINDOW, TrendNotFoundError, TrendService, _resolve_role
 
 MAJOR_EVENTS_PATH = Path("data/gold/major_industry_events_v1.json")
 DIR_CN = {"up": "上升", "down": "下降", "flat": "持平", "stable": "持平"}
 
 
-def _patchtst(role: str, horizon: int) -> dict | None:
-    try:
-        from app.services.trend_predictor import predict   # 懒加载，避免拽 torch
-        return predict(role, horizon)
-    except Exception:
+def _normalize_aggregate(agg: dict | None) -> dict | None:
+    """把 v2 aggregate（by_type 统计）归一成 build_cot_prompt 期望的形状。"""
+    if not agg:
         return None
+    normalized = dict(agg)
+    normalized.setdefault("article_count", agg.get("total_items", 0))
+    by_type = agg.get("by_type") or {}
+    positive_types = {"funding", "product_release", "research_breakthrough", "hiring", "ai_adoption"}
+    negative_types = {"layoff", "security_incident", "policy"}
+    normalized.setdefault(
+        "opportunity_events",
+        sum(c for t, c in by_type.items() if t in positive_types),
+    )
+    normalized.setdefault(
+        "risk_events",
+        sum(c for t, c in by_type.items() if t in negative_types),
+    )
+    normalized.setdefault("net_signal", "mixed")
+    return normalized
 
 
 def _major_events(role: str, direction: str) -> list[dict]:
@@ -54,11 +67,11 @@ def assemble_cot_context(role: str, horizon: int = 3) -> dict:
     resolved = _resolve_role(role)
     canonical = resolved.canonical_role
 
-    pred = _patchtst(canonical, horizon) or {}
-    direction = pred.get("trend_direction", "flat")
+    signal = TrendService.get_signal(canonical, horizon_months=horizon)
+    direction = signal.trend_direction
 
-    res = EvidenceService.retrieve_evidence(canonical, EVIDENCE_WINDOW, 5, direction)
-    agg = res.get("aggregate")
+    res = EvidenceServiceV2.retrieve_evidence(canonical, EVIDENCE_WINDOW, 5, direction)
+    agg = _normalize_aggregate(res.get("aggregate"))
 
     events = []
     for i, e in enumerate(res.get("events", []), 1):
@@ -84,9 +97,13 @@ def assemble_cot_context(role: str, horizon: int = 3) -> dict:
         "horizon_months": horizon,
         "prediction": {
             "trend_direction": direction,
-            "predicted_demand_index": pred.get("predicted_demand_index"),
-            "confidence": pred.get("confidence"),
+            "predicted_demand_index": signal.predicted_demand_index,
+            "confidence": signal.confidence,
+            "model_used": signal.model_used,
+            "backtest_smape": signal.backtest_smape,
+            "sparse": signal.sparse,
         },
+        "main_factors": signal.main_factors,
         "aggregate": agg,
         "events": events,
         "major_events": majors,
@@ -106,13 +123,29 @@ COT_SYSTEM_PROMPT = (
 def build_cot_prompt(ctx: dict) -> str:
     """把上下文渲染成 grounded CoT 的 user prompt（组员3 拿去喂 LLM）。"""
     p = ctx["prediction"]
+    model_info = p.get("model_used") or "unknown"
+    smape = p.get("backtest_smape")
+    model_desc = f"模型={model_info}"
+    if smape is not None:
+        model_desc += f"（回测 sMAPE {float(smape):.1%}）"
+    if p.get("sparse"):
+        model_desc += "，岗位 JD 样本稀疏、置信度受限"
     L = [f"# 角色：{ctx['canonical_role']}   预测视野：{ctx['horizon_months']} 个月",
          f"## 模型预测：方向={DIR_CN.get(p.get('trend_direction'), p.get('trend_direction'))} "
-         f"需求指数={p.get('predicted_demand_index')} 置信度={p.get('confidence')}"]
+         f"需求指数={p.get('predicted_demand_index')} 置信度={p.get('confidence')} {model_desc}"]
+    factors = ctx.get("main_factors") or []
+    if factors:
+        L.append("## 预测归因（真实数据）：")
+        for factor in factors:
+            L.append(f"  - {factor}")
     a = ctx.get("aggregate")
     if a:
         L.append(f"## 新闻聚合：相关 {a['article_count']} 篇，机会 {a['opportunity_events']} / "
                  f"风险 {a['risk_events']}，净信号 {a['net_signal']}")
+        months_covered = a.get("months_covered")
+        if months_covered:
+            L.append(f"  覆盖月份：{months_covered[0]} ~ {months_covered[-1]}，"
+                     f"月均 {a.get('avg_items_per_month', '?')} 条")
     if ctx["events"]:
         L.append("## 事件证据：")
         for e in ctx["events"]:

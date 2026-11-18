@@ -1,0 +1,1382 @@
+{
+  "generated_at": "2026-10-19T18:46:59.004569+00:00",
+  "eval_sets": [
+    "eval_set_v1.json",
+    "eval_set_v2.json"
+  ],
+  "n_cases": 58,
+  "recall_top_n": 10,
+  "grid": {
+    "w_sem_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.05,
+    "sum_to_one": true,
+    "n_combinations": 624
+  },
+  "baseline": {
+    "weights": {
+      "coverage": 0.15,
+      "semantic": 0.8,
+      "trend": 0.0,
+      "feasibility": 0.05
+    },
+    "metrics": {
+      "w_coverage": 0.15,
+      "w_semantic": 0.8,
+      "w_trend": 0.0,
+      "w_feasibility": 0.05,
+      "hit@1": 0.7241,
+      "hit@5": 0.9828,
+      "mrr": 0.8339,
+      "ndcg@5": 0.6654
+    },
+    "note": "线上旧三公式权重(0.15/0.80/0/0.05,无趋势项,trend 张冠李戴)"
+  },
+  "best": {
+    "weights": {
+      "coverage": 0.15,
+      "semantic": 0.7,
+      "trend": 0.15,
+      "feasibility": 0.0
+    },
+    "metrics": {
+      "w_coverage": 0.15,
+      "w_semantic": 0.7,
+      "w_trend": 0.15,
+      "w_feasibility": 0.0,
+      "hit@1": 0.8103,
+      "hit@5": 0.9828,
+      "mrr": 0.8879,
+      "ndcg@5": 0.7026
+    }
+  },
+  "improvement": {
+    "ndcg@5_delta": 0.0372,
+    "hit@1_delta": 0.0862
+  },
+  "unresolved_role_names": [],
+  "per_case": [
+    {
+      "name": "ML工程师求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Machine Learning Engineer",
+      "baseline_top5": [
+        "Data Scientist",
+        "Applied AI Engineer",
+        "Research Engineer",
+        "Machine Learning Research Engineer",
+        "LLM Inference Engineer"
+      ],
+      "tuned_top5": [
+        "Data Scientist",
+        "Research Engineer",
+        "Applied AI Engineer",
+        "Machine Learning Research Engineer",
+        "AI Agent Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "RAG应用求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "RAG Engineer",
+      "baseline_top5": [
+        "C++ Software Engineer",
+        "AI Evaluation Engineer",
+        "RAG Engineer",
+        "Rust Blockchain Engineer",
+        "Research Engineer"
+      ],
+      "tuned_top5": [
+        "RAG Engineer",
+        "C++ Software Engineer",
+        "Database Administrator",
+        "AI Evaluation Engineer",
+        "Research Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "计算机视觉求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Computer Vision Engineer",
+      "baseline_top5": [
+        "Computer Vision Engineer",
+        "Research Engineer",
+        "Linux C++ Engineer",
+        "AI Research Engineer",
+        "Machine Learning Research Engineer"
+      ],
+      "tuned_top5": [
+        "Computer Vision Engineer",
+        "Research Engineer",
+        "AI Research Engineer",
+        "Machine Learning Research Engineer",
+        "Linux C++ Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "MLOps求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "MLOps Engineer",
+      "baseline_top5": [
+        "MLOps Engineer",
+        "Research Engineer",
+        "LLM Inference Engineer",
+        "Rust Blockchain Engineer",
+        "AI Engineer"
+      ],
+      "tuned_top5": [
+        "MLOps Engineer",
+        "Research Engineer",
+        "AI Infrastructure Engineer",
+        "AI Engineer",
+        "Rust Blockchain Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "LLM推理求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "LLM Inference Engineer",
+      "baseline_top5": [
+        "Research Engineer",
+        "LLM Inference Engineer",
+        "AI Research Engineer",
+        "Machine Learning Engineer",
+        "Computer Vision Engineer"
+      ],
+      "tuned_top5": [
+        "Research Engineer",
+        "AI Research Engineer",
+        "LLM Inference Engineer",
+        "Machine Learning Engineer",
+        "Context Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "数据科学求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Data Scientist",
+      "baseline_top5": [
+        "Data Analyst",
+        "Data Scientist",
+        "Business Analyst",
+        "QA Engineer (General)",
+        "Data Engineer"
+      ],
+      "tuned_top5": [
+        "Data Scientist",
+        "Data Analyst",
+        "Analytics Engineer",
+        "Business Analyst",
+        "Solutions Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "数据工程求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Data Engineer",
+      "baseline_top5": [
+        "Data Engineer",
+        "AI Data Engineer",
+        "Data Architect",
+        "Data Scientist",
+        "Data Analyst"
+      ],
+      "tuned_top5": [
+        "Data Engineer",
+        "AI Data Engineer",
+        "Analytics Engineer",
+        "Data Scientist",
+        "Data Architect"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Java后端求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Backend Java Engineer",
+      "baseline_top5": [
+        "Backend Java Engineer",
+        "Backend Engineer (General)",
+        "Backend PHP Engineer",
+        "QA Engineer (General)",
+        "Backend Go Engineer"
+      ],
+      "tuned_top5": [
+        "Backend Java Engineer",
+        "Backend Engineer (General)",
+        "Backend PHP Engineer",
+        "QA Engineer (General)",
+        "Backend Go Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Python后端求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Backend Python Engineer",
+      "baseline_top5": [
+        "C++ Software Engineer",
+        "Backend Python Engineer",
+        "Backend Go Engineer",
+        "Python QA Automation Engineer",
+        "Backend Ruby Engineer"
+      ],
+      "tuned_top5": [
+        "C++ Software Engineer",
+        "Backend Python Engineer",
+        "Backend Go Engineer",
+        "Python QA Automation Engineer",
+        "Database Administrator"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "Go后端求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Backend Go Engineer",
+      "baseline_top5": [
+        "Backend Go Engineer",
+        "Backend Python Engineer",
+        "Backend Java Engineer",
+        "Backend Engineer (General)",
+        "Backend PHP Engineer"
+      ],
+      "tuned_top5": [
+        "Backend Go Engineer",
+        "Backend Engineer (General)",
+        "Backend Python Engineer",
+        "Backend Java Engineer",
+        "Backend Ruby Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "前端React求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Frontend React Engineer",
+      "baseline_top5": [
+        "Frontend React Engineer",
+        "Frontend Vue Engineer",
+        "React Native Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Frontend Angular Engineer"
+      ],
+      "tuned_top5": [
+        "Frontend React Engineer",
+        "Frontend Vue Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Product Engineer",
+        "React Native Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "前端Vue求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Frontend Vue Engineer",
+      "baseline_top5": [
+        "Frontend Vue Engineer",
+        "Frontend React Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Frontend Angular Engineer",
+        "WordPress Developer"
+      ],
+      "tuned_top5": [
+        "Frontend Vue Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Frontend React Engineer",
+        "Frontend Angular Engineer",
+        "UI/UX Designer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "iOS求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "iOS Engineer",
+      "baseline_top5": [
+        "iOS Engineer",
+        "Android Engineer",
+        "Flutter Engineer",
+        "Mobile Engineer (General)",
+        "Game C++ Engineer"
+      ],
+      "tuned_top5": [
+        "iOS Engineer",
+        "Android Engineer",
+        "Flutter Engineer",
+        "Mobile Engineer (General)",
+        "Manual QA Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Android求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Android Engineer",
+      "baseline_top5": [
+        "Android Engineer",
+        "Flutter Engineer",
+        "iOS Engineer",
+        "Mobile Engineer (General)",
+        "Manual QA Engineer"
+      ],
+      "tuned_top5": [
+        "Android Engineer",
+        "UI/UX Designer",
+        "Manual QA Engineer",
+        "Flutter Engineer",
+        "iOS Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "DevOps求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "DevOps Engineer",
+      "baseline_top5": [
+        "Azure DevOps Engineer",
+        "DevOps Engineer",
+        "Cloud Engineer",
+        "Platform Engineer",
+        "Site Reliability Engineer"
+      ],
+      "tuned_top5": [
+        "Platform Engineer",
+        "DevOps Engineer",
+        "Azure DevOps Engineer",
+        "Infrastructure Engineer",
+        "Site Reliability Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "QA自动化求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "QA Automation Engineer",
+      "baseline_top5": [
+        "QA Automation Engineer",
+        ".NET QA Automation Engineer",
+        "Frontend QA Automation Engineer",
+        "API QA Automation Engineer",
+        "Python QA Automation Engineer"
+      ],
+      "tuned_top5": [
+        "QA Automation Engineer",
+        "API QA Automation Engineer",
+        ".NET QA Automation Engineer",
+        "Manual QA Engineer",
+        "Frontend QA Automation Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "安全运维求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Security Operations Engineer",
+      "baseline_top5": [
+        "Systems Engineer",
+        "IT Operations Specialist",
+        "Cybersecurity Engineer",
+        "System Administrator",
+        "Security Operations Engineer"
+      ],
+      "tuned_top5": [
+        "Security Operations Engineer",
+        "Systems Engineer",
+        "IT Operations Specialist",
+        "System Administrator",
+        "Cybersecurity Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "游戏Unity求职者",
+      "eval_set": "eval_set_v1",
+      "target_role": "Unity Developer",
+      "baseline_top5": [
+        "Unity Developer",
+        "Game Technical Artist",
+        "Game C++ Engineer",
+        "Game Designer",
+        "Unreal Engine Developer"
+      ],
+      "tuned_top5": [
+        "Unity Developer",
+        "Game Technical Artist",
+        "Game C++ Engineer",
+        "Game Designer",
+        "Unreal Engine Developer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "ML工程师求职者",
+      "eval_set": "eval_set_v2",
+      "target_role": "Machine Learning Engineer",
+      "baseline_top5": [
+        "Data Scientist",
+        "Applied AI Engineer",
+        "Research Engineer",
+        "Machine Learning Research Engineer",
+        "LLM Inference Engineer"
+      ],
+      "tuned_top5": [
+        "Data Scientist",
+        "Research Engineer",
+        "Applied AI Engineer",
+        "Machine Learning Research Engineer",
+        "AI Agent Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "大模型应用方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "AI Engineer",
+      "baseline_top5": [
+        "AI Evaluation Engineer",
+        "Applied AI Engineer",
+        "Prompt Engineer",
+        "RAG Engineer",
+        "Research Engineer"
+      ],
+      "tuned_top5": [
+        "RAG Engineer",
+        "AI Evaluation Engineer",
+        "Prompt Engineer",
+        "Research Engineer",
+        "Applied AI Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "AI Agent 方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "AI Agent Engineer",
+      "baseline_top5": [
+        "Context Engineer",
+        "Applied AI Engineer",
+        "LLM Inference Engineer",
+        "Research Engineer",
+        "AI Agent Engineer"
+      ],
+      "tuned_top5": [
+        "Context Engineer",
+        "Applied AI Engineer",
+        "Research Engineer",
+        "AI Agent Engineer",
+        "Forward Deployed AI Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "LLM 推理优化",
+      "eval_set": "eval_set_v2",
+      "target_role": "LLM Inference Engineer",
+      "baseline_top5": [
+        "AI Research Engineer",
+        "Machine Learning Engineer",
+        "C++ Software Engineer",
+        "Unreal Engine Developer",
+        "Computer Vision Engineer"
+      ],
+      "tuned_top5": [
+        "AI Research Engineer",
+        "Machine Learning Engineer",
+        "Unreal Engine Developer",
+        "C++ Software Engineer",
+        "Research Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "RAG 检索工程师",
+      "eval_set": "eval_set_v2",
+      "target_role": "RAG Engineer",
+      "baseline_top5": [
+        "C++ Software Engineer",
+        "QA Engineer (General)",
+        "Embedded Software Engineer",
+        "RAG Engineer",
+        "Python QA Automation Engineer"
+      ],
+      "tuned_top5": [
+        "RAG Engineer",
+        "C++ Software Engineer",
+        "IT Support Specialist",
+        "Database Administrator",
+        "QA Engineer (General)"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "MLOps 方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "MLOps Engineer",
+      "baseline_top5": [
+        "MLOps Engineer",
+        "LLM Inference Engineer",
+        "AI Infrastructure Engineer",
+        "AI Engineer",
+        "Research Engineer"
+      ],
+      "tuned_top5": [
+        "MLOps Engineer",
+        "AI Infrastructure Engineer",
+        "AI Engineer",
+        "Research Engineer",
+        "Rust Blockchain Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "CV 工程师",
+      "eval_set": "eval_set_v2",
+      "target_role": "Computer Vision Engineer",
+      "baseline_top5": [
+        "Computer Vision Engineer",
+        "Research Engineer",
+        "Linux C++ Engineer",
+        "AI Research Engineer",
+        "Machine Learning Research Engineer"
+      ],
+      "tuned_top5": [
+        "Computer Vision Engineer",
+        "Research Engineer",
+        "AI Research Engineer",
+        "Machine Learning Research Engineer",
+        "Machine Learning Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "AI 研究型",
+      "eval_set": "eval_set_v2",
+      "target_role": "Machine Learning Research Engineer",
+      "baseline_top5": [
+        "Research Engineer",
+        "AI Research Engineer",
+        "Computer Vision Engineer",
+        "Machine Learning Research Engineer",
+        "Machine Learning Engineer"
+      ],
+      "tuned_top5": [
+        "Research Engineer",
+        "AI Research Engineer",
+        "Machine Learning Research Engineer",
+        "Machine Learning Engineer",
+        "Computer Vision Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "AI 基础设施",
+      "eval_set": "eval_set_v2",
+      "target_role": "AI Infrastructure Engineer",
+      "baseline_top5": [
+        "AI Infrastructure Engineer",
+        "DevOps Engineer",
+        "Infrastructure Engineer",
+        "Site Reliability Engineer",
+        "Platform Engineer"
+      ],
+      "tuned_top5": [
+        "Platform Engineer",
+        "AI Infrastructure Engineer",
+        "Infrastructure Engineer",
+        "DevOps Engineer",
+        "Site Reliability Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "AI 评测方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "AI Evaluation Engineer",
+      "baseline_top5": [
+        "Business Analyst",
+        "Data Scientist",
+        "Data Analyst",
+        "AI Evaluation Engineer",
+        "Product Manager"
+      ],
+      "tuned_top5": [
+        "Data Scientist",
+        "Data Analyst",
+        "Business Analyst",
+        "AI Evaluation Engineer",
+        "Analytics Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "数据工程方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Data Engineer",
+      "baseline_top5": [
+        "Data Engineer",
+        "AI Data Engineer",
+        "Data Architect",
+        "Data Scientist",
+        "Data Analyst"
+      ],
+      "tuned_top5": [
+        "AI Data Engineer",
+        "Data Engineer",
+        "Data Architect",
+        "Analytics Engineer",
+        "Data Scientist"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "数据分析方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Data Analyst",
+      "baseline_top5": [
+        "Data Analyst",
+        "Business Analyst",
+        "Data Scientist",
+        "QA Engineer (General)",
+        "IT Support Specialist"
+      ],
+      "tuned_top5": [
+        "Data Analyst",
+        "Business Analyst",
+        "Data Scientist",
+        "Analytics Engineer",
+        "IT Support Specialist"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "数据科学方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Data Scientist",
+      "baseline_top5": [
+        "Data Scientist",
+        "Data Analyst",
+        "Product Manager",
+        "Data Engineer",
+        "Machine Learning Research Engineer"
+      ],
+      "tuned_top5": [
+        "Data Scientist",
+        "Data Analyst",
+        "Product Manager",
+        "Analytics Engineer",
+        "AI Solutions Architect"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "分析工程方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Analytics Engineer",
+      "baseline_top5": [
+        "Analytics Engineer",
+        "Data Analyst",
+        "Data Engineer",
+        "Data Architect",
+        "AI Data Engineer"
+      ],
+      "tuned_top5": [
+        "Analytics Engineer",
+        "Data Analyst",
+        "Data Scientist",
+        "Data Engineer",
+        "Data Architect"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Java 后端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Backend Java Engineer",
+      "baseline_top5": [
+        "Backend Java Engineer",
+        "Backend Engineer (General)",
+        "Cloud Java Engineer",
+        "Backend Go Engineer",
+        "Backend PHP Engineer"
+      ],
+      "tuned_top5": [
+        "Backend Java Engineer",
+        "Backend Engineer (General)",
+        "Backend Go Engineer",
+        "Cloud Java Engineer",
+        "Software Architect"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Python 后端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Backend Python Engineer",
+      "baseline_top5": [
+        "C++ Software Engineer",
+        "Backend Python Engineer",
+        "Backend Go Engineer",
+        "Database Administrator",
+        "Backend Ruby Engineer"
+      ],
+      "tuned_top5": [
+        "C++ Software Engineer",
+        "Database Administrator",
+        "Backend Python Engineer",
+        "Backend Go Engineer",
+        "Prompt Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "Go 后端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Backend Go Engineer",
+      "baseline_top5": [
+        "Backend Go Engineer",
+        "Backend Engineer (General)",
+        "Backend Java Engineer",
+        "Cloud Java Engineer",
+        "Backend Python Engineer"
+      ],
+      "tuned_top5": [
+        "Backend Go Engineer",
+        "Backend Engineer (General)",
+        "AI Infrastructure Engineer",
+        "Site Reliability Engineer",
+        "DevOps Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Node 后端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Backend Node.js Engineer",
+      "baseline_top5": [
+        "Backend Node.js Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Full-Stack .NET Engineer",
+        "Product Engineer",
+        "Frontend React Engineer"
+      ],
+      "tuned_top5": [
+        "Backend Node.js Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Product Engineer",
+        "Full-Stack .NET Engineer",
+        "Node.js DevOps Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "C++ 系统方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "C++ Software Engineer",
+      "baseline_top5": [
+        "Embedded Software Engineer",
+        "C++ Software Engineer",
+        "Linux C++ Engineer",
+        "Unreal Engine Developer",
+        "Game C++ Engineer"
+      ],
+      "tuned_top5": [
+        "Embedded Software Engineer",
+        "C++ Software Engineer",
+        "Unreal Engine Developer",
+        "Linux C++ Engineer",
+        "Mobile C++ Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "React 前端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Frontend React Engineer",
+      "baseline_top5": [
+        "Frontend React Engineer",
+        "Frontend Vue Engineer",
+        "React Native Engineer",
+        "Frontend Angular Engineer",
+        "Full-Stack JavaScript Engineer"
+      ],
+      "tuned_top5": [
+        "Frontend React Engineer",
+        "Frontend Vue Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Product Engineer",
+        "React Native Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Vue 前端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Frontend Vue Engineer",
+      "baseline_top5": [
+        "Frontend Vue Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Frontend React Engineer",
+        "Frontend Angular Engineer",
+        "React Native Engineer"
+      ],
+      "tuned_top5": [
+        "Frontend Vue Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Frontend React Engineer",
+        "Frontend Angular Engineer",
+        "React Native Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "全栈 JS",
+      "eval_set": "eval_set_v2",
+      "target_role": "Full-Stack JavaScript Engineer",
+      "baseline_top5": [
+        "Frontend React Engineer",
+        "Full-Stack JavaScript Engineer",
+        "Backend Node.js Engineer",
+        "Product Engineer",
+        "Full-Stack .NET Engineer"
+      ],
+      "tuned_top5": [
+        "Full-Stack JavaScript Engineer",
+        "Product Engineer",
+        "Backend Node.js Engineer",
+        "Frontend React Engineer",
+        "Frontend Vue Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Android 开发",
+      "eval_set": "eval_set_v2",
+      "target_role": "Android Engineer",
+      "baseline_top5": [
+        "Android Engineer",
+        "Flutter Engineer",
+        "iOS Engineer",
+        "Mobile Engineer (General)",
+        "Manual QA Engineer"
+      ],
+      "tuned_top5": [
+        "Android Engineer",
+        "Flutter Engineer",
+        "iOS Engineer",
+        "Manual QA Engineer",
+        "UI/UX Designer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "iOS 开发",
+      "eval_set": "eval_set_v2",
+      "target_role": "iOS Engineer",
+      "baseline_top5": [
+        "iOS Engineer",
+        "Android Engineer",
+        "Flutter Engineer",
+        "Mobile Engineer (General)",
+        "Unity Developer"
+      ],
+      "tuned_top5": [
+        "iOS Engineer",
+        "Android Engineer",
+        "Flutter Engineer",
+        "Mobile Engineer (General)",
+        "Manual QA Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Flutter 跨端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Flutter Engineer",
+      "baseline_top5": [
+        "Flutter Engineer",
+        "iOS Engineer",
+        "Android Engineer",
+        "Mobile Engineer (General)",
+        "Mobile C++ Engineer"
+      ],
+      "tuned_top5": [
+        "Flutter Engineer",
+        "Manual QA Engineer",
+        "iOS Engineer",
+        "Mobile C++ Engineer",
+        "UI/UX Designer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "DevOps 方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "DevOps Engineer",
+      "baseline_top5": [
+        "DevOps Engineer",
+        "Azure DevOps Engineer",
+        "Site Reliability Engineer",
+        "Infrastructure Engineer",
+        "Cloud Engineer"
+      ],
+      "tuned_top5": [
+        "DevOps Engineer",
+        "Platform Engineer",
+        "Infrastructure Engineer",
+        "Site Reliability Engineer",
+        "Azure DevOps Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "平台工程方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Platform Engineer",
+      "baseline_top5": [
+        "Platform Engineer",
+        "DevOps Engineer",
+        "Azure DevOps Engineer",
+        "Site Reliability Engineer",
+        "Cloud Engineer"
+      ],
+      "tuned_top5": [
+        "Platform Engineer",
+        "DevOps Engineer",
+        "Infrastructure Engineer",
+        "Site Reliability Engineer",
+        "AI Infrastructure Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "云安全方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Cloud Security Engineer",
+      "baseline_top5": [
+        "Network Engineer",
+        "Security Operations Engineer",
+        "IT Operations Specialist",
+        "Cloud Engineer",
+        "Azure DevOps Engineer"
+      ],
+      "tuned_top5": [
+        "Security Operations Engineer",
+        "Platform Engineer",
+        "Network Engineer",
+        "IT Operations Specialist",
+        "Infrastructure Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "渗透测试",
+      "eval_set": "eval_set_v2",
+      "target_role": "Penetration Testing Engineer",
+      "baseline_top5": [
+        "Penetration Testing Engineer",
+        "Python QA Automation Engineer",
+        "Manual QA Engineer",
+        "QA Engineer (General)",
+        "Cybersecurity Engineer"
+      ],
+      "tuned_top5": [
+        "Penetration Testing Engineer",
+        "Manual QA Engineer",
+        "Database Administrator",
+        "Python QA Automation Engineer",
+        "QA Engineer (General)"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "安全运营",
+      "eval_set": "eval_set_v2",
+      "target_role": "Security Operations Engineer",
+      "baseline_top5": [
+        "Cybersecurity Engineer",
+        "IT Operations Specialist",
+        "Information Security Analyst",
+        "Systems Engineer",
+        "Security Software Engineer"
+      ],
+      "tuned_top5": [
+        "Cybersecurity Engineer",
+        "Security Operations Engineer",
+        "Security Software Engineer",
+        "IT Operations Specialist",
+        "Systems Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "自动化测试",
+      "eval_set": "eval_set_v2",
+      "target_role": "Python QA Automation Engineer",
+      "baseline_top5": [
+        "Frontend QA Automation Engineer",
+        "QA Automation Engineer",
+        ".NET QA Automation Engineer",
+        "QA Engineer (General)",
+        "API QA Automation Engineer"
+      ],
+      "tuned_top5": [
+        "API QA Automation Engineer",
+        "QA Automation Engineer",
+        "Frontend QA Automation Engineer",
+        "QA Engineer (General)",
+        "Python QA Automation Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "游戏客户端",
+      "eval_set": "eval_set_v2",
+      "target_role": "Unreal Engine Developer",
+      "baseline_top5": [
+        "Unreal Engine Developer",
+        "Game Technical Artist",
+        "Game C++ Engineer",
+        "Game Designer",
+        "C++ Software Engineer"
+      ],
+      "tuned_top5": [
+        "Unreal Engine Developer",
+        "Game Technical Artist",
+        "Game C++ Engineer",
+        "Game Designer",
+        "Unity Developer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "Unity 开发",
+      "eval_set": "eval_set_v2",
+      "target_role": "Unity Developer",
+      "baseline_top5": [
+        "Unity Developer",
+        "Game Technical Artist",
+        "Game Designer",
+        "Game C++ Engineer",
+        "Unreal Engine Developer"
+      ],
+      "tuned_top5": [
+        "Unity Developer",
+        "Game Technical Artist",
+        "Game Designer",
+        "Game C++ Engineer",
+        "Unreal Engine Developer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "产品经理方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Product Manager",
+      "baseline_top5": [
+        "Product Manager",
+        "Project Manager",
+        "Delivery Manager",
+        "Product Owner",
+        "Business Analyst"
+      ],
+      "tuned_top5": [
+        "Product Manager",
+        "Project Manager",
+        "Delivery Manager",
+        "Product Owner",
+        "Data Scientist"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "项目管理方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Project Manager",
+      "baseline_top5": [
+        "Project Manager",
+        "Scrum Master",
+        "Delivery Manager",
+        "Game Designer",
+        "Product Owner"
+      ],
+      "tuned_top5": [
+        "Project Manager",
+        "Scrum Master",
+        "Game Designer",
+        "Product Owner",
+        "Delivery Manager"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "嵌入式方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Embedded Software Engineer",
+      "baseline_top5": [
+        "Embedded Software Engineer",
+        "C++ Software Engineer",
+        "Linux C++ Engineer",
+        "Unreal Engine Developer",
+        "Mobile C++ Engineer"
+      ],
+      "tuned_top5": [
+        "Embedded Software Engineer",
+        "C++ Software Engineer",
+        "Unreal Engine Developer",
+        "Mobile C++ Engineer",
+        "Linux C++ Engineer"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "DBA 方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Database Administrator",
+      "baseline_top5": [
+        "Database Administrator",
+        "IT Support Specialist",
+        "QA Engineer (General)",
+        "Data Analyst",
+        "Backend Go Engineer"
+      ],
+      "tuned_top5": [
+        "Database Administrator",
+        "IT Support Specialist",
+        "Analytics Engineer",
+        "Data Analyst",
+        "QA Engineer (General)"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 1
+    },
+    {
+      "name": "网络工程方向",
+      "eval_set": "eval_set_v2",
+      "target_role": "Network Engineer",
+      "baseline_top5": [
+        "Network Engineer",
+        "IT Operations Specialist",
+        "Systems Engineer",
+        "System Administrator",
+        "IT Support Specialist"
+      ],
+      "tuned_top5": [
+        "IT Support Specialist",
+        "Network Engineer",
+        "IT Operations Specialist",
+        "Systems Engineer",
+        "System Administrator"
+      ],
+      "baseline_hit@1": 1,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "解决方案架构",
+      "eval_set": "eval_set_v2",
+      "target_role": "Solutions Architect",
+      "baseline_top5": [
+        "Software Architect",
+        "Backend Java Engineer",
+        "Cloud Java Engineer",
+        "Solutions Architect",
+        "AI Infrastructure Engineer"
+      ],
+      "tuned_top5": [
+        "Software Architect",
+        "Solutions Architect",
+        "AI Infrastructure Engineer",
+        "Backend Engineer (General)",
+        "Backend Java Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    },
+    {
+      "name": "零基础的 AI 爱好者",
+      "eval_set": "eval_set_v2",
+      "target_role": "AI Engineer",
+      "baseline_top5": [
+        "C++ Software Engineer",
+        "Machine Learning Research Engineer",
+        "Applied AI Engineer",
+        "Research Engineer",
+        "AI Evaluation Engineer"
+      ],
+      "tuned_top5": [
+        "C++ Software Engineer",
+        "AI Solutions Architect",
+        "Applied AI Engineer",
+        "Research Engineer",
+        "Machine Learning Research Engineer"
+      ],
+      "baseline_hit@1": 0,
+      "tuned_hit@1": 0
+    }
+  ],
+  "top10_grid": [
+    {
+      "w_coverage": 0.15,
+      "w_semantic": 0.7,
+      "w_trend": 0.15,
+      "w_feasibility": 0.0,
+      "hit@1": 0.8103,
+      "hit@5": 0.9828,
+      "mrr": 0.8879,
+      "ndcg@5": 0.7026
+    },
+    {
+      "w_coverage": 0.2,
+      "w_semantic": 0.7,
+      "w_trend": 0.1,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7414,
+      "hit@5": 0.9828,
+      "mrr": 0.8592,
+      "ndcg@5": 0.6895
+    },
+    {
+      "w_coverage": 0.2,
+      "w_semantic": 0.65,
+      "w_trend": 0.15,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7586,
+      "hit@5": 0.9828,
+      "mrr": 0.8592,
+      "ndcg@5": 0.6871
+    },
+    {
+      "w_coverage": 0.1,
+      "w_semantic": 0.7,
+      "w_trend": 0.2,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7759,
+      "hit@5": 0.9828,
+      "mrr": 0.8649,
+      "ndcg@5": 0.6864
+    },
+    {
+      "w_coverage": 0.25,
+      "w_semantic": 0.65,
+      "w_trend": 0.1,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7586,
+      "hit@5": 0.9828,
+      "mrr": 0.8635,
+      "ndcg@5": 0.6835
+    },
+    {
+      "w_coverage": 0.15,
+      "w_semantic": 0.7,
+      "w_trend": 0.1,
+      "w_feasibility": 0.05,
+      "hit@1": 0.7241,
+      "hit@5": 0.9828,
+      "mrr": 0.8454,
+      "ndcg@5": 0.6829
+    },
+    {
+      "w_coverage": 0.1,
+      "w_semantic": 0.7,
+      "w_trend": 0.15,
+      "w_feasibility": 0.05,
+      "hit@1": 0.7586,
+      "hit@5": 0.9828,
+      "mrr": 0.8497,
+      "ndcg@5": 0.6779
+    },
+    {
+      "w_coverage": 0.25,
+      "w_semantic": 0.7,
+      "w_trend": 0.05,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7241,
+      "hit@5": 0.9828,
+      "mrr": 0.8362,
+      "ndcg@5": 0.6774
+    },
+    {
+      "w_coverage": 0.15,
+      "w_semantic": 0.65,
+      "w_trend": 0.15,
+      "w_feasibility": 0.05,
+      "hit@1": 0.7586,
+      "hit@5": 0.9828,
+      "mrr": 0.8534,
+      "ndcg@5": 0.6762
+    },
+    {
+      "w_coverage": 0.3,
+      "w_semantic": 0.65,
+      "w_trend": 0.05,
+      "w_feasibility": 0.0,
+      "hit@1": 0.7241,
+      "hit@5": 0.9828,
+      "mrr": 0.8333,
+      "ndcg@5": 0.6742
+    }
+  ]
+}

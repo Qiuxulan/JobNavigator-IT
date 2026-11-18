@@ -1,0 +1,209 @@
+@import '../../styles/tokens.scss';
+
+.news-hero {
+  padding: 12px 32px 16px;
+}
+
+.news-tabs {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: $c-bg;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.news-tab {
+  flex-shrink: 0;
+  font-size: 26px;
+  color: $c-text-2;
+  background: $c-card;
+  border-radius: $radius-pill;
+  padding: 10px 28px;
+  margin-right: 16px;
+  box-shadow: $shadow-card;
+}
+
+.news-tab--active {
+  background: $gradient;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: $shadow-pop;
+}
+
+.news-card {
+  margin-bottom: 20px;
+}
+
+.news-title-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.news-title {
+  flex: 1;
+  min-width: 0;
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.news-title-link {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 12px;
+  margin-top: 6px;
+}
+
+.news-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.news-meta {
+  font-size: 22px;
+}
+
+.news-meta-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.news-fav-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+}
+
+/* 分类彩色胶囊 */
+.news-cat {
+  flex-shrink: 0;
+  font-size: 20px;
+  padding: 3px 16px;
+  border-radius: $radius-pill;
+  background: $primary-soft;
+  color: $primary;
+}
+
+.news-cat--product_release {
+  background: #f1edff;
+  color: #7a5cff;
+}
+
+.news-cat--research {
+  background: #e6f7fb;
+  color: #0e9bb5;
+}
+
+.news-cat--funding {
+  background: #e7f8f0;
+  color: #0da163;
+}
+
+.news-cat--security {
+  background: #fef3e2;
+  color: #e8790a;
+}
+
+.news-cat--policy {
+  background: #e9edf8;
+  color: #54628f;
+}
+
+.news-cat--layoff {
+  background: #feeceb;
+  color: #e03c31;
+}
+
+.news-cat--hiring {
+  background: #e8f6f3;
+  color: #0d9488;
+}
+
+.news-skills {
+  margin-bottom: 6px;
+}
+
+.news-detail {
+  background: $c-fill;
+  border-radius: $radius-lg;
+  padding: 20px;
+  margin-top: 12px;
+}
+
+.news-summary {
+  display: block;
+  font-size: 28px;
+  line-height: 1.7;
+  color: $c-text;
+  margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.news-actions {
+  display: flex;
+  align-items: center;
+}
+
+.news-read-origin {
+  display: flex;
+  align-items: center;
+  background: $gradient;
+  border-radius: $radius-pill;
+  padding: 12px 32px;
+  margin-right: 16px;
+  box-shadow: $shadow-pop;
+}
+
+.news-read-origin:active {
+  opacity: 0.85;
+}
+
+.news-read-origin-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.news-read-origin-text {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.news-action {
+  font-size: 24px;
+  color: $primary;
+  background: $c-card;
+  border-radius: $radius-pill;
+  padding: 12px 28px;
+}
+
+.news-expand-hint {
+  display: block;
+  font-size: 22px;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.news-footer-total {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0 40px;
+}

@@ -1,0 +1,301 @@
+{
+ "generated_at": "2026-11-05T21:45:06.831619+00:00",
+ "total_skills": 295,
+ "edge_count": 443,
+ "node_count": 276,
+ "coverage": 0.9356,
+ "v3_comparison": {
+  "v3_nodes": 276,
+  "v3_edges": 347,
+  "overlap_edges": 347,
+  "overlap_rate_vs_v3": 1.0,
+  "new_edges": 96,
+  "new_edges_from_llm": 96
+ },
+ "dag": {
+  "cycles_broken": 2,
+  "prereq_count_pruned": 1,
+  "is_dag": true,
+  "max_prereq_count": 5
+ },
+ "llm": {
+  "enabled": true,
+  "candidate_pairs": 1232,
+  "candidate_pairs_by_source": {
+   "v3_seed": 347,
+   "jd_cooccur": 375,
+   "category": 510
+  },
+  "api_calls": 365,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "estimated_cost_yuan": 2.16,
+  "seed_edges_llm_confirmed": 215,
+  "seed_edges_total": 347,
+  "llm_v3_agreement_rate": 0.6196,
+  "prompt_tokens_est": 571992,
+  "completion_tokens_est": 126378,
+  "note": "forward 309 calls(103批×3票) + reverse 56 calls;run1 因采样顺序非确定浪费约360次调用,修复后缓存命中"
+ },
+ "hours": {
+  "median": 8,
+  "mean": 11.9,
+  "min": 2.0,
+  "max": 60.0,
+  "source_dist": {
+   "resource_median": 184,
+   "v3_fallback": 104,
+   "category_median": 7
+  }
+ },
+ "difficulty": {
+  "beginner": 187,
+  "intermediate": 93,
+  "advanced": 15
+ },
+ "sample_new_edges": [
+  {
+   "from": "llm",
+   "to": "quantization",
+   "from_name": "LLM",
+   "to_name": "Quantization",
+   "confidence": 0.7955,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek",
+    "resource_cooccur"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "llm",
+   "to": "mcp",
+   "from_name": "LLM",
+   "to_name": "MCP",
+   "confidence": 0.7641,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "docker",
+   "to": "sre",
+   "from_name": "Docker",
+   "to_name": "SRE",
+   "confidence": 0.7599,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "html",
+   "to": "sass",
+   "from_name": "HTML",
+   "to_name": "Sass",
+   "confidence": 0.7571,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "embedded",
+   "to": "iot",
+   "from_name": "Embedded",
+   "to_name": "IoT",
+   "confidence": 0.7528,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "data-pipeline",
+   "to": "dagster",
+   "from_name": "Data Pipeline",
+   "to_name": "Dagster",
+   "confidence": 0.7526,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "prompt-engineering",
+   "to": "tool-calling",
+   "from_name": "Prompt Engineering",
+   "to_name": "Tool Calling",
+   "confidence": 0.7491,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek",
+    "resource_cooccur"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "hardware",
+   "to": "iot",
+   "from_name": "Hardware",
+   "to_name": "IoT",
+   "confidence": 0.7489,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "machine-learning",
+   "to": "nlp",
+   "from_name": "Machine Learning",
+   "to_name": "NLP",
+   "confidence": 0.7461,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "mysql",
+   "to": "laravel",
+   "from_name": "MySQL",
+   "to_name": "Laravel",
+   "confidence": 0.7433,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "cpp",
+   "to": "cuda",
+   "from_name": "C++",
+   "to_name": "CUDA",
+   "confidence": 0.7405,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "html",
+   "to": "jquery",
+   "from_name": "HTML",
+   "to_name": "jQuery",
+   "confidence": 0.7397,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "css",
+   "to": "jquery",
+   "from_name": "CSS",
+   "to_name": "jQuery",
+   "confidence": 0.7364,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "rest",
+   "to": "springboot",
+   "from_name": "REST API",
+   "to_name": "Spring Boot",
+   "confidence": 0.735,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "selenium",
+   "to": "appium",
+   "from_name": "Selenium",
+   "to_name": "Appium",
+   "confidence": 0.7331,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "statistics",
+   "to": "scikit-learn",
+   "from_name": "Statistics",
+   "to_name": "scikit-learn",
+   "confidence": 0.7302,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "java",
+   "to": "kotlin",
+   "from_name": "Java",
+   "to_name": "Kotlin",
+   "confidence": 0.728,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "machine-learning",
+   "to": "pytorch",
+   "from_name": "Machine Learning",
+   "to_name": "PyTorch",
+   "confidence": 0.728,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "excel",
+   "to": "data-analysis",
+   "from_name": "Excel",
+   "to_name": "Data Analysis",
+   "confidence": 0.7273,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  },
+  {
+   "from": "tensorflow",
+   "to": "mlops",
+   "from_name": "TensorFlow",
+   "to_name": "MLOps",
+   "confidence": 0.726,
+   "sources": [
+    "jd_cooccur",
+    "llm_deepseek"
+   ],
+   "llm_agreement": 1.0
+  }
+ ],
+ "elapsed_sec": 1.0
+}

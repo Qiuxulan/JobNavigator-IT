@@ -1,0 +1,218 @@
+@import '../../styles/tokens.scss';
+
+.assistant-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  background: $c-bg;
+}
+
+/* 自定义沉浸式头部（含状态栏安全区） */
+.assistant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(20px + env(safe-area-inset-top)) 28px 24px;
+  background: $gradient;
+  box-shadow: $shadow-pop;
+}
+
+.assistant-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.assistant-clear {
+  font-size: 22px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: $radius-pill;
+  padding: 8px 24px;
+}
+
+.assistant-scroll {
+  flex: 1;
+  min-height: 0;
+  padding: 28px 24px;
+  box-sizing: border-box;
+}
+
+/* 空状态欢迎区 */
+.assistant-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $c-card;
+  border-radius: $radius-card;
+  padding: 48px 36px;
+  margin-bottom: 24px;
+  box-shadow: $shadow-card;
+}
+
+.assistant-welcome-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: $primary-soft;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.assistant-welcome-title {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.assistant-welcome-desc {
+  display: block;
+  font-size: 26px;
+  color: $c-text-2;
+  line-height: 1.7;
+}
+
+/* 聊天气泡 */
+.msg-row {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.msg-row--user {
+  justify-content: flex-end;
+}
+
+.msg-bubble {
+  max-width: 82%;
+  padding: 20px 26px;
+  border-radius: 8px 24px 24px 24px;
+  background: $c-card;
+  border: 1px solid $c-line;
+  box-shadow: $shadow-card;
+}
+
+.msg-bubble--user {
+  background: $gradient;
+  border: none;
+  border-radius: 24px 8px 24px 24px;
+  box-shadow: $shadow-pop;
+}
+
+.msg-bubble--typing {
+  background: $c-card;
+}
+
+.msg-text {
+  font-size: 28px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: $c-text;
+}
+
+.msg-bubble--user .msg-text {
+  color: #ffffff;
+}
+
+/* 正在输入的点点动画 */
+.typing-dots {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.typing-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $c-text-3;
+  margin-right: 10px;
+  animation: typing-blink 1.2s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+  margin-right: 0;
+}
+
+@keyframes typing-blink {
+  0%,
+  60%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+}
+
+/* 快捷问题 */
+.assistant-quick {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 24px 4px;
+  background: $c-card;
+  border-top: 1px solid $c-line;
+}
+
+.assistant-chip {
+  font-size: 24px;
+  color: $primary;
+  background: $primary-soft;
+  border-radius: $radius-pill;
+  padding: 10px 26px;
+  margin: 0 12px 10px 0;
+}
+
+/* 底部输入条 */
+.assistant-input-bar {
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 24px calc(16px + env(safe-area-inset-bottom));
+  background: $c-card;
+}
+
+.assistant-input {
+  flex: 1;
+  height: 76px;
+  background: $c-fill;
+  border-radius: $radius-pill;
+  padding: 16px 28px;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+.assistant-send {
+  margin-left: 16px;
+  background: $gradient;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: $radius-pill;
+  padding: 0 40px;
+  height: 76px;
+  line-height: 76px;
+  box-shadow: $shadow-pop;
+}
+
+.assistant-send::after {
+  border: none;
+}
+
+.assistant-send--disabled {
+  opacity: 0.5;
+  box-shadow: none;
+}

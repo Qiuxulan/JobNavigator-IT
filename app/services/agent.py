@@ -87,7 +87,7 @@ TOOL_DEFINITIONS = [
         "type": "function",
         "function": {
             "name": "get_role_list",
-            "description": "获取所有可查询的 IT 岗位角色列表（69个角色），按分类分组。",
+            "description": "获取所有可查询的 IT 岗位角色列表（全部细分岗位），按分类分组。",
             "parameters": {"type": "object", "properties": {}},
         },
     },
@@ -165,11 +165,94 @@ TOOL_DEFINITIONS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_news",
+            "description": (
+                "搜索实时新闻库 news_items（每 3 小时增量采集更新，中英双语）。"
+                "当用户问'最近/最新有什么新闻、动态、发生了什么'时使用。"
+                "支持中英文关键词（空格拆词后 OR 匹配标题/摘要）、时间范围、类别和语言过滤。"
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "搜索关键词，中英文均可，空格分隔的多个词按 OR 匹配"},
+                    "days": {"type": "integer", "description": "只返回最近 N 天的新闻", "default": 7},
+                    "category": {"type": "string", "description": "可选类别过滤，如 tech_general/layoff/funding/product_release/research/security/hiring/policy", "default": None},
+                    "lang": {"type": "string", "description": "可选语言过滤：zh / en", "default": None},
+                    "limit": {"type": "integer", "description": "返回条数上限", "default": 8},
+                },
+                "required": ["query"],
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_cn_market",
+            "description": (
+                "查询国内实时招聘数据（腾讯、字节跳动、百度、美团、网易、京东官网当天在招的 IT 岗位）。"
+                "不传 role 时返回国内总览：在招总数、各公司在招数、热门岗位方向、城市分布、技能需求 Top；"
+                "传 role（岗位中文名/英文名/role_id）时返回该岗位在国内的在招数、主要公司、城市、技能要求、经验要求和真实岗位示例。"
+                "用户问国内岗位需求、哪些公司在招、在哪个城市、要什么技能时优先使用本工具；"
+                "其它工具的薪资与趋势为海外样本口径，回答时需说明。"
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {"role": {"type": "string", "description": "可选，岗位名或 role_id，如 'AI 智能体工程师'"}},
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_market_pulse",
+            "description": (
+                "获取实时市场脉搏：近 7 天新闻分类计数、近 7 天 vs 前 7 天技能提及频次变化、"
+                "最新裁员(layoff)与融资(funding)事件、新闻库最新更新时间戳。"
+                "当用户问'行业整体情况、市场动态、裁员/融资近况'时使用。"
+            ),
+            "parameters": {"type": "object", "properties": {}},
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_latest_role_news",
+            "description": (
+                "查询某个 IT 岗位相关的最新新闻（按 role_ids 关联或岗位名关键词匹配 news_items 实时新闻库）。"
+                "当用户问某岗位'最近有什么新闻/动态'时使用，可与 query_trend 配合回答趋势+新闻混合问题。"
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "role_name": {"type": "string", "description": "岗位角色名，如 'DevOps Engineer'"},
+                    "days": {"type": "integer", "description": "只返回最近 N 天的新闻", "default": 30},
+                    "limit": {"type": "integer", "description": "返回条数上限", "default": 6},
+                },
+                "required": ["role_name"],
+            },
+        },
+    },
 ]
 
 SYSTEM_PROMPT = """你是 JobNavigator-IT 职业发展与行业趋势分析助手，专注于 IT 行业。
 
-你的能力分为两大板块：
+用户以国内求职者为主。你的知识来自三层数据源，回答时必须明确区分，不得混为一谈：
+
+**第零层：国内实时招聘（优先使用）** —— 腾讯、字节跳动、百度、美团、网易、京东官网每天在招的 IT 岗位。
+- 通过 get_cn_market 访问；问“国内/哪些公司在招/哪个城市/要什么技能/好不好找”时先调用它
+- 回答要写明“截至某日、国内大厂官网在招 N 个”；官网不公开薪资，不要编造人民币薪资
+
+**第一层：实时新闻库（news_items）** —— 每 3 小时增量采集更新的 IT 行业新闻（中英双语），用于回答"最新动态"类问题。
+- 通过 search_news、get_market_pulse、get_latest_role_news 三个工具访问
+- 引用任何新闻时必须标注 [来源, 日期]，日期为该新闻的 published_at
+- 新闻只反映"最近发生了什么"，不代表长期统计规律
+
+**第二层：月度统计趋势层（海外样本为主）** —— 基于 2023-10 至 2026-10 全球 JD 月度面板（国内占比不足 1%）的时序预测与 evidence v2 证据，用于回答"统计趋势/前景"类问题；其中薪资为美元口径，引用时注明“海外参考”。
+- 通过 query_trend、retrieve_evidence、get_evidence_backtrack、compare_roles、get_cot_explanation 访问
+- 月度统计截至 2026-10，预测为带 80% 区间的 forecast，回测 sMAPE 与稀疏标记如实返回
 
 **职业分析板块：**
 1. 分析简历/技能描述 → 提取技能画像
@@ -178,8 +261,8 @@ SYSTEM_PROMPT = """你是 JobNavigator-IT 职业发展与行业趋势分析助�
 4. 学习路径规划 → 生成含先修关系的学习计划和资源推荐
 
 **行业趋势板块：**
-5. 趋势预测 → 查询任意 IT 岗位的未来趋势（基于 PatchTST 时序模型、JD 需求、GDELT 新闻情绪、GitHub/arXiv 活跃度）
-6. 证据检索 → 检索支持趋势判断的 GDELT 新闻事件 + JD 在招证据
+5. 趋势预测 → 查询任意 IT 岗位的月度统计趋势（基于真实 JD 月度面板）
+6. 证据检索 → 检索支持趋势判断的 evidence v2 月度事件证据
 7. 角色对比 → 多角色发展前景对比
 8. 指标回溯 → 历史指标变化解释趋势原因
 9. CoT 推理解释 → 带引用编号的链式推理上下文
@@ -190,6 +273,12 @@ SYSTEM_PROMPT = """你是 JobNavigator-IT 职业发展与行业趋势分析助�
 - 使用 Markdown 格式，善用表格、列表和 emoji 增强可读性
 - 给出具体的、可执行的建议
 - 当用户提供技能背景时，主动进行全链路分析
+- 同时涉及"最新动态"与"统计趋势"的问题（如"某岗位未来怎么样，有什么最新动态"）必须两层都查，并明确分开陈述
+
+**时效性诚实声明：**
+- 新闻库数据最新可到最近 3 小时内的采集批次；若新闻库中没有相关新闻，必须如实说"新闻库中最近 N 天没有相关报道"，不得编造
+- 月度统计层知识截止 2026-10；对更晚的统计性结论必须声明超出数据覆盖范围
+- 两层都没有的信息，直接说不知道
 
 **CoT 推理规范（趋势分析时必须遵守）：**
 - 当你获取到趋势数据和 get_cot_explanation 返回的证据上下文后，必须按以下 5 步链式推理：
@@ -202,9 +291,9 @@ SYSTEM_PROMPT = """你是 JobNavigator-IT 职业发展与行业趋势分析助�
 - 若证据中存在标注为「反向信号」的条目，必须在推理中明确指出并权衡，不得回避
 - 不得引入证据之外的事实
 
-当前数据覆盖 69 个 IT 细分岗位、275 个技能节点、完整的先修关系图谱和学习资源库。
-趋势数据基于真实 JD 招聘数据（7万+条）、GDELT 全球新闻（172万条事件候选）、GitHub/arXiv 技术热度。
-预测模型使用 PatchTST，当前主预测视野为未来 24 个月的 JD 需求指数。"""
+当前数据覆盖岗位库中的全部 IT 细分岗位、约 300 个技能节点、完整的先修关系图谱和学习资源库。
+趋势数据基于真实 JD 招聘月度面板（2020-01 至 2026-10）；预测为带 80% 区间的 12 个月 forecast，
+回测 sMAPE 与稀疏标记如实返回，稀疏岗位置信度低是事实，不得粉饰。"""
 
 
 # ── Tool execution using real services ────────────────────────────────────────
@@ -216,23 +305,28 @@ SYSTEM_GUARDRAILS = """
 1. 不允许联网搜索，不允许引用工具结果以外的新闻、岗位、课程、薪资、公司或统计数字。
 2. 不允许自行杜撰岗位趋势、证据、JD、学习资源、技能关系或行业事件。
 3. 用户问到数据库没有覆盖的内容时，必须明确回答“当前项目数据库没有该信息”，并说明可用的数据范围。
-4. 岗位名称必须优先匹配本项目 69 个 canonical role；无法匹配时，先说明没有该岗位，再给出最接近的已收录岗位。
+4. 岗位名称必须优先匹配本项目岗位库中的 canonical role；无法匹配时，先说明没有该岗位，再给出最接近的已收录岗位。
 5. 趋势结论必须来自 query_trend、retrieve_evidence、get_evidence_backtrack 或 get_cot_explanation。
 6. 职业推荐、技能差距和学习路径必须来自 recommend_jobs、get_skill_gap 或 plan_learning_path。
-7. CoT 只输出可审计的证据链摘要，不输出隐藏思维链；每个判断必须带 [E#]、[M#] 或 [J#] 引用，引用必须来自工具结果。
+7. 最新行业动态必须来自 search_news、get_market_pulse 或 get_latest_role_news（项目内置实时新闻库，每 3 小时更新，属于"库内"数据，可以使用，但必须逐条标注 [来源, 日期]，且不得引用工具结果之外的新闻）。
+8. 引用新闻时不得改动其标题原意；新闻库无结果时如实说明，不得用统计层数据冒充最新新闻。
+9. CoT 只输出可审计的证据链摘要，不输出隐藏思维链；每个判断必须带 [E#]、[M#] 或 [J#] 引用，引用必须来自工具结果。
 
-当前项目数据范围：69 个 IT 细分岗位、275 个技能节点、技能前置关系、学习资源库、PatchTST 未来 24 个月岗位需求预测、GDELT/JD/重大行业事件证据。
+项目数据范围（两层）：
+- 实时层：news_items 新闻库（每 3 小时增量采集，中英双语，含 title/url/source/published_at/summary/category/skills/role_ids）
+- 统计层：岗位库全部 IT 细分岗位、约 300 个技能节点、技能前置关系、学习资源库、基于真实 JD 月度面板的 12 个月趋势预测（2020-01 至 2026-10，含回测 sMAPE/稀疏标记）、evidence v2 新闻事件证据
 """
 
 
 def _get_taxonomy() -> list[dict]:
     import json as _json
     from pathlib import Path
-    path = Path("data/gold/role_taxonomy.json")
-    if not path.exists():
-        return []
-    with open(path, "r", encoding="utf-8") as f:
-        return _json.load(f)
+    for name in ("role_taxonomy_v3.json", "role_taxonomy_v2.json", "role_taxonomy.json"):
+        path = Path(f"data/gold/{name}")
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                return _json.load(f)
+    return []
 
 
 def _execute_tool(name: str, arguments: dict) -> Any:
@@ -256,34 +350,361 @@ def _execute_tool(name: str, arguments: dict) -> Any:
         return _tool_plan_learning_path(arguments)
     elif name == "get_cot_explanation":
         return _tool_get_cot_explanation(arguments)
+    elif name == "search_news":
+        return _tool_search_news(arguments)
+    elif name == "get_market_pulse":
+        return _tool_get_market_pulse()
+    elif name == "get_cn_market":
+        return _tool_get_cn_market(arguments)
+    elif name == "get_latest_role_news":
+        return _tool_get_latest_role_news(arguments)
     return {"error": f"Unknown tool: {name}"}
+
+
+def _tool_get_cn_market(args: dict) -> dict:
+    """国内官网实时岗位（data/gold/cn_market_v1.json，pipelines/cn_jobs 每日更新）。"""
+    from fastapi import HTTPException
+
+    from app.api.market import market_overview, market_role
+
+    try:
+        role = (args or {}).get("role")
+        if role:
+            d = market_role(str(role))
+            cn = d.get("cn") or {}
+            return {
+                "口径": "国内大厂官网当天在招岗位", "截至": d.get("as_of"), "岗位": d.get("role_zh"),
+                "国内在招数": cn.get("open_roles", 0),
+                "主要公司": [f"{c['name']} {c['count']}" for c in cn.get("companies", [])[:5]],
+                "主要城市": [f"{c['name']} {c['count']}" for c in cn.get("cities", [])[:5]],
+                "技能要求": [f"{s['name']} {round(s['share'] * 100)}%" for s in cn.get("top_skills", [])[:10]],
+                "经验要求": [f"{e['name']} {e['count']}" for e in cn.get("experience", [])],
+                "岗位示例": [f"{s['company']}·{s['title']}（{s['city']}）" for s in cn.get("samples", [])[:5]],
+            }
+        o = market_overview()
+        return {
+            "口径": "国内大厂官网当天在招 IT 岗位", "截至": o.get("as_of"), "在招总数": o["summary"]["open_roles"],
+            "各公司在招": [f"{c['company']} {c['open_roles']}" for c in o.get("companies", [])],
+            "热门岗位": [f"{r['role_zh']} {r['open_roles']}" for r in o.get("hot_roles", [])[:10]],
+            "城市": [f"{c['name']} {c['count']}" for c in o["summary"]["cities"][:8]],
+            "技能需求Top": [f"{s['name']} {round(s['share_cn'] * 100)}%" for s in o.get("top_skills", [])[:12]],
+        }
+    except HTTPException as exc:
+        return {"error": str(exc.detail)}
+
+
+# ── Real-time news tools (news_items table, refreshed every 3h) ───────────────
+
+_NEWS_DSN = os.environ.get(
+    "JOBNAV_POSTGRES_DSN",
+    "postgresql://jobnav:jobnav@localhost:5432/jobnavigator",
+)
+
+
+def _news_connect():
+    import psycopg
+
+    return psycopg.connect(_NEWS_DSN)
+
+
+def _split_query_terms(query: str) -> list[str]:
+    """Split a mixed Chinese/English query into OR-match terms.
+
+    Whitespace-separated tokens become individual terms; if the whole query
+    has no spaces it is kept as a single term. Short stopwords are dropped.
+    """
+    terms = [t.strip() for t in str(query).split() if t.strip()]
+    if not terms and query.strip():
+        terms = [query.strip()]
+    stopwords = {"的", "了", "和", "与", "在", "是", "有", "什么", "怎么样", "如何", "the", "a", "an", "of", "in", "on", "and", "or", "is", "are"}
+    return [t for t in terms if t.lower() not in stopwords] or terms or [str(query).strip()]
+
+
+def _news_row_snippet(row: dict, max_len: int = 140) -> str:
+    text = (row.get("summary") or "").strip().replace("\n", " ")
+    return text[:max_len] + ("…" if len(text) > max_len else "")
+
+
+def _tool_search_news(args: dict) -> dict:
+    """搜索实时新闻库：title/summary ILIKE 关键词（OR）、时间倒序。"""
+    try:
+        query = str(args.get("query", "")).strip()
+        days = max(1, int(args.get("days") or 7))
+        limit = max(1, min(50, int(args.get("limit") or 8)))
+        category = args.get("category") or None
+        lang = args.get("lang") or None
+        terms = _split_query_terms(query)
+
+        where = ["published_at >= NOW() - (%s || ' days')::interval"]
+        params: list = [str(days)]
+        if terms:
+            conds = []
+            for t in terms:
+                conds.append("(title ILIKE %s OR summary ILIKE %s)")
+                like = f"%{t}%"
+                params.extend([like, like])
+            where.append("(" + " OR ".join(conds) + ")")
+        if category:
+            where.append("category = %s")
+            params.append(category)
+        if lang:
+            where.append("lang = %s")
+            params.append(lang)
+        cond = " AND ".join(where)
+
+        with _news_connect() as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT title, source, published_at, category, url, summary, lang "
+                    f"FROM news_items WHERE {cond} "
+                    "ORDER BY published_at DESC NULLS LAST LIMIT %s",
+                    [*params, limit],
+                )
+                rows = cur.fetchall()
+                cur.execute(
+                    "SELECT MAX(published_at) FROM news_items WHERE published_at >= NOW() - (%s || ' days')::interval",
+                    [str(days)],
+                )
+                latest = cur.fetchone()[0]
+
+        items = [
+            {
+                "title": r[0],
+                "source": r[1],
+                "published_at": r[2].isoformat() if r[2] else None,
+                "category": r[3],
+                "url": r[4],
+                "summary_snippet": _news_row_snippet({"summary": r[5]}),
+                "lang": r[6],
+            }
+            for r in rows
+        ]
+        result: dict = {
+            "query": query,
+            "days": days,
+            "filters": {"category": category, "lang": lang},
+            "count": len(items),
+            "latest_in_range": latest.isoformat() if latest else None,
+            "items": items,
+        }
+        if not items:
+            result["note"] = (
+                f"新闻库最近 {days} 天内没有匹配「{query}」的新闻。"
+                "请如实告知用户没有相关报道，可建议放宽关键词、扩大时间范围或换用 get_market_pulse 查看整体动态。"
+            )
+        return result
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _tool_get_market_pulse() -> dict:
+    """实时市场脉搏：近 7 天分类计数、技能提及频次环比变化、layoff/funding 最新事件。"""
+    try:
+        with _news_connect() as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT category, COUNT(*) FROM news_items "
+                    "WHERE published_at >= NOW() - INTERVAL '7 days' "
+                    "GROUP BY category ORDER BY COUNT(*) DESC"
+                )
+                cat_counts = {cat: n for cat, n in cur.fetchall()}
+
+                cur.execute(
+                    """
+                    SELECT skill,
+                           COALESCE(now.cnt, 0) AS cnt_now,
+                           COALESCE(prev.cnt, 0) AS cnt_prev
+                    FROM (
+                        SELECT s AS skill, COUNT(*) AS cnt
+                        FROM news_items, unnest(skills) AS s
+                        WHERE published_at >= NOW() - INTERVAL '7 days'
+                        GROUP BY s
+                    ) now
+                    FULL OUTER JOIN (
+                        SELECT s AS skill, COUNT(*) AS cnt
+                        FROM news_items, unnest(skills) AS s
+                        WHERE published_at >= NOW() - INTERVAL '14 days'
+                          AND published_at <  NOW() - INTERVAL '7 days'
+                        GROUP BY s
+                    ) prev USING (skill)
+                    ORDER BY COALESCE(now.cnt, 0) DESC
+                    LIMIT 20
+                    """
+                )
+                skill_rows = [
+                    {"skill": sk, "mentions_last_7d": int(cn), "mentions_prev_7d": int(cp), "delta": int(cn - cp)}
+                    for sk, cn, cp in cur.fetchall()
+                ]
+
+                def _latest_events(cat: str, limit: int = 3) -> list[dict]:
+                    cur.execute(
+                        "SELECT title, source, published_at, url, summary FROM news_items "
+                        "WHERE category = %s ORDER BY published_at DESC NULLS LAST LIMIT %s",
+                        [cat, limit],
+                    )
+                    return [
+                        {
+                            "title": r[0],
+                            "source": r[1],
+                            "published_at": r[2].isoformat() if r[2] else None,
+                            "url": r[3],
+                            "summary_snippet": _news_row_snippet({"summary": r[4]}),
+                        }
+                        for r in cur.fetchall()
+                    ]
+
+                layoffs = _latest_events("layoff")
+                funding = _latest_events("funding")
+
+                cur.execute("SELECT MAX(published_at), COUNT(*) FROM news_items")
+                latest, total = cur.fetchone()
+
+        rising = sorted(skill_rows, key=lambda r: (-r["delta"], -r["mentions_last_7d"]))[:8]
+        top_overall = skill_rows[:8]
+        return {
+            "window_days": 7,
+            "news_count_last_7d": sum(cat_counts.values()),
+            "category_counts_last_7d": cat_counts,
+            "top_skills_last_7d": top_overall,
+            "fastest_rising_skills": [r for r in rising if r["delta"] > 0],
+            "latest_layoff_events": layoffs,
+            "latest_funding_events": funding,
+            "news_latest_published_at": latest.isoformat() if latest else None,
+            "news_total_items": total,
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _tool_get_latest_role_news(args: dict) -> dict:
+    """按 role_ids 或岗位名关键词匹配，查该岗位相关最新新闻。"""
+    try:
+        role_name = str(args.get("role_name", "")).strip()
+        days = max(1, int(args.get("days") or 30))
+        limit = max(1, min(30, int(args.get("limit") or 6)))
+        if not role_name:
+            return {"error": "role_name is required"}
+
+        taxonomy = _get_taxonomy()
+        role_id = next(
+            (r["role_id"] for r in taxonomy
+             if r.get("canonical_role", "").lower() == role_name.lower()),
+            None,
+        )
+
+        where = ["published_at >= NOW() - (%s || ' days')::interval"]
+        params: list = [str(days)]
+        if role_id:
+            where.append("role_ids @> ARRAY[%s]::text[]")
+            params.append(role_id)
+            cond_role = " AND ".join(where)
+        else:
+            terms = [t for t in role_name.replace("-", " ").split() if len(t) > 1]
+            conds = []
+            for t in terms or [role_name]:
+                conds.append("(title ILIKE %s OR summary ILIKE %s)")
+                like = f"%{t}%"
+                params.extend([like, like])
+            where.append("(" + " OR ".join(conds) + ")")
+            cond_role = " AND ".join(where)
+
+        with _news_connect() as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT title, source, published_at, category, url, summary, lang "
+                    f"FROM news_items WHERE {cond_role} "
+                    "ORDER BY published_at DESC NULLS LAST LIMIT %s",
+                    [*params, limit],
+                )
+                rows = cur.fetchall()
+
+        items = [
+            {
+                "title": r[0],
+                "source": r[1],
+                "published_at": r[2].isoformat() if r[2] else None,
+                "category": r[3],
+                "url": r[4],
+                "summary_snippet": _news_row_snippet({"summary": r[5]}),
+                "lang": r[6],
+            }
+            for r in rows
+        ]
+        matched_by = "role_ids" if role_id else "keywords"
+        # role_ids 标记覆盖有限（仅部分新闻打标），命中 0 条时回退到岗位关键词匹配
+        # （岗位名 + taxonomy top_skills，限前 6 个，避免 OR 过宽）
+        if not items and role_id:
+            tax = next((r for r in taxonomy if r.get("role_id") == role_id), {})
+            kw_terms = list(dict.fromkeys(
+                [t for t in role_name.replace("-", " ").split() if len(t) > 1]
+                + [str(s) for s in (tax.get("top_skills") or [])[:6]]
+            ))
+            kw_where = ["published_at >= NOW() - (%s || ' days')::interval"]
+            kw_params: list = [str(days)]
+            conds = []
+            for t in kw_terms or [role_name]:
+                conds.append("(title ILIKE %s OR summary ILIKE %s)")
+                like = f"%{t}%"
+                kw_params.extend([like, like])
+            kw_where.append("(" + " OR ".join(conds) + ")")
+            with _news_connect() as conn:
+                with conn.cursor() as cur:
+                    cur.execute(
+                        "SELECT title, source, published_at, category, url, summary, lang "
+                        f"FROM news_items WHERE {' AND '.join(kw_where)} "
+                        "ORDER BY published_at DESC NULLS LAST LIMIT %s",
+                        [*kw_params, limit],
+                    )
+                    rows = cur.fetchall()
+            if rows:
+                matched_by = "keywords_fallback"
+                items = [
+                    {
+                        "title": r[0],
+                        "source": r[1],
+                        "published_at": r[2].isoformat() if r[2] else None,
+                        "category": r[3],
+                        "url": r[4],
+                        "summary_snippet": _news_row_snippet({"summary": r[5]}),
+                        "lang": r[6],
+                    }
+                    for r in rows
+                ]
+        result: dict = {
+            "role_name": role_name,
+            "matched_role_id": role_id,
+            "matched_by": matched_by,
+            "days": days,
+            "count": len(items),
+            "items": items,
+        }
+        if not items:
+            result["note"] = (
+                f"新闻库最近 {days} 天内没有与岗位「{role_name}」直接相关的新闻，"
+                "请如实告知用户，不要编造相关动态。"
+            )
+        return result
+    except Exception as e:
+        return {"error": str(e)}
 
 
 def _tool_query_trend(args: dict) -> dict:
     try:
         from app.services.trend import TrendService
         signal = TrendService.get_signal(args["role"], horizon_months=args.get("months", 3))
-        result = signal.model_dump(mode="json")
-        try:
-            from app.services.trend_predictor import get_evidence as get_backtrack
-            bt = get_backtrack(args["role"], "2026-08-01")
-            if bt.get("key_factors"):
-                result["main_factors"] = bt["key_factors"]
-        except Exception:
-            pass
-        return result
+        return signal.model_dump(mode="json")
     except Exception as e:
         return {"error": str(e)}
 
 
 def _tool_retrieve_evidence(args: dict) -> dict:
     try:
-        from app.services.evidence import EvidenceService
+        from app.services.evidence_service_v2 import EvidenceServiceV2
         from app.services.trend import _resolve_role
         resolved = _resolve_role(args["role"])
-        return EvidenceService.retrieve_evidence(
+        return EvidenceServiceV2.retrieve_evidence(
             resolved.canonical_role,
-            (args.get("start_month", "2026-01"), args.get("end_month", "2026-06")),
+            (args.get("start_month", "2026-08"), args.get("end_month", "2026-10")),
             args.get("top_k", 5),
         )
     except Exception as e:
@@ -291,9 +712,46 @@ def _tool_retrieve_evidence(args: dict) -> dict:
 
 
 def _tool_get_evidence_backtrack(args: dict) -> dict:
+    """指标回溯：从 trend_panel_v2 真实月度面板 + trend_forecasts_v2 取历史序列。"""
     try:
-        from app.services.trend_predictor import get_evidence
-        return get_evidence(args["role"], args.get("month", "2026-08-01"))
+        from app.services.trend import _load_v2_forecasts, _load_v2_panel, _resolve_role
+
+        resolved = _resolve_role(args["role"])
+        panel = _load_v2_panel().get(resolved.role_id) or {}
+        pack = _load_v2_forecasts().get(resolved.role_id) or {}
+        months = panel.get("months") or []
+        tail_n = 24
+        history = {
+            "months": months[-tail_n:],
+            "jd_count": (panel.get("jd_count") or [])[-tail_n:],
+            "jd_share": (panel.get("jd_share") or [])[-tail_n:],
+            "demand_index": (panel.get("demand_index") or [])[-tail_n:],
+            "salary_mid": (panel.get("salary_mid") or [])[-tail_n:],
+            "remote_ratio": (panel.get("remote_ratio") or [])[-tail_n:],
+        }
+        forecast = pack.get("forecast") or []
+        target_month = str(args.get("month", ""))[:7]
+        row = next((f for f in forecast if str(f.get("month")) == target_month), forecast[-1] if forecast else None)
+        factors = []
+        jd_share = [float(v or 0) for v in (panel.get("jd_share") or [])[-3:]]
+        if len(jd_share) >= 2:
+            direction = "上升" if jd_share[-1] > jd_share[0] else "下降" if jd_share[-1] < jd_share[0] else "持平"
+            factors.append(f"近 3 个月 JD 份额{direction}（{jd_share[0]:.4f} → {jd_share[-1]:.4f}）")
+        if pack.get("model_used"):
+            if pack.get("backtest_smape") is not None:
+                factors.append(f"预测模型 {pack['model_used']}（回测 sMAPE {float(pack['backtest_smape']):.1%}）")
+            else:
+                factors.append(f"预测模型 {pack['model_used']}（历史不足未回测）")
+        return {
+            "canonical_role": resolved.canonical_role,
+            "prediction_month": target_month or None,
+            "predicted_demand_index": row.get("demand_index_pred") if row else None,
+            "trend_direction": pack.get("trend_direction"),
+            "historical_trend": history,
+            "forecast": forecast,
+            "key_factors": factors,
+            "note": "指标回溯来自 trend_panel_v2 真实月度面板（v2 重建资产）。",
+        }
     except Exception as e:
         return {"error": str(e)}
 
@@ -362,11 +820,162 @@ def _find_controlled_roles(user_msg: str, all_roles: list[str]) -> list[str]:
     return found
 
 
+# ── Real-time news fast path (works with or without LLM) ─────────────────────
+
+_NEWS_INTENT_TOKENS = [
+    "最新", "最近", "新闻", "动态", "发生了什么", "近况", "刚刚", "近期",
+    "有什么新", "最近有什么", "消息", "news", "latest", "what happened",
+]
+_LAYOFF_TOKENS = ["裁员", "layoff", "layoffs", "失业", "减员"]
+_PULSE_TOKENS = ["市场脉搏", "行情", "大盘", "整体情况", "综述", "全景", "概览", "市场动态", "行业动态"]
+_NEWS_STRIP_TOKENS = [
+    "最近", "最新", "有什么", "新闻", "动态", "发生了", "什么", "给我", "讲讲",
+    "说说", "告诉我", "一下", "呢", "？", "?", "。", "，", ",", "行业", "it", "IT",
+    "现在", "目前", "消息", "情况", "关于", "的",
+]
+
+
+def _has_news_intent(user_msg: str) -> bool:
+    low = user_msg.lower()
+    tokens = _NEWS_INTENT_TOKENS + _LAYOFF_TOKENS + _PULSE_TOKENS
+    return any(t in low for t in [t.lower() for t in tokens])
+
+
+def _fmt_date(iso: str | None) -> str:
+    return (iso or "未知日期")[:10]
+
+
+def _format_news_items(items: list[dict], empty_note: str | None = None) -> list[str]:
+    lines: list[str] = []
+    if not items:
+        lines.append(empty_note or "- 新闻库中没有匹配结果。")
+        return lines
+    for it in items:
+        title = it.get("title", "").strip() or "(无标题)"
+        url = it.get("url") or ""
+        head = f"- [{title}]({url})" if url else f"- {title}"
+        lines.append(
+            f"{head}  \n  [{it.get('source', '未知来源')}, {_fmt_date(it.get('published_at'))}]"
+            f"（{it.get('category', '未分类')}）"
+        )
+        snippet = it.get("summary_snippet") or ""
+        if snippet:
+            lines.append(f"  {snippet}")
+    return lines
+
+
+def _format_news_search(result: dict) -> str:
+    if "error" in result:
+        return f"❌ 新闻检索失败：{result['error']}"
+    lines = [
+        f"## 🔍 实时新闻检索：「{result.get('query', '')}」（近 {result.get('days', 7)} 天）\n",
+        f"命中 **{result.get('count', 0)}** 条"
+        + (f"，库内最新更新至 {result.get('latest_in_range', '')[:10]}" if result.get("latest_in_range") else ""),
+        "",
+    ]
+    lines.extend(_format_news_items(result.get("items", []), result.get("note")))
+    lines.append("")
+    lines.append("> 📌 以上均来自项目实时新闻库（每 3 小时增量更新），引用格式为 [来源, 日期]。")
+    return "\n".join(lines)
+
+
+def _format_market_pulse(pulse: dict) -> str:
+    if "error" in pulse:
+        return f"❌ 市场脉搏获取失败：{pulse['error']}"
+    lines = [
+        "## 📡 实时市场脉搏（新闻库近 7 天）\n",
+        f"- 新闻库最新更新：**{pulse.get('news_latest_published_at', '未知')[:16].replace('T', ' ')}**"
+        f"（库内共 {pulse.get('news_total_items', 0)} 条）",
+        f"- 近 7 天新增新闻：**{pulse.get('news_count_last_7d', 0)}** 条",
+        "",
+        "### 分类分布（近 7 天）",
+    ]
+    for cat, n in (pulse.get("category_counts_last_7d") or {}).items():
+        lines.append(f"- {cat}: {n}")
+    rising = pulse.get("fastest_rising_skills") or []
+    if rising:
+        lines += ["", "### 技能提及热度上升最快（近 7 天 vs 前 7 天）"]
+        for r in rising:
+            lines.append(f"- **{r['skill']}**：{r['mentions_prev_7d']} → {r['mentions_last_7d']}（+{r['delta']}）")
+    layoffs = pulse.get("latest_layoff_events") or []
+    lines += ["", f"### 🚨 最新裁员事件（{len(layoffs)} 条）"]
+    lines.extend(_format_news_items(layoffs, "- 近期新闻库中没有 layoff 类报道。"))
+    funding = pulse.get("latest_funding_events") or []
+    lines += ["", f"### 💰 最新融资事件（{len(funding)} 条）"]
+    lines.extend(_format_news_items(funding, "- 近期新闻库中没有 funding 类报道。"))
+    lines.append("")
+    lines.append("> 📌 来自项目实时新闻库（每 3 小时增量更新）；此为'最新动态'，与月度统计趋势层（截至 2026-10）相互独立。")
+    return "\n".join(lines)
+
+
+def _format_role_news_trend(role: str, news: dict, trend: dict) -> str:
+    lines = [f"## 🎯 {role}：统计趋势 + 最新动态\n"]
+    if trend and "error" not in trend:
+        arrow = {"up": "📈 上升", "down": "📉 下降", "flat": "➡️ 平稳"}.get(trend.get("trend_direction", ""), "")
+        lines += [
+            "### 统计趋势（月度 JD 面板，知识截至 2026-10）",
+            "",
+            "| 指标 | 数据 |",
+            "|------|------|",
+            f"| 趋势方向 | {arrow} |",
+            f"| 预测需求指数 | {float(trend.get('predicted_demand_index', 0)):.4f} |",
+            f"| 置信度 | {float(trend.get('confidence', 0)):.0%} |",
+            "",
+        ]
+    elif trend and "error" in trend:
+        lines += [f"### 统计趋势\n\n- 月度统计层未收录该岗位：{trend['error']}", ""]
+    lines += [f"### 📰 最新动态（实时新闻库，近 {news.get('days', 30)} 天）", ""]
+    lines.extend(_format_news_items(news.get("items", []), news.get("note")))
+    lines.append("")
+    lines.append("> 📌 趋势为月度统计层（截至 2026-10），动态为实时新闻库；两层数据来源不同，已分开陈述。")
+    return "\n".join(lines)
+
+
+def _derive_news_query(user_msg: str) -> str:
+    q = user_msg
+    for tok in _NEWS_STRIP_TOKENS:
+        q = q.replace(tok, " ")
+    return " ".join(q.split())
+
+
+def _controlled_news_answer(user_msg: str, all_roles: list[str]) -> str | None:
+    """News-intent fast path: answers from news_items without needing an LLM."""
+    low = user_msg.lower()
+    if not _has_news_intent(user_msg) and not any(t in low for t in [t.lower() for t in _LAYOFF_TOKENS + _PULSE_TOKENS]):
+        return None
+    roles = _find_controlled_roles(user_msg, all_roles)
+
+    if any(t in low for t in [t.lower() for t in _LAYOFF_TOKENS]) and not any(
+        t in low for t in [t.lower() for t in _PULSE_TOKENS]
+    ):
+        result = _tool_search_news({"query": "裁员 layoff", "days": 14, "category": "layoff", "limit": 8})
+        if result.get("count"):
+            return _format_news_search(result)
+        return _format_market_pulse(_tool_get_market_pulse())
+
+    if any(t in low for t in [t.lower() for t in _PULSE_TOKENS]) and not roles:
+        return _format_market_pulse(_tool_get_market_pulse())
+
+    if roles:
+        role = roles[0]
+        news = _tool_get_latest_role_news({"role_name": role, "days": 30, "limit": 6})
+        trend = _tool_query_trend({"role": role, "months": 3})
+        return _format_role_news_trend(role, news, trend)
+
+    query = _derive_news_query(user_msg)
+    if len(query) < 2:
+        return _format_market_pulse(_tool_get_market_pulse())
+    return _format_news_search(_tool_search_news({"query": query, "days": 7, "limit": 8}))
+
+
 def _controlled_agent_answer(messages: list[dict]) -> str | None:
     user_msg = messages[-1].get("content", "") if messages else ""
     if not user_msg:
         return None
     all_roles = [r["canonical_role"] for r in _get_taxonomy()]
+    news_answer = _controlled_news_answer(user_msg, all_roles)
+    if news_answer is not None:
+        return news_answer
     roles = _find_controlled_roles(user_msg, all_roles)
     compare_intent = any(token in user_msg.lower() for token in ["还是", "对比", "比较", "更适合", "vs", "or"])
     profile_intent = any(token in user_msg.lower() for token in ["我现在会", "我会", "技能", "python", "sql", "docker", "langchain"])
@@ -512,7 +1121,7 @@ def _format_controlled_role_comparison(user_msg: str, roles: list[str]) -> str:
         "我已按项目内岗位体系、趋势数据和技能图谱解析用户明确指定的岗位，没有使用外部搜索。\n",
         f"**识别到的技能**：{', '.join(skills) if skills else '未识别到明确技能'}\n",
         "### 结论\n",
-        f"建议排序：**{ranking}**。\n\n首选 **{best['role']}**，依据是：当前技能重合度、PatchTST 需求指数、置信度和学习路径成本的综合评分为 **{best_score:.4f}**。\n",
+        f"建议排序：**{ranking}**。\n\n首选 **{best['role']}**，依据是：当前技能重合度、v2 需求指数、置信度和学习路径成本的综合评分为 **{best_score:.4f}**。\n",
         "### 目标岗位对比\n",
         "| 岗位 | 24个月趋势 | 需求指数 | 置信度 | 已匹配技能 | 主要缺口 | 路径步数/小时 |",
         "|---|---:|---:|---:|---|---|---|",
@@ -656,13 +1265,13 @@ def _local_learning_path(missing_skills: list[str], target_role: str) -> dict:
     }
 
 
-def _graphv2_analyze(profile, target_job_id: str, semantic_score: float = 0.5) -> dict | None:
-    """Use GraphPathPlannerV2 directly — works with local embeddings, no DB needed."""
+def _graphv3_analyze(profile, target_job_id: str, semantic_score: float = 0.5) -> dict | None:
+    """Use GraphPathPlannerV3 directly — 基于 role_profiles_v3 + v3 先修 DAG，无需 DB/embedding。"""
     try:
-        from app.services.graph_path_planner_v2 import GraphPathPlannerV2
-        if not GraphPathPlannerV2.is_available():
+        from app.services.graph_path_planner_v3 import GraphPathPlannerV3
+        if not GraphPathPlannerV3.is_available():
             return None
-        analysis = GraphPathPlannerV2.analyze_role(
+        analysis = GraphPathPlannerV3.analyze_role(
             profile=profile, target_job_id=target_job_id,
             semantic_score=semantic_score,
         )
@@ -703,18 +1312,18 @@ def _tool_recommend_jobs(args: dict) -> dict:
         except Exception:
             pass
 
-        # Tier 2: GraphPathPlannerV2 with local matching (no DB)
+        # Tier 2: GraphPathPlannerV3 with local matching (no DB)
         matched = _local_match_role(profile.skills, top_k=top_k)
         results = []
         for m in matched:
-            analysis = _graphv2_analyze(profile, m["job"].job_id, semantic_score=m["score"])
+            analysis = _graphv3_analyze(profile, m["job"].job_id, semantic_score=m["score"])
             if analysis:
                 display_score = max(analysis["role_score"], m["score"])
                 results.append({
                     "job_title": m["job"].title,
                     "fine_role": m["fine_role"],
                     "score": round(display_score, 4),
-                    "coverage": round(analysis["score_breakdown"]["coverage"], 4),
+                    "coverage": round(analysis["score_breakdown"]["coverage_weighted"], 4),
                     "skill_gap": {
                         "missing": analysis["skill_gap"].missing_skills[:5],
                         "overlap": analysis["skill_gap"].overlap_skills[:5],
@@ -776,10 +1385,10 @@ def _tool_get_skill_gap(args: dict) -> dict:
         except Exception:
             pass
 
-        # Tier 2: GraphPathPlannerV2 direct (local embeddings)
+        # Tier 2: GraphPathPlannerV3 direct
         job_id = _resolve_target_job_id(target)
         if job_id:
-            analysis = _graphv2_analyze(profile, job_id)
+            analysis = _graphv3_analyze(profile, job_id)
             if analysis:
                 return {
                     "target_role": target,
@@ -824,10 +1433,10 @@ def _tool_plan_learning_path(args: dict) -> dict:
         except Exception:
             pass
 
-        # Tier 2: GraphPathPlannerV2 direct
+        # Tier 2: GraphPathPlannerV3 direct
         job_id = _resolve_target_job_id(target)
         if job_id:
-            analysis = _graphv2_analyze(profile, job_id)
+            analysis = _graphv3_analyze(profile, job_id)
             if analysis:
                 return _format_path_dict(target, analysis["path"])
 
@@ -936,12 +1545,24 @@ def chat(messages: list[dict], max_rounds: int = 8) -> str:
                 resp = client.post(url, headers=headers, json=payload)
                 resp.raise_for_status()
         except httpx.TimeoutException:
-            return "❌ Qwen Agent 调用超时。当前已配置 LLM API Key，但外部模型服务未在超时时间内返回；没有使用本地规则伪造回答。"
+            return "❌ LLM Agent 调用超时。当前已配置 LLM API Key，但外部模型服务未在超时时间内返回；没有使用本地规则伪造回答。"
         except httpx.HTTPStatusError as e:
             detail = e.response.text[:500]
-            return f"❌ Qwen Agent 调用失败（HTTP {e.response.status_code}）。外部模型返回：{detail}"
+            debug = json.dumps(
+                [
+                    {
+                        "role": m.get("role"),
+                        "tool_calls": len(m.get("tool_calls") or []),
+                        "tool_call_id": m.get("tool_call_id"),
+                    }
+                    for m in conversation
+                ],
+                ensure_ascii=False,
+            )
+            print(f"[agent-debug] conversation structure: {debug}", flush=True)
+            return f"❌ LLM Agent 调用失败（HTTP {e.response.status_code}）。外部模型返回：{detail}"
         except Exception as e:
-            return f"❌ Qwen Agent 连接失败：{type(e).__name__}: {str(e)[:300]}。当前没有使用本地规则伪造回答。"
+            return f"❌ LLM Agent 连接失败：{type(e).__name__}: {str(e)[:300]}。当前没有使用本地规则伪造回答。"
 
         body = resp.json()
         choice = body["choices"][0]
@@ -951,6 +1572,7 @@ def chat(messages: list[dict], max_rounds: int = 8) -> str:
         if choice.get("finish_reason") != "tool_calls" and not msg.get("tool_calls"):
             return msg.get("content", "")
 
+        cot_prompt_pending = ""
         for tc in msg.get("tool_calls", []):
             fn_name = tc["function"]["name"]
             fn_args = json.loads(tc["function"]["arguments"])
@@ -965,17 +1587,20 @@ def chat(messages: list[dict], max_rounds: int = 8) -> str:
             # P0-1: CoT injection — when get_cot_explanation returns, inject
             # the grounded prompt so LLM does Step1-5 chain-of-thought reasoning
             if fn_name == "get_cot_explanation" and "error" not in result:
-                cot_prompt = result.get("cot_prompt", "")
-                if cot_prompt:
-                    from app.services.trend_explanation import COT_SYSTEM_PROMPT
-                    conversation.append({
-                        "role": "system",
-                        "content": COT_SYSTEM_PROMPT,
-                    })
-                    conversation.append({
-                        "role": "user",
-                        "content": f"请基于以上证据进行链式推理分析：\n\n{cot_prompt}",
-                    })
+                cot_prompt_pending = result.get("cot_prompt", "") or cot_prompt_pending
+
+        # Inject after the tool loop: tool messages responding to an assistant
+        # tool_calls message must stay consecutive (DeepSeek enforces this).
+        if cot_prompt_pending:
+            from app.services.trend_explanation import COT_SYSTEM_PROMPT
+            conversation.append({
+                "role": "system",
+                "content": COT_SYSTEM_PROMPT,
+            })
+            conversation.append({
+                "role": "user",
+                "content": f"请基于以上证据进行链式推理分析：\n\n{cot_prompt_pending}",
+            })
 
     return conversation[-1].get("content", "抱歉，处理轮次过多，请简化您的问题。")
 
@@ -1032,6 +1657,12 @@ def _chat_without_llm(messages: list[dict]) -> str:
             lines.extend(f"- {name}" for name in names)
             lines.append("")
         return "\n".join(lines)
+
+    # Real-time news intents — answered directly from news_items, no LLM needed
+    if _has_news_intent(user_msg) or any(k in user_msg.lower() for k in [t.lower() for t in _LAYOFF_TOKENS + _PULSE_TOKENS]):
+        news_answer = _controlled_news_answer(user_msg, all_roles)
+        if news_answer is not None:
+            return news_answer
 
     if any(k in user_msg for k in compare_keywords_clean) and len(clean_found_roles) >= 2:
         return _format_compare_response(_tool_compare_roles({"roles": clean_found_roles}))
@@ -1213,7 +1844,7 @@ def _format_full_report(resume: dict, gap: dict, path: dict, trend: dict,
     if trend and "error" not in trend:
         arrow = {"up": "📈 上升", "down": "📉 下降", "flat": "➡️ 平稳"}.get(
             trend.get("trend_direction", ""), "")
-        lines.append(f"\n### 📈 {target} 行业趋势（PatchTST 预测）\n")
+        lines.append(f"\n### 📈 {target} 行业趋势（v2 预测，含回测 sMAPE）\n")
         lines.append(f"| 指标 | 数据 |")
         lines.append(f"|------|------|")
         lines.append(f"| 趋势方向 | {arrow} |")

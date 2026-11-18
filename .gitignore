@@ -129,3 +129,22 @@ reports/trend_score_breakdown_v1.json
 reports/trend/arxiv_*test*.json
 reports/trend/arxiv_full_rebuild_report.json
 reports/trend/gdelt_small_sample_*.json
+private.*.key
+.backup/
+
+# 2026-11 整理：大文件与每日快照不入库
+ppt/*.pptx
+ppt/*.pdf
+data/cn_jobs/snapshots/
+
+# 2026-11 中期整理：小程序依赖与构建产物、私有文档不入库
+miniprogram/node_modules/
+miniprogram/dist/
+miniprogram/dist-h5/
+miniprogram/preview-qrcode.png
+miniprogram/ed*/
+frontend/dist/
+preview-qrcode.png
+JobNavigator-IT立项申请书.doc
+*.log
+miniprogram/.swc/

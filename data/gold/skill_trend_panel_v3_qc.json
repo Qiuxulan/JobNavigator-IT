@@ -1,0 +1,597 @@
+{
+ "generated_at": "2026-11-06T19:41:56+00:00",
+ "input_dir": "/data/shichaojian/JNIT/processed/jd_unified_v3_enriched",
+ "n_jd_rows": 129897,
+ "panel_months": {
+  "start": "2023-10",
+  "end": "2026-10",
+  "n": 37
+ },
+ "n_skills_full_panel": 29774,
+ "n_skills_in_json": 630,
+ "min_mentions_threshold": 30,
+ "n_titles_in_json": 200,
+ "skills_coverage_by_month": {
+  "2023-10": 0.8281,
+  "2023-11": 0.918,
+  "2023-12": 0.9457,
+  "2024-01": 0.8769,
+  "2024-02": 0.8065,
+  "2024-03": 0.8293,
+  "2024-04": 0.8571,
+  "2024-05": 0.7115,
+  "2024-06": 0.7143,
+  "2024-07": 0.77,
+  "2024-08": 0.7778,
+  "2024-09": 0.8906,
+  "2024-10": 0.8446,
+  "2024-11": 0.8912,
+  "2024-12": 0.8107,
+  "2025-01": 0.8885,
+  "2025-02": 0.8325,
+  "2025-03": 0.8389,
+  "2025-04": 0.8932,
+  "2025-05": 0.9226,
+  "2025-06": 0.9138,
+  "2025-07": 0.8843,
+  "2025-08": 0.919,
+  "2025-09": 0.8933,
+  "2025-10": 0.8925,
+  "2025-11": 0.8949,
+  "2025-12": 0.913,
+  "2026-01": 0.5801,
+  "2026-02": 0.7078,
+  "2026-03": 0.78,
+  "2026-04": 0.86,
+  "2026-05": 0.8694,
+  "2026-06": 0.9035,
+  "2026-07": 0.8772,
+  "2026-08": 0.8808,
+  "2026-09": 0.9157,
+  "2026-10": 0.9767
+ },
+ "analysis_end": "2026-10",
+ "low_coverage_months": [],
+ "coverage_rule": "月覆盖度(有≥1技能的JD占比) < 0.3 判为 low_coverage，该月保留在面板但派生指标/状态/预测锚定到最后一个达标月",
+ "status_counts": {
+  "declining": 24,
+  "emerging": 122,
+  "growing": 51,
+  "insufficient_data": 410,
+  "stable": 23
+ },
+ "forecast_method_counts": {
+  "holt": 133,
+  "naive": 74,
+  "none": 423
+ },
+ "top20_rising": [
+  {
+   "skill": "tool-calling",
+   "momentum_3m": 74.4569,
+   "last_month_count": 30
+  },
+  {
+   "skill": "dagster",
+   "momentum_3m": 64.4095,
+   "last_month_count": 15
+  },
+  {
+   "skill": "copilot",
+   "momentum_3m": 53.6256,
+   "last_month_count": 84
+  },
+  {
+   "skill": "rails",
+   "momentum_3m": 52.8293,
+   "last_month_count": 51
+  },
+  {
+   "skill": "multi-agent",
+   "momentum_3m": 46.8928,
+   "last_month_count": 23
+  },
+  {
+   "skill": "aigc",
+   "momentum_3m": 45.1936,
+   "last_month_count": 109
+  },
+  {
+   "skill": "data-privacy",
+   "momentum_3m": 42.4458,
+   "last_month_count": 65
+  },
+  {
+   "skill": "agent",
+   "momentum_3m": 39.1975,
+   "last_month_count": 533
+  },
+  {
+   "skill": "mcp",
+   "momentum_3m": 36.2438,
+   "last_month_count": 79
+  },
+  {
+   "skill": "dashboard",
+   "momentum_3m": 34.7263,
+   "last_month_count": 46
+  },
+  {
+   "skill": "sre",
+   "momentum_3m": 33.8599,
+   "last_month_count": 87
+  },
+  {
+   "skill": "caching",
+   "momentum_3m": 33.7243,
+   "last_month_count": 56
+  },
+  {
+   "skill": "multimodal",
+   "momentum_3m": 33.6331,
+   "last_month_count": 46
+  },
+  {
+   "skill": "software-engineering",
+   "momentum_3m": 33.1147,
+   "last_month_count": 354
+  },
+  {
+   "skill": "cursor",
+   "momentum_3m": 32.4736,
+   "last_month_count": 82
+  },
+  {
+   "skill": "huggingface",
+   "momentum_3m": 31.7106,
+   "last_month_count": 22
+  },
+  {
+   "skill": "incident-response",
+   "momentum_3m": 31.5073,
+   "last_month_count": 188
+  },
+  {
+   "skill": "model-deployment",
+   "momentum_3m": 29.9336,
+   "last_month_count": 37
+  },
+  {
+   "skill": "zero-trust",
+   "momentum_3m": 29.709,
+   "last_month_count": 49
+  },
+  {
+   "skill": "iot",
+   "momentum_3m": 28.2903,
+   "last_month_count": 43
+  }
+ ],
+ "top20_declining": [
+  {
+   "skill": "unity",
+   "momentum_3m": -0.8815,
+   "last_month_count": 1
+  },
+  {
+   "skill": "sem",
+   "momentum_3m": -0.598,
+   "last_month_count": 2
+  },
+  {
+   "skill": "project-management",
+   "momentum_3m": -0.5934,
+   "last_month_count": 121
+  },
+  {
+   "skill": "numpy",
+   "momentum_3m": -0.5534,
+   "last_month_count": 9
+  },
+  {
+   "skill": "nosql",
+   "momentum_3m": -0.5082,
+   "last_month_count": 52
+  },
+  {
+   "skill": "pandas",
+   "momentum_3m": -0.4674,
+   "last_month_count": 19
+  },
+  {
+   "skill": "product-management",
+   "momentum_3m": -0.456,
+   "last_month_count": 231
+  },
+  {
+   "skill": "data-engineering",
+   "momentum_3m": -0.4491,
+   "last_month_count": 119
+  },
+  {
+   "skill": "hadoop",
+   "momentum_3m": -0.4483,
+   "last_month_count": 9
+  },
+  {
+   "skill": "computer-vision",
+   "momentum_3m": -0.4347,
+   "last_month_count": 32
+  },
+  {
+   "skill": "angular",
+   "momentum_3m": -0.401,
+   "last_month_count": 33
+  }
+ ],
+ "n_discontinued_tags": 354,
+ "discontinued_tags_top30": [
+  {
+   "skill": "accounting",
+   "momentum_3m": -0.9852,
+   "last_valid_count": 1
+  },
+  {
+   "skill": "qa-testing",
+   "momentum_3m": -0.9739,
+   "last_valid_count": 1
+  },
+  {
+   "skill": ".net-core",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "abap",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "accounts-receivable",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "active-directory",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adaptability",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adobe-after-effects",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adobe-creative-suite",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adobe-illustrator",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adobe-photoshop",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "adobe-premiere-pro",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "advanced-excel",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "after-effects",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "agentic-ai",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "agile-methodologies",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "agile-methodology",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "ai",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "ai-integration",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "ai-tools",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "alteryx",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "analysis",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "analytical-skills",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "analytical-thinking",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "analytics",
+   "momentum_3m": -0.9784,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "apache-airflow",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "apache-spark",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "apex",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "api-development",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  },
+  {
+   "skill": "api-integration",
+   "momentum_3m": -1.0,
+   "last_valid_count": 0
+  }
+ ],
+ "vocab_canonicalization": {
+  "vocab_source": "data/gold/skill_vocab_v2.json",
+  "n_aliases": 820,
+  "note": "alias_to_id 归一旧抽取 tag（如 sql→sql-lang, ci/cd→cicd, reactjs→react, security→cybersecurity），消除换名造成的假死亡/假新兴；discontinued_tag 按 share 崩塌形态判定（尾 3 月较前 3 月 ≥90% 崩塌且此前 share ≥0.1‰），因窗口边界总 JD 体量亦有 7x 落差，不用 count"
+ },
+ "ai_sanity_check": {
+  "skills_checked": {
+   "llm": {
+    "present": true,
+    "status": "growing",
+    "share_2024_avg": 0.073704,
+    "share_last3m": 0.129945,
+    "share_change": 0.7631,
+    "count_2024_avg": 14.3,
+    "count_last3m_avg": 420.3,
+    "count_change": 28.3256,
+    "rising": true,
+    "basis": "share"
+   },
+   "rag": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.000315,
+    "share_last3m": 0.029097,
+    "share_change": 91.5183,
+    "count_2024_avg": 0.1,
+    "count_last3m_avg": 92.3,
+    "count_change": 1107.0,
+    "rising": true,
+    "basis": "share"
+   },
+   "pytorch": {
+    "present": true,
+    "status": "stable",
+    "share_2024_avg": 0.02463,
+    "share_last3m": 0.021247,
+    "share_change": -0.1374,
+    "count_2024_avg": 4.8,
+    "count_last3m_avg": 68.3,
+    "count_change": 13.386,
+    "rising": false,
+    "basis": "share"
+   },
+   "tensorflow": {
+    "present": true,
+    "status": "stable",
+    "share_2024_avg": 0.016624,
+    "share_last3m": 0.010777,
+    "share_change": -0.3517,
+    "count_2024_avg": 3.2,
+    "count_last3m_avg": 35.7,
+    "count_change": 9.9744,
+    "rising": false,
+    "basis": "share"
+   },
+   "langchain": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.0,
+    "share_last3m": 0.016002,
+    "share_change": null,
+    "count_2024_avg": 0.0,
+    "count_last3m_avg": 51.7,
+    "count_change": null,
+    "rising": null,
+    "basis": "count(2024 基数过低)"
+   },
+   "transformers": {
+    "present": false
+   },
+   "generative-ai": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.000315,
+    "share_last3m": 0.015003,
+    "share_change": 46.7032,
+    "count_2024_avg": 0.1,
+    "count_last3m_avg": 50.0,
+    "count_change": 599.0,
+    "rising": true,
+    "basis": "share"
+   },
+   "prompt-engineering": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.0,
+    "share_last3m": 0.01839,
+    "share_change": null,
+    "count_2024_avg": 0.0,
+    "count_last3m_avg": 60.7,
+    "count_change": null,
+    "rising": null,
+    "basis": "count(2024 基数过低)"
+   },
+   "machine-learning": {
+    "present": true,
+    "status": "growing",
+    "share_2024_avg": 0.126326,
+    "share_last3m": 0.149749,
+    "share_change": 0.1854,
+    "count_2024_avg": 23.8,
+    "count_last3m_avg": 488.0,
+    "count_change": 19.4755,
+    "rising": true,
+    "basis": "share"
+   },
+   "deep-learning": {
+    "present": true,
+    "status": "stable",
+    "share_2024_avg": 0.028561,
+    "share_last3m": 0.014914,
+    "share_change": -0.4778,
+    "count_2024_avg": 5.5,
+    "count_last3m_avg": 51.7,
+    "count_change": 8.3939,
+    "rising": false,
+    "basis": "share"
+   },
+   "vector-database": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.0,
+    "share_last3m": 0.010134,
+    "share_change": null,
+    "count_2024_avg": 0.0,
+    "count_last3m_avg": 31.7,
+    "count_change": null,
+    "rising": null,
+    "basis": "count(2024 基数过低)"
+   },
+   "openai": {
+    "present": false
+   },
+   "ai-agents": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.000678,
+    "share_last3m": 0.035379,
+    "share_change": 51.2204,
+    "count_2024_avg": 0.1,
+    "count_last3m_avg": 113.7,
+    "count_change": 1363.0,
+    "rising": true,
+    "basis": "share"
+   },
+   "mcp": {
+    "present": true,
+    "status": "emerging",
+    "share_2024_avg": 0.0,
+    "share_last3m": 0.027324,
+    "share_change": null,
+    "count_2024_avg": 0.0,
+    "count_last3m_avg": 89.0,
+    "count_change": null,
+    "rising": null,
+    "basis": "count(2024 基数过低)"
+   }
+  },
+  "n_rising": 5,
+  "n_falling": 3,
+  "pass": true,
+  "window": "2024 全年均值 → 锚点前 3 月；分母为纯 IT 岗位（enriched 版）",
+  "fallers_analysis": {
+   "pytorch": {
+    "yearly": {
+     "2024": {
+      "avg_count": 4.8,
+      "avg_share_permille": 24.63
+     },
+     "2025": {
+      "avg_count": 39.6,
+      "avg_share_permille": 43.54
+     },
+     "2026": {
+      "avg_count": 254.3,
+      "avg_share_permille": 23.37
+     }
+    },
+    "explanation": "count 逐年大增但 2025 share 见顶、2026 回落——LLM 工具链/高层框架吸收需求 + 2026 大众 IT 岗位涌入摊薄深度 specialist 份额；属真实信号非管线 bug（llm share 2024→2025 已 +63% 后高位横盘）"
+   },
+   "tensorflow": {
+    "yearly": {
+     "2024": {
+      "avg_count": 3.2,
+      "avg_share_permille": 16.62
+     },
+     "2025": {
+      "avg_count": 23.8,
+      "avg_share_permille": 26.44
+     },
+     "2026": {
+      "avg_count": 145.0,
+      "avg_share_permille": 12.63
+     }
+    },
+    "explanation": "count 逐年大增但 2025 share 见顶、2026 回落——LLM 工具链/高层框架吸收需求 + 2026 大众 IT 岗位涌入摊薄深度 specialist 份额；属真实信号非管线 bug（llm share 2024→2025 已 +63% 后高位横盘）"
+   },
+   "deep-learning": {
+    "yearly": {
+     "2024": {
+      "avg_count": 5.5,
+      "avg_share_permille": 28.56
+     },
+     "2025": {
+      "avg_count": 31.6,
+      "avg_share_permille": 36.96
+     },
+     "2026": {
+      "avg_count": 182.6,
+      "avg_share_permille": 16.62
+     }
+    },
+    "explanation": "count 逐年大增但 2025 share 见顶、2026 回落——LLM 工具链/高层框架吸收需求 + 2026 大众 IT 岗位涌入摊薄深度 specialist 份额；属真实信号非管线 bug（llm share 2024→2025 已 +63% 后高位横盘）"
+   }
+  },
+  "note": "主口径 share；AI 技能 share 下降者须在 fallers_analysis 写清原因"
+ }
+}

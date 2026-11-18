@@ -22,12 +22,21 @@ import re
 import os
 from functools import lru_cache
 
-VOCAB_PATH = os.environ.get("SKILL_VOCAB_PATH", "data/gold/skill_vocab.json")
+# 词表默认用重建的 skill_vocab_v2.json（295 技能），缺文件回退 v1。
+VOCAB_V2_PATH = "data/gold/skill_vocab_v2.json"
+VOCAB_V1_PATH = "data/gold/skill_vocab.json"
+
+
+def _resolve_vocab_path() -> str:
+    env_path = os.environ.get("SKILL_VOCAB_PATH")
+    if env_path:
+        return env_path
+    return VOCAB_V2_PATH if os.path.exists(VOCAB_V2_PATH) else VOCAB_V1_PATH
 
 
 @lru_cache(maxsize=1)
 def _load_vocab():
-    with open(VOCAB_PATH, encoding="utf-8") as f:
+    with open(_resolve_vocab_path(), encoding="utf-8") as f:
         vocab = json.load(f)
     alias_to_id = vocab["alias_to_id"]
     id_to_name = vocab["id_to_name"]

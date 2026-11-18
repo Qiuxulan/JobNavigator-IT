@@ -17,6 +17,8 @@ class Settings(BaseSettings):
     llm_api_key: str = ""
     llm_model: str = "gpt-4o-mini"
     llm_timeout_sec: int = 60
+    # matching v4:DeepSeek 对粗排候选做一次性全局精排;失败自动降级为公式排序
+    llm_rerank_enabled: bool = True
 
     trend_horizon_months: int = 3
     trend_export_dir: str = "data/gold"

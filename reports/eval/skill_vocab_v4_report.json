@@ -1,0 +1,484 @@
+{
+  "generated_at": "2026-11-06T19:52:10.676049+00:00",
+  "inputs": {
+    "review": "/mnt/afs/JobNavigator-IT/data/gold/skill_vocab_review_v1.json",
+    "vocab_v4": "/mnt/afs/JobNavigator-IT/data/gold/skill_vocab_v4.json",
+    "v3_dir": "/data/shichaojian/JNIT/processed/jd_unified_v3_enriched",
+    "v4_dir": "/data/shichaojian/JNIT/processed/jd_unified_v4_enriched"
+  },
+  "review_stats": {
+    "n_candidates": 910,
+    "n_keep": 174,
+    "n_drop": 736,
+    "keep_ratio": 0.1912,
+    "category_distribution_all": {
+      "dropped": 736,
+      "tool": 60,
+      "method": 46,
+      "platform": 24,
+      "language": 10,
+      "framework": 8,
+      "devops": 7,
+      "protocol": 4,
+      "cloud": 4,
+      "os": 3,
+      "other": 3,
+      "ai": 3,
+      "database": 1,
+      "library": 1
+    },
+    "category_distribution_keep": {
+      "tool": 60,
+      "method": 46,
+      "platform": 24,
+      "language": 10,
+      "framework": 8,
+      "devops": 7,
+      "protocol": 4,
+      "cloud": 4,
+      "os": 3,
+      "other": 3,
+      "ai": 3,
+      "database": 1,
+      "library": 1
+    },
+    "keep_samples_20": [
+      {
+        "name": "Microsoft PowerPoint",
+        "canonical": "microsoft powerpoint",
+        "category": "tool",
+        "reason": "Presentation software commonly listed in IT and office-adjacent job descriptions."
+      },
+      {
+        "name": "Microsoft Access",
+        "canonical": "microsoft access",
+        "category": "database",
+        "reason": "Desktop database tool relevant to IT roles."
+      },
+      {
+        "name": "Microsoft Visio",
+        "canonical": "microsoft visio",
+        "category": "tool",
+        "reason": "Diagramming and process mapping tool used in IT."
+      },
+      {
+        "name": "Microsoft Project",
+        "canonical": "microsoft project",
+        "category": "tool",
+        "reason": "Project management software used in IT project roles."
+      },
+      {
+        "name": "Microsoft SharePoint",
+        "canonical": "microsoft sharepoint",
+        "category": "platform",
+        "reason": "Enterprise collaboration and document management platform."
+      },
+      {
+        "name": "Splunk Enterprise",
+        "canonical": "splunk enterprise",
+        "category": "platform",
+        "reason": "Log analysis and SIEM platform widely required in IT."
+      },
+      {
+        "name": "Microsoft Visual Basic",
+        "canonical": "microsoft visual basic",
+        "category": "language",
+        "reason": "Programming language used in enterprise development."
+      },
+      {
+        "name": "Microsoft Windows",
+        "canonical": "microsoft windows",
+        "category": "os",
+        "reason": "Operating system relevant to IT roles."
+      },
+      {
+        "name": "Microsoft Word",
+        "canonical": "microsoft word",
+        "category": "tool",
+        "reason": "Word processing software commonly listed in IT-adjacent roles."
+      },
+      {
+        "name": "Microsoft Visual Studio",
+        "canonical": "microsoft visual studio",
+        "category": "tool",
+        "reason": "Integrated development environment used in software development."
+      },
+      {
+        "name": "Microsoft Windows Server",
+        "canonical": "microsoft windows server",
+        "category": "os",
+        "reason": "Server operating system relevant to IT infrastructure roles."
+      },
+      {
+        "name": "Apache Tomcat",
+        "canonical": "apache tomcat",
+        "category": "platform",
+        "reason": "Java servlet container and web server used in IT."
+      },
+      {
+        "name": "Apple macOS",
+        "canonical": "apple macos",
+        "category": "os",
+        "reason": "Operating system relevant to IT support and development."
+      },
+      {
+        "name": "Microsoft Active Server Pages ASP",
+        "canonical": "microsoft active server pages asp",
+        "category": "framework",
+        "reason": "Web development technology used in legacy and modern stacks."
+      },
+      {
+        "name": "Microsoft Outlook",
+        "canonical": "microsoft outlook",
+        "category": "tool",
+        "reason": "Email client commonly required in IT support roles."
+      },
+      {
+        "name": "Eclipse IDE",
+        "canonical": "eclipse ide",
+        "category": "tool",
+        "reason": "Integrated development environment used in software development."
+      },
+      {
+        "name": "Adobe Acrobat",
+        "canonical": "adobe acrobat",
+        "category": "tool",
+        "reason": "PDF document tool commonly listed in IT-adjacent roles."
+      },
+      {
+        "name": "Apache Subversion SVN",
+        "canonical": "apache subversion svn",
+        "category": "tool",
+        "reason": "Version control system used in software development."
+      },
+      {
+        "name": "Puppet",
+        "canonical": "puppet",
+        "category": "devops",
+        "reason": "Configuration management tool used in DevOps."
+      },
+      {
+        "name": "AJAX",
+        "canonical": "ajax",
+        "category": "framework",
+        "reason": "Web development technique relevant to frontend roles."
+      }
+    ],
+    "drop_samples_20": [
+      {
+        "name": "Facebook",
+        "reason": "Social media platform, not a specific IT skill."
+      },
+      {
+        "name": "Firewall software",
+        "reason": "Generic umbrella term, not a specific product."
+      },
+      {
+        "name": "Web application software",
+        "reason": "Vague umbrella term, not a specific technology."
+      },
+      {
+        "name": "Content management systems CMS",
+        "reason": "Generic umbrella term for a class of software."
+      },
+      {
+        "name": "Enterprise application integration EAI software",
+        "reason": "Generic category term, not a specific product."
+      },
+      {
+        "name": "Software development tools",
+        "reason": "Vague umbrella term, not a specific tool."
+      },
+      {
+        "name": "Web application framework software",
+        "reason": "Vague umbrella term, not a specific framework."
+      },
+      {
+        "name": "Web server software",
+        "reason": "Generic umbrella term for a class of software."
+      },
+      {
+        "name": "abide by business ethical code of conducts",
+        "reason": "Generic soft skill/competence, not an IT technology."
+      },
+      {
+        "name": "adapt a script",
+        "reason": "Generic creative competence, not an IT skill."
+      },
+      {
+        "name": "adapt developed game to the market",
+        "reason": "Generic business competence, not a specific IT skill."
+      },
+      {
+        "name": "adapt to changes in technological development plans",
+        "reason": "Generic adaptability competence, not a specific technology."
+      },
+      {
+        "name": "adhere to organisational code of ethics",
+        "reason": "Generic ethics competence, not an IT technology."
+      },
+      {
+        "name": "adjust ICT system capacity",
+        "reason": "Generic operational competence, not a specific tool."
+      },
+      {
+        "name": "administer ICT system",
+        "reason": "Generic system administration competence, not a specific technology."
+      },
+      {
+        "name": "adolescent psychological development",
+        "reason": "Non-IT psychological knowledge, not an IT skill."
+      },
+      {
+        "name": "advise on conflict management",
+        "reason": "Generic advisory competence, not an IT technology."
+      },
+      {
+        "name": "advise on curriculum development",
+        "reason": "Generic education advisory competence, not IT."
+      },
+      {
+        "name": "advise on economic development",
+        "reason": "Non-IT economic advisory competence."
+      },
+      {
+        "name": "advise on mine development",
+        "reason": "Non-IT mining advisory competence."
+      }
+    ]
+  },
+  "vocab_v4_stats": {
+    "num_skills": 161,
+    "num_aliases": 407,
+    "build_stats": {
+      "skipped_already_covered_or_no_alias": 11,
+      "dropped_aliases": 180
+    }
+  },
+  "coverage": {
+    "v3": {
+      "rows": 129897,
+      "skills_nonempty_ratio": 0.8663,
+      "avg_skills_per_jd": 5.3923,
+      "total_skill_hits": 700450,
+      "unique_skills": 33950
+    },
+    "v4": {
+      "rows": 129897,
+      "skills_nonempty_ratio": 0.8683,
+      "avg_skills_per_jd": 5.3949,
+      "total_skill_hits": 700779,
+      "unique_skills": 33972
+    },
+    "delta_nonempty_ratio": 0.002
+  },
+  "new_skills_top50": [
+    [
+      "slack",
+      57
+    ],
+    [
+      "zoom",
+      32
+    ],
+    [
+      "workday",
+      26
+    ],
+    [
+      "google-analytics",
+      19
+    ],
+    [
+      "prototyping",
+      14
+    ],
+    [
+      "cad-software",
+      14
+    ],
+    [
+      "software-interaction-design",
+      11
+    ],
+    [
+      "google-workspace",
+      8
+    ],
+    [
+      "building-automation",
+      8
+    ],
+    [
+      "autodesk-revit",
+      8
+    ],
+    [
+      "adobe-photoshop",
+      7
+    ],
+    [
+      "google-sheets",
+      7
+    ],
+    [
+      "programmable-logic-controller",
+      7
+    ],
+    [
+      "eclipse-ide",
+      6
+    ],
+    [
+      "scripting",
+      6
+    ],
+    [
+      "automation-technology",
+      6
+    ],
+    [
+      "adobe-after-effects",
+      5
+    ],
+    [
+      "servicenow",
+      5
+    ],
+    [
+      "microsoft-windows",
+      5
+    ],
+    [
+      "autodesk-autocad",
+      5
+    ],
+    [
+      "ict-support",
+      5
+    ],
+    [
+      "microsoft-outlook",
+      4
+    ],
+    [
+      "salt",
+      4
+    ],
+    [
+      "epic-systems",
+      4
+    ],
+    [
+      "debug-software",
+      3
+    ],
+    [
+      "microsoft-active-directory",
+      3
+    ],
+    [
+      "adobe-illustrator",
+      3
+    ],
+    [
+      "dassault-systemes-solidworks",
+      3
+    ],
+    [
+      "apache-maven",
+      3
+    ],
+    [
+      "reporting-software",
+      3
+    ],
+    [
+      "warehouse-management-system",
+      3
+    ],
+    [
+      "trimble-sketchup-pro",
+      2
+    ],
+    [
+      "wordpress",
+      2
+    ],
+    [
+      "design-cloud-architecture",
+      2
+    ],
+    [
+      "rapid-application-development",
+      2
+    ],
+    [
+      "microsoft-teams",
+      2
+    ],
+    [
+      "cmmi",
+      2
+    ],
+    [
+      "solve-ict-system-problems",
+      2
+    ],
+    [
+      "apple-macos",
+      2
+    ],
+    [
+      "red-hat-openshift",
+      1
+    ],
+    [
+      "ict-consulting",
+      1
+    ],
+    [
+      "microsoft-power-platform-software",
+      1
+    ],
+    [
+      "microsoft-visual-basic-for-applications-vba",
+      1
+    ],
+    [
+      "adobe-indesign",
+      1
+    ],
+    [
+      "microsoft-project",
+      1
+    ],
+    [
+      "autodesk-navisworks",
+      1
+    ],
+    [
+      "chef",
+      1
+    ],
+    [
+      "border-gateway-protocol-bgp",
+      1
+    ],
+    [
+      "software-components-libraries",
+      1
+    ],
+    [
+      "google-docs",
+      1
+    ]
+  ],
+  "rows_gaining_v4_skills": 265,
+  "regression_check": {
+    "sample_size": 1000,
+    "rows_with_loss": 0,
+    "loss_ratio": 0.0,
+    "lost_skills_top20": []
+  }
+}

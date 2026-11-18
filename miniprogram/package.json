@@ -1,0 +1,52 @@
+{
+  "name": "jobnavigator-miniprogram",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JobNavigator-IT 微信小程序（Taro 4 + React + TypeScript）",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass"
+  },
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "dev:weapp": "taro build --type weapp --watch",
+    "preview": "npm run build:weapp && node scripts/preview.mjs",
+    "upload": "npm run build:weapp && node scripts/upload.mjs"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@tarojs/components": "4.3.2",
+    "@tarojs/helper": "4.3.2",
+    "@tarojs/plugin-platform-weapp": "4.3.2",
+    "@tarojs/react": "4.3.2",
+    "@tarojs/runtime": "4.3.2",
+    "@tarojs/shared": "4.3.2",
+    "@tarojs/taro": "4.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.29.7",
+    "@tarojs/cli": "4.3.2",
+    "@tarojs/plugin-framework-react": "^4.3.2",
+    "@tarojs/plugin-platform-h5": "^4.3.2",
+    "@tarojs/taro-loader": "4.3.2",
+    "@tarojs/webpack5-runner": "4.3.2",
+    "@types/react": "^18.3.12",
+    "babel-preset-taro": "4.3.2",
+    "eslint": "^8.57.0",
+    "miniprogram-ci": "^2.1.31",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "typescript": "^5.6.3",
+    "webpack": "5.91.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,143 @@
+{
+ "generated_at": "2026-11-08T21:18:14+00:00",
+ "protocol": {
+  "source": "/data/shichaojian/JNIT/processed/skill_trend_panel_v3_full.parquet",
+  "analysis_end": "2026-10",
+  "n_months": 37,
+  "tail_months": 24,
+  "horizon": 3,
+  "origins": [
+   12,
+   14,
+   16,
+   18,
+   20
+  ],
+  "step": 2,
+  "min_nonzero_months": 24,
+  "min_valid_folds": 3,
+  "mape_denom": "max(|actual|, 1e-6)，预测截断 ≥0，实际值全 0 的 fold 跳过",
+  "alignment": "与 build_skill_trend_v3.cv_mape 完全一致"
+ },
+ "model": {
+  "name": "amazon/chronos-bolt-small",
+  "point_forecast": "median quantile (0.5)",
+  "device": "cuda:0"
+ },
+ "n_skills_evaluated": 102,
+ "mape_distribution": {
+  "chronos": {
+   "n": 102,
+   "median": 0.30668516555937786,
+   "mean": 447.06789543304023,
+   "p25": 0.21061459477662856,
+   "p75": 0.4759033259924751
+  },
+  "holt": {
+   "n": 102,
+   "median": 0.37258913807235705,
+   "mean": 413.4538643806271,
+   "p25": 0.2531858454579638,
+   "p75": 0.6029091587339861
+  },
+  "naive": {
+   "n": 102,
+   "median": 0.5771076693601079,
+   "mean": 546.4344983893465,
+   "p25": 0.3653347227278432,
+   "p75": 1.006427273153623
+  },
+  "best_baseline": {
+   "n": 102,
+   "median": 0.35898342465904814,
+   "mean": 380.5396715253714,
+   "p25": 0.24751716247396588,
+   "p75": 0.5884354488668782
+  }
+ },
+ "chronos_win_rate": {
+  "vs_holt": 0.7352941176470589,
+  "vs_naive": 0.9313725490196079,
+  "vs_best_baseline": 0.6666666666666666
+ },
+ "chronos_median_mape_drop": {
+  "vs_holt": 0.17688108905681676,
+  "vs_best_baseline": 0.145684328320567
+ },
+ "by_category": {
+  "ai_ml": {
+   "n": 8,
+   "chronos_median_mape": 0.4133976539728011,
+   "holt_median_mape": 0.3811938048713397,
+   "naive_median_mape": 0.7837250442940276,
+   "chronos_win_rate_vs_holt": 0.625
+  },
+  "backend": {
+   "n": 7,
+   "chronos_median_mape": 0.29099254950623704,
+   "holt_median_mape": 0.3847156547671738,
+   "naive_median_mape": 0.5506382608795539,
+   "chronos_win_rate_vs_holt": 0.8571428571428571
+  },
+  "bigdata": {
+   "n": 11,
+   "chronos_median_mape": 0.2291679391671085,
+   "holt_median_mape": 0.2632239476169115,
+   "naive_median_mape": 0.3910262024561539,
+   "chronos_win_rate_vs_holt": 0.7272727272727273
+  },
+  "data_analysis": {
+   "n": 6,
+   "chronos_median_mape": 0.27039956877513965,
+   "holt_median_mape": 0.3580673139615247,
+   "naive_median_mape": 0.5345455683301199,
+   "chronos_win_rate_vs_holt": 0.5
+  },
+  "devops": {
+   "n": 9,
+   "chronos_median_mape": 0.21678302835346147,
+   "holt_median_mape": 0.3003960605226649,
+   "naive_median_mape": 0.3926079396066865,
+   "chronos_win_rate_vs_holt": 1.0
+  },
+  "frontend": {
+   "n": 7,
+   "chronos_median_mape": 0.31681528482135907,
+   "holt_median_mape": 0.3144282998607745,
+   "naive_median_mape": 0.4604861364394221,
+   "chronos_win_rate_vs_holt": 0.5714285714285714
+  },
+  "language": {
+   "n": 14,
+   "chronos_median_mape": 0.25781899149550264,
+   "holt_median_mape": 0.41976344291947343,
+   "naive_median_mape": 0.5163414624462123,
+   "chronos_win_rate_vs_holt": 0.9285714285714286
+  },
+  "methods": {
+   "n": 15,
+   "chronos_median_mape": 0.3413956019270533,
+   "holt_median_mape": 0.34934628857082534,
+   "naive_median_mape": 0.53052249951975,
+   "chronos_win_rate_vs_holt": 0.5333333333333333
+  },
+  "other": {
+   "n": 9,
+   "chronos_median_mape": 3271.5916508095293,
+   "holt_median_mape": 2498.899092804152,
+   "naive_median_mape": 4292.244127151835,
+   "chronos_win_rate_vs_holt": 0.6666666666666666
+  }
+ },
+ "cost": {
+  "baseline_total_s": 0.03,
+  "chronos_load_s": 1.53,
+  "chronos_infer_s": 1.24,
+  "chronos_peak_vram_mb": 105.7
+ },
+ "verdict_thresholds": {
+  "上线条件": "中位 MAPE 降 ≥10%（对最优基线）或胜率 ≥60%",
+  "chronos_median_drop_vs_best": 0.145684328320567,
+  "chronos_win_rate_vs_best": 0.6666666666666666
+ }
+}

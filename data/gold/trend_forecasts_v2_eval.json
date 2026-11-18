@@ -1,0 +1,1617 @@
+{
+ "protocol": {
+  "signal": "jd_share（岗位份额，抗抓取量偏差）",
+  "backtest": "train 2020-01..2025-09（仅非 low_confidence） → predict 2025-10..2026-09 (12 个月)",
+  "selection": "每岗位按 sMAPE 选最优；方向准确率阈值 ±2%（3 个月变化）",
+  "confidence_formula": "confidence = max(0, 1 - sMAPE) * min(1, n_reliable_train/24)；稀疏岗位(总 jd_count<50) 截断至 ≤0.35",
+  "candidates": [
+   "naive",
+   "seasonal_naive",
+   "linear",
+   "holt",
+   "ema"
+  ],
+  "note": "Holt/EMA 在可靠月压缩序列上拟合；PatchTST 弃用（≤24 可靠月不支持深度学习）"
+ },
+ "model_selection_counts": {
+  "insufficient_data": 87,
+  "naive": 8,
+  "ema": 2,
+  "linear": 2
+ },
+ "overall_mean_smape": 0.4886,
+ "naive_mean_smape": 0.5071,
+ "overall_direction_accuracy": 0.5833,
+ "vs_naive": {
+  "win": 4,
+  "tie": 8,
+  "loss": 0,
+  "win_rate": 0.3333
+ },
+ "roles": [
+  {
+   "role_id": "role_000",
+   "model": "ema",
+   "smape": 0.5926,
+   "naive_smape": 0.6511,
+   "dir_acc": 0.25,
+   "n_train": 5,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.6511,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": 0.5926
+   }
+  },
+  {
+   "role_id": "role_001",
+   "model": "naive",
+   "smape": 0.6845,
+   "naive_smape": 0.6845,
+   "dir_acc": 0.5,
+   "n_train": 1,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.6845,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_002",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_003",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_004",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_005",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_006",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_007",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_008",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_009",
+   "model": "ema",
+   "smape": 0.3022,
+   "naive_smape": 0.3151,
+   "dir_acc": 0.6667,
+   "n_train": 4,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.3151,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": 0.3022
+   }
+  },
+  {
+   "role_id": "role_010",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_011",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_012",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_013",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_014",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_015",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_016",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_017",
+   "model": "naive",
+   "smape": 0.1774,
+   "naive_smape": 0.1774,
+   "dir_acc": 0.75,
+   "n_train": 2,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.1774,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_018",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_019",
+   "model": "naive",
+   "smape": 0.5761,
+   "naive_smape": 0.5761,
+   "dir_acc": 0.5,
+   "n_train": 1,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.5761,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_020",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_021",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_022",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_023",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_024",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_025",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_026",
+   "model": "naive",
+   "smape": 1.1258,
+   "naive_smape": 1.1258,
+   "dir_acc": 0.5833,
+   "n_train": 1,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 1.1258,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_027",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_028",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_029",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_030",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_031",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_032",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_033",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_034",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_035",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_036",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_037",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_038",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_039",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_040",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_041",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_042",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_043",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_044",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_045",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_046",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_047",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_048",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_049",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_050",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_051",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_052",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_053",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_054",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_055",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_056",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_057",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_058",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_059",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_060",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_061",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_062",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_063",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_064",
+   "model": "naive",
+   "smape": 0.7051,
+   "naive_smape": 0.7051,
+   "dir_acc": 0.75,
+   "n_train": 2,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.7051,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_065",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_066",
+   "model": "linear",
+   "smape": 0.1174,
+   "naive_smape": 0.2607,
+   "dir_acc": 0.8333,
+   "n_train": 6,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.2607,
+    "seasonal_naive": null,
+    "linear": 0.1174,
+    "holt": null,
+    "ema": 0.2569
+   }
+  },
+  {
+   "role_id": "role_067",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_068",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_069",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_070",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_071",
+   "model": "linear",
+   "smape": 0.2334,
+   "naive_smape": 0.2408,
+   "dir_acc": 0.5833,
+   "n_train": 7,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.2408,
+    "seasonal_naive": null,
+    "linear": 0.2334,
+    "holt": null,
+    "ema": 0.7163
+   }
+  },
+  {
+   "role_id": "role_072",
+   "model": "naive",
+   "smape": 0.4134,
+   "naive_smape": 0.4134,
+   "dir_acc": 0.75,
+   "n_train": 2,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.4134,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_073",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_074",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_075",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_076",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_077",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_078",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_079",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_080",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_081",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_082",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_083",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_084",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_085",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_086",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_087",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_088",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": true,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_089",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_090",
+   "model": "naive",
+   "smape": 0.4433,
+   "naive_smape": 0.4433,
+   "dir_acc": 0.4167,
+   "n_train": 4,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.4433,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": 0.4957
+   }
+  },
+  {
+   "role_id": "role_091",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_092",
+   "model": "naive",
+   "smape": 0.4924,
+   "naive_smape": 0.4924,
+   "dir_acc": 0.4167,
+   "n_train": 3,
+   "sparse": false,
+   "all_smapes": {
+    "naive": 0.4924,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_093",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_094",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_095",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_096",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_097",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  },
+  {
+   "role_id": "role_098",
+   "model": "insufficient_data",
+   "smape": null,
+   "naive_smape": null,
+   "dir_acc": null,
+   "n_train": 0,
+   "sparse": false,
+   "all_smapes": {
+    "naive": null,
+    "seasonal_naive": null,
+    "linear": null,
+    "holt": null,
+    "ema": null
+   }
+  }
+ ]
+}

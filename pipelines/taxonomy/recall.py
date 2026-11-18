@@ -19,7 +19,7 @@ import psycopg
 from pgvector.psycopg import register_vector
 from sentence_transformers import SentenceTransformer
 
-MODEL_NAME = "TechWolf/JobBERT-v3"
+MODEL_NAME = "Qwen/Qwen3-Embedding-4B"
 TOP_N = 5
 
 DSN = os.environ.get(
@@ -29,10 +29,26 @@ DSN = os.environ.get(
 
 
 def profile_to_text(profile: dict) -> str:
-    """用户画像文本拼法(与第一版一致)。"""
-    skills = profile.get("skills", [])
-    target = profile.get("target_role", "")
-    return f"Target role: {target}. My skills: {', '.join(skills)}"
+    """用户画像文本拼法(与 career_pathway_service._profile_to_query_text 一致)。
+
+    v3 升级:带经验/学历,用 JD 语言,贴近岗位 embedding 语义空间。
+    """
+    parts: list[str] = []
+    target = profile.get("target_role")
+    skills = profile.get("skills") or []
+    if target:
+        parts.append(f"Job seeker targeting the role of {target}")
+    if skills:
+        parts.append(f"Skills: {', '.join(skills)}")
+    years = profile.get("years_experience")
+    if years:
+        parts.append(f"Professional experience: {years} years")
+    edu = profile.get("education")
+    if edu:
+        parts.append(f"Education: {edu}")
+    if not parts:
+        parts.append("Job seeker profile")
+    return ". ".join(parts) + "."
 
 
 def recall_topn(user_vec: np.ndarray, n: int = TOP_N, dsn: str = DSN):

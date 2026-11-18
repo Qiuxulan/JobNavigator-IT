@@ -1,0 +1,2337 @@
+{
+  "generated_at": "2026-11-06T22:09:21.753645+00:00",
+  "purpose": "role_profiles_v4(v4 增强数据集重建)匹配回归评估;不切换线上指针",
+  "inputs": {
+    "profiles_v4": "data/gold/role_profiles_v4.json",
+    "profiles_v3_control": "data/gold/role_profiles_v3.json",
+    "jd_source": "jd_unified_v4_enriched",
+    "extra_vocab": "data/gold/skill_vocab_v4.json",
+    "eval_sets": [
+      "eval_set_v1.json",
+      "eval_set_v2.json"
+    ],
+    "n_cases": 58
+  },
+  "baseline": {
+    "source": "reports/eval/matching_v5_calibration_eval.json",
+    "embedding": {
+      "hit@1": 0.7586,
+      "hit@5": 1.0,
+      "mrr": 0.8693,
+      "ndcg@5": 0.673
+    },
+    "llm": {
+      "hit@1": 0.9828,
+      "hit@5": 1.0,
+      "mrr": 0.9914,
+      "ndcg@5": 0.7845
+    },
+    "llm_noise_band": 0.008
+  },
+  "metrics": {
+    "profiles_v4": {
+      "embedding": {
+        "n_cases": 58,
+        "hit@1": 0.7931,
+        "hit@5": 1.0,
+        "mrr": 0.8879,
+        "ndcg@5": 0.6951
+      },
+      "llm": {
+        "n_cases": 58,
+        "hit@1": 0.9828,
+        "hit@5": 1.0,
+        "mrr": 0.9914,
+        "ndcg@5": 0.7787
+      },
+      "llm_unchanged_cases": 9
+    },
+    "control_profiles_v3_same_session": {
+      "embedding": {
+        "n_cases": 58,
+        "hit@1": 0.7586,
+        "hit@5": 1.0,
+        "mrr": 0.8693,
+        "ndcg@5": 0.673
+      },
+      "llm": {
+        "n_cases": 58,
+        "hit@1": 0.9828,
+        "hit@5": 1.0,
+        "mrr": 0.9914,
+        "ndcg@5": 0.7804
+      },
+      "llm_unchanged_cases": 8
+    }
+  },
+  "deltas_vs_baseline": {
+    "profiles_v4_embedding": {
+      "hit@1": 0.0345,
+      "hit@5": 0.0,
+      "mrr": 0.0186,
+      "ndcg@5": 0.0221
+    },
+    "profiles_v4_llm": {
+      "hit@1": 0.0,
+      "hit@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@5": -0.0058
+    },
+    "control_v3_embedding": {
+      "hit@1": 0.0,
+      "hit@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@5": 0.0
+    },
+    "control_v3_llm": {
+      "hit@1": 0.0,
+      "hit@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@5": -0.0041
+    }
+  },
+  "regression_verdict": {
+    "embedding_ndcg5_drop": -0.0221,
+    "threshold": 0.005,
+    "regression": false,
+    "llm_ndcg5_drop": 0.0058,
+    "llm_within_noise_band": true
+  },
+  "v4_vs_v3_control_order_changes": {
+    "embedding": {
+      "n": 34,
+      "cases": [
+        "RAG应用求职者",
+        "MLOps求职者",
+        "数据科学求职者",
+        "Java后端求职者",
+        "Go后端求职者",
+        "前端React求职者",
+        "前端Vue求职者",
+        "iOS求职者",
+        "DevOps求职者",
+        "游戏Unity求职者",
+        "AI Agent 方向",
+        "RAG 检索工程师",
+        "CV 工程师",
+        "AI 基础设施",
+        "AI 评测方向",
+        "数据科学方向",
+        "Python 后端",
+        "Go 后端",
+        "C++ 系统方向",
+        "React 前端",
+        "Vue 前端",
+        "Flutter 跨端",
+        "DevOps 方向",
+        "云安全方向",
+        "渗透测试",
+        "安全运营",
+        "自动化测试",
+        "游戏客户端",
+        "Unity 开发",
+        "产品经理方向",
+        "嵌入式方向",
+        "网络工程方向",
+        "解决方案架构",
+        "零基础的 AI 爱好者"
+      ]
+    },
+    "llm": {
+      "n": 36,
+      "cases": [
+        "ML工程师求职者",
+        "RAG应用求职者",
+        "LLM推理求职者",
+        "数据科学求职者",
+        "数据工程求职者",
+        "Java后端求职者",
+        "前端React求职者",
+        "前端Vue求职者",
+        "iOS求职者",
+        "Android求职者",
+        "DevOps求职者",
+        "QA自动化求职者",
+        "安全运维求职者",
+        "游戏Unity求职者",
+        "AI Agent 方向",
+        "LLM 推理优化",
+        "RAG 检索工程师",
+        "AI 研究型",
+        "数据工程方向",
+        "数据分析方向",
+        "数据科学方向",
+        "分析工程方向",
+        "Java 后端",
+        "Go 后端",
+        "C++ 系统方向",
+        "Vue 前端",
+        "DevOps 方向",
+        "云安全方向",
+        "渗透测试",
+        "安全运营",
+        "游戏客户端",
+        "Unity 开发",
+        "产品经理方向",
+        "嵌入式方向",
+        "网络工程方向",
+        "零基础的 AI 爱好者"
+      ]
+    }
+  },
+  "attribution": {
+    "fresh_v3_profiles": "当前 v3 数据集同口径重建(129,897 行,--extra-vocab 关闭)",
+    "embedding_order_identical_to_profiles_v4": true,
+    "llm_order_identical_to_profiles_v4": false,
+    "fresh_v3_metrics": {
+      "embedding": {
+        "n_cases": 58,
+        "hit@1": 0.7931,
+        "hit@5": 1.0,
+        "mrr": 0.8879,
+        "ndcg@5": 0.6951
+      },
+      "llm": {
+        "n_cases": 58,
+        "hit@1": 0.9828,
+        "hit@5": 1.0,
+        "mrr": 0.9914,
+        "ndcg@5": 0.7783
+      }
+    },
+    "explanation": "profiles_v4 与 fresh v3 的排序逐位一致 → 排序变化(vs on-disk v3 基线)全部来自 JD 数据集刷新(126,628→129,897 行)带来的 trend_momentum/skill_freq 更新;265 行 v4 补抽新增的技能键不在 v3 先修图内,运行时 _role_freq/_resolve_targets 丢弃,对排序零影响。"
+  },
+  "profile_diff": {
+    "roles_total": 99,
+    "roles_with_any_skill_change": 47,
+    "roles_with_added_skills": 47,
+    "roles_unchanged": 52,
+    "new_vocab_skills_in_profiles": {
+      "distinct": 52,
+      "total_skill_keys_added": 113,
+      "top_by_role_reach": [
+        [
+          "debug-software",
+          10,
+          [
+            "role_005",
+            "role_025",
+            "role_029",
+            "role_046",
+            "role_051"
+          ]
+        ],
+        [
+          "servicenow",
+          7,
+          [
+            "role_018",
+            "role_047",
+            "role_055",
+            "role_064",
+            "role_073"
+          ]
+        ],
+        [
+          "scripting",
+          7,
+          [
+            "role_043",
+            "role_051",
+            "role_057",
+            "role_082",
+            "role_085"
+          ]
+        ],
+        [
+          "prototyping",
+          6,
+          [
+            "role_015",
+            "role_026",
+            "role_040",
+            "role_074",
+            "role_083"
+          ]
+        ],
+        [
+          "microsoft-windows",
+          6,
+          [
+            "role_043",
+            "role_046",
+            "role_073",
+            "role_078",
+            "role_084"
+          ]
+        ],
+        [
+          "systems-development-life-cycle",
+          4,
+          [
+            "role_018",
+            "role_064",
+            "role_080",
+            "role_081"
+          ]
+        ],
+        [
+          "xcode",
+          4,
+          [
+            "role_033",
+            "role_036",
+            "role_038",
+            "role_097"
+          ]
+        ],
+        [
+          "adobe-xd",
+          3,
+          [
+            "role_015",
+            "role_026",
+            "role_040"
+          ]
+        ],
+        [
+          "microsoft-powerpoint",
+          3,
+          [
+            "role_018",
+            "role_064",
+            "role_081"
+          ]
+        ],
+        [
+          "autodesk-autocad",
+          3,
+          [
+            "role_026",
+            "role_064",
+            "role_093"
+          ]
+        ],
+        [
+          "adobe-photoshop",
+          3,
+          [
+            "role_026",
+            "role_040",
+            "role_074"
+          ]
+        ],
+        [
+          "adobe-illustrator",
+          3,
+          [
+            "role_026",
+            "role_040",
+            "role_074"
+          ]
+        ],
+        [
+          "apple-macos",
+          3,
+          [
+            "role_028",
+            "role_043",
+            "role_085"
+          ]
+        ],
+        [
+          "predictive-modeling",
+          2,
+          [
+            "role_019",
+            "role_069"
+          ]
+        ],
+        [
+          "disaster-recovery",
+          2,
+          [
+            "role_020",
+            "role_078"
+          ]
+        ],
+        [
+          "ajax",
+          2,
+          [
+            "role_022",
+            "role_024"
+          ]
+        ],
+        [
+          "autodesk-revit",
+          2,
+          [
+            "role_026",
+            "role_064"
+          ]
+        ],
+        [
+          "software-interaction-design",
+          2,
+          [
+            "role_040",
+            "role_074"
+          ]
+        ],
+        [
+          "google-workspace",
+          2,
+          [
+            "role_043",
+            "role_065"
+          ]
+        ],
+        [
+          "border-gateway-protocol-bgp",
+          2,
+          [
+            "role_043",
+            "role_078"
+          ]
+        ]
+      ]
+    },
+    "field_integrity": {
+      "mismatch_fields": {},
+      "salary_intact": true,
+      "trend_momentum_intact": true,
+      "jd_counts_intact": true
+    },
+    "top_roles_by_l1_delta": [
+      {
+        "role_id": "role_011",
+        "role_name": "RAG Engineer",
+        "jd_count": 8,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "l1_delta": 0.2752
+      },
+      {
+        "role_id": "role_082",
+        "role_name": "ServiceNow Developer",
+        "jd_count": 96,
+        "n_added": 4,
+        "n_removed": 0,
+        "n_changed": 0,
+        "l1_delta": 0.261
+      },
+      {
+        "role_id": "role_051",
+        "role_name": "Python QA Automation Engineer",
+        "jd_count": 24,
+        "n_added": 2,
+        "n_removed": 0,
+        "n_changed": 0,
+        "l1_delta": 0.1609
+      },
+      {
+        "role_id": "role_043",
+        "role_name": "System Administrator",
+        "jd_count": 272,
+        "n_added": 9,
+        "n_removed": 4,
+        "n_changed": 0,
+        "l1_delta": 0.1383
+      },
+      {
+        "role_id": "role_040",
+        "role_name": "UI/UX Designer",
+        "jd_count": 331,
+        "n_added": 7,
+        "n_removed": 4,
+        "n_changed": 0,
+        "l1_delta": 0.1232
+      },
+      {
+        "role_id": "role_024",
+        "role_name": "Backend PHP Engineer",
+        "jd_count": 105,
+        "n_added": 3,
+        "n_removed": 3,
+        "n_changed": 0,
+        "l1_delta": 0.1139
+      },
+      {
+        "role_id": "role_026",
+        "role_name": "C++ Software Engineer",
+        "jd_count": 1113,
+        "n_added": 9,
+        "n_removed": 9,
+        "n_changed": 0,
+        "l1_delta": 0.1113
+      },
+      {
+        "role_id": "role_055",
+        "role_name": "Information Security Analyst",
+        "jd_count": 64,
+        "n_added": 6,
+        "n_removed": 0,
+        "n_changed": 0,
+        "l1_delta": 0.0948
+      },
+      {
+        "role_id": "role_078",
+        "role_name": "Network Engineer",
+        "jd_count": 257,
+        "n_added": 5,
+        "n_removed": 5,
+        "n_changed": 0,
+        "l1_delta": 0.0891
+      },
+      {
+        "role_id": "role_022",
+        "role_name": ".NET Backend Engineer",
+        "jd_count": 51,
+        "n_added": 3,
+        "n_removed": 0,
+        "n_changed": 0,
+        "l1_delta": 0.0845
+      }
+    ],
+    "top_roles_with_new_skills": [
+      {
+        "role_id": "role_082",
+        "role_name": "ServiceNow Developer",
+        "jd_count": 96,
+        "new_skills_top": [
+          {
+            "skill": "servicenow",
+            "rank": 2,
+            "freq": 0.19
+          },
+          {
+            "skill": "scripting",
+            "rank": 12,
+            "freq": 0.0483
+          },
+          {
+            "skill": "debug-software",
+            "rank": 23,
+            "freq": 0.0136
+          },
+          {
+            "skill": "cad-software",
+            "rank": 35,
+            "freq": 0.0091
+          }
+        ]
+      },
+      {
+        "role_id": "role_040",
+        "role_name": "UI/UX Designer",
+        "jd_count": 331,
+        "new_skills_top": [
+          {
+            "skill": "prototyping",
+            "rank": 4,
+            "freq": 0.0511
+          },
+          {
+            "skill": "adobe-xd",
+            "rank": 19,
+            "freq": 0.0182
+          },
+          {
+            "skill": "software-interaction-design",
+            "rank": 20,
+            "freq": 0.0152
+          },
+          {
+            "skill": "adobe-illustrator",
+            "rank": 32,
+            "freq": 0.0094
+          },
+          {
+            "skill": "adobe-photoshop",
+            "rank": 33,
+            "freq": 0.0094
+          },
+          {
+            "skill": "epic-systems",
+            "rank": 46,
+            "freq": 0.0041
+          },
+          {
+            "skill": "software-components-libraries",
+            "rank": 53,
+            "freq": 0.0038
+          }
+        ]
+      },
+      {
+        "role_id": "role_065",
+        "role_name": "Delivery Manager",
+        "jd_count": 23,
+        "new_skills_top": [
+          {
+            "skill": "google-workspace",
+            "rank": 6,
+            "freq": 0.0504
+          }
+        ]
+      },
+      {
+        "role_id": "role_051",
+        "role_name": "Python QA Automation Engineer",
+        "jd_count": 24,
+        "new_skills_top": [
+          {
+            "skill": "scripting",
+            "rank": 7,
+            "freq": 0.1073
+          },
+          {
+            "skill": "debug-software",
+            "rank": 16,
+            "freq": 0.0536
+          }
+        ]
+      },
+      {
+        "role_id": "role_043",
+        "role_name": "System Administrator",
+        "jd_count": 272,
+        "new_skills_top": [
+          {
+            "skill": "microsoft-windows",
+            "rank": 8,
+            "freq": 0.0502
+          },
+          {
+            "skill": "scripting",
+            "rank": 22,
+            "freq": 0.0178
+          },
+          {
+            "skill": "apple-macos",
+            "rank": 29,
+            "freq": 0.0122
+          },
+          {
+            "skill": "google-workspace",
+            "rank": 31,
+            "freq": 0.012
+          },
+          {
+            "skill": "border-gateway-protocol-bgp",
+            "rank": 33,
+            "freq": 0.011
+          },
+          {
+            "skill": "ict-support",
+            "rank": 35,
+            "freq": 0.0094
+          },
+          {
+            "skill": "microsoft-active-directory",
+            "rank": 46,
+            "freq": 0.0047
+          },
+          {
+            "skill": "microsoft-access",
+            "rank": 57,
+            "freq": 0.0037
+          }
+        ]
+      },
+      {
+        "role_id": "role_046",
+        "role_name": "Linux C++ Engineer",
+        "jd_count": 54,
+        "new_skills_top": [
+          {
+            "skill": "debug-software",
+            "rank": 8,
+            "freq": 0.0471
+          },
+          {
+            "skill": "microsoft-windows",
+            "rank": 11,
+            "freq": 0.0321
+          }
+        ]
+      },
+      {
+        "role_id": "role_083",
+        "role_name": "Embedded Software Engineer",
+        "jd_count": 326,
+        "new_skills_top": [
+          {
+            "skill": "debug-software",
+            "rank": 9,
+            "freq": 0.0435
+          },
+          {
+            "skill": "device-driver-development",
+            "rank": 29,
+            "freq": 0.0123
+          },
+          {
+            "skill": "predictive-maintenance",
+            "rank": 50,
+            "freq": 0.0041
+          },
+          {
+            "skill": "prototyping",
+            "rank": 51,
+            "freq": 0.0041
+          }
+        ]
+      },
+      {
+        "role_id": "role_015",
+        "role_name": "Context Engineer",
+        "jd_count": 239,
+        "new_skills_top": [
+          {
+            "skill": "prototyping",
+            "rank": 11,
+            "freq": 0.0354
+          },
+          {
+            "skill": "adobe-xd",
+            "rank": 33,
+            "freq": 0.0089
+          }
+        ]
+      },
+      {
+        "role_id": "role_074",
+        "role_name": "Product Designer",
+        "jd_count": 665,
+        "new_skills_top": [
+          {
+            "skill": "prototyping",
+            "rank": 14,
+            "freq": 0.0187
+          },
+          {
+            "skill": "adobe-illustrator",
+            "rank": 17,
+            "freq": 0.0132
+          },
+          {
+            "skill": "adobe-photoshop",
+            "rank": 19,
+            "freq": 0.0116
+          },
+          {
+            "skill": "software-interaction-design",
+            "rank": 29,
+            "freq": 0.0073
+          },
+          {
+            "skill": "adobe-after-effects",
+            "rank": 37,
+            "freq": 0.0044
+          },
+          {
+            "skill": "cad-software",
+            "rank": 43,
+            "freq": 0.0035
+          },
+          {
+            "skill": "salt",
+            "rank": 57,
+            "freq": 0.002
+          }
+        ]
+      },
+      {
+        "role_id": "role_033",
+        "role_name": "React Native Engineer",
+        "jd_count": 13,
+        "new_skills_top": [
+          {
+            "skill": "xcode",
+            "rank": 15,
+            "freq": 0.0776
+          }
+        ]
+      },
+      {
+        "role_id": "role_026",
+        "role_name": "C++ Software Engineer",
+        "jd_count": 1113,
+        "new_skills_top": [
+          {
+            "skill": "autodesk-autocad",
+            "rank": 16,
+            "freq": 0.0182
+          },
+          {
+            "skill": "adobe-photoshop",
+            "rank": 22,
+            "freq": 0.0142
+          },
+          {
+            "skill": "autodesk-revit",
+            "rank": 26,
+            "freq": 0.012
+          },
+          {
+            "skill": "trimble-sketchup-pro",
+            "rank": 29,
+            "freq": 0.0107
+          },
+          {
+            "skill": "adobe-illustrator",
+            "rank": 30,
+            "freq": 0.0104
+          },
+          {
+            "skill": "verilog",
+            "rank": 45,
+            "freq": 0.0057
+          },
+          {
+            "skill": "adobe-indesign",
+            "rank": 49,
+            "freq": 0.0047
+          },
+          {
+            "skill": "prototyping",
+            "rank": 53,
+            "freq": 0.0043
+          }
+        ]
+      },
+      {
+        "role_id": "role_059",
+        "role_name": "Unity Developer",
+        "jd_count": 21,
+        "new_skills_top": [
+          {
+            "skill": "debug-software",
+            "rank": 17,
+            "freq": 0.0465
+          }
+        ]
+      },
+      {
+        "role_id": "role_078",
+        "role_name": "Network Engineer",
+        "jd_count": 257,
+        "new_skills_top": [
+          {
+            "skill": "border-gateway-protocol-bgp",
+            "rank": 17,
+            "freq": 0.0324
+          },
+          {
+            "skill": "microsoft-windows",
+            "rank": 28,
+            "freq": 0.0125
+          },
+          {
+            "skill": "microsoft-sharepoint",
+            "rank": 31,
+            "freq": 0.0104
+          },
+          {
+            "skill": "disaster-recovery",
+            "rank": 41,
+            "freq": 0.0081
+          },
+          {
+            "skill": "servicenow",
+            "rank": 45,
+            "freq": 0.0051
+          }
+        ]
+      },
+      {
+        "role_id": "role_087",
+        "role_name": "Product Owner",
+        "jd_count": 98,
+        "new_skills_top": [
+          {
+            "skill": "prototyping",
+            "rank": 17,
+            "freq": 0.0257
+          }
+        ]
+      },
+      {
+        "role_id": "role_036",
+        "role_name": "iOS Engineer",
+        "jd_count": 81,
+        "new_skills_top": [
+          {
+            "skill": "xcode",
+            "rank": 19,
+            "freq": 0.0285
+          }
+        ]
+      }
+    ],
+    "roles_diff": [
+      {
+        "role_id": "role_000",
+        "role_name": "Machine Learning Engineer",
+        "jd_count": 1193,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_001",
+        "role_name": "AI Agent Engineer",
+        "jd_count": 833,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_002",
+        "role_name": "AI Engineer",
+        "jd_count": 396,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_003",
+        "role_name": "AI Data Engineer",
+        "jd_count": 417,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_004",
+        "role_name": "AI Research Engineer",
+        "jd_count": 112,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_005",
+        "role_name": "AI Evaluation Engineer",
+        "jd_count": 19,
+        "n_skill_v3": 50,
+        "n_skill_v4": 51,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0565
+      },
+      {
+        "role_id": "role_006",
+        "role_name": "MLOps Engineer",
+        "jd_count": 59,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_007",
+        "role_name": "Applied AI Engineer",
+        "jd_count": 173,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_008",
+        "role_name": "LLM Inference Engineer",
+        "jd_count": 32,
+        "n_skill_v3": 48,
+        "n_skill_v4": 48,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_009",
+        "role_name": "Prompt Engineer",
+        "jd_count": 1157,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_010",
+        "role_name": "AI Solutions Architect",
+        "jd_count": 33,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [
+          "langgraph"
+        ],
+        "l1_delta": 0.064
+      },
+      {
+        "role_id": "role_011",
+        "role_name": "RAG Engineer",
+        "jd_count": 8,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [
+          "helm"
+        ],
+        "l1_delta": 0.2752
+      },
+      {
+        "role_id": "role_012",
+        "role_name": "Computer Vision Engineer",
+        "jd_count": 63,
+        "n_skill_v3": 32,
+        "n_skill_v4": 32,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_013",
+        "role_name": "Forward Deployed AI Engineer",
+        "jd_count": 315,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_014",
+        "role_name": "Machine Learning Research Engineer",
+        "jd_count": 0,
+        "n_skill_v3": 0,
+        "n_skill_v4": 0,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0
+      },
+      {
+        "role_id": "role_015",
+        "role_name": "Context Engineer",
+        "jd_count": 239,
+        "n_skill_v3": 51,
+        "n_skill_v4": 53,
+        "n_added": 2,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "adobe-xd",
+          "prototyping"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0443
+      },
+      {
+        "role_id": "role_016",
+        "role_name": "AI Infrastructure Engineer",
+        "jd_count": 160,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_017",
+        "role_name": "Data Engineer",
+        "jd_count": 2178,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_018",
+        "role_name": "Business Analyst",
+        "jd_count": 502,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 4,
+        "n_removed": 4,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "microsoft-powerpoint",
+          "servicenow",
+          "systems-development-life-cycle",
+          "workday"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0439
+      },
+      {
+        "role_id": "role_019",
+        "role_name": "Data Scientist",
+        "jd_count": 811,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "predictive-modeling"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0292
+      },
+      {
+        "role_id": "role_020",
+        "role_name": "Database Administrator",
+        "jd_count": 111,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 2,
+        "n_removed": 2,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "disaster-recovery"
+        ],
+        "added_other": [
+          "prometheus"
+        ],
+        "l1_delta": 0.0729
+      },
+      {
+        "role_id": "role_021",
+        "role_name": "Backend Java Engineer",
+        "jd_count": 179,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "red-hat-openshift"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0262
+      },
+      {
+        "role_id": "role_022",
+        "role_name": ".NET Backend Engineer",
+        "jd_count": 51,
+        "n_skill_v3": 54,
+        "n_skill_v4": 57,
+        "n_added": 3,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "ajax",
+          "microsoft-active-server-pages-asp",
+          "microsoft-team-foundation-server"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0845
+      },
+      {
+        "role_id": "role_023",
+        "role_name": "Backend Node.js Engineer",
+        "jd_count": 270,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_024",
+        "role_name": "Backend PHP Engineer",
+        "jd_count": 105,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 3,
+        "n_removed": 3,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "ajax",
+          "drupal",
+          "wordpress"
+        ],
+        "added_other": [],
+        "l1_delta": 0.1139
+      },
+      {
+        "role_id": "role_025",
+        "role_name": "Backend Python Engineer",
+        "jd_count": 93,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0263
+      },
+      {
+        "role_id": "role_026",
+        "role_name": "C++ Software Engineer",
+        "jd_count": 1113,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 9,
+        "n_removed": 9,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "adobe-illustrator",
+          "adobe-indesign",
+          "adobe-photoshop",
+          "adobe-xd",
+          "autodesk-autocad",
+          "autodesk-revit",
+          "prototyping",
+          "trimble-sketchup-pro",
+          "verilog"
+        ],
+        "added_other": [],
+        "l1_delta": 0.1113
+      },
+      {
+        "role_id": "role_027",
+        "role_name": "Backend Go Engineer",
+        "jd_count": 84,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_028",
+        "role_name": "Backend Ruby Engineer",
+        "jd_count": 41,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "apple-macos"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0522
+      },
+      {
+        "role_id": "role_029",
+        "role_name": "Frontend React Engineer",
+        "jd_count": 46,
+        "n_skill_v3": 40,
+        "n_skill_v4": 41,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0241
+      },
+      {
+        "role_id": "role_030",
+        "role_name": "Frontend Angular Engineer",
+        "jd_count": 11,
+        "n_skill_v3": 26,
+        "n_skill_v4": 26,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_031",
+        "role_name": "Full-Stack JavaScript Engineer",
+        "jd_count": 236,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_032",
+        "role_name": "Frontend Vue Engineer",
+        "jd_count": 18,
+        "n_skill_v3": 41,
+        "n_skill_v4": 41,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_033",
+        "role_name": "React Native Engineer",
+        "jd_count": 13,
+        "n_skill_v3": 17,
+        "n_skill_v4": 18,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "xcode"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0776
+      },
+      {
+        "role_id": "role_034",
+        "role_name": "WordPress Developer",
+        "jd_count": 1,
+        "n_skill_v3": 4,
+        "n_skill_v4": 4,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_035",
+        "role_name": "Full-Stack .NET Engineer",
+        "jd_count": 6,
+        "n_skill_v3": 23,
+        "n_skill_v4": 23,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_036",
+        "role_name": "iOS Engineer",
+        "jd_count": 81,
+        "n_skill_v3": 49,
+        "n_skill_v4": 50,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "xcode"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0285
+      },
+      {
+        "role_id": "role_037",
+        "role_name": "Android Engineer",
+        "jd_count": 76,
+        "n_skill_v3": 44,
+        "n_skill_v4": 44,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_038",
+        "role_name": "Flutter Engineer",
+        "jd_count": 49,
+        "n_skill_v3": 38,
+        "n_skill_v4": 39,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "xcode"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0279
+      },
+      {
+        "role_id": "role_039",
+        "role_name": "Mobile C++ Engineer",
+        "jd_count": 0,
+        "n_skill_v3": 0,
+        "n_skill_v4": 0,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0
+      },
+      {
+        "role_id": "role_040",
+        "role_name": "UI/UX Designer",
+        "jd_count": 331,
+        "n_skill_v3": 57,
+        "n_skill_v4": 60,
+        "n_added": 7,
+        "n_removed": 4,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "adobe-illustrator",
+          "adobe-photoshop",
+          "adobe-xd",
+          "epic-systems",
+          "prototyping",
+          "software-components-libraries",
+          "software-interaction-design"
+        ],
+        "added_other": [],
+        "l1_delta": 0.1232
+      },
+      {
+        "role_id": "role_041",
+        "role_name": "DevOps Engineer",
+        "jd_count": 394,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_042",
+        "role_name": "Azure DevOps Engineer",
+        "jd_count": 7,
+        "n_skill_v3": 25,
+        "n_skill_v4": 25,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_043",
+        "role_name": "System Administrator",
+        "jd_count": 272,
+        "n_skill_v3": 55,
+        "n_skill_v4": 60,
+        "n_added": 9,
+        "n_removed": 4,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "apple-macos",
+          "border-gateway-protocol-bgp",
+          "google-workspace",
+          "ict-support",
+          "microsoft-access",
+          "microsoft-active-directory",
+          "microsoft-windows",
+          "scripting",
+          "slack"
+        ],
+        "added_other": [],
+        "l1_delta": 0.1383
+      },
+      {
+        "role_id": "role_044",
+        "role_name": "Node.js DevOps Engineer",
+        "jd_count": 0,
+        "n_skill_v3": 0,
+        "n_skill_v4": 0,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0
+      },
+      {
+        "role_id": "role_045",
+        "role_name": "Cloud Java Engineer",
+        "jd_count": 3,
+        "n_skill_v3": 11,
+        "n_skill_v4": 11,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_046",
+        "role_name": "Linux C++ Engineer",
+        "jd_count": 54,
+        "n_skill_v3": 19,
+        "n_skill_v4": 21,
+        "n_added": 2,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software",
+          "microsoft-windows"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0792
+      },
+      {
+        "role_id": "role_047",
+        "role_name": "Cloud Security Engineer",
+        "jd_count": 448,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "servicenow"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0295
+      },
+      {
+        "role_id": "role_048",
+        "role_name": "Manual QA Engineer",
+        "jd_count": 158,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_049",
+        "role_name": "QA Automation Engineer",
+        "jd_count": 174,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "testng"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0206
+      },
+      {
+        "role_id": "role_050",
+        "role_name": "Frontend QA Automation Engineer",
+        "jd_count": 7,
+        "n_skill_v3": 6,
+        "n_skill_v4": 6,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_051",
+        "role_name": "Python QA Automation Engineer",
+        "jd_count": 24,
+        "n_skill_v3": 25,
+        "n_skill_v4": 27,
+        "n_added": 2,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software",
+          "scripting"
+        ],
+        "added_other": [],
+        "l1_delta": 0.1609
+      },
+      {
+        "role_id": "role_052",
+        "role_name": ".NET QA Automation Engineer",
+        "jd_count": 8,
+        "n_skill_v3": 17,
+        "n_skill_v4": 17,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_053",
+        "role_name": "API QA Automation Engineer",
+        "jd_count": 0,
+        "n_skill_v3": 0,
+        "n_skill_v4": 0,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0
+      },
+      {
+        "role_id": "role_054",
+        "role_name": "Mobile QA Automation Engineer",
+        "jd_count": 0,
+        "n_skill_v3": 0,
+        "n_skill_v4": 0,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0
+      },
+      {
+        "role_id": "role_055",
+        "role_name": "Information Security Analyst",
+        "jd_count": 64,
+        "n_skill_v3": 32,
+        "n_skill_v4": 38,
+        "n_added": 6,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "burp-suite",
+          "metasploit",
+          "nmap",
+          "qualys-cloud-platform",
+          "servicenow",
+          "tenable-nessus"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0948
+      },
+      {
+        "role_id": "role_056",
+        "role_name": "Security Operations Engineer",
+        "jd_count": 178,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "splunk-enterprise"
+        ],
+        "added_other": [],
+        "l1_delta": 0.014
+      },
+      {
+        "role_id": "role_057",
+        "role_name": "Penetration Testing Engineer",
+        "jd_count": 59,
+        "n_skill_v3": 58,
+        "n_skill_v4": 59,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "scripting"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0173
+      },
+      {
+        "role_id": "role_058",
+        "role_name": "Security Software Engineer",
+        "jd_count": 3,
+        "n_skill_v3": 18,
+        "n_skill_v4": 18,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_059",
+        "role_name": "Unity Developer",
+        "jd_count": 21,
+        "n_skill_v3": 17,
+        "n_skill_v4": 18,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0465
+      },
+      {
+        "role_id": "role_060",
+        "role_name": "Game C++ Engineer",
+        "jd_count": 13,
+        "n_skill_v3": 26,
+        "n_skill_v4": 26,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_061",
+        "role_name": "Unreal Engine Developer",
+        "jd_count": 4,
+        "n_skill_v3": 2,
+        "n_skill_v4": 2,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_062",
+        "role_name": "Game Designer",
+        "jd_count": 9,
+        "n_skill_v3": 4,
+        "n_skill_v4": 4,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_063",
+        "role_name": "Game Technical Artist",
+        "jd_count": 3,
+        "n_skill_v3": 5,
+        "n_skill_v4": 5,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_064",
+        "role_name": "Project Manager",
+        "jd_count": 1839,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 8,
+        "n_removed": 8,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "autodesk-autocad",
+          "autodesk-revit",
+          "microsoft-powerpoint",
+          "microsoft-project",
+          "microsoft-sharepoint",
+          "servicenow",
+          "systems-development-life-cycle",
+          "waterfall"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0408
+      },
+      {
+        "role_id": "role_065",
+        "role_name": "Delivery Manager",
+        "jd_count": 23,
+        "n_skill_v3": 11,
+        "n_skill_v4": 12,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "google-workspace"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0504
+      },
+      {
+        "role_id": "role_066",
+        "role_name": "Product Manager",
+        "jd_count": 5309,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_067",
+        "role_name": "Scrum Master",
+        "jd_count": 395,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_068",
+        "role_name": "Rust Blockchain Engineer",
+        "jd_count": 261,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_069",
+        "role_name": "Data Analyst",
+        "jd_count": 209,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 2,
+        "n_removed": 2,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "microsoft-visual-basic-for-applications-vba",
+          "predictive-modeling"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0281
+      },
+      {
+        "role_id": "role_070",
+        "role_name": "Analytics Engineer",
+        "jd_count": 168,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [
+          "unix"
+        ],
+        "l1_delta": 0.0142
+      },
+      {
+        "role_id": "role_071",
+        "role_name": "Software Engineer (General)",
+        "jd_count": 17209,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_072",
+        "role_name": "QA Engineer (General)",
+        "jd_count": 1847,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0128
+      },
+      {
+        "role_id": "role_073",
+        "role_name": "IT Support Specialist",
+        "jd_count": 351,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 3,
+        "n_removed": 3,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "microsoft-windows",
+          "servicenow",
+          "slack"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0685
+      },
+      {
+        "role_id": "role_074",
+        "role_name": "Product Designer",
+        "jd_count": 665,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 7,
+        "n_removed": 7,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "adobe-after-effects",
+          "adobe-illustrator",
+          "adobe-photoshop",
+          "cad-software",
+          "prototyping",
+          "salt",
+          "software-interaction-design"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0734
+      },
+      {
+        "role_id": "role_075",
+        "role_name": "Engineering Manager",
+        "jd_count": 928,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_076",
+        "role_name": "Solutions Engineer",
+        "jd_count": 405,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0155
+      },
+      {
+        "role_id": "role_077",
+        "role_name": "Solutions Architect",
+        "jd_count": 701,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_078",
+        "role_name": "Network Engineer",
+        "jd_count": 257,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 5,
+        "n_removed": 5,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "border-gateway-protocol-bgp",
+          "disaster-recovery",
+          "microsoft-sharepoint",
+          "microsoft-windows",
+          "servicenow"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0891
+      },
+      {
+        "role_id": "role_079",
+        "role_name": "Platform Engineer",
+        "jd_count": 587,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_080",
+        "role_name": "Technical Program Manager",
+        "jd_count": 264,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 2,
+        "n_removed": 2,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "google-sheets",
+          "systems-development-life-cycle"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0235
+      },
+      {
+        "role_id": "role_081",
+        "role_name": "Salesforce Developer",
+        "jd_count": 238,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 2,
+        "n_removed": 2,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "microsoft-powerpoint",
+          "systems-development-life-cycle"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0214
+      },
+      {
+        "role_id": "role_082",
+        "role_name": "ServiceNow Developer",
+        "jd_count": 96,
+        "n_skill_v3": 33,
+        "n_skill_v4": 37,
+        "n_added": 4,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "cad-software",
+          "debug-software",
+          "scripting",
+          "servicenow"
+        ],
+        "added_other": [],
+        "l1_delta": 0.261
+      },
+      {
+        "role_id": "role_083",
+        "role_name": "Embedded Software Engineer",
+        "jd_count": 326,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 4,
+        "n_removed": 4,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "debug-software",
+          "device-driver-development",
+          "predictive-maintenance",
+          "prototyping"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0762
+      },
+      {
+        "role_id": "role_084",
+        "role_name": "Cybersecurity Engineer",
+        "jd_count": 192,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 3,
+        "n_removed": 3,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "microsoft-windows",
+          "splunk-enterprise",
+          "tenable-nessus"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0574
+      },
+      {
+        "role_id": "role_085",
+        "role_name": "IT Operations Specialist",
+        "jd_count": 393,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 3,
+        "n_removed": 3,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "apple-macos",
+          "microsoft-windows",
+          "scripting"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0429
+      },
+      {
+        "role_id": "role_086",
+        "role_name": "SAP Consultant",
+        "jd_count": 148,
+        "n_skill_v3": 31,
+        "n_skill_v4": 31,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_087",
+        "role_name": "Product Owner",
+        "jd_count": 98,
+        "n_skill_v3": 51,
+        "n_skill_v4": 52,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "prototyping"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0257
+      },
+      {
+        "role_id": "role_088",
+        "role_name": "Enterprise Platform Developer",
+        "jd_count": 33,
+        "n_skill_v3": 24,
+        "n_skill_v4": 25,
+        "n_added": 1,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "scripting"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0337
+      },
+      {
+        "role_id": "role_089",
+        "role_name": "Systems Engineer",
+        "jd_count": 963,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_090",
+        "role_name": "Product Engineer",
+        "jd_count": 1583,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_091",
+        "role_name": "Site Reliability Engineer",
+        "jd_count": 1072,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_092",
+        "role_name": "Backend Engineer (General)",
+        "jd_count": 1373,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_093",
+        "role_name": "Software Architect",
+        "jd_count": 528,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "autodesk-autocad"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0296
+      },
+      {
+        "role_id": "role_094",
+        "role_name": "Infrastructure Engineer",
+        "jd_count": 582,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_095",
+        "role_name": "Cloud Engineer",
+        "jd_count": 374,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "scripting"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0283
+      },
+      {
+        "role_id": "role_096",
+        "role_name": "Research Engineer",
+        "jd_count": 340,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      },
+      {
+        "role_id": "role_097",
+        "role_name": "Mobile Engineer (General)",
+        "jd_count": 382,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 1,
+        "n_removed": 1,
+        "n_changed": 0,
+        "added_new_vocab": [
+          "xcode"
+        ],
+        "added_other": [],
+        "l1_delta": 0.0085
+      },
+      {
+        "role_id": "role_098",
+        "role_name": "Data Architect",
+        "jd_count": 188,
+        "n_skill_v3": 60,
+        "n_skill_v4": 60,
+        "n_added": 0,
+        "n_removed": 0,
+        "n_changed": 0,
+        "added_new_vocab": [],
+        "added_other": [],
+        "l1_delta": 0.0
+      }
+    ],
+    "staleness_note": {
+      "on_disk_v3_generated_from": "jd_unified_v3_enriched",
+      "on_disk_v3_total_jd": 126628,
+      "current_dataset_rows": 129897,
+      "meaning": "on-disk role_profiles_v3.json 建于 126,628 行时期,当前数据集 129,897 行;diff 以同口径 fresh v3 重建为对照,线上基线评估用的仍是 on-disk v3 画像"
+    }
+  },
+  "conclusion": "OK: v4 画像 embedding 路径与基线一致或更好,未回归"
+}

@@ -115,15 +115,10 @@ export default function Chat() {
       setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
     } catch (err: unknown) {
       let detail = "未知错误";
-      if (err && typeof err === "object") {
-        const axErr = err as { response?: { status?: number; data?: unknown }; code?: string; message?: string };
-        if (axErr.response) {
-          detail = `HTTP ${axErr.response.status}: ${JSON.stringify(axErr.response.data)}`;
-        } else if (axErr.code === "ECONNABORTED") {
-          detail = "请求超时（60 秒），Agent 处理时间过长";
-        } else if (axErr.message) {
-          detail = axErr.message;
-        }
+      if (err instanceof DOMException && err.name === "AbortError") {
+        detail = "请求超时（180 秒），Agent 处理时间过长";
+      } else if (err instanceof Error) {
+        detail = err.message;
       }
       console.error("agentChat error:", err);
       setMessages((prev) => [...prev, { role: "assistant", content: `请求失败：${detail}\n\n如果后端未启动，请在终端运行：\n\`python -m uvicorn app.main:app --port 8000\`` }]);
@@ -195,7 +190,7 @@ export default function Chat() {
         <div className="composer-hint">
           <span>Enter 发送</span>
           <span>Shift + Enter 换行</span>
-          <span>真实 Agent API</span>
+          <span>Agent 最长响应 180 秒</span>
         </div>
       </div>
     </div>

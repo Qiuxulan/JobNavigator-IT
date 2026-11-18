@@ -1,0 +1,2093 @@
+{
+ "meituan": {
+  "company": "美团",
+  "company_en": "Meituan",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 882,
+    "new_roles": 882,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 724,
+    "new_roles": 35,
+    "closed_roles": 192
+   },
+   "2026-11-12": {
+    "open_roles": 731,
+    "new_roles": 13,
+    "closed_roles": 7
+   },
+   "2026-11-13": {
+    "open_roles": 733,
+    "new_roles": 7,
+    "closed_roles": 6
+   },
+   "2026-11-14": {
+    "open_roles": 734,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 733,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 728,
+    "new_roles": 2,
+    "closed_roles": 8
+   },
+   "2026-11-17": {
+    "open_roles": 727,
+    "new_roles": 5,
+    "closed_roles": 7
+   },
+   "2026-11-18": {
+    "open_roles": 727,
+    "new_roles": 7,
+    "closed_roles": 7
+   }
+  }
+ },
+ "tencent": {
+  "company": "腾讯",
+  "company_en": "Tencent",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 1460,
+    "new_roles": 1460,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 1288,
+    "new_roles": 15,
+    "closed_roles": 183
+   },
+   "2026-11-12": {
+    "open_roles": 1275,
+    "new_roles": 5,
+    "closed_roles": 22
+   },
+   "2026-11-13": {
+    "open_roles": 1271,
+    "new_roles": 14,
+    "closed_roles": 18
+   },
+   "2026-11-14": {
+    "open_roles": 1272,
+    "new_roles": 3,
+    "closed_roles": 2
+   },
+   "2026-11-15": {
+    "open_roles": 1270,
+    "new_roles": 0,
+    "closed_roles": 2
+   },
+   "2026-11-16": {
+    "open_roles": 1254,
+    "new_roles": 12,
+    "closed_roles": 28
+   },
+   "2026-11-17": {
+    "open_roles": 1248,
+    "new_roles": 18,
+    "closed_roles": 29
+   },
+   "2026-11-18": {
+    "open_roles": 1235,
+    "new_roles": 7,
+    "closed_roles": 20
+   }
+  }
+ },
+ "netease": {
+  "company": "网易",
+  "company_en": "NetEase",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 900,
+    "new_roles": 900,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 827,
+    "new_roles": 13,
+    "closed_roles": 76
+   },
+   "2026-11-12": {
+    "open_roles": 826,
+    "new_roles": 3,
+    "closed_roles": 14
+   },
+   "2026-11-13": {
+    "open_roles": 821,
+    "new_roles": 3,
+    "closed_roles": 8
+   },
+   "2026-11-14": {
+    "open_roles": 821,
+    "new_roles": 0,
+    "closed_roles": 3
+   },
+   "2026-11-15": {
+    "open_roles": 807,
+    "new_roles": 0,
+    "closed_roles": 16
+   },
+   "2026-11-16": {
+    "open_roles": 803,
+    "new_roles": 1,
+    "closed_roles": 6
+   },
+   "2026-11-17": {
+    "open_roles": 787,
+    "new_roles": 6,
+    "closed_roles": 23
+   },
+   "2026-11-18": {
+    "open_roles": 783,
+    "new_roles": 5,
+    "closed_roles": 9
+   }
+  }
+ },
+ "jd": {
+  "company": "京东",
+  "company_en": "JD.com",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 441,
+    "new_roles": 441,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 410,
+    "new_roles": 12,
+    "closed_roles": 38
+   },
+   "2026-11-12": {
+    "open_roles": 407,
+    "new_roles": 3,
+    "closed_roles": 11
+   },
+   "2026-11-13": {
+    "open_roles": 408,
+    "new_roles": 5,
+    "closed_roles": 4
+   },
+   "2026-11-14": {
+    "open_roles": 398,
+    "new_roles": 0,
+    "closed_roles": 10
+   },
+   "2026-11-15": {
+    "open_roles": 397,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 387,
+    "new_roles": 2,
+    "closed_roles": 12
+   },
+   "2026-11-17": {
+    "open_roles": 380,
+    "new_roles": 8,
+    "closed_roles": 15
+   },
+   "2026-11-18": {
+    "open_roles": 361,
+    "new_roles": 3,
+    "closed_roles": 22
+   }
+  }
+ },
+ "baidu": {
+  "company": "百度",
+  "company_en": "Baidu",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 1260,
+    "new_roles": 1260,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 1114,
+    "new_roles": 9,
+    "closed_roles": 155
+   },
+   "2026-11-12": {
+    "open_roles": 1108,
+    "new_roles": 1,
+    "closed_roles": 7
+   },
+   "2026-11-13": {
+    "open_roles": 1112,
+    "new_roles": 4,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 1112,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 1105,
+    "new_roles": 0,
+    "closed_roles": 7
+   },
+   "2026-11-16": {
+    "open_roles": 1084,
+    "new_roles": 3,
+    "closed_roles": 24
+   },
+   "2026-11-17": {
+    "open_roles": 1071,
+    "new_roles": 1,
+    "closed_roles": 14
+   },
+   "2026-11-18": {
+    "open_roles": 1071,
+    "new_roles": 1,
+    "closed_roles": 2
+   }
+  }
+ },
+ "bytedance": {
+  "company": "字节跳动",
+  "company_en": "ByteDance",
+  "days": {
+   "2026-11-10": {
+    "open_roles": 6854,
+    "new_roles": 6854,
+    "closed_roles": 0
+   },
+   "2026-11-11": {
+    "open_roles": 6330,
+    "new_roles": 123,
+    "closed_roles": 593
+   },
+   "2026-11-12": {
+    "open_roles": 6324,
+    "new_roles": 37,
+    "closed_roles": 97
+   },
+   "2026-11-13": {
+    "open_roles": 6323,
+    "new_roles": 83,
+    "closed_roles": 85
+   },
+   "2026-11-14": {
+    "open_roles": 6328,
+    "new_roles": 13,
+    "closed_roles": 9
+   },
+   "2026-11-15": {
+    "open_roles": 6331,
+    "new_roles": 6,
+    "closed_roles": 3
+   },
+   "2026-11-16": {
+    "open_roles": 6345,
+    "new_roles": 29,
+    "closed_roles": 20
+   },
+   "2026-11-17": {
+    "open_roles": 6346,
+    "new_roles": 63,
+    "closed_roles": 66
+   },
+   "2026-11-18": {
+    "open_roles": 6351,
+    "new_roles": 27,
+    "closed_roles": 22
+   }
+  }
+ },
+ "xpeng": {
+  "company": "小鹏",
+  "company_en": "XPeng",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 916,
+    "new_roles": 924,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 914,
+    "new_roles": 5,
+    "closed_roles": 15
+   },
+   "2026-11-13": {
+    "open_roles": 913,
+    "new_roles": 7,
+    "closed_roles": 8
+   },
+   "2026-11-14": {
+    "open_roles": 915,
+    "new_roles": 3,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 916,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 917,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 922,
+    "new_roles": 6,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 834,
+    "new_roles": 4,
+    "closed_roles": 92
+   }
+  }
+ },
+ "momenta": {
+  "company": "Momenta",
+  "company_en": "Momenta",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 187,
+    "new_roles": 187,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 188,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 188,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "ponyai": {
+  "company": "小马智行",
+  "company_en": "Pony.ai",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 52,
+    "new_roles": 52,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 52,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 54,
+    "new_roles": 2,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 54,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 54,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 51,
+    "new_roles": 0,
+    "closed_roles": 3
+   },
+   "2026-11-17": {
+    "open_roles": 49,
+    "new_roles": 0,
+    "closed_roles": 2
+   },
+   "2026-11-18": {
+    "open_roles": 49,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "nio": {
+  "company": "蔚来",
+  "company_en": "NIO",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 627,
+    "new_roles": 631,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 632,
+    "new_roles": 13,
+    "closed_roles": 12
+   },
+   "2026-11-13": {
+    "open_roles": 633,
+    "new_roles": 3,
+    "closed_roles": 2
+   },
+   "2026-11-14": {
+    "open_roles": 635,
+    "new_roles": 3,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 636,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 639,
+    "new_roles": 6,
+    "closed_roles": 3
+   },
+   "2026-11-17": {
+    "open_roles": 638,
+    "new_roles": 8,
+    "closed_roles": 9
+   },
+   "2026-11-18": {
+    "open_roles": 639,
+    "new_roles": 9,
+    "closed_roles": 8
+   }
+  }
+ },
+ "01ai": {
+  "company": "零一万物",
+  "company_en": "01.AI",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 33,
+    "new_roles": 33,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 33,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 33,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 33,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 33,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 32,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 33,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 33,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "xiaomi": {
+  "company": "小米",
+  "company_en": "Xiaomi",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 1056,
+    "new_roles": 1058,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 1064,
+    "new_roles": 14,
+    "closed_roles": 8
+   },
+   "2026-11-13": {
+    "open_roles": 1075,
+    "new_roles": 13,
+    "closed_roles": 3
+   },
+   "2026-11-14": {
+    "open_roles": 1076,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 1076,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 1075,
+    "new_roles": 2,
+    "closed_roles": 3
+   },
+   "2026-11-17": {
+    "open_roles": 1072,
+    "new_roles": 3,
+    "closed_roles": 6
+   },
+   "2026-11-18": {
+    "open_roles": 1074,
+    "new_roles": 4,
+    "closed_roles": 2
+   }
+  }
+ },
+ "sensetime": {
+  "company": "商汤科技",
+  "company_en": "SenseTime",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 60,
+    "new_roles": 60,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 60,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 61,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 60,
+    "new_roles": 2,
+    "closed_roles": 3
+   },
+   "2026-11-15": {
+    "open_roles": 60,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 60,
+    "new_roles": 2,
+    "closed_roles": 2
+   },
+   "2026-11-17": {
+    "open_roles": 63,
+    "new_roles": 4,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 64,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "jtexpress": {
+  "company": "极兔速递",
+  "company_en": "J&T Express",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 168,
+    "new_roles": 168,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 169,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 168,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-14": {
+    "open_roles": 168,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 168,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 172,
+    "new_roles": 4,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 173,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 173,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "qcraft": {
+  "company": "轻舟智航",
+  "company_en": "QCraft",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 13,
+    "new_roles": 13,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "meitu": {
+  "company": "美图",
+  "company_en": "Meitu",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 11,
+    "new_roles": 11,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "papergames": {
+  "company": "叠纸游戏",
+  "company_en": "Papergames",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 40,
+    "new_roles": 40,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 40,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 39,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-14": {
+    "open_roles": 40,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 40,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 41,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 41,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 41,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "yonghui": {
+  "company": "永辉超市",
+  "company_en": "Yonghui",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 3,
+    "new_roles": 3,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 4,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 3,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "kurogame": {
+  "company": "库洛游戏",
+  "company_en": "Kuro Games",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 105,
+    "new_roles": 105,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 106,
+    "new_roles": 2,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 106,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 106,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 106,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 108,
+    "new_roles": 4,
+    "closed_roles": 2
+   },
+   "2026-11-17": {
+    "open_roles": 108,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 109,
+    "new_roles": 2,
+    "closed_roles": 1
+   }
+  }
+ },
+ "dingtalk": {
+  "company": "钉钉",
+  "company_en": "DingTalk",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 62,
+    "new_roles": 62,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 68,
+    "new_roles": 7,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 69,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 69,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 70,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 69,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 74,
+    "new_roles": 4,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 75,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "hujing": {
+  "company": "虎鲸文娱",
+  "company_en": "Hujing Media",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 20,
+    "new_roles": 20,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-14": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 18,
+    "new_roles": 0,
+    "closed_roles": 1
+   }
+  }
+ },
+ "tongyi": {
+  "company": "通义",
+  "company_en": "Tongyi",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 66,
+    "new_roles": 66,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 64,
+    "new_roles": 0,
+    "closed_roles": 2
+   },
+   "2026-11-13": {
+    "open_roles": 64,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 65,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 65,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 64,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 65,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 65,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "amap": {
+  "company": "高德",
+  "company_en": "Amap",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 113,
+    "new_roles": 113,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 114,
+    "new_roles": 5,
+    "closed_roles": 4
+   },
+   "2026-11-13": {
+    "open_roles": 115,
+    "new_roles": 3,
+    "closed_roles": 2
+   },
+   "2026-11-14": {
+    "open_roles": 115,
+    "new_roles": 2,
+    "closed_roles": 2
+   },
+   "2026-11-15": {
+    "open_roles": 114,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 110,
+    "new_roles": 1,
+    "closed_roles": 5
+   },
+   "2026-11-17": {
+    "open_roles": 112,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 112,
+    "new_roles": 2,
+    "closed_roles": 2
+   }
+  }
+ },
+ "aidc": {
+  "company": "阿里国际",
+  "company_en": "AIDC",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 0,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 0,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "taotian": {
+  "company": "淘天集团",
+  "company_en": "Taotian",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 188,
+    "new_roles": 188,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 192,
+    "new_roles": 6,
+    "closed_roles": 2
+   },
+   "2026-11-13": {
+    "open_roles": 192,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-14": {
+    "open_roles": 197,
+    "new_roles": 7,
+    "closed_roles": 2
+   },
+   "2026-11-15": {
+    "open_roles": 196,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 201,
+    "new_roles": 5,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 206,
+    "new_roles": 6,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 206,
+    "new_roles": 3,
+    "closed_roles": 3
+   }
+  }
+ },
+ "quark": {
+  "company": "夸克",
+  "company_en": "Quark",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 191,
+    "new_roles": 191,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 197,
+    "new_roles": 6,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 197,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 196,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 196,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 195,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 192,
+    "new_roles": 2,
+    "closed_roles": 5
+   },
+   "2026-11-18": {
+    "open_roles": 192,
+    "new_roles": 1,
+    "closed_roles": 1
+   }
+  }
+ },
+ "eleme": {
+  "company": "饿了么",
+  "company_en": "Ele.me",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 36,
+    "new_roles": 36,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 37,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 39,
+    "new_roles": 2,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 39,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 39,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 39,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 40,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 42,
+    "new_roles": 2,
+    "closed_roles": 0
+   }
+  }
+ },
+ "thead": {
+  "company": "平头哥",
+  "company_en": "T-Head",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 151,
+    "new_roles": 151,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 151,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 151,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 153,
+    "new_roles": 2,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 153,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 153,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 154,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 155,
+    "new_roles": 2,
+    "closed_roles": 1
+   }
+  }
+ },
+ "cainiao": {
+  "company": "菜鸟",
+  "company_en": "Cainiao",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 18,
+    "new_roles": 18,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 19,
+    "new_roles": 2,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 21,
+    "new_roles": 2,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 21,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 21,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 21,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 21,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 22,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "alihealth": {
+  "company": "阿里健康",
+  "company_en": "AliHealth",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 20,
+    "new_roles": 20,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 19,
+    "new_roles": 1,
+    "closed_roles": 2
+   },
+   "2026-11-13": {
+    "open_roles": 19,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 20,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "aliyun": {
+  "company": "阿里云",
+  "company_en": "Alibaba Cloud",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 440,
+    "new_roles": 455,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 440,
+    "new_roles": 11,
+    "closed_roles": 26
+   },
+   "2026-11-13": {
+    "open_roles": 440,
+    "new_roles": 6,
+    "closed_roles": 6
+   },
+   "2026-11-14": {
+    "open_roles": 440,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 440,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 437,
+    "new_roles": 11,
+    "closed_roles": 14
+   },
+   "2026-11-17": {
+    "open_roles": 437,
+    "new_roles": 14,
+    "closed_roles": 14
+   },
+   "2026-11-18": {
+    "open_roles": 435,
+    "new_roles": 32,
+    "closed_roles": 36
+   }
+  }
+ },
+ "freshippo": {
+  "company": "盒马",
+  "company_en": "Freshippo",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 31,
+    "new_roles": 32,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 31,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 31,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 32,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 31,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-16": {
+    "open_roles": 32,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 31,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 31,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "aliholding": {
+  "company": "阿里控股",
+  "company_en": "Alibaba Holding",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 438,
+    "new_roles": 440,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 447,
+    "new_roles": 8,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 447,
+    "new_roles": 4,
+    "closed_roles": 4
+   },
+   "2026-11-14": {
+    "open_roles": 448,
+    "new_roles": 2,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 445,
+    "new_roles": 0,
+    "closed_roles": 3
+   },
+   "2026-11-16": {
+    "open_roles": 441,
+    "new_roles": 2,
+    "closed_roles": 8
+   },
+   "2026-11-17": {
+    "open_roles": 440,
+    "new_roles": 2,
+    "closed_roles": 4
+   },
+   "2026-11-18": {
+    "open_roles": 445,
+    "new_roles": 6,
+    "closed_roles": 4
+   }
+  }
+ },
+ "lingxi": {
+  "company": "灵犀互娱",
+  "company_en": "Lingxi Games",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 34,
+    "new_roles": 34,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 35,
+    "new_roles": 2,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 35,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 35,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 35,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 35,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 35,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 36,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "herogames": {
+  "company": "英雄游戏",
+  "company_en": "Hero Games",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 13,
+    "new_roles": 13,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 13,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 12,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 12,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "secoo": {
+  "company": "寺库",
+  "company_en": "Secoo",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 26,
+    "new_roles": 26,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 26,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "thundersoft": {
+  "company": "中科创达",
+  "company_en": "ThunderSoft",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 174,
+    "new_roles": 174,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 174,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 3
+   },
+   "2026-11-14": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 171,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "iguopin": {
+  "company": "国聘",
+  "company_en": "iguopin",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 5316,
+    "new_roles": 5334,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 5238,
+    "new_roles": 57,
+    "closed_roles": 153
+   },
+   "2026-11-13": {
+    "open_roles": 5251,
+    "new_roles": 45,
+    "closed_roles": 103
+   },
+   "2026-11-14": {
+    "open_roles": 5255,
+    "new_roles": 43,
+    "closed_roles": 101
+   },
+   "2026-11-15": {
+    "open_roles": 5266,
+    "new_roles": 2,
+    "closed_roles": 53
+   },
+   "2026-11-16": {
+    "open_roles": 5147,
+    "new_roles": 88,
+    "closed_roles": 268
+   },
+   "2026-11-18": {
+    "open_roles": 5183,
+    "new_roles": 168,
+    "closed_roles": 170
+   }
+  }
+ },
+ "idreamsky": {
+  "company": "创梦天地",
+  "company_en": "iDreamSky",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 11,
+    "new_roles": 11,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 11,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "modelbest": {
+  "company": "面壁智能",
+  "company_en": "ModelBest",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 66,
+    "new_roles": 66,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 66,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-13": {
+    "open_roles": 66,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-14": {
+    "open_roles": 66,
+    "new_roles": 1,
+    "closed_roles": 1
+   },
+   "2026-11-15": {
+    "open_roles": 66,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 66,
+    "new_roles": 0,
+    "closed_roles": 1
+   },
+   "2026-11-17": {
+    "open_roles": 68,
+    "new_roles": 3,
+    "closed_roles": 1
+   },
+   "2026-11-18": {
+    "open_roles": 69,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "chagee": {
+  "company": "霸王茶姬",
+  "company_en": "CHAGEE",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 12,
+    "new_roles": 12,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 13,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 14,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 14,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 14,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 14,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 14,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 15,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "navinfo": {
+  "company": "四维图新",
+  "company_en": "NavInfo",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 7,
+    "new_roles": 7,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-17": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-18": {
+    "open_roles": 7,
+    "new_roles": 0,
+    "closed_roles": 0
+   }
+  }
+ },
+ "poizon": {
+  "company": "得物",
+  "company_en": "Poizon",
+  "days": {
+   "2026-11-11": {
+    "open_roles": 250,
+    "new_roles": 250,
+    "closed_roles": 0
+   },
+   "2026-11-12": {
+    "open_roles": 252,
+    "new_roles": 2,
+    "closed_roles": 0
+   },
+   "2026-11-13": {
+    "open_roles": 253,
+    "new_roles": 1,
+    "closed_roles": 0
+   },
+   "2026-11-14": {
+    "open_roles": 253,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-15": {
+    "open_roles": 253,
+    "new_roles": 0,
+    "closed_roles": 0
+   },
+   "2026-11-16": {
+    "open_roles": 251,
+    "new_roles": 0,
+    "closed_roles": 2
+   },
+   "2026-11-17": {
+    "open_roles": 246,
+    "new_roles": 1,
+    "closed_roles": 6
+   },
+   "2026-11-18": {
+    "open_roles": 247,
+    "new_roles": 1,
+    "closed_roles": 0
+   }
+  }
+ },
+ "trunk": {
+  "company": "主线科技",
+  "company_en": "Trunk Tech",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 10,
+    "new_roles": 10,
+    "closed_roles": 0
+   }
+  }
+ },
+ "mohrss": {
+  "company": "中国公共招聘网",
+  "company_en": "mohrss",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 2731,
+    "new_roles": 2731,
+    "closed_roles": 0
+   }
+  }
+ },
+ "wumart": {
+  "company": "物美",
+  "company_en": "Wumart",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 24,
+    "new_roles": 24,
+    "closed_roles": 0
+   }
+  }
+ },
+ "holomatic": {
+  "company": "禾多科技",
+  "company_en": "HoloMatic",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 16,
+    "new_roles": 16,
+    "closed_roles": 0
+   }
+  }
+ },
+ "moonton": {
+  "company": "沐瞳",
+  "company_en": "Moonton",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 57,
+    "new_roles": 57,
+    "closed_roles": 0
+   }
+  }
+ },
+ "neusoft": {
+  "company": "东软集团",
+  "company_en": "Neusoft",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 2,
+    "new_roles": 2,
+    "closed_roles": 0
+   }
+  }
+ },
+ "boke": {
+  "company": "波克城市",
+  "company_en": "Boke",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 181,
+    "new_roles": 181,
+    "closed_roles": 0
+   }
+  }
+ },
+ "duxiaoman": {
+  "company": "度小满",
+  "company_en": "Du Xiaoman",
+  "days": {
+   "2026-11-18": {
+    "open_roles": 20,
+    "new_roles": 20,
+    "closed_roles": 0
+   }
+  }
+ }
+}

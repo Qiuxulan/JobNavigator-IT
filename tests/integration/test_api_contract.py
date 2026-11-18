@@ -1,3 +1,4 @@
+import json
 import os
 
 import pytest
@@ -7,7 +8,16 @@ from app.main import app
 
 client = TestClient(app)
 
-_ROLES_JSON = "data/gold/fine_grained_roles_v1.json"
+_ROLES_JSON = next(
+    p for p in (
+        "data/gold/fine_grained_roles_v3.json",
+        "data/gold/fine_grained_roles_v2.json",
+        "data/gold/fine_grained_roles_v1.json",
+    )
+    if os.path.exists(p)
+)
+with open(_ROLES_JSON, encoding="utf-8") as _f:
+    EXPECTED_ROLE_COUNT = len(json.load(_f))
 _needs_roles = pytest.mark.skipif(
     not os.path.exists(_ROLES_JSON),
     reason=f"missing roles json: {_ROLES_JSON}",
@@ -168,17 +178,23 @@ def test_paths_trends_and_agent_chat(monkeypatch):
 def test_frontend_catalog_and_graph_contracts():
     roles_resp = client.get("/v1/roles")
     assert roles_resp.status_code == 200
-    assert sum(len(items) for items in roles_resp.json()["roles"].values()) == 69
+    assert sum(len(items) for items in roles_resp.json()["roles"].values()) == EXPECTED_ROLE_COUNT
 
     catalog_resp = client.get("/v1/roles/catalog")
     assert catalog_resp.status_code == 200
-    assert len(catalog_resp.json()["roles"]) == 69
+    assert len(catalog_resp.json()["roles"]) == EXPECTED_ROLE_COUNT
 
     graph_resp = client.get("/v1/graph")
     assert graph_resp.status_code == 200
     graph = graph_resp.json()
-    assert graph["summary"]["roles"] == 69
-    assert graph["summary"]["skills"] == 275
+    assert graph["summary"]["roles"] == EXPECTED_ROLE_COUNT
+    import json as _json
+    from pathlib import Path as _Path
+
+    v3 = _Path("data/gold/skill_prerequisite_v3.json")
+    graph_file = v3 if v3.exists() else _Path("data/gold/skill_prerequisite_v2.json")
+    expected_skills = len(_json.loads(graph_file.read_text(encoding="utf-8"))["skills"])
+    assert graph["summary"]["skills"] == expected_skills
     assert graph["summary"]["links"] == len(graph["links"])
 
 

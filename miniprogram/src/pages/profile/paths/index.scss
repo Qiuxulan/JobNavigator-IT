@@ -1,0 +1,8 @@
+@import '../../../styles/tokens.scss';
+@import '../favorites/index.scss';
+
+.me-card-chevron {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}

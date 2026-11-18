@@ -1,0 +1,199 @@
+@import '../../styles/tokens.scss';
+
+.path-page {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 渐变 hero 头（对齐助手页头部体系） */
+.path-hero {
+  background: $gradient;
+  border-radius: $radius-card;
+  padding: 32px 32px 28px;
+  margin-bottom: 24px;
+  box-shadow: $shadow-pop;
+}
+
+.path-hero-label {
+  display: block;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.path-hero-title {
+  display: block;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.path-hero-sub {
+  display: block;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.82);
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.path-metrics {
+  display: flex;
+  background: $c-fill;
+  border-radius: $radius-lg;
+  padding: 20px 0;
+}
+
+.path-metric {
+  flex: 1;
+  text-align: center;
+}
+
+.path-metric-value {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: $primary;
+}
+
+.path-metric-label {
+  display: block;
+  font-size: 22px;
+  color: $c-text-3;
+  margin-top: 6px;
+}
+
+/* 时间线 */
+.path-step {
+  display: flex;
+}
+
+.path-step-rail {
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.path-step-dot {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: $gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: $shadow-pop;
+}
+
+.path-step-no {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.path-step-line {
+  flex: 1;
+  width: 4px;
+  background: #e2e7f5;
+  margin: 8px 0;
+  border-radius: 2px;
+}
+
+.path-step-body {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.path-step-skill {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.path-step-reason {
+  display: block;
+  font-size: 24px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 资源卡片：整卡可点，点击复制链接 */
+.path-resource {
+  display: flex;
+  background: $c-fill;
+  border-radius: $radius-lg;
+  padding: 20px 24px;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+}
+
+.path-resource:active {
+  background: $primary-soft;
+  border-color: $primary-border;
+}
+
+.path-resource-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.path-resource-title-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.path-resource-title {
+  flex: 1;
+  min-width: 0;
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $c-text;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.path-resource-link-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+
+.path-resource-meta {
+  display: block;
+  font-size: 22px;
+  margin-top: 6px;
+  word-break: break-all;
+}
+
+.path-resource-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.path-resource-hint {
+  font-size: 20px;
+  color: $c-text-3;
+  margin-left: auto;
+}
+
+.path-save-btn {
+  margin-top: 24px;
+  font-size: 28px;
+  padding: 18px 0;
+}

@@ -70,7 +70,41 @@ ROLE_ZH: dict[str, str] = {
     "Product Manager": "产品经理",
     "Scrum Master": "Scrum 敏捷教练",
     "Rust Blockchain Engineer": "Rust 区块链工程师",
+    "Data Analyst": "数据分析师",
+    "Analytics Engineer": "分析工程师",
+    "Software Engineer (General)": "通用软件工程师",
+    "QA Engineer (General)": "通用 QA 工程师",
+    "IT Support Specialist": "IT 支持专员",
+    "Product Designer": "产品设计师",
+    "Engineering Manager": "工程经理",
+    "Solutions Engineer": "解决方案工程师",
+    "Solutions Architect": "解决方案架构师",
+    "Network Engineer": "网络工程师",
+    "Platform Engineer": "平台工程师",
+    "Technical Program Manager": "技术项目经理",
+    "Salesforce Developer": "Salesforce 开发工程师",
+    "ServiceNow Developer": "ServiceNow 开发工程师",
+    "Embedded Software Engineer": "嵌入式软件工程师",
+    "Cybersecurity Engineer": "网络安全工程师",
+    "IT Operations Specialist": "IT 运维专员",
+    "SAP Consultant": "SAP 顾问",
+    "Product Owner": "产品负责人",
+    "Enterprise Platform Developer": "企业平台开发工程师",
+    "Systems Engineer": "系统工程师",
+    "Product Engineer": "产品工程师",
 }
+
+# 2026-11 补充：岗位扩展后新增、此前缺少中文名的岗位
+ROLE_ZH.update({
+    "Backend Engineer (General)": "后端开发工程师",
+    "Mobile Engineer (General)": "移动端/客户端工程师",
+    "Data Architect": "数据架构师",
+    "Infrastructure Engineer": "基础架构工程师",
+    "Software Architect": "软件架构师",
+    "Site Reliability Engineer": "SRE 稳定性工程师",
+    "Research Engineer": "研究工程师",
+    "Cloud Engineer": "云计算工程师",
+})
 
 
 def role_zh(role_name: str | None) -> str:

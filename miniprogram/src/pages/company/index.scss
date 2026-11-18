@@ -1,0 +1,225 @@
+@import '../../styles/tokens.scss';
+
+.card-title {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 头部 */
+.cmp-head {
+  padding-bottom: 24px;
+}
+
+.cmp-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cmp-name {
+  font-size: 44px;
+  font-weight: 700;
+  margin-right: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 380px;
+}
+
+.cmp-status {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 4px 18px;
+  border-radius: $radius-pill;
+  flex-shrink: 0;
+}
+
+.cmp-status--expanding {
+  background: #e7f8f0;
+  color: #0da163;
+}
+
+.cmp-status--shrinking {
+  background: #feeceb;
+  color: #e03c31;
+}
+
+.cmp-status--cooling {
+  background: #fef3e2;
+  color: #e8790a;
+}
+
+.cmp-status--stable {
+  background: $c-fill;
+  color: $c-text-2;
+}
+
+.cmp-tags {
+  display: flex;
+  align-items: center;
+}
+
+/* 核心指标 */
+.cmp-metrics {
+  display: flex;
+}
+
+.cmp-metric {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+.cmp-metric-num {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.cmp-metric-num--up {
+  color: $c-down;
+}
+
+.cmp-metric-num--down {
+  color: $c-up;
+}
+
+.cmp-avg {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: $c-text-3;
+  margin-top: 20px;
+}
+
+/* 日度走势图 */
+.cmp-chart-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cmp-chart {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  background: $c-fill;
+  border-radius: $radius-md;
+  padding: 12px 12px 0;
+}
+
+.cmp-chart-bar {
+  flex: 1;
+  background: #b9c4f8;
+  border-radius: 4px 4px 0 0;
+  margin-right: 3px;
+}
+
+.cmp-chart-bar:last-child {
+  margin-right: 0;
+}
+
+.cmp-chart-bar--last {
+  background: $gradient;
+}
+
+.cmp-chart-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cmp-chart-empty {
+  text-align: center;
+  color: $c-text-3;
+  font-size: 24px;
+  padding: 40px 0;
+}
+
+/* 裁员记录 */
+.cmp-layoff-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid $c-line;
+}
+
+.cmp-layoff-row:last-child {
+  border-bottom: none;
+}
+
+.cmp-layoff-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cmp-layoff-month {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cmp-layoff-sub {
+  display: block;
+  font-size: 22px;
+}
+
+.cmp-layoff-num-wrap {
+  flex-shrink: 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+.cmp-layoff-num {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: $c-up;
+}
+
+/* 相关新闻 */
+.cmp-news-none {
+  display: block;
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.cmp-news-row {
+  padding: 16px 0;
+  border-bottom: 1px solid $c-line;
+}
+
+.cmp-news-row:last-child {
+  border-bottom: none;
+}
+
+.cmp-news-title {
+  display: block;
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.cmp-news-meta {
+  display: block;
+  font-size: 20px;
+}
+
+/* 数据说明 */
+.cmp-note {
+  display: block;
+  font-size: 20px;
+  color: $c-text-3;
+  line-height: 1.6;
+  padding: 8px 12px 32px;
+}

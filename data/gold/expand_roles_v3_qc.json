@@ -1,0 +1,818 @@
+{
+  "inputs": {
+    "jd_total": 126628,
+    "unique_titles": 83771,
+    "roles_v2": 91
+  },
+  "mapping": {
+    "mapped_rows": 52914,
+    "coverage_initial": 0.3801,
+    "unmapped_rows": 78500,
+    "noise_rows_in_unmapped": 4006,
+    "coverage_after_new_roles": 0.4179,
+    "shared_keywords_deduped": 47
+  },
+  "summary": {
+    "v2_roles": 91,
+    "new_roles": 8,
+    "v3_total": 99,
+    "min_new_role_jd": 150
+  },
+  "new_roles": [
+    {
+      "role_name": "Site Reliability Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "jd_count": 1056
+    },
+    {
+      "role_name": "Backend Engineer (General)",
+      "coarse_role": "Backend Development",
+      "jd_count": 1341
+    },
+    {
+      "role_name": "Software Architect",
+      "coarse_role": "General Engineering",
+      "jd_count": 517
+    },
+    {
+      "role_name": "Infrastructure Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "jd_count": 574
+    },
+    {
+      "role_name": "Cloud Engineer",
+      "coarse_role": "Cloud Native & DevOps",
+      "jd_count": 370
+    },
+    {
+      "role_name": "Research Engineer",
+      "coarse_role": "Emerging AI",
+      "jd_count": 338
+    },
+    {
+      "role_name": "Mobile Engineer (General)",
+      "coarse_role": "Mobile Development",
+      "jd_count": 403
+    },
+    {
+      "role_name": "Data Architect",
+      "coarse_role": "AI & Data",
+      "jd_count": 187
+    }
+  ],
+  "dropped_clusters": [
+    {
+      "role_name": "Product Analyst",
+      "jd_count": 141
+    }
+  ],
+  "per_role_jd_counts": [
+    {
+      "role_id": "role_071",
+      "role_name": "Software Engineer (General)",
+      "jd_count": 16920
+    },
+    {
+      "role_id": "role_066",
+      "role_name": "Product Manager",
+      "jd_count": 5246
+    },
+    {
+      "role_id": "role_017",
+      "role_name": "Data Engineer",
+      "jd_count": 2144
+    },
+    {
+      "role_id": "role_064",
+      "role_name": "Project Manager",
+      "jd_count": 1835
+    },
+    {
+      "role_id": "role_072",
+      "role_name": "QA Engineer (General)",
+      "jd_count": 1827
+    },
+    {
+      "role_id": "role_090",
+      "role_name": "Product Engineer",
+      "jd_count": 1567
+    },
+    {
+      "role_id": "role_092",
+      "role_name": "Backend Engineer (General)",
+      "jd_count": 1341
+    },
+    {
+      "role_id": "role_000",
+      "role_name": "Machine Learning Engineer",
+      "jd_count": 1168
+    },
+    {
+      "role_id": "role_009",
+      "role_name": "Prompt Engineer",
+      "jd_count": 1126
+    },
+    {
+      "role_id": "role_026",
+      "role_name": "C++ Software Engineer",
+      "jd_count": 1108
+    },
+    {
+      "role_id": "role_091",
+      "role_name": "Site Reliability Engineer",
+      "jd_count": 1056
+    },
+    {
+      "role_id": "role_089",
+      "role_name": "Systems Engineer",
+      "jd_count": 932
+    },
+    {
+      "role_id": "role_075",
+      "role_name": "Engineering Manager",
+      "jd_count": 923
+    },
+    {
+      "role_id": "role_001",
+      "role_name": "AI Agent Engineer",
+      "jd_count": 820
+    },
+    {
+      "role_id": "role_019",
+      "role_name": "Data Scientist",
+      "jd_count": 784
+    },
+    {
+      "role_id": "role_077",
+      "role_name": "Solutions Architect",
+      "jd_count": 699
+    },
+    {
+      "role_id": "role_074",
+      "role_name": "Product Designer",
+      "jd_count": 663
+    },
+    {
+      "role_id": "role_094",
+      "role_name": "Infrastructure Engineer",
+      "jd_count": 574
+    },
+    {
+      "role_id": "role_079",
+      "role_name": "Platform Engineer",
+      "jd_count": 569
+    },
+    {
+      "role_id": "role_093",
+      "role_name": "Software Architect",
+      "jd_count": 517
+    },
+    {
+      "role_id": "role_018",
+      "role_name": "Business Analyst",
+      "jd_count": 504
+    },
+    {
+      "role_id": "role_047",
+      "role_name": "Cloud Security Engineer",
+      "jd_count": 423
+    },
+    {
+      "role_id": "role_076",
+      "role_name": "Solutions Engineer",
+      "jd_count": 406
+    },
+    {
+      "role_id": "role_097",
+      "role_name": "Mobile Engineer (General)",
+      "jd_count": 403
+    },
+    {
+      "role_id": "role_085",
+      "role_name": "IT Operations Specialist",
+      "jd_count": 390
+    },
+    {
+      "role_id": "role_003",
+      "role_name": "AI Data Engineer",
+      "jd_count": 388
+    },
+    {
+      "role_id": "role_067",
+      "role_name": "Scrum Master",
+      "jd_count": 386
+    },
+    {
+      "role_id": "role_095",
+      "role_name": "Cloud Engineer",
+      "jd_count": 370
+    },
+    {
+      "role_id": "role_002",
+      "role_name": "AI Engineer",
+      "jd_count": 369
+    },
+    {
+      "role_id": "role_041",
+      "role_name": "DevOps Engineer",
+      "jd_count": 361
+    },
+    {
+      "role_id": "role_073",
+      "role_name": "IT Support Specialist",
+      "jd_count": 350
+    },
+    {
+      "role_id": "role_096",
+      "role_name": "Research Engineer",
+      "jd_count": 338
+    },
+    {
+      "role_id": "role_040",
+      "role_name": "UI/UX Designer",
+      "jd_count": 322
+    },
+    {
+      "role_id": "role_013",
+      "role_name": "Forward Deployed AI Engineer",
+      "jd_count": 315
+    },
+    {
+      "role_id": "role_083",
+      "role_name": "Embedded Software Engineer",
+      "jd_count": 313
+    },
+    {
+      "role_id": "role_023",
+      "role_name": "Backend Node.js Engineer",
+      "jd_count": 281
+    },
+    {
+      "role_id": "role_080",
+      "role_name": "Technical Program Manager",
+      "jd_count": 264
+    },
+    {
+      "role_id": "role_043",
+      "role_name": "System Administrator",
+      "jd_count": 259
+    },
+    {
+      "role_id": "role_068",
+      "role_name": "Rust Blockchain Engineer",
+      "jd_count": 259
+    },
+    {
+      "role_id": "role_078",
+      "role_name": "Network Engineer",
+      "jd_count": 251
+    },
+    {
+      "role_id": "role_081",
+      "role_name": "Salesforce Developer",
+      "jd_count": 230
+    },
+    {
+      "role_id": "role_015",
+      "role_name": "Context Engineer",
+      "jd_count": 229
+    },
+    {
+      "role_id": "role_031",
+      "role_name": "Full-Stack JavaScript Engineer",
+      "jd_count": 228
+    },
+    {
+      "role_id": "role_069",
+      "role_name": "Data Analyst",
+      "jd_count": 208
+    },
+    {
+      "role_id": "role_007",
+      "role_name": "Applied AI Engineer",
+      "jd_count": 202
+    },
+    {
+      "role_id": "role_084",
+      "role_name": "Cybersecurity Engineer",
+      "jd_count": 187
+    },
+    {
+      "role_id": "role_098",
+      "role_name": "Data Architect",
+      "jd_count": 187
+    },
+    {
+      "role_id": "role_049",
+      "role_name": "QA Automation Engineer",
+      "jd_count": 170
+    },
+    {
+      "role_id": "role_021",
+      "role_name": "Backend Java Engineer",
+      "jd_count": 169
+    },
+    {
+      "role_id": "role_070",
+      "role_name": "Analytics Engineer",
+      "jd_count": 166
+    },
+    {
+      "role_id": "role_016",
+      "role_name": "AI Infrastructure Engineer",
+      "jd_count": 153
+    },
+    {
+      "role_id": "role_086",
+      "role_name": "SAP Consultant",
+      "jd_count": 147
+    },
+    {
+      "role_id": "role_048",
+      "role_name": "Manual QA Engineer",
+      "jd_count": 146
+    },
+    {
+      "role_id": "role_056",
+      "role_name": "Security Operations Engineer",
+      "jd_count": 142
+    },
+    {
+      "role_id": "role_004",
+      "role_name": "AI Research Engineer",
+      "jd_count": 109
+    },
+    {
+      "role_id": "role_020",
+      "role_name": "Database Administrator",
+      "jd_count": 106
+    },
+    {
+      "role_id": "role_087",
+      "role_name": "Product Owner",
+      "jd_count": 99
+    },
+    {
+      "role_id": "role_024",
+      "role_name": "Backend PHP Engineer",
+      "jd_count": 97
+    },
+    {
+      "role_id": "role_082",
+      "role_name": "ServiceNow Developer",
+      "jd_count": 95
+    },
+    {
+      "role_id": "role_025",
+      "role_name": "Backend Python Engineer",
+      "jd_count": 89
+    },
+    {
+      "role_id": "role_027",
+      "role_name": "Backend Go Engineer",
+      "jd_count": 83
+    },
+    {
+      "role_id": "role_036",
+      "role_name": "iOS Engineer",
+      "jd_count": 78
+    },
+    {
+      "role_id": "role_037",
+      "role_name": "Android Engineer",
+      "jd_count": 73
+    },
+    {
+      "role_id": "role_012",
+      "role_name": "Computer Vision Engineer",
+      "jd_count": 60
+    },
+    {
+      "role_id": "role_006",
+      "role_name": "MLOps Engineer",
+      "jd_count": 58
+    },
+    {
+      "role_id": "role_055",
+      "role_name": "Information Security Analyst",
+      "jd_count": 58
+    },
+    {
+      "role_id": "role_046",
+      "role_name": "Linux C++ Engineer",
+      "jd_count": 55
+    },
+    {
+      "role_id": "role_057",
+      "role_name": "Penetration Testing Engineer",
+      "jd_count": 55
+    },
+    {
+      "role_id": "role_038",
+      "role_name": "Flutter Engineer",
+      "jd_count": 49
+    },
+    {
+      "role_id": "role_022",
+      "role_name": ".NET Backend Engineer",
+      "jd_count": 48
+    },
+    {
+      "role_id": "role_028",
+      "role_name": "Backend Ruby Engineer",
+      "jd_count": 41
+    },
+    {
+      "role_id": "role_029",
+      "role_name": "Frontend React Engineer",
+      "jd_count": 41
+    },
+    {
+      "role_id": "role_010",
+      "role_name": "AI Solutions Architect",
+      "jd_count": 33
+    },
+    {
+      "role_id": "role_088",
+      "role_name": "Enterprise Platform Developer",
+      "jd_count": 33
+    },
+    {
+      "role_id": "role_008",
+      "role_name": "LLM Inference Engineer",
+      "jd_count": 32
+    },
+    {
+      "role_id": "role_051",
+      "role_name": "Python QA Automation Engineer",
+      "jd_count": 24
+    },
+    {
+      "role_id": "role_065",
+      "role_name": "Delivery Manager",
+      "jd_count": 22
+    },
+    {
+      "role_id": "role_059",
+      "role_name": "Unity Developer",
+      "jd_count": 21
+    },
+    {
+      "role_id": "role_032",
+      "role_name": "Frontend Vue Engineer",
+      "jd_count": 18
+    },
+    {
+      "role_id": "role_005",
+      "role_name": "AI Evaluation Engineer",
+      "jd_count": 17
+    },
+    {
+      "role_id": "role_033",
+      "role_name": "React Native Engineer",
+      "jd_count": 11
+    },
+    {
+      "role_id": "role_060",
+      "role_name": "Game C++ Engineer",
+      "jd_count": 11
+    },
+    {
+      "role_id": "role_062",
+      "role_name": "Game Designer",
+      "jd_count": 10
+    },
+    {
+      "role_id": "role_011",
+      "role_name": "RAG Engineer",
+      "jd_count": 8
+    },
+    {
+      "role_id": "role_052",
+      "role_name": ".NET QA Automation Engineer",
+      "jd_count": 8
+    },
+    {
+      "role_id": "role_030",
+      "role_name": "Frontend Angular Engineer",
+      "jd_count": 7
+    },
+    {
+      "role_id": "role_050",
+      "role_name": "Frontend QA Automation Engineer",
+      "jd_count": 7
+    },
+    {
+      "role_id": "role_042",
+      "role_name": "Azure DevOps Engineer",
+      "jd_count": 6
+    },
+    {
+      "role_id": "role_035",
+      "role_name": "Full-Stack .NET Engineer",
+      "jd_count": 5
+    },
+    {
+      "role_id": "role_058",
+      "role_name": "Security Software Engineer",
+      "jd_count": 3
+    },
+    {
+      "role_id": "role_061",
+      "role_name": "Unreal Engine Developer",
+      "jd_count": 3
+    },
+    {
+      "role_id": "role_063",
+      "role_name": "Game Technical Artist",
+      "jd_count": 3
+    },
+    {
+      "role_id": "role_045",
+      "role_name": "Cloud Java Engineer",
+      "jd_count": 2
+    },
+    {
+      "role_id": "role_034",
+      "role_name": "WordPress Developer",
+      "jd_count": 1
+    },
+    {
+      "role_id": "role_014",
+      "role_name": "Machine Learning Research Engineer",
+      "jd_count": 0
+    },
+    {
+      "role_id": "role_039",
+      "role_name": "Mobile C++ Engineer",
+      "jd_count": 0
+    },
+    {
+      "role_id": "role_044",
+      "role_name": "Node.js DevOps Engineer",
+      "jd_count": 0
+    },
+    {
+      "role_id": "role_053",
+      "role_name": "API QA Automation Engineer",
+      "jd_count": 0
+    },
+    {
+      "role_id": "role_054",
+      "role_name": "Mobile QA Automation Engineer",
+      "jd_count": 0
+    }
+  ],
+  "unmapped_top50": [
+    {
+      "title": "computer field technician",
+      "count": 315,
+      "noise": true
+    },
+    {
+      "title": "senior backend engineer",
+      "count": 153,
+      "noise": false
+    },
+    {
+      "title": "senior site reliability engineer",
+      "count": 126,
+      "noise": false
+    },
+    {
+      "title": "backend engineer",
+      "count": 108,
+      "noise": false
+    },
+    {
+      "title": "site reliability engineer",
+      "count": 95,
+      "noise": false
+    },
+    {
+      "title": "point of contact (poc) - community outreach & participant coordinator",
+      "count": 94,
+      "noise": true
+    },
+    {
+      "title": "video recording participant",
+      "count": 93,
+      "noise": true
+    },
+    {
+      "title": "front end entry level",
+      "count": 90,
+      "noise": false
+    },
+    {
+      "title": "graphic designer",
+      "count": 87,
+      "noise": true
+    },
+    {
+      "title": "infrastructure engineer",
+      "count": 84,
+      "noise": false
+    },
+    {
+      "title": "ai/ml data contributor",
+      "count": 76,
+      "noise": true
+    },
+    {
+      "title": "senior full stack engineer",
+      "count": 73,
+      "noise": false
+    },
+    {
+      "title": "security officer",
+      "count": 70,
+      "noise": false
+    },
+    {
+      "title": "staff backend engineer",
+      "count": 61,
+      "noise": false
+    },
+    {
+      "title": "generative ai associate - flexible hours",
+      "count": 61,
+      "noise": false
+    },
+    {
+      "title": "automation engineer",
+      "count": 58,
+      "noise": false
+    },
+    {
+      "title": "product analyst",
+      "count": 55,
+      "noise": false
+    },
+    {
+      "title": "mechanical engineer",
+      "count": 54,
+      "noise": true
+    },
+    {
+      "title": "software architect",
+      "count": 54,
+      "noise": false
+    },
+    {
+      "title": "technical lead",
+      "count": 53,
+      "noise": false
+    },
+    {
+      "title": "architect",
+      "count": 52,
+      "noise": false
+    },
+    {
+      "title": "enterprise account executive",
+      "count": 52,
+      "noise": true
+    },
+    {
+      "title": "electrical engineer",
+      "count": 50,
+      "noise": true
+    },
+    {
+      "title": "product lead",
+      "count": 50,
+      "noise": false
+    },
+    {
+      "title": "senior infrastructure engineer",
+      "count": 48,
+      "noise": false
+    },
+    {
+      "title": "senior mechanical engineer",
+      "count": 47,
+      "noise": true
+    },
+    {
+      "title": "sales development representative",
+      "count": 47,
+      "noise": true
+    },
+    {
+      "title": "android developer - ai finance agent",
+      "count": 47,
+      "noise": false
+    },
+    {
+      "title": "ios developer - ai finance agent",
+      "count": 47,
+      "noise": false
+    },
+    {
+      "title": "account executive",
+      "count": 46,
+      "noise": true
+    },
+    {
+      "title": "mobile engineer - ai finance agent",
+      "count": 46,
+      "noise": false
+    },
+    {
+      "title": "research engineer",
+      "count": 44,
+      "noise": false
+    },
+    {
+      "title": "senior electrical engineer",
+      "count": 42,
+      "noise": true
+    },
+    {
+      "title": "lead mobile app developer",
+      "count": 42,
+      "noise": false
+    },
+    {
+      "title": "cloud engineer",
+      "count": 40,
+      "noise": false
+    },
+    {
+      "title": "senior solutions architect",
+      "count": 37,
+      "noise": false
+    },
+    {
+      "title": "customer success manager",
+      "count": 37,
+      "noise": true
+    },
+    {
+      "title": "cloud migration engineer",
+      "count": 37,
+      "noise": false
+    },
+    {
+      "title": "senior business transformation consultant - ai strategy, growth & innovation",
+      "count": 36,
+      "noise": false
+    },
+    {
+      "title": "senior teleoperations lead",
+      "count": 36,
+      "noise": false
+    },
+    {
+      "title": "real estate photo editor",
+      "count": 36,
+      "noise": true
+    },
+    {
+      "title": "freelance graphic designer / signage designer",
+      "count": 36,
+      "noise": true
+    },
+    {
+      "title": "bdt digital ecosystem consultant roster",
+      "count": 36,
+      "noise": false
+    },
+    {
+      "title": "quality assurance manager",
+      "count": 35,
+      "noise": false
+    },
+    {
+      "title": "senior application security engineer",
+      "count": 35,
+      "noise": false
+    },
+    {
+      "title": "manager, software engineering",
+      "count": 35,
+      "noise": false
+    },
+    {
+      "title": "research scientist",
+      "count": 34,
+      "noise": false
+    },
+    {
+      "title": "business development representative",
+      "count": 34,
+      "noise": true
+    },
+    {
+      "title": "business process architect",
+      "count": 34,
+      "noise": false
+    },
+    {
+      "title": "fullstack engineer",
+      "count": 32,
+      "noise": false
+    }
+  ]
+}

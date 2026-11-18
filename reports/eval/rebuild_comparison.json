@@ -1,0 +1,449 @@
+{
+  "generated_at": "2026-10-17T19:31:34.657453+00:00",
+  "experiments": {
+    "extraction": {
+      "metric": "JD gold 技能词表覆盖率(召回)与每条 JD 词典命中数;旧基线为资源-技能匹配模型(异任务对照)",
+      "old": {
+        "baseline": "keyword_rules(资源-技能匹配)",
+        "p@1": 0.2759,
+        "mrr": 0.454,
+        "note": "reports/embedding_eval.json;29 技能小验证集,与 JD 抽取非同一任务,仅作旧版匹配能力参照"
+      },
+      "new": {
+        "vocab_v1": {
+          "vocab_file": "skill_vocab.json",
+          "vocab_size": 275,
+          "gold_token_recall": 0.4676,
+          "avg_matched_skills_per_jd": 9.502,
+          "n_jd": 500,
+          "n_gold_skills": 5518
+        },
+        "vocab_v2": {
+          "vocab_file": "skill_vocab_v2.json",
+          "vocab_size": 295,
+          "gold_token_recall": 0.4759,
+          "avg_matched_skills_per_jd": 11.426,
+          "n_jd": 500,
+          "n_gold_skills": 5518
+        },
+        "recall_delta_v2_minus_v1": 0.0083
+      },
+      "verdict": "improved",
+      "source": "data/silver/jd_skill_list_eval.jsonl 抽样 500(种子 42);app.services.skill_norm"
+    },
+    "recommendation": {
+      "metric": "岗位推荐 Hit@1/Hit@5/MRR/NDCG@5(target/relevant 岗位命中 TopK 即算)",
+      "old": {
+        "hit@5": "≈1.0(旧版自述:小岗位库下几乎恒为 1.0,区分度低)",
+        "ndcg@5": 0.836,
+        "mrr@5": "未记录",
+        "source": "pipelines/taxonomy/evaluate.py 头部:GAMMA=0.02 定版,敏感性 NDCG@5 0.01=0.840 / 0.02=0.836;Hit@5 在小库(69岗)几乎恒为 1.0;reports/eval/job_recommend_eval_v1.md 仅含方法论无最终数值"
+      },
+      "new": {
+        "n_cases": 18,
+        "hit@1": 0.7778,
+        "hit@5": 1.0,
+        "mrr": 0.8796,
+        "ndcg@5": 0.7819,
+        "unresolved_role_names": [],
+        "per_case": [
+          {
+            "name": "ML工程师求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.9675,
+            "top5": [
+              "Machine Learning Research Engineer",
+              "Machine Learning Engineer",
+              "AI Research Engineer",
+              "Data Scientist",
+              "Computer Vision Engineer"
+            ]
+          },
+          {
+            "name": "RAG应用求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.4693,
+            "top5": [
+              "RAG Engineer",
+              "AI Evaluation Engineer",
+              "LLM Inference Engineer",
+              "Security Software Engineer",
+              "C++ Software Engineer"
+            ]
+          },
+          {
+            "name": "计算机视觉求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.9675,
+            "top5": [
+              "Computer Vision Engineer",
+              "AI Research Engineer",
+              "Machine Learning Research Engineer",
+              "Machine Learning Engineer",
+              "AI Evaluation Engineer"
+            ]
+          },
+          {
+            "name": "MLOps求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 1.0,
+            "top5": [
+              "MLOps Engineer",
+              "Machine Learning Engineer",
+              "LLM Inference Engineer",
+              "Backend Python Engineer",
+              "Cloud Java Engineer"
+            ]
+          },
+          {
+            "name": "LLM推理求职者",
+            "hit@1": 0,
+            "hit@5": 1,
+            "mrr": 0.3333,
+            "ndcg@5": 0.4367,
+            "top5": [
+              "AI Research Engineer",
+              "Machine Learning Research Engineer",
+              "LLM Inference Engineer",
+              "Machine Learning Engineer",
+              "AI Agent Engineer"
+            ]
+          },
+          {
+            "name": "数据科学求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.6131,
+            "top5": [
+              "Data Scientist",
+              "AI Evaluation Engineer",
+              "AI Research Engineer",
+              "Game Designer",
+              "Machine Learning Research Engineer"
+            ]
+          },
+          {
+            "name": "数据工程求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 1.0,
+            "top5": [
+              "Data Engineer",
+              "AI Data Engineer",
+              "Data Scientist",
+              "Forward Deployed AI Engineer",
+              "Applied AI Engineer"
+            ]
+          },
+          {
+            "name": "Java后端求职者",
+            "hit@1": 0,
+            "hit@5": 1,
+            "mrr": 0.5,
+            "ndcg@5": 0.3869,
+            "top5": [
+              "Backend PHP Engineer",
+              "Backend Java Engineer",
+              "Manual QA Engineer",
+              "Backend Go Engineer",
+              "Backend Ruby Engineer"
+            ]
+          },
+          {
+            "name": "Python后端求职者",
+            "hit@1": 0,
+            "hit@5": 1,
+            "mrr": 0.5,
+            "ndcg@5": 0.3869,
+            "top5": [
+              "Backend PHP Engineer",
+              "Backend Python Engineer",
+              "Rust Blockchain Engineer",
+              "C++ Software Engineer",
+              "Security Software Engineer"
+            ]
+          },
+          {
+            "name": "Go后端求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 1.0,
+            "top5": [
+              "Backend Go Engineer",
+              "Rust Blockchain Engineer",
+              "Backend PHP Engineer",
+              "Backend Python Engineer",
+              "Cloud Java Engineer"
+            ]
+          },
+          {
+            "name": "前端React求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.6714,
+            "top5": [
+              "Frontend React Engineer",
+              "Frontend Vue Engineer",
+              "Frontend Angular Engineer",
+              "React Native Engineer",
+              "Frontend QA Automation Engineer"
+            ]
+          },
+          {
+            "name": "前端Vue求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.9197,
+            "top5": [
+              "Frontend Vue Engineer",
+              "WordPress Developer",
+              "Frontend React Engineer",
+              "Frontend QA Automation Engineer",
+              "Frontend Angular Engineer"
+            ]
+          },
+          {
+            "name": "iOS求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 1.0,
+            "top5": [
+              "iOS Engineer",
+              "Flutter Engineer",
+              "Mobile QA Automation Engineer",
+              "Android Engineer",
+              "Mobile C++ Engineer"
+            ]
+          },
+          {
+            "name": "Android求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 1.0,
+            "top5": [
+              "Android Engineer",
+              "Flutter Engineer",
+              "iOS Engineer",
+              "Mobile QA Automation Engineer",
+              "Mobile C++ Engineer"
+            ]
+          },
+          {
+            "name": "DevOps求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.7654,
+            "top5": [
+              "DevOps Engineer",
+              "Azure DevOps Engineer",
+              "Cloud Security Engineer",
+              "Database Administrator",
+              "Cloud Java Engineer"
+            ]
+          },
+          {
+            "name": "QA自动化求职者",
+            "hit@1": 0,
+            "hit@5": 1,
+            "mrr": 0.5,
+            "ndcg@5": 0.6509,
+            "top5": [
+              "Manual QA Engineer",
+              "QA Automation Engineer",
+              "Mobile QA Automation Engineer",
+              "API QA Automation Engineer",
+              ".NET QA Automation Engineer"
+            ]
+          },
+          {
+            "name": "安全运维求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.9197,
+            "top5": [
+              "Security Operations Engineer",
+              "Penetration Testing Engineer",
+              "Information Security Analyst",
+              "Cloud Security Engineer",
+              "System Administrator"
+            ]
+          },
+          {
+            "name": "游戏Unity求职者",
+            "hit@1": 1,
+            "hit@5": 1,
+            "mrr": 1.0,
+            "ndcg@5": 0.9197,
+            "top5": [
+              "Game C++ Engineer",
+              "Game Technical Artist",
+              "Unity Developer",
+              "Unreal Engine Developer",
+              "Game Designer"
+            ]
+          }
+        ]
+      },
+      "verdict": "improved",
+      "source": "app.services.recommender(pgvector ANN 召回 + GraphPathPlannerV3 精排),eval_set_v1 全量 18 例;权重 2026-10-17 调参(0.15/0.80/0.05,experiments/tune_ranking_weights.py)"
+    },
+    "path": {
+      "metric": "学习路径结构正确性:拓扑序(先修在前)/无重复技能/每步中文 reason/资源挂载率",
+      "old": {
+        "reason": "调试字符串,如 'importance=0.350 level=2 difficulty=intermediate hours=40'(app/services/graph_path_planner_v2.py:335)",
+        "algorithm": "v2 及更早版本用启发式搜索(A*)选路,先修关系为合取 DAG,无正确性保证;v3 改为先修闭包 + Kahn 拓扑排序(app/services/graph_path_planner_v3.py 模块说明)"
+      },
+      "new": {
+        "n_profiles": 5,
+        "cases_all_checks_pass": 5,
+        "topo_order_correct_rate": 1.0,
+        "reason_zh_rate": 1.0,
+        "resource_attach_rate": 0.9894,
+        "per_profile": [
+          {
+            "name": "应届生",
+            "target_role": "Backend Python Engineer",
+            "steps": 29,
+            "total_hours": 790,
+            "topo_ok": true,
+            "duplicate_skills": 0,
+            "reason_zh_ratio": 1.0,
+            "resource_attach_rate": 0.9655,
+            "all_checks_pass": true,
+            "unmapped_skill_names": 0
+          },
+          {
+            "name": "后端3年",
+            "target_role": "Backend Java Engineer",
+            "steps": 19,
+            "total_hours": 496,
+            "topo_ok": true,
+            "duplicate_skills": 0,
+            "reason_zh_ratio": 1.0,
+            "resource_attach_rate": 1.0,
+            "all_checks_pass": true,
+            "unmapped_skill_names": 0
+          },
+          {
+            "name": "数据分析师",
+            "target_role": "Data Scientist",
+            "steps": 14,
+            "total_hours": 415,
+            "topo_ok": true,
+            "duplicate_skills": 0,
+            "reason_zh_ratio": 1.0,
+            "resource_attach_rate": 1.0,
+            "all_checks_pass": true,
+            "unmapped_skill_names": 0
+          },
+          {
+            "name": "DevOps",
+            "target_role": "DevOps Engineer",
+            "steps": 12,
+            "total_hours": 378,
+            "topo_ok": true,
+            "duplicate_skills": 0,
+            "reason_zh_ratio": 1.0,
+            "resource_attach_rate": 1.0,
+            "all_checks_pass": true,
+            "unmapped_skill_names": 0
+          },
+          {
+            "name": "AI工程师",
+            "target_role": "AI Engineer",
+            "steps": 20,
+            "total_hours": 550,
+            "topo_ok": true,
+            "duplicate_skills": 0,
+            "reason_zh_ratio": 1.0,
+            "resource_attach_rate": 1.0,
+            "all_checks_pass": true,
+            "unmapped_skill_names": 0
+          }
+        ]
+      },
+      "verdict": "improved",
+      "source": "app.services.graph_path_planner_v3.generate,5 个代表画像"
+    },
+    "trend": {
+      "metric": "趋势回测:选模分布/平均 sMAPE vs naive/方向准确率/稀疏岗占比(训练 2020-01..2025-09 → 预测 12 个月)",
+      "old": {
+        "model": "PatchTST(单模型深度网络)",
+        "validation": "仅 40 个完整监督窗口(训练 32/验证 8),验证起点 2022-01;验证 sMAPE 0.2937(reports/trend/03_PatchTST建模说明.md §4),为修正前数据的早期验证,非 2025-10 之后的真实回测",
+        "data_issue": "大量岗位可靠月份稀疏(≤24 可靠月),PatchTST 被弃用(trend_forecasts_v2_eval.json protocol.note)"
+      },
+      "new": {
+        "backtest": "train 2020-01..2025-09（仅非 low_confidence） → predict 2025-10..2026-09 (12 个月)",
+        "model_selection_counts": {
+          "insufficient_data": 41,
+          "naive": 19,
+          "ema": 6,
+          "holt": 2,
+          "linear": 1
+        },
+        "n_roles_total": 69,
+        "n_roles_evaluated": 28,
+        "insufficient_data_roles": 41,
+        "mean_smape": 0.5311,
+        "naive_mean_smape": 0.5699,
+        "direction_accuracy": 0.5536,
+        "vs_naive": {
+          "win": 9,
+          "tie": 19,
+          "loss": 0,
+          "win_rate": 0.3214
+        },
+        "sparse_role_share": 0.1014,
+        "sparse_roles_note": "稀疏岗(sparse=true)全部落入 insufficient_data,不参与指标均值"
+      },
+      "verdict": "improved",
+      "source": "data/gold/trend_forecasts_v2_eval.json(直接引用,未重跑)"
+    },
+    "evidence": {
+      "metric": "证据层质量:条目数/URL 解码成功率/相关性过滤保留率/岗位覆盖率",
+      "old": "旧版无证据层(全新能力);旧趋势解释仅有静态说明,无可溯源证据条目",
+      "new": {
+        "months": [
+          "2026-10"
+        ],
+        "total_items": 525,
+        "roles_covered": 69,
+        "avg_items_per_role_month": 4.57,
+        "url_decode_success_rate": 1.0,
+        "url_decode_attempted": 167,
+        "filter_keep_rate": 0.1327,
+        "rss_requests": 107,
+        "rss_failures": 0,
+        "by_type": {
+          "general": 389,
+          "ai_adoption": 51,
+          "hiring": 48,
+          "product_release": 21,
+          "funding": 9,
+          "security_incident": 4,
+          "layoff": 2,
+          "policy": 1
+        }
+      },
+      "verdict": "new_capability",
+      "source": "data/gold/evidence_v2_qc.json(直接引用)"
+    }
+  }
+}

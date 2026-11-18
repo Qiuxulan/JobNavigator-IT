@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-11-03T10:08:10.349842+00:00",
+  "months": [
+    "2026-11"
+  ],
+  "total_items": 830,
+  "roles_covered": 91,
+  "avg_items_per_role_month": 5.42,
+  "rss": {
+    "requests": 141,
+    "failures": 141,
+    "raw_items_fetched": 0,
+    "items_after_relevance_filter": 0,
+    "filter_keep_rate": null,
+    "filter_drop_rate": null,
+    "noise_dropped": 0
+  },
+  "decode": {
+    "available": true,
+    "attempted": 0,
+    "succeeded": 0,
+    "success_rate": null
+  },
+  "by_type": {
+    "general": 628,
+    "hiring": 78,
+    "ai_adoption": 68,
+    "product_release": 32,
+    "funding": 11,
+    "security_incident": 9,
+    "layoff": 3,
+    "policy": 1
+  },
+  "edgar": {
+    "2026-11": {
+      "total_hits": null,
+      "filings_8k": 0,
+      "error": "HTTPSConnectionPool(host='efts.sec.gov', port=443): Max retries exceeded with url: /LATEST/search-index?q=%22workforce+reduction%22&dateRange=custom&startdt=2026-11-01&enddt=2026-11-30 (Caused by ConnectTimeoutError(<HTTPSConnection(host='efts.sec.gov', port=443) at 0x754511656a90>, 'Connection to efts.sec.gov timed out. (connect timeout=30)'))"
+    }
+  },
+  "layoffs_fyi": {
+    "detail_source": "https://codeload.github.com/frankwang0909/tech-layoff-tracker/zip/refs/heads/main",
+    "detail_error": null,
+    "detail_months": 22,
+    "annual_stats_local": "/data/shichaojian/JNIT/raw/events/layoffs_fyi_annual_stats.json",
+    "annual_stats_exists": true,
+    "ai_related_companies": 22
+  },
+  "notes": [
+    "Google News RSS 历史月查询 after:YYYY-MM-01 before:下月01 实测可用(2026-10-17)。",
+    "查询三级降级：整短语引号 → 无引号 AND → 无引号核心词(去 Frontend/Backend/Cloud 等修饰词)；0 结果才降级，三级共用同一相关性过滤，精度不受影响。",
+    "GDELT DOC API 本机被限流(429)，本层不使用 GDELT。",
+    "跳转链接解码走 batchexecute RPC，需 httpx[http2](h2 包)；失败保留原始链接 resolved=False。",
+    "每 (role, month) 最多解码 top 12 条控制耗时；未解码条目 url 为 news.google.com 跳转链接。",
+    "layoffs.fyi 官网 Airtable 未直接抓取，明细用 GitHub 镜像(codeload zip)，年度总量用本地已存统计。",
+    "SEC EDGAR 为公司级 8-K 披露(市场级信号)，写入 _market/sec_edgar/，不计入岗位条目。"
+  ]
+}
