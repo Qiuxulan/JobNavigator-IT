@@ -34,6 +34,17 @@ MODEL_PATH = ROOT / "models" / "ltr_ranker_v1.txt"
 FEATURES_PATH = ROOT / "models" / "ltr_ranker_v1_features.json"
 REPORT_PATH = ROOT / "reports" / "eval" / "ltr_training_v1.json"
 
+
+def _parse_args():
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data", type=Path, default=DATA_PATH)
+    ap.add_argument("--model", type=Path, default=MODEL_PATH)
+    ap.add_argument("--features", type=Path, default=FEATURES_PATH)
+    ap.add_argument("--report", type=Path, default=REPORT_PATH)
+    return ap.parse_args()
+
 LABEL_GAIN = [0.0, 1.0, 2.0, 3.0]
 RELEVANT_THRESHOLD = 2  # binary 口径:label>=2 算相关(与 58 例 eval set 口径一致)
 
@@ -122,6 +133,9 @@ def make_ranker() -> "object":
 
 
 def main() -> dict:
+    global DATA_PATH, MODEL_PATH, FEATURES_PATH, REPORT_PATH
+    args = _parse_args()
+    DATA_PATH, MODEL_PATH, FEATURES_PATH, REPORT_PATH = args.data, args.model, args.features, args.report
     from sklearn.model_selection import GroupKFold
 
     X, y, groups, profile_ids = load_dataset(DATA_PATH)

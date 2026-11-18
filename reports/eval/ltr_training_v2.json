@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-11-18T13:04:58.646561+00:00",
+  "data": "data/silver/ltr_train_v1v2.jsonl",
+  "model": "models/ltr_ranker_v2.txt",
+  "features": "models/ltr_ranker_v2_features.json",
+  "n_profiles": 500,
+  "n_candidates": 5000,
+  "label_distribution": {
+    "0": 693,
+    "1": 2824,
+    "2": 1088,
+    "3": 395
+  },
+  "cv_5fold": {
+    "folds": [
+      {
+        "graded_ndcg@5": 0.9317,
+        "binary_hit@1": 0.93,
+        "binary_hit@5": 0.99,
+        "binary_mrr": 0.955,
+        "binary_ndcg@5": 0.8897,
+        "n_queries": 100,
+        "fold": 1,
+        "n_train_queries": 400,
+        "best_iter": 25
+      },
+      {
+        "graded_ndcg@5": 0.9504,
+        "binary_hit@1": 0.95,
+        "binary_hit@5": 0.99,
+        "binary_mrr": 0.9612,
+        "binary_ndcg@5": 0.9061,
+        "n_queries": 100,
+        "fold": 2,
+        "n_train_queries": 400,
+        "best_iter": 134
+      },
+      {
+        "graded_ndcg@5": 0.9565,
+        "binary_hit@1": 0.91,
+        "binary_hit@5": 0.96,
+        "binary_mrr": 0.9317,
+        "binary_ndcg@5": 0.8928,
+        "n_queries": 100,
+        "fold": 3,
+        "n_train_queries": 400,
+        "best_iter": 163
+      },
+      {
+        "graded_ndcg@5": 0.9396,
+        "binary_hit@1": 0.94,
+        "binary_hit@5": 0.99,
+        "binary_mrr": 0.9633,
+        "binary_ndcg@5": 0.8892,
+        "n_queries": 100,
+        "fold": 4,
+        "n_train_queries": 400,
+        "best_iter": 63
+      },
+      {
+        "graded_ndcg@5": 0.9512,
+        "binary_hit@1": 0.95,
+        "binary_hit@5": 0.99,
+        "binary_mrr": 0.9683,
+        "binary_ndcg@5": 0.9138,
+        "n_queries": 100,
+        "fold": 5,
+        "n_train_queries": 400,
+        "best_iter": 84
+      }
+    ],
+    "mean": {
+      "graded_ndcg@5": 0.9459,
+      "binary_hit@1": 0.936,
+      "binary_hit@5": 0.984,
+      "binary_mrr": 0.9559,
+      "binary_ndcg@5": 0.8983
+    }
+  },
+  "train_set_metrics": {
+    "graded_ndcg@5": 0.9984,
+    "binary_hit@1": 0.986,
+    "binary_hit@5": 0.988,
+    "binary_mrr": 0.987,
+    "binary_ndcg@5": 0.9849,
+    "n_queries": 500
+  },
+  "feature_importance_top10": [
+    {
+      "feature": "target_role_name_match",
+      "gain": 3246.82
+    },
+    {
+      "feature": "role_score_raw",
+      "gain": 2375.67
+    },
+    {
+      "feature": "semantic_cal",
+      "gain": 902.54
+    },
+    {
+      "feature": "coverage_weighted",
+      "gain": 879.8
+    },
+    {
+      "feature": "salary_median_log",
+      "gain": 560.36
+    },
+    {
+      "feature": "jd_count_6m_log",
+      "gain": 477.49
+    },
+    {
+      "feature": "semantic_raw",
+      "gain": 388.87
+    },
+    {
+      "feature": "profile_n_skills",
+      "gain": 339.47
+    },
+    {
+      "feature": "trend_momentum_norm",
+      "gain": 319.42
+    },
+    {
+      "feature": "learning_feasibility",
+      "gain": 262.01
+    }
+  ],
+  "feature_importance_full": [
+    {
+      "feature": "target_role_name_match",
+      "gain": 3246.82
+    },
+    {
+      "feature": "role_score_raw",
+      "gain": 2375.67
+    },
+    {
+      "feature": "semantic_cal",
+      "gain": 902.54
+    },
+    {
+      "feature": "coverage_weighted",
+      "gain": 879.8
+    },
+    {
+      "feature": "salary_median_log",
+      "gain": 560.36
+    },
+    {
+      "feature": "jd_count_6m_log",
+      "gain": 477.49
+    },
+    {
+      "feature": "semantic_raw",
+      "gain": 388.87
+    },
+    {
+      "feature": "profile_n_skills",
+      "gain": 339.47
+    },
+    {
+      "feature": "trend_momentum_norm",
+      "gain": 319.42
+    },
+    {
+      "feature": "learning_feasibility",
+      "gain": 262.01
+    },
+    {
+      "feature": "trend_momentum_clip",
+      "gain": 242.75
+    },
+    {
+      "feature": "total_hours_norm",
+      "gain": 208.42
+    },
+    {
+      "feature": "overlap_ratio",
+      "gain": 204.88
+    },
+    {
+      "feature": "target_role_coarse_match",
+      "gain": 183.84
+    },
+    {
+      "feature": "has_target_role",
+      "gain": 174.49
+    },
+    {
+      "feature": "n_missing",
+      "gain": 146.17
+    },
+    {
+      "feature": "n_transferable",
+      "gain": 144.43
+    },
+    {
+      "feature": "n_optional",
+      "gain": 143.64
+    },
+    {
+      "feature": "n_role_skills",
+      "gain": 134.79
+    },
+    {
+      "feature": "profile_years_norm",
+      "gain": 102.35
+    },
+    {
+      "feature": "n_overlap",
+      "gain": 56.94
+    }
+  ]
+}
