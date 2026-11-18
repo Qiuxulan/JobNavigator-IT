@@ -2,17 +2,14 @@
 
 # JobNavigator-IT
 
-**面向国内 IT 求职者的实时职业导航与学习规划平台**
+**面向IT岗位的职业导航与行业洞察 Agent 平台**
 
 每天从 **51 个来源**采集国内在招 IT 岗位，回答四个问题：
 **哪些岗位在招 · 要什么技能 · 我差在哪里 · 该怎么学**
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-后端-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/React-网页端-61dafb?logo=react&logoColor=black)](https://react.dev/)
-[![Taro](https://img.shields.io/badge/Taro-微信小程序-07c160?logo=wechat&logoColor=white)](https://taro.zone/)
-[![Tests](https://img.shields.io/badge/pytest-159%20passed-brightgreen)](tests/)
-[![Update](https://img.shields.io/badge/数据更新-每日-orange)](#-数据与更新机制)
+[![Platform](https://img.shields.io/badge/Platform-Web_·_WeChat_Mini_Program-4F6EF7)](#-界面预览)
+[![Data](https://img.shields.io/badge/Data-51_sources_·_daily_updated-orange)](#-数据说明)
+[![Tests](https://img.shields.io/badge/Tests-159_passed-brightgreen)](tests/)
 
 [功能特性](#-功能特性) · [界面预览](#-界面预览) · [技术架构](#-技术架构) · [快速开始](#-快速开始) · [数据说明](#-数据说明) · [评估指标](#-评估指标) · [文档](#-文档)
 
