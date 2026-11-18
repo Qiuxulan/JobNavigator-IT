@@ -148,3 +148,6 @@ preview-qrcode.png
 JobNavigator-IT立项申请书.doc
 *.log
 miniprogram/.swc/
+
+# 个人文档（答辩/迁移等，不属项目本身，本地保留）
+_personal/
