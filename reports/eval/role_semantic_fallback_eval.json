@@ -1,0 +1,275 @@
+{
+ "n_fallback_jobs": 5345,
+ "n_unique_titles": 5345,
+ "sim_quantiles": {
+  "0.1": 0.424,
+  "0.25": 0.456,
+  "0.5": 0.497,
+  "0.75": 0.544,
+  "0.9": 0.588
+ },
+ "threshold_sweep": {
+  "0.4": {
+   "titles": 5145,
+   "jobs": 5145
+  },
+  "0.45": {
+   "titles": 4212,
+   "jobs": 4212
+  },
+  "0.5": {
+   "titles": 2579,
+   "jobs": 2579
+  },
+  "0.55": {
+   "titles": 1211,
+   "jobs": 1211
+  },
+  "0.6": {
+   "titles": 406,
+   "jobs": 406
+  }
+ },
+ "samples": [
+  {
+   "title": "磨床",
+   "sim": 0.4309,
+   "role_id": "role_097",
+   "role_name": "Mobile Engineer (General)"
+  },
+  {
+   "title": "物料工程师",
+   "sim": 0.5131,
+   "role_id": "role_090",
+   "role_name": "Product Engineer"
+  },
+  {
+   "title": "交换机软件工程师",
+   "sim": 0.5391,
+   "role_id": "role_083",
+   "role_name": "Embedded Software Engineer"
+  },
+  {
+   "title": "控制设备设计",
+   "sim": 0.4764,
+   "role_id": "role_051",
+   "role_name": "Python QA Automation Engineer"
+  },
+  {
+   "title": "外饰总布置工程师",
+   "sim": 0.4337,
+   "role_id": "role_096",
+   "role_name": "Research Engineer"
+  },
+  {
+   "title": "导演岗",
+   "sim": 0.5099,
+   "role_id": "role_062",
+   "role_name": "Game Designer"
+  },
+  {
+   "title": "物业工程副总株洲外海物业服务有限公司",
+   "sim": 0.4247,
+   "role_id": "role_075",
+   "role_name": "Engineering Manager"
+  },
+  {
+   "title": "氮化镓工艺整合",
+   "sim": 0.4203,
+   "role_id": "role_037",
+   "role_name": "Android Engineer"
+  },
+  {
+   "title": "通信技术工程师",
+   "sim": 0.5411,
+   "role_id": "role_036",
+   "role_name": "iOS Engineer"
+  },
+  {
+   "title": "软件开发岗",
+   "sim": 0.5115,
+   "role_id": "role_093",
+   "role_name": "Software Architect"
+  },
+  {
+   "title": "技术主管",
+   "sim": 0.5499,
+   "role_id": "role_080",
+   "role_name": "Technical Program Manager"
+  },
+  {
+   "title": "表面工程技术",
+   "sim": 0.4382,
+   "role_id": "role_038",
+   "role_name": "Flutter Engineer"
+  },
+  {
+   "title": "研发PM（梦幻西游）",
+   "sim": 0.6037,
+   "role_id": "role_064",
+   "role_name": "Project Manager"
+  },
+  {
+   "title": "研发工程师",
+   "sim": 0.5944,
+   "role_id": "role_092",
+   "role_name": "Backend Engineer (General)"
+  },
+  {
+   "title": "助理自动化工程师",
+   "sim": 0.543,
+   "role_id": "role_050",
+   "role_name": "Frontend QA Automation Engineer"
+  },
+  {
+   "title": "网络维护与优化岗",
+   "sim": 0.4855,
+   "role_id": "role_078",
+   "role_name": "Network Engineer"
+  },
+  {
+   "title": "大麦娱乐投资-电影国际内容开发-北京",
+   "sim": 0.385,
+   "role_id": "role_061",
+   "role_name": "Unreal Engine Developer"
+  },
+  {
+   "title": "KD国际运输工程师",
+   "sim": 0.4753,
+   "role_id": "role_037",
+   "role_name": "Android Engineer"
+  },
+  {
+   "title": "信息技术岗（下属企业）",
+   "sim": 0.482,
+   "role_id": "role_085",
+   "role_name": "IT Operations Specialist"
+  },
+  {
+   "title": "AD系统架构专家",
+   "sim": 0.5507,
+   "role_id": "role_010",
+   "role_name": "AI Solutions Architect"
+  },
+  {
+   "title": "小米汽车-智能制造-新工艺开发与验证工程师(管理岗)",
+   "sim": 0.4002,
+   "role_id": "role_014",
+   "role_name": "Machine Learning Research Engineer"
+  },
+  {
+   "title": "自动化工程师",
+   "sim": 0.5303,
+   "role_id": "role_051",
+   "role_name": "Python QA Automation Engineer"
+  },
+  {
+   "title": "船务部客户开发岗",
+   "sim": 0.4644,
+   "role_id": "role_065",
+   "role_name": "Delivery Manager"
+  },
+  {
+   "title": "安全管理员",
+   "sim": 0.4775,
+   "role_id": "role_056",
+   "role_name": "Security Operations Engineer"
+  },
+  {
+   "title": "HDD部件选型与应用优化工程师-Data",
+   "sim": 0.4531,
+   "role_id": "role_092",
+   "role_name": "Backend Engineer (General)"
+  },
+  {
+   "title": "智能制造工程师",
+   "sim": 0.4637,
+   "role_id": "role_013",
+   "role_name": "Forward Deployed AI Engineer"
+  },
+  {
+   "title": "工程管理",
+   "sim": 0.5869,
+   "role_id": "role_075",
+   "role_name": "Engineering Manager"
+  },
+  {
+   "title": "平头哥-安全系统/安全IP验证专家-上海",
+   "sim": 0.5013,
+   "role_id": "role_089",
+   "role_name": "Systems Engineer"
+  },
+  {
+   "title": "AI原生应用高级专家",
+   "sim": 0.6447,
+   "role_id": "role_001",
+   "role_name": "AI Agent Engineer"
+  },
+  {
+   "title": "软件开发岗",
+   "sim": 0.5891,
+   "role_id": "role_001",
+   "role_name": "AI Agent Engineer"
+  },
+  {
+   "title": "壁纸研发员",
+   "sim": 0.4458,
+   "role_id": "role_034",
+   "role_name": "WordPress Developer"
+  },
+  {
+   "title": "国际业务开发岗",
+   "sim": 0.4461,
+   "role_id": "role_086",
+   "role_name": "SAP Consultant"
+  },
+  {
+   "title": "ATE工程师",
+   "sim": 0.5089,
+   "role_id": "role_050",
+   "role_name": "Frontend QA Automation Engineer"
+  },
+  {
+   "title": "【探索者】采购工程师/主管（营销）",
+   "sim": 0.4303,
+   "role_id": "role_065",
+   "role_name": "Delivery Manager"
+  },
+  {
+   "title": "检测工程师",
+   "sim": 0.4805,
+   "role_id": "role_050",
+   "role_name": "Frontend QA Automation Engineer"
+  },
+  {
+   "title": "微信小游戏-反外挂工程师",
+   "sim": 0.5541,
+   "role_id": "role_060",
+   "role_name": "Game C++ Engineer"
+  },
+  {
+   "title": "电气工程师",
+   "sim": 0.522,
+   "role_id": "role_083",
+   "role_name": "Embedded Software Engineer"
+  },
+  {
+   "title": "AI专员",
+   "sim": 0.6049,
+   "role_id": "role_001",
+   "role_name": "AI Agent Engineer"
+  },
+  {
+   "title": "Training BP-南京",
+   "sim": 0.4392,
+   "role_id": "role_018",
+   "role_name": "Business Analyst"
+  },
+  {
+   "title": "光学装调工程师（子公司）",
+   "sim": 0.4112,
+   "role_id": "role_046",
+   "role_name": "Linux C++ Engineer"
+  }
+ ]
+}

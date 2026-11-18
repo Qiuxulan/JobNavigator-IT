@@ -236,6 +236,28 @@ def main() -> None:
         j["skills"] = match(" ".join([j["title"], j.get("description", ""), j.get("requirement", "")]))
         j["role_id"] = assign_role(j["title"], j.get("category", ""))
         j["exp"] = exp_bucket(j)
+    # 规则兜底(role_071)的岗位再走 Qwen3 语义近邻：标题+职能+JD 开头向量 vs 99 个岗位锚点，
+    # 相似度 >= 阈值才改派；结果按文本哈希缓存，每日只对没见过的岗位编码
+    fb_jobs = [j for j in active if j["role_id"] == "role_071"]
+    if fb_jobs:
+        try:
+            from pipelines.cn_jobs.role_semantic import SemanticRoleAssigner, job_key_text
+
+            items = {}
+            for j in fb_jobs:
+                k, t = job_key_text(j)
+                items[k] = t
+                j["_sem_key"] = k
+            sem = SemanticRoleAssigner(role_by_id).assign(items)
+            n_re = 0
+            for j in fb_jobs:
+                hit = sem.get(j["_sem_key"])
+                if hit:
+                    j["role_id"] = hit[0]
+                    n_re += 1
+            print(f"[cn_market] 语义兜底改派 {n_re}/{len(fb_jobs)} 个岗位")
+        except Exception as e:  # 模型不可用时保持规则兜底
+            print(f"[cn_market] 语义兜底跳过: {e}")
     n = len(active)
     last_day = max(j["last_seen"] for j in ledger)
 

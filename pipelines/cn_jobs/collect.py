@@ -118,6 +118,7 @@ FEISHU_PORTALS = {"xiaomi": "mi", "nio": "nio", "xpeng": "xiaopeng", "momenta": 
                   "holomatic": "holomatic", "trunk": "trunk", "neusoft": "neusoft",
                   "boke": "boke", "moonton": "moonton", "wumart": "wumart",
                   "duxiaoman": "duxiaoman"}
+# 第四轮爆破命中但为空壳（portal 存在但 0 岗位）：horizon/moonshot/roborock/huolala
 # 探测过但暂不可用的来源（2026-11 更新）：快手（列表接口需内部鉴权）、
 # 拼多多 careers.pinduoduo.com（403）、B站 jobs.bilibili.com（ajSessionId 登录态）、小红书（无公开接口）、
 # 知乎/大疆（Moka ATS 响应体加密）、华为/滴滴/米哈游（未发现公开列表接口）；
@@ -137,11 +138,27 @@ _NON_IT_TITLE = re.compile(
     r"(配送|食品|生产|消防|骑行|出行|履约|区域|城市)安全|安全经理")
 _STRONG_IT = re.compile(r"工程师|开发|研发|算法|架构|测试|运维|SRE|程序|技术美术|产品经理|数据分析|数据科学|"
                         r"研究员|安全(工程|研究|专家)|渗透|攻防", re.I)
+# 硬排除：制造业/建筑业/医教等岗位，标题里常带“工程师”会被 _STRONG_IT 救回，需单独拦截；
+# 但带明显软件/IT 语境的（如“大模型数据质量工程师”“激光雷达算法”）仍保留
+_HARD_NON_IT = re.compile(
+    r"SQE|供应商质量|整车质量|市场质量|来料检验|IQC|IPQC|OQC|PQE|CQE|DQE|质量(工程师|经理|主管|专员)|品质(工程师|经理|主管)|"
+    r"车灯|座椅|冲压|焊装|涂装|总装|车身尺寸|尺寸工程|金相|无损检测|"
+    r"建筑电气|电气设计|给排水|暖通|土木|结构工程|造价工程师|测绘|地质工程|采矿|选矿|冶炼|"
+    r"化工工程师|化学工程|护理|医师|医生|药师|教师|教练|班主任|教务|"
+    r"机械(设计|工程师|制造|工艺)|模具|数控|CNC|焊接工程师|钣金|铸造|注塑|"
+    r"安全员|保安|保洁|普工|操作工|电工|焊工|钳工|车工|铣工|仓管|理货|搬运|装配工|检修工|巡检员|"
+    r"环保工程|工艺工程师|工艺员|"
+    r"光(电|学)(传感器|工程师|设计)|激光(技术|工程)|毫米波雷达", re.I)
+_SOFT_CONTEXT = re.compile(
+    r"软件|开发|研发|算法|数据|大模型|AI|智能|系统|平台|网络|云|信息安全|测试|嵌入|芯片|驱动|仿真|"
+    r"自动驾驶|计算机|计算技术|IT|信息化|数字化|程序|代码|前端|后端|客户端|服务端|架构|运维|数据库|agent|产品", re.I)
 _IT_CATEGORY = re.compile(r"技术|研发|开发|产品|测试|算法|数据|运维|安全|程序|工程|AI|游戏程序|游戏测试", re.I)
 
 
 def is_it_job(title: str, category: str) -> bool:
     title = title or ""
+    if _HARD_NON_IT.search(title) and not _SOFT_CONTEXT.search(title):
+        return False
     if _NON_IT_TITLE.search(title):
         # 带“运营/市场”等字样但本身是研发岗（如“运营平台开发工程师”）仍保留；“安全经理”类一律剔除
         return bool(_STRONG_IT.search(title)) and not re.search(r"安全经理|(配送|食品|生产|骑行|履约)安全", title)
