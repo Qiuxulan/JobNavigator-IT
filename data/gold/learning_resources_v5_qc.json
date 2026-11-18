@@ -345,5 +345,98 @@
    "status": "dead",
    "checked_at": "2026-11-05T21:27:45+00:00"
   }
- ]
+ ],
+ "hw_supplement_2026_11": {
+  "skills_targeted": 26,
+  "entries_curated": 70,
+  "added_new": 13,
+  "dead_dropped": [
+   {
+    "skill_id": "fpga",
+    "url": "https://www.runoob.com/fpga/fpga-tutorial.html",
+    "title": "菜鸟教程 FPGA 入门教程"
+   },
+   {
+    "skill_id": "verilog",
+    "url": "https://n2t.osu.edu/",
+    "title": "Nand2Tetris：从与非门自底向上造一台计算机（含 HDL 部分）"
+   },
+   {
+    "skill_id": "circuit-design",
+    "url": "https://www.ti.com/design-resources/design-tools-simulation/analog-circuits/overview.html",
+    "title": "TI 模拟电路设计资源中心（运放/电源/滤波器设计指南）"
+   },
+   {
+    "skill_id": "eda-tools",
+    "url": "https://www.cadence.com/en_US/home/resources.html",
+    "title": "Cadence 官方学习资源中心（Virtuoso/Allegro 教程与白皮书）"
+   },
+   {
+    "skill_id": "chip-design",
+    "url": "https://n2t.osu.edu/",
+    "title": "Nand2Tetris：从门电路到计算机系统（理解芯片如何工作）"
+   },
+   {
+    "skill_id": "pcie",
+    "url": "https://xillybus.com/tutorials/pci-express-tutorials-pcie",
+    "title": "Xillybus PCIe 教程系列（从事务层到 DMA 实战）"
+   },
+   {
+    "skill_id": "ddr",
+    "url": "https://www.jedec.org/standards-documents/technology-focus-area/main-memory-ddr3-ddr4-sdram",
+    "title": "JEDEC 官方：DDR SDRAM 标准文档中心"
+   },
+   {
+    "skill_id": "signal-integrity",
+    "url": "https://www.ti.com/design-resources/design-tools-simulation/signal-integrity/overview.html",
+    "title": "TI 信号完整性设计资源中心"
+   },
+   {
+    "skill_id": "emc",
+    "url": "https://www.ti.com/design-resources/design-tools-simulation/emc-emi/overview.html",
+    "title": "TI EMC/EMI 设计资源（滤波/布局/接地指南）"
+   },
+   {
+    "skill_id": "arm",
+    "url": "https://developer.arm.com/documentation",
+    "title": "ARM 官方 Developer 文档中心（Cortex-A/M 架构指南）"
+   },
+   {
+    "skill_id": "rtos",
+    "url": "https://doc.zephyrproject.org/",
+    "title": "Zephyr RTOS 官方文档（Linux 基金会项目，物联网主流 RTOS）"
+   },
+   {
+    "skill_id": "can-bus",
+    "url": "https://www.ti.com/interface/can-lin-transceivers/overview.html",
+    "title": "TI CAN/LIN 收发器技术中心（物理层设计与应用笔记）"
+   },
+   {
+    "skill_id": "plc",
+    "url": "https://support.industry.siemens.com/cs/document/109742329",
+    "title": "西门子官方：SIMATIC S7-1200 入门指南（TIA Portal）"
+   },
+   {
+    "skill_id": "industrial-software",
+    "url": "https://www.ics.uci.edu/~emily/courses/ics-125/",
+    "title": "UCI ICS125：工业软件系统课程（MES/SCADA 架构）"
+   },
+   {
+    "skill_id": "computer-network",
+    "url": "https://www.runoob.com/tcpip/tcp-ip-tutorial.html",
+    "title": "菜鸟教程 TCP/IP 入门教程"
+   },
+   {
+    "skill_id": "data-annotation",
+    "url": "https://opencv.org/courses/",
+    "title": "OpenCV 官方课程（计算机视觉标注与处理基础）"
+   },
+   {
+    "skill_id": "arm",
+    "url": "https://en.wikipedia.org/wiki/ARM_architecture_family",
+    "title": "Wikipedia：ARM 架构家族（指令集/内核谱系参考）"
+   }
+  ],
+  "v5_total_after": 2053
+ }
 }
