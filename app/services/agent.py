@@ -1524,6 +1524,18 @@ def chat(messages: list[dict], max_rounds: int = 8) -> str:
     if not settings.llm_api_key:
         return _chat_without_llm(messages)
 
+    # 多 agent 编排（5 agent：编排器 + 职业/学习/行业/新闻 4 专才）；
+    # 任何环节失败退回原单 agent 全工具循环，保证可用性
+    try:
+        from app.services.agents.orchestrator import run_multi_agent
+
+        return run_multi_agent(messages, max_rounds=min(max_rounds, 6))
+    except Exception as e:
+        print(f"[agent] 多 agent 失败，退回单 agent: {type(e).__name__}: {e}", flush=True)
+        return _chat_single_agent(messages, max_rounds)
+
+
+def _chat_single_agent(messages: list[dict], max_rounds: int = 8) -> str:
     conversation = [{"role": "system", "content": f"{SYSTEM_GUARDRAILS}\n\n{SYSTEM_PROMPT}"}] + messages
 
     url = settings.llm_base_url.rstrip("/") + "/chat/completions"
