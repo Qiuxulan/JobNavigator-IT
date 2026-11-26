@@ -205,6 +205,19 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 15.5px; }
 
 /* GRAPH */
 .graph-shell { position: relative; height: calc(100vh - 250px); min-height: 520px; border-radius: var(--r-lg); background: radial-gradient(1100px 640px at 50% 40%, #ffffff 0%, #f8f9fb 78%); box-shadow: var(--sh-2); overflow: hidden; }
+.graph-shell.dark { background: radial-gradient(1100px 640px at 50% 40%, #17224a 0%, #0a1130 78%); }
+.graph-theme { position: absolute; left: 20px; top: 20px; z-index: 6; border: 1px solid var(--line); background: rgba(255,255,255,0.9); backdrop-filter: blur(12px); border-radius: 999px; padding: 7px 15px; font-size: 12px; color: var(--ink-2); cursor: pointer; box-shadow: var(--sh-2); }
+.graph-shell.dark .graph-theme { background: rgba(13,20,40,0.72); border-color: rgba(148,163,184,0.2); color: #cbd5e1; }
+.graph-shell.dark .graph-stat { background: rgba(13,20,40,0.72); border-color: rgba(148,163,184,0.16); color: #e2e8f0; }
+.graph-shell.dark .graph-stat .gs-l { color: #7c8aa5; }
+.graph-shell.dark .graph-legend { background: rgba(13,20,40,0.78); border-color: rgba(148,163,184,0.16); }
+.graph-shell.dark .graph-legend .lg-title { color: #7c8aa5; }
+.graph-shell.dark .lg-cat { color: #a5b1c2; }
+.graph-shell.dark .graph-empty .ge-title { color: #e2e8f0; }
+.graph-shell.dark .graph-empty { color: #7c8aa5; }
+.graph-shell.dark .graph-empty svg { color: #475569; }
+.graph-shell.dark .chip { background: rgba(148,163,184,0.12); border-color: rgba(148,163,184,0.22); color: #cbd5e1; }
+.graph-shell.dark .chip:hover { background: rgba(148,163,184,0.22); }
 .graph-canvas { width: 100%; height: 100%; }
 .graph-legend { position: absolute; left: 20px; bottom: 20px; z-index: 5; background: rgba(255,255,255,0.9); backdrop-filter: blur(12px); border: 1px solid var(--line); border-radius: var(--r); padding: 15px 17px; display: flex; flex-direction: column; gap: 10px; font-size: 12px; box-shadow: var(--sh-2); max-width: 230px; }
 .graph-legend .lg-title { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-3); margin-bottom: 2px; }

@@ -68,14 +68,11 @@ const SKILL_CAT_META: Record<string, { zh: string; color: string }> = {
 
 const FALLBACK_COLORS = ["#6366F1", "#10B981", "#F59E0B", "#EC4899", "#0EA5E9", "#EAB308", "#84CC16", "#F97316", "#8B5CF6", "#64748B"];
 
-const INK_FAINT = "rgba(28,30,35,";
-const LABEL_CARD: Record<string, unknown> = {
-  backgroundColor: "rgba(255,255,255,0.88)",
-  borderColor: "rgba(28,30,35,0.09)",
-  borderWidth: 1,
-  borderRadius: 5,
-  padding: [3, 7],
-};
+function labelCardStyle(dark: boolean): Record<string, unknown> {
+  return dark
+    ? { backgroundColor: "rgba(15,23,42,0.72)", borderColor: "rgba(148,163,184,0.28)", borderWidth: 1, borderRadius: 5, padding: [3, 7] }
+    : { backgroundColor: "rgba(255,255,255,0.88)", borderColor: "rgba(28,30,35,0.09)", borderWidth: 1, borderRadius: 5, padding: [3, 7] };
+}
 
 function skillCatZh(cat?: string): string {
   return (cat && SKILL_CAT_META[cat]?.zh) || cat || "其他";
@@ -127,14 +124,25 @@ function nodeTooltip(raw: GraphNode): string {
   return `<b>${title}</b><br/><span style="color:#767b85">${KIND_LABEL[raw.kind]} · ${raw.kind === "skill" ? skillCatZh(raw.category) : raw.category || ""}</span>${eventExtra}`;
 }
 
-const TOOLTIP_BASE = {
-  backgroundColor: "rgba(255,255,255,0.97)",
-  borderColor: "rgba(28,30,35,0.08)",
-  borderWidth: 1,
-  padding: [10, 14] as [number, number],
-  textStyle: { color: "#1c1e23", fontSize: 12.5 },
-  extraCssText: "box-shadow: 0 10px 32px -10px rgba(28,30,35,0.28); border-radius: 10px;",
-};
+function tooltipStyle(dark: boolean) {
+  return dark
+    ? {
+        backgroundColor: "rgba(15,23,42,0.94)",
+        borderColor: "rgba(148,163,184,0.2)",
+        borderWidth: 1,
+        padding: [10, 14] as [number, number],
+        textStyle: { color: "#e2e8f0", fontSize: 12.5 },
+        extraCssText: "box-shadow: 0 10px 32px -10px rgba(0,0,0,0.6); border-radius: 10px;",
+      }
+    : {
+        backgroundColor: "rgba(255,255,255,0.97)",
+        borderColor: "rgba(28,30,35,0.08)",
+        borderWidth: 1,
+        padding: [10, 14] as [number, number],
+        textStyle: { color: "#1c1e23", fontSize: 12.5 },
+        extraCssText: "box-shadow: 0 10px 32px -10px rgba(28,30,35,0.28); border-radius: 10px;",
+      };
+}
 
 /** 轨道圆环 / 层色带等装饰节点：自身不可交互、不进 tooltip */
 function decorNode(id: string, x: number, y: number, symbolSize: number | [number, number], itemStyle: Record<string, unknown>, label?: Record<string, unknown>, symbol = "circle"): ChartNode {
@@ -155,10 +163,10 @@ function decorNode(id: string, x: number, y: number, symbolSize: number | [numbe
   };
 }
 
-function faintRing(id: string, r: number, opacity: number, dashed = false): ChartNode {
+function faintRing(id: string, r: number, opacity: number, ink: string, dashed = false): ChartNode {
   return decorNode(id, 0, 0, r * 2, {
     color: "rgba(0,0,0,0)",
-    borderColor: `${INK_FAINT}${opacity})`,
+    borderColor: `${ink}${opacity})`,
     borderWidth: 1,
     ...(dashed ? { borderType: "dashed" as const } : {}),
   });
@@ -274,8 +282,25 @@ export default function Graph() {
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
   const [dagTarget, setDagTarget] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [dark, setDark] = useState(false);
   const pulse = 0;
   const chartInst = useRef<{ dispatchAction: (p: Record<string, unknown>) => void } | null>(null);
+
+  /** 深浅两套画布主题：节点颜色不变，只换背景 / 连线 / 标签 / 装饰色 */
+  const theme = useMemo(() => ({
+    ink: dark ? "rgba(226,232,240," : "rgba(28,30,35,",
+    labelInk: dark ? "#e2e8f0" : "#1b1d22",
+    labelCard: labelCardStyle(dark),
+    tooltip: tooltipStyle(dark),
+    edgeCore: dark ? "#818cf8" : "#6366F1",
+    edgeReq: dark ? "#55638a" : "#B6BFCE",
+    edgePre: dark ? "#64748b" : "#CBD5E1",
+    bandA: dark ? "rgba(99,102,241,0.12)" : "rgba(91,141,239,0.05)",
+    bandB: dark ? "rgba(148,163,184,0.05)" : "rgba(28,30,35,0.022)",
+    decorText: dark ? "#64748b" : "#a3a8b1",
+    legendText: dark ? "#94a3b8" : "#5c626c",
+    legendInactive: dark ? "#334155" : "#d8dce3",
+  }), [dark]);
 
   useEffect(() => {
     let alive = true;
@@ -385,9 +410,9 @@ export default function Graph() {
 
     const catNames = ["岗位", "核心技能", "要求技能", "前置技能"];
     const chartNodes: ChartNode[] = [
-      faintRing("decor:ring-core", 150, 0.06),
-      faintRing("decor:ring-req", 290, 0.05),
-      faintRing("decor:ring-ext", 420, 0.04, true),
+      faintRing("decor:ring-core", 150, 0.09, theme.ink),
+      faintRing("decor:ring-req", 290, 0.07, theme.ink),
+      faintRing("decor:ring-ext", 420, 0.05, theme.ink, true),
     ];
     const push = (raw: GraphNode, cat: number, size: number, showLabel: boolean, x?: number, y?: number) => {
       chartNodes.push({
@@ -406,52 +431,56 @@ export default function Graph() {
           show: showLabel,
           position: raw.kind === "role" ? "bottom" : "right",
           distance: 6,
-          color: "#1b1d22",
+          color: theme.labelInk,
           fontSize: raw.kind === "role" ? 14 : 11.5,
           fontWeight: raw.kind === "role" ? 700 : 500,
-          ...LABEL_CARD,
+          ...theme.labelCard,
         },
         raw,
       });
     };
     const roleRaw = nodeById.get(selectedRole);
-    if (roleRaw) push(roleRaw, 0, 56, true, 0, 0);
+    if (roleRaw) push(roleRaw, 0, 62, true, 0, 0);
     coreIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 1, raw.hot ? 26 : 21, true, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 1, raw.hot ? 30 : 24, true, pos.get(id)?.x, pos.get(id)?.y);
     });
     reqIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 2, raw.hot ? 18 : 14, false, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 2, raw.hot ? 20 : 15, false, pos.get(id)?.x, pos.get(id)?.y);
     });
     extIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 3, 13, false, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 3, 14, false, pos.get(id)?.x, pos.get(id)?.y);
     });
 
-    // 连线跟随目标技能的类别色：核心技能粗实线、要求技能细实线、前置依赖灰色虚线
+    // 连线保持中性：颜色只留给节点。核心技能用主色加粗，要求技能浅灰细线，前置依赖虚线
     const chartLinks: ChartLink[] = egoLinks.map((l) => {
       if (l.relation === "PREREQ") {
         return {
           source: l.source,
           target: l.target,
           relation: l.relation,
-          lineStyle: { type: "dashed", opacity: 0.55, width: 1.2, color: "#94A3B8", curveness: 0.08 },
+          lineStyle: { type: "dashed", opacity: 0.5, width: 1, color: theme.edgePre, curveness: 0.08 },
         };
       }
       const isCore = l.relation === "CORE_SKILL";
-      const targetRaw = nodeById.get(l.target);
-      const c = targetRaw ? skillColor(targetRaw) : "#94A3B8";
       return {
         source: l.source,
         target: l.target,
         relation: l.relation,
-        lineStyle: { type: "solid", opacity: isCore ? 0.7 : 0.38, width: isCore ? 2.4 : 1.3, color: c, curveness: 0 },
+        lineStyle: {
+          type: "solid",
+          opacity: isCore ? 0.55 : 0.4,
+          width: isCore ? 2.2 : 1.1,
+          color: isCore ? theme.edgeCore : theme.edgeReq,
+          curveness: 0,
+        },
       };
     });
 
     return { chartNodes, chartLinks, catNames, counts: { roles: 1, skills: coreIds.length + reqIds.length + extIds.length, events: 0, links: chartLinks.length } };
-  }, [selectedRole, links, prereqLinks, nodeById, roleCats]);
+  }, [selectedRole, links, prereqLinks, nodeById, roleCats, theme]);
 
   // -------------------------------------------------------------------------
   // 视图二：全量总览（环形分组布局 + 类别区域标注，图例可点击隐藏）
@@ -483,8 +512,8 @@ export default function Graph() {
     const catNames = ["岗位", ...skillCats.map(skillCatZh)];
     const catIndex = new Map(catNames.map((c, i) => [c, i]));
     const chartNodes: ChartNode[] = [
-      faintRing("decor:ring-role", 202, 0.055),
-      faintRing("decor:ring-skill", 442, 0.045, true),
+      faintRing("decor:ring-role", 202, 0.055, theme.ink),
+      faintRing("decor:ring-skill", 442, 0.045, theme.ink, true),
     ];
     catArcs.forEach((arc, i) => {
       chartNodes.push(decorNode(
@@ -492,7 +521,7 @@ export default function Graph() {
         Math.cos(arc.mid) * 474, Math.sin(arc.mid) * 474,
         1,
         { color: "rgba(0,0,0,0)" },
-        { show: true, position: "inside", formatter: arc.name, fontSize: 10, color: "#a3a8b1", fontWeight: 500 },
+        { show: true, position: "inside", formatter: arc.name, fontSize: 10, color: theme.decorText, fontWeight: 500 },
       ));
     });
     for (const n of nodes) {
@@ -514,7 +543,7 @@ export default function Graph() {
         itemStyle: isRole
           ? { color: roleColor(n.category, roleCats), borderColor: "rgba(255,255,255,0.7)", borderWidth: 0.6 }
           : skillItemStyle(n),
-        label: { show: false, color: "#1b1d22", fontSize: 11, ...LABEL_CARD },
+        label: { show: false, color: theme.labelInk, fontSize: 11, ...theme.labelCard },
         raw: n,
       });
     }
@@ -522,23 +551,17 @@ export default function Graph() {
     const visibleIds = new Set(chartNodes.filter((c) => !c.decor).map((n) => n.id));
     const chartLinks: ChartLink[] = links
       .filter((l) => (l.relation === "CORE_SKILL" || l.relation === "PREREQ") && visibleIds.has(l.source) && visibleIds.has(l.target))
-      .map((l) => {
-        if (l.relation === "PREREQ") {
-          return {
-            source: l.source,
-            target: l.target,
-            relation: l.relation,
-            lineStyle: { type: "dashed", opacity: 0.13, width: 0.7, color: "#94A3B8" },
-          };
-        }
-        const targetRaw = nodeById.get(l.target);
-        return {
-          source: l.source,
-          target: l.target,
-          relation: l.relation,
-          lineStyle: { type: "solid", opacity: 0.12, width: 0.8, color: targetRaw ? skillColor(targetRaw) : "#94A3B8" },
-        };
-      });
+      .map((l) => ({
+        source: l.source,
+        target: l.target,
+        relation: l.relation,
+        lineStyle: {
+          type: l.relation === "PREREQ" ? "dashed" : "solid",
+          opacity: l.relation === "PREREQ" ? 0.1 : 0.09,
+          width: 0.7,
+          color: theme.edgeReq,
+        },
+      }));
 
     return {
       chartNodes, chartLinks, catNames,
@@ -549,7 +572,7 @@ export default function Graph() {
         links: chartLinks.length,
       },
     };
-  }, [nodes, links, roleNodes, skillNodes, roleCats]);
+  }, [nodes, links, roleNodes, skillNodes, roleCats, theme]);
 
   // -------------------------------------------------------------------------
   // 视图三：技能前置 DAG（学习路径，按层加背景色带）
@@ -579,13 +602,13 @@ export default function Graph() {
       chartNodes.push(decorNode(
         `decor:band-${li}`, cx, 0,
         [172, bandH],
-        { color: li % 2 === 0 ? "rgba(91,141,239,0.05)" : "rgba(28,30,35,0.022)", borderWidth: 0 },
+        { color: li % 2 === 0 ? theme.bandA : theme.bandB, borderWidth: 0 },
         undefined, "rect",
       ));
       chartNodes.push(decorNode(
         `decor:layer-${li}`, cx, -bandH / 2 - 4, 1,
         { color: "rgba(0,0,0,0)" },
-        { show: true, position: "bottom", distance: 10, formatter: `第 ${li + 1} 层`, fontSize: 10, color: "#a3a8b1", fontFamily: "ui-monospace, Menlo, monospace" },
+        { show: true, position: "bottom", distance: 10, formatter: `第 ${li + 1} 层`, fontSize: 10, color: theme.decorText, fontFamily: "ui-monospace, Menlo, monospace" },
       ));
     });
 
@@ -609,27 +632,24 @@ export default function Graph() {
           show: true,
           position: "bottom",
           distance: 5,
-          color: "#1b1d22",
+          color: theme.labelInk,
           fontSize: 11,
           fontWeight: isTarget ? 700 : 500,
-          ...LABEL_CARD,
+          ...theme.labelCard,
         },
         raw,
       });
     }
 
-    const chartLinks: ChartLink[] = edges.map((l) => {
-      const srcRaw = nodeById.get(l.source);
-      return {
-        source: l.source,
-        target: l.target,
-        relation: l.relation,
-        lineStyle: { type: "solid", opacity: 0.42, width: 1.3, color: srcRaw ? skillColor(srcRaw) : "#94A3B8", curveness: 0.06 },
-      };
-    });
+    const chartLinks: ChartLink[] = edges.map((l) => ({
+      source: l.source,
+      target: l.target,
+      relation: l.relation,
+      lineStyle: { type: "solid", opacity: 0.5, width: 1.3, color: theme.edgePre, curveness: 0.06 },
+    }));
 
     return { chartNodes, chartLinks, catNames: ["技能"], maxLayer, counts: { roles: 0, skills: closure.size, events: 0, links: chartLinks.length } };
-  }, [effectiveDagTarget, prereqLinks, nodeById]);
+  }, [effectiveDagTarget, prereqLinks, nodeById, theme]);
 
   // -------------------------------------------------------------------------
   // 视图四：事件影响（按选中岗位过滤）
@@ -658,7 +678,7 @@ export default function Graph() {
       category: 0,
       x: 0, y: 0,
       itemStyle: { color: roleColor(roleRaw.category, roleCats), borderColor: "rgba(255,255,255,0.95)", borderWidth: 2, shadowColor: "rgba(28,30,35,0.28)", shadowBlur: 16 },
-      label: { show: true, position: "bottom", distance: 6, color: "#1b1d22", fontSize: 13, fontWeight: 600, ...LABEL_CARD },
+      label: { show: true, position: "bottom", distance: 6, color: theme.labelInk, fontSize: 13, fontWeight: 600, ...theme.labelCard },
       raw: roleRaw,
     }];
     for (const id of evIds) {
@@ -676,7 +696,7 @@ export default function Graph() {
         x: pos.get(id)?.x,
         y: pos.get(id)?.y,
         itemStyle: { color, borderColor: "rgba(255,255,255,0.9)", borderWidth: 1, shadowColor: color, shadowBlur: 8 },
-        label: { show: false, color: "#1b1d22", fontSize: 10.5, ...LABEL_CARD },
+        label: { show: false, color: theme.labelInk, fontSize: 10.5, ...theme.labelCard },
         raw,
       });
     }
@@ -691,7 +711,7 @@ export default function Graph() {
       };
     });
     return { chartNodes, chartLinks, catNames, counts: { roles: 1, skills: 0, events: evIds.length, links: chartLinks.length } };
-  }, [selectedRole, links, nodeById, roleCats]);
+  }, [selectedRole, links, nodeById, roleCats, theme]);
 
   // -------------------------------------------------------------------------
   // 视图挂载
@@ -740,7 +760,7 @@ export default function Graph() {
           return {
             ...n,
             symbolSize: Array.isArray(n.symbolSize) ? [base * grow, n.symbolSize[1] * grow] : base * grow,
-            itemStyle: { ...n.itemStyle, borderColor: "#1b1d22", borderWidth: 1.6, shadowColor: color, shadowBlur: 16 + pulse * 12 },
+            itemStyle: { ...n.itemStyle, borderColor: theme.labelInk, borderWidth: 1.6, shadowColor: color, shadowBlur: 16 + pulse * 12 },
           };
         })
       : view.chartNodes;
@@ -748,15 +768,15 @@ export default function Graph() {
     if (mode === "overview") {
       return {
         tooltip: {
-          ...TOOLTIP_BASE,
+          ...theme.tooltip,
           formatter: (p: { dataType?: string; data?: ChartNode | ChartLink }) =>
             p.dataType === "edge" ? relationLabel((p.data as ChartLink).relation) : nodeTooltip((p.data as ChartNode).raw!),
         },
         legend: {
           left: 16, top: 14, orient: "vertical",
           itemWidth: 9, itemHeight: 9, icon: "circle",
-          inactiveColor: "#d8dce3",
-          textStyle: { fontSize: 11, color: "#5c626c" },
+          inactiveColor: theme.legendInactive,
+          textStyle: { fontSize: 11, color: theme.legendText },
           data: view.catNames,
         },
         series: [{
@@ -778,7 +798,7 @@ export default function Graph() {
     const isDag = mode === "dag";
     return {
       tooltip: {
-        ...TOOLTIP_BASE,
+        ...theme.tooltip,
         formatter: (p: { dataType?: string; data?: ChartNode | ChartLink }) => {
           if (p.dataType === "edge") {
             const l = p.data as ChartLink;
@@ -808,7 +828,7 @@ export default function Graph() {
         animationEasingUpdate: "cubicOut",
       }],
     };
-  }, [mode, view, nodeById, selectedId, pulse]);
+  }, [mode, view, nodeById, selectedId, pulse, theme]);
 
   const counts = view?.counts;
   const needRole = (mode === "ego" || mode === "event") && !selectedRole;
@@ -894,7 +914,10 @@ export default function Graph() {
         </div>
       )}
 
-      <div className="graph-shell">
+      <div className={"graph-shell" + (dark ? " dark" : "")}>
+        <button className="graph-theme" onClick={() => setDark((d) => !d)}>
+          {dark ? "☀ 浅色" : "☾ 深色"}
+        </button>
         {needRole ? (
           <div className="graph-empty">
             <Ic.graph />
