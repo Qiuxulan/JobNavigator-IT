@@ -9,17 +9,17 @@ const TREND_MAP: Record<string, [string, React.FC<React.SVGProps<SVGSVGElement>>
 };
 
 const CAT_COLORS: Record<string, string> = {
-  "Emerging AI": "#5B8DEF",
-  "AI & Data": "#9B72F0",
-  "Backend Development": "#1FC8A9",
-  "Frontend & Mobile": "#FFB13D",
-  "Cloud & DevOps": "#33CFD5",
-  Cybersecurity: "#FF7A90",
-  "Data Engineering": "#8A72F0",
-  "Product & Design": "#FF9466",
-  "QA & Testing": "#6E8AFF",
-  "Systems & Embedded": "#86CB3C",
-  Management: "#FF6FA5",
+  "Emerging AI": "#f47254",
+  "AI & Data": "#f59c7c",
+  "Backend Development": "#67a583",
+  "Frontend & Mobile": "#ffc1a6",
+  "Cloud & DevOps": "#49c2d9",
+  Cybersecurity: "#c85e62",
+  "Data Engineering": "#7b95c6",
+  "Product & Design": "#fded95",
+  "QA & Testing": "#a2c986",
+  "Systems & Embedded": "#a1d8e8",
+  Management: "#d0e2c0",
 };
 
 export function TrendBadge({ trend, withLabel = true }: { trend: string; withLabel?: boolean }) {

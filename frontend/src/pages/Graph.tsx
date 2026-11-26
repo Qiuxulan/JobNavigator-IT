@@ -48,25 +48,25 @@ const KIND_LABEL: Record<GraphNode["kind"], string> = {
   event: "行业事件",
 };
 
-/** 调色板：清晰高区分度的现代色系（Tailwind 500 阶），浅色背景下依然醒目 */
+/** 调色板：用户指定的 11 色柔和渐变系（蓝→青→绿→黄→橙→红） */
 const SKILL_CAT_META: Record<string, { zh: string; color: string }> = {
-  ai_emerging: { zh: "新兴 AI", color: "#6366F1" },
-  ai_ml: { zh: "AI / 机器学习", color: "#8B5CF6" },
-  bigdata: { zh: "大数据", color: "#3B82F6" },
-  cloud: { zh: "云计算", color: "#0EA5E9" },
-  data_analysis: { zh: "数据分析", color: "#F59E0B" },
-  database: { zh: "数据库", color: "#10B981" },
-  devops: { zh: "DevOps", color: "#14B8A6" },
-  frontend: { zh: "前端", color: "#F97316" },
-  backend: { zh: "后端", color: "#2563EB" },
-  language: { zh: "编程语言", color: "#84CC16" },
-  methods: { zh: "工程方法", color: "#64748B" },
-  mobile: { zh: "移动端", color: "#EC4899" },
-  security: { zh: "安全", color: "#EF4444" },
-  testing: { zh: "测试", color: "#EAB308" },
+  ai_emerging: { zh: "新兴 AI", color: "#f47254" },
+  ai_ml: { zh: "AI / 机器学习", color: "#c85e62" },
+  bigdata: { zh: "大数据", color: "#7b95c6" },
+  cloud: { zh: "云计算", color: "#49c2d9" },
+  data_analysis: { zh: "数据分析", color: "#fded95" },
+  database: { zh: "数据库", color: "#67a583" },
+  devops: { zh: "DevOps", color: "#a1d8e8" },
+  frontend: { zh: "前端", color: "#ffc1a6" },
+  backend: { zh: "后端", color: "#f59c7c" },
+  language: { zh: "编程语言", color: "#a2c986" },
+  methods: { zh: "工程方法", color: "#d0e2c0" },
+  mobile: { zh: "移动端", color: "#ffc1a6" },
+  security: { zh: "安全", color: "#c85e62" },
+  testing: { zh: "测试", color: "#fded95" },
 };
 
-const FALLBACK_COLORS = ["#6366F1", "#10B981", "#F59E0B", "#EC4899", "#0EA5E9", "#EAB308", "#84CC16", "#F97316", "#8B5CF6", "#64748B"];
+const FALLBACK_COLORS = ["#7b95c6", "#49c2d9", "#a1d8e8", "#67a583", "#a2c986", "#d0e2c0", "#fded95", "#ffc1a6", "#f59c7c", "#f47254", "#c85e62"];
 
 function labelCardStyle(dark: boolean): Record<string, unknown> {
   return dark
@@ -103,9 +103,9 @@ function roleColor(cat: string | undefined, allCats: string[]): string {
 }
 
 function eventColor(node: GraphNode): string {
-  if (node.impact_direction === "negative") return "#EF4444";
-  if (node.impact_direction === "mixed") return "#8B5CF6";
-  return "#3B82F6";
+  if (node.impact_direction === "negative") return "#c85e62";
+  if (node.impact_direction === "mixed") return "#f59c7c";
+  return "#7b95c6";
 }
 
 function relationLabel(relation: string): string {
@@ -292,7 +292,7 @@ export default function Graph() {
     labelInk: dark ? "#e2e8f0" : "#1b1d22",
     labelCard: labelCardStyle(dark),
     tooltip: tooltipStyle(dark),
-    edgeCore: dark ? "#818cf8" : "#6366F1",
+    edgeCore: dark ? "#a1d8e8" : "#7b95c6",
     edgeReq: dark ? "#55638a" : "#B6BFCE",
     edgePre: dark ? "#64748b" : "#CBD5E1",
     bandA: dark ? "rgba(99,102,241,0.12)" : "rgba(91,141,239,0.05)",
@@ -756,7 +756,7 @@ export default function Graph() {
           if (n.decor || n.id !== selectedId) return n;
           const grow = 1 + pulse * 0.1;
           const base = Array.isArray(n.symbolSize) ? n.symbolSize[0] : n.symbolSize;
-          const color = (n.itemStyle.color as string) || "#6366F1";
+          const color = (n.itemStyle.color as string) || "#7b95c6";
           return {
             ...n,
             symbolSize: Array.isArray(n.symbolSize) ? [base * grow, n.symbolSize[1] * grow] : base * grow,
@@ -971,7 +971,7 @@ export default function Graph() {
           {mode === "ego" && view && (
             <>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "核心技能")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#6366F1", boxShadow: "0 0 6px 1px rgba(99,102,241,0.5)" }} />核心技能
+                <span className="dot-cat" style={{ background: "#7b95c6", boxShadow: "0 0 6px 1px rgba(123,149,198,0.5)" }} />核心技能
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "要求技能")} onMouseLeave={() => hlNodes()}>
                 <span className="dot-cat" style={{ background: "#94A3B8" }} />要求技能
@@ -979,15 +979,15 @@ export default function Graph() {
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "前置技能")} onMouseLeave={() => hlNodes()}>
                 <span className="dot-cat" style={{ background: "#cbd5e1", border: "1.5px dashed #94A3B8" }} />外部前置
               </span>
-              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "2px solid rgba(99,102,241,0.65)" }} />核心 / 要求</span>
+              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "2px solid rgba(123,149,198,0.7)" }} />核心 / 要求</span>
               <span className="lg-cat"><span className="lg-line" style={{ borderTop: "1.5px dashed #94A3B8" }} />前置依赖</span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>点击技能 → 学习路径</span>
             </>
           )}
           {mode === "overview" && (
             <>
-              <span className="lg-cat"><span className="dot-cat" style={{ background: "#5B8DEF" }} />内圈：岗位（按大类）</span>
-              <span className="lg-cat"><span className="dot-cat" style={{ background: "#F59E0B" }} />外圈：技能（按类别）</span>
+              <span className="lg-cat"><span className="dot-cat" style={{ background: "#7b95c6" }} />内圈：岗位（按大类）</span>
+              <span className="lg-cat"><span className="dot-cat" style={{ background: "#f59c7c" }} />外圈：技能（按类别）</span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>左上角色块可点击隐藏 ·  hover 节点看名称</span>
             </>
           )}
@@ -995,7 +995,7 @@ export default function Graph() {
             <>
               <span className="lg-cat"><span className="lg-line" style={{ borderTop: "1.5px solid rgba(28,30,35,0.4)" }} />前置依赖（箭头指向后续技能）</span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => Boolean(n.raw?.hot))} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#F59E0B", boxShadow: "0 0 6px 1px rgba(245,158,11,0.55)" }} />热门技能
+                <span className="dot-cat" style={{ background: "#f59c7c", boxShadow: "0 0 6px 1px rgba(245,156,124,0.55)" }} />热门技能
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.id === effectiveDagTarget)} onMouseLeave={() => hlNodes()}>
                 <span className="dot-cat" style={{ background: "#1b1d22" }} />目标技能
@@ -1006,13 +1006,13 @@ export default function Graph() {
           {mode === "event" && view && (
             <>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction !== "negative" && n.raw?.impact_direction !== "mixed" && n.kind === "event")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#3B82F6" }} />正向 / 中性事件
+                <span className="dot-cat" style={{ background: "#7b95c6" }} />正向 / 中性事件
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction === "mixed")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#8B5CF6" }} />混合影响
+                <span className="dot-cat" style={{ background: "#f59c7c" }} />混合影响
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction === "negative")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#EF4444" }} />负向事件
+                <span className="dot-cat" style={{ background: "#c85e62" }} />负向事件
               </span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>点大小 = 事件重要度</span>
             </>
