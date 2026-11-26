@@ -48,25 +48,25 @@ const KIND_LABEL: Record<GraphNode["kind"], string> = {
   event: "行业事件",
 };
 
-/** 调色板：低饱和莫兰迪色系，与全局浅色主题一致 */
+/** 调色板：清晰高区分度的现代色系（Tailwind 500 阶），浅色背景下依然醒目 */
 const SKILL_CAT_META: Record<string, { zh: string; color: string }> = {
-  ai_emerging: { zh: "新兴 AI", color: "#5A8BE8" },
-  ai_ml: { zh: "AI / 机器学习", color: "#9375E8" },
-  bigdata: { zh: "大数据", color: "#7E8CE8" },
-  cloud: { zh: "云计算", color: "#45BFC9" },
-  data_analysis: { zh: "数据分析", color: "#F2915C" },
-  database: { zh: "数据库", color: "#2EB89B" },
-  devops: { zh: "DevOps", color: "#3BA9C4" },
-  frontend: { zh: "前端", color: "#EFA63C" },
-  backend: { zh: "后端", color: "#6D88E8" },
-  language: { zh: "编程语言", color: "#8FBA45" },
-  methods: { zh: "工程方法", color: "#9AA3B2" },
-  mobile: { zh: "移动端", color: "#E87BA4" },
-  security: { zh: "安全", color: "#EE7D88" },
-  testing: { zh: "测试", color: "#D9AE45" },
+  ai_emerging: { zh: "新兴 AI", color: "#6366F1" },
+  ai_ml: { zh: "AI / 机器学习", color: "#8B5CF6" },
+  bigdata: { zh: "大数据", color: "#3B82F6" },
+  cloud: { zh: "云计算", color: "#0EA5E9" },
+  data_analysis: { zh: "数据分析", color: "#F59E0B" },
+  database: { zh: "数据库", color: "#10B981" },
+  devops: { zh: "DevOps", color: "#14B8A6" },
+  frontend: { zh: "前端", color: "#F97316" },
+  backend: { zh: "后端", color: "#2563EB" },
+  language: { zh: "编程语言", color: "#84CC16" },
+  methods: { zh: "工程方法", color: "#64748B" },
+  mobile: { zh: "移动端", color: "#EC4899" },
+  security: { zh: "安全", color: "#EF4444" },
+  testing: { zh: "测试", color: "#EAB308" },
 };
 
-const FALLBACK_COLORS = ["#5A8BE8", "#2EB89B", "#EFA63C", "#E87BA4", "#3BA9C4", "#D9AE45", "#8FBA45", "#F2915C", "#9375E8", "#B08A5E"];
+const FALLBACK_COLORS = ["#6366F1", "#10B981", "#F59E0B", "#EC4899", "#0EA5E9", "#EAB308", "#84CC16", "#F97316", "#8B5CF6", "#64748B"];
 
 const INK_FAINT = "rgba(28,30,35,";
 const LABEL_CARD: Record<string, unknown> = {
@@ -82,19 +82,19 @@ function skillCatZh(cat?: string): string {
 }
 
 function skillColor(node: GraphNode): string {
-  return (node.category && SKILL_CAT_META[node.category]?.color) || "#9DB2CE";
+  return (node.category && SKILL_CAT_META[node.category]?.color) || "#94A3B8";
 }
 
 /** 热门技能不再使用死色块，而是在类别色上加光晕 */
 function skillItemStyle(node: GraphNode): Record<string, unknown> {
   const color = skillColor(node);
-  if (!node.hot) return { color, borderColor: "rgba(255,255,255,0.85)", borderWidth: 1 };
+  if (!node.hot) return { color, borderColor: "rgba(255,255,255,0.9)", borderWidth: 1.2 };
   return {
     color,
     borderColor: "rgba(255,255,255,0.95)",
-    borderWidth: 1.2,
+    borderWidth: 1.5,
     shadowColor: color,
-    shadowBlur: 12,
+    shadowBlur: 14,
   };
 }
 
@@ -106,9 +106,9 @@ function roleColor(cat: string | undefined, allCats: string[]): string {
 }
 
 function eventColor(node: GraphNode): string {
-  if (node.impact_direction === "negative") return "#EE7D88";
-  if (node.impact_direction === "mixed") return "#9375E8";
-  return "#6D88E8";
+  if (node.impact_direction === "negative") return "#EF4444";
+  if (node.impact_direction === "mixed") return "#8B5CF6";
+  return "#3B82F6";
 }
 
 function relationLabel(relation: string): string {
@@ -400,47 +400,55 @@ export default function Graph() {
         category: cat,
         x, y,
         itemStyle: raw.kind === "role"
-          ? { color: roleColor(raw.category, roleCats), borderColor: "rgba(255,255,255,0.95)", borderWidth: 1.6, shadowColor: "rgba(28,30,35,0.25)", shadowBlur: 10 }
+          ? { color: roleColor(raw.category, roleCats), borderColor: "rgba(255,255,255,0.95)", borderWidth: 2, shadowColor: "rgba(28,30,35,0.3)", shadowBlur: 16 }
           : skillItemStyle(raw),
         label: {
           show: showLabel,
           position: raw.kind === "role" ? "bottom" : "right",
           distance: 6,
           color: "#1b1d22",
-          fontSize: raw.kind === "role" ? 13 : 11,
-          fontWeight: raw.kind === "role" ? 600 : 450,
+          fontSize: raw.kind === "role" ? 14 : 11.5,
+          fontWeight: raw.kind === "role" ? 700 : 500,
           ...LABEL_CARD,
         },
         raw,
       });
     };
     const roleRaw = nodeById.get(selectedRole);
-    if (roleRaw) push(roleRaw, 0, 40, true, 0, 0);
+    if (roleRaw) push(roleRaw, 0, 56, true, 0, 0);
     coreIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 1, raw.hot ? 21 : 17, true, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 1, raw.hot ? 26 : 21, true, pos.get(id)?.x, pos.get(id)?.y);
     });
     reqIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 2, raw.hot ? 16 : 12, false, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 2, raw.hot ? 18 : 14, false, pos.get(id)?.x, pos.get(id)?.y);
     });
     extIds.forEach((id) => {
       const raw = nodeById.get(id);
-      if (raw) push(raw, 3, 11, false, pos.get(id)?.x, pos.get(id)?.y);
+      if (raw) push(raw, 3, 13, false, pos.get(id)?.x, pos.get(id)?.y);
     });
 
-    const chartLinks: ChartLink[] = egoLinks.map((l) => ({
-      source: l.source,
-      target: l.target,
-      relation: l.relation,
-      lineStyle: {
-        type: l.relation === "PREREQ" ? "dashed" : "solid",
-        opacity: l.relation === "CORE_SKILL" ? 0.62 : l.relation === "PREREQ" ? 0.5 : 0.3,
-        width: l.relation === "CORE_SKILL" ? 2 : l.relation === "PREREQ" ? 1.1 : 1,
-        color: l.relation === "PREREQ" ? "#9aa3b2" : l.relation === "CORE_SKILL" ? "rgba(28,30,35,0.30)" : "rgba(28,30,35,0.14)",
-        curveness: l.relation === "PREREQ" ? 0.08 : 0,
-      },
-    }));
+    // 连线跟随目标技能的类别色：核心技能粗实线、要求技能细实线、前置依赖灰色虚线
+    const chartLinks: ChartLink[] = egoLinks.map((l) => {
+      if (l.relation === "PREREQ") {
+        return {
+          source: l.source,
+          target: l.target,
+          relation: l.relation,
+          lineStyle: { type: "dashed", opacity: 0.55, width: 1.2, color: "#94A3B8", curveness: 0.08 },
+        };
+      }
+      const isCore = l.relation === "CORE_SKILL";
+      const targetRaw = nodeById.get(l.target);
+      const c = targetRaw ? skillColor(targetRaw) : "#94A3B8";
+      return {
+        source: l.source,
+        target: l.target,
+        relation: l.relation,
+        lineStyle: { type: "solid", opacity: isCore ? 0.7 : 0.38, width: isCore ? 2.4 : 1.3, color: c, curveness: 0 },
+      };
+    });
 
     return { chartNodes, chartLinks, catNames, counts: { roles: 1, skills: coreIds.length + reqIds.length + extIds.length, events: 0, links: chartLinks.length } };
   }, [selectedRole, links, prereqLinks, nodeById, roleCats]);
@@ -491,8 +499,8 @@ export default function Graph() {
       if (n.kind === "event") continue;
       const isRole = n.kind === "role";
       const size = isRole
-        ? 11 + Math.min(13, Math.sqrt(n.size ?? 100) / 3.4)
-        : n.hot ? 9 : 5.5;
+        ? 13 + Math.min(15, Math.sqrt(n.size ?? 100) / 3.2)
+        : n.hot ? 10 : 6;
       chartNodes.push({
         id: n.id,
         name: n.label_zh || n.label,
@@ -514,17 +522,23 @@ export default function Graph() {
     const visibleIds = new Set(chartNodes.filter((c) => !c.decor).map((n) => n.id));
     const chartLinks: ChartLink[] = links
       .filter((l) => (l.relation === "CORE_SKILL" || l.relation === "PREREQ") && visibleIds.has(l.source) && visibleIds.has(l.target))
-      .map((l) => ({
-        source: l.source,
-        target: l.target,
-        relation: l.relation,
-        lineStyle: {
-          type: l.relation === "PREREQ" ? "dashed" : "solid",
-          opacity: l.relation === "PREREQ" ? 0.12 : 0.08,
-          width: 0.7,
-          color: "rgba(28,30,35,0.35)",
-        },
-      }));
+      .map((l) => {
+        if (l.relation === "PREREQ") {
+          return {
+            source: l.source,
+            target: l.target,
+            relation: l.relation,
+            lineStyle: { type: "dashed", opacity: 0.13, width: 0.7, color: "#94A3B8" },
+          };
+        }
+        const targetRaw = nodeById.get(l.target);
+        return {
+          source: l.source,
+          target: l.target,
+          relation: l.relation,
+          lineStyle: { type: "solid", opacity: 0.12, width: 0.8, color: targetRaw ? skillColor(targetRaw) : "#94A3B8" },
+        };
+      });
 
     return {
       chartNodes, chartLinks, catNames,
@@ -584,12 +598,12 @@ export default function Graph() {
         value: raw.label_zh || raw.label,
         kind: raw.kind,
         categoryName: "技能",
-        symbolSize: isTarget ? 24 : raw.hot ? 17 : 13,
+        symbolSize: isTarget ? 28 : raw.hot ? 19 : 14,
         category: 0,
         x: pos.get(id)?.x,
         y: pos.get(id)?.y,
         itemStyle: isTarget
-          ? { ...skillItemStyle(raw), borderColor: "#1b1d22", borderWidth: 1.8, shadowColor: skillColor(raw), shadowBlur: 16 }
+          ? { ...skillItemStyle(raw), borderColor: "#1b1d22", borderWidth: 2, shadowColor: skillColor(raw), shadowBlur: 18 }
           : skillItemStyle(raw),
         label: {
           show: true,
@@ -597,19 +611,22 @@ export default function Graph() {
           distance: 5,
           color: "#1b1d22",
           fontSize: 11,
-          fontWeight: isTarget ? 650 : 450,
+          fontWeight: isTarget ? 700 : 500,
           ...LABEL_CARD,
         },
         raw,
       });
     }
 
-    const chartLinks: ChartLink[] = edges.map((l) => ({
-      source: l.source,
-      target: l.target,
-      relation: l.relation,
-      lineStyle: { type: "solid", opacity: 0.45, width: 1.2, color: "rgba(28,30,35,0.28)", curveness: 0.06 },
-    }));
+    const chartLinks: ChartLink[] = edges.map((l) => {
+      const srcRaw = nodeById.get(l.source);
+      return {
+        source: l.source,
+        target: l.target,
+        relation: l.relation,
+        lineStyle: { type: "solid", opacity: 0.42, width: 1.3, color: srcRaw ? skillColor(srcRaw) : "#94A3B8", curveness: 0.06 },
+      };
+    });
 
     return { chartNodes, chartLinks, catNames: ["技能"], maxLayer, counts: { roles: 0, skills: closure.size, events: 0, links: chartLinks.length } };
   }, [effectiveDagTarget, prereqLinks, nodeById]);
@@ -637,10 +654,10 @@ export default function Graph() {
       value: roleRaw.label_zh || roleRaw.label,
       kind: "role",
       categoryName: "岗位",
-      symbolSize: 36,
+      symbolSize: 44,
       category: 0,
       x: 0, y: 0,
-      itemStyle: { color: roleColor(roleRaw.category, roleCats), borderColor: "rgba(255,255,255,0.95)", borderWidth: 1.5, shadowColor: "rgba(28,30,35,0.22)", shadowBlur: 12 },
+      itemStyle: { color: roleColor(roleRaw.category, roleCats), borderColor: "rgba(255,255,255,0.95)", borderWidth: 2, shadowColor: "rgba(28,30,35,0.28)", shadowBlur: 16 },
       label: { show: true, position: "bottom", distance: 6, color: "#1b1d22", fontSize: 13, fontWeight: 600, ...LABEL_CARD },
       raw: roleRaw,
     }];
@@ -654,7 +671,7 @@ export default function Graph() {
         value: raw.label,
         kind: "event",
         categoryName: "行业事件",
-        symbolSize: 11 + Math.min(12, ((raw.importance ?? 0.5) as number) * 12),
+        symbolSize: 12 + Math.min(13, ((raw.importance ?? 0.5) as number) * 13),
         category: 1,
         x: pos.get(id)?.x,
         y: pos.get(id)?.y,
@@ -665,7 +682,7 @@ export default function Graph() {
     }
     const chartLinks: ChartLink[] = evLinks.map((l) => {
       const src = nodeById.get(l.source);
-      const color = src ? eventColor(src) : "#6D88E8";
+      const color = src ? eventColor(src) : "#3B82F6";
       return {
         source: l.source,
         target: l.target,
@@ -719,7 +736,7 @@ export default function Graph() {
           if (n.decor || n.id !== selectedId) return n;
           const grow = 1 + pulse * 0.1;
           const base = Array.isArray(n.symbolSize) ? n.symbolSize[0] : n.symbolSize;
-          const color = (n.itemStyle.color as string) || "#5A8BE8";
+          const color = (n.itemStyle.color as string) || "#6366F1";
           return {
             ...n,
             symbolSize: Array.isArray(n.symbolSize) ? [base * grow, n.symbolSize[1] * grow] : base * grow,
@@ -816,8 +833,8 @@ export default function Graph() {
   return (
     <div className="page" style={{ maxWidth: 1320 }}>
       <PageHead
-        eyebrow="Knowledge Graph / Evidence Graph"
-        title={<>岗位、技能、事件证据<span className="lite"> 关系图谱</span></>}
+        eyebrow="Career Graph / Role · Skill · Event"
+        title={<>岗位 · 技能 · 行业事件<span className="lite"> 职业图谱</span></>}
         sub={`${roleNodes.length} 个细粒度岗位、${skillNodes.length} 个技能、${nodes.filter((n) => n.kind === "event").length} 个行业事件、${links.length} 条关系。从搜索一个岗位开始，看它的技能构成与前置依赖；或切换到总览 / 学习路径视角。`}
       />
 
@@ -931,23 +948,23 @@ export default function Graph() {
           {mode === "ego" && view && (
             <>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "核心技能")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#5A8BE8", boxShadow: "0 0 6px 1px rgba(90,139,232,0.5)" }} />核心技能
+                <span className="dot-cat" style={{ background: "#6366F1", boxShadow: "0 0 6px 1px rgba(99,102,241,0.5)" }} />核心技能
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "要求技能")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#9DB2CE" }} />要求技能
+                <span className="dot-cat" style={{ background: "#94A3B8" }} />要求技能
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.categoryName === "前置技能")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#cdd2da", border: "1.5px dashed #9aa3b2" }} />外部前置
+                <span className="dot-cat" style={{ background: "#cbd5e1", border: "1.5px dashed #94A3B8" }} />外部前置
               </span>
-              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "2px solid rgba(28,30,35,0.3)" }} />核心 / 要求</span>
-              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "1.5px dashed #9aa3b2" }} />前置依赖</span>
+              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "2px solid rgba(99,102,241,0.65)" }} />核心 / 要求</span>
+              <span className="lg-cat"><span className="lg-line" style={{ borderTop: "1.5px dashed #94A3B8" }} />前置依赖</span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>点击技能 → 学习路径</span>
             </>
           )}
           {mode === "overview" && (
             <>
-              <span className="lg-cat"><span className="dot-cat" style={{ background: "#5A8BE8" }} />内圈：岗位（按大类）</span>
-              <span className="lg-cat"><span className="dot-cat" style={{ background: "#EFA63C" }} />外圈：技能（按类别）</span>
+              <span className="lg-cat"><span className="dot-cat" style={{ background: "#5B8DEF" }} />内圈：岗位（按大类）</span>
+              <span className="lg-cat"><span className="dot-cat" style={{ background: "#F59E0B" }} />外圈：技能（按类别）</span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>左上角色块可点击隐藏 ·  hover 节点看名称</span>
             </>
           )}
@@ -955,7 +972,7 @@ export default function Graph() {
             <>
               <span className="lg-cat"><span className="lg-line" style={{ borderTop: "1.5px solid rgba(28,30,35,0.4)" }} />前置依赖（箭头指向后续技能）</span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => Boolean(n.raw?.hot))} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#EFA63C", boxShadow: "0 0 6px 1px rgba(239,166,60,0.55)" }} />热门技能
+                <span className="dot-cat" style={{ background: "#F59E0B", boxShadow: "0 0 6px 1px rgba(245,158,11,0.55)" }} />热门技能
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.id === effectiveDagTarget)} onMouseLeave={() => hlNodes()}>
                 <span className="dot-cat" style={{ background: "#1b1d22" }} />目标技能
@@ -966,13 +983,13 @@ export default function Graph() {
           {mode === "event" && view && (
             <>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction !== "negative" && n.raw?.impact_direction !== "mixed" && n.kind === "event")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#6D88E8" }} />正向 / 中性事件
+                <span className="dot-cat" style={{ background: "#3B82F6" }} />正向 / 中性事件
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction === "mixed")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#9375E8" }} />混合影响
+                <span className="dot-cat" style={{ background: "#8B5CF6" }} />混合影响
               </span>
               <span className="lg-cat lg-hover" onMouseEnter={() => hlNodes((n) => n.raw?.impact_direction === "negative")} onMouseLeave={() => hlNodes()}>
-                <span className="dot-cat" style={{ background: "#EE7D88" }} />负向事件
+                <span className="dot-cat" style={{ background: "#EF4444" }} />负向事件
               </span>
               <span className="lg-cat" style={{ color: "#9aa0a9" }}>点大小 = 事件重要度</span>
             </>

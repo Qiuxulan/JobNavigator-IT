@@ -9,7 +9,7 @@ const QUICK_LINKS = [
   { icon: Ic.target, label: "岗位匹配", desc: "按技能推荐岗位与置信度", path: "/match", hue: "linear-gradient(135deg,#4f6ef7,#7a5cff)" },
   { icon: Ic.compare, label: "岗位洞察", desc: "国内在招、技能要求与岗位对比", path: "/role", hue: "linear-gradient(135deg,#33cfd5,#1fc8a9)" },
   { icon: Ic.route, label: "学习路径", desc: "从现有技能到目标岗位", path: "/path", hue: "linear-gradient(135deg,#ffb13d,#ff9466)" },
-  { icon: Ic.graph, label: "知识图谱", desc: "岗位 · 技能 · 事件关系", path: "/graph", hue: "linear-gradient(135deg,#9b72f0,#7a5cff)" },
+  { icon: Ic.graph, label: "职业图谱", desc: "岗位 · 技能 · 事件关系", path: "/graph", hue: "linear-gradient(135deg,#9b72f0,#7a5cff)" },
   { icon: Ic.news, label: "行业新闻", desc: "招聘、融资与技术动态", path: "/news", hue: "linear-gradient(135deg,#5b8def,#33cfd5)" },
   { icon: Ic.chat, label: "AI 助手", desc: "一句话查询全部数据", path: "/chat", hue: "linear-gradient(135deg,#1c1e23,#4c5159)" },
 ];

@@ -35,7 +35,7 @@ const GROUPS: NavGroup[] = [
     label: "行业洞察",
     en: "Insights",
     items: [
-      { path: "/graph", label: "知识图谱", icon: Ic.graph },
+      { path: "/graph", label: "职业图谱", icon: Ic.graph },
       { path: "/news", label: "行业新闻", icon: Ic.news },
     ],
   },
